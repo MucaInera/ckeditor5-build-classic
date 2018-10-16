@@ -2,7 +2,7 @@
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
-(function(d){d['en']=Object.assign(d['en']||{},{a:"Cannot upload file:",b:"Bold",c:"Italic",d:"Underline",e:"image widget",f:"Full size image",g:"Side image",h:"Left aligned image",i:"Centered image",j:"Right aligned image",k:"Choose heading",l:"Heading",m:"Insert image",n:"Upload failed",o:"Block quote",p:"Insert table",q:"Header column",r:"Insert column before",s:"Insert column after",t:"Delete column",u:"Column",v:"Header row",w:"Insert row below",x:"Insert row above",y:"Delete row",z:"Row",aa:"Merge cell up",ab:"Merge cell right",ac:"Merge cell down",ad:"Merge cell left",ae:"Split cell vertically",af:"Split cell horizontally",ag:"Merge cells",ah:"Enter image caption",ai:"media widget",aj:"Insert media",ak:"The URL must not be empty.",al:"This media URL is not supported.",am:"Link",an:"Numbered List",ao:"Bulleted List",ap:"Upload in progress",aq:"Change image text alternative",ar:"Paragraph",as:"Heading 1",at:"Heading 2",au:"Heading 3",av:"Rich Text Editor",aw:"Rich Text Editor, %0",ax:"Undo",ay:"Redo",az:"Save",ba:"Cancel",bb:"Text alternative",bc:"Unlink",bd:"Edit link",be:"Open link in new tab",bf:"This link has no URL",bg:"Link URL",bh:"Media URL"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
+(function(d){d['en']=Object.assign(d['en']||{},{a:"Bold",b:"Italic",c:"Underline",d:"Numbered List",e:"Bulleted List",f:"Link",g:"Save",h:"Cancel",i:"Link URL",j:"Unlink",k:"Edit link",l:"Open link in new tab",m:"This link has no URL",n:"Rich Text Editor, %0",o:"Rich Text Editor"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -96,7 +96,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 115);
+/******/ 	return __webpack_require__(__webpack_require__.s = 55);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -196,7 +196,25 @@ function attachLinkToDocumentation( message ) {
 
 
 /***/ }),
-/* 1 */
+/* 1 */,
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"] || freeSelf || Function('return this')();
+
+/* harmony default export */ __webpack_exports__["a"] = (root);
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -280,7 +298,7 @@ const log = {
 
 
 /***/ }),
-/* 2 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -349,7 +367,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(45);
+var	fixUrls = __webpack_require__(26);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -684,29 +702,11 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 3 */,
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
-
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"] || freeSelf || Function('return this')();
-
-/* harmony default export */ __webpack_exports__["a"] = (root);
-
-
-/***/ }),
 /* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
 
 
 /** Detect free variable `exports`. */
@@ -738,15 +738,15 @@ var nodeUtil = (function() {
 
 /* harmony default export */ __webpack_exports__["a"] = (nodeUtil);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(11)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8)(module)))
 
 /***/ }),
 /* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
-/* harmony import */ var _stubFalse_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _stubFalse_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
 
 
@@ -786,22 +786,10 @@ var isBuffer = nativeIsBuffer || _stubFalse_js__WEBPACK_IMPORTED_MODULE_1__[/* d
 
 /* harmony default export */ __webpack_exports__["a"] = (isBuffer);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(11)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8)(module)))
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.972 16.615a.997.997 0 0 1-.744-.292l-4.596-4.596a1 1 0 1 1 1.414-1.414l3.926 3.926 9.937-9.937a1 1 0 0 1 1.414 1.415L7.717 16.323a.997.997 0 0 1-.745.292z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.591 10.177l4.243 4.242a1 1 0 0 1-1.415 1.415l-4.242-4.243-4.243 4.243a1 1 0 0 1-1.414-1.415l4.243-4.242L4.52 5.934A1 1 0 0 1 5.934 4.52l4.243 4.243 4.242-4.243a1 1 0 1 1 1.415 1.414l-4.243 4.243z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -810,16 +798,10 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 
 /* harmony default export */ __webpack_exports__["a"] = (freeGlobal);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(10)))
 
 /***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"nonzero\"><path d=\"M2 4.5V3h16v1.5zM2 7.5V6h5.674v1.5zM2 10.5V9h5.674v1.5zM2 13.5V12h5.674v1.5zM10.5 7.5V12h6V7.5h-6zM9.682 6h7.636c.377 0 .682.407.682.91v5.68c0 .503-.305.91-.682.91H9.682c-.377 0-.682-.407-.682-.91V6.91c0-.503.305-.91.682-.91zM2 16.5V15h16v1.5z\"/></g></svg>\n"
-
-/***/ }),
-/* 11 */
+/* 8 */
 /***/ (function(module, exports) {
 
 module.exports = function(originalModule) {
@@ -849,31 +831,13 @@ module.exports = function(originalModule) {
 
 
 /***/ }),
-/* 12 */
+/* 9 */
 /***/ (function(module) {
 
 module.exports = {"a":"11.1.1"};
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"nonzero\"><path d=\"M2 4.5V3h16v1.5zM4.5 7.5V12h11V7.5h-11zM4.061 6H15.94c.586 0 1.061.407 1.061.91v5.68c0 .503-.475.91-1.061.91H4.06C3.475 13.5 3 13.093 3 12.59V6.91C3 6.406 3.475 6 4.061 6zM2 16.5V15h16v1.5z\"/></g></svg>\n"
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" stroke-linejoin=\"round\" stroke-miterlimit=\"1.414\"><path d=\"M18 4.5V3H2v1.5h16zm0 3V6h-5.674v1.5H18zm0 3V9h-5.674v1.5H18zm0 3V12h-5.674v1.5H18zm-8.5-6V12h-6V7.5h6zm.818-1.5H2.682C2.305 6 2 6.407 2 6.91v5.68c0 .503.305.91.682.91h7.636c.377 0 .682-.407.682-.91V6.91c0-.503-.305-.91-.682-.91zM18 16.5V15H2v1.5h16z\" fill-rule=\"nonzero\"/></svg>"
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"nonzero\"><path d=\"M2 4.5V3h16v1.5zM6.5 7.5V12h7V7.5h-7zM5.758 6h8.484c.419 0 .758.407.758.91v5.681c0 .502-.34.909-.758.909H5.758c-.419 0-.758-.407-.758-.91V6.91c0-.503.34-.91.758-.91zM2 16.5V15h16v1.5z\"/></g></svg>\n"
-
-/***/ }),
-/* 16 */
+/* 10 */
 /***/ (function(module, exports) {
 
 var g;
@@ -899,32 +863,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(92);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 18 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -949,11 +888,11 @@ function stubFalse() {
 
 
 /***/ }),
-/* 19 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 
 
 /** Detect free variable `exports`. */
@@ -990,148 +929,76 @@ function cloneBuffer(buffer, isDeep) {
 
 /* harmony default export */ __webpack_exports__["a"] = (cloneBuffer);
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(11)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8)(module)))
 
 /***/ }),
-/* 20 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.042 9.367l2.189 1.837a.75.75 0 0 1-.965 1.149l-3.788-3.18a.747.747 0 0 1-.21-.284.75.75 0 0 1 .17-.945L6.23 4.762a.75.75 0 1 1 .964 1.15L4.863 7.866h8.917A.75.75 0 0 1 14 7.9a4 4 0 1 1-1.477 7.718l.344-1.489a2.5 2.5 0 1 0 1.094-4.73l.008-.032H5.042z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>"
-
-/***/ }),
-/* 21 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.958 9.367l-2.189 1.837a.75.75 0 0 0 .965 1.149l3.788-3.18a.747.747 0 0 0 .21-.284.75.75 0 0 0-.17-.945L13.77 4.762a.75.75 0 1 0-.964 1.15l2.331 1.955H6.22A.75.75 0 0 0 6 7.9a4 4 0 1 0 1.477 7.718l-.344-1.489A2.5 2.5 0 1 1 6.039 9.4l-.008-.032h8.927z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>"
-
-/***/ }),
-/* 22 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>\n"
 
 /***/ }),
-/* 23 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.586 14.633l.021.004c-.036.335.095.655.393.962.082.083.173.15.274.201h1.474a.6.6 0 1 1 0 1.2H5.304a.6.6 0 0 1 0-1.2h1.15c.474-.07.809-.182 1.005-.334.157-.122.291-.32.404-.597l2.416-9.55a1.053 1.053 0 0 0-.281-.823 1.12 1.12 0 0 0-.442-.296H8.15a.6.6 0 0 1 0-1.2h6.443a.6.6 0 1 1 0 1.2h-1.195c-.376.056-.65.155-.823.296-.215.175-.423.439-.623.79l-2.366 9.347z\" fill=\"#333\" fill-rule=\"evenodd\"/></svg>"
 
 /***/ }),
-/* 24 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"evenodd\"><path d=\"M3 10.423a6.5 6.5 0 0 1 6.056-6.408l.038.67C6.448 5.423 5.354 7.663 5.22 10H9c.552 0 .5.432.5.986v4.511c0 .554-.448.503-1 .503h-5c-.552 0-.5-.449-.5-1.003v-4.011-.563zM11 10.423a6.5 6.5 0 0 1 6.056-6.408l.038.67c-2.646.739-3.74 2.979-3.873 5.315H17c.552 0 .5.432.5.986v4.511c0 .554-.448.503-1 .503h-5c-.552 0-.5-.449-.5-1.003v-4.011-.563z\"/></g></svg>\n"
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\"><g><path d=\"M4 0v1H1v3H0V.5A.5.5 0 0 1 .5 0H4zm8 0h3.5a.5.5 0 0 1 .5.5V4h-1V1h-3V0zM4 16H.5a.5.5 0 0 1-.5-.5V12h1v3h3v1zm8 0v-1h3v-3h1v3.5a.5.5 0 0 1-.5.5H12z\"/><path fill-opacity=\".256\" d=\"M1 1h14v14H1z\"/><g class=\"ck-icon__selected-indicator\"><path d=\"M7 0h2v1H7V0zM0 7h1v2H0V7zm15 0h1v2h-1V7zm-8 8h2v1H7v-1z\"/><path fill-opacity=\".254\" d=\"M1 1h14v14H1z\"/></g></g></svg>\n"
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.085 6.22L2.943 4.078a.75.75 0 1 1 1.06-1.06l2.592 2.59A11.094 11.094 0 0 1 10 5.068c4.738 0 8.578 3.101 8.578 5.083 0 1.197-1.401 2.803-3.555 3.887l1.714 1.713a.75.75 0 0 1-.09 1.138.488.488 0 0 1-.15.084.75.75 0 0 1-.821-.16L6.17 7.304c-.258.11-.51.233-.757.365l6.239 6.24-.006.005.78.78c-.388.094-.78.166-1.174.215l-1.11-1.11h.011L4.55 8.197a7.2 7.2 0 0 0-.665.514l-.112.098 4.897 4.897-.005.006 1.276 1.276a10.164 10.164 0 0 1-1.477-.117l-.479-.479-.009.009-4.863-4.863-.022.031a2.563 2.563 0 0 0-.124.2c-.043.077-.08.158-.108.241a.534.534 0 0 0-.028.133.29.29 0 0 0 .008.072.927.927 0 0 0 .082.226c.067.133.145.26.234.379l3.242 3.365.025.01.59.623c-3.265-.918-5.59-3.155-5.59-4.668 0-1.194 1.448-2.838 3.663-3.93zm7.07.531a4.632 4.632 0 0 1 1.108 5.992l.345.344.046-.018a9.313 9.313 0 0 0 2-1.112c.256-.187.5-.392.727-.613.137-.134.27-.277.392-.431.072-.091.141-.185.203-.286.057-.093.107-.19.148-.292a.72.72 0 0 0 .036-.12.29.29 0 0 0 .008-.072.492.492 0 0 0-.028-.133.999.999 0 0 0-.036-.096 2.165 2.165 0 0 0-.071-.145 2.917 2.917 0 0 0-.125-.2 3.592 3.592 0 0 0-.263-.335 5.444 5.444 0 0 0-.53-.523 7.955 7.955 0 0 0-1.054-.768 9.766 9.766 0 0 0-1.879-.891c-.337-.118-.68-.219-1.027-.301zm-2.85.21l-.069.002a.508.508 0 0 0-.254.097.496.496 0 0 0-.104.679.498.498 0 0 0 .326.199l.045.005c.091.003.181.003.272.012.9.093 1.676.675 2.017 1.513.024.061.043.125.069.185a.494.494 0 0 0 .45.287h.008a.496.496 0 0 0 .35-.158.482.482 0 0 0 .13-.335.638.638 0 0 0-.048-.219 3.379 3.379 0 0 0-.36-.723 3.438 3.438 0 0 0-2.791-1.543l-.028-.001h-.013z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.91 10.54c.26-.23.64-.21.88.03l3.36 3.14 2.23-2.06a.64.64 0 0 1 .87 0l2.52 2.97V4.5H3.2v10.12l3.71-4.08zm10.27-7.51c.6 0 1.09.47 1.09 1.05v11.84c0 .59-.49 1.06-1.09 1.06H2.79c-.6 0-1.09-.47-1.09-1.06V4.08c0-.58.49-1.05 1.1-1.05h14.38zm-5.22 5.56a1.96 1.96 0 1 1 3.4-1.96 1.96 1.96 0 0 1-3.4 1.96z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>\n"
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 700 250\"><g fill=\"#FAFAFA\" fill-rule=\"evenodd\"><rect width=\"700\" height=\"250\" rx=\"4\"/></g></svg>\n"
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M.941 4.523a.75.75 0 1 1 1.06-1.06l3.006 3.005 3.005-3.005a.75.75 0 1 1 1.06 1.06l-3.549 3.55a.75.75 0 0 1-1.168-.136L.941 4.523z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"evenodd\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184zM16.927 17.695l-1.414 1.414a.75.75 0 1 1-1.06-1.06l1.414-1.415-1.415-1.414a.75.75 0 0 1 1.061-1.06l1.414 1.414 1.414-1.415a.75.75 0 0 1 1.061 1.061l-1.414 1.414 1.414 1.415a.75.75 0 0 1-1.06 1.06l-1.415-1.414z\"/></g></svg>"
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.3 17.37l-.061.088a1.518 1.518 0 0 1-.934.535l-4.178.663-.806-4.153a1.495 1.495 0 0 1 .187-1.058l.056-.086L8.77 2.639c.958-1.351 2.803-1.076 4.296-.03 1.497 1.047 2.387 2.693 1.433 4.055L7.3 17.37zM9.14 4.728l-5.545 8.346 3.277 2.294 5.544-8.346L9.14 4.728zM6.07 16.512l-3.276-2.295.53 2.73 2.746-.435zM9.994 3.506L13.271 5.8c.316-.452-.16-1.333-1.065-1.966-.905-.634-1.895-.78-2.212-.328zM8 18.5L9.375 17H19v1.5H8z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>\n"
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM3.5 3v5H2V3.7H1v-1h2.5V3zM.343 17.857l2.59-3.257H2.92a.6.6 0 1 0-1.04 0H.302a2 2 0 1 1 3.995 0h-.001c-.048.405-.16.734-.333.988-.175.254-.59.692-1.244 1.312H4.3v1h-4l.043-.043zM7 14.75a.75.75 0 0 1 .75-.75h9.5a.75.75 0 1 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0C1 4.784 1.777 4 2.75 4c.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75C1.784 7.5 1 6.723 1 5.75zm6 9c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0c0-.966.777-1.75 1.75-1.75.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75-.966 0-1.75-.777-1.75-1.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"64\" height=\"42\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M47.426 17V3.713L63.102 0v19.389h-.001l.001.272c0 1.595-2.032 3.43-4.538 4.098-2.506.668-4.538-.083-4.538-1.678 0-1.594 2.032-3.43 4.538-4.098.914-.244 2.032-.565 2.888-.603V4.516L49.076 7.447v9.556A1.014 1.014 0 0 0 49 17h-1.574zM29.5 17h-8.343a7.073 7.073 0 1 0-4.657 4.06v3.781H3.3a2.803 2.803 0 0 1-2.8-2.804V8.63a2.803 2.803 0 0 1 2.8-2.805h4.082L8.58 2.768A1.994 1.994 0 0 1 10.435 1.5h8.985c.773 0 1.477.448 1.805 1.149l1.488 3.177H26.7c1.546 0 2.8 1.256 2.8 2.805V17zm-11.637 0H17.5a1 1 0 0 0-1 1v.05A4.244 4.244 0 1 1 17.863 17zm29.684 2c.97 0 .953-.048.953.889v20.743c0 .953.016.905-.953.905H19.453c-.97 0-.953.048-.953-.905V19.89c0-.937-.016-.889.97-.889h28.077zm-4.701 19.338V22.183H24.154v16.155h18.692zM20.6 21.375v1.616h1.616v-1.616H20.6zm0 3.231v1.616h1.616v-1.616H20.6zm0 3.231v1.616h1.616v-1.616H20.6zm0 3.231v1.616h1.616v-1.616H20.6zm0 3.231v1.616h1.616v-1.616H20.6zm0 3.231v1.616h1.616V37.53H20.6zm24.233-16.155v1.616h1.615v-1.616h-1.615zm0 3.231v1.616h1.615v-1.616h-1.615zm0 3.231v1.616h1.615v-1.616h-1.615zm0 3.231v1.616h1.615v-1.616h-1.615zm0 3.231v1.616h1.615v-1.616h-1.615zm0 3.231v1.616h1.615V37.53h-1.615zM29.485 25.283a.4.4 0 0 1 .593-.35l9.05 4.977a.4.4 0 0 1 0 .701l-9.05 4.978a.4.4 0 0 1-.593-.35v-9.956z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>"
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M18.68 2.53c.6 0 .59-.03.59.55v12.84c0 .59.01.56-.59.56H1.29c-.6 0-.59.03-.59-.56V3.08c0-.58-.01-.55.6-.55h17.38zM15.77 14.5v-10H4.2v10h11.57zM2 4v1h1V4H2zm0 2v1h1V6H2zm0 2v1h1V8H2zm0 2v1h1v-1H2zm0 2v1h1v-1H2zm0 2v1h1v-1H2zM17 4v1h1V4h-1zm0 2v1h1V6h-1zm0 2v1h1V8h-1zm0 2v1h1v-1h-1zm0 2v1h1v-1h-1zm0 2v1h1v-1h-1zM7.5 6.677a.4.4 0 0 1 .593-.351l5.133 2.824a.4.4 0 0 1 0 .7l-5.133 2.824a.4.4 0 0 1-.593-.35V6.676z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>"
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M3 6v3h4V6H3zm0 4v3h4v-3H3zm0 4v3h4v-3H3zm5 3h4v-3H8v3zm5 0h4v-3h-4v3zm4-4v-3h-4v3h4zm0-4V6h-4v3h4zm1.5 8a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 17V4c.222-.863 1.068-1.5 2-1.5h13c.932 0 1.778.637 2 1.5v13zM12 13v-3H8v3h4zm0-4V6H8v3h4z\" fill=\"#333\" fill-rule=\"evenodd\"/></svg>"
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#333\" fill-rule=\"evenodd\"><path d=\"M2.5 1h15A1.5 1.5 0 0 1 19 2.5v15a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 1 17.5v-15A1.5 1.5 0 0 1 2.5 1zM2 2v16h16V2H2z\" opacity=\".6\"/><path d=\"M18 7v1H2V7h16zm0 5v1H2v-1h16z\" fill-rule=\"nonzero\" opacity=\".6\"/><path d=\"M14 1v18a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1zm-2 1H8v4h4V2zm0 6H8v4h4V8zm0 6H8v4h4v-4z\"/></g></svg>"
-
-/***/ }),
-/* 39 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#333\" fill-rule=\"evenodd\"><path d=\"M2.5 1h15A1.5 1.5 0 0 1 19 2.5v15a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 1 17.5v-15A1.5 1.5 0 0 1 2.5 1zM2 2v16h16V2H2z\" opacity=\".6\"/><path d=\"M7 2h1v16H7V2zm5 0h1v16h-1V2z\" fill-rule=\"nonzero\" opacity=\".6\"/><path d=\"M1 6h18a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm1 2v4h4V8H2zm6 0v4h4V8H8zm6 0v4h4V8h-4z\"/></g></svg>"
-
-/***/ }),
-/* 40 */
-/***/ (function(module, exports) {
-
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#333\" fill-rule=\"evenodd\"><path d=\"M2.5 1h15A1.5 1.5 0 0 1 19 2.5v15a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 1 17.5v-15A1.5 1.5 0 0 1 2.5 1zM2 2v16h16V2H2z\" opacity=\".6\"/><path d=\"M7 2h1v16H7V2zm5 0h1v7h-1V2zm6 5v1H2V7h16zM8 12v1H2v-1h6z\" fill-rule=\"nonzero\" opacity=\".6\"/><path d=\"M7 7h12a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1zm1 2v9h10V9H8z\"/></g></svg>"
-
-/***/ }),
-/* 41 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"#333\"><path fill-rule=\"nonzero\" d=\"M3 18v-1.5h14V18z\"/><path d=\"M5.2 10V3.6c0-.4.4-.6.8-.6.3 0 .7.2.7.6v6.2c0 2 1.3 2.8 3.2 2.8 1.9 0 3.4-.9 3.4-2.9V3.6c0-.3.4-.5.8-.5.3 0 .7.2.7.5V10c0 2.7-2.2 4-4.9 4-2.6 0-4.7-1.2-4.7-4z\"/></g></g></svg>\n"
 
 /***/ }),
-/* 42 */
+/* 16 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.972 16.615a.997.997 0 0 1-.744-.292l-4.596-4.596a1 1 0 1 1 1.414-1.414l3.926 3.926 9.937-9.937a1 1 0 0 1 1.414 1.415L7.717 16.323a.997.997 0 0 1-.745.292z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.591 10.177l4.243 4.242a1 1 0 0 1-1.415 1.415l-4.242-4.243-4.243 4.243a1 1 0 0 1-1.414-1.415l4.243-4.242L4.52 5.934A1 1 0 0 1 5.934 4.52l4.243 4.243 4.242-4.243a1 1 0 1 1 1.415 1.414l-4.243 4.243z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"evenodd\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184zM16.927 17.695l-1.414 1.414a.75.75 0 1 1-1.06-1.06l1.414-1.415-1.415-1.414a.75.75 0 0 1 1.061-1.06l1.414 1.414 1.414-1.415a.75.75 0 0 1 1.061 1.061l-1.414 1.414 1.414 1.415a.75.75 0 0 1-1.06 1.06l-1.415-1.414z\"/></g></svg>"
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.3 17.37l-.061.088a1.518 1.518 0 0 1-.934.535l-4.178.663-.806-4.153a1.495 1.495 0 0 1 .187-1.058l.056-.086L8.77 2.639c.958-1.351 2.803-1.076 4.296-.03 1.497 1.047 2.387 2.693 1.433 4.055L7.3 17.37zM9.14 4.728l-5.545 8.346 3.277 2.294 5.544-8.346L9.14 4.728zM6.07 16.512l-3.276-2.295.53 2.73 2.746-.435zM9.994 3.506L13.271 5.8c.316-.452-.16-1.333-1.065-1.966-.905-.634-1.895-.78-2.212-.328zM8 18.5L9.375 17H19v1.5H8z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>\n"
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM3.5 3v5H2V3.7H1v-1h2.5V3zM.343 17.857l2.59-3.257H2.92a.6.6 0 1 0-1.04 0H.302a2 2 0 1 1 3.995 0h-.001c-.048.405-.16.734-.333.988-.175.254-.59.692-1.244 1.312H4.3v1h-4l.043-.043zM7 14.75a.75.75 0 0 1 .75-.75h9.5a.75.75 0 1 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0C1 4.784 1.777 4 2.75 4c.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75C1.784 7.5 1 6.723 1 5.75zm6 9c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0c0-.966.777-1.75 1.75-1.75.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75-.966 0-1.75-.777-1.75-1.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-var ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(12, 1);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
+var ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(9, 1);
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
@@ -1190,14 +1057,14 @@ if ( windowOrGlobal.CKEDITOR_VERSION ) {
 	windowOrGlobal.CKEDITOR_VERSION = ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1__[/* version */ "a"];
 }
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(16)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(10)))
 
 /***/ }),
-/* 43 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(44);
+var content = __webpack_require__(25);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1211,20 +1078,20 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 44 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck-hidden{display:none!important}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{box-sizing:border-box;width:auto;height:auto;position:static}:root{--ck-z-default:1;--ck-z-modal:calc(var(--ck-z-default) + 999);--ck-color-base-foreground:#fafafa;--ck-color-base-background:#fff;--ck-color-base-border:#c4c4c4;--ck-color-base-action:#61b045;--ck-color-base-focus:#6cb5f9;--ck-color-base-text:#333;--ck-color-base-active:#198cf0;--ck-color-base-active-focus:#0e7fe1;--ck-color-base-error:#db3700;--ck-color-focus-border:#47a4f5;--ck-color-focus-shadow:rgba(119,186,248,0.5);--ck-color-focus-disabled-shadow:rgba(119,186,248,0.3);--ck-color-focus-error-shadow:rgba(255,64,31,0.3);--ck-color-text:var(--ck-color-base-text);--ck-color-shadow-drop:rgba(0,0,0,0.15);--ck-color-shadow-inner:rgba(0,0,0,0.1);--ck-color-button-default-background:transparent;--ck-color-button-default-hover-background:#e6e6e6;--ck-color-button-default-active-background:#d9d9d9;--ck-color-button-default-active-shadow:#bfbfbf;--ck-color-button-default-disabled-background:transparent;--ck-color-button-on-background:#dedede;--ck-color-button-on-hover-background:#c4c4c4;--ck-color-button-on-active-background:#bababa;--ck-color-button-on-active-shadow:#a1a1a1;--ck-color-button-on-disabled-background:#dedede;--ck-color-button-action-background:var(--ck-color-base-action);--ck-color-button-action-hover-background:#579e3d;--ck-color-button-action-active-background:#53973b;--ck-color-button-action-active-shadow:#498433;--ck-color-button-action-disabled-background:#7ec365;--ck-color-button-action-text:var(--ck-color-base-background);--ck-color-button-save:#008a00;--ck-color-button-cancel:#db3700;--ck-color-switch-button-off-background:#b0b0b0;--ck-color-switch-button-on-background:var(--ck-color-button-action-background);--ck-color-switch-button-inner-background:var(--ck-color-base-background);--ck-color-dropdown-panel-background:var(--ck-color-base-background);--ck-color-dropdown-panel-border:var(--ck-color-base-border);--ck-color-input-background:var(--ck-color-base-background);--ck-color-input-border:#c7c7c7;--ck-color-input-error-border:var(--ck-color-base-error);--ck-color-input-text:var(--ck-color-base-text);--ck-color-input-disabled-background:#f2f2f2;--ck-color-input-disabled-border:#c7c7c7;--ck-color-input-disabled-text:#5c5c5c;--ck-color-list-background:var(--ck-color-base-background);--ck-color-list-button-hover-background:var(--ck-color-base-foreground);--ck-color-list-button-on-background:var(--ck-color-base-active);--ck-color-list-button-on-background-focus:var(--ck-color-base-active-focus);--ck-color-list-button-on-text:var(--ck-color-base-background);--ck-color-panel-background:var(--ck-color-base-background);--ck-color-panel-border:var(--ck-color-base-border);--ck-color-toolbar-background:var(--ck-color-base-foreground);--ck-color-toolbar-border:var(--ck-color-base-border);--ck-color-tooltip-background:var(--ck-color-base-text);--ck-color-tooltip-text:var(--ck-color-base-background);--ck-color-engine-placeholder-text:#c2c2c2;--ck-color-upload-bar-background:#6cb5f9;--ck-color-upload-infinite-background:rgba(0,0,0,0.1);--ck-color-link-default:#0000f0;--ck-color-link-selected-background:#ebf8ff;--ck-disabled-opacity:.5;--ck-focus-outer-shadow-geometry:0 0 0 3px;--ck-focus-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-shadow);--ck-focus-disabled-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-disabled-shadow);--ck-focus-error-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-error-shadow);--ck-focus-ring:1px solid var(--ck-color-focus-border);--ck-font-size-base:13px;--ck-line-height-base:1.84615;--ck-font-face:Helvetica,Arial,Tahoma,Verdana,Sans-Serif;--ck-font-size-tiny:0.7em;--ck-font-size-small:0.75em;--ck-font-size-normal:1em;--ck-font-size-big:1.4em;--ck-font-size-large:1.8em;--ck-ui-component-min-height:2.3em}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{margin:0;padding:0;border:0;background:transparent;text-decoration:none;vertical-align:middle;transition:none;word-wrap:break-word}.ck.ck-reset_all,.ck.ck-reset_all *{border-collapse:collapse;font:normal normal normal var(--ck-font-size-base)/var(--ck-line-height-base) var(--ck-font-face);color:var(--ck-color-text);text-align:left;white-space:nowrap;cursor:auto;float:none}.ck.ck-reset_all .ck-rtl *{text-align:right}.ck.ck-reset_all iframe{vertical-align:inherit}.ck.ck-reset_all textarea{white-space:pre-wrap}.ck.ck-reset_all input[type=password],.ck.ck-reset_all input[type=text],.ck.ck-reset_all textarea{cursor:text}.ck.ck-reset_all input[type=password][disabled],.ck.ck-reset_all input[type=text][disabled],.ck.ck-reset_all textarea[disabled]{cursor:default}.ck.ck-reset_all fieldset{padding:10px;border:2px groove #dfdee3}.ck.ck-reset_all button::-moz-focus-inner{padding:0;border:0}:root{--ck-border-radius:2px;--ck-inner-shadow:2px 2px 3px var(--ck-color-shadow-inner) inset;--ck-drop-shadow:0 1px 2px 1px var(--ck-color-shadow-drop);--ck-spacing-unit:0.6em;--ck-spacing-large:calc(var(--ck-spacing-unit) * 1.5);--ck-spacing-standard:var(--ck-spacing-unit);--ck-spacing-medium:calc(var(--ck-spacing-unit) * 0.8);--ck-spacing-small:calc(var(--ck-spacing-unit) * 0.5);--ck-spacing-tiny:calc(var(--ck-spacing-unit) * 0.3);--ck-spacing-extra-tiny:calc(var(--ck-spacing-unit) * 0.16)}"
 
 /***/ }),
-/* 45 */
+/* 26 */
 /***/ (function(module, exports) {
 
 
@@ -1319,11 +1186,11 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 46 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(47);
+var content = __webpack_require__(28);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1337,24 +1204,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 47 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-editor__editable:not(.ck-editor__nested-editable){border-radius:0}.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0}.ck.ck-editor__editable_inline{overflow:auto;padding:0 var(--ck-spacing-standard);border:1px solid transparent}.ck.ck-editor__editable_inline>:first-child{margin-top:var(--ck-spacing-large)}.ck.ck-editor__editable_inline>:last-child{margin-bottom:var(--ck-spacing-large)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_n]:after{border-bottom-color:var(--ck-color-base-foreground)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_s]:after{border-top-color:var(--ck-color-base-foreground)}"
 
 /***/ }),
-/* 48 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(49);
+var content = __webpack_require__(30);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1368,24 +1235,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 49 */
+/* 30 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-label{display:block}.ck.ck-voice-label{display:none}.ck.ck-label{font-weight:700}"
 
 /***/ }),
-/* 50 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(51);
+var content = __webpack_require__(32);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1399,24 +1266,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 51 */
+/* 32 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-sticky-panel .ck-sticky-panel__content_sticky{z-index:var(--ck-z-modal);position:fixed;top:0}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky_bottom-limit{top:auto;position:absolute}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{box-shadow:var(--ck-drop-shadow),0 0;border-width:0 1px 1px;border-top-left-radius:0;border-top-right-radius:0}"
 
 /***/ }),
-/* 52 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(53);
+var content = __webpack_require__(34);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1430,24 +1297,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 53 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-toolbar{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;display:flex;flex-flow:row wrap;align-items:center}.ck.ck-toolbar.ck-toolbar_vertical{flex-direction:column}.ck.ck-toolbar.ck-toolbar_floating{flex-wrap:nowrap}.ck.ck-toolbar__separator{display:inline-block}.ck.ck-toolbar__newline{display:block;width:100%}.ck.ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-toolbar,.ck.ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-toolbar{background:var(--ck-color-toolbar-background);padding:0 var(--ck-spacing-small);border:1px solid var(--ck-color-toolbar-border)}.ck.ck-toolbar>*{margin-right:var(--ck-spacing-small);margin-top:var(--ck-spacing-small);margin-bottom:var(--ck-spacing-small)}.ck.ck-toolbar.ck-toolbar_vertical{padding:0}.ck.ck-toolbar.ck-toolbar_vertical>*{width:100%;margin:0;border-radius:0;border:0}.ck.ck-toolbar>:last-child{margin-right:0}.ck-toolbar-container .ck.ck-toolbar{border:0}.ck.ck-toolbar__separator{align-self:stretch;width:1px;margin-top:0;margin-bottom:0;background:var(--ck-color-toolbar-border)}.ck.ck-toolbar__newline{margin:0}"
 
 /***/ }),
-/* 54 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(55);
+var content = __webpack_require__(36);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1461,24 +1328,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 55 */
+/* 36 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-editor{position:relative}.ck.ck-editor .ck-editor__top .ck-sticky-panel .ck-toolbar{z-index:var(--ck-z-modal)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-bottom-width:0}.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar{border-bottom-width:1px;border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:0}.ck.ck-editor__main>.ck-editor__editable{background:var(--ck-color-base-background);border-radius:0}.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){border-color:var(--ck-color-base-border)}"
 
 /***/ }),
-/* 56 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(57);
+var content = __webpack_require__(38);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1492,24 +1359,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 57 */
+/* 38 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-icon{vertical-align:middle}:root{--ck-icon-size:calc(var(--ck-line-height-base) * var(--ck-font-size-normal))}.ck.ck-icon{width:var(--ck-icon-size);height:var(--ck-icon-size);font-size:.8333350694em;will-change:transform}.ck.ck-icon,.ck.ck-icon *{color:inherit;cursor:inherit}.ck.ck-icon *{fill:currentColor}"
 
 /***/ }),
-/* 58 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(59);
+var content = __webpack_require__(40);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1523,24 +1390,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 59 */
+/* 40 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{position:absolute;pointer-events:none;-webkit-backface-visibility:hidden}.ck-tooltip{visibility:hidden;opacity:0;display:none;z-index:var(--ck-z-modal)}.ck-tooltip .ck-tooltip__text{display:inline-block}.ck-tooltip .ck-tooltip__text:after{content:\"\";width:0;height:0}:root{--ck-tooltip-arrow-size:5px}.ck.ck-tooltip{left:50%}.ck.ck-tooltip.ck-tooltip_s{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(100%)}.ck.ck-tooltip.ck-tooltip_s .ck-tooltip__text:after{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%);border-left-color:transparent;border-bottom-color:var(--ck-color-tooltip-background);border-right-color:transparent;border-top-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-bottom-width:var(--ck-tooltip-arrow-size);border-right-width:var(--ck-tooltip-arrow-size);border-top-width:0}.ck.ck-tooltip.ck-tooltip_n{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(-100%)}.ck.ck-tooltip.ck-tooltip_n .ck-tooltip__text:after{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%);border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent;border-top-color:var(--ck-color-tooltip-background);border-left-width:var(--ck-tooltip-arrow-size);border-bottom-width:0;border-right-width:var(--ck-tooltip-arrow-size);border-top-width:var(--ck-tooltip-arrow-size)}.ck.ck-tooltip .ck-tooltip__text{border-radius:0}.ck-rounded-corners .ck.ck-tooltip .ck-tooltip__text,.ck.ck-tooltip .ck-tooltip__text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-tooltip .ck-tooltip__text{font-size:.9em;line-height:1.5;color:var(--ck-color-tooltip-text);padding:var(--ck-spacing-small) var(--ck-spacing-medium);background:var(--ck-color-tooltip-background);position:relative;left:-50%}.ck.ck-tooltip .ck-tooltip__text:after{border-style:solid;left:50%}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{transition:opacity .2s ease-in-out .2s}"
 
 /***/ }),
-/* 60 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(61);
+var content = __webpack_require__(42);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1554,24 +1421,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 61 */
+/* 42 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-button,a.ck.ck-button{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:block}@media (hover:none){.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:none}}.ck.ck-button,a.ck.ck-button{position:relative;display:inline-flex;align-items:center;justify-content:left}.ck.ck-button.ck-button_with-text .ck-button__label,a.ck.ck-button.ck-button_with-text .ck-button__label{display:inline-block}.ck.ck-button:not(.ck-button_with-text),a.ck.ck-button:not(.ck-button_with-text){justify-content:center}.ck.ck-button:hover .ck-tooltip,a.ck.ck-button:hover .ck-tooltip{visibility:visible;opacity:1}.ck.ck-button .ck-button__label,.ck.ck-button:focus:not(:hover) .ck-tooltip,a.ck.ck-button .ck-button__label,a.ck.ck-button:focus:not(:hover) .ck-tooltip{display:none}.ck.ck-button,a.ck.ck-button{background:var(--ck-color-button-default-background)}.ck.ck-button:not(.ck-disabled):hover,a.ck.ck-button:not(.ck-disabled):hover{background:var(--ck-color-button-default-hover-background)}.ck.ck-button:not(.ck-disabled):active,a.ck.ck-button:not(.ck-disabled):active{background:var(--ck-color-button-default-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-default-active-shadow)}.ck.ck-button.ck-disabled,a.ck.ck-button.ck-disabled{background:var(--ck-color-button-default-disabled-background)}.ck.ck-button,a.ck.ck-button{border-radius:0}.ck-rounded-corners .ck.ck-button,.ck-rounded-corners a.ck.ck-button,.ck.ck-button.ck-rounded-corners,a.ck.ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button,a.ck.ck-button{white-space:nowrap;cursor:default;vertical-align:middle;padding:var(--ck-spacing-tiny);text-align:center;min-width:var(--ck-ui-component-min-height);min-height:var(--ck-ui-component-min-height);line-height:1;font-size:inherit;border:1px solid transparent;transition:box-shadow .2s ease-in-out;-webkit-appearance:none}.ck.ck-button:active,.ck.ck-button:focus,a.ck.ck-button:active,a.ck.ck-button:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),0 0;border-color:transparent}.ck.ck-button.ck-disabled:active,.ck.ck-button.ck-disabled:focus,a.ck.ck-button.ck-disabled:active,a.ck.ck-button.ck-disabled:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),0 0}.ck.ck-button.ck-disabled .ck-button__icon,a.ck.ck-button.ck-disabled .ck-button__icon{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-disabled .ck-button__label,a.ck.ck-button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-button_with-text,a.ck.ck-button.ck-button_with-text{padding:var(--ck-spacing-tiny) var(--ck-spacing-standard)}.ck.ck-button.ck-button_with-text .ck-button__icon,a.ck.ck-button.ck-button_with-text .ck-button__icon{margin-left:calc(-1 * var(--ck-spacing-small));margin-right:var(--ck-spacing-small)}.ck.ck-button.ck-on,a.ck.ck-button.ck-on{background:var(--ck-color-button-on-background)}.ck.ck-button.ck-on:not(.ck-disabled):hover,a.ck.ck-button.ck-on:not(.ck-disabled):hover{background:var(--ck-color-button-on-hover-background)}.ck.ck-button.ck-on:not(.ck-disabled):active,a.ck.ck-button.ck-on:not(.ck-disabled):active{background:var(--ck-color-button-on-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-on-active-shadow)}.ck.ck-button.ck-on.ck-disabled,a.ck.ck-button.ck-on.ck-disabled{background:var(--ck-color-button-on-disabled-background)}.ck.ck-button.ck-button-save,a.ck.ck-button.ck-button-save{color:var(--ck-color-button-save)}.ck.ck-button.ck-button-cancel,a.ck.ck-button.ck-button-cancel{color:var(--ck-color-button-cancel)}.ck.ck-button .ck-button__icon use,.ck.ck-button .ck-button__icon use *,a.ck.ck-button .ck-button__icon use,a.ck.ck-button .ck-button__icon use *{color:inherit}.ck.ck-button .ck-button__label,a.ck.ck-button .ck-button__label{font-size:inherit;font-weight:inherit;color:inherit;cursor:inherit;vertical-align:middle}.ck.ck-button-action,a.ck.ck-button-action{background:var(--ck-color-button-action-background)}.ck.ck-button-action:not(.ck-disabled):hover,a.ck.ck-button-action:not(.ck-disabled):hover{background:var(--ck-color-button-action-hover-background)}.ck.ck-button-action:not(.ck-disabled):active,a.ck.ck-button-action:not(.ck-disabled):active{background:var(--ck-color-button-action-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-action-active-shadow)}.ck.ck-button-action.ck-disabled,a.ck.ck-button-action.ck-disabled{background:var(--ck-color-button-action-disabled-background)}.ck.ck-button-action,a.ck.ck-button-action{color:var(--ck-color-button-action-text)}.ck.ck-button-bold,a.ck.ck-button-bold{font-weight:700}"
 
 /***/ }),
-/* 62 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(63);
+var content = __webpack_require__(44);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1585,588 +1452,24 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 63 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-content blockquote{overflow:hidden;padding-right:1.5em;padding-left:1.5em;margin-left:0;font-style:italic;border-left:5px solid #ccc}"
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(65);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck .ck-widget.ck-widget_selectable{position:relative}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{visibility:hidden;position:absolute}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{display:block}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{visibility:visible}:root{--ck-widget-outline-thickness:3px;--ck-widget-handler-icon-size:16px;--ck-widget-handler-animation-duration:200ms;--ck-widget-handler-animation-curve:ease;--ck-color-widget-blurred-border:#dedede;--ck-color-widget-hover-border:#ffc83d;--ck-color-widget-editable-focus-background:var(--ck-color-base-background);--ck-color-widget-drag-handler-icon-color:var(--ck-color-base-background)}.ck .ck-widget{margin:var(--ck-spacing-standard) 0;padding:0;outline-width:var(--ck-widget-outline-thickness);outline-style:solid;outline-color:transparent;transition:outline-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selected,.ck .ck-widget.ck-widget_selected:hover{outline:var(--ck-widget-outline-thickness) solid var(--ck-color-focus-border)}.ck .ck-widget:hover{outline-color:var(--ck-color-widget-hover-border)}.ck .ck-editor__nested-editable{border:1px solid transparent}.ck .ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck .ck-editor__nested-editable:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0;background-color:var(--ck-color-widget-editable-focus-background)}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler{padding:4px;box-sizing:border-box;background-color:transparent;opacity:0;transition:background-color var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),visibility var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve),opacity var(--ck-widget-handler-animation-duration) var(--ck-widget-handler-animation-curve);border-radius:var(--ck-border-radius) var(--ck-border-radius) 0 0;transform:translateY(-100%);left:calc(0px - var(--ck-widget-outline-thickness))}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler:hover .ck-icon .ck-icon__selected-indicator{opacity:1}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon{width:var(--ck-widget-handler-icon-size);height:var(--ck-widget-handler-icon-size);color:var(--ck-color-widget-drag-handler-icon-color)}.ck .ck-widget.ck-widget_selectable .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{opacity:0;transition:opacity .3s var(--ck-widget-handler-animation-curve)}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler{opacity:1;background-color:var(--ck-color-focus-border)}.ck .ck-widget.ck-widget_selectable.ck-widget_selected .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator,.ck .ck-widget.ck-widget_selectable.ck-widget_selected:hover .ck-widget__selection-handler .ck-icon .ck-icon__selected-indicator{opacity:1}.ck .ck-widget.ck-widget_selectable:hover .ck-widget__selection-handler{opacity:1;background-color:var(--ck-color-widget-hover-border)}.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover{outline-color:var(--ck-color-widget-blurred-border)}.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected .ck-widget__selection-handler:hover,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler,.ck-editor__editable.ck-blurred .ck-widget.ck-widget_selected:hover .ck-widget__selection-handler:hover{background:var(--ck-color-widget-blurred-border)}"
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(67);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-labeled-input .ck-labeled-input__error{font-size:var(--ck-font-size-small);color:var(--ck-color-base-error);margin-top:var(--ck-spacing-small)}"
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(69);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports) {
-
-module.exports = ":root{--ck-input-text-width:18em}.ck.ck-input-text{border-radius:0}.ck-rounded-corners .ck.ck-input-text,.ck.ck-input-text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-input-text{box-shadow:var(--ck-inner-shadow),0 0;background:var(--ck-color-input-background);border:1px solid var(--ck-color-input-border);padding:var(--ck-spacing-extra-tiny) var(--ck-spacing-medium);min-width:var(--ck-input-text-width);min-height:var(--ck-ui-component-min-height);transition-property:box-shadow,border;transition:.2s ease-in-out}.ck.ck-input-text:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text[readonly]{border:1px solid var(--ck-color-input-disabled-border);background:var(--ck-color-input-disabled-background);color:var(--ck-color-input-disabled-text)}.ck.ck-input-text[readonly]:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text.ck-error{border-color:var(--ck-color-input-error-border);animation:ck-text-input-shake .3s ease both}.ck.ck-input-text.ck-error:focus{box-shadow:var(--ck-focus-error-outer-shadow),var(--ck-inner-shadow)}@keyframes ck-text-input-shake{20%{transform:translateX(-2px)}40%{transform:translateX(2px)}60%{transform:translateX(-1px)}80%{transform:translateX(1px)}}"
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(71);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-text-alternative-form .ck-labeled-input{display:inline-block}.ck.ck-text-alternative-form .ck-label{display:none}.ck.ck-text-alternative-form{padding:var(--ck-spacing-standard)}.ck.ck-text-alternative-form:focus{outline:none}.ck.ck-text-alternative-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(73);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports) {
-
-module.exports = ":root{--ck-balloon-panel-arrow-z-index:calc(var(--ck-z-default) - 3)}.ck.ck-balloon-panel{display:none;position:absolute;z-index:var(--ck-z-modal)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{content:\"\";position:absolute}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_n]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_n]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_s]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_s]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel.ck-balloon-panel_visible{display:block}:root{--ck-balloon-arrow-offset:2px;--ck-balloon-arrow-height:10px;--ck-balloon-arrow-half-width:8px}.ck.ck-balloon-panel{border-radius:0}.ck-rounded-corners .ck.ck-balloon-panel,.ck.ck-balloon-panel.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-balloon-panel{box-shadow:var(--ck-drop-shadow),0 0;min-height:15px;background:var(--ck-color-panel-background);border:1px solid var(--ck-color-panel-border)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{width:0;height:0;border-style:solid}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:var(--ck-balloon-arrow-height);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:0}.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-color:transparent;border-right-color:transparent;border-top-color:transparent}.ck.ck-balloon-panel[class*=arrow_n]:after{border-bottom-color:var(--ck-color-panel-background);margin-top:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:0;border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:var(--ck-balloon-arrow-height)}.ck.ck-balloon-panel[class*=arrow_s]:before{border-top-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent}.ck.ck-balloon-panel[class*=arrow_s]:after{border-top-color:var(--ck-color-panel-background);margin-bottom:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:before{right:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:before{right:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}"
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(75);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-content .image{clear:both;text-align:center}.ck-content .image>img{display:block;margin:0 auto;max-width:100%}"
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(77);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-content .image{position:relative;overflow:hidden}.ck-content .image .ck-progress-bar{position:absolute;top:0;left:0}:root{--ck-image-upload-progress-line-width:30px}.ck-content .image.ck-appear{animation:fadeIn .7s}.ck-content .image .ck-progress-bar{height:2px;width:0;background:var(--ck-color-upload-bar-background);transition:width .1s}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}"
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(79);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-image-upload-complete-icon{display:block;position:absolute;top:10px;right:10px;border-radius:50%}.ck-image-upload-complete-icon:after{content:\"\";position:absolute}:root{--ck-color-image-upload-icon:#fff;--ck-color-image-upload-icon-background:#008a00;--ck-image-upload-icon-size:20px;--ck-image-upload-icon-width:2px}.ck-image-upload-complete-icon{width:var(--ck-image-upload-icon-size);height:var(--ck-image-upload-icon-size);opacity:0;background:var(--ck-color-image-upload-icon-background);animation-name:ck-upload-complete-icon-show,ck-upload-complete-icon-hide;animation-fill-mode:forwards,forwards;animation-duration:.5s,.5s;font-size:var(--ck-image-upload-icon-size);animation-delay:0ms,3s}.ck-image-upload-complete-icon:after{left:25%;top:50%;opacity:0;height:0;width:0;transform:scaleX(-1) rotate(135deg);transform-origin:left top;border-top:var(--ck-image-upload-icon-width) solid var(--ck-color-image-upload-icon);border-right:var(--ck-image-upload-icon-width) solid var(--ck-color-image-upload-icon);animation-name:ck-upload-complete-icon-check;animation-duration:.5s;animation-delay:.5s;animation-fill-mode:forwards;box-sizing:border-box}@keyframes ck-upload-complete-icon-show{0%{opacity:0}to{opacity:1}}@keyframes ck-upload-complete-icon-hide{0%{opacity:1}to{opacity:0}}@keyframes ck-upload-complete-icon-check{0%{opacity:1;width:0;height:0}33%{width:.3em;height:0}to{opacity:1;width:.3em;height:.45em}}"
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(81);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck .ck-upload-placeholder-loader{position:absolute;display:flex;align-items:center;justify-content:center;top:0;left:0}.ck .ck-upload-placeholder-loader:before{content:\"\";position:relative}:root{--ck-color-upload-placeholder-loader:#b3b3b3;--ck-upload-placeholder-loader-size:32px}.ck .ck-image-upload-placeholder{width:100%;margin:0}.ck .ck-upload-placeholder-loader{width:100%;height:100%}.ck .ck-upload-placeholder-loader:before{width:var(--ck-upload-placeholder-loader-size);height:var(--ck-upload-placeholder-loader-size);border-radius:50%;border-top:3px solid var(--ck-color-upload-placeholder-loader);border-right:2px solid transparent;animation:ck-upload-placeholder-loader 1s linear infinite}@keyframes ck-upload-placeholder-loader{to{transform:rotate(1turn)}}"
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(83);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-dropdown{display:inline-block;position:relative}.ck.ck-dropdown .ck-dropdown__arrow{pointer-events:none;z-index:var(--ck-z-default)}.ck.ck-dropdown .ck-button.ck-dropdown__button{width:100%}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-on .ck-tooltip{display:none}.ck.ck-dropdown .ck-dropdown__panel{-webkit-backface-visibility:hidden;display:none;z-index:var(--ck-z-modal);position:absolute;left:0;transform:translate3d(0,100%,0)}.ck.ck-dropdown .ck-dropdown__panel.ck-dropdown__panel-visible{display:inline-block;will-change:transform}:root{--ck-dropdown-arrow-size:calc(0.5 * var(--ck-icon-size))}.ck.ck-dropdown{font-size:inherit}.ck.ck-dropdown .ck-dropdown__arrow{right:var(--ck-spacing-standard);width:var(--ck-dropdown-arrow-size);margin-left:var(--ck-spacing-small)}.ck.ck-dropdown.ck-disabled .ck-dropdown__arrow{opacity:var(--ck-disabled-opacity)}.ck.ck-dropdown .ck-button.ck-dropdown__button:not(.ck-button_with-text){padding-left:var(--ck-spacing-small)}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-dropdown .ck-button.ck-dropdown__button.ck-on{border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-dropdown .ck-button.ck-dropdown__button .ck-button__label{width:7em;overflow:hidden;text-overflow:ellipsis}.ck.ck-dropdown__panel{box-shadow:var(--ck-drop-shadow),0 0;border-radius:0}.ck-rounded-corners .ck.ck-dropdown__panel,.ck.ck-dropdown__panel.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown__panel{background:var(--ck-color-dropdown-panel-background);border:1px solid var(--ck-color-dropdown-panel-border);bottom:0;min-width:100%}"
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(85);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-list{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;display:flex;flex-direction:column}.ck.ck-list .ck-list__item,.ck.ck-list .ck-list__separator{display:block}.ck.ck-list .ck-list__item>:focus{position:relative;z-index:var(--ck-z-default)}.ck.ck-list{border-radius:0}.ck-rounded-corners .ck.ck-list,.ck.ck-list.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-list{list-style-type:none;background:var(--ck-color-list-background)}.ck.ck-list__item{cursor:default;min-width:12em}.ck.ck-list__item .ck-button{min-height:unset;width:100%;text-align:left;border-radius:0;border:0;padding:calc(.2 * var(--ck-line-height-base) * var(--ck-font-size-base)) calc(.4 * var(--ck-line-height-base) * var(--ck-font-size-base))}.ck.ck-list__item .ck-button .ck-button__label{line-height:calc(1.2 * var(--ck-line-height-base) * var(--ck-font-size-base))}.ck.ck-list__item .ck-button:active{box-shadow:none}.ck.ck-list__item .ck-button.ck-on{background:var(--ck-color-list-button-on-background);color:var(--ck-color-list-button-on-text)}.ck.ck-list__item .ck-button.ck-on:hover:not(ck-disabled){background:var(--ck-color-list-button-on-background-focus)}.ck.ck-list__item .ck-button.ck-on:active{box-shadow:none}.ck.ck-list__item .ck-button:hover:not(.ck-disabled){background:var(--ck-color-list-button-hover-background)}.ck.ck-list__item .ck-switchbutton.ck-on{background:var(--ck-color-list-background);color:inherit}.ck.ck-list__item .ck-switchbutton.ck-on:hover:not(ck-disabled){background:var(--ck-color-list-button-hover-background);color:inherit}.ck.ck-list__separator{height:1px;width:100%;background:var(--ck-color-base-border)}"
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(87);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-button.ck-switchbutton .ck-button__toggle,.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{display:block}:root{--ck-switch-button-toggle-width:2.6153846154em;--ck-switch-button-toggle-inner-size:1.0769230769em;--ck-switch-button-toggle-spacing:1px}.ck.ck-button.ck-switchbutton .ck-button__label{margin-right:calc(2 * var(--ck-spacing-large))}.ck.ck-button.ck-switchbutton.ck-disabled .ck-button__toggle{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-switchbutton .ck-button__toggle{border-radius:0}.ck-rounded-corners .ck.ck-button.ck-switchbutton .ck-button__toggle,.ck.ck-button.ck-switchbutton .ck-button__toggle.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button.ck-switchbutton .ck-button__toggle{margin-left:auto;transition:background .4s ease;width:var(--ck-switch-button-toggle-width);background:var(--ck-color-switch-button-off-background)}.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{border-radius:0}.ck-rounded-corners .ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner,.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:calc(.5 * var(--ck-border-radius))}.ck.ck-button.ck-switchbutton .ck-button__toggle .ck-button__toggle__inner{margin:var(--ck-switch-button-toggle-spacing);width:var(--ck-switch-button-toggle-inner-size);height:var(--ck-switch-button-toggle-inner-size);background:var(--ck-color-switch-button-inner-background);transition:transform .3s ease}.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle{background:var(--ck-color-switch-button-on-background)}.ck.ck-button.ck-switchbutton.ck-on .ck-button__toggle .ck-button__toggle__inner{transform:translateX(1.3846153847em)}"
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(89);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-toolbar-dropdown .ck-toolbar{flex-wrap:nowrap}.ck.ck-toolbar-dropdown .ck-dropdown__panel .ck-button:focus{z-index:calc(var(--ck-z-default) + 1)}.ck.ck-toolbar-dropdown .ck-toolbar{border:0}"
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(91);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 91 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-dropdown .ck-dropdown__panel .ck-list{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list,.ck.ck-dropdown .ck-dropdown__panel .ck-list.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button,.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:first-child .ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button{border-radius:0}.ck-rounded-corners .ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button,.ck.ck-dropdown .ck-dropdown__panel .ck-list .ck-list__item:last-child .ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}"
-
-/***/ }),
-/* 92 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-heading_heading1{font-size:20px}.ck.ck-heading_heading2{font-size:17px}.ck.ck-heading_heading3{font-size:14px}.ck[class*=ck-heading_heading]{font-weight:700}.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__button .ck-button__label{width:8em}.ck.ck-dropdown.ck-heading-dropdown .ck-dropdown__panel .ck-list__item{min-width:18em}"
-
-/***/ }),
-/* 93 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(94);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 94 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-placeholder:before,.ck .ck-placeholder:before{content:attr(data-placeholder);pointer-events:none;cursor:text;color:var(--ck-color-engine-placeholder-text)}"
-
-/***/ }),
-/* 95 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(96);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 96 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-content .image>figcaption{color:#333;background-color:#f7f7f7;padding:.6em;font-size:.75em;outline-offset:-1px}"
-
-/***/ }),
-/* 97 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(98);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 98 */
-/***/ (function(module, exports) {
-
-module.exports = ":root{--ck-image-style-spacing:1.5em}.ck-content .image-style-align-center,.ck-content .image-style-align-left,.ck-content .image-style-align-right,.ck-content .image-style-side{max-width:50%}.ck-content .image-style-side{float:right;margin-left:var(--ck-image-style-spacing)}.ck-content .image-style-align-left{float:left;margin-right:var(--ck-image-style-spacing)}.ck-content .image-style-align-center{margin-left:auto;margin-right:auto}.ck-content .image-style-align-right{float:right;margin-left:var(--ck-image-style-spacing)}"
-
-/***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(100);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 100 */
+/* 44 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck .ck-link_selected{background:var(--ck-color-link-selected-background)}"
 
 /***/ }),
-/* 101 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(102);
+var content = __webpack_require__(46);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -2180,24 +1483,117 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 102 */
+/* 46 */
+/***/ (function(module, exports) {
+
+module.exports = ":root{--ck-balloon-panel-arrow-z-index:calc(var(--ck-z-default) - 3)}.ck.ck-balloon-panel{display:none;position:absolute;z-index:var(--ck-z-modal)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{content:\"\";position:absolute}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_n]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_n]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_s]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_s]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel.ck-balloon-panel_visible{display:block}:root{--ck-balloon-arrow-offset:2px;--ck-balloon-arrow-height:10px;--ck-balloon-arrow-half-width:8px}.ck.ck-balloon-panel{border-radius:0}.ck-rounded-corners .ck.ck-balloon-panel,.ck.ck-balloon-panel.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-balloon-panel{box-shadow:var(--ck-drop-shadow),0 0;min-height:15px;background:var(--ck-color-panel-background);border:1px solid var(--ck-color-panel-border)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{width:0;height:0;border-style:solid}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:var(--ck-balloon-arrow-height);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:0}.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-color:transparent;border-right-color:transparent;border-top-color:transparent}.ck.ck-balloon-panel[class*=arrow_n]:after{border-bottom-color:var(--ck-color-panel-background);margin-top:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:0;border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:var(--ck-balloon-arrow-height)}.ck.ck-balloon-panel[class*=arrow_s]:before{border-top-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent}.ck.ck-balloon-panel[class*=arrow_s]:after{border-top-color:var(--ck-color-panel-background);margin-bottom:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:before{right:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:before{right:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}"
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(48);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"singleton":true,"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(4)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports) {
+
+module.exports = ".ck.ck-labeled-input .ck-labeled-input__error{font-size:var(--ck-font-size-small);color:var(--ck-color-base-error);margin-top:var(--ck-spacing-small)}"
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(50);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"singleton":true,"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(4)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports) {
+
+module.exports = ":root{--ck-input-text-width:18em}.ck.ck-input-text{border-radius:0}.ck-rounded-corners .ck.ck-input-text,.ck.ck-input-text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-input-text{box-shadow:var(--ck-inner-shadow),0 0;background:var(--ck-color-input-background);border:1px solid var(--ck-color-input-border);padding:var(--ck-spacing-extra-tiny) var(--ck-spacing-medium);min-width:var(--ck-input-text-width);min-height:var(--ck-ui-component-min-height);transition-property:box-shadow,border;transition:.2s ease-in-out}.ck.ck-input-text:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text[readonly]{border:1px solid var(--ck-color-input-disabled-border);background:var(--ck-color-input-disabled-background);color:var(--ck-color-input-disabled-text)}.ck.ck-input-text[readonly]:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text.ck-error{border-color:var(--ck-color-input-error-border);animation:ck-text-input-shake .3s ease both}.ck.ck-input-text.ck-error:focus{box-shadow:var(--ck-focus-error-outer-shadow),var(--ck-inner-shadow)}@keyframes ck-text-input-shake{20%{transform:translateX(-2px)}40%{transform:translateX(2px)}60%{transform:translateX(-1px)}80%{transform:translateX(1px)}}"
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(52);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"singleton":true,"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(4)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+/* 52 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-link-form .ck-labeled-input{display:inline-block}.ck.ck-link-form .ck-label{display:none}.ck.ck-link-form{padding:var(--ck-spacing-standard)}.ck.ck-link-form:focus{outline:none}.ck.ck-link-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
 
 /***/ }),
-/* 103 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(104);
+var content = __webpack_require__(54);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -2211,182 +1607,27 @@ var options = {"singleton":true,"hmr":true}
 options.transform = transform
 options.insertInto = undefined;
 
-var update = __webpack_require__(2)(content, options);
+var update = __webpack_require__(4)(content, options);
 
 if(content.locals) module.exports = content.locals;
 
 if(false) {}
 
 /***/ }),
-/* 104 */
+/* 54 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck.ck-link-actions .ck-link-actions__preview{display:inline-block}.ck.ck-link-actions .ck-link-actions__preview .ck-button__label{overflow:hidden}.ck.ck-link-actions{padding:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-button.ck-link-actions__preview{padding-left:0;padding-right:0}.ck.ck-link-actions .ck-button.ck-link-actions__preview,.ck.ck-link-actions .ck-button.ck-link-actions__preview:active,.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus,.ck.ck-link-actions .ck-button.ck-link-actions__preview:hover{background:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:active{box-shadow:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus .ck-button__label{text-decoration:underline}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label{padding:0 var(--ck-spacing-medium);color:var(--ck-color-link-default);text-overflow:ellipsis;cursor:pointer;max-width:var(--ck-input-text-width);min-width:3em;text-align:center}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label:hover{text-decoration:underline}.ck.ck-link-actions:focus{outline:none}.ck.ck-link-actions>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
 
 /***/ }),
-/* 105 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(106);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 106 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-media__wrapper>:not(.ck-media__placeholder){pointer-events:none}.ck-media__wrapper .ck-media__placeholder{display:flex;flex-direction:column;align-items:center}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url .ck-tooltip{display:block}@media (hover:none){.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url .ck-tooltip{display:none}}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url{max-width:100%;position:relative}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url:hover .ck-tooltip{visibility:visible;opacity:1}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url .ck-media__placeholder__url__text{overflow:hidden;display:block}.ck-media__wrapper[data-oembed-url*=\"facebook.com\"] .ck-media__placeholder__icon *,.ck-media__wrapper[data-oembed-url*=\"google.com/maps\"] .ck-media__placeholder__icon *,.ck-media__wrapper[data-oembed-url*=\"instagram.com\"] .ck-media__placeholder__icon *,.ck-media__wrapper[data-oembed-url*=\"twitter.com\"] .ck-media__placeholder__icon *{display:none}:root{--ck-media-embed-placeholder-icon-size:3em;--ck-color-media-embed-placeholder-url-text:#757575;--ck-color-media-embed-placeholder-url-text-hover:var(--ck-color-base-text)}.ck-media__wrapper{margin:0 auto}.ck-media__wrapper .ck-media__placeholder{padding:calc(3 * var(--ck-spacing-standard));background:var(--ck-color-base-foreground)}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__icon{min-width:var(--ck-media-embed-placeholder-icon-size);height:var(--ck-media-embed-placeholder-icon-size);margin-bottom:var(--ck-spacing-large);background-position:50%;background-size:cover}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__icon .ck-icon{width:100%;height:100%}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url .ck-media__placeholder__url__text{color:var(--ck-color-media-embed-placeholder-url-text);white-space:nowrap;text-align:center;font-style:italic;text-overflow:ellipsis}.ck-media__wrapper .ck-media__placeholder .ck-media__placeholder__url .ck-media__placeholder__url__text:hover{color:var(--ck-color-media-embed-placeholder-url-text-hover);cursor:pointer;text-decoration:underline}.ck-media__wrapper[data-oembed-url*=\"open.spotify.com\"]{max-width:300px;max-height:380px}.ck-media__wrapper[data-oembed-url*=\"twitter.com\"] .ck.ck-media__placeholder{background:linear-gradient(90deg,#71c6f4,#0d70a5)}.ck-media__wrapper[data-oembed-url*=\"twitter.com\"] .ck.ck-media__placeholder .ck-media__placeholder__icon{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgNDAwIj48cGF0aCBkPSJNNDAwIDIwMGMwIDExMC41LTg5LjUgMjAwLTIwMCAyMDBTMCAzMTAuNSAwIDIwMCA4OS41IDAgMjAwIDBzMjAwIDg5LjUgMjAwIDIwMHpNMTYzLjQgMzA1LjVjODguNyAwIDEzNy4yLTczLjUgMTM3LjItMTM3LjIgMC0yLjEgMC00LjItLjEtNi4yIDkuNC02LjggMTcuNi0xNS4zIDI0LjEtMjUtOC42IDMuOC0xNy45IDYuNC0yNy43IDcuNiAxMC02IDE3LjYtMTUuNCAyMS4yLTI2LjctOS4zIDUuNS0xOS42IDkuNS0zMC42IDExLjctOC44LTkuNC0yMS4zLTE1LjItMzUuMi0xNS4yLTI2LjYgMC00OC4yIDIxLjYtNDguMiA0OC4yIDAgMy44LjQgNy41IDEuMyAxMS00MC4xLTItNzUuNi0yMS4yLTk5LjQtNTAuNC00LjEgNy4xLTYuNSAxNS40LTYuNSAyNC4yIDAgMTYuNyA4LjUgMzEuNSAyMS41IDQwLjEtNy45LS4yLTE1LjMtMi40LTIxLjgtNnYuNmMwIDIzLjQgMTYuNiA0Mi44IDM4LjcgNDcuMy00IDEuMS04LjMgMS43LTEyLjcgMS43LTMuMSAwLTYuMS0uMy05LjEtLjkgNi4xIDE5LjIgMjMuOSAzMy4xIDQ1IDMzLjUtMTYuNSAxMi45LTM3LjMgMjAuNi01OS45IDIwLjYtMy45IDAtNy43LS4yLTExLjUtLjcgMjEuMSAxMy44IDQ2LjUgMjEuOCA3My43IDIxLjgiIGZpbGw9IiNmZmYiLz48L3N2Zz4=)}.ck-media__wrapper[data-oembed-url*=\"twitter.com\"] .ck.ck-media__placeholder .ck-media__placeholder__url__text{color:#b8e6ff}.ck-media__wrapper[data-oembed-url*=\"twitter.com\"] .ck.ck-media__placeholder .ck-media__placeholder__url__text:hover{color:#fff}.ck-media__wrapper[data-oembed-url*=\"google.com/maps\"] .ck-media__placeholder__icon{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNTAuMzc4IiBoZWlnaHQ9IjI1NC4xNjciIHZpZXdCb3g9IjAgMCA2Ni4yNDYgNjcuMjQ4Ij48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTcyLjUzMSAtMjE4LjQ1NSkgc2NhbGUoLjk4MDEyKSI+PHJlY3Qgcnk9IjUuMjM4IiByeD0iNS4yMzgiIHk9IjIzMS4zOTkiIHg9IjE3Ni4wMzEiIGhlaWdodD0iNjAuMDk5IiB3aWR0aD0iNjAuMDk5IiBmaWxsPSIjMzRhNjY4IiBwYWludC1vcmRlcj0ibWFya2VycyBzdHJva2UgZmlsbCIvPjxwYXRoIGQ9Ik0yMDYuNDc3IDI2MC45bC0yOC45ODcgMjguOTg3YTUuMjE4IDUuMjE4IDAgMCAwIDMuNzggMS42MWg0OS42MjFjMS42OTQgMCAzLjE5LS43OTggNC4xNDYtMi4wMzd6IiBmaWxsPSIjNWM4OGM1Ii8+PHBhdGggZD0iTTIyNi43NDIgMjIyLjk4OGMtOS4yNjYgMC0xNi43NzcgNy4xNy0xNi43NzcgMTYuMDE0LjAwNyAyLjc2Mi42NjMgNS40NzQgMi4wOTMgNy44NzUuNDMuNzAzLjgzIDEuNDA4IDEuMTkgMi4xMDcuMzMzLjUwMi42NSAxLjAwNS45NSAxLjUwOC4zNDMuNDc3LjY3My45NTcuOTg4IDEuNDQgMS4zMSAxLjc2OSAyLjUgMy41MDIgMy42MzcgNS4xNjguNzkzIDEuMjc1IDEuNjgzIDIuNjQgMi40NjYgMy45OSAyLjM2MyA0LjA5NCA0LjAwNyA4LjA5MiA0LjYgMTMuOTE0di4wMTJjLjE4Mi40MTIuNTE2LjY2Ni44NzkuNjY3LjQwMy0uMDAxLjc2OC0uMzE0LjkzLS43OTkuNjAzLTUuNzU2IDIuMjM4LTkuNzI5IDQuNTg1LTEzLjc5NC43ODItMS4zNSAxLjY3My0yLjcxNSAyLjQ2NS0zLjk5IDEuMTM3LTEuNjY2IDIuMzI4LTMuNCAzLjYzOC01LjE2OS4zMTUtLjQ4Mi42NDUtLjk2Mi45ODgtMS40MzkuMy0uNTAzLjYxNy0xLjAwNi45NS0xLjUwOC4zNTktLjcuNzYtMS40MDQgMS4xOS0yLjEwNyAxLjQyNi0yLjQwMiAyLTUuMTE0IDIuMDA0LTcuODc1IDAtOC44NDQtNy41MTEtMTYuMDE0LTE2Ljc3Ni0xNi4wMTR6IiBmaWxsPSIjZGQ0YjNlIiBwYWludC1vcmRlcj0ibWFya2VycyBzdHJva2UgZmlsbCIvPjxlbGxpcHNlIHJ5PSI1LjU2NCIgcng9IjUuODI4IiBjeT0iMjM5LjAwMiIgY3g9IjIyNi43NDIiIGZpbGw9IiM4MDJkMjciIHBhaW50LW9yZGVyPSJtYXJrZXJzIHN0cm9rZSBmaWxsIi8+PHBhdGggZD0iTTE5MC4zMDEgMjM3LjI4M2MtNC42NyAwLTguNDU3IDMuODUzLTguNDU3IDguNjA2czMuNzg2IDguNjA3IDguNDU3IDguNjA3YzMuMDQzIDAgNC44MDYtLjk1OCA2LjMzNy0yLjUxNiAxLjUzLTEuNTU3IDIuMDg3LTMuOTEzIDIuMDg3LTYuMjkgMC0uMzYyLS4wMjMtLjcyMi0uMDY0LTEuMDc5aC04LjI1N3YzLjA0M2g0Ljg1Yy0uMTk3Ljc1OS0uNTMxIDEuNDUtMS4wNTggMS45ODYtLjk0Mi45NTgtMi4wMjggMS41NDgtMy45MDEgMS41NDgtMi44NzYgMC01LjIwOC0yLjM3Mi01LjIwOC01LjI5OSAwLTIuOTI2IDIuMzMyLTUuMjk5IDUuMjA4LTUuMjk5IDEuMzk5IDAgMi42MTguNDA3IDMuNTg0IDEuMjkzbDIuMzgxLTIuMzhjMC0uMDAyLS4wMDMtLjAwNC0uMDA0LS4wMDUtMS41ODgtMS41MjQtMy42Mi0yLjIxNS01Ljk1NS0yLjIxNXptNC40MyA1LjY2bC4wMDMuMDA2di0uMDAzeiIgZmlsbD0iI2ZmZiIgcGFpbnQtb3JkZXI9Im1hcmtlcnMgc3Ryb2tlIGZpbGwiLz48cGF0aCBkPSJNMjE1LjE4NCAyNTEuOTI5bC03Ljk4IDcuOTc5IDI4LjQ3NyAyOC40NzVhNS4yMzMgNS4yMzMgMCAwIDAgLjQ0OS0yLjEyM3YtMzEuMTY1Yy0uNDY5LjY3NS0uOTM0IDEuMzQ5LTEuMzgyIDIuMDA1LS43OTIgMS4yNzUtMS42ODIgMi42NC0yLjQ2NSAzLjk5LTIuMzQ3IDQuMDY1LTMuOTgyIDguMDM4LTQuNTg1IDEzLjc5NC0uMTYyLjQ4NS0uNTI3Ljc5OC0uOTMuNzk5LS4zNjMtLjAwMS0uNjk3LS4yNTUtLjg3OS0uNjY3di0uMDEyYy0uNTkzLTUuODIyLTIuMjM3LTkuODItNC42LTEzLjkxNC0uNzgzLTEuMzUtMS42NzMtMi43MTUtMi40NjYtMy45OS0xLjEzNy0xLjY2Ni0yLjMyNy0zLjQtMy42MzctNS4xNjlsLS4wMDItLjAwM3oiIGZpbGw9IiNjM2MzYzMiLz48cGF0aCBkPSJNMjEyLjk4MyAyNDguNDk1bC0zNi45NTIgMzYuOTUzdi44MTJhNS4yMjcgNS4yMjcgMCAwIDAgNS4yMzggNS4yMzhoMS4wMTVsMzUuNjY2LTM1LjY2NmExMzYuMjc1IDEzNi4yNzUgMCAwIDAtMi43NjQtMy45IDM3LjU3NSAzNy41NzUgMCAwIDAtLjk4OS0xLjQ0IDM1LjEyNyAzNS4xMjcgMCAwIDAtLjk1LTEuNTA4Yy0uMDgzLS4xNjItLjE3Ni0uMzI2LS4yNjQtLjQ4OXoiIGZpbGw9IiNmZGRjNGYiIHBhaW50LW9yZGVyPSJtYXJrZXJzIHN0cm9rZSBmaWxsIi8+PHBhdGggZD0iTTIxMS45OTggMjYxLjA4M2wtNi4xNTIgNi4xNTEgMjQuMjY0IDI0LjI2NGguNzgxYTUuMjI3IDUuMjI3IDAgMCAwIDUuMjM5LTUuMjM4di0xLjA0NXoiIGZpbGw9IiNmZmYiIHBhaW50LW9yZGVyPSJtYXJrZXJzIHN0cm9rZSBmaWxsIi8+PC9nPjwvc3ZnPg==)}.ck-media__wrapper[data-oembed-url*=\"facebook.com\"] .ck-media__placeholder{background:#4268b3}.ck-media__wrapper[data-oembed-url*=\"facebook.com\"] .ck-media__placeholder .ck-media__placeholder__icon{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNCIgaGVpZ2h0PSIxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05NjcuNDg0IDBINTYuNTE3QzI1LjMwNCAwIDAgMjUuMzA0IDAgNTYuNTE3djkxMC45NjZDMCA5OTguNjk0IDI1LjI5NyAxMDI0IDU2LjUyMiAxMDI0SDU0N1Y2MjhINDE0VjQ3M2gxMzNWMzU5LjAyOWMwLTEzMi4yNjIgODAuNzczLTIwNC4yODIgMTk4Ljc1Ni0yMDQuMjgyIDU2LjUxMyAwIDEwNS4wODYgNC4yMDggMTE5LjI0NCA2LjA4OVYyOTlsLTgxLjYxNi4wMzdjLTYzLjk5MyAwLTc2LjM4NCAzMC40OTItNzYuMzg0IDc1LjIzNlY0NzNoMTUzLjQ4N2wtMTkuOTg2IDE1NUg3MDd2Mzk2aDI2MC40ODRjMzEuMjEzIDAgNTYuNTE2LTI1LjMwMyA1Ni41MTYtNTYuNTE2VjU2LjUxNUMxMDI0IDI1LjMwMyA5OTguNjk3IDAgOTY3LjQ4NCAwIiBmaWxsPSIjRkZGRkZFIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=)}.ck-media__wrapper[data-oembed-url*=\"facebook.com\"] .ck-media__placeholder .ck-media__placeholder__url__text{color:#cdf}.ck-media__wrapper[data-oembed-url*=\"facebook.com\"] .ck-media__placeholder .ck-media__placeholder__url__text:hover{color:#fff}.ck-media__wrapper[data-oembed-url*=\"instagram.com\"] .ck-media__placeholder{background:linear-gradient(-135deg,#1400c8,#b900b4,#f50000)}.ck-media__wrapper[data-oembed-url*=\"instagram.com\"] .ck-media__placeholder .ck-media__placeholder__icon{background-image:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTA0IiBoZWlnaHQ9IjUwNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHBhdGggaWQ9ImEiIGQ9Ik0wIC4xNTloNTAzLjg0MVY1MDMuOTRIMHoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBkPSJNMjUxLjkyMS4xNTljLTY4LjQxOCAwLTc2Ljk5Ny4yOS0xMDMuODY3IDEuNTE2LTI2LjgxNCAxLjIyMy00NS4xMjcgNS40ODItNjEuMTUxIDExLjcxLTE2LjU2NiA2LjQzNy0zMC42MTUgMTUuMDUxLTQ0LjYyMSAyOS4wNTYtMTQuMDA1IDE0LjAwNi0yMi42MTkgMjguMDU1LTI5LjA1NiA0NC42MjEtNi4yMjggMTYuMDI0LTEwLjQ4NyAzNC4zMzctMTEuNzEgNjEuMTUxQy4yOSAxNzUuMDgzIDAgMTgzLjY2MiAwIDI1Mi4wOGMwIDY4LjQxNy4yOSA3Ni45OTYgMS41MTYgMTAzLjg2NiAxLjIyMyAyNi44MTQgNS40ODIgNDUuMTI3IDExLjcxIDYxLjE1MSA2LjQzNyAxNi41NjYgMTUuMDUxIDMwLjYxNSAyOS4wNTYgNDQuNjIxIDE0LjAwNiAxNC4wMDUgMjguMDU1IDIyLjYxOSA0NC42MjEgMjkuMDU3IDE2LjAyNCA2LjIyNyAzNC4zMzcgMTAuNDg2IDYxLjE1MSAxMS43MDkgMjYuODcgMS4yMjYgMzUuNDQ5IDEuNTE2IDEwMy44NjcgMS41MTYgNjguNDE3IDAgNzYuOTk2LS4yOSAxMDMuODY2LTEuNTE2IDI2LjgxNC0xLjIyMyA0NS4xMjctNS40ODIgNjEuMTUxLTExLjcwOSAxNi41NjYtNi40MzggMzAuNjE1LTE1LjA1MiA0NC42MjEtMjkuMDU3IDE0LjAwNS0xNC4wMDYgMjIuNjE5LTI4LjA1NSAyOS4wNTctNDQuNjIxIDYuMjI3LTE2LjAyNCAxMC40ODYtMzQuMzM3IDExLjcwOS02MS4xNTEgMS4yMjYtMjYuODcgMS41MTYtMzUuNDQ5IDEuNTE2LTEwMy44NjYgMC02OC40MTgtLjI5LTc2Ljk5Ny0xLjUxNi0xMDMuODY3LTEuMjIzLTI2LjgxNC01LjQ4Mi00NS4xMjctMTEuNzA5LTYxLjE1MS02LjQzOC0xNi41NjYtMTUuMDUyLTMwLjYxNS0yOS4wNTctNDQuNjIxLTE0LjAwNi0xNC4wMDUtMjguMDU1LTIyLjYxOS00NC42MjEtMjkuMDU2LTE2LjAyNC02LjIyOC0zNC4zMzctMTAuNDg3LTYxLjE1MS0xMS43MUMzMjguOTE3LjQ0OSAzMjAuMzM4LjE1OSAyNTEuOTIxLjE1OXptMCA0NS4zOTFjNjcuMjY1IDAgNzUuMjMzLjI1NyAxMDEuNzk3IDEuNDY5IDI0LjU2MiAxLjEyIDM3LjkwMSA1LjIyNCA0Ni43NzggOC42NzQgMTEuNzU5IDQuNTcgMjAuMTUxIDEwLjAyOSAyOC45NjYgMTguODQ1IDguODE2IDguODE1IDE0LjI3NSAxNy4yMDcgMTguODQ1IDI4Ljk2NiAzLjQ1IDguODc3IDcuNTU0IDIyLjIxNiA4LjY3NCA0Ni43NzggMS4yMTIgMjYuNTY0IDEuNDY5IDM0LjUzMiAxLjQ2OSAxMDEuNzk4IDAgNjcuMjY1LS4yNTcgNzUuMjMzLTEuNDY5IDEwMS43OTctMS4xMiAyNC41NjItNS4yMjQgMzcuOTAxLTguNjc0IDQ2Ljc3OC00LjU3IDExLjc1OS0xMC4wMjkgMjAuMTUxLTE4Ljg0NSAyOC45NjYtOC44MTUgOC44MTYtMTcuMjA3IDE0LjI3NS0yOC45NjYgMTguODQ1LTguODc3IDMuNDUtMjIuMjE2IDcuNTU0LTQ2Ljc3OCA4LjY3NC0yNi41NiAxLjIxMi0zNC41MjcgMS40NjktMTAxLjc5NyAxLjQ2OS02Ny4yNzEgMC03NS4yMzctLjI1Ny0xMDEuNzk4LTEuNDY5LTI0LjU2Mi0xLjEyLTM3LjkwMS01LjIyNC00Ni43NzgtOC42NzQtMTEuNzU5LTQuNTctMjAuMTUxLTEwLjAyOS0yOC45NjYtMTguODQ1LTguODE1LTguODE1LTE0LjI3NS0xNy4yMDctMTguODQ1LTI4Ljk2Ni0zLjQ1LTguODc3LTcuNTU0LTIyLjIxNi04LjY3NC00Ni43NzgtMS4yMTItMjYuNTY0LTEuNDY5LTM0LjUzMi0xLjQ2OS0xMDEuNzk3IDAtNjcuMjY2LjI1Ny03NS4yMzQgMS40NjktMTAxLjc5OCAxLjEyLTI0LjU2MiA1LjIyNC0zNy45MDEgOC42NzQtNDYuNzc4IDQuNTctMTEuNzU5IDEwLjAyOS0yMC4xNTEgMTguODQ1LTI4Ljk2NiA4LjgxNS04LjgxNiAxNy4yMDctMTQuMjc1IDI4Ljk2Ni0xOC44NDUgOC44NzctMy40NSAyMi4yMTYtNy41NTQgNDYuNzc4LTguNjc0IDI2LjU2NC0xLjIxMiAzNC41MzItMS40NjkgMTAxLjc5OC0xLjQ2OXoiIGZpbGw9IiNGRkYiIG1hc2s9InVybCgjYikiLz48cGF0aCBkPSJNMjUxLjkyMSAzMzYuMDUzYy00Ni4zNzggMC04My45NzQtMzcuNTk2LTgzLjk3NC04My45NzMgMC00Ni4zNzggMzcuNTk2LTgzLjk3NCA4My45NzQtODMuOTc0IDQ2LjM3NyAwIDgzLjk3MyAzNy41OTYgODMuOTczIDgzLjk3NCAwIDQ2LjM3Ny0zNy41OTYgODMuOTczLTgzLjk3MyA4My45NzN6bTAtMjEzLjMzOGMtNzEuNDQ3IDAtMTI5LjM2NSA1Ny45MTgtMTI5LjM2NSAxMjkuMzY1IDAgNzEuNDQ2IDU3LjkxOCAxMjkuMzY0IDEyOS4zNjUgMTI5LjM2NCA3MS40NDYgMCAxMjkuMzY0LTU3LjkxOCAxMjkuMzY0LTEyOS4zNjQgMC03MS40NDctNTcuOTE4LTEyOS4zNjUtMTI5LjM2NC0xMjkuMzY1ek00MTYuNjI3IDExNy42MDRjMCAxNi42OTYtMTMuNTM1IDMwLjIzLTMwLjIzMSAzMC4yMy0xNi42OTUgMC0zMC4yMy0xMy41MzQtMzAuMjMtMzAuMjMgMC0xNi42OTYgMTMuNTM1LTMwLjIzMSAzMC4yMy0zMC4yMzEgMTYuNjk2IDAgMzAuMjMxIDEzLjUzNSAzMC4yMzEgMzAuMjMxIiBmaWxsPSIjRkZGIi8+PC9nPjwvc3ZnPg==)}.ck-media__wrapper[data-oembed-url*=\"instagram.com\"] .ck-media__placeholder .ck-media__placeholder__url__text{color:#ffe0fe}.ck-media__wrapper[data-oembed-url*=\"instagram.com\"] .ck-media__placeholder .ck-media__placeholder__url__text:hover{color:#fff}"
-
-/***/ }),
-/* 107 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(108);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 108 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-media-form{display:flex;align-items:flex-start}.ck.ck-media-form .ck-labeled-input{display:inline-block}.ck.ck-media-form .ck-label{display:none}.ck.ck-media-form{padding:var(--ck-spacing-standard)}.ck.ck-media-form:focus{outline:none}.ck.ck-media-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
-
-/***/ }),
-/* 109 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(110);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 110 */
-/***/ (function(module, exports) {
-
-module.exports = ":root{--ck-color-table-focused-cell-background:#f5fafe}.ck-widget.table td.ck-editor__nested-editable.ck-editor__nested-editable_focused,.ck-widget.table th.ck-editor__nested-editable.ck-editor__nested-editable_focused{background:var(--ck-color-table-focused-cell-background);border-style:none;outline:1px solid var(--ck-color-focus-border);outline-offset:-1px}"
-
-/***/ }),
-/* 111 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(112);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 112 */
-/***/ (function(module, exports) {
-
-module.exports = ":root{--ck-insert-table-dropdown-padding:10px;--ck-insert-table-dropdown-box-height:11px;--ck-insert-table-dropdown-box-width:12px;--ck-insert-table-dropdown-box-margin:1px;--ck-insert-table-dropdown-box-border-color:#bfbfbf;--ck-insert-table-dropdown-box-border-active-color:#53a0e4;--ck-insert-table-dropdown-box-active-background:#c7e5ff}.ck .ck-insert-table-dropdown__grid{display:flex;flex-direction:row;flex-wrap:wrap;width:calc(var(--ck-insert-table-dropdown-box-width) * 10 + var(--ck-insert-table-dropdown-box-margin) * 20 + var(--ck-insert-table-dropdown-padding) * 2);padding:var(--ck-insert-table-dropdown-padding) var(--ck-insert-table-dropdown-padding) 0}.ck .ck-insert-table-dropdown__label{text-align:center}.ck .ck-insert-table-dropdown-grid-box{width:var(--ck-insert-table-dropdown-box-width);height:var(--ck-insert-table-dropdown-box-height);margin:var(--ck-insert-table-dropdown-box-margin);border:1px solid var(--ck-insert-table-dropdown-box-border-color);border-radius:1px}.ck .ck-insert-table-dropdown-grid-box.ck-on{border-color:var(--ck-insert-table-dropdown-box-border-active-color);background:var(--ck-insert-table-dropdown-box-active-background)}"
-
-/***/ }),
-/* 113 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(114);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(2)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 114 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck-content .table{margin:1em auto;display:table}.ck-content .table table{border-collapse:collapse;border-spacing:0;border:1px double #b3b3b3}.ck-content .table table td,.ck-content .table table th{min-width:2em;padding:.4em;border-color:#d9d9d9}.ck-content .table table th{font-weight:700;background:#fafafa}"
-
-/***/ }),
-/* 115 */
+/* 55 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_root.js
-var _root = __webpack_require__(4);
+var _root = __webpack_require__(2);
 
 // CONCATENATED MODULE: ./node_modules/lodash-es/_Symbol.js
 
@@ -5404,7 +4645,7 @@ function baseAssignIn(object, source) {
 /* harmony default export */ var _baseAssignIn = (baseAssignIn);
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_cloneBuffer.js
-var _cloneBuffer = __webpack_require__(19);
+var _cloneBuffer = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/lodash-es/_copyArray.js
 /**
@@ -5784,9 +5025,9 @@ function initCloneArray(array) {
 
 
 /** Built-in value references. */
-var _Uint8Array_Uint8Array = _root["a" /* default */].Uint8Array;
+var Uint8Array = _root["a" /* default */].Uint8Array;
 
-/* harmony default export */ var _Uint8Array = (_Uint8Array_Uint8Array);
+/* harmony default export */ var _Uint8Array = (Uint8Array);
 
 // CONCATENATED MODULE: ./node_modules/lodash-es/_cloneArrayBuffer.js
 
@@ -16133,7 +15374,7 @@ function diff_diff( a, b, cmp ) {
  * @param {Number} index Insertions index.
  * @param {Node} nodeToInsert Node to insert.
  */
-function insertat_insertAt( parentElement, index, nodeToInsert ) {
+function insertAt( parentElement, index, nodeToInsert ) {
 	parentElement.insertBefore( nodeToInsert, parentElement.childNodes[ index ] || null );
 }
 
@@ -16152,7 +15393,7 @@ function insertat_insertAt( parentElement, index, nodeToInsert ) {
  *
  * @param {Node} node Node to remove.
  */
-function remove_remove( node ) {
+function remove( node ) {
 	const parent = node.parentNode;
 
 	if ( parent ) {
@@ -16631,7 +15872,7 @@ class renderer_Renderer {
 						this._updateElementMappings( viewChild, actualDomChildren[ deleteIndex ] );
 					}
 
-					remove_remove( expectedDomChildren[ insertIndex ] );
+					remove( expectedDomChildren[ insertIndex ] );
 					counter.equal++;
 				} else {
 					counter[ action ]++;
@@ -16901,11 +16142,11 @@ class renderer_Renderer {
 
 		for ( const action of diff ) {
 			if ( action === 'insert' ) {
-				insertat_insertAt( domElement, i, expectedDomChildren[ i ] );
+				insertAt( domElement, i, expectedDomChildren[ i ] );
 				i++;
 			} else if ( action === 'delete' ) {
 				nodesToUnbind.add( actualDomChildren[ i ] );
-				remove_remove( actualDomChildren[ i ] );
+				remove( actualDomChildren[ i ] );
 			} else { // 'equal'
 				// Force updating text nodes inside elements which did not change and do not need to be re-rendered (#1125).
 				this._markDescendantTextToSync( this.domConverter.domToView( expectedDomChildren[ i ] ) );
@@ -17227,7 +16468,7 @@ function addInlineFiller( domDocument, domParentOrArray, offset ) {
 		if ( Array.isArray( domParentOrArray ) ) {
 			childNodes.splice( offset, 0, fillerNode );
 		} else {
-			insertat_insertAt( domParentOrArray, offset, fillerNode );
+			insertAt( domParentOrArray, offset, fillerNode );
 		}
 
 		return fillerNode;
@@ -20659,7 +19900,7 @@ function _isArrowKeyCode( keyCode ) {
 
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/log.js
-var log = __webpack_require__(1);
+var log = __webpack_require__(3);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/view/observer/selectionobserver.js
 /**
@@ -30248,7 +29489,7 @@ function insertElement( elementCreator ) {
  *
  * @returns {Function} Insert text event converter.
  */
-function downcast_converters_insertText() {
+function insertText() {
 	return ( evt, data, conversionApi ) => {
 		if ( !conversionApi.consumable.consume( data.item, 'insert' ) ) {
 			return;
@@ -31085,7 +30326,7 @@ class editingcontroller_EditingController {
 		this.listenTo( this.view.document, 'selectionChange', convertSelectionChange( this.model, this.mapper ) );
 
 		// Attach default model converters.
-		this.downcastDispatcher.on( 'insert:$text', downcast_converters_insertText(), { priority: 'lowest' } );
+		this.downcastDispatcher.on( 'insert:$text', insertText(), { priority: 'lowest' } );
 		this.downcastDispatcher.on( 'remove', downcast_converters_remove(), { priority: 'low' } );
 
 		// Attach default model selection converters.
@@ -31585,7 +30826,7 @@ if ( !window.CKEDITOR_TRANSLATIONS ) {
  * @param {String} language Target language.
  * @param {Object.<String, String>} translations Translations which will be added to the dictionary.
  */
-function translation_service_add( language, translations ) {
+function add( language, translations ) {
 	const dictionary = window.CKEDITOR_TRANSLATIONS[ language ] || ( window.CKEDITOR_TRANSLATIONS[ language ] = {} );
 
 	Object.assign( dictionary, translations );
@@ -34996,7 +34237,7 @@ class datacontroller_DataController {
 		this.downcastDispatcher = new downcastdispatcher_DowncastDispatcher( {
 			mapper: this.mapper
 		} );
-		this.downcastDispatcher.on( 'insert:$text', downcast_converters_insertText(), { priority: 'lowest' } );
+		this.downcastDispatcher.on( 'insert:$text', insertText(), { priority: 'lowest' } );
 
 		/**
 		 * Upcast dispatcher used by the {@link #set set method}. Upcast converters should be attached to it.
@@ -44384,7 +43625,7 @@ class editingkeystrokehandler_EditingKeystrokeHandler extends keystrokehandler_K
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/version.js
-var src_version = __webpack_require__(42);
+var src_version = __webpack_require__(23);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-core/src/editor/editor.js
 /**
@@ -47803,7 +47044,7 @@ function shouldExtend( attrName ) {
  */
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/globals/globals.css
-var globals = __webpack_require__(43);
+var globals = __webpack_require__(24);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/view.js
 /**
@@ -48317,7 +47558,7 @@ mix( src_view_View, dom_emittermixin );
 mix( src_view_View, observablemixin );
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/editorui/editorui.css
-var editorui = __webpack_require__(46);
+var editorui = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/editorui/editoruiview.js
 /**
@@ -48409,7 +47650,7 @@ class editoruiview_EditorUIView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/label/label.css
-var label_label = __webpack_require__(48);
+var label_label = __webpack_require__(29);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/label/labelview.js
 /**
@@ -48574,7 +47815,7 @@ class boxededitoruiview_BoxedEditorUIView extends editoruiview_EditorUIView {
     _createVoiceLabel(ariaLabelUid) {
         const t = this.t;
         const voiceLabel = new labelview_LabelView();
-        voiceLabel.text = t('av');
+        voiceLabel.text = t('o');
         voiceLabel.extendTemplate({
             attributes: {
                 id: `ck-editor__aria-label_${ ariaLabelUid }`,
@@ -48725,7 +47966,7 @@ class inlineeditableuiview_InlineEditableUIView extends editableuiview_EditableU
 		 */
         this.set('name', null);
         const getLabel = value => {
-            return t('aw', [value]);
+            return t('n', [value]);
         };
         this.extendTemplate({
             attributes: {
@@ -48766,7 +48007,7 @@ function toUnit( unit ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/panel/stickypanel.css
-var stickypanel = __webpack_require__(50);
+var stickypanel = __webpack_require__(31);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/panel/sticky/stickypanelview.js
 /**
@@ -49422,7 +48663,7 @@ function preventDefault( view ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/toolbar/toolbar.css
-var toolbar = __webpack_require__(52);
+var toolbar = __webpack_require__(33);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/toolbar/toolbarview.js
 /**
@@ -49618,7 +48859,7 @@ class toolbarview_ToolbarView extends src_view_View {
 
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-editor-classic/theme/classiceditor.css
-var classiceditor = __webpack_require__(54);
+var classiceditor = __webpack_require__(35);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-editor-classic/src/classiceditoruiview.js
 /**
@@ -50178,604 +49419,6 @@ mix( Plugin, observablemixin );
  * @returns {null|Promise}
  */
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/datatransfer.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module clipboard/datatransfer
- */
-
-/**
- * Facade over the native [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object.
- */
-class DataTransfer {
-	constructor( nativeDataTransfer ) {
-		/**
-		 * The array of files created from the native `DataTransfer#files` or `DataTransfer#items`.
-		 *
-		 * @readonly
-		 * @member {Array.<File>} #files
-		 */
-		this.files = getFiles( nativeDataTransfer );
-
-		/**
-		 * The native DataTransfer object.
-		 *
-		 * @private
-		 * @member {DataTransfer} #_native
-		 */
-		this._native = nativeDataTransfer;
-	}
-
-	/**
-	 * Returns an array of available native content types.
-	 *
-	 * @returns {Array.<String>}
-	 */
-	get types() {
-		return this._native.types;
-	}
-
-	/**
-	 * Gets data from the data transfer by its mime type.
-	 *
-	 *		dataTransfer.getData( 'text/plain' );
-	 *
-	 * @param {String} type The mime type. E.g. `text/html` or `text/plain`.
-	 * @returns {String}
-	 */
-	getData( type ) {
-		return this._native.getData( type );
-	}
-
-	/**
-	 * Sets data in the data transfer.
-	 *
-	 * @param {String} type The mime type. E.g. `text/html` or `text/plain`.
-	 * @param {String} data
-	 */
-	setData( type, data ) {
-		this._native.setData( type, data );
-	}
-}
-
-function getFiles( nativeDataTransfer ) {
-	// DataTransfer.files and items are Array-like and might not have an iterable interface.
-	const files = nativeDataTransfer.files ? Array.from( nativeDataTransfer.files ) : [];
-	const items = nativeDataTransfer.items ? Array.from( nativeDataTransfer.items ) : [];
-
-	if ( files.length ) {
-		return files;
-	}
-	// Chrome have empty DataTransfer.files, but let get files through the items interface.
-	return items
-		.filter( item => item.kind === 'file' )
-		.map( item => item.getAsFile() );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/clipboardobserver.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module clipboard/clipboardobserver
- */
-
-
-
-
-/**
- * Clipboard events observer.
- *
- * Fires the following events:
- *
- * * {@link module:engine/view/document~Document#event:clipboardInput}
- * * {@link module:engine/view/document~Document#event:dragover}
- * * {@link module:engine/view/document~Document#event:drop}
- * * {@link module:engine/view/document~Document#event:paste}
- * * {@link module:engine/view/document~Document#event:copy}
- * * {@link module:engine/view/document~Document#event:cut}
- *
- * Note that this observer is not available by default (it is not added by the engine).
- * To make it available it needs to be added to {@link module:engine/view/document~Document} by
- * the {@link module:engine/view/view~View#addObserver `View#addObserver()`} method. You can also load the
- * {@link module:clipboard/clipboard~Clipboard} plugin which adds this observer automatically (because it uses it).
- *
- * @extends module:engine/view/observer/domeventobserver~DomEventObserver
- */
-class clipboardobserver_ClipboardObserver extends domeventobserver_DomEventObserver {
-	constructor( view ) {
-		super( view );
-
-		const viewDocument = this.document;
-
-		this.domEventType = [ 'paste', 'copy', 'cut', 'drop', 'dragover' ];
-
-		this.listenTo( viewDocument, 'paste', handleInput, { priority: 'low' } );
-		this.listenTo( viewDocument, 'drop', handleInput, { priority: 'low' } );
-
-		function handleInput( evt, data ) {
-			data.preventDefault();
-
-			const targetRanges = data.dropRange ? [ data.dropRange ] : Array.from( viewDocument.selection.getRanges() );
-
-			viewDocument.fire( 'clipboardInput', {
-				dataTransfer: data.dataTransfer,
-				targetRanges
-			} );
-		}
-	}
-
-	onDomEvent( domEvent ) {
-		const evtData = {
-			dataTransfer: new DataTransfer( domEvent.clipboardData ? domEvent.clipboardData : domEvent.dataTransfer )
-		};
-
-		if ( domEvent.type == 'drop' ) {
-			evtData.dropRange = getDropViewRange( this.view, domEvent );
-		}
-
-		this.fire( domEvent.type, domEvent, evtData );
-	}
-}
-
-function getDropViewRange( view, domEvent ) {
-	const domDoc = domEvent.target.ownerDocument;
-	const x = domEvent.clientX;
-	const y = domEvent.clientY;
-	let domRange;
-
-	// Webkit & Blink.
-	if ( domDoc.caretRangeFromPoint && domDoc.caretRangeFromPoint( x, y ) ) {
-		domRange = domDoc.caretRangeFromPoint( x, y );
-	}
-	// FF.
-	else if ( domEvent.rangeParent ) {
-		domRange = domDoc.createRange();
-		domRange.setStart( domEvent.rangeParent, domEvent.rangeOffset );
-		domRange.collapse( true );
-	}
-
-	if ( domRange ) {
-		return view.domConverter.domRangeToView( domRange );
-	} else {
-		return view.document.selection.getFirstRange();
-	}
-}
-
-/**
- * Fired as a continuation of {@link #event:paste} and {@link #event:drop} events.
- *
- * It is a part of the {@glink framework/guides/deep-dive/clipboard#input-pipeline "clipboard input pipeline"}.
- *
- * Fired with a `dataTransfer` which comes from the clipboard and which content should be processed
- * and inserted into the editor.
- *
- * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
- * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
- * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
- *
- * @see module:clipboard/clipboardobserver~ClipboardObserver
- * @see module:clipboard/clipboard~Clipboard
- * @event module:engine/view/document~Document#event:clipboardInput
- * @param {Object} data Event data.
- * @param {module:clipboard/datatransfer~DataTransfer} data.dataTransfer Data transfer instance.
- * @param {Array.<module:engine/view/range~Range>} data.targetRanges Ranges which are the target of the operation
- * (usually – into which the content should be inserted).
- * If clipboard input was triggered by a paste operation, then these are the selection ranges. If by a drop operation,
- * then it's the drop position (which can be different than the selection at the moment of drop).
- */
-
-/**
- * Fired when user drags content over one of the editables.
- *
- * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
- *
- * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
- * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
- * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
- *
- * @see module:engine/view/document~Document#event:clipboardInput
- * @event module:engine/view/document~Document#event:dragover
- * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
- */
-
-/**
- * Fired when user dropped content into one of the editables.
- *
- * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
- *
- * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
- * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
- * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
- *
- * @see module:engine/view/document~Document#event:clipboardInput
- * @event module:engine/view/document~Document#event:drop
- * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
- * @param {module:engine/view/range~Range} dropRange The position into which the content is dropped.
- */
-
-/**
- * Fired when user pasted content into one of the editables.
- *
- * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
- *
- * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
- * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
- * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
- *
- * @see module:engine/view/document~Document#event:clipboardInput
- * @event module:engine/view/document~Document#event:paste
- * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
- */
-
-/**
- * Fired when user copied content from one of the editables.
- *
- * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
- *
- * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
- * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
- * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
- *
- * @see module:clipboard/clipboardobserver~ClipboardObserver
- * @event module:engine/view/document~Document#event:copy
- * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
- */
-
-/**
- * Fired when user cut content from one of the editables.
- *
- * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
- *
- * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
- * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
- * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
- *
- * @see module:clipboard/clipboardobserver~ClipboardObserver
- * @event module:engine/view/document~Document#event:cut
- * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
- */
-
-/**
- * The value of the {@link module:engine/view/document~Document#event:paste},
- * {@link module:engine/view/document~Document#event:copy} and {@link module:engine/view/document~Document#event:cut} events.
- *
- * In order to access clipboard data use `dataTransfer` property.
- *
- * @class module:clipboard/clipboardobserver~ClipboardEventData
- * @extends module:engine/view/observer/domeventdata~DomEventData
- */
-
-/**
- * Data transfer instance.
- *
- * @readonly
- * @member {module:clipboard/datatransfer~DataTransfer} module:clipboard/clipboardobserver~ClipboardEventData#dataTransfer
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/utils/plaintexttohtml.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module clipboard/utils/plaintexttohtml
- */
-
-/**
- * Converts plain text to its HTML-ized version.
- *
- * @param {String} text The plain text to convert.
- * @returns {String} HTML generated from the plain text.
- */
-function plainTextToHtml( text ) {
-	text = text
-		// Encode <>.
-		.replace( /</g, '&lt;' )
-		.replace( />/g, '&gt;' )
-		// Creates paragraphs for double line breaks and change single line breaks to <br>s.
-		.replace( /\n\n/g, '</p><p>' )
-		.replace( /\n/g, '<br>' )
-		// Preserve trailing spaces (only the first and last one – the rest is handled below).
-		.replace( /^\s/, '&nbsp;' )
-		.replace( /\s$/, '&nbsp;' )
-		// Preserve other subsequent spaces now.
-		.replace( /\s\s/g, ' &nbsp;' );
-
-	if ( text.indexOf( '</p><p>' ) > -1 ) {
-		// If we created paragraphs above, add the trailing ones.
-		text = `<p>${ text }</p>`;
-	}
-
-	// TODO:
-	// * What about '\nfoo' vs ' foo'?
-
-	return text;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/utils/normalizeclipboarddata.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module clipboard/utils/normalizeclipboarddata
- */
-
-/**
- * Removes some popular browser quirks out of the clipboard data (HTML).
- *
- * @param {String} data The HTML data to normalize.
- * @returns {String} Normalized HTML.
- */
-function normalizeClipboardData( data ) {
-	return data
-		.replace( /<span(?: class="Apple-converted-space"|)>(\s+)<\/span>/g, ( fullMatch, spaces ) => {
-			// Handle the most popular and problematic case when even a single space becomes an nbsp;.
-			// Decode those to normal spaces. Read more in https://github.com/ckeditor/ckeditor5-clipboard/issues/2.
-			if ( spaces.length == 1 ) {
-				return ' ';
-			}
-
-			return spaces;
-		} );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/utils/viewtoplaintext.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module clipboard/utils/viewtoplaintext
- */
-
-// Elements which should not have empty-line padding.
-// Most `view.ContainerElement` want to be separate by new-line, but some are creating one structure
-// together (like `<li>`) so it is better to separate them by only one "\n".
-const smallPaddingElements = [ 'figcaption', 'li' ];
-
-/**
- * Converts {@link module:engine/view/item~Item view item} and all of its children to plain text.
- *
- * @param {module:engine/view/item~Item} viewItem View item to convert.
- * @returns {String} Plain text representation of `viewItem`.
- */
-function viewToPlainText( viewItem ) {
-	let text = '';
-
-	if ( viewItem.is( 'text' ) || viewItem.is( 'textProxy' ) ) {
-		// If item is `Text` or `TextProxy` simple take its text data.
-		text = viewItem.data;
-	} else if ( viewItem.is( 'img' ) && viewItem.hasAttribute( 'alt' ) ) {
-		// Special case for images - use alt attribute if it is provided.
-		text = viewItem.getAttribute( 'alt' );
-	} else {
-		// Other elements are document fragments, attribute elements or container elements.
-		// They don't have their own text value, so convert their children.
-		let prev = null;
-
-		for ( const child of viewItem.getChildren() ) {
-			const childText = viewToPlainText( child );
-
-			// Separate container element children with one or more new-line characters.
-			if ( prev && ( prev.is( 'containerElement' ) || child.is( 'containerElement' ) ) ) {
-				if ( smallPaddingElements.includes( prev.name ) || smallPaddingElements.includes( child.name ) ) {
-					text += '\n';
-				} else {
-					text += '\n\n';
-				}
-			}
-
-			text += childText;
-			prev = child;
-		}
-	}
-
-	return text;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/clipboard.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module clipboard/clipboard
- */
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The clipboard feature. It is responsible for intercepting the `paste` and `drop` events and
- * passing the pasted content through the clipboard pipeline in order to insert it into the editor's content.
- * It also handles the `cut` and `copy` events to fill the native clipboard with serialized editor's data.
- *
- * Read more about the clipboard integration in {@glink framework/guides/deep-dive/clipboard "Clipboard" deep dive} guide.
- *
- * @extends module:core/plugin~Plugin
- */
-class clipboard_Clipboard extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Clipboard';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const modelDocument = editor.model.document;
-		const view = editor.editing.view;
-		const viewDocument = view.document;
-
-		/**
-		 * Data processor used to convert pasted HTML to a view structure.
-		 *
-		 * @private
-		 * @member {module:engine/dataprocessor/htmldataprocessor~HtmlDataProcessor} #_htmlDataProcessor
-		 */
-		this._htmlDataProcessor = new htmldataprocessor_HtmlDataProcessor();
-
-		view.addObserver( clipboardobserver_ClipboardObserver );
-
-		// The clipboard paste pipeline.
-
-		// Pasting and dropping is disabled when editor is read-only.
-		// See: https://github.com/ckeditor/ckeditor5-clipboard/issues/26.
-		this.listenTo( viewDocument, 'clipboardInput', evt => {
-			if ( editor.isReadOnly ) {
-				evt.stop();
-			}
-		}, { priority: 'highest' } );
-
-		this.listenTo( viewDocument, 'clipboardInput', ( evt, data ) => {
-			const dataTransfer = data.dataTransfer;
-			let content = '';
-
-			if ( dataTransfer.getData( 'text/html' ) ) {
-				content = normalizeClipboardData( dataTransfer.getData( 'text/html' ) );
-			} else if ( dataTransfer.getData( 'text/plain' ) ) {
-				content = plainTextToHtml( dataTransfer.getData( 'text/plain' ) );
-			}
-
-			content = this._htmlDataProcessor.toView( content );
-
-			this.fire( 'inputTransformation', { content, dataTransfer } );
-
-			view.scrollToTheSelection();
-		}, { priority: 'low' } );
-
-		this.listenTo( this, 'inputTransformation', ( evt, data ) => {
-			if ( !data.content.isEmpty ) {
-				const dataController = this.editor.data;
-				const model = this.editor.model;
-
-				// Convert the pasted content to a model document fragment.
-				// Conversion is contextual, but in this case we need an "all allowed" context and for that
-				// we use the $clipboardHolder item.
-				const modelFragment = dataController.toModel( data.content, '$clipboardHolder' );
-
-				if ( modelFragment.childCount == 0 ) {
-					return;
-				}
-
-				model.insertContent( modelFragment );
-			}
-		}, { priority: 'low' } );
-
-		// The clipboard copy/cut pipeline.
-
-		function onCopyCut( evt, data ) {
-			const dataTransfer = data.dataTransfer;
-
-			data.preventDefault();
-
-			const content = editor.data.toView( editor.model.getSelectedContent( modelDocument.selection ) );
-
-			viewDocument.fire( 'clipboardOutput', { dataTransfer, content, method: evt.name } );
-		}
-
-		this.listenTo( viewDocument, 'copy', onCopyCut, { priority: 'low' } );
-		this.listenTo( viewDocument, 'cut', ( evt, data ) => {
-			// Cutting is disabled when editor is read-only.
-			// See: https://github.com/ckeditor/ckeditor5-clipboard/issues/26.
-			if ( editor.isReadOnly ) {
-				data.preventDefault();
-			} else {
-				onCopyCut( evt, data );
-			}
-		}, { priority: 'low' } );
-
-		this.listenTo( viewDocument, 'clipboardOutput', ( evt, data ) => {
-			if ( !data.content.isEmpty ) {
-				data.dataTransfer.setData( 'text/html', this._htmlDataProcessor.toData( data.content ) );
-				data.dataTransfer.setData( 'text/plain', viewToPlainText( data.content ) );
-			}
-
-			if ( data.method == 'cut' ) {
-				editor.model.deleteContent( modelDocument.selection );
-			}
-		}, { priority: 'low' } );
-	}
-}
-
-/**
- * Fired with a `content` and `dataTransfer` objects. The `content` which comes from the clipboard (was pasted or dropped)
- * should be processed in order to be inserted into the editor. The `dataTransfer` object is available
- * in case the transformation functions needs access to a raw clipboard data.
- *
- * It is a part of the {@glink framework/guides/deep-dive/clipboard#input-pipeline "clipboard input pipeline"}.
- *
- * @see module:clipboard/clipboardobserver~ClipboardObserver
- * @see module:clipboard/clipboard~Clipboard
- * @event module:clipboard/clipboard~Clipboard#event:inputTransformation
- * @param {Object} data Event data.
- * @param {module:engine/view/documentfragment~DocumentFragment} data.content Event data. Content to be inserted into the editor.
- * It can be modified by the event listeners. Read more about the clipboard pipelines in
- * {@glink framework/guides/deep-dive/clipboard "Clipboard" deep dive}.
- * @param {module:clipboard/datatransfer~DataTransfer} data.dataTransfer Data transfer instance.
- */
-
-/**
- * Fired on {@link module:engine/view/document~Document#event:copy} and {@link module:engine/view/document~Document#event:cut}
- * with a copy of selected content. The content can be processed before it ends up in the clipboard.
- *
- * It is a part of the {@glink framework/guides/deep-dive/clipboard#output-pipeline "clipboard output pipeline"}.
- *
- * @see module:clipboard/clipboardobserver~ClipboardObserver
- * @see module:clipboard/clipboard~Clipboard
- * @event module:engine/view/document~Document#event:clipboardOutput
- * @param {module:clipboard/clipboard~ClipboardOutputEventData} data Event data.
- */
-
-/**
- * The value of the {@link module:engine/view/document~Document#event:clipboardOutput} event.
- *
- * @class module:clipboard/clipboard~ClipboardOutputEventData
- */
-
-/**
- * Data transfer instance.
- *
- * @readonly
- * @member {module:clipboard/datatransfer~DataTransfer} module:clipboard/clipboard~ClipboardOutputEventData#dataTransfer
- */
-
-/**
- * Content to be put into the clipboard. It can be modified by the event listeners.
- * Read more about the clipboard pipelines in {@glink framework/guides/deep-dive/clipboard "Clipboard" deep dive}.
- *
- * @member {module:engine/view/documentfragment~DocumentFragment} module:clipboard/clipboard~ClipboardOutputEventData#content
- */
-
-/**
- * Whether the event was triggered by copy or cut operation.
- *
- * @member {'copy'|'cut'} module:clipboard/clipboard~ClipboardOutputEventData#method
- */
-
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-core/src/command.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
@@ -50954,4610 +49597,203 @@ function forceDisable( evt ) {
 	evt.stop();
 }
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/entercommand.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/attributecommand.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module enter/entercommand
+ * @module basic-styles/attributecommand
  */
 
 
 
 /**
- * Enter command. It is used by the {@link module:enter/enter~Enter Enter feature} to handle the <kbd>Enter</kbd> key.
+ * An extension of the base {@link module:core/command~Command} class, which provides utilities for a command
+ * that toggles a single attribute on a text or an element.
+ *
+ * `AttributeCommand` uses {@link module:engine/model/document~Document#selection}
+ * to decide which nodes (if any) should be changed, and applies or removes the attribute from them.
+ *
+ * The command checks the {@link module:engine/model/model~Model#schema} to decide if it can be enabled
+ * for the current selection and to which nodes the attribute can be applied.
  *
  * @extends module:core/command~Command
  */
-class entercommand_EnterCommand extends Command {
+class attributecommand_AttributeCommand extends Command {
 	/**
-	 * @inheritDoc
+	 * @param {module:core/editor/editor~Editor} editor
+	 * @param {String} attributeKey Attribute that will be set by the command.
 	 */
-	execute() {
-		const model = this.editor.model;
-		const doc = model.document;
+	constructor( editor, attributeKey ) {
+		super( editor );
 
-		model.change( writer => {
-			enterBlock( this.editor.model, writer, doc.selection, model.schema );
-			this.fire( 'afterExecute', { writer } );
-		} );
-	}
-}
+		/**
+		 * The attribute that will be set by the command.
+		 *
+		 * @readonly
+		 * @member {String}
+		 */
+		this.attributeKey = attributeKey;
 
-// Creates a new block in the way that the <kbd>Enter</kbd> key is expected to work.
-//
-// @param {module:engine/model~Model} model
-// @param {module:engine/model/writer~Writer} writer
-// @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
-// Selection on which the action should be performed.
-// @param {module:engine/model/schema~Schema} schema
-function enterBlock( model, writer, selection, schema ) {
-	const isSelectionEmpty = selection.isCollapsed;
-	const range = selection.getFirstRange();
-	const startElement = range.start.parent;
-	const endElement = range.end.parent;
-
-	// Don't touch the roots and other limit elements.
-	if ( schema.isLimit( startElement ) || schema.isLimit( endElement ) ) {
-		// Delete the selected content but only if inside a single limit element.
-		// Abort, when crossing limit elements boundary (e.g. <limit1>x[x</limit1>donttouchme<limit2>y]y</limit2>).
-		// This is an edge case and it's hard to tell what should actually happen because such a selection
-		// is not entirely valid.
-		if ( !isSelectionEmpty && startElement == endElement ) {
-			model.deleteContent( selection );
-		}
-
-		return;
-	}
-
-	if ( isSelectionEmpty ) {
-		splitBlock( writer, selection, range.start );
-	} else {
-		const leaveUnmerged = !( range.start.isAtStart && range.end.isAtEnd );
-		const isContainedWithinOneElement = ( startElement == endElement );
-
-		model.deleteContent( selection, { leaveUnmerged } );
-
-		if ( leaveUnmerged ) {
-			// Partially selected elements.
-			//
-			// <h>x[xx]x</h>		-> <h>x^x</h>			-> <h>x</h><h>^x</h>
-			if ( isContainedWithinOneElement ) {
-				splitBlock( writer, selection, selection.focus );
-			}
-			// Selection over multiple elements.
-			//
-			// <h>x[x</h><p>y]y<p>	-> <h>x^</h><p>y</p>	-> <h>x</h><p>^y</p>
-			else {
-				writer.setSelection( endElement, 0 );
-			}
-		}
-	}
-}
-
-function splitBlock( writer, selection, splitPos ) {
-	const oldElement = splitPos.parent;
-	const newElement = new oldElement.constructor( oldElement.name, oldElement.getAttributes() );
-
-	if ( splitPos.isAtEnd ) {
-		// If the split is at the end of element, instead of splitting, just create a clone of position's parent
-		// element and insert it after split element. The result is the same but less operations are done
-		// and it's more semantically correct (when it comes to operational transformation).
-		writer.insert( newElement, splitPos.parent, 'after' );
-	} else if ( splitPos.isAtStart ) {
-		// If the split is at the start of element, instead of splitting, just create a clone of position's parent
-		// element and insert it before split element. The result is the same but less operations are done
-		// and it's more semantically correct (when it comes to operational transformation).
-		writer.insert( newElement, splitPos.parent, 'before' );
-	} else {
-		writer.split( splitPos );
-	}
-
-	writer.setSelection( splitPos.parent.nextSibling, 0 );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/enterobserver.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module enter/enterobserver
- */
-
-
-
-
-
-/**
- * Enter observer introduces the {@link module:engine/view/document~Document#event:enter} event.
- *
- * @extends module:engine/view/observer~Observer
- */
-class enterobserver_EnterObserver extends Observer {
-	constructor( view ) {
-		super( view );
-
-		const doc = this.document;
-
-		doc.on( 'keydown', ( evt, data ) => {
-			if ( this.isEnabled && data.keyCode == keyCodes.enter ) {
-				// Save the event object to check later if it was stopped or not.
-				let event;
-				doc.once( 'enter', evt => ( event = evt ), { priority: 'highest' } );
-
-				doc.fire( 'enter', new domeventdata_DomEventData( doc, data.domEvent, {
-					isSoft: data.shiftKey
-				} ) );
-
-				// Stop `keydown` event if `enter` event was stopped.
-				// https://github.com/ckeditor/ckeditor5/issues/753
-				if ( event && event.stop.called ) {
-					evt.stop();
-				}
-			}
-		} );
+		/**
+		 * Flag indicating whether the command is active. The command is active when the
+		 * {@link module:engine/model/selection~Selection#hasAttribute selection has the attribute} which means that:
+		 *
+		 * * If the selection is not empty &ndash; That the attribute is set on the first node in the selection that allows this attribute.
+		 * * If the selection is empty &ndash; That the selection has the attribute itself (which means that newly typed
+		 * text will have this attribute, too).
+		 *
+		 * @observable
+		 * @readonly
+		 * @member {Boolean} #value
+		 */
 	}
 
 	/**
-	 * @inheritDoc
+	 * Updates the command's {@link #value} and {@link #isEnabled} based on the current selection.
 	 */
-	observe() {}
-}
-
-/**
- * Event fired when the user presses the <kbd>Enter</kbd> key.
- *
- * Note: This event is fired by the {@link module:enter/enterobserver~EnterObserver observer}
- * (usually registered by the {@link module:enter/enter~Enter Enter feature} and
- * {@link module:enter/shiftenter~ShiftEnter ShiftEnter feature}).
- *
- * @event module:engine/view/document~Document#event:enter
- * @param {module:engine/view/observer/domeventdata~DomEventData} data
- * @param {Boolean} data.isSoft Whether it's a soft enter (<kbd>Shift</kbd>+<kbd>Enter</kbd>) or hard enter (<kbd>Enter</kbd>).
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/enter.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module enter/enter
- */
-
-
-
-
-
-/**
- * This plugin handles the <kbd>Enter</kbd> key (hard line break) in the editor.
- *
- * See also the {@link module:enter/shiftenter~ShiftEnter} plugin.
- *
- * For more information about this feature see the {@glink api/enter package page}.
- *
- * @extends module:core/plugin~Plugin
- */
-class enter_Enter extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Enter';
-	}
-
-	init() {
-		const editor = this.editor;
-		const view = editor.editing.view;
-		const viewDocument = view.document;
-
-		view.addObserver( enterobserver_EnterObserver );
-
-		editor.commands.add( 'enter', new entercommand_EnterCommand( editor ) );
-
-		this.listenTo( viewDocument, 'enter', ( evt, data ) => {
-			data.preventDefault();
-
-			// The soft enter key is handled by the ShiftEnter plugin.
-			if ( data.isSoft ) {
-				return;
-			}
-
-			editor.execute( 'enter' );
-			view.scrollToTheSelection();
-		}, { priority: 'low' } );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/shiftentercommand.js
-/**
- * @module enter/shiftentercommand
- */
-
-
-
-/**
- * ShiftEnter command. It is used by the {@link module:enter/shiftenter~ShiftEnter ShiftEnter feature} to handle
- * the <kbd>Shift</kbd>+<kbd>Enter</kbd> keystroke.
- *
- * @extends module:core/command~Command
- */
-class shiftentercommand_ShiftEnterCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	execute() {
-		const model = this.editor.model;
-		const doc = model.document;
-
-		model.change( writer => {
-			softBreakAction( model, writer, doc.selection );
-			this.fire( 'afterExecute', { writer } );
-		} );
-	}
-
 	refresh() {
 		const model = this.editor.model;
 		const doc = model.document;
 
-		this.isEnabled = isEnabled( model.schema, doc.selection );
-	}
-}
-
-// Checks whether the ShiftEnter command should be enabled in the specified selection.
-//
-// @param {module:engine/model/schema~Schema} schema
-// @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
-function isEnabled( schema, selection ) {
-	// At this moment it is okay to support single range selections only.
-	// But in the future we may need to change that.
-	if ( selection.rangeCount > 1 ) {
-		return false;
+		this.value = this._getValueFromFirstAllowedNode();
+		this.isEnabled = model.schema.checkAttributeInSelection( doc.selection, this.attributeKey );
 	}
 
-	const anchorPos = selection.anchor;
-
-	// Check whether the break element can be inserted in the current selection anchor.
-	if ( !anchorPos || !schema.checkChild( anchorPos, 'softBreak' ) ) {
-		return false;
-	}
-
-	const range = selection.getFirstRange();
-	const startElement = range.start.parent;
-	const endElement = range.end.parent;
-
-	// Do not modify the content if selection is cross-limit elements.
-	if ( ( isInsideLimitElement( startElement, schema ) || isInsideLimitElement( endElement, schema ) ) && startElement !== endElement ) {
-		return false;
-	}
-
-	return true;
-}
-
-// Creates a break in the way that the <kbd>Shift</kbd>+<kbd>Enter</kbd> keystroke is expected to work.
-//
-// @param {module:engine/model~Model} model
-// @param {module:engine/model/writer~Writer} writer
-// @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
-// Selection on which the action should be performed.
-function softBreakAction( model, writer, selection ) {
-	const isSelectionEmpty = selection.isCollapsed;
-	const range = selection.getFirstRange();
-	const startElement = range.start.parent;
-	const endElement = range.end.parent;
-	const isContainedWithinOneElement = ( startElement == endElement );
-
-	if ( isSelectionEmpty ) {
-		insertBreak( writer, range.end );
-	} else {
-		const leaveUnmerged = !( range.start.isAtStart && range.end.isAtEnd );
-		model.deleteContent( selection, { leaveUnmerged } );
-
-		// Selection within one element:
-		//
-		// <h>x[xx]x</h>		-> <h>x^x</h>			-> <h>x<br>^x</h>
-		if ( isContainedWithinOneElement ) {
-			insertBreak( writer, selection.focus );
-		}
-		// Selection over multiple elements.
-		//
-		// <h>x[x</h><p>y]y<p>	-> <h>x^</h><p>y</p>	-> <h>x</h><p>^y</p>
-		//
-		// We chose not to insert a line break in this case because:
-		//
-		// * it's not a very common scenario,
-		// * it actually surprised me when I saw the "expected behavior" in real life.
-		//
-		// It's ok if the user will need to be more specific where they want the <br> to be inserted.
-		else {
-			// Move the selection to the 2nd element (last step of the example above).
-			if ( leaveUnmerged ) {
-				writer.setSelection( endElement, 0 );
-			}
-		}
-	}
-}
-
-function insertBreak( writer, position ) {
-	const breakLineElement = writer.createElement( 'softBreak' );
-
-	writer.insert( breakLineElement, position );
-	writer.setSelection( breakLineElement, 'after' );
-}
-
-// Checks whether the specified `element` is a child of the limit element.
-//
-// Checking whether the `<p>` element is inside a limit element:
-//   - <$root><p>Text.</p></$root> => false
-//   - <$root><limitElement><p>Text</p></limitElement></$root> => true
-//
-// @param {module:engine/model/element~Element} element
-// @param {module:engine/schema~Schema} schema
-// @returns {Boolean}
-function isInsideLimitElement( element, schema ) {
-	// `$root` is a limit element but in this case is an invalid element.
-	if ( element.is( 'rootElement' ) ) {
-		return false;
-	}
-
-	return schema.isLimit( element ) || isInsideLimitElement( element.parent, schema );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/shiftenter.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module enter/shiftenter
- */
-
-
-
-
-
-
-
-/**
- * This plugin handles the <kbd>Shift</kbd>+<kbd>Enter</kbd> keystroke (soft line break) in the editor.
- *
- * See also the {@link module:enter/enter~Enter} plugin.
- *
- * For more information about this feature see the {@glink api/enter package page}.
- *
- * @extends module:core/plugin~Plugin
- */
-class shiftenter_ShiftEnter extends Plugin {
 	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ShiftEnter';
-	}
-
-	init() {
-		const editor = this.editor;
-		const schema = editor.model.schema;
-		const conversion = editor.conversion;
-		const view = editor.editing.view;
-		const viewDocument = view.document;
-
-		// Configure the schema.
-		schema.register( 'softBreak', {
-			allowWhere: '$text'
-		} );
-
-		// Configure converters.
-		conversion.for( 'upcast' )
-			.add( upcastElementToElement( {
-				model: 'softBreak',
-				view: 'br'
-			} ) );
-
-		conversion.for( 'downcast' )
-			.add( downcastElementToElement( {
-				model: 'softBreak',
-				view: ( modelElement, viewWriter ) => viewWriter.createEmptyElement( 'br' )
-			} ) );
-
-		view.addObserver( enterobserver_EnterObserver );
-
-		editor.commands.add( 'shiftEnter', new shiftentercommand_ShiftEnterCommand( editor ) );
-
-		this.listenTo( viewDocument, 'enter', ( evt, data ) => {
-			data.preventDefault();
-
-			// The hard enter key is handled by the Enter plugin.
-			if ( !data.isSoft ) {
-				return;
-			}
-
-			editor.execute( 'shiftEnter' );
-			view.scrollToTheSelection();
-		}, { priority: 'low' } );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/changebuffer.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/utils/changebuffer
- */
-
-
-
-/**
- * Change buffer allows to group atomic changes (like characters that have been typed) into
- * {@link module:engine/model/batch~Batch batches}.
- *
- * Batches represent single undo steps, hence changes added to one single batch are undone together.
- *
- * The buffer has a configurable limit of atomic changes that it can accommodate. After the limit was
- * exceeded (see {@link ~ChangeBuffer#input}), a new batch is created in {@link ~ChangeBuffer#batch}.
- *
- * To use the change buffer you need to let it know about the number of changes that were added to the batch:
- *
- *		const buffer = new ChangeBuffer( model, LIMIT );
- *
- *		// Later on in your feature:
- *		buffer.batch.insert( pos, insertedCharacters );
- *		buffer.input( insertedCharacters.length );
- *
- */
-class changebuffer_ChangeBuffer {
-	/**
-	 * Creates a new instance of the change buffer.
+	 * Executes the command &mdash; applies the attribute to the selection or removes it from the selection.
 	 *
-	 * @param {module:engine/model/model~Model} model
-	 * @param {Number} [limit=20] The maximum number of atomic changes which can be contained in one batch.
-	 */
-	constructor( model, limit = 20 ) {
-		/**
-		 * The model instance.
-		 *
-		 * @readonly
-		 * @member {module:engine/model/model~Model} #model
-		 */
-		this.model = model;
-
-		/**
-		 * The number of atomic changes in the buffer. Once it exceeds the {@link #limit},
-		 * the {@link #batch batch} is set to a new one.
-		 *
-		 * @readonly
-		 * @member {Number} #size
-		 */
-		this.size = 0;
-
-		/**
-		 * The maximum number of atomic changes which can be contained in one batch.
-		 *
-		 * @readonly
-		 * @member {Number} #limit
-		 */
-		this.limit = limit;
-
-		/**
-		 * Whether the buffer is locked. A locked buffer cannot be reset unless it gets unlocked.
-		 *
-		 * @readonly
-		 * @member {Boolean} #isLocked
-		 */
-		this.isLocked = false;
-
-		// The function to be called in order to notify the buffer about batches which appeared in the document.
-		// The callback will check whether it is a new batch and in that case the buffer will be flushed.
-		//
-		// The reason why the buffer needs to be flushed whenever a new batch appears is that the changes added afterwards
-		// should be added to a new batch. For instance, when the  user types, then inserts an image, and then types again,
-		// the characters typed after inserting the image should be added to a different batch than the characters typed before.
-		this._changeCallback = ( evt, batch ) => {
-			if ( batch.type != 'transparent' && batch !== this._batch ) {
-				this._reset( true );
-			}
-		};
-
-		this._selectionChangeCallback = () => {
-			this._reset();
-		};
-
-		this.model.document.on( 'change', this._changeCallback );
-
-		this.model.document.selection.on( 'change:range', this._selectionChangeCallback );
-		this.model.document.selection.on( 'change:attribute', this._selectionChangeCallback );
-
-		/**
-		 * The current batch instance.
-		 *
-		 * @private
-		 * @member #_batch
-		 */
-
-		/**
-		 * The callback to document the change event which later needs to be removed.
-		 *
-		 * @private
-		 * @member #_changeCallback
-		 */
-
-		/**
-		 * The callback to document selection `change:attribute` and `change:range` events which resets the buffer.
-		 *
-		 * @private
-		 * @member #_selectionChangeCallback
-		 */
-	}
-
-	/**
-	 * The current batch to which a feature should add its operations. Once the {@link #size}
-	 * is reached or exceeds the {@link #limit}, the batch is set to a new instance and the size is reset.
+	 * If the command is active (`value == true`), it will remove attributes. Otherwise, it will set attributes.
 	 *
-	 * @type {module:engine/model/batch~Batch}
-	 */
-	get batch() {
-		if ( !this._batch ) {
-			this._batch = new Batch();
-		}
-
-		return this._batch;
-	}
-
-	/**
-	 * The input number of changes into the buffer. Once the {@link #size} is
-	 * reached or exceeds the {@link #limit}, the batch is set to a new instance and the size is reset.
+	 * The execution result differs, depending on the {@link module:engine/model/document~Document#selection}:
 	 *
-	 * @param {Number} changeCount The number of atomic changes to input.
-	 */
-	input( changeCount ) {
-		this.size += changeCount;
-
-		if ( this.size >= this.limit ) {
-			this._reset( true );
-		}
-	}
-
-	/**
-	 * Locks the buffer.
-	 */
-	lock() {
-		this.isLocked = true;
-	}
-
-	/**
-	 * Unlocks the buffer.
-	 */
-	unlock() {
-		this.isLocked = false;
-	}
-
-	/**
-	 * Destroys the buffer.
-	 */
-	destroy() {
-		this.model.document.off( 'change', this._changeCallback );
-		this.model.document.selection.off( 'change:range', this._selectionChangeCallback );
-		this.model.document.selection.off( 'change:attribute', this._selectionChangeCallback );
-	}
-
-	/**
-	 * Resets the change buffer.
-	 *
-	 * @private
-	 * @param {Boolean} [ignoreLock] Whether internal lock {@link #isLocked} should be ignored.
-	 */
-	_reset( ignoreLock ) {
-		if ( !this.isLocked || ignoreLock ) {
-			this._batch = null;
-			this.size = 0;
-		}
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/inputcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/inputcommand
- */
-
-
-
-
-/**
- * The input command. Used by the {@link module:typing/input~Input input feature} to handle typing.
- *
- * @extends module:core/command~Command
- */
-class inputcommand_InputCommand extends Command {
-	/**
-	 * Creates an instance of the command.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor
-	 * @param {Number} undoStepSize The maximum number of atomic changes
-	 * which can be contained in one batch in the command buffer.
-	 */
-	constructor( editor, undoStepSize ) {
-		super( editor );
-
-		/**
-		 * Typing's change buffer used to group subsequent changes into batches.
-		 *
-		 * @readonly
-		 * @private
-		 * @member {module:typing/utils/changebuffer~ChangeBuffer} #_buffer
-		 */
-		this._buffer = new changebuffer_ChangeBuffer( editor.model, undoStepSize );
-	}
-
-	/**
-	 * The current change buffer.
-	 *
-	 * @type {module:typing/utils/changebuffer~ChangeBuffer}
-	 */
-	get buffer() {
-		return this._buffer;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	destroy() {
-		super.destroy();
-
-		this._buffer.destroy();
-	}
-
-	/**
-	 * Executes the input command. It replaces the content within the given range with the given text.
-	 * Replacing is a two step process, first the content within the range is removed and then the new text is inserted
-	 * at the beginning of the range (which after the removal is a collapsed range).
+	 * * If the selection is on a range, the command applies the attribute to all nodes in that range
+	 * (if they are allowed to have this attribute by the {@link module:engine/model/schema~Schema schema}).
+	 * * If the selection is collapsed in a non-empty node, the command applies the attribute to the
+	 * {@link module:engine/model/document~Document#selection} itself (note that typed characters copy attributes from the selection).
+	 * * If the selection is collapsed in an empty node, the command applies the attribute to the parent node of the selection (note
+	 * that the selection inherits all attributes from a node if it is in an empty node).
 	 *
 	 * @fires execute
-	 * @param {Object} [options] The command options.
-	 * @param {String} [options.text=''] The text to be inserted.
-	 * @param {module:engine/model/range~Range} [options.range] The range in which the text is inserted. Defaults
-	 * to the first range in the current selection.
-	 * @param {module:engine/model/range~Range} [options.resultRange] The range where the selection
-	 * should be placed after the insertion. If not specified, the selection will be placed right after
-	 * the inserted text.
+	 * @param {Object} [options] Command options.
+	 * @param {Boolean} [options.forceValue] If set, it will force the command behavior. If `true`, the command will apply the attribute,
+	 * otherwise the command will remove the attribute.
+	 * If not set, the command will look for its current value to decide what it should do.
 	 */
 	execute( options = {} ) {
 		const model = this.editor.model;
 		const doc = model.document;
-		const text = options.text || '';
-		const textInsertions = text.length;
-		const range = options.range || doc.selection.getFirstRange();
-		const resultRange = options.resultRange;
-
-		model.enqueueChange( this._buffer.batch, writer => {
-			const isCollapsedRange = range.isCollapsed;
-
-			this._buffer.lock();
-
-			if ( !isCollapsedRange ) {
-				writer.remove( range );
-			}
-
-			if ( text ) {
-				writer.insertText( text, doc.selection.getAttributes(), range.start );
-			}
-
-			if ( resultRange ) {
-				writer.setSelection( resultRange );
-			} else if ( isCollapsedRange ) {
-				// If range was collapsed just shift the selection by the number of inserted characters.
-				writer.setSelection( range.start.getShiftedBy( textInsertions ) );
-			}
-
-			this._buffer.unlock();
-
-			this._buffer.input( textInsertions );
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/injectunsafekeystrokeshandling.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/utils/injectunsafekeystrokeshandling
- */
-
-
-
-
-
-/**
- * Handles keystrokes which are unsafe for typing. This handler's logic is explained
- * in https://github.com/ckeditor/ckeditor5-typing/issues/83#issuecomment-398690251.
- *
- * @param {module:core/editor/editor~Editor} editor The editor instance.
- */
-function injectUnsafeKeystrokesHandling( editor ) {
-	let latestCompositionSelection = null;
-
-	const model = editor.model;
-	const view = editor.editing.view;
-	const inputCommand = editor.commands.get( 'input' );
-
-	view.document.on( 'keydown', ( evt, evtData ) => handleKeydown( evtData ), { priority: 'lowest' } );
-
-	view.document.on( 'compositionstart', handleCompositionStart, { priority: 'lowest' } );
-
-	view.document.on( 'compositionend', () => {
-		latestCompositionSelection = new model_selection_Selection( model.document.selection );
-	}, { priority: 'lowest' } );
-
-	// Handles the keydown event. We need to guess whether such keystroke is going to result
-	// in typing. If so, then before character insertion happens, any selected content needs
-	// to be deleted. Otherwise the default browser deletion mechanism would be
-	// triggered, resulting in:
-	//
-	// * Hundreds of mutations which could not be handled.
-	// * But most importantly, loss of control over how the content is being deleted.
-	//
-	// The method is used in a low-priority listener, hence allowing other listeners (e.g. delete or enter features)
-	// to handle the event.
-	//
-	// @param {module:engine/view/observer/keyobserver~KeyEventData} evtData
-	function handleKeydown( evtData ) {
-		const doc = model.document;
-		const isComposing = view.document.isComposing;
-		const isSelectionUnchanged = latestCompositionSelection && latestCompositionSelection.isEqual( doc.selection );
-
-		// Reset stored composition selection.
-		latestCompositionSelection = null;
-
-		// By relying on the state of the input command we allow disabling the entire input easily
-		// by just disabling the input command. We could’ve used here the delete command but that
-		// would mean requiring the delete feature which would block loading one without the other.
-		// We could also check the editor.isReadOnly property, but that wouldn't allow to block
-		// the input without blocking other features.
-		if ( !inputCommand.isEnabled ) {
-			return;
-		}
-
-		if ( isSafeKeystroke( evtData ) || doc.selection.isCollapsed ) {
-			return;
-		}
-
-		// If during composition, deletion should be prevented as it may remove composed sequence (#83).
-		if ( isComposing && evtData.keyCode === 229 ) {
-			return;
-		}
-
-		// If there is a `keydown` event fired with '229' keycode it might be related
-		// to recent composition. Check if selection is the same as upon ending recent composition,
-		// if so do not remove selected content as it will remove composed sequence (#83).
-		if ( !isComposing && evtData.keyCode === 229 && isSelectionUnchanged ) {
-			return;
-		}
-
-		deleteSelectionContent();
-	}
-
-	// Handles the `compositionstart` event. It is used only in special cases to remove the contents
-	// of a non-collapsed selection so composition itself does not result in complex mutations.
-	//
-	// The special case mentioned above is a situation in which the `keydown` event is fired after
-	// `compositionstart` event. In such cases {@link #handleKeydown} cannot clear current selection
-	// contents (because it is too late and will break the composition) so the composition handler takes care of it.
-	function handleCompositionStart() {
-		const doc = model.document;
-		const isFlatSelection = doc.selection.rangeCount === 1 ? doc.selection.getFirstRange().isFlat : true;
-
-		// If on `compositionstart` there is a non-collapsed selection which start and end have different parents
-		// it means the `handleKeydown()` method did not remove its contents. It happens usually because
-		// of different order of events (`compositionstart` before `keydown` - in Safari). In such cases
-		// we need to remove selection contents on composition start (#83).
-		if ( doc.selection.isCollapsed || isFlatSelection ) {
-			return;
-		}
-
-		deleteSelectionContent();
-	}
-
-	function deleteSelectionContent() {
-		const buffer = inputCommand.buffer;
-
-		buffer.lock();
-
-		model.enqueueChange( buffer.batch, () => {
-			model.deleteContent( model.document.selection );
-		} );
-
-		buffer.unlock();
-	}
-}
-
-const safeKeycodes = [
-	getCode( 'arrowUp' ),
-	getCode( 'arrowRight' ),
-	getCode( 'arrowDown' ),
-	getCode( 'arrowLeft' ),
-	9, // Tab
-	16, // Shift
-	17, // Ctrl
-	18, // Alt
-	20, // CapsLock
-	27, // Escape
-	33, // PageUp
-	34, // PageDown
-	35, // Home
-	36 // End
-];
-
-// Function keys.
-for ( let code = 112; code <= 135; code++ ) {
-	safeKeycodes.push( code );
-}
-
-// Returns `true` if a keystroke should not cause any content change caused by "typing".
-//
-// Note: This implementation is very simple and will need to be refined with time.
-//
-// @private
-// @param {engine.view.observer.keyObserver.KeyEventData} keyData
-// @returns {Boolean}
-function isSafeKeystroke( keyData ) {
-	// Keystrokes which contain Ctrl don't represent typing.
-	if ( keyData.ctrlKey ) {
-		return true;
-	}
-
-	return safeKeycodes.includes( keyData.keyCode );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/difftochanges.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module utils/difftochanges
- */
-
-/**
- * Creates a set of changes which need to be applied to the input in order to transform
- * it into the output. This function can be used with strings or arrays.
- *
- *		const input = Array.from( 'abc' );
- *		const output = Array.from( 'xaby' );
- *		const changes = diffToChanges( diff( input, output ), output );
- *
- *		changes.forEach( change => {
- *			if ( change.type == 'insert' ) {
- *				input.splice( change.index, 0, ...change.values );
- *			} else if ( change.type == 'delete' ) {
- *				input.splice( change.index, change.howMany );
- *			}
- *		} );
- *
- *		input.join( '' ) == output.join( '' ); // -> true
- *
- * @param {Array.<'equal'|'insert'|'delete'>} diff Result of {@link module:utils/diff~diff}.
- * @param {String|Array} output The string or array which was passed as diff's output.
- * @returns {Array.<Object>} Set of changes (insert or delete) which need to be applied to the input
- * in order to transform it into the output.
- */
-function diffToChanges( diff, output ) {
-	const changes = [];
-	let index = 0;
-	let lastOperation;
-
-	diff.forEach( change => {
-		if ( change == 'equal' ) {
-			pushLast();
-
-			index++;
-		} else if ( change == 'insert' ) {
-			if ( isContinuationOf( 'insert' ) ) {
-				lastOperation.values.push( output[ index ] );
-			} else {
-				pushLast();
-
-				lastOperation = {
-					type: 'insert',
-					index,
-					values: [ output[ index ] ]
-				};
-			}
-
-			index++;
-		} else /* if ( change == 'delete' ) */ {
-			if ( isContinuationOf( 'delete' ) ) {
-				lastOperation.howMany++;
-			} else {
-				pushLast();
-
-				lastOperation = {
-					type: 'delete',
-					index,
-					howMany: 1
-				};
-			}
-		}
-	} );
-
-	pushLast();
-
-	return changes;
-
-	function pushLast() {
-		if ( lastOperation ) {
-			changes.push( lastOperation );
-			lastOperation = null;
-		}
-	}
-
-	function isContinuationOf( expected ) {
-		return lastOperation && lastOperation.type == expected;
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/utils/utils
- */
-
-
-
-
-
-/**
- * Returns true if container children have mutated or more than a single text node was changed.
- *
- * @private
- * @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
- * module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
- * @returns {Boolean}
- */
-function containerChildrenMutated( mutations ) {
-	if ( mutations.length == 0 ) {
-		return false;
-	}
-
-	// Check if there is any mutation of `children` type or any mutation that changes more than one text node.
-	for ( const mutation of mutations ) {
-		if ( mutation.type === 'children' && !getSingleTextNodeChange( mutation ) ) {
-			return true;
-		}
-	}
-
-	return false;
-}
-
-/**
- * Returns change made to a single text node.
- *
- * @private
- * @param {module:engine/view/observer/mutationobserver~MutatedText|
- * module:engine/view/observer/mutationobserver~MutatedChildren} mutation
- * @returns {Object|undefined} Change object (see {@link module:utils/difftochanges~diffToChanges} output)
- * or undefined if more than a single text node was changed.
- */
-function getSingleTextNodeChange( mutation ) {
-	// One new node.
-	if ( mutation.newChildren.length - mutation.oldChildren.length != 1 ) {
-		return;
-	}
-
-	// Which is text.
-	const diffResult = diff_diff( mutation.oldChildren, mutation.newChildren, compareChildNodes );
-	const changes = diffToChanges( diffResult, mutation.newChildren );
-
-	// In case of [ delete, insert, insert ] the previous check will not exit.
-	if ( changes.length > 1 ) {
-		return;
-	}
-
-	const change = changes[ 0 ];
-
-	// Which is text.
-	if ( !( change.values[ 0 ] instanceof text_Text ) ) {
-		return;
-	}
-
-	return change;
-}
-
-/**
- * Checks whether two view nodes are identical, which means they are the same object
- * or contain exactly same data (in case of text nodes).
- *
- * @private
- * @param {module:engine/view/node~Node} oldChild
- * @param {module:engine/view/node~Node} newChild
- * @returns {Boolean}
- */
-function compareChildNodes( oldChild, newChild ) {
-	if ( oldChild instanceof text_Text && newChild instanceof text_Text ) {
-		return oldChild.data === newChild.data;
-	} else {
-		return oldChild === newChild;
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/injecttypingmutationshandling.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/utils/injecttypingmutationshandling
- */
-
-
-
-
-
-
-
-
-/**
- * Handles mutations caused by normal typing.
- *
- * @param {module:core/editor/editor~Editor} editor The editor instance.
- */
-function injectTypingMutationsHandling( editor ) {
-	editor.editing.view.document.on( 'mutations', ( evt, mutations, viewSelection ) => {
-		new injecttypingmutationshandling_MutationHandler( editor ).handle( mutations, viewSelection );
-	} );
-}
-
-/**
- * Helper class for translating DOM mutations into model changes.
- *
- * @private
- */
-class injecttypingmutationshandling_MutationHandler {
-	/**
-	 * Creates an instance of the mutation handler.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor
-	 */
-	constructor( editor ) {
-		/**
-		 * Editor instance for which mutations are handled.
-		 *
-		 * @readonly
-		 * @member {module:core/editor/editor~Editor} #editor
-		 */
-		this.editor = editor;
-
-		/**
-		 * The editing controller.
-		 *
-		 * @readonly
-		 * @member {module:engine/controller/editingcontroller~EditingController} #editing
-		 */
-		this.editing = this.editor.editing;
-	}
-
-	/**
-	 * Handles given mutations.
-	 *
-	 * @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
-	 * module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
-	 * @param {module:engine/view/selection~Selection|null} viewSelection
-	 */
-	handle( mutations, viewSelection ) {
-		if ( containerChildrenMutated( mutations ) ) {
-			this._handleContainerChildrenMutations( mutations, viewSelection );
-		} else {
-			for ( const mutation of mutations ) {
-				// Fortunately it will never be both.
-				this._handleTextMutation( mutation, viewSelection );
-				this._handleTextNodeInsertion( mutation );
-			}
-		}
-	}
-
-	/**
-	 * Handles situations when container's children mutated during input. This can happen when
-	 * the browser is trying to "fix" DOM in certain situations. For example, when the user starts to type
-	 * in `<p><a href=""><i>Link{}</i></a></p>`, the browser might change the order of elements
-	 * to `<p><i><a href="">Link</a>x{}</i></p>`. A similar situation happens when the spell checker
-	 * replaces a word wrapped with `<strong>` with a word wrapped with a `<b>` element.
-	 *
-	 * To handle such situations, the common DOM ancestor of all mutations is converted to the model representation
-	 * and then compared with the current model to calculate the proper text change.
-	 *
-	 * Note: Single text node insertion is handled in {@link #_handleTextNodeInsertion} and text node mutation is handled
-	 * in {@link #_handleTextMutation}).
-	 *
-	 * @private
-	 * @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
-	 * module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
-	 * @param {module:engine/view/selection~Selection|null} viewSelection
-	 */
-	_handleContainerChildrenMutations( mutations, viewSelection ) {
-		// Get common ancestor of all mutations.
-		const mutationsCommonAncestor = getMutationsContainer( mutations );
-
-		// Quit if there is no common ancestor.
-		if ( !mutationsCommonAncestor ) {
-			return;
-		}
-
-		const domConverter = this.editor.editing.view.domConverter;
-
-		// Get common ancestor in DOM.
-		const domMutationCommonAncestor = domConverter.mapViewToDom( mutationsCommonAncestor );
-
-		// Create fresh DomConverter so it will not use existing mapping and convert current DOM to model.
-		// This wouldn't be needed if DomConverter would allow to create fresh view without checking any mappings.
-		const freshDomConverter = new domconverter_DomConverter();
-		const modelFromCurrentDom = this.editor.data.toModel(
-			freshDomConverter.domToView( domMutationCommonAncestor )
-		).getChild( 0 );
-
-		// Current model.
-		const currentModel = this.editor.editing.mapper.toModelElement( mutationsCommonAncestor );
-
-		// If common ancestor is not mapped, do not do anything. It probably is a parent of another view element.
-		// That means that we would need to diff model elements (see `if` below). Better return early instead of
-		// trying to get a reasonable model ancestor. It will fell into the `if` below anyway.
-		// This situation happens for example for lists. If `<ul>` is a common ancestor, `currentModel` is `undefined`
-		// because `<ul>` is not mapped (`<li>`s are).
-		// See https://github.com/ckeditor/ckeditor5/issues/718.
-		if ( !currentModel ) {
-			return;
-		}
-
-		// Get children from both ancestors.
-		const modelFromDomChildren = Array.from( modelFromCurrentDom.getChildren() );
-		const currentModelChildren = Array.from( currentModel.getChildren() );
-
-		// Remove the last `<softBreak>` from the end of `modelFromDomChildren` if there is no `<softBreak>` in current model.
-		// If the described scenario happened, it means that this is a bogus `<br />` added by a browser.
-		const lastDomChild = modelFromDomChildren[ modelFromDomChildren.length - 1 ];
-		const lastCurrentChild = currentModelChildren[ currentModelChildren.length - 1 ];
-
-		if ( lastDomChild && lastDomChild.is( 'softBreak' ) && lastCurrentChild && !lastCurrentChild.is( 'softBreak' ) ) {
-			modelFromDomChildren.pop();
-		}
-
-		// Skip situations when common ancestor has any container elements.
-		if ( !isSafeForTextMutation( modelFromDomChildren ) || !isSafeForTextMutation( currentModelChildren ) ) {
-			return;
-		}
-
-		// Replace &nbsp; inserted by the browser with normal space. See comment in `_handleTextMutation`.
-		// Replace non-texts with any character. This is potentially dangerous but passes in manual tests. The thing is
-		// that we need to take care of proper indexes so we cannot simply remove non-text elements from the content.
-		// By inserting a character we keep all the real texts on their indexes.
-		const newText = modelFromDomChildren.map( item => item.is( 'text' ) ? item.data : '@' ).join( '' ).replace( /\u00A0/g, ' ' );
-		const oldText = currentModelChildren.map( item => item.is( 'text' ) ? item.data : '@' ).join( '' ).replace( /\u00A0/g, ' ' );
-
-		// Do nothing if mutations created same text.
-		if ( oldText === newText ) {
-			return;
-		}
-
-		const diffResult = diff_diff( oldText, newText );
-
-		const { firstChangeAt, insertions, deletions } = calculateChanges( diffResult );
-
-		// Try setting new model selection according to passed view selection.
-		let modelSelectionRange = null;
-
-		if ( viewSelection ) {
-			modelSelectionRange = this.editing.mapper.toModelRange( viewSelection.getFirstRange() );
-		}
-
-		const insertText = newText.substr( firstChangeAt, insertions );
-		const removeRange = model_range_Range.createFromParentsAndOffsets(
-			currentModel,
-			firstChangeAt,
-			currentModel,
-			firstChangeAt + deletions
-		);
-
-		this.editor.execute( 'input', {
-			text: insertText,
-			range: removeRange,
-			resultRange: modelSelectionRange
-		} );
-	}
-
-	/**
-	 * @private
-	 */
-	_handleTextMutation( mutation, viewSelection ) {
-		if ( mutation.type != 'text' ) {
-			return;
-		}
-
-		// Replace &nbsp; inserted by the browser with normal space.
-		// We want only normal spaces in the model and in the view. Renderer and DOM Converter will be then responsible
-		// for rendering consecutive spaces using &nbsp;, but the model and the view has to be clear.
-		// Other feature may introduce inserting non-breakable space on specific key stroke (for example shift + space).
-		// However then it will be handled outside of mutations, like enter key is.
-		// The replacing is here because it has to be done before `diff` and `diffToChanges` functions, as they
-		// take `newText` and compare it to (cleaned up) view.
-		// It could also be done in mutation observer too, however if any outside plugin would like to
-		// introduce additional events for mutations, they would get already cleaned up version (this may be good or not).
-		const newText = mutation.newText.replace( /\u00A0/g, ' ' );
-		// To have correct `diffResult`, we also compare view node text data with &nbsp; replaced by space.
-		const oldText = mutation.oldText.replace( /\u00A0/g, ' ' );
-
-		const diffResult = diff_diff( oldText, newText );
-
-		const { firstChangeAt, insertions, deletions } = calculateChanges( diffResult );
-
-		// Try setting new model selection according to passed view selection.
-		let modelSelectionRange = null;
-
-		if ( viewSelection ) {
-			modelSelectionRange = this.editing.mapper.toModelRange( viewSelection.getFirstRange() );
-		}
-
-		// Get the position in view and model where the changes will happen.
-		const viewPos = new position_Position( mutation.node, firstChangeAt );
-		const modelPos = this.editing.mapper.toModelPosition( viewPos );
-		const removeRange = model_range_Range.createFromPositionAndShift( modelPos, deletions );
-		const insertText = newText.substr( firstChangeAt, insertions );
-
-		this.editor.execute( 'input', {
-			text: insertText,
-			range: removeRange,
-			resultRange: modelSelectionRange
-		} );
-	}
-
-	/**
-	 * @private
-	 */
-	_handleTextNodeInsertion( mutation ) {
-		if ( mutation.type != 'children' ) {
-			return;
-		}
-
-		const change = getSingleTextNodeChange( mutation );
-		const viewPos = new position_Position( mutation.node, change.index );
-		const modelPos = this.editing.mapper.toModelPosition( viewPos );
-		const insertedText = change.values[ 0 ].data;
-
-		this.editor.execute( 'input', {
-			// Replace &nbsp; inserted by the browser with normal space.
-			// See comment in `_handleTextMutation`.
-			// In this case we don't need to do this before `diff` because we diff whole nodes.
-			// Just change &nbsp; in case there are some.
-			text: insertedText.replace( /\u00A0/g, ' ' ),
-			range: new model_range_Range( modelPos )
-		} );
-	}
-}
-
-// Returns first common ancestor of all mutations that is either {@link module:engine/view/containerelement~ContainerElement}
-// or {@link module:engine/view/rootelement~RootElement}.
-//
-// @private
-// @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
-// module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
-// @returns {module:engine/view/containerelement~ContainerElement|engine/view/rootelement~RootElement|undefined}
-function getMutationsContainer( mutations ) {
-	const lca = mutations
-		.map( mutation => mutation.node )
-		.reduce( ( commonAncestor, node ) => {
-			return commonAncestor.getCommonAncestor( node, { includeSelf: true } );
-		} );
-
-	if ( !lca ) {
-		return;
-	}
-
-	// We need to look for container and root elements only, so check all LCA's
-	// ancestors (starting from itself).
-	return lca.getAncestors( { includeSelf: true, parentFirst: true } )
-		.find( element => element.is( 'containerElement' ) || element.is( 'rootElement' ) );
-}
-
-// Returns true if provided array contains content that won't be problematic during diffing and text mutation handling.
-//
-// @param {Array.<module:engine/model/node~Node>} children
-// @returns {Boolean}
-function isSafeForTextMutation( children ) {
-	return children.every( child => child.is( 'text' ) || child.is( 'softBreak' ) );
-}
-
-// Calculates first change index and number of characters that should be inserted and deleted starting from that index.
-//
-// @private
-// @param diffResult
-// @returns {{insertions: number, deletions: number, firstChangeAt: *}}
-function calculateChanges( diffResult ) {
-	// Index where the first change happens. Used to set the position from which nodes will be removed and where will be inserted.
-	let firstChangeAt = null;
-	// Index where the last change happens. Used to properly count how many characters have to be removed and inserted.
-	let lastChangeAt = null;
-
-	// Get `firstChangeAt` and `lastChangeAt`.
-	for ( let i = 0; i < diffResult.length; i++ ) {
-		const change = diffResult[ i ];
-
-		if ( change != 'equal' ) {
-			firstChangeAt = firstChangeAt === null ? i : firstChangeAt;
-			lastChangeAt = i;
-		}
-	}
-
-	// How many characters, starting from `firstChangeAt`, should be removed.
-	let deletions = 0;
-	// How many characters, starting from `firstChangeAt`, should be inserted.
-	let insertions = 0;
-
-	for ( let i = firstChangeAt; i <= lastChangeAt; i++ ) {
-		// If there is no change (equal) or delete, the character is existing in `oldText`. We count it for removing.
-		if ( diffResult[ i ] != 'insert' ) {
-			deletions++;
-		}
-
-		// If there is no change (equal) or insert, the character is existing in `newText`. We count it for inserting.
-		if ( diffResult[ i ] != 'delete' ) {
-			insertions++;
-		}
-	}
-
-	return { insertions, deletions, firstChangeAt };
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/input.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/input
- */
-
-
-
-
-
-
-
-/**
- * Handles text input coming from the keyboard or other input methods.
- *
- * @extends module:core/plugin~Plugin
- */
-class input_Input extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Input';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-
-		// TODO The above default configuration value should be defined using editor.config.define() once it's fixed.
-		const inputCommand = new inputcommand_InputCommand( editor, editor.config.get( 'typing.undoStep' ) || 20 );
-
-		editor.commands.add( 'input', inputCommand );
-
-		injectUnsafeKeystrokesHandling( editor );
-		injectTypingMutationsHandling( editor );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/deletecommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/deletecommand
- */
-
-
-
-
-
-
-
-
-/**
- * The delete command. Used by the {@link module:typing/delete~Delete delete feature} to handle the <kbd>Delete</kbd> and
- * <kbd>Backspace</kbd> keys.
- *
- * @extends module:core/command~Command
- */
-class deletecommand_DeleteCommand extends Command {
-	/**
-	 * Creates an instance of the command.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor
-	 * @param {'forward'|'backward'} direction The directionality of the delete describing in what direction it
-	 * should consume the content when the selection is collapsed.
-	 */
-	constructor( editor, direction ) {
-		super( editor );
-
-		/**
-		 * The directionality of the delete describing in what direction it should
-		 * consume the content when the selection is collapsed.
-		 *
-		 * @readonly
-		 * @member {'forward'|'backward'} #direction
-		 */
-		this.direction = direction;
-
-		/**
-		 * Delete's change buffer used to group subsequent changes into batches.
-		 *
-		 * @readonly
-		 * @private
-		 * @member {typing.ChangeBuffer} #buffer
-		 */
-		this._buffer = new changebuffer_ChangeBuffer( editor.model, editor.config.get( 'typing.undoStep' ) );
-	}
-
-	/**
-	 * Executes the delete command. Depending on whether the selection is collapsed or not, deletes its content
-	 * or a piece of content in the {@link #direction defined direction}.
-	 *
-	 * @fires execute
-	 * @param {Object} [options] The command options.
-	 * @param {'character'} [options.unit='character'] See {@link module:engine/model/utils/modifyselection~modifySelection}'s options.
-	 * @param {Number} [options.sequence=1] A number describing which subsequent delete event it is without the key being released.
-	 * See the {@link module:engine/view/document~Document#event:delete} event data.
-	 */
-	execute( options = {} ) {
-		const model = this.editor.model;
-		const doc = model.document;
-
-		model.enqueueChange( this._buffer.batch, writer => {
-			this._buffer.lock();
-
-			const selection = new model_selection_Selection( doc.selection );
-
-			// Do not replace the whole selected content if selection was collapsed.
-			// This prevents such situation:
-			//
-			// <h1></h1><p>[]</p>	-->  <h1>[</h1><p>]</p> 		-->  <p></p>
-			// starting content		-->   after `modifySelection`	-->  after `deleteContent`.
-			const doNotResetEntireContent = selection.isCollapsed;
-
-			// Try to extend the selection in the specified direction.
-			if ( selection.isCollapsed ) {
-				model.modifySelection( selection, { direction: this.direction, unit: options.unit } );
-			}
-
-			// Check if deleting in an empty editor. See #61.
-			if ( this._shouldEntireContentBeReplacedWithParagraph( options.sequence || 1 ) ) {
-				this._replaceEntireContentWithParagraph( writer );
-
-				return;
-			}
-
-			// If selection is still collapsed, then there's nothing to delete.
-			if ( selection.isCollapsed ) {
-				return;
-			}
-
-			let changeCount = 0;
-
-			selection.getFirstRange().getMinimalFlatRanges().forEach( range => {
-				changeCount += count_count(
-					range.getWalker( { singleCharacters: true, ignoreElementEnd: true, shallow: true } )
-				);
-			} );
-
-			model.deleteContent( selection, { doNotResetEntireContent } );
-			this._buffer.input( changeCount );
-
-			writer.setSelection( selection );
-
-			this._buffer.unlock();
-		} );
-	}
-
-	/**
-	 * If the user keeps <kbd>Backspace</kbd> or <kbd>Delete</kbd> key pressed, the content of the current
-	 * editable will be cleared. However, this will not yet lead to resetting the remaining block to a paragraph
-	 * (which happens e.g. when the user does <kbd>Ctrl</kbd> + <kbd>A</kbd>, <kbd>Backspace</kbd>).
-	 *
-	 * But, if the user pressed the key in an empty editable for the first time,
-	 * we want to replace the entire content with a paragraph if:
-	 *
-	 * * the current limit element is empty,
-	 * * the paragraph is allowed in the limit element,
-	 * * the limit doesn't already have a paragraph inside.
-	 *
-	 * See https://github.com/ckeditor/ckeditor5-typing/issues/61.
-	 *
-	 * @private
-	 * @param {Number} sequence A number describing which subsequent delete event it is without the key being released.
-	 * @returns {Boolean}
-	 */
-	_shouldEntireContentBeReplacedWithParagraph( sequence ) {
-		// Does nothing if user pressed and held the "Backspace" or "Delete" key.
-		if ( sequence > 1 ) {
-			return false;
-		}
-
-		const model = this.editor.model;
-		const doc = model.document;
 		const selection = doc.selection;
-		const limitElement = model.schema.getLimitElement( selection );
-
-		// If a collapsed selection contains the whole content it means that the content is empty
-		// (from the user perspective).
-		const limitElementIsEmpty = selection.isCollapsed && selection.containsEntireContent( limitElement );
-
-		if ( !limitElementIsEmpty ) {
-			return false;
-		}
-
-		if ( !model.schema.checkChild( limitElement, 'paragraph' ) ) {
-			return false;
-		}
-
-		const limitElementFirstChild = limitElement.getChild( 0 );
-
-		// Does nothing if the limit element already contains only a paragraph.
-		// We ignore the case when paragraph might have some inline elements (<p><inlineWidget>[]</inlineWidget></p>)
-		// because we don't support such cases yet and it's unclear whether inlineWidget shouldn't be a limit itself.
-		if ( limitElementFirstChild && limitElementFirstChild.name === 'paragraph' ) {
-			return false;
-		}
-
-		return true;
-	}
-
-	/**
-	 * The entire content is replaced with the paragraph. Selection is moved inside the paragraph.
-	 *
-	 * @private
-	 */
-	_replaceEntireContentWithParagraph( writer ) {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-		const limitElement = model.schema.getLimitElement( selection );
-		const paragraph = new model_element_Element( 'paragraph' );
-
-		writer.remove( model_range_Range.createIn( limitElement ) );
-		writer.insert( paragraph, limitElement );
-
-		writer.setSelection( paragraph, 0 );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/deleteobserver.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/deleteobserver
- */
-
-
-
-
-
-
-/**
- * Delete observer introduces the {@link module:engine/view/document~Document#event:delete} event.
- *
- * @extends module:engine/view/observer/observer~Observer
- */
-class deleteobserver_DeleteObserver extends Observer {
-	constructor( view ) {
-		super( view );
-
-		const document = view.document;
-		let sequence = 0;
-
-		document.on( 'keyup', ( evt, data ) => {
-			if ( data.keyCode == keyCodes.delete || data.keyCode == keyCodes.backspace ) {
-				sequence = 0;
-			}
-		} );
-
-		document.on( 'keydown', ( evt, data ) => {
-			const deleteData = {};
-
-			if ( data.keyCode == keyCodes.delete ) {
-				deleteData.direction = 'forward';
-				deleteData.unit = 'character';
-			} else if ( data.keyCode == keyCodes.backspace ) {
-				deleteData.direction = 'backward';
-				deleteData.unit = 'codePoint';
-			} else {
-				return;
-			}
-
-			const hasWordModifier = src_env.isMac ? data.altKey : data.ctrlKey;
-			deleteData.unit = hasWordModifier ? 'word' : deleteData.unit;
-			deleteData.sequence = ++sequence;
-
-			// Save the event object to check later if it was stopped or not.
-			let event;
-			document.once( 'delete', evt => ( event = evt ), { priority: 'highest' } );
-
-			document.fire( 'delete', new domeventdata_DomEventData( document, data.domEvent, deleteData ) );
-
-			// Stop `keydown` event if `delete` event was stopped.
-			// https://github.com/ckeditor/ckeditor5/issues/753
-			if ( event && event.stop.called ) {
-				evt.stop();
-			}
-		} );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	observe() {}
-}
-
-/**
- * Event fired when the user tries to delete content (e.g. presses <kbd>Delete</kbd> or <kbd>Backspace</kbd>).
- *
- * Note: This event is fired by the {@link module:typing/deleteobserver~DeleteObserver observer}
- * (usually registered by the {@link module:typing/delete~Delete delete feature}).
- *
- * @event module:engine/view/document~Document#event:delete
- * @param {module:engine/view/observer/domeventdata~DomEventData} data
- * @param {'forward'|'delete'} data.direction The direction in which the deletion should happen.
- * @param {'character'|'word'} data.unit The "amount" of content that should be deleted.
- * @param {Number} data.sequence A number describing which subsequent delete event it is without the key being released.
- * If it's 2 or more it means that the key was pressed and hold.
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/injectandroidbackspacemutationshandling.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/utils/injectandroidbackspacenutationshandling
- */
-
-
-
-
-
-
-/**
- * Handles mutations triggered by <kbd>Backspace</kbd> on Android.
- * Due to the fact that on Android `keydown` events don't have the `keyCode` set, we are not able
- * to handle backspacing directly. We need to guess that from mutations which the IME
- * on Android caused.
- *
- * @param {module:core/editor/editor~Editor} editor The editor instance.
- */
-function injectAndroidBackspaceMutationsHandling( editor ) {
-	const model = editor.model;
-	const view = editor.editing.view;
-	const selectionChangeToleranceMs = 200;
-
-	let previousSelection = null;
-	let currentSelection = new model_selection_Selection( model.document.selection );
-	let latestSelectionChangeMs = Date.now();
-
-	model.document.selection.on( 'change', handleSelectionChange );
-
-	view.document.on( 'mutations', handleMutations, { priority: 'highest' } );
-
-	// Saves current and previous selection when it changes. Saved selections are used
-	// to remove correct piece of content when `Backspace` mutations are detected.
-	//
-	// @param {Object} evt
-	function handleSelectionChange( evt ) {
-		const newSelection = new model_selection_Selection( evt.source );
-		if ( !currentSelection.isEqual( newSelection ) ) {
-			previousSelection = currentSelection;
-			currentSelection = newSelection;
-			latestSelectionChangeMs = Date.now();
-		}
-	}
-
-	// Handles DOM mutations and checks if they should be processed as block elements removal mutations.
-	//
-	// @param {Object} evt
-	// @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
-	// module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
-	function handleMutations( evt, mutations ) {
-		if ( containerChildrenMutated( mutations ) && containsContainersRemoval( mutations ) ) {
-			handleContainerRemovalMutations();
-
-			// Stop mutations event propagation so other mutation handlers are not triggered.
-			evt.stop();
-		}
-	}
-
-	// Handles situations when mutations were generated by container removal.
-	// It happens on Android devices where every typing input has `229` key code
-	// and delete observer will not be triggered. In such cases we need to handle
-	// container removal mutations manually.
-	function handleContainerRemovalMutations() {
-		if ( shouldUsePreviousSelection() ) {
-			// If previous selection is used, update model selection in order
-			// to use `delete` command and to make `undo` work correctly.
-			model.enqueueChange( writer => {
-				writer.setSelection( previousSelection );
-			} );
-		}
-
-		editor.execute( 'delete' );
-	}
-
-	// Whether previously saved selection should be used instead of the current one to remove content.
-	//
-	// On Android devices when pressing backspace on non-collapsed selection, selection like:
-	//
-	//		`<h1>[Foo</h1><p>Bar]</p>`
-	//
-	// is changed to:
-	//
-	//		`<h1>Foo</h1><p>Bar[]</p>`
-	//
-	// even before `keypress` event, so in such cases we have to rely on previous selection to correctly process selected content.
-	//
-	// Previous selection will be used if:
-	//
-	//		* current selection is collapsed (see example above),
-	//		* previous selection exists, is non-collapsed and has same ending (last position) as the current one,
-	//		* change of the selection happened not earlier than X milliseconds ago (see `selectionChangeToleranceMs`).
-	//
-	// The last check is needed, because user can manually collapse the selection on its current end and then press `Backspace`.
-	// In such situations timing determines if the selection change was caused by the user or browser native behaviour.
-	// However, this happens only if selection was collapsed by the user on the beginning of the paragraph (so mutations
-	// still will show container removal).
-	//
-	// @returns {Boolean}
-	function shouldUsePreviousSelection() {
-		return Date.now() - latestSelectionChangeMs < selectionChangeToleranceMs &&
-			previousSelection && !previousSelection.isCollapsed && currentSelection.isCollapsed &&
-			currentSelection.getLastPosition().isEqual( previousSelection.getLastPosition() );
-	}
-}
-
-// Checks whether mutations array contains mutation generated by container/containers removal.
-// For example mutations generated on Android when pressing `backspace` on the beginning of the line:
-//
-//		<h1>Header1</h1>
-//		<p>{}Paragraph</p>
-//
-// are:
-//
-//		[
-//			{ newChildren: [], oldChildren: [ 'Paragraph' ], node: P, type: 'children' },
-//			{ newChildren: [ ContainerElement ], oldChildren: [ ContainerElement, ContainerElement ], node: Root, type: 'children' },
-//			{ newChildren: [ 'Heading 1Paragraph' ], oldChildren: [ 'Heading 1' ], node: H1, type: 'children' }
-//		]
-//
-// The 1st and 3rd mutations are just changes in a text (1st - text in `p` element was removed, 3rd - text in `h2` was changed)
-// and the 2nd one shows that one `ContainerElement` was removed. We have to recognize if mutations like 2nd one are present.
-// Based on that heuristic mutations are treated as the one removing container element.
-//
-// @private
-// @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
-// module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
-// @returns {Boolean}
-function containsContainersRemoval( mutations ) {
-	for ( const mutation of mutations ) {
-		if ( mutation.type !== 'children' ) {
-			continue;
-		}
-
-		const childrenBefore = mutation.oldChildren;
-		const childrenAfter = mutation.newChildren;
-
-		// Check if only containers were present before the mutation.
-		if ( !hasOnlyContainers( childrenBefore ) ) {
-			continue;
-		}
-
-		const diffResult = diff_diff( childrenBefore, childrenAfter );
-
-		// Check if there was only removing in that mutation without any insertions.
-		const hasDelete = diffResult.some( item => item === 'delete' );
-		const hasInsert = diffResult.some( item => item === 'insert' );
-
-		if ( hasDelete && !hasInsert ) {
-			return true;
-		}
-	}
-
-	return false;
-}
-
-// Whether provided array contains only nodes of `containerElement` type.
-//
-// @private
-// @param {Array.<module:engine/view/node~Node>} children
-// @returns {Boolean}
-function hasOnlyContainers( children ) {
-	return children.every( child => child.is( 'containerElement' ) );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/delete.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/delete
- */
-
-
-
-
-
-
-
-/**
- * The delete and backspace feature. Handles the <kbd>Delete</kbd> and <kbd>Backspace</kbd> keys in the editor.
- *
- * @extends module:core/plugin~Plugin
- */
-class delete_Delete extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Delete';
-	}
-
-	init() {
-		const editor = this.editor;
-		const view = editor.editing.view;
-		const viewDocument = view.document;
-
-		view.addObserver( deleteobserver_DeleteObserver );
-
-		editor.commands.add( 'forwardDelete', new deletecommand_DeleteCommand( editor, 'forward' ) );
-		editor.commands.add( 'delete', new deletecommand_DeleteCommand( editor, 'backward' ) );
-
-		this.listenTo( viewDocument, 'delete', ( evt, data ) => {
-			editor.execute( data.direction == 'forward' ? 'forwardDelete' : 'delete', { unit: data.unit, sequence: data.sequence } );
-			data.preventDefault();
-			view.scrollToTheSelection();
-		} );
-
-		injectAndroidBackspaceMutationsHandling( editor );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/typing.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module typing/typing
- */
-
-
-
-
-
-/**
- * The typing feature. It handles typing.
- *
- * This is a "glue" plugin which loads the {@link module:typing/input~Input} and {@link module:typing/delete~Delete}
- * plugins.
- *
- * @extends module:core/plugin~Plugin
- */
-class typing_Typing extends Plugin {
-	static get requires() {
-		return [ input_Input, delete_Delete ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Typing';
-	}
-}
-
-/**
- * The configuration of the typing features. Used by the features from the `@ckeditor/ckeditor5-typing` package.
- *
- * Read more in {@link module:typing/typing~TypingConfig}.
- *
- * @member {module:typing/typing~TypingConfig} module:core/editor/editorconfig~EditorConfig#typing
- */
-
-/**
- * The configuration of the typing features. Used by the typing features in `@ckeditor/ckeditor5-typing` package.
- *
- *		ClassicEditor
- *			.create( editorElement, {
- * 				typing: ... // Typing feature options.
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface TypingConfig
- */
-
-/**
- * The granularity of undo/redo for typing and deleting. The value `20` means (more or less) that a new undo step
- * is created every 20 characters are inserted or deleted.
- *
- * @member {Number} [module:typing/typing~TypingConfig#undoStep=20]
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/model/operation/nooperation.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module engine/model/operation/nooperation
- */
-
-
-
-/**
- * Operation which is doing nothing ("empty operation", "do-nothing operation", "noop"). This is an operation,
- * which when executed does not change the tree model. It still has some parameters defined for transformation purposes.
- *
- * In most cases this operation is a result of transforming operations. When transformation returns
- * {@link module:engine/model/operation/nooperation~NoOperation} it means that changes done by the transformed operation
- * have already been applied.
- *
- * @extends module:engine/model/operation/operation~Operation
- */
-class nooperation_NoOperation extends Operation {
-	get type() {
-		return 'noop';
-	}
-
-	/**
-	 * Creates and returns an operation that has the same parameters as this operation.
-	 *
-	 * @returns {module:engine/model/operation/nooperation~NoOperation} Clone of this operation.
-	 */
-	clone() {
-		return new nooperation_NoOperation( this.baseVersion );
-	}
-
-	/**
-	 * See {@link module:engine/model/operation/operation~Operation#getReversed `Operation#getReversed()`}.
-	 *
-	 * @returns {module:engine/model/operation/nooperation~NoOperation}
-	 */
-	getReversed() {
-		return new nooperation_NoOperation( this.baseVersion + 1 );
-	}
-
-	_execute() {
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get className() {
-		return 'NoOperation';
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/model/operation/transform.js
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const transformations = new Map();
-
-/**
- * @module engine/model/operation/transform
- */
-
-/**
- * Sets a transformation function to be be used to transform instances of class `OperationA` by instances of class `OperationB`.
- *
- * The `transformationFunction` is passed three parameters:
- *
- * * `a` - operation to be transformed, an instance of `OperationA`,
- * * `b` - operation to be transformed by, an instance of `OperationB`,
- * * {@link module:engine/model/operation/transform~TransformationContext `context`} - object with additional information about
- * transformation context.
- *
- * The `transformationFunction` should return transformation result, which is an array with one or multiple
- * {@link module:engine/model/operation/operation~Operation operation} instances.
- *
- * @protected
- * @param {Function} OperationA
- * @param {Function} OperationB
- * @param {Function} transformationFunction Function to use for transforming.
- */
-function setTransformation( OperationA, OperationB, transformationFunction ) {
-	let aGroup = transformations.get( OperationA );
-
-	if ( !aGroup ) {
-		aGroup = new Map();
-		transformations.set( OperationA, aGroup );
-	}
-
-	aGroup.set( OperationB, transformationFunction );
-}
-
-/**
- * Returns a previously set transformation function for transforming an instance of `OperationA` by an instance of `OperationB`.
- *
- * If no transformation was set for given pair of operations, {@link module:engine/model/operation/transform~noUpdateTransformation}
- * is returned. This means that if no transformation was set, the `OperationA` instance will not change when transformed
- * by the `OperationB` instance.
- *
- * @private
- * @param {Function} OperationA
- * @param {Function} OperationB
- * @returns {Function} Function set to transform an instance of `OperationA` by an instance of `OperationB`.
- */
-function getTransformation( OperationA, OperationB ) {
-	const aGroup = transformations.get( OperationA );
-
-	if ( aGroup && aGroup.has( OperationB ) ) {
-		return aGroup.get( OperationB );
-	}
-
-	return noUpdateTransformation;
-}
-
-/**
- * A transformation function that only clones operation to transform, without changing it.
- *
- * @private
- * @param {module:engine/model/operation/operation~Operation} a Operation to transform.
- * @returns {Array.<module:engine/model/operation/operation~Operation>}
- */
-function noUpdateTransformation( a ) {
-	return [ a ];
-}
-
-/**
- * Transforms operation `a` by operation `b`.
- *
- * @param {module:engine/model/operation/operation~Operation} a Operation to be transformed.
- * @param {module:engine/model/operation/operation~Operation} b Operation to transform by.
- * @param {module:engine/model/operation/transform~TransformationContext} context Transformation context for this transformation.
- * @returns {Array.<module:engine/model/operation/operation~Operation>} Transformation result.
- */
-function transform_transform( a, b, context = {} ) {
-	const transformationFunction = getTransformation( a.constructor, b.constructor );
-
-	try {
-		a = a.clone();
-
-		return transformationFunction( a, b, context );
-	} catch ( e ) {
-		log["a" /* default */].error( 'Error during operation transformation!', e.message );
-		log["a" /* default */].error( 'Transformed operation', a );
-		log["a" /* default */].error( 'Operation transformed by', b );
-		log["a" /* default */].error( 'context.aIsStrong', context.aIsStrong );
-		log["a" /* default */].error( 'context.aWasUndone', context.aWasUndone );
-		log["a" /* default */].error( 'context.bWasUndone', context.bWasUndone );
-		log["a" /* default */].error( 'context.abRelation', context.abRelation );
-		log["a" /* default */].error( 'context.baRelation', context.baRelation );
-
-		throw e;
-	}
-}
-
-/**
- * Performs a transformation of two sets of operations - `operationsA` and `operationsB`. The transformation is two-way -
- * both transformed `operationsA` and transformed `operationsB` are returned.
- *
- * Note, that the first operation in each set should base on the same document state (
- * {@link module:engine/model/document~Document#version document version}).
- *
- * It is assumed that `operationsA` are "more important" during conflict resolution between two operations.
- *
- * New copies of both passed arrays and operations inside them are returned. Passed arguments are not altered.
- *
- * Base versions of the transformed operations sets are updated accordingly. For example, assume that base versions are `4`
- * and there are `3` operations in `operationsA` and `5` operations in `operationsB`. Then:
- *
- * * transformed `operationsA` will start from base version `9` (`4` base version + `5` operations B),
- * * transformed `operationsB` will start from base version `7` (`4` base version + `3` operations A).
- *
- * If no operation was broken into two during transformation, then both sets will end up with an operation that bases on version `11`:
- *
- * * transformed `operationsA` start from `9` and there are `3` of them, so the last will have `baseVersion` equal to `11`,
- * * transformed `operationsB` start from `7` and there are `5` of them, so the last will have `baseVersion` equal to `11`.
- *
- * @param {Array.<module:engine/model/operation/operation~Operation>} operationsA
- * @param {Array.<module:engine/model/operation/operation~Operation>} operationsB
- * @param {Object} options Additional transformation options.
- * @param {module:engine/model/document~Document|null} options.document Document which the operations change.
- * @param {Boolean} [options.useRelations=false] Whether during transformation relations should be used (used during undo for
- * better conflict resolution).
- * @param {Boolean} [options.padWithNoOps=false] Whether additional {@link module:engine/model/operation/nooperation~NoOperation}s
- * should be added to the transformation results to force the same last base version for both transformed sets (in case
- * if some operations got broken into multiple operations during transformation).
- * @returns {Object} Transformation result.
- * @returns {Array.<module:engine/model/operation/operation~Operation>} return.operationsA Transformed `operationsA`.
- * @returns {Array.<module:engine/model/operation/operation~Operation>} return.operationsB Transformed `operationsB`.
- */
-function transformSets( operationsA, operationsB, options ) {
-	// Create new arrays so the originally passed arguments are not changed.
-	// No need to clone operations, they are cloned as they are transformed.
-	operationsA = operationsA.slice();
-	operationsB = operationsB.slice();
-
-	// If one of sets is empty there is simply nothing to transform, so return sets as they are.
-	if ( operationsA.length == 0 || operationsB.length == 0 ) {
-		return { operationsA, operationsB };
-	}
-	//
-	// Following is a description of transformation process:
-	//
-	// There are `operationsA` and `operationsB` to be transformed, both by both.
-	//
-	// So, suppose we have sets of two operations each: `operationsA` = `[ a1, a2 ]`, `operationsB` = `[ b1, b2 ]`.
-	//
-	// Remember, that we can only transform operations that base on the same context. We assert that `a1` and `b1` base on
-	// the same context and we transform them. Then, we get `a1'` and `b1'`. `a2` bases on a context with `a1` -- `a2`
-	// is an operation that followed `a1`. Similarly, `b2` bases on a context with `b1`.
-	//
-	// However, since `a1'` is a result of transformation by `b1`, `a1'` now also has a context with `b1`. This means that
-	// we can safely transform `a1'` by `b2`. As we finish transforming `a1`, we also transformed all `operationsB`.
-	// All `operationsB` also have context including `a1`. Now, we can properly transform `a2` by those operations.
-	//
-	// The transformation process can be visualized on a transformation diagram ("diamond diagram"):
-	//
-	//          [the initial state]
-	//         [common for a1 and b1]
-	//
-	//                   *
-	//                  / \
-	//                 /   \
-	//               b1     a1
-	//               /       \
-	//              /         \
-	//             *           *
-	//            / \         / \
-	//           /   \       /   \
-	//         b2    a1'   b1'    a2
-	//         /       \   /       \
-	//        /         \ /         \
-	//       *           *           *
-	//        \         / \         /
-	//         \       /   \       /
-	//        a1''   b2'   a2'   b1''
-	//           \   /       \   /
-	//            \ /         \ /
-	//             *           *
-	//              \         /
-	//               \       /
-	//              a2''   b2''
-	//                 \   /
-	//                  \ /
-	//                   *
-	//
-	//           [the final state]
-	//
-	// The final state can be reached from the initial state by applying `a1`, `a2`, `b1''` and `b2''`, as well as by
-	// applying `b1`, `b2`, `a1''`, `a2''`. Note how the operations get to a proper common state before each pair is
-	// transformed.
-	//
-	// Another thing to consider is that an operation during transformation can be broken into multiple operations.
-	// Suppose that `a1` * `b1` = `[ a11', a12' ]` (instead of `a1'` that we considered previously).
-	//
-	// In that case, we leave `a12'` for later and we continue transforming `a11'` until it is transformed by all `operationsB`
-	// (in our case it is just `b2`). At this point, `b1` is transformed by "whole" `a1`, while `b2` is only transformed
-	// by `a11'`. Similarly, `a12'` is only transformed by `b1`. This leads to a conclusion that we need to start transforming `a12'`
-	// from the moment just after it was broken. So, `a12'` is transformed by `b2`. Now, "the whole" `a1` is transformed
-	// by `operationsB`, while all `operationsB` are transformed by "the whole" `a1`. This means that we can continue with
-	// following `operationsA` (in our case it is just `a2`).
-	//
-	// Of course, also `operationsB` can be broken. However, since we focus on transforming operation `a` to the end,
-	// the only thing to do is to store both pieces of operation `b`, so that the next transformed operation `a` will
-	// be transformed by both of them.
-	//
-	//                       *
-	//                      / \
-	//                     /   \
-	//                    /     \
-	//                  b1       a1
-	//                  /         \
-	//                 /           \
-	//                /             \
-	//               *               *
-	//              / \             / \
-	//             /  a11'         /   \
-	//            /     \         /     \
-	//          b2       *      b1'      a2
-	//          /       / \     /         \
-	//         /       /  a12' /           \
-	//        /       /     \ /             \
-	//       *       b2'     *               *
-	//        \     /       / \             /
-	//       a11'' /     b21'' \           /
-	//          \ /       /     \         /
-	//           *       *      a2'     b1''
-	//            \     / \       \     /
-	//          a12'' b22''\       \   /
-	//              \ /     \       \ /
-	//               *      a2''     *
-	//                \       \     /
-	//                 \       \  b21'''
-	//                  \       \ /
-	//                a2'''      *
-	//                    \     /
-	//                     \  b22'''
-	//                      \ /
-	//                       *
-	//
-	// Note, how `a1` is broken and transformed into `a11'` and `a12'`, while `b2'` got broken and transformed into `b21''` and `b22''`.
-	//
-	// Having all that on mind, here is an outline for the transformation process algorithm:
-	//
-	// 1. We have `operationsA` and `operationsB` array, which we dynamically update as the transformation process goes.
-	//
-	// 2. We take next (or first) operation from `operationsA` and check from which operation `b` we need to start transforming it.
-	// All original `operationsA` are set to be transformed starting from the first operation `b`.
-	//
-	// 3. We take operations from `operationsB`, one by one, starting from the correct one, and transform operation `a`
-	// by operation `b` (and vice versa). We update `operationsA` and `operationsB` by replacing the original operations
-	// with the transformation results.
-	//
-	// 4. If operation is broken into multiple operations, we save all the new operations in the place of the
-	// original operation.
-	//
-	// 5. Additionally, if operation `a` was broken, for the "new" operation, we remember from which operation `b` it should
-	// be transformed by.
-	//
-	// 6. We continue transforming "current" operation `a` until it is transformed by all `operationsB`. Then, go to 2.
-	// unless the last operation `a` was transformed.
-	//
-	// The actual implementation of the above algorithm is slightly different, as only one loop (while) is used.
-	// The difference is that we have "current" `a` operation to transform and we store the index of the next `b` operation
-	// to transform by. Each loop operates on two indexes then: index pointing to currently processed `a` operation and
-	// index pointing to next `b` operation. Each loop is just one `a * b` + `b * a` transformation. After each loop
-	// operation `b` index is updated. If all `b` operations were visited for the current `a` operation, we change
-	// current `a` operation index to the next one.
-	//
-
-	// For each operation `a`, keeps information what is the index in `operationsB` from which the transformation should start.
-	const nextTransformIndex = new WeakMap();
-
-	// For all the original `operationsA`, set that they should be transformed starting from the first of `operationsB`.
-	for ( const op of operationsA ) {
-		nextTransformIndex.set( op, 0 );
-	}
-
-	// Additional data that is used for some postprocessing after the main transformation process is done.
-	const data = {
-		nextBaseVersionA: operationsA[ operationsA.length - 1 ].baseVersion + 1,
-		nextBaseVersionB: operationsB[ operationsB.length - 1 ].baseVersion + 1,
-		originalOperationsACount: operationsA.length,
-		originalOperationsBCount: operationsB.length
-	};
-
-	const contextFactory = new transform_ContextFactory( options.document, options.useRelations );
-	contextFactory.setOriginalOperations( operationsA );
-	contextFactory.setOriginalOperations( operationsB );
-
-	// Index of currently transformed operation `a`.
-	let i = 0;
-
-	// While not all `operationsA` are transformed...
-	while ( i < operationsA.length ) {
-		// Get "current" operation `a`.
-		const opA = operationsA[ i ];
-
-		// For the "current" operation `a`, get the index of the next operation `b` to transform by.
-		const indexB = nextTransformIndex.get( opA );
-
-		// If operation `a` was already transformed by every operation `b`, change "current" operation `a` to the next one.
-		if ( indexB == operationsB.length ) {
-			i++;
-			continue;
-		}
-
-		const opB = operationsB[ indexB ];
-
-		// Transform `a` by `b` and `b` by `a`.
-		const newOpsA = transform_transform( opA, opB, contextFactory.getContext( opA, opB, true ) );
-		const newOpsB = transform_transform( opB, opA, contextFactory.getContext( opB, opA, false ) );
-		// As a result we get one or more `newOpsA` and one or more `newOpsB` operations.
-
-		// Update contextual information about operations.
-		contextFactory.updateRelation( opA, opB );
-
-		contextFactory.setOriginalOperations( newOpsA, opA );
-		contextFactory.setOriginalOperations( newOpsB, opB );
-
-		// For new `a` operations, update their index of the next operation `b` to transform them by.
-		//
-		// This is needed even if there was only one result (`a` was not broken) because that information is used
-		// at the beginning of this loop every time.
-		for ( const newOpA of newOpsA ) {
-			// Acknowledge, that operation `b` also might be broken into multiple operations.
-			//
-			// This is why we raise `indexB` not just by 1. If `newOpsB` are multiple operations, they will be
-			// spliced in the place of `opB`. So we need to change `transformBy` accordingly, so that an operation won't
-			// be transformed by the same operation (part of it) again.
-			nextTransformIndex.set( newOpA, indexB + newOpsB.length );
-		}
-
-		// Update `operationsA` and `operationsB` with the transformed versions.
-		operationsA.splice( i, 1, ...newOpsA );
-		operationsB.splice( indexB, 1, ...newOpsB );
-	}
-
-	if ( options.padWithNoOps ) {
-		// If no-operations padding is enabled, count how many extra `a` and `b` operations were generated.
-		const brokenOperationsACount = operationsA.length - data.originalOperationsACount;
-		const brokenOperationsBCount = operationsB.length - data.originalOperationsBCount;
-
-		// Then, if that number is not the same, pad `operationsA` or `operationsB` with correct number of no-ops so
-		// that the base versions are equalled.
-		//
-		// Note that only one array will be updated, as only one of those subtractions can be greater than zero.
-		padWithNoOps( operationsA, brokenOperationsBCount - brokenOperationsACount );
-		padWithNoOps( operationsB, brokenOperationsACount - brokenOperationsBCount );
-	}
-
-	// Finally, update base versions of transformed operations.
-	updateBaseVersions( operationsA, data.nextBaseVersionB );
-	updateBaseVersions( operationsB, data.nextBaseVersionA );
-
-	return { operationsA, operationsB };
-}
-
-// Gathers additional data about operations processed during transformation. Can be used to obtain contextual information
-// about two operations that are about to be transformed. This contextual information can be used for better conflict resolution.
-class transform_ContextFactory {
-	// Creates `ContextFactory` instance.
-	//
-	// @param {module:engine/model/document~Document} document Document which the operations change.
-	// @param {Boolean} useRelations Whether during transformation relations should be used (used during undo for
-	// better conflict resolution).
-	constructor( document, useRelations ) {
-		// `model.History` instance which information about undone operations will be taken from.
-		this._history = document.history;
-
-		// Whether additional context should be used.
-		this._useRelations = useRelations;
-
-		// For each operation that is created during transformation process, we keep a reference to the original operation
-		// which it comes from. The original operation works as a kind of "identifier". Every contextual information
-		// gathered during transformation that we want to save for given operation, is actually saved for the original operation.
-		// This way no matter if operation `a` is cloned, then transformed, even breaks, we still have access to the previously
-		// gathered data through original operation reference.
-		this._originalOperations = new Map();
-
-		// Relations is a double-map structure (maps in map) where for two operations we store how those operations were related
-		// to each other. Those relations are evaluated during transformation process. For every transformated pair of operations
-		// we keep relations between them.
-		this._relations = new Map();
-	}
-
-	// Sets "original operation" for given operations.
-	//
-	// During transformation process, operations are cloned, then changed, then processed again, sometimes broken into two
-	// or multiple operations. When gathering additional data it is important that all operations can be somehow linked
-	// so a cloned and transformed "version" still kept track of the data assigned earlier to it.
-	//
-	// The original operation object will be used as such an universal linking id. Throughout the transformation process
-	// all cloned operations will refer to "the original operation" when storing and reading additional data.
-	//
-	// If `takeFrom` is not set, each operation from `operations` array will be assigned itself as "the original operation".
-	// This should be used as an initialization step.
-	//
-	// If `takeFrom` is set, each operation from `operations` will be assigned the same original operation as assigned
-	// for `takeFrom` operation. This should be used to update original operations. It should be used in a way that
-	// `operations` are the result of `takeFrom` transformation to ensure proper "original operation propagation".
-	//
-	// @param {Array.<module:engine/model/operation/operation~Operation>} operations
-	// @param {module:engine/model/operation/operation~Operation|null} [takeFrom=null]
-	setOriginalOperations( operations, takeFrom = null ) {
-		const originalOperation = takeFrom ? this._originalOperations.get( takeFrom ) : null;
-
-		for ( const operation of operations ) {
-			this._originalOperations.set( operation, originalOperation || operation );
-		}
-	}
-
-	// Saves a relation between operations `opA` and `opB`.
-	//
-	// Relations are then later used to help solve conflicts when operations are transformed.
-	//
-	// @param {module:engine/model/operation/operation~Operation} opA
-	// @param {module:engine/model/operation/operation~Operation} opB
-	updateRelation( opA, opB ) {
-		// The use of relations is described in a bigger detail in transformation functions.
-		//
-		// In brief, this function, for specified pairs of operation types, checks how positions defined in those operations relate.
-		// Then those relations are saved. For example, for two move operations, it is saved if one of those operations target
-		// position is before the other operation source position. This kind of information gives contextual information when
-		// transformation is used during undo. Similar checks are done for other pairs of operations.
-		//
-		switch ( opA.constructor ) {
-			case moveoperation_MoveOperation: {
-				switch ( opB.constructor ) {
-					case mergeoperation_MergeOperation: {
-						if ( opA.targetPosition.isEqual( opB.sourcePosition ) || opB.movedRange.containsPosition( opA.targetPosition ) ) {
-							this._setRelation( opA, opB, 'insertAtSource' );
-						} else if ( opA.targetPosition.isEqual( opB.deletionPosition ) ) {
-							this._setRelation( opA, opB, 'insertBetween' );
-						}
-
-						break;
-					}
-
-					case moveoperation_MoveOperation: {
-						if ( opA.targetPosition.isEqual( opB.sourcePosition ) || opA.targetPosition.isBefore( opB.sourcePosition ) ) {
-							this._setRelation( opA, opB, 'insertBefore' );
-						} else {
-							this._setRelation( opA, opB, 'insertAfter' );
-						}
-
-						break;
-					}
-				}
-
-				break;
-			}
-
-			case splitoperation_SplitOperation: {
-				switch ( opB.constructor ) {
-					case mergeoperation_MergeOperation: {
-						if ( opA.splitPosition.isBefore( opB.sourcePosition ) ) {
-							this._setRelation( opA, opB, 'splitBefore' );
-						}
-
-						break;
-					}
-
-					case moveoperation_MoveOperation: {
-						if ( opA.splitPosition.isEqual( opB.sourcePosition ) || opA.splitPosition.isBefore( opB.sourcePosition ) ) {
-							this._setRelation( opA, opB, 'splitBefore' );
-						}
-
-						break;
-					}
-				}
-
-				break;
-			}
-
-			case mergeoperation_MergeOperation: {
-				switch ( opB.constructor ) {
-					case mergeoperation_MergeOperation: {
-						if ( !opA.targetPosition.isEqual( opB.sourcePosition ) ) {
-							this._setRelation( opA, opB, 'mergeTargetNotMoved' );
-						}
-
-						if ( opA.sourcePosition.isEqual( opB.sourcePosition ) ) {
-							this._setRelation( opA, opB, 'mergeSameElement' );
-						}
-
-						break;
-					}
-				}
-
-				break;
-			}
-		}
-	}
-
-	// Evaluates and returns contextual information about two given operations `opA` and `opB` which are about to be transformed.
-	//
-	// @param {module:engine/model/operation/operation~Operation} opA
-	// @param {module:engine/model/operation/operation~Operation} opB
-	// @returns {module:engine/model/operation/transform~TransformationContext}
-	getContext( opA, opB, aIsStrong ) {
-		return {
-			aIsStrong,
-			aWasUndone: this._wasUndone( opA ),
-			bWasUndone: this._wasUndone( opB ),
-			abRelation: this._useRelations ? this._getRelation( opA, opB ) : null,
-			baRelation: this._useRelations ? this._getRelation( opB, opA ) : null
-		};
-	}
-
-	// Returns whether given operation `op` has already been undone.
-	//
-	// Information whether an operation was undone gives more context when making a decision when two operations are in conflict.
-	//
-	// @param {module:engine/model/operation/operation~Operation} op
-	// @returns {Boolean}
-	_wasUndone( op ) {
-		// For `op`, get its original operation. After all, if `op` is a clone (or even transformed clone) of another
-		// operation, literally `op` couldn't be undone. It was just generated. If anything, it was the operation it origins
-		// from which was undone. So get that original operation.
-		const originalOp = this._originalOperations.get( op );
-
-		// And check with the document if the original operation was undone.
-		return originalOp.wasUndone || this._history.isUndoneOperation( originalOp );
-	}
-
-	// Returns a relation between `opA` and an operation which is undone by `opB`. This can be `String` value if a relation
-	// was set earlier or `null` if there was no relation between those operations.
-	//
-	// This is a little tricky to understand, so let's compare it to `ContextFactory#_wasUndone`.
-	//
-	// When `wasUndone( opB )` is used, we check if the `opB` has already been undone. It is obvious, that the
-	// undoing operation must happen after the undone operation. So, essentially, we have `opB`, we take document history,
-	// we look forward in the future and ask if in that future `opB` was undone.
-	//
-	// Relations is a backward process to `wasUndone()`.
-	//
-	// Long story short - using relations is asking what happened in the past. Looking back. This time we have an undoing
-	// operation `opB` which has undone some other operation. When there is a transformation `opA` x `opB` and there is
-	// a conflict to solve and `opB` is an undoing operation, we can look back in the history and see what was a relation
-	// between `opA` and the operation which `opB` undone. Basing on that relation from the past, we can now make
-	// a better decision when resolving a conflict between two operations, because we know more about the context of
-	// those two operations.
-	//
-	// This is why this function does not return a relation directly between `opA` and `opB` because we need to look
-	// back to search for a meaningful contextual information.
-	//
-	// @param {module:engine/model/operation/operation~Operation} opA
-	// @param {module:engine/model/operation/operation~Operation} opB
-	// @returns {String|null}
-	_getRelation( opA, opB ) {
-		// Get the original operation. Similarly as in `wasUndone()` it is used as an universal identifier for stored data.
-		const origB = this._originalOperations.get( opB );
-		const undoneB = this._history.getUndoneOperation( origB );
-
-		// If `opB` is not undoing any operation, there is no relation.
-		if ( !undoneB ) {
-			return null;
-		}
-
-		const origA = this._originalOperations.get( opA );
-		const relationsA = this._relations.get( origA );
-
-		// Get all relations for `opA`, and check if there is a relation with `opB`-undone-counterpart. If so, return it.
-		if ( relationsA ) {
-			return relationsA.get( undoneB ) || null;
-		}
-
-		return null;
-	}
-
-	// Helper function for `ContextFactory#updateRelations`.
-	//
-	// @private
-	// @param {module:engine/model/operation/operation~Operation} opA
-	// @param {module:engine/model/operation/operation~Operation} opB
-	// @param {String} relation
-	_setRelation( opA, opB, relation ) {
-		// As always, setting is for original operations, not the clones/transformed operations.
-		const origA = this._originalOperations.get( opA );
-		const origB = this._originalOperations.get( opB );
-
-		let relationsA = this._relations.get( origA );
-
-		if ( !relationsA ) {
-			relationsA = new Map();
-			this._relations.set( origA, relationsA );
-		}
-
-		relationsA.set( origB, relation );
-	}
-}
-
-/**
- * Holds additional contextual information about a transformed pair of operations (`a` and `b`). Those information
- * can be used for better conflict resolving.
- *
- * @typedef {Object} module:engine/model/operation/transform~TransformationContext
- *
- * @property {Boolean} aIsStrong Whether `a` is strong operation in this transformation, or weak.
- * @property {Boolean} aWasUndone Whether `a` operation was undone.
- * @property {Boolean} bWasUndone Whether `b` operation was undone.
- * @property {String|null} abRelation The relation between `a` operation and an operation undone by `b` operation.
- * @property {String|null} baRelation The relation between `b` operation and an operation undone by `a` operation.
- */
-
-/**
- * An utility function that updates {@link module:engine/model/operation/operation~Operation#baseVersion base versions}
- * of passed operations.
- *
- * The function simply sets `baseVersion` as a base version of the first passed operation and then increments it for
- * each following operation in `operations`.
- *
- * @private
- * @param {Array.<module:engine/model/operation/operation~Operation>} operations Operations to update.
- * @param {Number} baseVersion Base version to set for the first operation in `operations`.
- */
-function updateBaseVersions( operations, baseVersion ) {
-	for ( const operation of operations ) {
-		operation.baseVersion = baseVersion++;
-	}
-}
-
-/**
- * Adds `howMany` instances of {@link module:engine/model/operation/nooperation~NoOperation} to `operations` set.
- *
- * @private
- * @param {Array.<module:engine/model/operation/operation~Operation>} operations
- * @param {Number} howMany
- */
-function padWithNoOps( operations, howMany ) {
-	for ( let i = 0; i < howMany; i++ ) {
-		operations.push( new nooperation_NoOperation( 0 ) );
-	}
-}
-
-// -----------------------
-
-setTransformation( attributeoperation_AttributeOperation, attributeoperation_AttributeOperation, ( a, b, context ) => {
-	if ( a.key === b.key ) {
-		// If operations attributes are in conflict, check if their ranges intersect and manage them properly.
-
-		// First, we want to apply change to the part of a range that has not been changed by the other operation.
-		const operations = a.range.getDifference( b.range ).map( range => {
-			return new attributeoperation_AttributeOperation( range, a.key, a.oldValue, a.newValue, 0 );
-		} );
-
-		// Then we take care of the common part of ranges.
-		const common = a.range.getIntersection( b.range );
-
-		if ( common ) {
-			// If this operation is more important, we also want to apply change to the part of the
-			// original range that has already been changed by the other operation. Since that range
-			// got changed we also have to update `oldValue`.
-			if ( context.aIsStrong ) {
-				operations.push( new attributeoperation_AttributeOperation( common, b.key, b.newValue, a.newValue, 0 ) );
-			}
-		}
-
-		if ( operations.length == 0 ) {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-
-		return operations;
-	} else {
-		// If operations don't conflict, simply return an array containing just a clone of this operation.
-		return [ a ];
-	}
-} );
-
-setTransformation( attributeoperation_AttributeOperation, insertoperation_InsertOperation, ( a, b ) => {
-	// Case 1:
-	//
-	// The attribute operation range includes the position where nodes were inserted.
-	// There are two possible scenarios: the inserted nodes were text and they should receive attributes or
-	// the inserted nodes were elements and they should not receive attributes.
-	//
-	if ( a.range.start.hasSameParentAs( b.position ) && a.range.containsPosition( b.position ) ) {
-		// If new nodes should not receive attributes, two separated ranges will be returned.
-		// Otherwise, one expanded range will be returned.
-		const range = a.range._getTransformedByInsertion( b.position, b.howMany, !b.shouldReceiveAttributes );
-		const result = range.map( r => {
-			return new attributeoperation_AttributeOperation( r, a.key, a.oldValue, a.newValue, a.baseVersion );
-		} );
-
-		if ( b.shouldReceiveAttributes ) {
-			// `AttributeOperation#range` includes some newly inserted text.
-			// The operation should also change the attribute of that text. An example:
-			//
-			// Bold should be applied on the following range:
-			// <p>Fo[zb]ar</p>
-			//
-			// In meantime, new text is typed:
-			// <p>Fozxxbar</p>
-			//
-			// Bold should be applied also on the new text:
-			// <p>Fo[zxxb]ar</p>
-			// <p>Fo<$text bold="true">zxxb</$text>ar</p>
-			//
-			// There is a special case to consider here to consider.
-			//
-			// Consider setting an attribute with multiple possible values, for example `highlight`. The inserted text might
-			// have already an attribute value applied and the `oldValue` property of the attribute operation might be wrong:
-			//
-			// Attribute `highlight="yellow"` should be applied on the following range:
-			// <p>Fo[zb]ar<p>
-			//
-			// In meantime, character `x` with `highlight="red"` is typed:
-			// <p>Fo[z<$text highlight="red">x</$text>b]ar</p>
-			//
-			// In this case we cannot simply apply operation changing the attribute value from `null` to `"yellow"` for the whole range
-			// because that would lead to an exception (`oldValue` is incorrect for `x`).
-			//
-			// We also cannot break the original range as this would mess up a scenario when there are multiple following
-			// insert operations, because then only the first inserted character is included in those ranges:
-			// <p>Fo[z][x][b]ar</p>   -->   <p>Fo[z][x]x[b]ar</p>   -->   <p>Fo[z][x]xx[b]ar</p>
-			//
-			// So, the attribute range needs be expanded, no matter what attributes are set on the inserted nodes:
-			//
-			// <p>Fo[z<$text highlight="red">x</$text>b]ar</p>      <--- Change from `null` to `yellow`, throwing an exception.
-			//
-			// But before that operation would be applied, we will add an additional attribute operation that will change
-			// attributes on the inserted nodes in a way which would make the original operation correct:
-			//
-			// <p>Fo[z{<$text highlight="red">}x</$text>b]ar</p>    <--- Change range `{}` from `red` to `null`.
-			// <p>Fo[zxb]ar</p>                                     <--- Now change from `null` to `yellow` is completely fine.
-			//
-
-			// Generate complementary attribute operation. Be sure to add it before the original operation.
-			const op = _getComplementaryAttributeOperations( b, a.key, a.oldValue );
-
-			if ( op ) {
-				result.unshift( op );
-			}
-		}
-
-		// If nodes should not receive new attribute, we are done here.
-		return result;
-	}
-
-	// If insert operation is not expanding the attribute operation range, simply transform the range.
-	a.range = a.range._getTransformedByInsertion( b.position, b.howMany, false )[ 0 ];
-
-	return [ a ];
-} );
-
-/**
- * Helper function for `AttributeOperation` x `InsertOperation` (and reverse) transformation.
- *
- * For given `insertOperation` it checks the inserted node if it has an attribute `key` set to a value different
- * than `newValue`. If so, it generates an `AttributeOperation` which changes the value of `key` attribute to `newValue`.
- *
- * @private
- * @param {module:engine/model/operation/insertoperation~InsertOperation} insertOperation
- * @param {String} key
- * @param {*} newValue
- * @returns {module:engine/model/operation/attributeoperation~AttributeOperation|null}
- */
-function _getComplementaryAttributeOperations( insertOperation, key, newValue ) {
-	const nodes = insertOperation.nodes;
-
-	// At the beginning we store the attribute value from the first node.
-	const insertValue = nodes.getNode( 0 ).getAttribute( key );
-
-	if ( insertValue == newValue ) {
-		return null;
-	}
-
-	const range = new model_range_Range( insertOperation.position, insertOperation.position.getShiftedBy( insertOperation.howMany ) );
-
-	return new attributeoperation_AttributeOperation( range, key, insertValue, newValue, 0 );
-}
-
-setTransformation( attributeoperation_AttributeOperation, mergeoperation_MergeOperation, ( a, b ) => {
-	const ranges = [];
-
-	// Case 1:
-	//
-	// Attribute change on the merged element. In this case, the merged element was moved to the graveyard.
-	// An additional attribute operation that will change the (re)moved element needs to be generated.
-	//
-	if ( a.range.start.hasSameParentAs( b.deletionPosition ) ) {
-		if ( a.range.containsPosition( b.deletionPosition ) || a.range.start.isEqual( b.deletionPosition ) ) {
-			ranges.push( model_range_Range.createFromPositionAndShift( b.graveyardPosition, 1 ) );
-		}
-	}
-
-	const range = a.range._getTransformedByMergeOperation( b );
-
-	// Do not add empty (collapsed) ranges to the result. `range` may be collapsed if it contained only the merged element.
-	if ( !range.isCollapsed ) {
-		ranges.push( range );
-	}
-
-	// Create `AttributeOperation`s out of the ranges.
-	return ranges.map( range => {
-		return new attributeoperation_AttributeOperation( range, a.key, a.oldValue, a.newValue, a.baseVersion );
-	} );
-} );
-
-setTransformation( attributeoperation_AttributeOperation, moveoperation_MoveOperation, ( a, b ) => {
-	const ranges = _breakRangeByMoveOperation( a.range, b );
-
-	// Create `AttributeOperation`s out of the ranges.
-	return ranges.map( range => new attributeoperation_AttributeOperation( range, a.key, a.oldValue, a.newValue, a.baseVersion ) );
-} );
-
-// Helper function for `AttributeOperation` x `MoveOperation` transformation.
-//
-// Takes the passed `range` and transforms it by move operation `moveOp` in a specific way. Only top-level nodes of `range`
-// are considered to be in the range. If move operation moves nodes deep from inside of the range, those nodes won't
-// be included in the result. In other words, top-level nodes of the ranges from the result are exactly the same as
-// top-level nodes of the original `range`.
-//
-// This is important for `AttributeOperation` because, for its range, it changes only the top-level nodes. So we need to
-// track only how those nodes have been affected by `MoveOperation`.
-//
-// @private
-// @param {module:engine/model/range~Range} range
-// @param {module:engine/model/operation/moveoperation~MoveOperation} moveOp
-// @returns {Array.<module:engine/model/range~Range>}
-function _breakRangeByMoveOperation( range, moveOp ) {
-	const moveRange = model_range_Range.createFromPositionAndShift( moveOp.sourcePosition, moveOp.howMany );
-
-	// We are transforming `range` (original range) by `moveRange` (range moved by move operation). As usual when it comes to
-	// transforming a ranges, we may have a common part of the ranges and we may have a difference part (zero to two ranges).
-	let common = null;
-	let difference = [];
-
-	// Let's compare the ranges.
-	if ( moveRange.containsRange( range, true ) ) {
-		// If the whole original range is moved, treat it whole as a common part. There's also no difference part.
-		common = range;
-	} else if ( range.start.hasSameParentAs( moveRange.start ) ) {
-		// If the ranges are "on the same level" (in the same parent) then move operation may move exactly those nodes
-		// that are changed by the attribute operation. In this case we get common part and difference part in the usual way.
-		difference = range.getDifference( moveRange );
-		common = range.getIntersection( moveRange );
-	} else {
-		// In any other situation we assume that original range is different than move range, that is that move operation
-		// moves other nodes that attribute operation change. Even if the moved range is deep inside in the original range.
-		//
-		// Note that this is different than in `.getIntersection` (we would get a common part in that case) and different
-		// than `.getDifference` (we would get two ranges).
-		difference = [ range ];
-	}
-
-	const result = [];
-
-	// The default behaviour of `_getTransformedByMove` might get wrong results for difference part, though, so
-	// we do it by hand.
-	for ( let diff of difference ) {
-		// First, transform the range by removing moved nodes. Since this is a difference, this is safe, `null` won't be returned
-		// as the range is different than the moved range.
-		diff = diff._getTransformedByDeletion( moveOp.sourcePosition, moveOp.howMany );
-
-		// Transform also `targetPosition`.
-		const targetPosition = moveOp.getMovedRangeStart();
-
-		// Spread the range only if moved nodes are inserted only between the top-level nodes of the `diff` range.
-		const spread = diff.start.hasSameParentAs( targetPosition );
-
-		// Transform by insertion of moved nodes.
-		diff = diff._getTransformedByInsertion( targetPosition, moveOp.howMany, spread );
-
-		result.push( ...diff );
-	}
-
-	// Common part can be simply transformed by the move operation. This is because move operation will not target to
-	// that common part (the operation would have to target inside its own moved range).
-	if ( common ) {
-		result.push(
-			common._getTransformedByMove( moveOp.sourcePosition, moveOp.targetPosition, moveOp.howMany, false )[ 0 ]
-		);
-	}
-
-	return result;
-}
-
-setTransformation( attributeoperation_AttributeOperation, splitoperation_SplitOperation, ( a, b ) => {
-	// Case 1:
-	//
-	// Split node is the last node in `AttributeOperation#range`.
-	// `AttributeOperation#range` needs to be expanded to include the new (split) node.
-	//
-	// Attribute `type` to be changed to `numbered` but the `listItem` is split.
-	// <listItem type="bulleted">foobar</listItem>
-	//
-	// After split:
-	// <listItem type="bulleted">foo</listItem><listItem type="bulleted">bar</listItem>
-	//
-	// After attribute change:
-	// <listItem type="numbered">foo</listItem><listItem type="numbered">foo</listItem>
-	//
-	if ( a.range.end.isEqual( b.insertionPosition ) ) {
-		if ( !b.graveyardPosition ) {
-			a.range.end.offset++;
-		}
-
-		return [ a ];
-	}
-
-	// Case 2:
-	//
-	// Split position is inside `AttributeOperation#range`, at the same level, so the nodes to change are
-	// not going to make a flat range.
-	//
-	// Content with range-to-change and split position:
-	// <p>Fo[zb^a]r</p>
-	//
-	// After split:
-	// <p>Fozb</p><p>ar</p>
-	//
-	// Make two separate ranges containing all nodes to change:
-	// <p>Fo[zb]</p><p>[a]r</p>
-	//
-	if ( a.range.start.hasSameParentAs( b.splitPosition ) && a.range.containsPosition( b.splitPosition ) ) {
-		const secondPart = a.clone();
-
-		secondPart.range = new model_range_Range(
-			model_position_Position.createFromPosition( b.moveTargetPosition ),
-			a.range.end._getCombined( b.splitPosition, b.moveTargetPosition )
-		);
-
-		a.range.end = model_position_Position.createFromPosition( b.splitPosition );
-		a.range.end.stickiness = 'toPrevious';
-
-		return [ a, secondPart ];
-	}
-
-	// The default case.
-	//
-	a.range = a.range._getTransformedBySplitOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( insertoperation_InsertOperation, attributeoperation_AttributeOperation, ( a, b ) => {
-	const result = [ a ];
-
-	// Case 1:
-	//
-	// The attribute operation range includes the position where nodes were inserted.
-	// There are two possible scenarios: the inserted nodes were text and they should receive attributes or
-	// the inserted nodes were elements and they should not receive attributes.
-	//
-	// This is a mirror scenario to the one described in `AttributeOperation` x `InsertOperation` transformation,
-	// although this case is a little less complicated. In this case we simply need to change attributes of the
-	// inserted nodes and that's it.
-	//
-	if ( a.shouldReceiveAttributes && a.position.hasSameParentAs( b.range.start ) && b.range.containsPosition( a.position ) ) {
-		const op = _getComplementaryAttributeOperations( a, b.key, b.newValue );
-
-		if ( op ) {
-			result.push( op );
-		}
-	}
-
-	// The default case is: do nothing.
-	// `AttributeOperation` does not change the model tree structure so `InsertOperation` does not need to be changed.
-	//
-	return result;
-} );
-
-setTransformation( insertoperation_InsertOperation, insertoperation_InsertOperation, ( a, b, context ) => {
-	// Case 1:
-	//
-	// Two insert operations insert nodes at the same position. Since they are the same, it needs to be decided
-	// what will be the order of inserted nodes. However, there is no additional information to help in that
-	// decision. Also, when `b` will be transformed by `a`, the same order must be maintained.
-	//
-	// To achieve that, we will check if the operation is strong.
-	// If it is, it won't get transformed. If it is not, it will be moved.
-	//
-	if ( a.position.isEqual( b.position ) && context.aIsStrong ) {
-		return [ a ];
-	}
-
-	// The default case.
-	//
-	a.position = a.position._getTransformedByInsertOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( insertoperation_InsertOperation, moveoperation_MoveOperation, ( a, b ) => {
-	// The default case.
-	//
-	a.position = a.position._getTransformedByMoveOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( insertoperation_InsertOperation, splitoperation_SplitOperation, ( a, b ) => {
-	// The default case.
-	//
-	a.position = a.position._getTransformedBySplitOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( insertoperation_InsertOperation, mergeoperation_MergeOperation, ( a, b ) => {
-	a.position = a.position._getTransformedByMergeOperation( b );
-
-	return [ a ];
-} );
-
-// -----------------------
-
-setTransformation( markeroperation_MarkerOperation, insertoperation_InsertOperation, ( a, b ) => {
-	if ( a.oldRange ) {
-		a.oldRange = a.oldRange._getTransformedByInsertOperation( b )[ 0 ];
-	}
-
-	if ( a.newRange ) {
-		a.newRange = a.newRange._getTransformedByInsertOperation( b )[ 0 ];
-	}
-
-	return [ a ];
-} );
-
-setTransformation( markeroperation_MarkerOperation, markeroperation_MarkerOperation, ( a, b, context ) => {
-	if ( a.name == b.name ) {
-		if ( context.aIsStrong ) {
-			a.oldRange = b.newRange ? model_range_Range.createFromRange( b.newRange ) : null;
-		} else {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-	}
-
-	return [ a ];
-} );
-
-setTransformation( markeroperation_MarkerOperation, mergeoperation_MergeOperation, ( a, b ) => {
-	if ( a.oldRange ) {
-		a.oldRange = a.oldRange._getTransformedByMergeOperation( b );
-	}
-
-	if ( a.newRange ) {
-		a.newRange = a.newRange._getTransformedByMergeOperation( b );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( markeroperation_MarkerOperation, moveoperation_MoveOperation, ( a, b ) => {
-	if ( a.oldRange ) {
-		a.oldRange = model_range_Range.createFromRanges( a.oldRange._getTransformedByMoveOperation( b ) );
-	}
-
-	if ( a.newRange ) {
-		a.newRange = model_range_Range.createFromRanges( a.newRange._getTransformedByMoveOperation( b ) );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( markeroperation_MarkerOperation, splitoperation_SplitOperation, ( a, b ) => {
-	if ( a.oldRange ) {
-		a.oldRange = a.oldRange._getTransformedBySplitOperation( b );
-	}
-
-	if ( a.newRange ) {
-		a.newRange = a.newRange._getTransformedBySplitOperation( b );
-	}
-
-	return [ a ];
-} );
-
-// -----------------------
-
-setTransformation( mergeoperation_MergeOperation, insertoperation_InsertOperation, ( a, b ) => {
-	if ( a.sourcePosition.hasSameParentAs( b.position ) ) {
-		a.howMany += b.howMany;
-	}
-
-	a.sourcePosition = a.sourcePosition._getTransformedByInsertOperation( b );
-	a.targetPosition = a.targetPosition._getTransformedByInsertOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( mergeoperation_MergeOperation, mergeoperation_MergeOperation, ( a, b, context ) => {
-	// Case 1:
-	//
-	// Same merge operations.
-	//
-	// Both operations have same source and target positions. So the element already got merged and there is
-	// theoretically nothing to do.
-	//
-	if ( a.sourcePosition.isEqual( b.sourcePosition ) && a.targetPosition.isEqual( b.targetPosition ) ) {
-		// There are two ways that we can provide a do-nothing operation.
-		//
-		// First is simply a NoOperation instance. We will use it if `b` operation was not undone.
-		//
-		// Second is a merge operation that has the source operation in the merged element - in the graveyard -
-		// same target position and `howMany` equal to `0`. So it is basically merging an empty element from graveyard
-		// which is almost the same as NoOperation.
-		//
-		// This way the merge operation can be later transformed by split operation
-		// to provide correct undo. This will be used if `b` operation was undone (only then it is correct).
-		//
-		if ( !context.bWasUndone ) {
-			return [ new nooperation_NoOperation( 0 ) ];
-		} else {
-			const path = b.graveyardPosition.path.slice();
-			path.push( 0 );
-
-			a.sourcePosition = new model_position_Position( b.graveyardPosition.root, path );
-			a.howMany = 0;
-
-			return [ a ];
-		}
-	}
-
-	// Case 2:
-	//
-	// Same merge source position but different target position.
-	//
-	// This can happen during collaboration. For example, if one client merged a paragraph to the previous paragraph
-	// and the other person removed that paragraph and merged the same paragraph to something before:
-	//
-	// Client A:
-	// <p>Foo</p><p>Bar</p><p>[]Xyz</p>
-	// <p>Foo</p><p>BarXyz</p>
-	//
-	// Client B:
-	// <p>Foo</p>[<p>Bar</p>]<p>Xyz</p>
-	// <p>Foo</p><p>[]Xyz</p>
-	// <p>FooXyz</p>
-	//
-	// In this case we need to decide where finally "Xyz" will land:
-	//
-	// <p>FooXyz</p>               graveyard: <p>Bar</p>
-	// <p>Foo</p>                  graveyard: <p>BarXyz</p>
-	//
-	// Let's move it in a way so that a merge operation that does not target to graveyard is more important so that
-	// nodes does not end up in the graveyard. It makes sense. Both for Client A and for Client B "Xyz" finally did not
-	// end up in the graveyard (see above).
-	//
-	// If neither or both operations point to graveyard, then let `aIsStrong` decide.
-	//
-	if ( a.sourcePosition.isEqual( b.sourcePosition ) && !a.targetPosition.isEqual( b.targetPosition ) && !context.bWasUndone ) {
-		const aToGraveyard = a.targetPosition.root.rootName == '$graveyard';
-		const bToGraveyard = b.targetPosition.root.rootName == '$graveyard';
-
-		// If `aIsWeak` it means that `a` points to graveyard while `b` doesn't. Don't move nodes then.
-		const aIsWeak = aToGraveyard && !bToGraveyard;
-
-		// If `bIsWeak` it means that `b` points to graveyard while `a` doesn't. Force moving nodes then.
-		const bIsWeak = bToGraveyard && !aToGraveyard;
-
-		// Force move if `b` is weak or neither operation is weak but `a` is stronger through `context.aIsStrong`.
-		const forceMove = bIsWeak || ( !aIsWeak && context.aIsStrong );
-
-		if ( forceMove ) {
-			const sourcePosition = b.targetPosition._getTransformedByMergeOperation( b );
-			const targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
-
-			return [ new moveoperation_MoveOperation( sourcePosition, a.howMany, targetPosition, 0 ) ];
-		} else {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-	}
-
-	// The default case.
-	//
-	if ( a.sourcePosition.hasSameParentAs( b.targetPosition ) ) {
-		a.howMany += b.howMany;
-	}
-
-	a.sourcePosition = a.sourcePosition._getTransformedByMergeOperation( b );
-	a.targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
-
-	// Handle positions in graveyard.
-	// If graveyard positions are same and `a` operation is strong - do not transform.
-	if ( !a.graveyardPosition.isEqual( b.graveyardPosition ) || !context.aIsStrong ) {
-		a.graveyardPosition = a.graveyardPosition._getTransformedByMergeOperation( b );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( mergeoperation_MergeOperation, moveoperation_MoveOperation, ( a, b, context ) => {
-	// Case 1:
-	//
-	// The element to merge got removed.
-	//
-	// Merge operation does support merging elements which are not siblings. So it would not be a problem
-	// from technical point of view. However, if the element was removed, the intention of the user deleting it
-	// was to have it all deleted, together with its children. From user experience point of view, moving back the
-	// removed nodes might be unexpected. This means that in this scenario we will block the merging.
-	//
-	// The exception of this rule would be if the remove operation was later undone.
-	//
-	const removedRange = model_range_Range.createFromPositionAndShift( b.sourcePosition, b.howMany );
-
-	if ( b.type == 'remove' && !context.bWasUndone ) {
-		if ( a.deletionPosition.hasSameParentAs( b.sourcePosition ) && removedRange.containsPosition( a.sourcePosition ) ) {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-	}
-
-	// The default case.
-	//
-	if ( a.sourcePosition.hasSameParentAs( b.targetPosition ) ) {
-		a.howMany += b.howMany;
-	}
-
-	if ( a.sourcePosition.hasSameParentAs( b.sourcePosition ) ) {
-		a.howMany -= b.howMany;
-	}
-
-	a.sourcePosition = a.sourcePosition._getTransformedByMoveOperation( b );
-	a.targetPosition = a.targetPosition._getTransformedByMoveOperation( b );
-
-	// `MergeOperation` graveyard position is like `MoveOperation` target position. It is a position where element(s) will
-	// be moved. Like in other similar cases, we need to consider the scenario when those positions are same.
-	// Here, we will treat `MergeOperation` like it is always strong (see `InsertOperation` x `InsertOperation` for comparison).
-	// This means that we won't transform graveyard position if it is equal to move operation target position.
-	if ( !a.graveyardPosition.isEqual( b.targetPosition ) ) {
-		a.graveyardPosition = a.graveyardPosition._getTransformedByMoveOperation( b );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( mergeoperation_MergeOperation, splitoperation_SplitOperation, ( a, b, context ) => {
-	if ( b.graveyardPosition ) {
-		// If `b` operation defines graveyard position, a node from graveyard will be moved. This means that we need to
-		// transform `a.graveyardPosition` accordingly.
-		a.graveyardPosition = a.graveyardPosition._getTransformedByDeletion( b.graveyardPosition, 1 );
-
-		// This is a scenario foreseen in `MergeOperation` x `MergeOperation`, with two identical merge operations.
-		//
-		// So, there was `MergeOperation` x `MergeOperation` transformation earlier. Now, `a` is a merge operation which
-		// source position is in graveyard. Interestingly, split operation wants to use the node to be merged by `a`. This
-		// means that `b` is undoing that merge operation from earlier, which caused `a` to be in graveyard.
-		//
-		// If that's the case, at this point, we will only "fix" `a.howMany`. It was earlier set to `0` in
-		// `MergeOperation` x `MergeOperation` transformation. Later transformations in this function will change other
-		// properties.
-		//
-		if ( a.deletionPosition.isEqual( b.graveyardPosition ) ) {
-			a.howMany = b.howMany;
-		}
-	}
-
-	// Case 1:
-	//
-	// Merge operation moves nodes to the place where split happens.
-	// This is a classic situation when there are two paragraphs, and there is a split (enter) after the first
-	// paragraph and there is a merge (delete) at the beginning of the second paragraph:
-	//
-	// <p>Foo{}</p><p>[]Bar</p>.
-	//
-	// Split is after `Foo`, while merge is from `Bar` to the end of `Foo`.
-	//
-	// State after split:
-	// <p>Foo</p><p></p><p>Bar</p>
-	//
-	// Now, `Bar` should be merged to the new paragraph:
-	// <p>Foo</p><p>Bar</p>
-	//
-	// Instead of merging it to the original paragraph:
-	// <p>FooBar</p><p></p>
-	//
-	// This means that `targetPosition` needs to be transformed. This is the default case though.
-	// For example, if the split would be after `F`, `targetPosition` should also be transformed.
-	//
-	// There are three exceptions, though, when we want to keep `targetPosition` as it was.
-	//
-	// First exception is when the merge target position is inside an element (not at the end, as usual). This
-	// happens when the merge operation earlier was transformed by "the same" merge operation. If merge operation
-	// targets inside the element we want to keep the original target position (and not transform it) because
-	// we have additional context telling us that we want to merge to the original element. We can check if the
-	// merge operation points inside element by checking what is `SplitOperation#howMany`. Since merge target position
-	// is same as split position, if `howMany` is non-zero, it means that the merge target position is inside an element.
-	//
-	// Second exception is when the element to merge is in the graveyard and split operation uses it. In that case
-	// if target position would be transformed, the merge operation would target at the source position:
-	//
-	// root: <p>Foo</p>				graveyard: <p></p>
-	//
-	// SplitOperation: root [ 0, 3 ] using graveyard [ 0 ] (howMany = 0)
-	// MergeOperation: graveyard [ 0, 0 ] -> root [ 0, 3 ] (howMany = 0)
-	//
-	// Since split operation moves the graveyard node back to the root, the merge operation source position changes.
-	// We would like to merge from the empty <p> to the "Foo" <p>:
-	//
-	// root: <p>Foo</p><p></p>			graveyard:
-	//
-	// MergeOperation#sourcePosition = root [ 1, 0 ]
-	//
-	// If `targetPosition` is transformed, it would become root [ 1, 0 ] as well. It has to be kept as it was.
-	//
-	// Third exception is connected with relations. If this happens during undo and we have explicit information
-	// that target position has not been affected by the operation which is undone by this split then this split should
-	// not move the target position either.
-	//
-	if ( a.targetPosition.isEqual( b.splitPosition ) ) {
-		const mergeInside = b.howMany != 0;
-		const mergeSplittingElement = b.graveyardPosition && a.deletionPosition.isEqual( b.graveyardPosition );
-
-		if ( mergeInside || mergeSplittingElement || context.abRelation == 'mergeTargetNotMoved' ) {
-			a.sourcePosition = a.sourcePosition._getTransformedBySplitOperation( b );
-
-			return [ a ];
-		}
-	}
-
-	// Case 2:
-	//
-	// Merge source is at the same position as split position. This sometimes happen during undo. This merge operation
-	// might have been earlier transformed by a merge operation which both merged the same element. See case in
-	// `MergeOperation` x `MergeOperation` transformation. In that case, if the merge operation has been undone, the special
-	// case is not applied.
-	//
-	// In this scenario the merge operation is now transformed by the split which has undone the previous merge operation.
-	// So now we are fixing situation which was skipped in `MergeOperation` x `MergeOperation` case.
-	//
-	if ( a.sourcePosition.isEqual( b.splitPosition ) && context.abRelation == 'mergeSameElement' ) {
-		a.sourcePosition = model_position_Position.createFromPosition( b.moveTargetPosition );
-		a.targetPosition = a.targetPosition._getTransformedBySplitOperation( b );
-
-		return [ a ];
-	}
-
-	// The default case.
-	//
-	if ( a.sourcePosition.hasSameParentAs( b.splitPosition ) ) {
-		a.howMany = b.splitPosition.offset;
-	}
-
-	a.sourcePosition = a.sourcePosition._getTransformedBySplitOperation( b );
-	a.targetPosition = a.targetPosition._getTransformedBySplitOperation( b );
-
-	return [ a ];
-} );
-
-// -----------------------
-
-setTransformation( moveoperation_MoveOperation, insertoperation_InsertOperation, ( a, b ) => {
-	const moveRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
-	const transformed = moveRange._getTransformedByInsertOperation( b, false )[ 0 ];
-
-	a.sourcePosition = transformed.start;
-	a.howMany = transformed.end.offset - transformed.start.offset;
-
-	// See `InsertOperation` x `MoveOperation` transformation for details on this case.
-	//
-	// In summary, both operations point to the same place, so the order of nodes needs to be decided.
-	// `MoveOperation` is considered weaker, so it is always transformed, unless there was a certain relation
-	// between operations.
-	//
-	if ( !a.targetPosition.isEqual( b.position ) ) {
-		a.targetPosition = a.targetPosition._getTransformedByInsertOperation( b );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( moveoperation_MoveOperation, moveoperation_MoveOperation, ( a, b, context ) => {
-	//
-	// Setting and evaluating some variables that will be used in special cases and default algorithm.
-	//
-	// Create ranges from `MoveOperations` properties.
-	const rangeA = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
-	const rangeB = model_range_Range.createFromPositionAndShift( b.sourcePosition, b.howMany );
-
-	// Assign `context.aIsStrong` to a different variable, because the value may change during execution of
-	// this algorithm and we do not want to override original `context.aIsStrong` that will be used in later transformations.
-	let aIsStrong = context.aIsStrong;
-
-	// This will be used to decide the order of nodes if both operations target at the same position.
-	// By default, use strong/weak operation mechanism.
-	let insertBefore = !context.aIsStrong;
-
-	// If the relation is set, then use it to decide nodes order.
-	if ( context.abRelation == 'insertBefore' ) {
-		insertBefore = true;
-	} else if ( context.abRelation == 'insertAfter' ) {
-		insertBefore = false;
-	}
-
-	// `a.targetPosition` could be affected by the `b` operation. We will transform it.
-	let newTargetPosition;
-
-	if ( a.targetPosition.isEqual( b.targetPosition ) && insertBefore ) {
-		newTargetPosition = a.targetPosition._getTransformedByDeletion(
-			b.sourcePosition,
-			b.howMany
-		);
-	} else {
-		newTargetPosition = a.targetPosition._getTransformedByMove(
-			b.sourcePosition,
-			b.targetPosition,
-			b.howMany
-		);
-	}
-
-	//
-	// Special case #1 + mirror.
-	//
-	// Special case when both move operations' target positions are inside nodes that are
-	// being moved by the other move operation. So in other words, we move ranges into inside of each other.
-	// This case can't be solved reasonably (on the other hand, it should not happen often).
-	if ( _moveTargetIntoMovedRange( a, b ) && _moveTargetIntoMovedRange( b, a ) ) {
-		// Instead of transforming operation, we return a reverse of the operation that we transform by.
-		// So when the results of this "transformation" will be applied, `b` MoveOperation will get reversed.
-		return [ b.getReversed() ];
-	}
-	//
-	// End of special case #1.
-	//
-
-	//
-	// Special case #2.
-	//
-	// Check if `b` operation targets inside `rangeA`.
-	const bTargetsToA = rangeA.containsPosition( b.targetPosition );
-
-	// If `b` targets to `rangeA` and `rangeA` contains `rangeB`, `b` operation has no influence on `a` operation.
-	// You might say that operation `b` is captured inside operation `a`.
-	if ( bTargetsToA && rangeA.containsRange( rangeB, true ) ) {
-		// There is a mini-special case here, where `rangeB` is on other level than `rangeA`. That's why
-		// we need to transform `a` operation anyway.
-		rangeA.start = rangeA.start._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
-		rangeA.end = rangeA.end._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
-
-		return _makeMoveOperationsFromRanges( [ rangeA ], newTargetPosition );
-	}
-
-	//
-	// Special case #2 mirror.
-	//
-	const aTargetsToB = rangeB.containsPosition( a.targetPosition );
-
-	if ( aTargetsToB && rangeB.containsRange( rangeA, true ) ) {
-		// `a` operation is "moved together" with `b` operation.
-		// Here, just move `rangeA` "inside" `rangeB`.
-		rangeA.start = rangeA.start._getCombined( b.sourcePosition, b.getMovedRangeStart() );
-		rangeA.end = rangeA.end._getCombined( b.sourcePosition, b.getMovedRangeStart() );
-
-		return _makeMoveOperationsFromRanges( [ rangeA ], newTargetPosition );
-	}
-	//
-	// End of special case #2.
-	//
-
-	//
-	// Special case #3 + mirror.
-	//
-	// `rangeA` has a node which is an ancestor of `rangeB`. In other words, `rangeB` is inside `rangeA`
-	// but not on the same tree level. In such case ranges have common part but we have to treat it
-	// differently, because in such case those ranges are not really conflicting and should be treated like
-	// two separate ranges. Also we have to discard two difference parts.
-	const aCompB = compareArrays( a.sourcePosition.getParentPath(), b.sourcePosition.getParentPath() );
-
-	if ( aCompB == 'prefix' || aCompB == 'extension' ) {
-		// Transform `rangeA` by `b` operation and make operation out of it, and that's all.
-		// Note that this is a simplified version of default case, but here we treat the common part (whole `rangeA`)
-		// like a one difference part.
-		rangeA.start = rangeA.start._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
-		rangeA.end = rangeA.end._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
-
-		return _makeMoveOperationsFromRanges( [ rangeA ], newTargetPosition );
-	}
-	//
-	// End of special case #3.
-	//
-
-	//
-	// Default case - ranges are on the same level or are not connected with each other.
-	//
-	// Modifier for default case.
-	// Modifies `aIsStrong` flag in certain conditions.
-	//
-	// If only one of operations is a remove operation, we force remove operation to be the "stronger" one
-	// to provide more expected results.
-	if ( a.type == 'remove' && b.type != 'remove' && !context.aWasUndone ) {
-		aIsStrong = true;
-	} else if ( a.type != 'remove' && b.type == 'remove' && !context.bWasUndone ) {
-		aIsStrong = false;
-	}
-
-	// Handle operation's source ranges - check how `rangeA` is affected by `b` operation.
-	// This will aggregate transformed ranges.
-	const ranges = [];
-
-	// Get the "difference part" of `a` operation source range.
-	// This is an array with one or two ranges. Two ranges if `rangeB` is inside `rangeA`.
-	const difference = rangeA.getDifference( rangeB );
-
-	for ( const range of difference ) {
-		// Transform those ranges by `b` operation. For example if `b` moved range from before those ranges, fix those ranges.
-		range.start = range.start._getTransformedByDeletion( b.sourcePosition, b.howMany );
-		range.end = range.end._getTransformedByDeletion( b.sourcePosition, b.howMany );
-
-		// If `b` operation targets into `rangeA` on the same level, spread `rangeA` into two ranges.
-		const shouldSpread = compareArrays( range.start.getParentPath(), b.getMovedRangeStart().getParentPath() ) == 'same';
-		const newRanges = range._getTransformedByInsertion( b.getMovedRangeStart(), b.howMany, shouldSpread );
-
-		ranges.push( ...newRanges );
-	}
-
-	// Then, we have to manage the "common part" of both move ranges.
-	const common = rangeA.getIntersection( rangeB );
-
-	if ( common !== null && aIsStrong ) {
-		// Calculate the new position of that part of original range.
-		common.start = common.start._getCombined( b.sourcePosition, b.getMovedRangeStart() );
-		common.end = common.end._getCombined( b.sourcePosition, b.getMovedRangeStart() );
-
-		// Take care of proper range order.
-		//
-		// Put `common` at appropriate place. Keep in mind that we are interested in original order.
-		// Basically there are only three cases: there is zero, one or two difference ranges.
-		//
-		// If there is zero difference ranges, just push `common` in the array.
-		if ( ranges.length === 0 ) {
-			ranges.push( common );
-		}
-		// If there is one difference range, we need to check whether common part was before it or after it.
-		else if ( ranges.length == 1 ) {
-			if ( rangeB.start.isBefore( rangeA.start ) || rangeB.start.isEqual( rangeA.start ) ) {
-				ranges.unshift( common );
-			} else {
-				ranges.push( common );
-			}
-		}
-		// If there are more ranges (which means two), put common part between them. This is the only scenario
-		// where there could be two difference ranges so we don't have to make any comparisons.
-		else {
-			ranges.splice( 1, 0, common );
-		}
-	}
-
-	if ( ranges.length === 0 ) {
-		// If there are no "source ranges", nothing should be changed.
-		// Note that this can happen only if `aIsStrong == false` and `rangeA.isEqual( rangeB )`.
-		return [ new nooperation_NoOperation( a.baseVersion ) ];
-	}
-
-	return _makeMoveOperationsFromRanges( ranges, newTargetPosition );
-} );
-
-setTransformation( moveoperation_MoveOperation, splitoperation_SplitOperation, ( a, b, context ) => {
-	let newTargetPosition = model_position_Position.createFromPosition( a.targetPosition );
-
-	// Do not transform if target position is same as split insertion position and this split comes from undo.
-	// This should be done on relations but it is too much work for now as it would require relations working in collaboration.
-	// We need to make a decision how we will resolve such conflict and this is less harmful way.
-	if ( !a.targetPosition.isEqual( b.insertionPosition ) || !b.graveyardPosition ) {
-		newTargetPosition = a.targetPosition._getTransformedBySplitOperation( b );
-	}
-
-	// Case 1:
-	//
-	// Last element in the moved range got split.
-	//
-	// In this case the default range transformation will not work correctly as the element created by
-	// split operation would be outside the range. The range to move needs to be fixed manually.
-	//
-	const moveRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
-
-	if ( moveRange.end.isEqual( b.insertionPosition ) ) {
-		// Do it only if this is a "natural" split, not a one that comes from undo.
-		// If this is undo split, only `targetPosition` needs to be changed (if the move is a remove).
-		if ( !b.graveyardPosition ) {
-			a.howMany++;
-		}
-
-		a.targetPosition = newTargetPosition;
-
-		return [ a ];
-	}
-
-	// Case 2:
-	//
-	// Split happened between the moved nodes. In this case two ranges to move need to be generated.
-	//
-	// Characters `ozba` are moved to the end of paragraph `Xyz` but split happened.
-	// <p>F[oz|ba]r</p><p>Xyz</p>
-	//
-	// After split:
-	// <p>F[oz</p><p>ba]r</p><p>Xyz</p>
-	//
-	// Correct ranges:
-	// <p>F[oz]</p><p>[ba]r</p><p>Xyz</p>
-	//
-	// After move:
-	// <p>F</p><p>r</p><p>Xyzozba</p>
-	//
-	if ( moveRange.start.hasSameParentAs( b.splitPosition ) && moveRange.containsPosition( b.splitPosition ) ) {
-		let rightRange = new model_range_Range( b.splitPosition, moveRange.end );
-		rightRange = rightRange._getTransformedBySplitOperation( b );
-
-		const ranges = [
-			new model_range_Range( moveRange.start, b.splitPosition ),
-			rightRange
-		];
-
-		return _makeMoveOperationsFromRanges( ranges, newTargetPosition );
-	}
-
-	// Case 3:
-	//
-	// Move operation targets at the split position. We need to decide if the nodes should be inserted
-	// at the end of the split element or at the beginning of the new element.
-	//
-	if ( a.targetPosition.isEqual( b.splitPosition ) && context.abRelation == 'insertAtSource' ) {
-		newTargetPosition = b.moveTargetPosition;
-	}
-
-	// Case 4:
-	//
-	// Move operation targets just after the split element. We need to decide if the nodes should be inserted
-	// between two parts of split element, or after the new element.
-	//
-	// Split at `|`, while move operation moves `<p>Xyz</p>` and targets at `^`:
-	// <p>Foo|bar</p>^<p>baz</p>
-	// <p>Foo</p>^<p>bar</p><p>baz</p> or <p>Foo</p><p>bar</p>^<p>baz</p>?
-	//
-	// If there is no contextual information between operations (for example, they come from collaborative
-	// editing), we don't want to put some unrelated content (move) between parts of related content (split parts).
-	// However, if the split is from undo, in the past, the moved content might be targeting between the
-	// split parts, meaning that was exactly user's intention:
-	//
-	// <p>Foo</p>^<p>bar</p>		<--- original situation, in "past".
-	// <p>Foobar</p>^				<--- after merge target position is transformed.
-	// <p>Foo|bar</p>^				<--- then the merge is undone, and split happens, which leads us to current situation.
-	//
-	// In this case it is pretty clear that the intention was to put new paragraph between those nodes,
-	// so we need to transform accordingly. We can detect this scenario thanks to relations.
-	//
-	if ( a.targetPosition.isEqual( b.insertionPosition ) && context.abRelation == 'insertBetween' ) {
-		newTargetPosition = a.targetPosition;
-	}
-
-	// The default case.
-	//
-	const transformed = moveRange._getTransformedBySplitOperation( b );
-
-	a.sourcePosition = transformed.start;
-	a.howMany = transformed.end.offset - transformed.start.offset;
-	a.targetPosition = newTargetPosition;
-
-	return [ a ];
-} );
-
-setTransformation( moveoperation_MoveOperation, mergeoperation_MergeOperation, ( a, b, context ) => {
-	const movedRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
-
-	if ( b.deletionPosition.hasSameParentAs( a.sourcePosition ) && movedRange.containsPosition( b.sourcePosition ) ) {
-		if ( a.type == 'remove' ) {
-			// Case 1:
-			//
-			// The element to remove got merged.
-			//
-			// Merge operation does support merging elements which are not siblings. So it would not be a problem
-			// from technical point of view. However, if the element was removed, the intention of the user
-			// deleting it was to have it all deleted. From user experience point of view, moving back the
-			// removed nodes might be unexpected. This means that in this scenario we will reverse merging and remove the element.
-			//
-			if ( !context.aWasUndone ) {
-				return [ b.getReversed(), a ];
-			}
-		} else {
-			// Case 2:
-			//
-			// The element to move got merged and it was the only element to move.
-			// In this case just don't do anything, leave the node in the graveyard. Without special case
-			// it would be a move operation that moves 0 nodes, so maybe it is better just to return no-op.
-			//
-			if ( a.howMany == 1 ) {
-				if ( !context.bWasUndone ) {
-					return [ new nooperation_NoOperation( 0 ) ];
+		const value = ( options.forceValue === undefined ) ? !this.value : options.forceValue;
+
+		model.change( writer => {
+			if ( selection.isCollapsed ) {
+				if ( value ) {
+					writer.setSelectionAttribute( this.attributeKey, true );
 				} else {
-					a.sourcePosition = model_position_Position.createFromPosition( b.graveyardPosition );
-					a.targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
+					writer.removeSelectionAttribute( this.attributeKey );
+				}
+			} else {
+				const ranges = model.schema.getValidRanges( selection.getRanges(), this.attributeKey );
 
-					return [ a ];
+				for ( const range of ranges ) {
+					if ( value ) {
+						writer.setAttribute( this.attributeKey, value, range );
+					} else {
+						writer.removeAttribute( this.attributeKey, range );
+					}
+				}
+			}
+		} );
+	}
+
+	/**
+	 * Checks the attribute value of the first node in the selection that allows the attribute.
+	 * For the collapsed selection returns the selection attribute.
+	 *
+	 * @private
+	 * @returns {Boolean} The attribute value.
+	 */
+	_getValueFromFirstAllowedNode() {
+		const model = this.editor.model;
+		const schema = model.schema;
+		const selection = model.document.selection;
+
+		if ( selection.isCollapsed ) {
+			return selection.hasAttribute( this.attributeKey );
+		}
+
+		for ( const range of selection.getRanges() ) {
+			for ( const item of range.getItems() ) {
+				if ( schema.checkAttribute( item, this.attributeKey ) ) {
+					return item.hasAttribute( this.attributeKey );
 				}
 			}
 		}
+
+		return false;
 	}
-
-	// The default case.
-	//
-	const moveRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
-	const transformed = moveRange._getTransformedByMergeOperation( b );
-
-	a.sourcePosition = transformed.start;
-	a.howMany = transformed.end.offset - transformed.start.offset;
-	a.targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
-
-	return [ a ];
-} );
-
-// -----------------------
-
-setTransformation( renameoperation_RenameOperation, insertoperation_InsertOperation, ( a, b ) => {
-	a.position = a.position._getTransformedByInsertOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( renameoperation_RenameOperation, mergeoperation_MergeOperation, ( a, b ) => {
-	// Case 1:
-	//
-	// Element to rename got merged, so it was moved to `b.graveyardPosition`.
-	//
-	if ( a.position.isEqual( b.deletionPosition ) ) {
-		a.position = model_position_Position.createFromPosition( b.graveyardPosition );
-		a.position.stickiness = 'toNext';
-
-		return [ a ];
-	}
-
-	a.position = a.position._getTransformedByMergeOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( renameoperation_RenameOperation, moveoperation_MoveOperation, ( a, b ) => {
-	a.position = a.position._getTransformedByMoveOperation( b );
-
-	return [ a ];
-} );
-
-setTransformation( renameoperation_RenameOperation, renameoperation_RenameOperation, ( a, b, context ) => {
-	if ( a.position.isEqual( b.position ) ) {
-		if ( context.aIsStrong ) {
-			a.oldName = b.newName;
-		} else {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-	}
-
-	return [ a ];
-} );
-
-setTransformation( renameoperation_RenameOperation, splitoperation_SplitOperation, ( a, b ) => {
-	// Case 1:
-	//
-	// The element to rename has been split. In this case, the new element should be also renamed.
-	//
-	// User decides to change the paragraph to a list item:
-	// <paragraph>Foobar</paragraph>
-	//
-	// However, in meantime, split happens:
-	// <paragraph>Foo</paragraph><paragraph>bar</paragraph>
-	//
-	// As a result, rename both elements:
-	// <listItem>Foo</listItem><listItem>bar</listItem>
-	//
-	const renamePath = a.position.path;
-	const splitPath = b.splitPosition.getParentPath();
-
-	if ( compareArrays( renamePath, splitPath ) == 'same' && !b.graveyardPosition ) {
-		const extraRename = new renameoperation_RenameOperation( a.position.getShiftedBy( 1 ), a.oldName, a.newName, 0 );
-
-		return [ a, extraRename ];
-	}
-
-	// The default case.
-	//
-	a.position = a.position._getTransformedBySplitOperation( b );
-
-	return [ a ];
-} );
-
-// -----------------------
-
-setTransformation( rootattributeoperation_RootAttributeOperation, rootattributeoperation_RootAttributeOperation, ( a, b, context ) => {
-	if ( a.root === b.root && a.key === b.key ) {
-		if ( !context.aIsStrong || a.newValue === b.newValue ) {
-			return [ new nooperation_NoOperation( 0 ) ];
-		} else {
-			a.oldValue = b.newValue;
-		}
-	}
-
-	return [ a ];
-} );
-
-// -----------------------
-
-setTransformation( splitoperation_SplitOperation, insertoperation_InsertOperation, ( a, b ) => {
-	// The default case.
-	//
-	if ( a.splitPosition.hasSameParentAs( b.position ) && a.splitPosition.offset < b.position.offset ) {
-		a.howMany += b.howMany;
-	}
-
-	a.splitPosition = a.splitPosition._getTransformedByInsertOperation( b );
-	a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-
-	return [ a ];
-} );
-
-setTransformation( splitoperation_SplitOperation, mergeoperation_MergeOperation, ( a, b, context ) => {
-	// Case 1:
-	//
-	// Split element got merged. If two different elements were merged, clients will have different content.
-	//
-	// Example. Merge at `{}`, split at `[]`:
-	// <heading>Foo</heading>{}<paragraph>B[]ar</paragraph>
-	//
-	// On merge side it will look like this:
-	// <heading>FooB[]ar</heading>
-	// <heading>FooB</heading><heading>ar</heading>
-	//
-	// On split side it will look like this:
-	// <heading>Foo</heading>{}<paragraph>B</paragraph><paragraph>ar</paragraph>
-	// <heading>FooB</heading><paragraph>ar</paragraph>
-	//
-	// Clearly, the second element is different for both clients.
-	//
-	// We could use the removed merge element from graveyard as a split element but then clients would have a different
-	// model state (in graveyard), because the split side client would still have an element in graveyard (removed by merge).
-	//
-	// To overcome this, in `SplitOperation` x `MergeOperation` transformation we will add additional `SplitOperation`
-	// in the graveyard, which will actually clone the merged-and-deleted element. Then, that cloned element will be
-	// used for splitting. Example below.
-	//
-	// Original state:
-	// <heading>Foo</heading>{}<paragraph>B[]ar</paragraph>
-	//
-	// Merge side client:
-	//
-	// After merge:
-	// <heading>FooB[]ar</heading>                                 graveyard: <paragraph></paragraph>
-	//
-	// Extra split:
-	// <heading>FooB[]ar</heading>                                 graveyard: <paragraph></paragraph><paragraph></paragraph>
-	//
-	// Use the "cloned" element from graveyard:
-	// <heading>FooB</heading><paragraph>ar</paragraph>            graveyard: <paragraph></paragraph>
-	//
-	// Split side client:
-	//
-	// After split:
-	// <heading>Foo</heading>{}<paragraph>B</paragraph><paragraph>ar</paragraph>
-	//
-	// After merge:
-	// <heading>FooB</heading><paragraph>ar</paragraph>            graveyard: <paragraph></paragraph>
-	//
-	// This special case scenario only applies if the original split operation clones the split element.
-	// If the original split operation has `graveyardPosition` set, it all doesn't have sense because split operation
-	// knows exactly which element it should use. So there would be no original problem with different contents.
-	//
-	// Additionally, the special case applies only if the merge wasn't already undone.
-	//
-	if ( !a.graveyardPosition && !context.bWasUndone && a.splitPosition.hasSameParentAs( b.sourcePosition ) ) {
-		const splitPath = b.graveyardPosition.path.slice();
-		splitPath.push( 0 );
-
-		const splitPosition = new model_position_Position( b.graveyardPosition.root, splitPath );
-		const insertionPosition = splitoperation_SplitOperation.getInsertionPosition( new model_position_Position( b.graveyardPosition.root, splitPath ) );
-
-		const additionalSplit = new splitoperation_SplitOperation( splitPosition, 0, null, 0 );
-		additionalSplit.insertionPosition = insertionPosition;
-
-		a.splitPosition = a.splitPosition._getTransformedByMergeOperation( b );
-		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-		a.graveyardPosition = model_position_Position.createFromPosition( additionalSplit.insertionPosition );
-		a.graveyardPosition.stickiness = 'toNext';
-
-		return [ additionalSplit, a ];
-	}
-
-	// The default case.
-	//
-	if ( a.splitPosition.hasSameParentAs( b.deletionPosition ) && !a.splitPosition.isAfter( b.deletionPosition ) ) {
-		a.howMany--;
-	}
-
-	if ( a.splitPosition.hasSameParentAs( b.targetPosition ) ) {
-		a.howMany += b.howMany;
-	}
-
-	a.splitPosition = a.splitPosition._getTransformedByMergeOperation( b );
-	a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-
-	if ( a.graveyardPosition ) {
-		a.graveyardPosition = a.graveyardPosition._getTransformedByMergeOperation( b );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( splitoperation_SplitOperation, moveoperation_MoveOperation, ( a, b, context ) => {
-	if ( a.graveyardPosition ) {
-		a.graveyardPosition = a.graveyardPosition._getTransformedByMoveOperation( b );
-	}
-
-	// Case 1:
-	//
-	// If the split position is inside the moved range, we need to shift the split position to a proper place.
-	// The position cannot be moved together with moved range because that would result in splitting of an incorrect element.
-	//
-	// Characters `bc` should be moved to the second paragraph while split position is between them:
-	// <paragraph>A[b|c]d</paragraph><paragraph>Xyz</paragraph>
-	//
-	// After move, new split position is incorrect:
-	// <paragraph>Ad</paragraph><paragraph>Xb|cyz</paragraph>
-	//
-	// Correct split position:
-	// <paragraph>A|d</paragraph><paragraph>Xbcyz</paragraph>
-	//
-	// After split:
-	// <paragraph>A</paragraph><paragraph>d</paragraph><paragraph>Xbcyz</paragraph>
-	//
-	const rangeToMove = model_range_Range.createFromPositionAndShift( b.sourcePosition, b.howMany );
-
-	if ( a.splitPosition.hasSameParentAs( b.sourcePosition ) && rangeToMove.containsPosition( a.splitPosition ) ) {
-		const howManyRemoved = b.howMany - ( a.splitPosition.offset - b.sourcePosition.offset );
-		a.howMany -= howManyRemoved;
-
-		if ( a.splitPosition.hasSameParentAs( b.targetPosition ) && a.splitPosition.offset < b.targetPosition.offset ) {
-			a.howMany += b.howMany;
-		}
-
-		a.splitPosition = model_position_Position.createFromPosition( b.sourcePosition );
-		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-
-		return [ a ];
-	}
-
-	// Case 2:
-	//
-	// Split is at a position where nodes were moved.
-	//
-	// This is a scenario described in `MoveOperation` x `SplitOperation` transformation but from the
-	// "split operation point of view".
-	//
-	const splitAtTarget = a.splitPosition.isEqual( b.targetPosition );
-
-	if ( splitAtTarget && ( context.baRelation == 'insertAtSource' || context.abRelation == 'splitBefore' ) ) {
-		a.howMany += b.howMany;
-		a.splitPosition = a.splitPosition._getTransformedByDeletion( b.sourcePosition, b.howMany );
-		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-
-		return [ a ];
-	}
-
-	// The default case.
-	//
-	if ( a.splitPosition.hasSameParentAs( b.sourcePosition ) && a.splitPosition.offset <= b.sourcePosition.offset ) {
-		a.howMany -= b.howMany;
-	}
-
-	if ( a.splitPosition.hasSameParentAs( b.targetPosition ) && a.splitPosition.offset < b.targetPosition.offset ) {
-		a.howMany += b.howMany;
-	}
-
-	// Change position stickiness to force a correct transformation.
-	a.splitPosition.stickiness = 'toNone';
-	a.splitPosition = a.splitPosition._getTransformedByMoveOperation( b );
-	a.splitPosition.stickiness = 'toNext';
-
-	if ( a.graveyardPosition ) {
-		a.insertionPosition = a.insertionPosition._getTransformedByMoveOperation( b );
-	} else {
-		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-	}
-
-	return [ a ];
-} );
-
-setTransformation( splitoperation_SplitOperation, splitoperation_SplitOperation, ( a, b, context ) => {
-	// Case 1:
-	//
-	// Split at the same position.
-	//
-	// If there already was a split at the same position as in `a` operation, it means that the intention
-	// conveyed by `a` operation has already been fulfilled and `a` should not do anything (to avoid double split).
-	//
-	// However, there is a difference if these are new splits or splits created by undo. These have different
-	// intentions. Also splits moving back different elements from graveyard have different intentions. They
-	// are just different operations.
-	//
-	// So we cancel split operation only if it was really identical.
-	//
-	if ( a.splitPosition.isEqual( b.splitPosition ) ) {
-		if ( !a.graveyardPosition && !b.graveyardPosition ) {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-
-		if ( a.graveyardPosition && b.graveyardPosition && a.graveyardPosition.isEqual( b.graveyardPosition ) ) {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-	}
-
-	// Case 2:
-	//
-	// Same node is using to split different elements. This happens in undo when previously same element was merged to
-	// two different elements. This is described in `MergeOperation` x `MergeOperation` transformation.
-	//
-	// In this case we will follow the same logic. We will assume that `insertionPosition` is same for both
-	// split operations. This might not always be true but in the real cases that were experienced it was. After all,
-	// if these splits are reverses of merge operations that were merging the same element, then the `insertionPosition`
-	// should be same for both of those splits.
-	//
-	// Again, we will decide which operation is stronger by checking if split happens in graveyard or in non-graveyard root.
-	//
-	if ( a.graveyardPosition && b.graveyardPosition && a.graveyardPosition.isEqual( b.graveyardPosition ) ) {
-		const aInGraveyard = a.splitPosition.root.rootName == '$graveyard';
-		const bInGraveyard = b.splitPosition.root.rootName == '$graveyard';
-
-		// If `aIsWeak` it means that `a` points to graveyard while `b` doesn't. Don't move nodes then.
-		const aIsWeak = aInGraveyard && !bInGraveyard;
-
-		// If `bIsWeak` it means that `b` points to graveyard while `a` doesn't. Force moving nodes then.
-		const bIsWeak = bInGraveyard && !aInGraveyard;
-
-		// Force move if `b` is weak or neither operation is weak but `a` is stronger through `context.aIsStrong`.
-		const forceMove = bIsWeak || ( !aIsWeak && context.aIsStrong );
-
-		if ( forceMove ) {
-			const result = [];
-
-			// First we need to move any nodes split by `b` back to where they were.
-			// Do it only if `b` actually moved something.
-			if ( b.howMany ) {
-				result.push( new moveoperation_MoveOperation( b.moveTargetPosition, b.howMany, b.splitPosition, 0 ) );
-			}
-
-			// Then we need to move nodes from `a` split position to their new element.
-			// Do it only if `a` actually should move something.
-			if ( a.howMany ) {
-				result.push( new moveoperation_MoveOperation( a.splitPosition, a.howMany, a.moveTargetPosition, 0 ) );
-			}
-
-			return result;
-		} else {
-			return [ new nooperation_NoOperation( 0 ) ];
-		}
-	}
-
-	if ( a.graveyardPosition ) {
-		a.graveyardPosition = a.graveyardPosition._getTransformedBySplitOperation( b );
-	}
-
-	// Case 3:
-	//
-	// Position where operation `b` inserted a new node after split is the same as the operation `a` split position.
-	// As in similar cases, there is ambiguity if the split should be before the new node (created by `b`) or after.
-	//
-	if ( a.splitPosition.isEqual( b.insertionPosition ) && context.abRelation == 'splitBefore' ) {
-		a.howMany++;
-
-		return [ a ];
-	}
-
-	// Case 4:
-	//
-	// This is a mirror to the case 2. above.
-	//
-	if ( b.splitPosition.isEqual( a.insertionPosition ) && context.baRelation == 'splitBefore' ) {
-		const newPositionPath = b.insertionPosition.path.slice();
-		newPositionPath.push( 0 );
-
-		const newPosition = new model_position_Position( b.insertionPosition.root, newPositionPath );
-		const moveOp = new moveoperation_MoveOperation( a.insertionPosition, 1, newPosition, 0 );
-
-		return [ a, moveOp ];
-	}
-
-	// The default case.
-	//
-	if ( a.splitPosition.hasSameParentAs( b.splitPosition ) && a.splitPosition.offset < b.splitPosition.offset ) {
-		a.howMany -= b.howMany;
-	}
-
-	a.splitPosition = a.splitPosition._getTransformedBySplitOperation( b );
-	a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
-
-	return [ a ];
-} );
-
-// Checks whether `MoveOperation` `targetPosition` is inside a node from the moved range of the other `MoveOperation`.
-//
-// @private
-// @param {module:engine/model/operation/moveoperation~MoveOperation} a
-// @param {module:engine/model/operation/moveoperation~MoveOperation} b
-// @returns {Boolean}
-function _moveTargetIntoMovedRange( a, b ) {
-	return a.targetPosition._getTransformedByDeletion( b.sourcePosition, b.howMany ) === null;
 }
 
-// Helper function for `MoveOperation` x `MoveOperation` transformation. Converts given ranges and target position to
-// move operations and returns them.
-//
-// Ranges and target position will be transformed on-the-fly when generating operations.
-//
-// Given `ranges` should be in the order of how they were in the original transformed operation.
-//
-// Given `targetPosition` is the target position of the first range from `ranges`.
-//
-// @private
-// @param {Array.<module:engine/model/range~Range>} ranges
-// @param {module:engine/model/position~Position} targetPosition
-// @returns {Array.<module:engine/model/operation/moveoperation~MoveOperation>}
-function _makeMoveOperationsFromRanges( ranges, targetPosition ) {
-	// At this moment we have some ranges and a target position, to which those ranges should be moved.
-	// Order in `ranges` array is the go-to order of after transformation.
-	//
-	// We are almost done. We have `ranges` and `targetPosition` to make operations from.
-	// Unfortunately, those operations may affect each other. Precisely, first operation after move
-	// may affect source range and target position of second and third operation. Same with second
-	// operation affecting third.
-	//
-	// We need to fix those source ranges and target positions once again, before converting `ranges` to operations.
-	const operations = [];
-
-	// Keep in mind that nothing will be transformed if there is just one range in `ranges`.
-	for ( let i = 0; i < ranges.length; i++ ) {
-		// Create new operation out of a range and target position.
-		const range = ranges[ i ];
-		const op = new moveoperation_MoveOperation( range.start, range.end.offset - range.start.offset, targetPosition, 0 );
-
-		operations.push( op );
-
-		// Transform other ranges by the generated operation.
-		for ( let j = i + 1; j < ranges.length; j++ ) {
-			// All ranges in `ranges` array should be:
-			//
-			// * non-intersecting (these are part of original operation source range), and
-			// * `targetPosition` does not target into them (opposite would mean that transformed operation targets "inside itself").
-			//
-			// This means that the transformation will be "clean" and always return one result.
-			ranges[ j ] = ranges[ j ]._getTransformedByMove( op.sourcePosition, op.targetPosition, op.howMany )[ 0 ];
-		}
-
-		targetPosition = targetPosition._getTransformedByMove( op.sourcePosition, op.targetPosition, op.howMany );
-	}
-
-	return operations;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/basecommand.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/bold/boldediting.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module undo/basecommand
+ * @module basic-styles/bold/boldediting
  */
 
 
 
 
+const BOLD = 'bold';
+
 /**
- * Base class for undo feature commands: {@link module:undo/undocommand~UndoCommand} and {@link module:undo/redocommand~RedoCommand}.
+ * The bold editing feature.
  *
- * @protected
- * @extends module:core/command~Command
- */
-class basecommand_BaseCommand extends Command {
-	constructor( editor ) {
-		super( editor );
-
-		/**
-		 * Stack of items stored by the command. These are pairs of:
-		 *
-		 * * {@link module:engine/model/batch~Batch batch} saved by the command,
-		 * * {@link module:engine/model/selection~Selection selection} state at the moment of saving the batch.
-		 *
-		 * @protected
-		 * @member {Array} #_stack
-		 */
-		this._stack = [];
-
-		/**
-		 * Stores all batches that were created by this command.
-		 *
-		 * @protected
-		 * @member {WeakSet.<module:engine/model/batch~Batch>} #_createdBatches
-		 */
-		this._createdBatches = new WeakSet();
-
-		// Refresh state, so the command is inactive right after initialization.
-		this.refresh();
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		this.isEnabled = this._stack.length > 0;
-	}
-
-	/**
-	 * Stores a batch in the command, together with the selection state of the {@link module:engine/model/document~Document document}
-	 * created by the editor which this command is registered to.
-	 *
-	 * @param {module:engine/model/batch~Batch} batch The batch to add.
-	 */
-	addBatch( batch ) {
-		const docSelection = this.editor.model.document.selection;
-
-		const selection = {
-			ranges: docSelection.hasOwnRange ? Array.from( docSelection.getRanges() ) : [],
-			isBackward: docSelection.isBackward
-		};
-
-		this._stack.push( { batch, selection } );
-		this.refresh();
-	}
-
-	/**
-	 * Removes all items from the stack.
-	 */
-	clearStack() {
-		this._stack = [];
-		this.refresh();
-	}
-
-	/**
-	 * Restores the {@link module:engine/model/document~Document#selection document selection} state after a batch was undone.
-	 *
-	 * @protected
-	 * @param {Array.<module:engine/model/range~Range>} ranges Ranges to be restored.
-	 * @param {Boolean} isBackward A flag describing whether the restored range was selected forward or backward.
-	 * @param {Array.<module:engine/model/operation/operation~Operation>} operations Operations which has been applied
-	 * since selection has been stored.
-	 */
-	_restoreSelection( ranges, isBackward, operations ) {
-		const model = this.editor.model;
-		const document = model.document;
-
-		// This will keep the transformed selection ranges.
-		const selectionRanges = [];
-
-		// Transform all ranges from the restored selection.
-		for ( const range of ranges ) {
-			const transformed = transformSelectionRange( range, operations );
-
-			// For each `range` from `ranges`, we take only one transformed range.
-			// This is because we want to prevent situation where single-range selection
-			// got transformed to multi-range selection. We will take the first range that
-			// is not in the graveyard.
-			const newRange = transformed.find(
-				range => range.start.root != document.graveyard
-			);
-
-			// `transformedRange` might be `undefined` if transformed range ended up in graveyard.
-			if ( newRange ) {
-				selectionRanges.push( newRange );
-			}
-		}
-
-		// `selectionRanges` may be empty if all ranges ended up in graveyard. If that is the case, do not restore selection.
-		if ( selectionRanges.length ) {
-			model.change( writer => {
-				writer.setSelection( selectionRanges, { backward: isBackward } );
-			} );
-		}
-	}
-
-	/**
-	 * Undoes a batch by reversing that batch, transforming reversed batch and finally applying it.
-	 * This is a helper method for {@link #execute}.
-	 *
-	 * @protected
-	 * @param {module:engine/model/batch~Batch} batchToUndo The batch to be undone.
-	 * @param {module:engine/model/batch~Batch} undoingBatch The batch that will contain undoing changes.
-	 */
-	_undo( batchToUndo, undoingBatch ) {
-		const model = this.editor.model;
-		const document = model.document;
-
-		// All changes done by the command execution will be saved as one batch.
-		this._createdBatches.add( undoingBatch );
-
-		const operationsToUndo = batchToUndo.operations.slice().filter( operation => operation.isDocumentOperation );
-		operationsToUndo.reverse();
-
-		// We will process each operation from `batchToUndo`, in reverse order. If there were operations A, B and C in undone batch,
-		// we need to revert them in reverse order, so first C' (reversed C), then B', then A'.
-		for ( const operationToUndo of operationsToUndo ) {
-			const nextBaseVersion = operationToUndo.baseVersion + 1;
-			const historyOperations = Array.from( document.history.getOperations( nextBaseVersion ) );
-
-			const transformedSets = transformSets(
-				[ operationToUndo.getReversed() ],
-				historyOperations,
-				{
-					useRelations: true,
-					document: this.editor.model.document,
-					padWithNoOps: false
-				}
-			);
-
-			const reversedOperations = transformedSets.operationsA;
-
-			// After reversed operation has been transformed by all history operations, apply it.
-			for ( const operation of reversedOperations ) {
-				// Before applying, add the operation to the `undoingBatch`.
-				undoingBatch.addOperation( operation );
-				model.applyOperation( operation );
-
-				document.history.setOperationAsUndone( operationToUndo, operation );
-			}
-		}
-	}
-}
-
-// Transforms given range `range` by given `operations`.
-// Returns an array containing one or more ranges, which are result of the transformation.
-function transformSelectionRange( range, operations ) {
-	const transformed = range.getTransformedByOperations( operations );
-
-	// After `range` got transformed, we have an array of ranges. Some of those
-	// ranges may be "touching" -- they can be next to each other and could be merged.
-	// First, we have to sort those ranges to assure that they are in order.
-	transformed.sort( ( a, b ) => a.start.isBefore( b.start ) ? -1 : 1 );
-
-	// Then, we check if two consecutive ranges are touching.
-	for ( let i = 1; i < transformed.length; i++ ) {
-		const a = transformed[ i - 1 ];
-		const b = transformed[ i ];
-
-		if ( a.end.isTouching( b.start ) ) {
-			// And join them together if they are.
-			a.end = b.end;
-			transformed.splice( i, 1 );
-			i--;
-		}
-	}
-
-	return transformed;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undocommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module undo/undocommand
- */
-
-
-
-
-/**
- * The undo command stores {@link module:engine/model/batch~Batch batches} applied to the
- * {@link module:engine/model/document~Document document} and is able to undo a batch by reversing it and transforming by
- * batches from {@link module:engine/model/document~Document#history history} that happened after the reversed batch.
- *
- * The undo command also takes care of restoring the {@link module:engine/model/document~Document#selection document selection}.
- *
- * @extends module:undo/basecommand~BaseCommand
- */
-class undocommand_UndoCommand extends basecommand_BaseCommand {
-	/**
-	 * Executes the command. This method reverts a {@link module:engine/model/batch~Batch batch} added to the command's stack, transforms
-	 * and applies the reverted version on the {@link module:engine/model/document~Document document} and removes the batch from the stack.
-	 * Then, it restores the {@link module:engine/model/document~Document#selection document selection}.
-	 *
-	 * @fires execute
-	 * @fires revert
-	 * @param {module:engine/model/batch~Batch} [batch] A batch that should be undone. If not set, the last added batch will be undone.
-	 */
-	execute( batch = null ) {
-		// If batch is not given, set `batchIndex` to the last index in command stack.
-		const batchIndex = batch ? this._stack.findIndex( a => a.batch == batch ) : this._stack.length - 1;
-
-		const item = this._stack.splice( batchIndex, 1 )[ 0 ];
-		const undoingBatch = new Batch();
-
-		// All changes has to be done in one `enqueueChange` callback so other listeners will not
-		// step between consecutive operations, or won't do changes to the document before selection is properly restored.
-		this.editor.model.enqueueChange( undoingBatch, () => {
-			this._undo( item.batch, undoingBatch );
-
-			const operations = this.editor.model.document.history.getOperations( item.batch.baseVersion );
-			this._restoreSelection( item.selection.ranges, item.selection.isBackward, operations );
-
-			this.fire( 'revert', item.batch, undoingBatch );
-		} );
-
-		this.refresh();
-	}
-}
-
-/**
- * Fired when execution of the command reverts some batch.
- *
- * @event revert
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/redocommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module undo/redocommand
- */
-
-
-
-
-/**
- * The redo command stores {@link module:engine/model/batch~Batch batches} that were used to undo a batch by
- * {@link module:undo/undocommand~UndoCommand}. It is able to redo a previously undone batch by reversing the undoing
- * batches created by `UndoCommand`. The reversed batch is transformed by all the batches from
- * {@link module:engine/model/document~Document#history history} that happened after the reversed undo batch.
- *
- * The redo command also takes care of restoring the {@link module:engine/model/document~Document#selection document selection}.
- *
- * @extends module:undo/basecommand~BaseCommand
- */
-class redocommand_RedoCommand extends basecommand_BaseCommand {
-	/**
-	 * Executes the command. This method reverts the last {@link module:engine/model/batch~Batch batch} added to
-	 * the command's stack, applies the reverted and transformed version on the
-	 * {@link module:engine/model/document~Document document} and removes the batch from the stack.
-	 * Then, it restores the {@link module:engine/model/document~Document#selection document selection}.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const item = this._stack.pop();
-		const redoingBatch = new Batch();
-
-		// All changes have to be done in one `enqueueChange` callback so other listeners will not step between consecutive
-		// operations, or won't do changes to the document before selection is properly restored.
-		this.editor.model.enqueueChange( redoingBatch, () => {
-			const lastOperation = item.batch.operations[ item.batch.operations.length - 1 ];
-			const nextBaseVersion = lastOperation.baseVersion + 1;
-			const operations = this.editor.model.document.history.getOperations( nextBaseVersion );
-
-			this._restoreSelection( item.selection.ranges, item.selection.isBackward, operations );
-			this._undo( item.batch, redoingBatch );
-		} );
-
-		this.refresh();
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undoediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module undo/undoediting
- */
-
-
-
-
-
-/**
- * The undo engine feature.
- *
- * It introduces the `'undo'` and `'redo'` commands to the editor.
+ * It registers the `'bold'` command and introduces the `bold` attribute in the model which renders to the view
+ * as a `<strong>` element.
  *
  * @extends module:core/plugin~Plugin
  */
-class undoediting_UndoEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( editor ) {
-		super( editor );
-
-		/**
-		 * The command that manages undo {@link module:engine/model/batch~Batch batches} stack (history).
-		 * Created and registered during the {@link #init feature initialization}.
-		 *
-		 * @private
-		 * @member {module:undo/undocommand~UndoCommand} #_undoCommand
-		 */
-
-		/**
-		 * The command that manages redo {@link module:engine/model/batch~Batch batches} stack (history).
-		 * Created and registered during the {@link #init feature initialization}.
-		 *
-		 * @private
-		 * @member {module:undo/undocommand~UndoCommand} #_redoCommand
-		 */
-
-		/**
-		 * Keeps track of which batches were registered in undo.
-		 *
-		 * @private
-		 * @member {WeakSet.<module:engine/model/batch~Batch>}
-		 */
-		this._batchRegistry = new WeakSet();
-	}
-
+class boldediting_BoldEditing extends Plugin {
 	/**
 	 * @inheritDoc
 	 */
 	init() {
 		const editor = this.editor;
+		// Allow bold attribute on text nodes.
+		editor.model.schema.extend( '$text', { allowAttributes: BOLD } );
 
-		// Create commands.
-		this._undoCommand = new undocommand_UndoCommand( editor );
-		this._redoCommand = new redocommand_RedoCommand( editor );
+		// Build converter from model to view for data and editing pipelines.
 
-		// Register command to the editor.
-		editor.commands.add( 'undo', this._undoCommand );
-		editor.commands.add( 'redo', this._redoCommand );
-
-		this.listenTo( editor.model, 'applyOperation', ( evt, args ) => {
-			const operation = args[ 0 ];
-
-			// Do not register batch if the operation is not a document operation.
-			// This prevents from creating empty undo steps, where all operations where non-document operations.
-			// Non-document operations creates and alters content in detached tree fragments (for example, document fragments).
-			// Most of time this is preparing data before it is inserted into actual tree (for example during copy & paste).
-			// Such operations should not be reversed.
-			if ( !operation.isDocumentOperation ) {
-				return;
-			}
-
-			const batch = operation.batch;
-
-			// If changes are not a part of a batch or this is not a new batch, omit those changes.
-			if ( this._batchRegistry.has( batch ) || batch.type == 'transparent' ) {
-				return;
-			} else {
-				if ( this._redoCommand._createdBatches.has( batch ) ) {
-					// If this batch comes from `redoCommand`, add it to `undoCommand` stack.
-					this._undoCommand.addBatch( batch );
-				} else if ( !this._undoCommand._createdBatches.has( batch ) ) {
-					// A default batch - these are new changes in the document, not introduced by undo feature.
-					// Add them to `undoCommand` stack and clear `redoCommand` stack.
-					this._undoCommand.addBatch( batch );
-					this._redoCommand.clearStack();
+		editor.conversion.attributeToElement( {
+			model: BOLD,
+			view: 'strong',
+			upcastAlso: [
+				'b',
+				{
+					styles: {
+						'font-weight': 'bold'
+					}
 				}
-			}
-
-			// Add the batch to the registry so it will not be processed again.
-			this._batchRegistry.add( batch );
-		}, { priority: 'highest' } );
-
-		this.listenTo( this._undoCommand, 'revert', ( evt, undoneBatch, undoingBatch ) => {
-			this._redoCommand.addBatch( undoingBatch );
+			]
 		} );
 
-		editor.keystrokes.set( 'CTRL+Z', 'undo' );
-		editor.keystrokes.set( 'CTRL+Y', 'redo' );
-		editor.keystrokes.set( 'CTRL+SHIFT+Z', 'redo' );
+		// Create bold command.
+		editor.commands.add( BOLD, new attributecommand_AttributeCommand( editor, BOLD ) );
+
+		// Set the Ctrl+B keystroke.
+		editor.keystrokes.set( 'CTRL+B', BOLD );
 	}
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/icon/icon.css
-var icon_icon = __webpack_require__(56);
+var icon_icon = __webpack_require__(37);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/icon/iconview.js
 /**
@@ -55688,7 +49924,7 @@ class iconview_IconView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/tooltip/tooltip.css
-var tooltip_tooltip = __webpack_require__(58);
+var tooltip_tooltip = __webpack_require__(39);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/tooltip/tooltipview.js
 /**
@@ -55780,7 +50016,7 @@ class tooltipview_TooltipView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/button/button.css
-var button_button = __webpack_require__(60);
+var button_button = __webpack_require__(41);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/button/buttonview.js
 /**
@@ -56046,1923 +50282,8 @@ class buttonview_ButtonView extends src_view_View {
 	}
 }
 
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-undo/theme/icons/undo.svg
-var undo = __webpack_require__(20);
-var undo_default = /*#__PURE__*/__webpack_require__.n(undo);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-undo/theme/icons/redo.svg
-var redo = __webpack_require__(21);
-var redo_default = /*#__PURE__*/__webpack_require__.n(redo);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undoui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module undo/undoui
- */
-
-
-
-
-/**
- * The undo UI feature. It introduces the `'undo'` and `'redo'` buttons to the editor.
- *
- * @extends module:core/plugin~Plugin
- */
-class undoui_UndoUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const t = editor.t;
-        this._addButton('undo', t('ax'), 'CTRL+Z', undo_default.a);
-        this._addButton('redo', t('ay'), 'CTRL+Y', redo_default.a);
-    }
-    /**
-	 * Creates a button for the specified command.
-	 *
-	 * @private
-	 * @param {String} name Command name.
-	 * @param {String} label Button label.
-	 * @param {String} keystroke Command keystroke.
-	 * @param {String} Icon Source of the icon.
-	 */
-    _addButton(name, label, keystroke, Icon) {
-        const editor = this.editor;
-        editor.ui.componentFactory.add(name, locale => {
-            const command = editor.commands.get(name);
-            const view = new buttonview_ButtonView(locale);
-            view.set({
-                label,
-                icon: Icon,
-                keystroke,
-                tooltip: true
-            });
-            view.bind('isEnabled').to(command, 'isEnabled');
-            this.listenTo(view, 'execute', () => editor.execute(name));
-            return view;
-        });
-    }
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undo.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module undo/undo
- */
-
-
-
-
-
-/**
- * The undo feature.
- *
- * This is a "glue" plugin which loads the {@link module:undo/undoediting~UndoEditing undo editing feature}
- * and {@link module:undo/undoui~UndoUI undo UI feature}.
- *
- * Below is the explanation of the undo mechanism working together with {@link module:engine/model/history~History History}:
- *
- * Whenever a {@link module:engine/model/operation/operation~Operation operation} is applied to the
- * {@link module:engine/model/document~Document document}, it is saved to `History` as is.
- * The {@link module:engine/model/batch~Batch batch} that owns that operation is also saved, in
- * {@link module:undo/undocommand~UndoCommand}, together with the selection that was present in the document before the
- * operation was applied. A batch is saved instead of the operation because changes are undone batch-by-batch, not operation-by-operation
- * and a batch is seen as one undo step.
- *
- * After some changes happen to the document, the `History` and `UndoCommand` stack can be represented as follows:
- *
- *		    History                            Undo stack
- *		==============             ==================================
- *		[operation A1]                         [batch A]
- *		[operation B1]                         [batch B]
- *		[operation B2]                         [batch C]
- *		[operation C1]
- *		[operation C2]
- *		[operation B3]
- *		[operation C3]
- *
- * Where operations starting with the same letter are from same batch.
- *
- * Undoing a batch means that a set of operations which will reverse the effects of that batch needs to be generated.
- * For example, if a batch added several letters, undoing the batch should remove them. It is important to apply undoing
- * operations in the reversed order, so if a batch has operation `X`, `Y`, `Z`, reversed operations `Zr`, `Yr` and `Xr`
- * need to be applied. Otherwise reversed operation `Xr` would operate on a wrong document state, because operation `X`
- * does not know that operations `Y` and `Z` happened.
- *
- * After operations from an undone batch got {@link module:engine/model/operation/operation~Operation#getReversed reversed},
- * one needs to make sure if they are ready to be applied. In the scenario above, operation `C3` is the last operation and `C3r`
- * bases on up-to-date document state, so it can be applied to the document.
- *
- *		     History                             Undo stack
- *		=================             ==================================
- *		[ operation A1  ]                      [  batch A  ]
- *		[ operation B1  ]                      [  batch B  ]
- *		[ operation B2  ]             [   processing undoing batch C   ]
- *		[ operation C1  ]
- *		[ operation C2  ]
- *		[ operation B3  ]
- *		[ operation C3  ]
- *		[ operation C3r ]
- *
- * Next is operation `C2`, reversed to `C2r`. `C2r` bases on `C2`, so it bases on the wrong document state. It needs to be
- * transformed by operations from history that happened after it, so it "knows" about them. Let us assume that `C2' = C2r * B3 * C3 * C3r`,
- * where `*` means "transformed by". Rest of operations from that batch are processed in the same fashion.
- *
- *		     History                             Undo stack                                      Redo stack
- *		=================             ==================================             ==================================
- *		[ operation A1  ]                      [  batch A  ]                                    [ batch Cr ]
- *		[ operation B1  ]                      [  batch B  ]
- *		[ operation B2  ]
- *		[ operation C1  ]
- *		[ operation C2  ]
- *		[ operation B3  ]
- *		[ operation C3  ]
- *		[ operation C3r ]
- *		[ operation C2' ]
- *		[ operation C1' ]
- *
- * Selective undo works on the same basis, however, instead of undoing the last batch in the undo stack, any batch can be undone.
- * The same algorithm applies: operations from a batch (i.e. `A1`) are reversed and then transformed by operations stored in history.
- *
- * Redo also is very similar to undo. It has its own stack that is filled with undoing (reversed batches). Operations from
- * batch that is re-done are reversed-back, transformed in proper order and applied to the document.
- *
- *		     History                             Undo stack                                      Redo stack
- *		=================             ==================================             ==================================
- *		[ operation A1  ]                      [  batch A  ]
- *		[ operation B1  ]                      [  batch B  ]
- *		[ operation B2  ]                      [ batch Crr ]
- *		[ operation C1  ]
- *		[ operation C2  ]
- *		[ operation B3  ]
- *		[ operation C3  ]
- *		[ operation C3r ]
- *		[ operation C2' ]
- *		[ operation C1' ]
- *		[ operation C1'r]
- *		[ operation C2'r]
- *		[ operation C3rr]
- *
- * @extends module:core/plugin~Plugin
- */
-class undo_Undo extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ undoediting_UndoEditing, undoui_UndoUI ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Undo';
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-essentials/src/essentials.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module essentials/essentials
- */
-
-
-
-
-
-
-
-
-
-/**
- * A plugin including all essential editing features. It represents a set of features that enables similar functionalities
- * to a `<textarea>` element.
- *
- * It includes:
- *
- * * {@link module:clipboard/clipboard~Clipboard},
- * * {@link module:enter/enter~Enter},
- * * {@link module:enter/shiftenter~ShiftEnter},
- * * {@link module:typing/typing~Typing},
- * * {@link module:undo/undo~Undo}.
- *
- * This plugin set does not define any block-level containers (such as {@link module:paragraph/paragraph~Paragraph}).
- * If your editor is supposed to handle block content, make sure to include it.
- *
- * @extends module:core/plugin~Plugin
- */
-class essentials_Essentials extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ clipboard_Clipboard, enter_Enter, shiftenter_ShiftEnter, typing_Typing, undo_Undo ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Essentials';
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-core/src/pendingactions.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module core/pendingactions
- */
-
-
-
-
-
-
-/**
- * The list of pending editor actions.
- *
- * This plugin should be used to synchronise plugins that execute long-lasting actions
- * (e.g. file upload) with the editor integration. It gives the developer who integrates the editor
- * an easy way to check if there are any actions pending whenever such information is needed.
- * All plugins that register a pending action also provide a message about the action that is ongoing
- * which can be displayed to the user. This lets them decide if they want to interrupt the action or wait.
- *
- * Adding and updating a pending action:
- *
- * 		const pendingActions = editor.plugins.get( 'PendingActions' );
- * 		const action = pendingActions.add( 'Upload in progress: 0%.' );
- *
- *		// You can update the message:
- * 		action.message = 'Upload in progress: 10%.';
- *
- * Removing a pending action:
- *
- * 		const pendingActions = editor.plugins.get( 'PendingActions' );
- * 		const action = pendingActions.add( 'Unsaved changes.' );
- *
- * 		pendingActions.remove( action );
- *
- * Getting pending actions:
- *
- * 		const pendingActions = editor.plugins.get( 'PendingActions' );
- *
- * 		const action1 = pendingActions.add( 'Action 1' );
- * 		const action2 = pendingActions.add( 'Action 2' );
- *
- * 		pendingActions.first; // Returns action1
- * 		Array.from( pendingActions ); // Returns [ action1, action2 ]
- *
- * This plugin is used by features like {@link module:upload/filerepository~FileRepository} to register their ongoing actions
- * and by features like {@link module:autosave/autosave~Autosave} to detect whether there are any ongoing actions.
- * Read more about saving the data in the {@glink builds/guides/integration/saving-data Saving and getting data} guide.
- *
- * @extends module:core/plugin~Plugin
- */
-class pendingactions_PendingActions extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'PendingActions';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		/**
-		 * Defines whether there is any registered pending action.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Boolean} #hasAny
-		 */
-		this.set( 'hasAny', false );
-
-		/**
-		 * A list of pending actions.
-		 *
-		 * @private
-		 * @type {module:utils/collection~Collection}
-		 */
-		this._actions = new collection_Collection( { idProperty: '_id' } );
-		this._actions.delegate( 'add', 'remove' ).to( this );
-	}
-
-	/**
-	 * Adds an action to the list of pending actions.
-	 *
-	 * This method returns an action object with an observable message property.
-	 * The action object can be later used in the {@link #remove} method. It also allows you to change the message.
-	 *
-	 * @param {String} message The action message.
-	 * @returns {Object} An observable object that represents a pending action.
-	 */
-	add( message ) {
-		if ( typeof message !== 'string' ) {
-			/**
-			 * The message must be a string.
-			 *
-			 * @error pendingactions-add-invalid-message
-			 */
-			throw new ckeditorerror["b" /* default */]( 'pendingactions-add-invalid-message: The message must be a string.' );
-		}
-
-		const action = Object.create( observablemixin );
-
-		action.set( 'message', message );
-		this._actions.add( action );
-		this.hasAny = true;
-
-		return action;
-	}
-
-	/**
-	 * Removes an action from the list of pending actions.
-	 *
-	 * @param {Object} action An action object.
-	 */
-	remove( action ) {
-		this._actions.remove( action );
-		this.hasAny = !!this._actions.length;
-	}
-
-	/**
-	 * Returns the first action from the list.
-	 *
-	 * returns {Object} The pending action object.
-	 */
-	get first() {
-		return this._actions.get( 0 );
-	}
-
-	/**
-	 * Iterable interface.
-	 *
-	 * @returns {Iterable.<*>}
-	 */
-	[ Symbol.iterator ]() {
-		return this._actions[ Symbol.iterator ]();
-	}
-
-	/**
-	 * Fired when an action is added to the list.
-	 *
-	 * @event add
-	 * @param {Object} action The added action.
-	 */
-
-	/**
-	 * Fired when an action is removed from the list.
-	 *
-	 * @event remove
-	 * @param {Object} action The removed action.
-	 */
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-upload/src/filereader.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module upload/filereader
- */
-
-/* globals window */
-
-
-
-
-/**
- * Wrapper over the native `FileReader`.
- */
-class FileReader {
-	/**
-	 * Creates an instance of the FileReader.
-	 */
-	constructor() {
-		const reader = new window.FileReader();
-
-		/**
-		 * Instance of native FileReader.
-		 *
-		 * @private
-		 * @member {FileReader} #_reader
-		 */
-		this._reader = reader;
-
-		/**
-		 * Number of bytes loaded.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number} #loaded
-		 */
-		this.set( 'loaded', 0 );
-
-		reader.onprogress = evt => {
-			this.loaded = evt.loaded;
-		};
-	}
-
-	/**
-	 * Returns error that occurred during file reading.
-	 *
-	 * @returns {Error}
-	 */
-	get error() {
-		return this._reader.error;
-	}
-
-	/**
-	 * Reads the provided file.
-	 *
-	 * @param {File} file Native File object.
-	 * @returns {Promise} Returns a promise that will be resolved with file's content.
-	 * The promise will be rejected in case of an error or when the reading process is aborted.
-	 */
-	read( file ) {
-		const reader = this._reader;
-		this.total = file.size;
-
-		return new Promise( ( resolve, reject ) => {
-			reader.onload = () => {
-				resolve( reader.result );
-			};
-
-			reader.onerror = () => {
-				reject( 'error' );
-			};
-
-			reader.onabort = () => {
-				reject( 'aborted' );
-			};
-
-			this._reader.readAsDataURL( file );
-		} );
-	}
-
-	/**
-	 * Aborts file reader.
-	 */
-	abort() {
-		this._reader.abort();
-	}
-}
-
-mix( FileReader, observablemixin );
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-upload/src/filerepository.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module upload/filerepository
- */
-
-
-
-
-
-
-
-
-
-/**
- * File repository plugin. A central point for managing file upload.
- *
- * To use it, first you need an upload adapter. Upload adapter's job is to handle communication with the server
- * (sending the file and handling server's response). You can use one of the existing plugins introducing upload adapters
- * (e.g. {@link module:easy-image/cloudservicesuploadadapter~CloudServicesUploadAdapter} or
- * {@link module:adapter-ckfinder/uploadadapter~CKFinderUploadAdapter}) or write your own one
- * (which boils down to setting the {@link ~FileRepository#createUploadAdapter} factory function – see
- * {@link module:upload/filerepository~UploadAdapter `UploadAdapter` interface} documentation).
- *
- * Then, you can use {@link module:upload/filerepository~FileRepository#createLoader `createLoader()`} and the returned
- * {@link module:upload/filerepository~FileLoader} instance to load and upload files.
- *
- * @extends module:core/plugin~Plugin
- */
-class filerepository_FileRepository extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    static get pluginName() {
-        return 'FileRepository';
-    }
-    /**
-	 * @inheritDoc
-	 */
-    static get requires() {
-        return [pendingactions_PendingActions];
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        /**
-		 * Collection of loaders associated with this repository.
-		 *
-		 * @member {module:utils/collection~Collection} #loaders
-		 */
-        this.loaders = new collection_Collection();
-        // Keeps upload in a sync with pending actions.
-        this.loaders.on('add', () => this._updatePendingAction());
-        this.loaders.on('remove', () => this._updatePendingAction());
-        /**
-		 * Reference to a pending action registered in a {@link module:core/pendingactions~PendingActions} plugin
-		 * while upload is in progress. When there is no upload then value is `null`.
-		 *
-		 * @private
-		 * @member {Object} #_pendingAction
-		 */
-        this._pendingAction = null;
-        /**
-		 * A factory function which should be defined before using `FileRepository`.
-		 *
-		 * It should return a new instance of {@link module:upload/filerepository~UploadAdapter} that will be used to upload files.
-		 * {@link module:upload/filerepository~FileLoader} instance associated with the adapter
-		 * will be passed to that function.
-		 *
-		 * For more information and example see {@link module:upload/filerepository~UploadAdapter}.
-		 *
-		 * @member {Function} #createUploadAdapter
-		 */
-        /**
-		 * Number of bytes uploaded.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number} #uploaded
-		 */
-        this.set('uploaded', 0);
-        /**
-		 * Number of total bytes to upload.
-		 *
-		 * It might be different than the file size because of headers and additional data.
-		 * It contains `null` if value is not available yet, so it's better to use {@link #uploadedPercent} to monitor
-		 * the progress.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number|null} #uploadTotal
-		 */
-        this.set('uploadTotal', null);
-        /**
-		 * Upload progress in percents.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number} #uploadedPercent
-		 */
-        this.bind('uploadedPercent').to(this, 'uploaded', this, 'uploadTotal', (uploaded, total) => {
-            return total ? uploaded / total * 100 : 0;
-        });
-    }
-    /**
-	 * Returns the loader associated with specified file.
-	 *
-	 * To get loader by id use `fileRepository.loaders.get( id )`.
-	 *
-	 * @param {File} file Native file handle.
-	 * @returns {module:upload/filerepository~FileLoader|null}
-	 */
-    getLoader(file) {
-        for (const loader of this.loaders) {
-            if (loader.file == file) {
-                return loader;
-            }
-        }
-        return null;
-    }
-    /**
-	 * Creates a loader instance for the given file.
-	 *
-	 * Requires {@link #createUploadAdapter} factory to be defined.
-	 *
-	 * @param {File} file Native File object.
-	 * @returns {module:upload/filerepository~FileLoader|null}
-	 */
-    createLoader(file) {
-        if (!this.createUploadAdapter) {
-            /**
-			 * You need to enable an upload adapter in order to be able to upload files.
-			 *
-			 * This warning shows up when {@link module:upload/filerepository~FileRepository} is being used
-			 * without {@link #createUploadAdapter definining an upload adapter}.
-			 *
-			 * **If you see this warning when using one of the {@glink builds/index CKEditor 5 Builds}**
-			 * it means that you did not configure any of the upload adapters available by default in those builds.
-			 * See:
-			 *
-			 * * {@link module:core/editor/editorconfig~EditorConfig#cloudServices `config.cloudServices`} for
-			 * Easy Image with Cloud Services integration,
-			 * * {@link module:core/editor/editorconfig~EditorConfig#ckfinder `config.ckfinder`} for CKFinder
-			 * file upload integration.
-			 *
-			 * **If you see this warning when using a custom build** there is a chance that you enabled
-			 * a feature like {@link module:image/imageupload~ImageUpload},
-			 * or {@link module:image/imageupload/imageuploadui~ImageUploadUI} but you did not enable any upload adapter.
-			 * You can choose one of the existing upload adapters:
-			 *
-			 * * {@link module:easy-image/cloudservicesuploadadapter~CloudServicesUploadAdapter}
-			 * (remember to {@link module:core/editor/editorconfig~EditorConfig#cloudServices configure it})
-			 * * {@link module:adapter-ckfinder/uploadadapter~CKFinderUploadAdapter}
-			 * (remember to {@link module:core/editor/editorconfig~EditorConfig#ckfinder configure it})
-			 *
-			 * You can also implement your own upload adapter (in which case, please refer
-			 * to the {@link module:upload/filerepository~UploadAdapter `UploadAdapter` interface} documentation).
-			 *
-			 * @error filerepository-no-upload-adapter
-			 */
-            log["a" /* default */].error('filerepository-no-upload-adapter: Upload adapter is not defined.');
-            return null;
-        }
-        const loader = new filerepository_FileLoader(file);
-        loader._adapter = this.createUploadAdapter(loader);
-        this.loaders.add(loader);
-        loader.on('change:uploaded', () => {
-            let aggregatedUploaded = 0;
-            for (const loader of this.loaders) {
-                aggregatedUploaded += loader.uploaded;
-            }
-            this.uploaded = aggregatedUploaded;
-        });
-        loader.on('change:uploadTotal', () => {
-            let aggregatedTotal = 0;
-            for (const loader of this.loaders) {
-                if (loader.uploadTotal) {
-                    aggregatedTotal += loader.uploadTotal;
-                }
-            }
-            this.uploadTotal = aggregatedTotal;
-        });
-        return loader;
-    }
-    /**
-	 * Destroys the given loader.
-	 *
-	 * @param {File|module:upload/filerepository~FileLoader} fileOrLoader File associated with that loader or loader
-	 * itself.
-	 */
-    destroyLoader(fileOrLoader) {
-        const loader = fileOrLoader instanceof filerepository_FileLoader ? fileOrLoader : this.getLoader(fileOrLoader);
-        loader._destroy();
-        this.loaders.remove(loader);
-    }
-    /**
-	 * Registers or deregisters pending action bound with upload progress.
-	 *
-	 * @private
-	 */
-    _updatePendingAction() {
-        const pendingActions = this.editor.plugins.get(pendingactions_PendingActions);
-        if (this.loaders.length) {
-            if (!this._pendingAction) {
-                const t = this.editor.t;
-                const getMessage = value => `${ t('ap') } ${ parseInt(value) }%.`;
-                this._pendingAction = pendingActions.add(getMessage(this.uploadedPercent));
-                this._pendingAction.bind('message').to(this, 'uploadedPercent', getMessage);
-            }
-        } else {
-            pendingActions.remove(this._pendingAction);
-            this._pendingAction = null;
-        }
-    }
-}
-mix(filerepository_FileRepository, observablemixin);
-/**
- * File loader class.
- * It is used to control the process of file reading and uploading using specified adapter.
- */
-class filerepository_FileLoader {
-    /**
-	 * Creates a new instance of `FileLoader`.
-	 *
-	 * @param {File} file A native file instance.
-	 * @param {module:upload/filerepository~UploadAdapter} adapter
-	 */
-    constructor(file, adapter) {
-        /**
-		 * Unique id of FileLoader instance.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 */
-        this.id = uid_uid();
-        /**
-		 * A `File` instance associated with this file loader.
-		 *
-		 * @readonly
-		 * @member {File}
-		 */
-        this.file = file;
-        /**
-		 * Adapter instance associated with this file loader.
-		 *
-		 * @private
-		 * @member {module:upload/filerepository~UploadAdapter}
-		 */
-        this._adapter = adapter;
-        /**
-		 * FileReader used by FileLoader.
-		 *
-		 * @protected
-		 * @member {module:upload/filereader~FileReader}
-		 */
-        this._reader = new FileReader();
-        /**
-		 * Current status of FileLoader. It can be one of the following:
-		 *
-		 * * 'idle',
-		 * * 'reading',
-		 * * 'uploading',
-		 * * 'aborted',
-		 * * 'error'.
-		 *
-		 * When reading status can change in a following way:
-		 *
-		 * `idle` -> `reading` -> `idle`
-		 * `idle` -> `reading -> `aborted`
-		 * `idle` -> `reading -> `error`
-		 *
-		 * When uploading status can change in a following way:
-		 *
-		 * `idle` -> `uploading` -> `idle`
-		 * `idle` -> `uploading` -> `aborted`
-		 * `idle` -> `uploading` -> `error`
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {String} #status
-		 */
-        this.set('status', 'idle');
-        /**
-		 * Number of bytes uploaded.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number} #uploaded
-		 */
-        this.set('uploaded', 0);
-        /**
-		 * Number of total bytes to upload.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number|null} #uploadTotal
-		 */
-        this.set('uploadTotal', null);
-        /**
-		 * Upload progress in percents.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Number} #uploadedPercent
-		 */
-        this.bind('uploadedPercent').to(this, 'uploaded', this, 'uploadTotal', (uploaded, total) => {
-            return total ? uploaded / total * 100 : 0;
-        });
-        /**
-		 * Response of the upload.
-		 *
-		 * @readonly
-		 * @observable
-		 * @member {Object|null} #uploadResponse
-		 */
-        this.set('uploadResponse', null);
-    }
-    /**
-	 * Reads file using {@link module:upload/filereader~FileReader}.
-	 *
-	 * Throws {@link module:utils/ckeditorerror~CKEditorError CKEditorError} `filerepository-read-wrong-status` when status
-	 * is different than `idle`.
-	 *
-	 * Example usage:
-	 *
-	 *	fileLoader.read()
-	 *		.then( data => { ... } )
-	 *		.catch( err => {
-	 *			if ( err === 'aborted' ) {
-	 *				console.log( 'Reading aborted.' );
-	 *			} else {
-	 *				console.log( 'Reading error.', err );
-	 *			}
-	 *		} );
-	 *
-	 * @returns {Promise} Returns promise that will be resolved with read data. Promise will be rejected if error
-	 * occurs or if read process is aborted.
-	 */
-    read() {
-        if (this.status != 'idle') {
-            throw new ckeditorerror["b" /* default */]('filerepository-read-wrong-status: You cannot call read if the status is different than idle.');
-        }
-        this.status = 'reading';
-        return this._reader.read(this.file).then(data => {
-            this.status = 'idle';
-            return data;
-        }).catch(err => {
-            if (err === 'aborted') {
-                this.status = 'aborted';
-                throw 'aborted';
-            }
-            this.status = 'error';
-            throw this._reader.error;
-        });
-    }
-    /**
-	 * Reads file using the provided {@link module:upload/filerepository~UploadAdapter}.
-	 *
-	 * Throws {@link module:utils/ckeditorerror~CKEditorError CKEditorError} `filerepository-upload-wrong-status` when status
-	 * is different than `idle`.
-	 * Example usage:
-	 *
-	 *	fileLoader.upload()
-	 *		.then( data => { ... } )
-	 *		.catch( e => {
-	 *			if ( e === 'aborted' ) {
-	 *				console.log( 'Uploading aborted.' );
-	 *			} else {
-	 *				console.log( 'Uploading error.', e );
-	 *			}
-	 *		} );
-	 *
-	 * @returns {Promise} Returns promise that will be resolved with response data. Promise will be rejected if error
-	 * occurs or if read process is aborted.
-	 */
-    upload() {
-        if (this.status != 'idle') {
-            throw new ckeditorerror["b" /* default */]('filerepository-upload-wrong-status: You cannot call upload if the status is different than idle.');
-        }
-        this.status = 'uploading';
-        return this._adapter.upload().then(data => {
-            this.uploadResponse = data;
-            this.status = 'idle';
-            return data;
-        }).catch(err => {
-            if (this.status === 'aborted') {
-                throw 'aborted';
-            }
-            this.status = 'error';
-            throw err;
-        });
-    }
-    /**
-	 * Aborts loading process.
-	 */
-    abort() {
-        const status = this.status;
-        this.status = 'aborted';
-        if (status == 'reading') {
-            this._reader.abort();
-        }
-        if (status == 'uploading' && this._adapter.abort) {
-            this._adapter.abort();
-        }
-        this._destroy();
-    }
-    /**
-	 * Performs cleanup.
-	 *
-	 * @private
-	 */
-    _destroy() {
-        this._reader = undefined;
-        this._adapter = undefined;
-        this.data = undefined;
-        this.uploadResponse = undefined;
-        this.file = undefined;
-    }
-}
-mix(filerepository_FileLoader, observablemixin);    /**
- * Upload adapter interface used by FileRepository to handle file upload. Upload adapter is a bridge between the editor and server that
- * handles file uploads. It should contain logic necessary to initiate upload process and monitor its progress.
- *
- * It should implement two methods:
- *
- * * {@link module:upload/filerepository~UploadAdapter#upload `upload()`},
- * * {@link module:upload/filerepository~UploadAdapter#abort `abort()`}.
- *
- * Example upload adapter implementation:
- *
- *		class UploadAdapter {
- *			constructor( loader ) {
- *				// Save Loader instance to update upload progress.
- *				this.loader = loader;
- *			}
- *
- *			upload() {
- *				// Update loader's progress.
- *				server.onUploadProgress( data => {
- *					loader.uploadTotal = data.total;
- *					loader.uploaded = data.uploaded;
- *				} ):
- *
- *				// Return promise that will be resolved when file is uploaded.
- *				return server.upload( loader.file );
- *			}
- *
- *			abort() {
- *				// Reject promise returned from upload() method.
- *				server.abortUpload();
- *			}
- *		}
- *
- * Then upload adapter can be set to be used by {@link module:upload/filerepository~FileRepository FileRepository}:
- *
- *		editor.plugins.get( 'FileRepository' ).createUploadAdapter = function( loader ) {
- *			return new UploadAdapter( loader );
- *		};
- *
- * @interface UploadAdapter
- */
-                                     /**
- * Executes the upload process.
- * This method should return a promise that will resolve when data will be uploaded to server. Promise should be
- * resolved with an object containing information about uploaded file:
- *
- *		{
- *			default: 'http://server/default-size.image.png'
- *		}
- *
- * Additionally, other image sizes can be provided:
- *
- *		{
- *			default: 'http://server/default-size.image.png',
- *			'160': 'http://server/size-160.image.png',
- *			'500': 'http://server/size-500.image.png',
- *			'1000': 'http://server/size-1000.image.png',
- *			'1052': 'http://server/default-size.image.png'
- *		}
- *
- * NOTE: When returning multiple images, the widest returned one should equal the default one. It is essential to
- * correctly set `width` attribute of the image. See this discussion:
- * https://github.com/ckeditor/ckeditor5-easy-image/issues/4 for more information.
- *
- * Take a look at {@link module:upload/filerepository~UploadAdapter example Adapter implementation} and
- * {@link module:upload/filerepository~FileRepository#createUploadAdapter createUploadAdapter method}.
- *
- * @method module:upload/filerepository~UploadAdapter#upload
- * @returns {Promise} Promise that should be resolved when data is uploaded.
- */
-                                     /**
- * Aborts the upload process.
- * After aborting it should reject promise returned from {@link #upload upload()}.
- *
- * Take a look at {@link module:upload/filerepository~UploadAdapter example Adapter implementation} and
- * {@link module:upload/filerepository~FileRepository#createUploadAdapter createUploadAdapter method}.
- *
- * @method module:upload/filerepository~UploadAdapter#abort
- */
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-adapter-ckfinder/src/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/* globals window, document */
-
-/**
- * @module adapter-ckfinder/utils
- */
-
-const TOKEN_COOKIE_NAME = 'ckCsrfToken';
-const TOKEN_LENGTH = 40;
-const tokenCharset = 'abcdefghijklmnopqrstuvwxyz0123456789';
-
-/**
- * Returns the CSRF token value. The value is a hash stored in `document.cookie`
- * under the `ckCsrfToken` key. The CSRF token can be used to secure the communication
- * between the web browser and the CKFinder server.
- *
- * @returns {String}
- */
-function getCsrfToken() {
-	let token = getCookie( TOKEN_COOKIE_NAME );
-
-	if ( !token || token.length != TOKEN_LENGTH ) {
-		token = generateToken( TOKEN_LENGTH );
-		setCookie( TOKEN_COOKIE_NAME, token );
-	}
-
-	return token;
-}
-
-/**
- * Returns the value of the cookie with a given name or `null` if the cookie is not found.
- *
- * @param {String} name
- * @returns {String|null}
- */
-function getCookie( name ) {
-	name = name.toLowerCase();
-	const parts = document.cookie.split( ';' );
-
-	for ( const part of parts ) {
-		const pair = part.split( '=' );
-		const key = decodeURIComponent( pair[ 0 ].trim().toLowerCase() );
-
-		if ( key === name ) {
-			return decodeURIComponent( pair[ 1 ] );
-		}
-	}
-
-	return null;
-}
-
-/**
- * Sets the value of the cookie with a given name.
- *
- * @param {String} name
- * @param {String} value
- */
-function setCookie( name, value ) {
-	document.cookie = encodeURIComponent( name ) + '=' + encodeURIComponent( value ) + ';path=/';
-}
-
-// Generates the CSRF token with the given length.
-//
-// @private
-// @param {Number} length
-// @returns {string}
-function generateToken( length ) {
-	let result = '';
-	const randValues = new Uint8Array( length );
-
-	window.crypto.getRandomValues( randValues );
-
-	for ( let j = 0; j < randValues.length; j++ ) {
-		const character = tokenCharset.charAt( randValues[ j ] % tokenCharset.length );
-		result += Math.random() > 0.5 ? character.toUpperCase() : character;
-	}
-
-	return result;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapter.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/* globals XMLHttpRequest, FormData */
-/**
- * @module adapter-ckfinder/uploadadapter
- */
-
-
-
-/**
- * A plugin that enables CKFinder uploads in CKEditor 5.
- *
- * Configure the upload URL in
- * {@link module:adapter-ckfinder/uploadadapter~CKFinderAdapterConfig#uploadUrl `ckfinder.uploadUrl`}.
- *
- * @extends module:core/plugin~Plugin
- */
-class uploadadapter_CKFinderUploadAdapter extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    static get requires() {
-        return [filerepository_FileRepository];
-    }
-    /**
-	 * @inheritDoc
-	 */
-    static get pluginName() {
-        return 'CKFinderUploadAdapter';
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const url = this.editor.config.get('ckfinder.uploadUrl');
-        if (!url) {
-            return;
-        }
-        // Register CKFinderAdapter
-        this.editor.plugins.get(filerepository_FileRepository).createUploadAdapter = loader => new uploadadapter_UploadAdapter(loader, url, this.editor.t);
-    }
-}
-/**
- * Upload adapter for CKFinder.
- *
- * @private
- * @implements module:upload/filerepository~UploadAdapter
- */
-class uploadadapter_UploadAdapter {
-    /**
-	 * Creates a new adapter instance.
-	 *
-	 * @param {module:upload/filerepository~FileLoader} loader
-	 * @param {String} url
-	 * @param {module:utils/locale~Locale#t} t
-	 */
-    constructor(loader, url, t) {
-        /**
-		 * FileLoader instance to use during the upload.
-		 *
-		 * @member {module:upload/filerepository~FileLoader} #loader
-		 */
-        this.loader = loader;
-        /**
-		 * Upload URL.
-		 *
-		 * @member {String} #url
-		 */
-        this.url = url;
-        /**
-		 * Locale translation method.
-		 *
-		 * @member {module:utils/locale~Locale#t} #t
-		 */
-        this.t = t;
-    }
-    /**
-	 * Starts the upload process.
-	 *
-	 * @see module:upload/filerepository~UploadAdapter#upload
-	 * @returns {Promise}
-	 */
-    upload() {
-        return new Promise((resolve, reject) => {
-            this._initRequest();
-            this._initListeners(resolve, reject);
-            this._sendRequest();
-        });
-    }
-    /**
-	 * Aborts the upload process.
-	 *
-	 * @see module:upload/filerepository~UploadAdapter#abort
-	 * @returns {Promise}
-	 */
-    abort() {
-        if (this.xhr) {
-            this.xhr.abort();
-        }
-    }
-    /**
-	 * Initializes the XMLHttpRequest object.
-	 *
-	 * @private
-	 */
-    _initRequest() {
-        const xhr = this.xhr = new XMLHttpRequest();
-        xhr.open('POST', this.url, true);
-        xhr.responseType = 'json';
-    }
-    /**
-	 * Initializes XMLHttpRequest listeners.
-	 *
-	 * @private
-	 * @param {Function} resolve Callback function to be called when the request is successful.
-	 * @param {Function} reject Callback function to be called when the request cannot be completed.
-	 */
-    _initListeners(resolve, reject) {
-        const xhr = this.xhr;
-        const loader = this.loader;
-        const t = this.t;
-        const genericError = t('a') + ` ${ loader.file.name }.`;
-        xhr.addEventListener('error', () => reject(genericError));
-        xhr.addEventListener('abort', () => reject());
-        xhr.addEventListener('load', () => {
-            const response = xhr.response;
-            if (!response || !response.uploaded) {
-                return reject(response && response.error && response.error.message ? response.error.message : genericError);
-            }
-            resolve({ default: response.url });
-        });
-        // Upload progress when it's supported.
-        /* istanbul ignore else */
-        if (xhr.upload) {
-            xhr.upload.addEventListener('progress', evt => {
-                if (evt.lengthComputable) {
-                    loader.uploadTotal = evt.total;
-                    loader.uploaded = evt.loaded;
-                }
-            });
-        }
-    }
-    /**
-	 * Prepares the data and sends the request.
-	 *
-	 * @private
-	 */
-    _sendRequest() {
-        // Prepare form data.
-        const data = new FormData();
-        data.append('upload', this.loader.file);
-        data.append('ckCsrfToken', getCsrfToken());
-        // Send request.
-        this.xhr.send(data);
-    }
-}    /**
- * The configuration of the {@link module:adapter-ckfinder/uploadadapter~CKFinderUploadAdapter CKFinder upload adapter}.
- *
- * Read more in {@link module:adapter-ckfinder/uploadadapter~CKFinderAdapterConfig}.
- *
- * @member {module:adapter-ckfinder/uploadadapter~CKFinderAdapterConfig} module:core/editor/editorconfig~EditorConfig#ckfinder
- */
-     /**
- * The configuration of the {@link module:adapter-ckfinder/uploadadapter~CKFinderUploadAdapter CKFinder upload adapter}.
- *
- *		ClassicEditor
- *			.create( editorElement, {
- * 				ckfinder: {
- *					uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
- * 				}
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface CKFinderAdapterConfig
- */
-     /**
- * The URL to which files should be uploaded.
- *
- * @member {String} module:adapter-ckfinder/uploadadapter~CKFinderAdapterConfig#uploadUrl
- */
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-autoformat/src/blockautoformatediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module autoformat/blockautoformatediting
- */
-
-
-
-/**
- * The block autoformatting engine. It allows to format various block patterns. For example,
- * it can be configured to turn a paragraph starting with `*` and followed by a space into a list item.
- *
- * The autoformatting operation is integrated with the undo manager,
- * so the autoformatting step can be undone if the user's intention was not to format the text.
- *
- * See the constructors documentation to learn how to create custom inline autoformatters. You can also use
- * the {@link module:autoformat/autoformat~Autoformat} feature which enables a set of default autoformatters
- * (lists, headings, bold and italic).
- */
-class blockautoformatediting_BlockAutoformatEditing {
-	/**
-	 * Creates a listener triggered on `change` event in the document.
-	 * Calls the callback when inserted text matches the regular expression or the command name
-	 * if provided instead of the callback.
-	 *
-	 * Examples of usage:
-	 *
-	 * To convert a paragraph to heading 1 when `- ` is typed, using just the commmand name:
-	 *
-	 *		new BlockAutoformatEditing( editor, /^\- $/, 'heading1' );
-	 *
-	 * To convert a paragraph to heading 1 when `- ` is typed, using just the callback:
-	 *
-	 *		new BlockAutoformatEditing( editor, /^\- $/, ( context ) => {
-	 *			const { match } = context;
-	 *			const headingLevel = match[ 1 ].length;
-	 *
-	 *			editor.execute( 'heading', {
-	 *				formatId: `heading${ headingLevel }`
-	 *			} );
-	 * 		} );
-	 *
-	 * @param {module:core/editor/editor~Editor} editor The editor instance.
-	 * @param {RegExp} pattern The regular expression to execute on just inserted text.
-	 * @param {Function|String} callbackOrCommand The callback to execute or the command to run when the text is matched.
-	 * In case of providing the callback, it receives the following parameter:
-	 * * {Object} match RegExp.exec() result of matching the pattern to inserted text.
-	 */
-	constructor( editor, pattern, callbackOrCommand ) {
-		let callback;
-
-		if ( typeof callbackOrCommand == 'function' ) {
-			callback = callbackOrCommand;
-		} else {
-			// We assume that the actual command name was provided.
-			const command = callbackOrCommand;
-
-			callback = () => {
-				editor.execute( command );
-			};
-		}
-
-		editor.model.document.on( 'change', ( evt, batch ) => {
-			if ( batch.type == 'transparent' ) {
-				return;
-			}
-
-			const changes = Array.from( editor.model.document.differ.getChanges() );
-			const entry = changes[ 0 ];
-
-			// Typing is represented by only a single change.
-			if ( changes.length != 1 || entry.type !== 'insert' || entry.name != '$text' || entry.length != 1 ) {
-				return;
-			}
-			const item = entry.position.textNode || entry.position.nodeAfter;
-
-			if ( !item.parent.is( 'paragraph' ) ) {
-				return;
-			}
-
-			const match = pattern.exec( item.data );
-
-			if ( !match ) {
-				return;
-			}
-
-			// Use enqueueChange to create new batch to separate typing batch from the auto-format changes.
-			editor.model.enqueueChange( writer => {
-				// Matched range.
-				const range = model_range_Range.createFromParentsAndOffsets( item.parent, 0, item.parent, match[ 0 ].length );
-
-				// Remove matched text.
-				writer.remove( range );
-
-				callback( { match } );
-			} );
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-autoformat/src/inlineautoformatediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module autoformat/inlineautoformatediting
- */
-
-
-
-/**
- * The inline autoformatting engine. It allows to format various inline patterns. For example,
- * it can be configured to make "foo" bold when typed `**foo**` (the `**` markers will be removed).
- *
- * The autoformatting operation is integrated with the undo manager,
- * so the autoformatting step can be undone if the user's intention was not to format the text.
- *
- * See the constructors documentation to learn how to create custom inline autoformatters. You can also use
- * the {@link module:autoformat/autoformat~Autoformat} feature which enables a set of default autoformatters
- * (lists, headings, bold and italic).
- */
-class InlineAutoformatEditing {
-	/**
-	 * Enables autoformatting mechanism for a given {@link module:core/editor/editor~Editor}.
-	 *
-	 * It formats the matched text by applying the given model attribute or by running the provided formatting callback.
-	 * On every change applied to the model the autoformatting engine checks the text on the left of the selection
-	 * and executes the provided action if the text matches given criteria (regular expression or callback).
-	 *
-	 * @param {module:core/editor/editor~Editor} editor The editor instance.
-	 * @param {Function|RegExp} testRegexpOrCallback The regular expression or callback to execute on text.
-	 * Provided regular expression *must* have three capture groups. The first and the third capture group
-	 * should match opening and closing delimiters. The second capture group should match the text to format.
-	 *
-	 *		// Matches the `**bold text**` pattern.
-	 *		// There are three capturing groups:
-	 *		// - The first to match the starting `**` delimiter.
-	 *		// - The second to match the text to format.
-	 *		// - The third to match the ending `**` delimiter.
-	 *		new InlineAutoformatEditing( editor, /(\*\*)([^\*]+?)(\*\*)$/g, 'bold' );
-	 *
-	 * When a function is provided instead of the regular expression, it will be executed with the text to match as a parameter.
-	 * The function should return proper "ranges" to delete and format.
-	 *
-	 *		{
-	 *			remove: [
-	 *				[ 0, 1 ],	// Remove the first letter from the given text.
-	 *				[ 5, 6 ]	// Remove the 6th letter from the given text.
-	 *			],
-	 *			format: [
-	 *				[ 1, 5 ]	// Format all letters from 2nd to 5th.
-	 *			]
-	 *		}
-	 *
-	 * @param {Function|String} attributeOrCallback The name of attribute to apply on matching text or a callback for manual
-	 * formatting.
-	 *
-	 *		// Use attribute name:
-	 *		new InlineAutoformatEditing( editor, /(\*\*)([^\*]+?)(\*\*)$/g, 'bold' );
-	 *
-	 *		// Use formatting callback:
-	 *		new InlineAutoformatEditing( editor, /(\*\*)([^\*]+?)(\*\*)$/g, ( writer, validRanges ) => {
-	 *			for ( let range of validRanges ) {
-	 *				writer.setAttribute( command, true, range );
-	 *			}
-	 *		} );
-	 */
-	constructor( editor, testRegexpOrCallback, attributeOrCallback ) {
-		let regExp;
-		let attributeKey;
-		let testCallback;
-		let formatCallback;
-
-		if ( testRegexpOrCallback instanceof RegExp ) {
-			regExp = testRegexpOrCallback;
-		} else {
-			testCallback = testRegexpOrCallback;
-		}
-
-		if ( typeof attributeOrCallback == 'string' ) {
-			attributeKey = attributeOrCallback;
-		} else {
-			formatCallback = attributeOrCallback;
-		}
-
-		// A test callback run on changed text.
-		testCallback = testCallback || ( text => {
-			let result;
-			const remove = [];
-			const format = [];
-
-			while ( ( result = regExp.exec( text ) ) !== null ) {
-				// There should be full match and 3 capture groups.
-				if ( result && result.length < 4 ) {
-					break;
-				}
-
-				let {
-					index,
-					'1': leftDel,
-					'2': content,
-					'3': rightDel
-				} = result;
-
-				// Real matched string - there might be some non-capturing groups so we need to recalculate starting index.
-				const found = leftDel + content + rightDel;
-				index += result[ 0 ].length - found.length;
-
-				// Start and End offsets of delimiters to remove.
-				const delStart = [
-					index,
-					index + leftDel.length
-				];
-				const delEnd = [
-					index + leftDel.length + content.length,
-					index + leftDel.length + content.length + rightDel.length
-				];
-
-				remove.push( delStart );
-				remove.push( delEnd );
-
-				format.push( [ index + leftDel.length, index + leftDel.length + content.length ] );
-			}
-
-			return {
-				remove,
-				format
-			};
-		} );
-
-		// A format callback run on matched text.
-		formatCallback = formatCallback || ( ( writer, validRanges ) => {
-			for ( const range of validRanges ) {
-				writer.setAttribute( attributeKey, true, range );
-			}
-
-			// After applying attribute to the text, remove given attribute from the selection.
-			// This way user is able to type a text without attribute used by auto formatter.
-			writer.removeSelectionAttribute( attributeKey );
-		} );
-
-		editor.model.document.on( 'change', ( evt, batch ) => {
-			if ( batch.type == 'transparent' ) {
-				return;
-			}
-
-			const selection = editor.model.document.selection;
-
-			// Do nothing if selection is not collapsed.
-			if ( !selection.isCollapsed ) {
-				return;
-			}
-
-			const changes = Array.from( editor.model.document.differ.getChanges() );
-			const entry = changes[ 0 ];
-
-			// Typing is represented by only a single change.
-			if ( changes.length != 1 || entry.type !== 'insert' || entry.name != '$text' || entry.length != 1 ) {
-				return;
-			}
-
-			const block = selection.focus.parent;
-			const text = getText( block ).slice( 0, selection.focus.offset );
-			const testOutput = testCallback( text );
-			const rangesToFormat = testOutputToRanges( block, testOutput.format );
-			const rangesToRemove = testOutputToRanges( block, testOutput.remove );
-
-			if ( !( rangesToFormat.length && rangesToRemove.length ) ) {
-				return;
-			}
-
-			// Use enqueueChange to create new batch to separate typing batch from the auto-format changes.
-			editor.model.enqueueChange( writer => {
-				const validRanges = editor.model.schema.getValidRanges( rangesToFormat, attributeKey );
-
-				// Apply format.
-				formatCallback( writer, validRanges );
-
-				// Remove delimiters - use reversed order to not mix the offsets while removing.
-				for ( const range of rangesToRemove.reverse() ) {
-					writer.remove( range );
-				}
-			} );
-		} );
-	}
-}
-
-// Returns whole text from parent element by adding all data from text nodes together.
-//
-// @private
-// @param {module:engine/model/element~Element} element
-// @returns {String}
-function getText( element ) {
-	return Array.from( element.getChildren() ).reduce( ( a, b ) => a + b.data, '' );
-}
-
-// Converts output of the test function provided to the InlineAutoformatEditing and converts it to the model ranges
-// inside provided block.
-//
-// @private
-// @param {module:engine/model/element~Element} block
-// @param {Array.<Array>} arrays
-function testOutputToRanges( block, arrays ) {
-	return arrays
-		.filter( array => ( array[ 0 ] !== undefined && array[ 1 ] !== undefined ) )
-		.map( array => model_range_Range.createFromParentsAndOffsets( block, array[ 0 ], block, array[ 1 ] ) );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-autoformat/src/autoformat.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module autoformat/autoformat
- */
-
-
-
-
-
-/**
- * Enables a set of predefined autoformatting actions.
- *
- * For a detailed overview, check the {@glink features/autoformat Autoformatting feature documentation}
- * and the {@glink api/autoformat package page}.
- *
- * @extends module:core/plugin~Plugin
- */
-class autoformat_Autoformat extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Autoformat';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	afterInit() {
-		this._addListAutoformats();
-		this._addBasicStylesAutoformats();
-		this._addHeadingAutoformats();
-		this._addBlockQuoteAutoformats();
-	}
-
-	/**
-	 * Adds autoformatting related to the {@link module:list/list~List}.
-	 *
-	 * When typed:
-	 * - `* ` or `- ` &ndash; A paragraph will be changed to a bulleted list.
-	 * - `1. ` or `1) ` &ndash; A paragraph will be changed to a numbered list ("1" can be any digit or a list of digits).
-	 *
-	 * @private
-	 */
-	_addListAutoformats() {
-		const commands = this.editor.commands;
-
-		if ( commands.get( 'bulletedList' ) ) {
-			// eslint-disable-next-line no-new
-			new blockautoformatediting_BlockAutoformatEditing( this.editor, /^[*-]\s$/, 'bulletedList' );
-		}
-
-		if ( commands.get( 'numberedList' ) ) {
-			// eslint-disable-next-line no-new
-			new blockautoformatediting_BlockAutoformatEditing( this.editor, /^\d+[.|)]\s$/, 'numberedList' );
-		}
-	}
-
-	/**
-	 * Adds autoformatting related to the {@link module:basic-styles/bold~Bold},
-	 * {@link module:basic-styles/italic~Italic} and {@link module:basic-styles/code~Code}.
-	 *
-	 * When typed:
-	 * - `**foobar**` &ndash; `**` characters are removed and `foobar` is set to bold,
-	 * - `__foobar__` &ndash; `__` characters are removed and `foobar` is set to bold,
-	 * - `*foobar*` &ndash; `*` characters are removed and `foobar` is set to italic,
-	 * - `_foobar_` &ndash; `_` characters are removed and `foobar` is set to italic,
-	 * - ``` `foobar` &ndash; ``` ` ``` characters are removed and `foobar` is set to code.
-	 *
-	 * @private
-	 */
-	_addBasicStylesAutoformats() {
-		const commands = this.editor.commands;
-
-		if ( commands.get( 'bold' ) ) {
-			/* eslint-disable no-new */
-			new InlineAutoformatEditing( this.editor, /(\*\*)([^*]+)(\*\*)$/g, 'bold' );
-			new InlineAutoformatEditing( this.editor, /(__)([^_]+)(__)$/g, 'bold' );
-			/* eslint-enable no-new */
-		}
-
-		if ( commands.get( 'italic' ) ) {
-			// The italic autoformatter cannot be triggered by the bold markers, so we need to check the
-			// text before the pattern (e.g. `(?:^|[^\*])`).
-
-			/* eslint-disable no-new */
-			new InlineAutoformatEditing( this.editor, /(?:^|[^*])(\*)([^*_]+)(\*)$/g, 'italic' );
-			new InlineAutoformatEditing( this.editor, /(?:^|[^_])(_)([^_]+)(_)$/g, 'italic' );
-			/* eslint-enable no-new */
-		}
-
-		if ( commands.get( 'code' ) ) {
-			/* eslint-disable no-new */
-			new InlineAutoformatEditing( this.editor, /(`)([^`]+)(`)$/g, 'code' );
-			/* eslint-enable no-new */
-		}
-	}
-
-	/**
-	 * Adds autoformatting related to {@link module:heading/heading~Heading}.
-	 *
-	 * It is using a number at the end of the command name to associate it with the proper trigger:
-	 *
-	 * * `heading` with value `heading1` will be executed when typing `#`,
-	 * * `heading` with value `heading2` will be executed when typing `##`,
-	 * * ... up to `heading6` and `######`.
-	 *
-	 * @private
-	 */
-	_addHeadingAutoformats() {
-		const command = this.editor.commands.get( 'heading' );
-
-		if ( command ) {
-			command.modelElements
-				.filter( name => name.match( /^heading[1-6]$/ ) )
-				.forEach( commandValue => {
-					const level = commandValue[ 7 ];
-					const pattern = new RegExp( `^(#{${ level }})\\s$` );
-
-					// eslint-disable-next-line no-new
-					new blockautoformatediting_BlockAutoformatEditing( this.editor, pattern, () => {
-						this.editor.execute( 'heading', { value: commandValue } );
-					} );
-				} );
-		}
-	}
-
-	/**
-	 * Adds autoformatting related to {@link module:block-quote/blockquote~BlockQuote}.
-	 *
-	 * When typed:
-	 * * `> ` &ndash; A paragraph will be changed to a block quote.
-	 *
-	 * @private
-	 */
-	_addBlockQuoteAutoformats() {
-		if ( this.editor.commands.get( 'blockQuote' ) ) {
-			// eslint-disable-next-line no-new
-			new blockautoformatediting_BlockAutoformatEditing( this.editor, /^>\s$/, 'blockQuote' );
-		}
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/attributecommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module basic-styles/attributecommand
- */
-
-
-
-/**
- * An extension of the base {@link module:core/command~Command} class, which provides utilities for a command
- * that toggles a single attribute on a text or an element.
- *
- * `AttributeCommand` uses {@link module:engine/model/document~Document#selection}
- * to decide which nodes (if any) should be changed, and applies or removes the attribute from them.
- *
- * The command checks the {@link module:engine/model/model~Model#schema} to decide if it can be enabled
- * for the current selection and to which nodes the attribute can be applied.
- *
- * @extends module:core/command~Command
- */
-class attributecommand_AttributeCommand extends Command {
-	/**
-	 * @param {module:core/editor/editor~Editor} editor
-	 * @param {String} attributeKey Attribute that will be set by the command.
-	 */
-	constructor( editor, attributeKey ) {
-		super( editor );
-
-		/**
-		 * The attribute that will be set by the command.
-		 *
-		 * @readonly
-		 * @member {String}
-		 */
-		this.attributeKey = attributeKey;
-
-		/**
-		 * Flag indicating whether the command is active. The command is active when the
-		 * {@link module:engine/model/selection~Selection#hasAttribute selection has the attribute} which means that:
-		 *
-		 * * If the selection is not empty &ndash; That the attribute is set on the first node in the selection that allows this attribute.
-		 * * If the selection is empty &ndash; That the selection has the attribute itself (which means that newly typed
-		 * text will have this attribute, too).
-		 *
-		 * @observable
-		 * @readonly
-		 * @member {Boolean} #value
-		 */
-	}
-
-	/**
-	 * Updates the command's {@link #value} and {@link #isEnabled} based on the current selection.
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const doc = model.document;
-
-		this.value = this._getValueFromFirstAllowedNode();
-		this.isEnabled = model.schema.checkAttributeInSelection( doc.selection, this.attributeKey );
-	}
-
-	/**
-	 * Executes the command &mdash; applies the attribute to the selection or removes it from the selection.
-	 *
-	 * If the command is active (`value == true`), it will remove attributes. Otherwise, it will set attributes.
-	 *
-	 * The execution result differs, depending on the {@link module:engine/model/document~Document#selection}:
-	 *
-	 * * If the selection is on a range, the command applies the attribute to all nodes in that range
-	 * (if they are allowed to have this attribute by the {@link module:engine/model/schema~Schema schema}).
-	 * * If the selection is collapsed in a non-empty node, the command applies the attribute to the
-	 * {@link module:engine/model/document~Document#selection} itself (note that typed characters copy attributes from the selection).
-	 * * If the selection is collapsed in an empty node, the command applies the attribute to the parent node of the selection (note
-	 * that the selection inherits all attributes from a node if it is in an empty node).
-	 *
-	 * @fires execute
-	 * @param {Object} [options] Command options.
-	 * @param {Boolean} [options.forceValue] If set, it will force the command behavior. If `true`, the command will apply the attribute,
-	 * otherwise the command will remove the attribute.
-	 * If not set, the command will look for its current value to decide what it should do.
-	 */
-	execute( options = {} ) {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-		const value = ( options.forceValue === undefined ) ? !this.value : options.forceValue;
-
-		model.change( writer => {
-			if ( selection.isCollapsed ) {
-				if ( value ) {
-					writer.setSelectionAttribute( this.attributeKey, true );
-				} else {
-					writer.removeSelectionAttribute( this.attributeKey );
-				}
-			} else {
-				const ranges = model.schema.getValidRanges( selection.getRanges(), this.attributeKey );
-
-				for ( const range of ranges ) {
-					if ( value ) {
-						writer.setAttribute( this.attributeKey, value, range );
-					} else {
-						writer.removeAttribute( this.attributeKey, range );
-					}
-				}
-			}
-		} );
-	}
-
-	/**
-	 * Checks the attribute value of the first node in the selection that allows the attribute.
-	 * For the collapsed selection returns the selection attribute.
-	 *
-	 * @private
-	 * @returns {Boolean} The attribute value.
-	 */
-	_getValueFromFirstAllowedNode() {
-		const model = this.editor.model;
-		const schema = model.schema;
-		const selection = model.document.selection;
-
-		if ( selection.isCollapsed ) {
-			return selection.hasAttribute( this.attributeKey );
-		}
-
-		for ( const range of selection.getRanges() ) {
-			for ( const item of range.getItems() ) {
-				if ( schema.checkAttribute( item, this.attributeKey ) ) {
-					return item.hasAttribute( this.attributeKey );
-				}
-			}
-		}
-
-		return false;
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/bold/boldediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module basic-styles/bold/boldediting
- */
-
-
-
-
-const BOLD = 'bold';
-
-/**
- * The bold editing feature.
- *
- * It registers the `'bold'` command and introduces the `bold` attribute in the model which renders to the view
- * as a `<strong>` element.
- *
- * @extends module:core/plugin~Plugin
- */
-class boldediting_BoldEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		// Allow bold attribute on text nodes.
-		editor.model.schema.extend( '$text', { allowAttributes: BOLD } );
-
-		// Build converter from model to view for data and editing pipelines.
-
-		editor.conversion.attributeToElement( {
-			model: BOLD,
-			view: 'strong',
-			upcastAlso: [
-				'b',
-				{
-					styles: {
-						'font-weight': 'bold'
-					}
-				}
-			]
-		} );
-
-		// Create bold command.
-		editor.commands.add( BOLD, new attributecommand_AttributeCommand( editor, BOLD ) );
-
-		// Set the Ctrl+B keystroke.
-		editor.keystrokes.set( 'CTRL+B', BOLD );
-	}
-}
-
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/bold.svg
-var bold = __webpack_require__(22);
+var bold = __webpack_require__(13);
 var bold_default = /*#__PURE__*/__webpack_require__.n(bold);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/bold/boldui.js
@@ -57994,7 +50315,7 @@ class boldui_BoldUI extends Plugin {
             const command = editor.commands.get(boldui_BOLD);
             const view = new buttonview_ButtonView(locale);
             view.set({
-                label: t('b'),
+                label: t('a'),
                 icon: bold_default.a,
                 keystroke: 'CTRL+B',
                 tooltip: true
@@ -58102,7 +50423,7 @@ class italicediting_ItalicEditing extends Plugin {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/italic.svg
-var italic = __webpack_require__(23);
+var italic = __webpack_require__(14);
 var italic_default = /*#__PURE__*/__webpack_require__.n(italic);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/italic/italicui.js
@@ -58134,7 +50455,7 @@ class italicui_ItalicUI extends Plugin {
             const command = editor.commands.get(italicui_ITALIC);
             const view = new buttonview_ButtonView(locale);
             view.set({
-                label: t('c'),
+                label: t('b'),
                 icon: italic_default.a,
                 keystroke: 'CTRL+I',
                 tooltip: true
@@ -58187,40 +50508,200 @@ class italic_Italic extends Plugin {
 	}
 }
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/first.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline/underlineediting.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module utils/first
+ * @module basic-styles/underline/underlineediting
  */
+
+
+
+
+const UNDERLINE = 'underline';
 
 /**
- * Returns first item of the given `iterable`.
+ * The underline editing feature.
  *
- * @param {Iterable.<*>} iterable
- * @returns {*}
+ * It registers the `'underline'` command, the <kbd>Ctrl+U</kbd> keystroke
+ * and introduces the `underline` attribute in the model which renders to the view as an `<u>` element.
+ *
+ * @extends module:core/plugin~Plugin
  */
-function first_first( iterable ) {
-	const iteratorItem = iterable.next();
+class underlineediting_UnderlineEditing extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	init() {
+		const editor = this.editor;
 
-	if ( iteratorItem.done ) {
-		return null;
+		// Allow strikethrough attribute on text nodes.
+		editor.model.schema.extend( '$text', { allowAttributes: UNDERLINE } );
+
+		editor.conversion.attributeToElement( {
+			model: UNDERLINE,
+			view: 'u',
+			upcastAlso: {
+				styles: {
+					'text-decoration': 'underline'
+				}
+			}
+		} );
+
+		// Create underline command.
+		editor.commands.add( UNDERLINE, new attributecommand_AttributeCommand( editor, UNDERLINE ) );
+
+		// Set the Ctrl+U keystroke.
+		editor.keystrokes.set( 'CTRL+U', 'underline' );
 	}
-
-	return iteratorItem.value;
 }
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-block-quote/src/blockquotecommand.js
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/underline.svg
+var underline = __webpack_require__(15);
+var underline_default = /*#__PURE__*/__webpack_require__.n(underline);
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline/underlineui.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+/**
+ * @module basic-styles/underline/underlineui
+ */
+
+
+
+const underlineui_UNDERLINE = 'underline';
+/**
+ * The underline UI feature. It introduces the Underline button.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class underlineui_UnderlineUI extends Plugin {
+    /**
+	 * @inheritDoc
+	 */
+    init() {
+        const editor = this.editor;
+        const t = editor.t;
+        // Add bold button to feature components.
+        editor.ui.componentFactory.add(underlineui_UNDERLINE, locale => {
+            const command = editor.commands.get(underlineui_UNDERLINE);
+            const view = new buttonview_ButtonView(locale);
+            view.set({
+                label: t('c'),
+                icon: underline_default.a,
+                keystroke: 'CTRL+U',
+                tooltip: true
+            });
+            view.bind('isOn', 'isEnabled').to(command, 'value', 'isEnabled');
+            // Execute command.
+            this.listenTo(view, 'execute', () => editor.execute(underlineui_UNDERLINE));
+            return view;
+        });
+    }
+}
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module block-quote/blockquotecommand
+ * @module basic-styles/underline
+ */
+
+
+
+
+
+/**
+ * The underline feature.
+ *
+ * For a detailed overview check the {@glink features/basic-styles Basic styles feature documentation}
+ * and the {@glink api/basic-styles package page}.
+ *
+ * This is a "glue" plugin which loads the {@link module:basic-styles/underline/underlineediting~UnderlineEditing} and
+ * {@link module:basic-styles/underline/underlineui~UnderlineUI} plugins.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class underline_Underline extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get requires() {
+		return [ underlineediting_UnderlineEditing, underlineui_UnderlineUI ];
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Underline';
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/findlinkrange.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module link/findlinkrange
+ */
+
+
+
+
+/**
+ * Returns a range containing the entire link in which the given `position` is placed.
+ *
+ * It can be used e.g. to get the entire range on which the `linkHref` attribute needs to be changed when having a
+ * selection inside a link.
+ *
+ * @param {module:engine/model/position~Position} position The start position.
+ * @param {String} value The `linkHref` attribute value.
+ * @returns {module:engine/model/range~Range} The link range.
+ */
+function findLinkRange( position, value ) {
+	return new model_range_Range( _findBound( position, value, true ), _findBound( position, value, false ) );
+}
+
+// Walks forward or backward (depends on the `lookBack` flag), node by node, as long as they have the same `linkHref` attribute value
+// and returns a position just before or after (depends on the `lookBack` flag) the last matched node.
+//
+// @param {module:engine/model/position~Position} position The start position.
+// @param {String} value The `linkHref` attribute value.
+// @param {Boolean} lookBack Whether the walk direction is forward (`false`) or backward (`true`).
+// @returns {module:engine/model/position~Position} The position just before the last matched node.
+function _findBound( position, value, lookBack ) {
+	// Get node before or after position (depends on `lookBack` flag).
+	// When position is inside text node then start searching from text node.
+	let node = position.textNode || ( lookBack ? position.nodeBefore : position.nodeAfter );
+
+	let lastNode = null;
+
+	while ( node && node.getAttribute( 'linkHref' ) == value ) {
+		lastNode = node;
+		node = lookBack ? node.previousSibling : node.nextSibling;
+	}
+
+	return lastNode ? model_position_Position.createAt( lastNode, lookBack ? 'before' : 'after' ) : position;
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkcommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module link/linkcommand
  */
 
 
@@ -58228,2198 +50709,963 @@ function first_first( iterable ) {
 
 
 
-
-
 /**
- * The block quote command plugin.
+ * The link command. It is used by the {@link module:link/link~Link link feature}.
  *
  * @extends module:core/command~Command
  */
-class blockquotecommand_BlockQuoteCommand extends Command {
+class linkcommand_LinkCommand extends Command {
 	/**
-	 * Whether the selection starts in a block quote.
+	 * The value of the `'linkHref'` attribute if the start of the selection is located in a node with this attribute.
 	 *
 	 * @observable
 	 * @readonly
-	 * @member {Boolean} #value
+	 * @member {Object|undefined} #value
 	 */
 
 	/**
 	 * @inheritDoc
 	 */
 	refresh() {
-		this.value = this._getValue();
-		this.isEnabled = this._checkEnabled();
+		const model = this.editor.model;
+		const doc = model.document;
+
+		this.value = doc.selection.getAttribute( 'linkHref' );
+		this.isEnabled = model.schema.checkAttributeInSelection( doc.selection, 'linkHref' );
 	}
 
 	/**
-	 * Executes the command. When the command {@link #value is on}, all block quotes within
-	 * the selection will be removed. If it is off, all selected blocks will be wrapped with
-	 * a block quote.
+	 * Executes the command.
+	 *
+	 * When the selection is non-collapsed, the `linkHref` attribute will be applied to nodes inside the selection, but only to
+	 * those nodes where the `linkHref` attribute is allowed (disallowed nodes will be omitted).
+	 *
+	 * When the selection is collapsed and is not inside the text with the `linkHref` attribute, the
+	 * new {@link module:engine/model/text~Text Text node} with the `linkHref` attribute will be inserted in place of caret, but
+	 * only if such element is allowed in this place. The `_data` of the inserted text will equal the `href` parameter.
+	 * The selection will be updated to wrap the just inserted text node.
+	 *
+	 * When the selection is collapsed and inside the text with the `linkHref` attribute, the attribute value will be updated.
+	 *
+	 * @fires execute
+	 * @param {String} href Link destination.
+	 */
+	execute( href ) {
+		const model = this.editor.model;
+		const selection = model.document.selection;
+
+		model.change( writer => {
+			// If selection is collapsed then update selected link or insert new one at the place of caret.
+			if ( selection.isCollapsed ) {
+				const position = selection.getFirstPosition();
+
+				// When selection is inside text with `linkHref` attribute.
+				if ( selection.hasAttribute( 'linkHref' ) ) {
+					// Then update `linkHref` value.
+					const linkRange = findLinkRange( selection.getFirstPosition(), selection.getAttribute( 'linkHref' ) );
+
+					writer.setAttribute( 'linkHref', href, linkRange );
+
+					// Create new range wrapping changed link.
+					writer.setSelection( linkRange );
+				}
+				// If not then insert text node with `linkHref` attribute in place of caret.
+				// However, since selection in collapsed, attribute value will be used as data for text node.
+				// So, if `href` is empty, do not create text node.
+				else if ( href !== '' ) {
+					const attributes = toMap( selection.getAttributes() );
+
+					attributes.set( 'linkHref', href );
+
+					const node = writer.createText( href, attributes );
+
+					writer.insert( node, position );
+
+					// Create new range wrapping created node.
+					writer.setSelection( model_range_Range.createOn( node ) );
+				}
+			} else {
+				// If selection has non-collapsed ranges, we change attribute on nodes inside those ranges
+				// omitting nodes where `linkHref` attribute is disallowed.
+				const ranges = model.schema.getValidRanges( selection.getRanges(), 'linkHref' );
+
+				for ( const range of ranges ) {
+					writer.setAttribute( 'linkHref', href, range );
+				}
+			}
+		} );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/unlinkcommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module link/unlinkcommand
+ */
+
+
+
+
+/**
+ * The unlink command. It is used by the {@link module:link/link~Link link plugin}.
+ *
+ * @extends module:core/command~Command
+ */
+class unlinkcommand_UnlinkCommand extends Command {
+	/**
+	 * @inheritDoc
+	 */
+	refresh() {
+		this.isEnabled = this.editor.model.document.selection.hasAttribute( 'linkHref' );
+	}
+
+	/**
+	 * Executes the command.
+	 *
+	 * When the selection is collapsed, removes the `linkHref` attribute from each node with the same `linkHref` attribute value.
+	 * When the selection is non-collapsed, removes the `linkHref` attribute from each node in selected ranges.
 	 *
 	 * @fires execute
 	 */
 	execute() {
 		const model = this.editor.model;
-		const doc = model.document;
-		const schema = model.schema;
-		const blocks = Array.from( doc.selection.getSelectedBlocks() );
+		const selection = model.document.selection;
 
 		model.change( writer => {
-			if ( this.value ) {
-				this._removeQuote( writer, blocks.filter( findQuote ) );
-			} else {
-				const blocksToQuote = blocks.filter( block => {
-					// Already quoted blocks needs to be considered while quoting too
-					// in order to reuse their <bQ> elements.
-					return findQuote( block ) || checkCanBeQuoted( schema, block );
-				} );
+			// Get ranges to unlink.
+			const rangesToUnlink = selection.isCollapsed ?
+				[ findLinkRange( selection.getFirstPosition(), selection.getAttribute( 'linkHref' ) ) ] : selection.getRanges();
 
-				this._applyQuote( writer, blocksToQuote );
+			// Remove `linkHref` attribute from specified ranges.
+			for ( const range of rangesToUnlink ) {
+				writer.removeAttribute( 'linkHref', range );
 			}
+		} );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/utils.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module link/utils
+ */
+
+const linkElementSymbol = Symbol( 'linkElement' );
+
+const ATTRIBUTE_WHITESPACES = /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205f\u3000]/g; // eslint-disable-line no-control-regex
+const SAFE_URL = /^(?:(?:https?|ftps?|mailto):|[^a-z]|[a-z+.-]+(?:[^a-z+.:-]|$))/i;
+
+/**
+ * Returns `true` if a given view node is the link element.
+ *
+ * @param {module:engine/view/node~Node} node
+ * @returns {Boolean}
+ */
+function isLinkElement( node ) {
+	return node.is( 'attributeElement' ) && !!node.getCustomProperty( linkElementSymbol );
+}
+
+/**
+ * Creates link {@link module:engine/view/attributeelement~AttributeElement} with provided `href` attribute.
+ *
+ * @param {String} href
+ * @returns {module:engine/view/attributeelement~AttributeElement}
+ */
+function createLinkElement( href, writer ) {
+	// Priority 5 - https://github.com/ckeditor/ckeditor5-link/issues/121.
+	const linkElement = writer.createAttributeElement( 'a', { href }, { priority: 5 } );
+	writer.setCustomProperty( linkElementSymbol, true, linkElement );
+
+	return linkElement;
+}
+
+/**
+ * Returns a safe URL based on a given value.
+ *
+ * An URL is considered safe if it is safe for the user (does not contain any malicious code).
+ *
+ * If URL is considered unsafe, a simple `"#"` is returned.
+ *
+ * @protected
+ * @param {*} url
+ * @returns {String} Safe URL.
+ */
+function ensureSafeUrl( url ) {
+	url = String( url );
+
+	return isSafeUrl( url ) ? url : '#';
+}
+
+// Checks whether the given URL is safe for the user (does not contain any malicious code).
+//
+// @param {String} url URL to check.
+function isSafeUrl( url ) {
+	const normalizedUrl = url.replace( ATTRIBUTE_WHITESPACES, '' );
+
+	return normalizedUrl.match( SAFE_URL );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/utils/bindtwostepcarettoattribute.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module engine/utils/bindtwostepcarettoattribute
+ */
+
+
+
+
+/**
+ * This helper enabled the two-step caret (phantom) movement behavior for the given {@link module:engine/model/model~Model}
+ * attribute on arrow right (<kbd>→</kbd>) and left (<kbd>←</kbd>) key press.
+ *
+ * Thanks to this (phantom) caret movement the user is able to type before/after as well as at the
+ * beginning/end of an attribute.
+ *
+ * # Forward movement
+ *
+ * ## "Entering" an attribute:
+ *
+ * When this behavior is enabled for the `a` attribute and the selection is right before it
+ * (at the attribute boundary), pressing the right arrow key will not move the selection but update its
+ * attributes accordingly:
+ *
+ * * When enabled:
+ *
+ *   		foo{}<$text a="true">bar</$text>
+ *
+ *    <kbd>→</kbd>
+ *
+ *   		foo<$text a="true">{}bar</$text>
+ *
+ * * When disabled:
+ *
+ *   		foo{}<$text a="true">bar</$text>
+ *
+ *   <kbd>→</kbd>
+ *
+ *   		foo<$text a="true">b{}ar</$text>
+ *
+ *
+ * ## "Leaving" an attribute:
+ *
+ * * When enabled:
+ *
+ *   		<$text a="true">bar{}</$text>baz
+ *
+ *    <kbd>→</kbd>
+ *
+ *   		<$text a="true">bar</$text>{}baz
+ *
+ * * When disabled:
+ *
+ *   		<$text a="true">bar{}</$text>baz
+ *
+ *   <kbd>→</kbd>
+ *
+ *   		<$text a="true">bar</$text>b{}az
+ *
+ * # Backward movement
+ *
+ * * When enabled:
+ *
+ *   		<$text a="true">bar</$text>{}baz
+ *
+ *    <kbd>←</kbd>
+ *
+ *   		<$text a="true">bar{}</$text>baz
+ *
+ * * When disabled:
+ *
+ *   		<$text a="true">bar</$text>{}baz
+ *
+ *   <kbd>←</kbd>
+ *
+ *   		<$text a="true">ba{}r</$text>b{}az
+ *
+ * @param {module:engine/view/view~View} view View controller instance.
+ * @param {module:engine/model/model~Model} model Data model instance.
+ * @param {module:utils/dom/emittermixin~Emitter} emitter The emitter to which this behavior should be added
+ * (e.g. a plugin instance).
+ * @param {String} attribute Attribute for which this behavior will be added.
+ */
+function bindTwoStepCaretToAttribute( view, model, emitter, attribute ) {
+	const twoStepCaretHandler = new TwoStepCaretHandler( model, emitter, attribute );
+	const modelSelection = model.document.selection;
+
+	// Listen to keyboard events and handle the caret movement according to the 2-step caret logic.
+	//
+	// Note: This listener has the "high+1" priority:
+	// * "high" because of the filler logic implemented in the renderer which also engages on #keydown.
+	// When the gravity is overridden the attributes of the (model) selection attributes are reset.
+	// It may end up with the filler kicking in and breaking the selection.
+	// * "+1" because we would like to avoid collisions with other features (like Widgets), which
+	// take over the keydown events with the "high" priority. Two-step caret movement takes precedence
+	// over Widgets in that matter.
+	//
+	// Find out more in https://github.com/ckeditor/ckeditor5-engine/issues/1301.
+	emitter.listenTo( view.document, 'keydown', ( evt, data ) => {
+		// This implementation works only for collapsed selection.
+		if ( !modelSelection.isCollapsed ) {
+			return;
+		}
+
+		// When user tries to expand the selection or jump over the whole word or to the beginning/end then
+		// two-steps movement is not necessary.
+		if ( data.shiftKey || data.altKey || data.ctrlKey ) {
+			return;
+		}
+
+		const arrowRightPressed = data.keyCode == keyCodes.arrowright;
+		const arrowLeftPressed = data.keyCode == keyCodes.arrowleft;
+
+		// When neither left or right arrow has been pressed then do noting.
+		if ( !arrowRightPressed && !arrowLeftPressed ) {
+			return;
+		}
+
+		const position = modelSelection.getFirstPosition();
+		let isMovementHandled;
+
+		if ( arrowRightPressed ) {
+			isMovementHandled = twoStepCaretHandler.handleForwardMovement( position, data );
+		} else {
+			isMovementHandled = twoStepCaretHandler.handleBackwardMovement( position, data );
+		}
+
+		// Stop the keydown event if the two-step arent movement handled it. Avoid collisions
+		// with other features which may also take over the caret movement (e.g. Widget).
+		if ( isMovementHandled ) {
+			evt.stop();
+		}
+	}, { priority: src_priorities.get( 'high' ) + 1 } );
+}
+
+/**
+ * This is a private helper–class for {@link module:engine/utils/bindtwostepcarettoattribute}.
+ * It handles the state of the 2-step caret movement for a single {@link module:engine/model/model~Model}
+ * attribute upon the `keypress` in the {@link module:engine/view/view~View}.
+ *
+ * @private
+ */
+class TwoStepCaretHandler {
+	/*
+	 * Creates two step handler instance.
+	 *
+	 * @param {module:engine/model/model~Model} model Data model instance.
+	 * @param {module:utils/dom/emittermixin~Emitter} emitter The emitter to which this behavior should be added
+	 * (e.g. a plugin instance).
+	 * @param {String} attribute Attribute for which the behavior will be added.
+	 */
+	constructor( model, emitter, attribute ) {
+		/**
+		 * The model instance this class instance operates on.
+		 *
+		 * @readonly
+		 * @member {module:engine/model/model~Model#schema}
+		 */
+		this.model = model;
+
+		/**
+		 * The Attribute this class instance operates on.
+		 *
+		 * @readonly
+		 * @member {String}
+		 */
+		this.attribute = attribute;
+
+		/**
+		 * A reference to the document selection.
+		 *
+		 * @private
+		 * @member {module:engine/model/selection~Selection}
+		 */
+		this._modelSelection = model.document.selection;
+
+		/**
+		 * The current UID of the overridden gravity, as returned by
+		 * {@link module:engine/model/writer~Writer#overrideSelectionGravity}.
+		 *
+		 * @private
+		 * @member {String}
+		 */
+		this._overrideUid = null;
+
+		/**
+		 * A flag indicating that the automatic gravity restoration for this attribute
+		 * should not happen upon the next
+		 * {@link module:engine/model/selection~Selection#event:change:range} event.
+		 *
+		 * @private
+		 * @member {String}
+		 */
+		this._isNextGravityRestorationSkipped = false;
+
+		// The automatic gravity restoration logic.
+		emitter.listenTo( this._modelSelection, 'change:range', ( evt, data ) => {
+			// Skipping the automatic restoration is needed if the selection should change
+			// but the gravity must remain overridden afterwards. See the #handleBackwardMovement
+			// to learn more.
+			if ( this._isNextGravityRestorationSkipped ) {
+				this._isNextGravityRestorationSkipped = false;
+
+				return;
+			}
+
+			// Skip automatic restore when the gravity is not overridden — simply, there's nothing to restore
+			// at this moment.
+			if ( !this._isGravityOverridden ) {
+				return;
+			}
+
+			// Skip automatic restore when the change is indirect AND the selection is at the attribute boundary.
+			// It means that e.g. if the change was external (collaboration) and the user had their
+			// selection around the link, its gravity should remain intact in this change:range event.
+			if ( !data.directChange && isAtBoundary( this._modelSelection.getFirstPosition(), attribute ) ) {
+				return;
+			}
+
+			this._restoreGravity();
 		} );
 	}
 
 	/**
-	 * Checks the command's {@link #value}.
+	 * Updates the document selection and the view according to the two–step caret movement state
+	 * when moving **forwards**. Executed upon `keypress` in the {@link module:engine/view/view~View}.
 	 *
-	 * @private
-	 * @returns {Boolean} The current value.
+	 * @param {module:engine/model/position~Position} position The model position at the moment of the key press.
+	 * @param {module:engine/view/observer/domeventdata~DomEventData} data Data of the key press.
+	 * @returns {Boolean} `true` when the handler prevented caret movement
 	 */
-	_getValue() {
-		const firstBlock = first_first( this.editor.model.document.selection.getSelectedBlocks() );
+	handleForwardMovement( position, data ) {
+		const attribute = this.attribute;
 
-		// In the current implementation, the block quote must be an immediate parent of a block element.
-		return !!( firstBlock && findQuote( firstBlock ) );
-	}
+		// DON'T ENGAGE 2-SCM if gravity is already overridden. It means that we just entered
+		//
+		// 		<paragraph>foo<$text attribute>{}bar</$text>baz</paragraph>
+		//
+		// or left the attribute
+		//
+		// 		<paragraph>foo<$text attribute>bar</$text>{}baz</paragraph>
+		//
+		// and the gravity will be restored automatically.
+		if ( this._isGravityOverridden ) {
+			return;
+		}
 
-	/**
-	 * Checks whether the command can be enabled in the current context.
-	 *
-	 * @private
-	 * @returns {Boolean} Whether the command should be enabled.
-	 */
-	_checkEnabled() {
-		if ( this.value ) {
+		// DON'T ENGAGE 2-SCM when the selection is at the beginning of the block AND already has the
+		// attribute:
+		// * when the selection was initially set there using the mouse,
+		// * when the editor has just started
+		//
+		//		<paragraph><$text attribute>{}bar</$text>baz</paragraph>
+		//
+		if ( position.isAtStart && this._hasSelectionAttribute ) {
+			return;
+		}
+
+		// ENGAGE 2-SCM when about to leave one attribute value and enter another:
+		//
+		// 		<paragraph><$text attribute="1">foo{}</$text><$text attribute="2">bar</$text></paragraph>
+		//
+		// but DON'T when already in between of them (no attribute selection):
+		//
+		// 		<paragraph><$text attribute="1">foo</$text>{}<$text attribute="2">bar</$text></paragraph>
+		//
+		if ( isBetweenDifferentValues( position, attribute ) && this._hasSelectionAttribute ) {
+			this._preventCaretMovement( data );
+			this._removeSelectionAttribute();
+
 			return true;
 		}
 
-		const selection = this.editor.model.document.selection;
-		const schema = this.editor.model.schema;
+		// ENGAGE 2-SCM when entering an attribute:
+		//
+		// 		<paragraph>foo{}<$text attribute>bar</$text>baz</paragraph>
+		//
+		if ( isAtStartBoundary( position, attribute ) ) {
+			this._preventCaretMovement( data );
+			this._overrideGravity();
 
-		const firstBlock = first_first( selection.getSelectedBlocks() );
-
-		if ( !firstBlock ) {
-			return false;
+			return true;
 		}
 
-		return checkCanBeQuoted( schema, firstBlock );
+		// ENGAGE 2-SCM when leaving an attribute:
+		//
+		//		<paragraph>foo<$text attribute>bar{}</$text>baz</paragraph>
+		//
+		if ( isAtEndBoundary( position, attribute ) && this._hasSelectionAttribute ) {
+			this._preventCaretMovement( data );
+			this._overrideGravity();
+
+			return true;
+		}
 	}
 
 	/**
-	 * Removes the quote from given blocks.
+	 * Updates the document selection and the view according to the two–step caret movement state
+	 * when moving **backwards**. Executed upon `keypress` in the {@link module:engine/view/view~View}.
 	 *
-	 * If blocks which are supposed to be "unquoted" are in the middle of a quote,
-	 * start it or end it, then the quote will be split (if needed) and the blocks
-	 * will be moved out of it, so other quoted blocks remained quoted.
-	 *
-	 * @private
-	 * @param {module:engine/model/writer~Writer} writer
-	 * @param {Array.<module:engine/model/element~Element>} blocks
+	 * @param {module:engine/model/position~Position} position The model position at the moment of the key press.
+	 * @param {module:engine/view/observer/domeventdata~DomEventData} data Data of the key press.
+	 * @returns {Boolean} `true` when the handler prevented caret movement
 	 */
-	_removeQuote( writer, blocks ) {
-		// Unquote all groups of block. Iterate in the reverse order to not break following ranges.
-		getRangesOfBlockGroups( blocks ).reverse().forEach( groupRange => {
-			if ( groupRange.start.isAtStart && groupRange.end.isAtEnd ) {
-				writer.unwrap( groupRange.start.parent );
+	handleBackwardMovement( position, data ) {
+		const attribute = this.attribute;
+
+		// When the gravity is already overridden...
+		if ( this._isGravityOverridden ) {
+			// ENGAGE 2-SCM & REMOVE SELECTION ATTRIBUTE
+			// when about to leave one attribute value and enter another:
+			//
+			// 		<paragraph><$text attribute="1">foo</$text><$text attribute="2">{}bar</$text></paragraph>
+			//
+			// but DON'T when already in between of them (no attribute selection):
+			//
+			// 		<paragraph><$text attribute="1">foo</$text>{}<$text attribute="2">bar</$text></paragraph>
+			//
+			if ( isBetweenDifferentValues( position, attribute ) && this._hasSelectionAttribute ) {
+				this._preventCaretMovement( data );
+				this._restoreGravity();
+				this._removeSelectionAttribute();
+
+				return true;
+			}
+
+			// ENGAGE 2-SCM when at any boundary of the attribute:
+			//
+			// 		<paragraph>foo<$text attribute>bar</$text>{}baz</paragraph>
+			// 		<paragraph>foo<$text attribute>{}bar</$text>baz</paragraph>
+			//
+			else {
+				this._preventCaretMovement( data );
+				this._restoreGravity();
+
+				// REMOVE SELECTION ATRIBUTE at the beginning of the block.
+				// It's like restoring gravity but towards a non-existent content when
+				// the gravity is overridden:
+				//
+				// 		<paragraph><$text attribute>{}bar</$text></paragraph>
+				//
+				// becomes:
+				//
+				// 		<paragraph>{}<$text attribute>bar</$text></paragraph>
+				//
+				if ( position.isAtStart ) {
+					this._removeSelectionAttribute();
+				}
+
+				return true;
+			}
+		} else {
+			// ENGAGE 2-SCM when between two different attribute values but selection has no attribute:
+			//
+			// 		<paragraph><$text attribute="1">foo</$text>{}<$text attribute="2">bar</$text></paragraph>
+			//
+			if ( isBetweenDifferentValues( position, attribute ) && !this._hasSelectionAttribute ) {
+				this._preventCaretMovement( data );
+				this._setSelectionAttributeFromTheNodeBefore( position );
+
+				return true;
+			}
+
+			// End of block boundary cases:
+			//
+			// 		<paragraph><$text attribute>bar{}</$text></paragraph>
+			// 		<paragraph><$text attribute>bar</$text>{}</paragraph>
+			//
+			if ( position.isAtEnd && isAtEndBoundary( position, attribute ) ) {
+				// DON'T ENGAGE 2-SCM if the selection has the attribute already.
+				// This is a common selection if set using the mouse.
+				//
+				// 		<paragraph><$text attribute>bar{}</$text></paragraph>
+				//
+				if ( this._hasSelectionAttribute ) {
+					// DON'T ENGAGE 2-SCM if the attribute at the end of the block which has length == 1.
+					// Make sure the selection will not the attribute after it moves backwards.
+					//
+					// 		<paragraph>foo<$text attribute>b{}</$text></paragraph>
+					//
+					if ( isStepAfterTheAttributeBoundary( position, attribute ) ) {
+						// Skip the automatic gravity restore upon the next selection#change:range event.
+						// If not skipped, it would automatically restore the gravity, which should remain
+						// overridden.
+						this._skipNextAutomaticGravityRestoration();
+						this._overrideGravity();
+
+						// Don't return "true" here because we didn't call _preventCaretMovement.
+						// Returning here will destabilize the filler logic, which also listens to
+						// keydown (and the event would be stopped).
+					}
+
+					return;
+				}
+				// ENGAGE 2-SCM if the selection has no attribute. This may happen when the user
+				// left the attribute using a FORWARD 2-SCM.
+				//
+				// 		<paragraph><$text attribute>bar</$text>{}</paragraph>
+				//
+				else {
+					this._preventCaretMovement( data );
+					this._setSelectionAttributeFromTheNodeBefore( position );
+
+					return true;
+				}
+			}
+
+			// REMOVE SELECTION ATRIBUTE when restoring gravity towards a non-existent content at the
+			// beginning of the block.
+			//
+			// 		<paragraph>{}<$text attribute>bar</$text></paragraph>
+			//
+			if ( position.isAtStart ) {
+				if ( this._hasSelectionAttribute ) {
+					this._removeSelectionAttribute();
+					this._preventCaretMovement( data );
+
+					return true;
+				}
 
 				return;
 			}
 
-			// The group of blocks are at the beginning of an <bQ> so let's move them left (out of the <bQ>).
-			if ( groupRange.start.isAtStart ) {
-				const positionBefore = model_position_Position.createBefore( groupRange.start.parent );
+			// DON'T ENGAGE 2-SCM when about to enter of leave an attribute.
+			// We need to check if the caret is a one position before the attribute boundary:
+			//
+			// 		<paragraph>foo<$text attribute>b{}ar</$text>baz</paragraph>
+			// 		<paragraph>foo<$text attribute>bar</$text>b{}az</paragraph>
+			//
+			if ( isStepAfterTheAttributeBoundary( position, attribute ) ) {
+				// Skip the automatic gravity restore upon the next selection#change:range event.
+				// If not skipped, it would automatically restore the gravity, which should remain
+				// overridden.
+				this._skipNextAutomaticGravityRestoration();
+				this._overrideGravity();
 
-				writer.move( groupRange, positionBefore );
-
-				return;
+				// Don't return "true" here because we didn't call _preventCaretMovement.
+				// Returning here will destabilize the filler logic, which also listens to
+				// keydown (and the event would be stopped).
 			}
-
-			// The blocks are in the middle of an <bQ> so we need to split the <bQ> after the last block
-			// so we move the items there.
-			if ( !groupRange.end.isAtEnd ) {
-				writer.split( groupRange.end );
-			}
-
-			// Now we are sure that groupRange.end.isAtEnd is true, so let's move the blocks right.
-
-			const positionAfter = model_position_Position.createAfter( groupRange.end.parent );
-
-			writer.move( groupRange, positionAfter );
-		} );
+		}
 	}
 
 	/**
-	 * Applies the quote to given blocks.
+	 * `true` when the gravity is overridden for the {@link #attribute}.
 	 *
+	 * @readonly
 	 * @private
-	 * @param {module:engine/model/writer~Writer} writer
-	 * @param {Array.<module:engine/model/element~Element>} blocks
+	 * @type {Boolean}
 	 */
-	_applyQuote( writer, blocks ) {
-		const quotesToMerge = [];
-
-		// Quote all groups of block. Iterate in the reverse order to not break following ranges.
-		getRangesOfBlockGroups( blocks ).reverse().forEach( groupRange => {
-			let quote = findQuote( groupRange.start );
-
-			if ( !quote ) {
-				quote = new model_element_Element( 'blockQuote' );
-
-				writer.wrap( groupRange, quote );
-			}
-
-			quotesToMerge.push( quote );
-		} );
-
-		// Merge subsequent <bQ> elements. Reverse the order again because this time we want to go through
-		// the <bQ> elements in the source order (due to how merge works – it moves the right element's content
-		// to the first element and removes the right one. Since we may need to merge a couple of subsequent `<bQ>` elements
-		// we want to keep the reference to the first (furthest left) one.
-		quotesToMerge.reverse().reduce( ( currentQuote, nextQuote ) => {
-			if ( currentQuote.nextSibling == nextQuote ) {
-				writer.merge( model_position_Position.createAfter( currentQuote ) );
-
-				return currentQuote;
-			}
-
-			return nextQuote;
-		} );
-	}
-}
-
-function findQuote( elementOrPosition ) {
-	return elementOrPosition.parent.name == 'blockQuote' ? elementOrPosition.parent : null;
-}
-
-// Returns a minimal array of ranges containing groups of subsequent blocks.
-//
-// content:         abcdefgh
-// blocks:          [ a, b, d , f, g, h ]
-// output ranges:   [ab]c[d]e[fgh]
-//
-// @param {Array.<module:engine/model/element~Element>} blocks
-// @returns {Array.<module:engine/model/range~Range>}
-function getRangesOfBlockGroups( blocks ) {
-	let startPosition;
-	let i = 0;
-	const ranges = [];
-
-	while ( i < blocks.length ) {
-		const block = blocks[ i ];
-		const nextBlock = blocks[ i + 1 ];
-
-		if ( !startPosition ) {
-			startPosition = model_position_Position.createBefore( block );
-		}
-
-		if ( !nextBlock || block.nextSibling != nextBlock ) {
-			ranges.push( new model_range_Range( startPosition, model_position_Position.createAfter( block ) ) );
-			startPosition = null;
-		}
-
-		i++;
-	}
-
-	return ranges;
-}
-
-// Checks whether <bQ> can wrap the block.
-function checkCanBeQuoted( schema, block ) {
-	// TMP will be replaced with schema.checkWrap().
-	const isBQAllowed = schema.checkChild( block.parent, 'blockQuote' );
-	const isBlockAllowedInBQ = schema.checkChild( [ '$root', 'blockQuote' ], block );
-
-	return isBQAllowed && isBlockAllowedInBQ;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-block-quote/src/blockquoteediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module block-quote/blockquoteediting
- */
-
-
-
-
-
-
-
-/**
- * The block quote editing.
- *
- * Introduces the `'blockQuote'` command and the `'blockQuote'` model element.
- *
- * @extends module:core/plugin~Plugin
- */
-class blockquoteediting_BlockQuoteEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const schema = editor.model.schema;
-
-		editor.commands.add( 'blockQuote', new blockquotecommand_BlockQuoteCommand( editor ) );
-
-		schema.register( 'blockQuote', {
-			allowWhere: '$block',
-			allowContentOf: '$root'
-		} );
-
-		// Disallow blockQuote in blockQuote.
-		schema.addChildCheck( ( ctx, childDef ) => {
-			if ( ctx.endsWith( 'blockQuote' ) && childDef.name == 'blockQuote' ) {
-				return false;
-			}
-		} );
-
-		editor.conversion.elementToElement( { model: 'blockQuote', view: 'blockquote' } );
-
-		// Postfixer which cleans incorrect model states connected with block quotes.
-		editor.model.document.registerPostFixer( writer => {
-			const changes = editor.model.document.differ.getChanges();
-
-			for ( const entry of changes ) {
-				if ( entry.type == 'insert' ) {
-					const element = entry.position.nodeAfter;
-
-					if ( !element ) {
-						// We are inside a text node.
-						continue;
-					}
-
-					if ( element.is( 'blockQuote' ) && element.isEmpty ) {
-						// Added an empty blockQuote - remove it.
-						writer.remove( element );
-
-						return true;
-					} else if ( element.is( 'blockQuote' ) && !schema.checkChild( entry.position, element ) ) {
-						// Added a blockQuote in incorrect place - most likely inside another blockQuote. Unwrap it
-						// so the content inside is not lost.
-						writer.unwrap( element );
-
-						return true;
-					} else if ( element.is( 'element' ) ) {
-						// Just added an element. Check its children to see if there are no nested blockQuotes somewhere inside.
-						const range = model_range_Range.createIn( element );
-
-						for ( const child of range.getItems() ) {
-							if ( child.is( 'blockQuote' ) && !schema.checkChild( model_position_Position.createBefore( child ), child ) ) {
-								writer.unwrap( child );
-
-								return true;
-							}
-						}
-					}
-				} else if ( entry.type == 'remove' ) {
-					const parent = entry.position.parent;
-
-					if ( parent.is( 'blockQuote' ) && parent.isEmpty ) {
-						// Something got removed and now blockQuote is empty. Remove the blockQuote as well.
-						writer.remove( parent );
-
-						return true;
-					}
-				}
-			}
-
-			return false;
-		} );
+	get _isGravityOverridden() {
+		return !!this._overrideUid;
 	}
 
 	/**
-	 * @inheritDoc
-	 */
-	afterInit() {
-		const editor = this.editor;
-		const command = editor.commands.get( 'blockQuote' );
-
-		// Overwrite default Enter key behavior.
-		// If Enter key is pressed with selection collapsed in empty block inside a quote, break the quote.
-		// This listener is added in afterInit in order to register it after list's feature listener.
-		// We can't use a priority for this, because 'low' is already used by the enter feature, unless
-		// we'd use numeric priority in this case.
-		this.listenTo( this.editor.editing.view.document, 'enter', ( evt, data ) => {
-			const doc = this.editor.model.document;
-			const positionParent = doc.selection.getLastPosition().parent;
-
-			if ( doc.selection.isCollapsed && positionParent.isEmpty && command.value ) {
-				this.editor.execute( 'blockQuote' );
-				this.editor.editing.view.scrollToTheSelection();
-
-				data.preventDefault();
-				evt.stop();
-			}
-		} );
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/quote.svg
-var icons_quote = __webpack_require__(24);
-var quote_default = /*#__PURE__*/__webpack_require__.n(icons_quote);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-block-quote/theme/blockquote.css
-var blockquote = __webpack_require__(62);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-block-quote/src/blockquoteui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module block-quote/blockquoteui
- */
-
-
-
-
-/**
- * The block quote UI plugin.
- *
- * It introduces the `'blockQuote'` button.
- *
- * @extends module:core/plugin~Plugin
- */
-class blockquoteui_BlockQuoteUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const t = editor.t;
-        editor.ui.componentFactory.add('blockQuote', locale => {
-            const command = editor.commands.get('blockQuote');
-            const buttonView = new buttonview_ButtonView(locale);
-            buttonView.set({
-                label: t('o'),
-                icon: quote_default.a,
-                tooltip: true
-            });
-            // Bind button model to command.
-            buttonView.bind('isOn', 'isEnabled').to(command, 'value', 'isEnabled');
-            // Execute command.
-            this.listenTo(buttonView, 'execute', () => editor.execute('blockQuote'));
-            return buttonView;
-        });
-    }
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-block-quote/src/blockquote.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module block-quote/blockquote
- */
-
-
-
-
-
-/**
- * The block quote plugin.
- *
- * For more information about this feature check the {@glink api/block-quote package page}.
- *
- * This is a "glue" plugin which loads the {@link module:block-quote/blockquoteediting~BlockQuoteEditing block quote editing feature}
- * and {@link module:block-quote/blockquoteui~BlockQuoteUI block quote UI feature}.
- *
- * @extends module:core/plugin~Plugin
- */
-class blockquote_BlockQuote extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ blockquoteediting_BlockQuoteEditing, blockquoteui_BlockQuoteUI ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'BlockQuote';
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor-cloud-services-core/src/uploadgateway/fileuploader.js
-/**
- * @license Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/* eslint-env browser */
-
-
-
-
-
-
-const BASE64_HEADER_REG_EXP = /^data:(\S*?);base64,/;
-
-/**
- * FileUploader class used to upload single file.
- */
-class FileUploader {
-	/**
-	 * Creates `FileUploader` instance.
+	 * `true` when the {@link module:engine/model/selection~Selection} has the {@link #attribute}.
 	 *
-	 * @param {Blob|String} fileOrData A blob object or a data string encoded with Base64.
-	 * @param {Token} token Token used for authentication.
-	 * @param {String} apiAddress API address.
+	 * @readonly
+	 * @private
+	 * @type {Boolean}
 	 */
-	constructor( fileOrData, token, apiAddress ) {
-		if ( !fileOrData ) {
-			throw new Error( 'File must be provided' );
-		}
-
-		if ( !token ) {
-			throw new Error( 'Token must be provided' );
-		}
-
-		if ( !apiAddress ) {
-			throw new Error( 'Api address must be provided' );
-		}
-
-		/**
-		 * A file that is being uploaded.
-		 *
-		 * @type {Blob}
-		 */
-		this.file = _isBase64( fileOrData ) ? _base64ToBlob( fileOrData ) : fileOrData;
-
-		/**
-		 * CKEditor Cloud Services access token.
-		 *
-		 * @type {Token}
-		 * @private
-		 */
-		this._token = token;
-
-		/**
-		 * CKEditor Cloud Services API address.
-		 *
-		 * @type {String}
-		 * @private
-		 */
-		this._apiAddress = apiAddress;
+	get _hasSelectionAttribute() {
+		return this._modelSelection.hasAttribute( this.attribute );
 	}
 
 	/**
-	 * Registers callback on `progress` event.
+	 * Overrides the gravity using the {@link module:engine/model/writer~Writer model writer}
+	 * and stores the information about this fact in the {@link #_overrideUid}.
 	 *
-	 * @chainable
-	 * @param {Function} callback
-	 * @returns {FileUploader}
-	 */
-	onProgress( callback ) {
-		this.on( 'progress', ( event, data ) => callback( data ) );
-
-		return this;
-	}
-
-	/**
-	 * Registers callback on `error` event. Event is called once when error occurs.
-	 *
-	 * @chainable
-	 * @param {Function} callback
-	 * @returns {FileUploader}
-	 */
-	onError( callback ) {
-		this.once( 'error', ( event, data ) => callback( data ) );
-
-		return this;
-	}
-
-	/**
-	 * Aborts upload process.
-	 */
-	abort() {
-		this.xhr.abort();
-	}
-
-	/**
-	 * Sends XHR request to API.
-	 *
-	 * @chainable
-	 * @returns {Promise.<Object>}
-	 */
-	send() {
-		this._prepareRequest();
-		this._attachXHRListeners();
-
-		return this._sendRequest();
-	}
-
-	/**
-	 * Prepares XHR request.
+	 * A shorthand for {@link module:engine/model/writer~Writer#overrideSelectionGravity}.
 	 *
 	 * @private
 	 */
-	_prepareRequest() {
-		const xhr = new XMLHttpRequest();
-
-		xhr.open( 'POST', this._apiAddress );
-		xhr.setRequestHeader( 'Authorization', this._token.value );
-		xhr.responseType = 'json';
-
-		this.xhr = xhr;
+	_overrideGravity() {
+		this._overrideUid = this.model.change( writer => writer.overrideSelectionGravity() );
 	}
 
 	/**
-	 * Attaches listeners to the XHR.
+	 * Restores the gravity using the {@link module:engine/model/writer~Writer model writer}.
+	 *
+	 * A shorthand for {@link module:engine/model/writer~Writer#restoreSelectionGravity}.
 	 *
 	 * @private
 	 */
-	_attachXHRListeners() {
-		const that = this;
-		const xhr = this.xhr;
-
-		xhr.addEventListener( 'error', onError( 'Network Error' ) );
-		xhr.addEventListener( 'abort', onError( 'Abort' ) );
-
-		/* istanbul ignore else */
-		if ( xhr.upload ) {
-			xhr.upload.addEventListener( 'progress', event => {
-				if ( event.lengthComputable ) {
-					this.fire( 'progress', {
-						total: event.total,
-						uploaded: event.loaded
-					} );
-				}
-			} );
-		}
-
-		xhr.addEventListener( 'load', () => {
-			const statusCode = xhr.status;
-			const xhrResponse = xhr.response;
-
-			if ( statusCode < 200 || statusCode > 299 ) {
-				return this.fire( 'error', xhrResponse.message || xhrResponse.error );
-			}
+	_restoreGravity() {
+		this.model.change( writer => {
+			writer.restoreSelectionGravity( this._overrideUid );
+			this._overrideUid = null;
 		} );
-
-		function onError( message ) {
-			return () => that.fire( 'error', message );
-		}
 	}
 
 	/**
-	 * Sends XHR request.
+	 * Prevents the caret movement in the view by calling `preventDefault` on the event data.
 	 *
 	 * @private
 	 */
-	_sendRequest() {
-		const formData = new FormData();
-		const xhr = this.xhr;
+	_preventCaretMovement( data ) {
+		data.preventDefault();
+	}
 
-		formData.append( 'file', this.file );
-
-		return new Promise( ( resolve, reject ) => {
-			xhr.addEventListener( 'load', () => {
-				const statusCode = xhr.status;
-				const xhrResponse = xhr.response;
-
-				if ( statusCode < 200 || statusCode > 299 ) {
-					if ( xhrResponse.message ) {
-						return reject( new Error( xhrResponse.message ) );
-					}
-
-					return reject( xhrResponse.error );
-				}
-
-				return resolve( xhrResponse );
-			} );
-
-			xhr.addEventListener( 'error', () => reject( new Error( 'Network Error' ) ) );
-			xhr.addEventListener( 'abort', () => reject( new Error( 'Abort' ) ) );
-
-			xhr.send( formData );
+	/**
+	 * Removes the {@link #attribute} from the selection using using the
+	 * {@link module:engine/model/writer~Writer model writer}.
+	 *
+	 * @private
+	 */
+	_removeSelectionAttribute() {
+		this.model.change( writer => {
+			writer.removeSelectionAttribute( this.attribute );
 		} );
 	}
 
 	/**
-	 * Fired when error occurs.
+	 * Applies the {@link #attribute} to the current selection using using the
+	 * value from the node before the current position. Uses
+	 * the {@link module:engine/model/writer~Writer model writer}.
 	 *
-	 * @event error
-	 * @param {String} error Error message
+	 * @private
+	 * @param {module:engine/model/position~Position} position
 	 */
+	_setSelectionAttributeFromTheNodeBefore( position ) {
+		const attribute = this.attribute;
 
-	/**
-	 * Fired on upload progress.
-	 *
-	 * @event progress
-	 * @param {Object} status Total and uploaded status
-	 */
-}
-
-mix( FileUploader, emittermixin );
-
-/**
- * Transforms Base64 string data into file.
- *
- * @param {String} base64 String data.
- * @param {Number} [sliceSize=512]
- * @returns {Blob}
- * @private
- */
-function _base64ToBlob( base64, sliceSize = 512 ) {
-	try {
-		const contentType = base64.match( BASE64_HEADER_REG_EXP )[ 1 ];
-		const base64Data = atob( base64.replace( BASE64_HEADER_REG_EXP, '' ) );
-
-		const byteArrays = [];
-
-		for ( let offset = 0; offset < base64Data.length; offset += sliceSize ) {
-			const slice = base64Data.slice( offset, offset + sliceSize );
-			const byteNumbers = new Array( slice.length );
-
-			for ( let i = 0; i < slice.length; i++ ) {
-				byteNumbers[ i ] = slice.charCodeAt( i );
-			}
-
-			byteArrays.push( new Uint8Array( byteNumbers ) );
-		}
-
-		return new Blob( byteArrays, { type: contentType } );
-	} catch ( error ) {
-		throw new Error( 'Problem with decoding Base64 image data.' );
-	}
-}
-
-/**
- * Checks that string is Base64.
- *
- * @param {String} string
- * @returns {Boolean}
- * @private
- */
-function _isBase64( string ) {
-	if ( typeof string !== 'string' ) {
-		return false;
-	}
-
-	const match = string.match( BASE64_HEADER_REG_EXP );
-	return !!( match && match.length );
-}
-
-/* harmony default export */ var fileuploader = (FileUploader);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor-cloud-services-core/src/uploadgateway/uploadgateway.js
-/**
- * @license Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-
-
-
-
-/**
- * UploadGateway abstracts file uploads to CKEditor Cloud Services.
- */
-class uploadgateway_UploadGateway {
-	/**
-	 * Creates `UploadGateway` instance.
-	 *
-	 * @param {Token} token Token used for authentication.
-	 * @param {String} apiAddress API address.
-	 */
-	constructor( token, apiAddress ) {
-		if ( !token ) {
-			throw new Error( 'Token must be provided' );
-		}
-
-		if ( !apiAddress ) {
-			throw new Error( 'Api address must be provided' );
-		}
-
-		/**
-		 * CKEditor Cloud Services access token.
-		 *
-		 * @type {Token}
-		 * @private
-		 */
-		this._token = token;
-
-		/**
-		 * CKEditor Cloud Services API address.
-		 *
-		 * @type {String}
-		 * @private
-		 */
-		this._apiAddress = apiAddress;
-	}
-
-	/**
-	 * Creates a {@link FileUploader} instance that wraps file upload process.
-	 * The file is being sent at a time when the method {@link FileUploader#then then} is called
-	 * or when {@link FileUploader#send send} method is called.
-	 *
-	 *     const token = await Token.create( 'https://token-endpoint' );
-	 *     new UploadGateway( token, 'https://example.org' )
-	 *        .upload( 'FILE' )
-	 *        .onProgress( ( data ) => console.log( data ) )
-	 *        .send()
-	 *        .then( ( response ) => console.log( response ) );
-	 *
-	 *     // OR
-	 *
-	 *     const token = await Token.create( 'https://token-endpoint' );
-	 *     new UploadGateway( token, 'https://example.org' )
-	 *         .upload( 'FILE' )
-	 *         .onProgress( ( data ) => console.log( data ) )
-	 *         .send()
-	 *         .then( ( response ) => console.log( response ) );
-	 *
-	 * @param {Blob/String} fileOrData A blob object or a data string encoded with Base64.
-	 * @returns {FileUploader} Returns `FileUploader` instance.
-	 */
-	upload( fileOrData ) {
-		return new fileuploader( fileOrData, this._token, this._apiAddress );
-	}
-}
-
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor-cloud-services-core/src/token/token.js
-/**
- * @license Copyright (c) 2003-2017, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/* eslint-env browser */
-
-
-
-
-
-
-const DEFAULT_OPTIONS = { refreshInterval: 3600000, autoRefresh: true };
-
-/**
- * Class representing the token used for communication with CKEditor Cloud Services.
- * Value of the token is retrieving from the specified URL and is refreshed every 1 hour by default.
- *
- * @mixes ObservableMixin
- */
-class Token {
-	/**
-	 * Creates `Token` instance.
-	 * Method `init` should be called after using the constructor or use `create` method instead.
-	 *
-	 * @param {String|Function} tokenUrlOrRefreshToken Endpoint address to download the token or a callback that provides the token. If the
-	 * value is a function it has to match the {@link ~refreshToken} interface.
-	 * @param {Object} options
-	 * @param {String} [options.initValue] Initial value of the token.
-	 * @param {Number} [options.refreshInterval=3600000] Delay between refreshes. Default 1 hour.
-	 * @param {Boolean} [options.autoRefresh=true] Specifies whether to start the refresh automatically.
-	 */
-	constructor( tokenUrlOrRefreshToken, options = DEFAULT_OPTIONS ) {
-		if ( !tokenUrlOrRefreshToken ) {
-			throw new Error( 'A `tokenUrl` must be provided as the first constructor argument.' );
-		}
-
-		/**
-		 * Value of the token.
-		 * The value of the token is null if `initValue` is not provided or `init` method was not called.
-		 * `create` method creates token with initialized value from url.
-		 *
-		 * @name value
-		 * @member {String} #value
-		 * @observable
-		 * @readonly
-		 */
-		this.set( 'value', options.initValue );
-
-		/**
-		 * Base refreshing function.
-		 *
-		 * @private
-		 * @member {String|Function} #_refresh
-		 */
-		if ( typeof tokenUrlOrRefreshToken === 'function' ) {
-			this._refresh = tokenUrlOrRefreshToken;
-		} else {
-			this._refresh = () => defaultRefreshToken( tokenUrlOrRefreshToken );
-		}
-
-		/**
-		 * @type {Object}
-		 * @private
-		 */
-		this._options = Object.assign( {}, DEFAULT_OPTIONS, options );
-	}
-
-	/**
-	 * Initializes the token.
-	 *
-	 * @returns {Promise.<Token>}
-	 */
-	init() {
-		return new Promise( ( resolve, reject ) => {
-			if ( this._options.autoRefresh ) {
-				this._startRefreshing();
-			}
-
-			if ( !this.value ) {
-				this._refreshToken()
-					.then( resolve )
-					.catch( reject );
-
-				return;
-			}
-
-			resolve( this );
+		this.model.change( writer => {
+			writer.setSelectionAttribute( this.attribute, position.nodeBefore.getAttribute( attribute ) );
 		} );
 	}
 
 	/**
-	 * Refresh token method. Useful in a method form as it can be override in tests.
+	 * Skips the next automatic selection gravity restoration upon the
+	 * {@link module:engine/model/selection~Selection#event:change:range} event.
 	 *
-	 * @protected
-	 */
-	_refreshToken() {
-		return this._refresh()
-			.then( value => this.set( 'value', value ) )
-			.then( () => this );
-	}
-
-	/**
-	 * Destroys token instance. Stops refreshing.
-	 */
-	destroy() {
-		this._stopRefreshing();
-	}
-
-	/**
-	 * Starts value refreshing every `refreshInterval` time.
+	 * See {@link #_isNextGravityRestorationSkipped}.
 	 *
-	 * @protected
+	 * @private
 	 */
-	_startRefreshing() {
-		this._refreshInterval = setInterval( () => this._refreshToken(), this._options.refreshInterval );
-	}
-
-	/**
-	 * Stops value refreshing.
-	 *
-	 * @protected
-	 */
-	_stopRefreshing() {
-		clearInterval( this._refreshInterval );
-	}
-
-	/**
-	 * Creates a initialized {@link Token} instance.
-	 *
-	 * @param {String|Function} tokenUrlOrRefreshToken Endpoint address to download the token or a callback that provides the token. If the
-	 * value is a function it has to match the {@link ~refreshToken} interface.
-	 * @param {Object} options
-	 * @param {String} [options.initValue] Initial value of the token.
-	 * @param {Number} [options.refreshInterval=3600000] Delay between refreshes. Default 1 hour.
-	 * @param {Boolean} [options.autoRefresh=true] Specifies whether to start the refresh automatically.
-	 * @returns {Promise.<Token>}
-	 */
-	static create( tokenUrlOrRefreshToken, options = DEFAULT_OPTIONS ) {
-		const token = new Token( tokenUrlOrRefreshToken, options );
-
-		return token.init();
+	_skipNextAutomaticGravityRestoration() {
+		this._isNextGravityRestorationSkipped = true;
 	}
 }
 
-mix( Token, observablemixin );
+// @param {module:engine/model/position~Position} position
+// @param {String} attribute
+// @returns {Boolean} `true` when position between the nodes sticks to the bound of text with given attribute.
+function isAtBoundary( position, attribute ) {
+	return isAtStartBoundary( position, attribute ) || isAtEndBoundary( position, attribute );
+}
 
-/**
- * This function is called in a defined interval by the {@link ~Token} class.
- * It should return a promise, which resolves with the new token value.
- * If any error occurs it should return a rejected promise with an error message.
- *
- * @function refreshToken
- * @returns {Promise.<String>}
- */
+// @param {module:engine/model/position~Position} position
+// @param {String} attribute
+function isAtStartBoundary( position, attribute ) {
+	const { nodeBefore, nodeAfter } = position;
+	const isAttrBefore = nodeBefore ? nodeBefore.hasAttribute( attribute ) : false;
+	const isAttrAfter = nodeAfter ? nodeAfter.hasAttribute( attribute ) : false;
 
-/**
- * @private
- * @param {String} tokenUrl
- */
-function defaultRefreshToken( tokenUrl ) {
-	return new Promise( ( resolve, reject ) => {
-		const xhr = new XMLHttpRequest();
+	return isAttrAfter && ( !isAttrBefore || nodeBefore.getAttribute( attribute ) !== nodeAfter.getAttribute( attribute ) );
+}
 
-		xhr.open( 'GET', tokenUrl );
+// @param {module:engine/model/position~Position} position
+// @param {String} attribute
+function isAtEndBoundary( position, attribute ) {
+	const { nodeBefore, nodeAfter } = position;
+	const isAttrBefore = nodeBefore ? nodeBefore.hasAttribute( attribute ) : false;
+	const isAttrAfter = nodeAfter ? nodeAfter.hasAttribute( attribute ) : false;
 
-		xhr.addEventListener( 'load', () => {
-			const statusCode = xhr.status;
-			const xhrResponse = xhr.response;
+	return isAttrBefore && ( !isAttrAfter || nodeBefore.getAttribute( attribute ) !== nodeAfter.getAttribute( attribute ) );
+}
 
-			if ( statusCode < 200 || statusCode > 299 ) {
-				return reject( new Error( 'Cannot download new token!' ) );
-			}
+// @param {module:engine/model/position~Position} position
+// @param {String} attribute
+function isBetweenDifferentValues( position, attribute ) {
+	const { nodeBefore, nodeAfter } = position;
+	const isAttrBefore = nodeBefore ? nodeBefore.hasAttribute( attribute ) : false;
+	const isAttrAfter = nodeAfter ? nodeAfter.hasAttribute( attribute ) : false;
 
-			return resolve( xhrResponse );
-		} );
+	if ( !isAttrAfter || !isAttrBefore ) {
+		return;
+	}
 
-		xhr.addEventListener( 'error', () => reject( new Error( 'Network Error' ) ) );
-		xhr.addEventListener( 'abort', () => reject( new Error( 'Abort' ) ) );
+	return nodeAfter.getAttribute( attribute ) !== nodeBefore.getAttribute( attribute );
+}
 
-		xhr.send();
-	} );
-};
+// @param {module:engine/model/position~Position} position
+// @param {String} attribute
+function isStepAfterTheAttributeBoundary( position, attribute ) {
+	return isAtBoundary( position.getShiftedBy( -1 ), attribute );
+}
 
-/* harmony default export */ var token_token = (Token);
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/link.css
+var theme_link = __webpack_require__(43);
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-cloud-services/src/cloudservices.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkediting.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module cloud-services/cloudservices
+ * @module link/linkediting
  */
 
 
 
 
+
+
+
+
+
+
+
+const HIGHLIGHT_CLASS = 'ck-link_selected';
+
 /**
- * Plugin introducing CKEditor 5's Cloud Services integration.
+ * The link engine feature.
  *
- * It initializes the token provider based on
- * the {@link module:cloud-services/cloudservices~CloudServicesConfig `config.cloudService`}.
+ * It introduces the `linkHref="url"` attribute in the model which renders to the view as a `<a href="url">` element
+ * as well as `'link'` and `'unlink'` commands.
  *
  * @extends module:core/plugin~Plugin
  */
-class cloudservices_CloudServices extends Plugin {
-	/**
-	 * @inheritdoc
-	 */
-	static get pluginName() {
-		return 'CloudServices';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const config = editor.config;
-
-		const options = config.get( 'cloudServices' ) || {};
-
-		for ( const optionName in options ) {
-			this[ optionName ] = options[ optionName ];
-		}
-
-		/**
-		 * The authentication token URL for CKEditor Cloud Services or a callback to the token value promise. See the
-		 * {@link module:cloud-services/cloudservices~CloudServicesConfig#tokenUrl} for more details.
-		 *
-		 * @readonly
-		 * @member {String|Function|undefined} #tokenUrl
-		 */
-
-		/**
-		 * The URL to which the files should be uploaded.
-		 *
-		 * @readonly
-		 * @member {String} #uploadUrl
-		 */
-
-		/**
-		 * Other plugins use this token for the authorization process. It handles token requesting and refreshing.
-		 * Its value is `null` when {@link module:cloud-services/cloudservices~CloudServicesConfig#tokenUrl} is not provided.
-		 *
-		 * @readonly
-		 * @member {Object|null} #token
-		 */
-
-		if ( !this.tokenUrl ) {
-			this.token = null;
-
-			return;
-		}
-
-		this.token = new cloudservices_CloudServices.Token( this.tokenUrl );
-
-		return this.token.init();
-	}
-}
-
-cloudservices_CloudServices.Token = token_token;
-
-/**
- * The configuration of CKEditor Cloud Services. Introduced by the {@link module:cloud-services/cloudservices~CloudServices} plugin.
- *
- * Read more in {@link module:cloud-services/cloudservices~CloudServicesConfig}.
- *
- * @member {module:cloud-services/cloudservices~CloudServicesConfig} module:core/editor/editorconfig~EditorConfig#cloudServices
- */
-
-/**
- * The configuration for all plugins using CKEditor Cloud Services.
- *
- *		ClassicEditor
- *			.create( document.querySelector( '#editor' ), {
- *				cloudServices: {
- *					tokenUrl: 'https://example.com/cs-token-endpoint',
- *					uploadUrl: 'https://your-organization-id.cke-cs.com/easyimage/upload/'
- *				}
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface CloudServicesConfig
- */
-
-/**
- * A token URL or a token request function.
- *
- * As a string it should be a URL to the security token endpoint in your application. The role of this endpoint is to securely authorize the
- * end users of your application to use [CKEditor Cloud Services](https://ckeditor.com/ckeditor-cloud-services), only
- * if they should have access e.g. to upload files with Easy Image or to access the Collaboraation service.
- *
- *		ClassicEditor
- *			.create( document.querySelector( '#editor' ), {
- *				cloudServices: {
- *					tokenUrl: 'https://example.com/cs-token-endpoint',
- *					...
- *				}
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * As a function it should provide a promise to the token value, so you can highly customize the token and provide your token URL endpoint.
- * By using that approach you can set your own headers to the request.
- *
- * 		ClassicEditor
- *			.create( document.querySelector( '#editor' ), {
- *				cloudServices: {
- *					tokenUrl: () => new Promise( ( resolve, reject ) => {
- *						const xhr = new XMLHttpRequest();
- *
- *						xhr.open( 'GET', 'https://example.com/cs-token-endpoint' );
- *
- *						xhr.addEventListener( 'load', () => {
- *							const statusCode = xhr.status;
- *							const xhrResponse = xhr.response;
- *
- *							if ( statusCode < 200 || statusCode > 299 ) {
- *								return reject( new Error( 'Cannot download new token!' ) );
- *							}
- *
- *							return resolve( xhrResponse );
- *						} );
- *
- *						xhr.addEventListener( 'error', () => reject( new Error( 'Network Error' ) ) );
- *						xhr.addEventListener( 'abort', () => reject( new Error( 'Abort' ) ) );
- *
- *						xhr.setRequestHeader( customHeader, customValue );
- *
- *						xhr.send();
- *					} ),
- *					...
- *				}
- *			} )
- *
- * You can find more information about token endpoints in the
- * {@glink @cs guides/easy-image/quick-start#create-token-endpoint Cloud Services - Quick start}
- * and {@glink @cs guides/token-endpoints/tokenendpoint Cloud Services - Creating token endpoint} documentation.
- *
- * Without a properly working token endpoint (token URL) CKEditor plugins will not be able to connect to CKEditor Cloud Services.
- *
- * @member {String|Function} module:cloud-services/cloudservices~CloudServicesConfig#tokenUrl
- */
-
-/**
- * The endpoint URL for [CKEditor Cloud Services](https://ckeditor.com/ckeditor-cloud-services) uploads.
- * This option must be set for Easy Image to work correctly.
- *
- * The upload URL is unique for each customer and can be found in the [CKEditor Ecosystem dashboard](https://dashboard.ckeditor.com)
- * after subscribing to Easy Image service.
- * To learn how to start using Easy Image check {@glink @cs guides/easy-image/quick-start Easy Image - Quick start} documentation.
- *
- * Note: Make sure to also set the {@link module:cloud-services/cloudservices~CloudServicesConfig#tokenUrl} configuration option.
- *
- * @member {String} module:cloud-services/cloudservices~CloudServicesConfig#uploadUrl
- */
-
-/**
- * The URL for web socket communication, used by `CollaborativeEditing` plugin. Every customer (organization in the CKEditor
- * Ecosystem dashboard) has its own, unique URLs to communicate with CKEditor Cloud Services. The URL can be found in the
- * CKEditor Ecosystem dashboard.
- *
- * Note: unlike most plugins, `CollaborativeEditing` is not included in any CKEditor 5 build and has to be installed manually.
- * Check [Collaboration overview](https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/overview.html) for more details.
- *
- * @member {String} module:cloud-services/cloudservices~CloudServicesConfig#webSocketUrl
- */
-
-/**
- * Document ID, used by `CollaborativeEditing` plugin. All editor instances created with the same document ID will collaborate.
- * It means that each document needs a different document ID if you do not want to start collaboration between these documents.
- * The ID is usually a primary key of the document in the database, but you are free to provide whatever identifier fits your scenario.
- *
- * Note: unlike most plugins, `CollaborativeEditing` is not included in any CKEditor 5 build and has to be installed manually.
- * Check [Collaboration overview](https://ckeditor.com/docs/ckeditor5/latest/features/collaboration/overview.html) for more details.
- *
- * @member {String} module:cloud-services/cloudservices~CloudServicesConfig#documentId
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-easy-image/src/cloudservicesuploadadapter.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
-* @module easy-image/cloudservicesuploadadapter
-*/
-
-
-
-
-
-
-/**
- * A plugin that enables upload to [CKEditor Cloud Services](https://ckeditor.com/ckeditor-cloud-services/).
- *
- * It is mainly used by the {@link module:easy-image/easyimage~EasyImage} feature.
- *
- * After enabling this adapter you need to configure the CKEditor Cloud Services integration through
- * {@link module:cloud-services/cloudservices~CloudServicesConfig `config.cloudServices`}.
- *
- * @extends module:core/plugin~Plugin
- */
-class cloudservicesuploadadapter_CloudServicesUploadAdapter extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ filerepository_FileRepository, cloudservices_CloudServices ];
-	}
-
+class linkediting_LinkEditing extends Plugin {
 	/**
 	 * @inheritDoc
 	 */
 	init() {
 		const editor = this.editor;
 
-		const cloudServices = editor.plugins.get( cloudservices_CloudServices );
+		// Allow link attribute on all inline nodes.
+		editor.model.schema.extend( '$text', { allowAttributes: 'linkHref' } );
 
-		const token = cloudServices.token;
-		const uploadUrl = cloudServices.uploadUrl;
+		editor.conversion.for( 'dataDowncast' )
+			.add( downcastAttributeToElement( { model: 'linkHref', view: createLinkElement } ) );
 
-		if ( !token ) {
-			return;
-		}
+		editor.conversion.for( 'editingDowncast' )
+			.add( downcastAttributeToElement( { model: 'linkHref', view: ( href, writer ) => {
+				return createLinkElement( ensureSafeUrl( href ), writer );
+			} } ) );
 
-		this._uploadGateway = new cloudservicesuploadadapter_CloudServicesUploadAdapter._UploadGateway( token, uploadUrl );
+		editor.conversion.for( 'upcast' )
+			.add( upcastElementToAttribute( {
+				view: {
+					name: 'a',
+					attributes: {
+						href: true
+					}
+				},
+				model: {
+					key: 'linkHref',
+					value: viewElement => viewElement.getAttribute( 'href' )
+				}
+			} ) );
 
-		editor.plugins.get( filerepository_FileRepository ).createUploadAdapter = loader => {
-			return new Adapter( this._uploadGateway, loader );
-		};
-	}
-}
+		// Create linking commands.
+		editor.commands.add( 'link', new linkcommand_LinkCommand( editor ) );
+		editor.commands.add( 'unlink', new unlinkcommand_UnlinkCommand( editor ) );
 
-/**
- * @private
- */
-class Adapter {
-	constructor( uploadGateway, loader ) {
-		this.uploadGateway = uploadGateway;
+		// Enable two-step caret movement for `linkHref` attribute.
+		bindTwoStepCaretToAttribute( editor.editing.view, editor.model, this, 'linkHref' );
 
-		this.loader = loader;
-	}
-
-	upload() {
-		this.fileUploader = this.uploadGateway.upload( this.loader.file );
-
-		this.fileUploader.on( 'progress', ( evt, data ) => {
-			this.loader.uploadTotal = data.total;
-			this.loader.uploaded = data.uploaded;
-		} );
-
-		return this.fileUploader.send();
-	}
-
-	abort() {
-		this.fileUploader.abort();
-	}
-}
-
-// Store the API in static property to easily overwrite it in tests.
-// Too bad dependency injection does not work in Webpack + ES 6 (const) + Babel.
-cloudservicesuploadadapter_CloudServicesUploadAdapter._UploadGateway = uploadgateway_UploadGateway;
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/image/imageloadobserver.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/image/imageloadobserver
- */
-
-
-
-/**
- * Observes all new images added to the {@link module:engine/view/document~Document},
- * fires {@link module:engine/view/document~Document#event:imageLoaded} and
- * {@link module:engine/view/document~Document#event:layoutChanged} event every time when the new image
- * has been loaded.
- *
- * **Note:** This event is not fired for images that has been added to the document and rendered as `complete` (already loaded).
- *
- * @extends module:engine/view/observer/observer~Observer
- */
-class imageloadobserver_ImageLoadObserver extends Observer {
-	constructor( view ) {
-		super( view );
-
-		/**
-		 * List of img DOM elements that are observed by this observer.
-		 *
-		 * @private
-		 * @type {Set.<HTMLElement>}
-		 */
-		this._observedElements = new Set();
+		// Setup highlight over selected link.
+		this._setupLinkHighlight();
 	}
 
 	/**
-	 * @inheritDoc
-	 */
-	observe( domRoot, name ) {
-		const viewRoot = this.document.getRoot( name );
-
-		// When there is a change in one of the view element
-		// we need to check if there are any new `<img/>` elements to observe.
-		viewRoot.on( 'change:children', ( evt, node ) => {
-			// Wait for the render to be sure that `<img/>` elements are rendered in the DOM root.
-			this.view.once( 'render', () => this._updateObservedElements( domRoot, node ) );
-		} );
-	}
-
-	/**
-	 * Updates the list of observed `<img/>` elements.
+	 * Adds a visual highlight style to a link in which the selection is anchored.
+	 * Together with two-step caret movement, they indicate that the user is typing inside the link.
+	 *
+	 * Highlight is turned on by adding `.ck-link_selected` class to the link in the view:
+	 *
+	 * * the class is removed before conversion has started, as callbacks added with `'highest'` priority
+	 * to {@link module:engine/conversion/downcastdispatcher~DowncastDispatcher} events,
+	 * * the class is added in the view post fixer, after other changes in the model tree were converted to the view.
+	 *
+	 * This way, adding and removing highlight does not interfere with conversion.
 	 *
 	 * @private
-	 * @param {HTMLElement} domRoot DOM root element.
-	 * @param {module:engine/view/element~Element} viewNode View element where children have changed.
 	 */
-	_updateObservedElements( domRoot, viewNode ) {
-		if ( !viewNode.is( 'element' ) || viewNode.is( 'attributeElement' ) ) {
-			return;
-		}
+	_setupLinkHighlight() {
+		const editor = this.editor;
+		const view = editor.editing.view;
+		const highlightedLinks = new Set();
 
-		const domNode = this.view.domConverter.mapViewToDom( viewNode );
+		// Adding the class.
+		view.document.registerPostFixer( writer => {
+			const selection = editor.model.document.selection;
 
-		// If there is no `domNode` it means that it was removed from the DOM in the meanwhile.
-		if ( !domNode ) {
-			return;
-		}
+			if ( selection.hasAttribute( 'linkHref' ) ) {
+				const modelRange = findLinkRange( selection.getFirstPosition(), selection.getAttribute( 'linkHref' ) );
+				const viewRange = editor.editing.mapper.toViewRange( modelRange );
 
-		for ( const domElement of domNode.querySelectorAll( 'img' ) ) {
-			if ( !this._observedElements.has( domElement ) ) {
-				this.listenTo( domElement, 'load', ( evt, domEvt ) => this._fireEvents( domEvt ) );
-				this._observedElements.add( domElement );
-			}
-		}
-
-		// Clean up the list of observed elements from elements that has been removed from the root.
-		for ( const domElement of this._observedElements ) {
-			if ( !domRoot.contains( domElement ) ) {
-				this.stopListening( domElement );
-				this._observedElements.delete( domElement );
-			}
-		}
-	}
-
-	/**
-	 * Fires {@link module:engine/view/document~Document#event:layoutChanged} and
-	 * {@link module:engine/view/document~Document#event:imageLoaded}
-	 * if observer {@link #isEnabled is enabled}.
-	 *
-	 * @protected
-	 * @param {Event} domEvent The DOM event.
-	 */
-	_fireEvents( domEvent ) {
-		if ( this.isEnabled ) {
-			this.document.fire( 'layoutChanged' );
-			this.document.fire( 'imageLoaded', domEvent );
-		}
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	destroy() {
-		this._observedElements.clear();
-		super.destroy();
-	}
-}
-
-/**
- * Fired when an <img/> DOM element has been loaded in the DOM root.
- *
- * Introduced by {@link module:image/image/imageloadobserver~ImageLoadObserver}.
- *
- * @see module:image/image/imageloadobserver~ImageLoadObserver
- * @event module:engine/view/document~Document#event:imageLoaded
- * @param {module:engine/view/observer/domeventdata~DomEventData} data Event data.
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/image/converters.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/image/converters
- */
-
-
-
-
-/**
- * Returns a function that converts the image view representation:
- *
- *		<figure class="image"><img src="..." alt="..."></img></figure>
- *
- * to the model representation:
- *
- *		<image src="..." alt="..."></image>
- *
- * The entire content of the `<figure>` element except the first `<img>` is being converted as children
- * of the `<image>` model element.
- *
- * @returns {Function}
- */
-function viewFigureToModel() {
-	return dispatcher => {
-		dispatcher.on( 'element:figure', converter );
-	};
-
-	function converter( evt, data, conversionApi ) {
-		// Do not convert if this is not an "image figure".
-		if ( !conversionApi.consumable.test( data.viewItem, { name: true, classes: 'image' } ) ) {
-			return;
-		}
-
-		// Find an image element inside the figure element.
-		const viewImage = Array.from( data.viewItem.getChildren() ).find( viewChild => viewChild.is( 'img' ) );
-
-		// Do not convert if image element is absent, is missing src attribute or was already converted.
-		if ( !viewImage || !viewImage.hasAttribute( 'src' ) || !conversionApi.consumable.test( viewImage, { name: true } ) ) {
-			return;
-		}
-
-		// Convert view image to model image.
-		const conversionResult = conversionApi.convertItem( viewImage, data.modelCursor );
-
-		// Get image element from conversion result.
-		const modelImage = first_first( conversionResult.modelRange.getItems() );
-
-		// When image wasn't successfully converted then finish conversion.
-		if ( !modelImage ) {
-			return;
-		}
-
-		// Convert rest of the figure element's children as an image children.
-		conversionApi.convertChildren( data.viewItem, model_position_Position.createAt( modelImage ) );
-
-		// Set image range as conversion result.
-		data.modelRange = conversionResult.modelRange;
-
-		// Continue conversion where image conversion ends.
-		data.modelCursor = conversionResult.modelCursor;
-	}
-}
-
-/**
- * Converter used to convert the `srcset` model image attribute to the `srcset`, `sizes` and `width` attributes in the view.
- *
- * @returns {Function}
- */
-function srcsetAttributeConverter() {
-	return dispatcher => {
-		dispatcher.on( 'attribute:srcset:image', converter );
-	};
-
-	function converter( evt, data, conversionApi ) {
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		const writer = conversionApi.writer;
-		const figure = conversionApi.mapper.toViewElement( data.item );
-		const img = figure.getChild( 0 );
-
-		if ( data.attributeNewValue === null ) {
-			const srcset = data.attributeOldValue;
-
-			if ( srcset.data ) {
-				writer.removeAttribute( 'srcset', img );
-				writer.removeAttribute( 'sizes', img );
-
-				if ( srcset.width ) {
-					writer.removeAttribute( 'width', img );
+				// There might be multiple `a` elements in the `viewRange`, for example, when the `a` element is
+				// broken by a UIElement.
+				for ( const item of viewRange.getItems() ) {
+					if ( item.is( 'a' ) ) {
+						writer.addClass( HIGHLIGHT_CLASS, item );
+						highlightedLinks.add( item );
+					}
 				}
 			}
-		} else {
-			const srcset = data.attributeNewValue;
+		} );
 
-			if ( srcset.data ) {
-				writer.setAttribute( 'srcset', srcset.data, img );
-				// Always outputting `100vw`. See https://github.com/ckeditor/ckeditor5-image/issues/2.
-				writer.setAttribute( 'sizes', '100vw', img );
+		// Removing the class.
+		editor.conversion.for( 'editingDowncast' ).add( dispatcher => {
+			// Make sure the highlight is removed on every possible event, before conversion is started.
+			dispatcher.on( 'insert', removeHighlight, { priority: 'highest' } );
+			dispatcher.on( 'remove', removeHighlight, { priority: 'highest' } );
+			dispatcher.on( 'attribute', removeHighlight, { priority: 'highest' } );
+			dispatcher.on( 'selection', removeHighlight, { priority: 'highest' } );
 
-				if ( srcset.width ) {
-					writer.setAttribute( 'width', srcset.width, img );
-				}
+			function removeHighlight() {
+				view.change( writer => {
+					for ( const item of highlightedLinks.values() ) {
+						writer.removeClass( HIGHLIGHT_CLASS, item );
+						highlightedLinks.delete( item );
+					}
+				} );
 			}
-		}
-	}
-}
-
-function modelToViewAttributeConverter( attributeKey ) {
-	return dispatcher => {
-		dispatcher.on( `attribute:${ attributeKey }:image`, converter );
-	};
-
-	function converter( evt, data, conversionApi ) {
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		const viewWriter = conversionApi.writer;
-		const figure = conversionApi.mapper.toViewElement( data.item );
-		const img = figure.getChild( 0 );
-
-		if ( data.attributeNewValue !== null ) {
-			viewWriter.setAttribute( data.attributeKey, data.attributeNewValue, img );
-		} else {
-			viewWriter.removeAttribute( data.attributeKey, img );
-		}
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-widget/src/highlightstack.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module widget/highlightstack
- */
-
-
-
-
-/**
- * Class used to handle correct order of highlights on elements.
- *
- * When different highlights are applied to same element correct order should be preserved:
- *
- * * highlight with highest priority should be applied,
- * * if two highlights have same priority - sort by CSS class provided in
- * {@link module:engine/conversion/downcast-converters~HighlightDescriptor}.
- *
- * This way, highlight will be applied with the same rules it is applied on texts.
- */
-class HighlightStack {
-	/**
-	 * Creates class instance.
-	 */
-	constructor() {
-		this._stack = [];
-	}
-
-	/**
-	 * Adds highlight descriptor to the stack.
-	 *
-	 * @fires change:top
-	 * @param {module:engine/conversion/downcast-converters~HighlightDescriptor} descriptor
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} writer
-	 */
-	add( descriptor, writer ) {
-		const stack = this._stack;
-
-		// Save top descriptor and insert new one. If top is changed - fire event.
-		const oldTop = stack[ 0 ];
-		this._insertDescriptor( descriptor );
-		const newTop = stack[ 0 ];
-
-		// When new object is at the top and stores different information.
-		if ( oldTop !== newTop && !compareDescriptors( oldTop, newTop ) ) {
-			this.fire( 'change:top', {
-				oldDescriptor: oldTop,
-				newDescriptor: newTop,
-				writer
-			} );
-		}
-	}
-
-	/**
-	 * Removes highlight descriptor from the stack.
-	 *
-	 * @fires change:top
-	 * @param {String} id Id of the descriptor to remove.
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} writer
-	 */
-	remove( id, writer ) {
-		const stack = this._stack;
-
-		const oldTop = stack[ 0 ];
-		this._removeDescriptor( id );
-		const newTop = stack[ 0 ];
-
-		// When new object is at the top and stores different information.
-		if ( oldTop !== newTop && !compareDescriptors( oldTop, newTop ) ) {
-			this.fire( 'change:top', {
-				oldDescriptor: oldTop,
-				newDescriptor: newTop,
-				writer
-			} );
-		}
-	}
-
-	/**
-	 * Inserts given descriptor in correct place in the stack. It also takes care about updating information when
-	 * descriptor with same id is already present.
-	 *
-	 * @private
-	 * @param {module:engine/conversion/downcast-converters~HighlightDescriptor} descriptor
-	 */
-	_insertDescriptor( descriptor ) {
-		const stack = this._stack;
-		const index = stack.findIndex( item => item.id === descriptor.id );
-
-		// Inserting exact same descriptor - do nothing.
-		if ( compareDescriptors( descriptor, stack[ index ] ) ) {
-			return;
-		}
-
-		// If descriptor with same id but with different information is on the stack - remove it.
-		if ( index > -1 ) {
-			stack.splice( index, 1 );
-		}
-
-		// Find correct place to insert descriptor in the stack.
-		// It have different information (for example priority) so it must be re-inserted in correct place.
-		let i = 0;
-
-		while ( stack[ i ] && shouldABeBeforeB( stack[ i ], descriptor ) ) {
-			i++;
-		}
-
-		stack.splice( i, 0, descriptor );
-	}
-
-	/**
-	 * Removes descriptor with given id from the stack.
-	 *
-	 * @private
-	 * @param {String} id Descriptor's id.
-	 */
-	_removeDescriptor( id ) {
-		const stack = this._stack;
-		const index = stack.findIndex( item => item.id === id );
-
-		// If descriptor with same id is on the list - remove it.
-		if ( index > -1 ) {
-			stack.splice( index, 1 );
-		}
-	}
-}
-
-mix( HighlightStack, emittermixin );
-
-// Compares two descriptors by checking their priority and class list.
-//
-// @param {module:engine/conversion/downcast-converters~HighlightDescriptor} a
-// @param {module:engine/conversion/downcast-converters~HighlightDescriptor} b
-// @returns {Boolean} Returns true if both descriptors are defined and have same priority and classes.
-function compareDescriptors( a, b ) {
-	return a && b && a.priority == b.priority && classesToString( a.classes ) == classesToString( b.classes );
-}
-
-// Checks whenever first descriptor should be placed in the stack before second one.
-//
-// @param {module:engine/conversion/downcast-converters~HighlightDescriptor} a
-// @param {module:engine/conversion/downcast-converters~HighlightDescriptor} b
-// @returns {Boolean}
-function shouldABeBeforeB( a, b ) {
-	if ( a.priority > b.priority ) {
-		return true;
-	} else if ( a.priority < b.priority ) {
-		return false;
-	}
-
-	// When priorities are equal and names are different - use classes to compare.
-	return classesToString( a.classes ) > classesToString( b.classes );
-}
-
-// Converts CSS classes passed with {@link module:engine/conversion/downcast-converters~HighlightDescriptor} to
-// sorted string.
-//
-// @param {String|Array<String>} descriptor
-// @returns {String}
-function classesToString( classes ) {
-	return Array.isArray( classes ) ? classes.sort().join( ',' ) : classes;
-}
-
-/**
- * Fired when top element on {@link module:widget/highlightstack~HighlightStack} has been changed
- *
- * @event change:top
- * @param {Object} data Additional information about the change.
- * @param {module:engine/conversion/downcast-converters~HighlightDescriptor} [data.newDescriptor] New highlight
- * descriptor. It will be `undefined` when last descriptor is removed from the stack.
- * @param {module:engine/conversion/downcast-converters~HighlightDescriptor} [data.oldDescriptor] Old highlight
- * descriptor. It will be `undefined` when first descriptor is added to the stack.
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer View writer that can be used to modify element.
- */
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-widget/theme/icons/drag-handler.svg
-var drag_handler = __webpack_require__(25);
-var drag_handler_default = /*#__PURE__*/__webpack_require__.n(drag_handler);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-widget/src/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module widget/utils
- */
-
-
-
-
-
-
-
-
-
-const widgetSymbol = Symbol( 'isWidget' );
-const labelSymbol = Symbol( 'label' );
-
-/**
- * CSS class added to each widget element.
- *
- * @const {String}
- */
-const WIDGET_CLASS_NAME = 'ck-widget';
-
-/**
- * CSS class added to currently selected widget element.
- *
- * @const {String}
- */
-const WIDGET_SELECTED_CLASS_NAME = 'ck-widget_selected';
-
-/**
- * Returns `true` if given {@link module:engine/view/element~Element} is a widget.
- *
- * @param {module:engine/view/element~Element} element
- * @returns {Boolean}
- */
-function isWidget( element ) {
-	return !!element.getCustomProperty( widgetSymbol );
-}
-
-/**
- * Converts given {@link module:engine/view/element~Element} to widget in following way:
- *
- * * sets `contenteditable` attribute to `"true"`,
- * * adds `ck-widget` CSS class,
- * * adds custom {@link module:engine/view/element~Element#getFillerOffset `getFillerOffset()`} method returning `null`,
- * * adds custom property allowing to recognize widget elements by using {@link ~isWidget `isWidget()`},
- * * implements {@link ~setHighlightHandling view highlight on widgets}.
- *
- * This function needs to be used in conjuction with {@link module:engine/conversion/downcast-converters downcast converters}
- * like {@link module:engine/conversion/downcast-converters~downcastElementToElement `downcastElementToElement()`}.
- * Moreover, typically you will want to use `toWidget()` only for `editingDowncast`, while keeping the `dataDowncast` clean.
- *
- * For example, in order to convert a `<widget>` model element to `<div class="widget">` in the view, you can define
- * such converters:
- *
- *		editor.conversion.for( 'editingDowncast' )
- *			.add( downcastElementToElement( {
- *				model: 'widget',
- *				view: ( modelItem, writer ) => {
- *					const div = writer.createContainerElement( 'div', { class: 'widget' } );
- *
- *					return toWidget( div, writer, { label: 'some widget' } );
- *				}
- *			} ) );
- *
- *		editor.conversion.for( 'dataDowncast' )
- *			.add( downcastElementToElement( {
- *				model: 'widget',
- *				view: ( modelItem, writer ) => {
- *					return writer.createContainerElement( 'div', { class: 'widget' } );
- *				}
- *			} ) );
- *
- * See a full source code of a widget (with nested editable) schema definition and converters in
- * [this sample](https://github.com/ckeditor/ckeditor5-widget/blob/master/tests/manual/widget-with-nestededitable.js).
- *
- * @param {module:engine/view/element~Element} element
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer
- * @param {Object} [options={}]
- * @param {String|Function} [options.label] Element's label provided to {@link ~setLabel} function. It can be passed as
- * a plain string or a function returning a string. It represents the widget for assistive technologies (like screen readers).
- * @param {Boolean} [options.hasSelectionHandler=false] If `true`, the widget will have a selection handler added.
- * @returns {module:engine/view/element~Element} Returns same element.
- */
-function toWidget( element, writer, options = {} ) {
-	// The selection on Edge behaves better when the whole editor contents is in a single contentedible element.
-	// https://github.com/ckeditor/ckeditor5/issues/1079
-	if ( !src_env.isEdge ) {
-		writer.setAttribute( 'contenteditable', 'false', element );
-	}
-
-	writer.addClass( WIDGET_CLASS_NAME, element );
-	writer.setCustomProperty( widgetSymbol, true, element );
-	element.getFillerOffset = utils_getFillerOffset;
-
-	if ( options.label ) {
-		setLabel( element, options.label, writer );
-	}
-
-	if ( options.hasSelectionHandler ) {
-		addSelectionHandler( element, writer );
-	}
-
-	setHighlightHandling(
-		element,
-		writer,
-		( element, descriptor, writer ) => writer.addClass( normalizeToArray( descriptor.classes ), element ),
-		( element, descriptor, writer ) => writer.removeClass( normalizeToArray( descriptor.classes ), element )
-	);
-
-	return element;
-
-	// Normalizes CSS class in descriptor that can be provided in form of an array or a string.
-	function normalizeToArray( classes ) {
-		return Array.isArray( classes ) ? classes : [ classes ];
-	}
-}
-
-/**
- * Sets highlight handling methods. Uses {@link module:widget/highlightstack~HighlightStack} to
- * properly determine which highlight descriptor should be used at given time.
- *
- * @param {module:engine/view/element~Element} element
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer
- * @param {Function} add
- * @param {Function} remove
- */
-function setHighlightHandling( element, writer, add, remove ) {
-	const stack = new HighlightStack();
-
-	stack.on( 'change:top', ( evt, data ) => {
-		if ( data.oldDescriptor ) {
-			remove( element, data.oldDescriptor, data.writer );
-		}
-
-		if ( data.newDescriptor ) {
-			add( element, data.newDescriptor, data.writer );
-		}
-	} );
-
-	writer.setCustomProperty( 'addHighlight', ( element, descriptor, writer ) => stack.add( descriptor, writer ), element );
-	writer.setCustomProperty( 'removeHighlight', ( element, id, writer ) => stack.remove( id, writer ), element );
-}
-
-/**
- * Sets label for given element.
- * It can be passed as a plain string or a function returning a string. Function will be called each time label is retrieved by
- * {@link ~getLabel `getLabel()`}.
- *
- * @param {module:engine/view/element~Element} element
- * @param {String|Function} labelOrCreator
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer
- */
-function setLabel( element, labelOrCreator, writer ) {
-	writer.setCustomProperty( labelSymbol, labelOrCreator, element );
-}
-
-/**
- * Returns the label of the provided element.
- *
- * @param {module:engine/view/element~Element} element
- * @returns {String}
- */
-function getLabel( element ) {
-	const labelCreator = element.getCustomProperty( labelSymbol );
-
-	if ( !labelCreator ) {
-		return '';
-	}
-
-	return typeof labelCreator == 'function' ? labelCreator() : labelCreator;
-}
-
-/**
- * Adds functionality to a provided {@link module:engine/view/editableelement~EditableElement} to act as a widget's editable:
- *
- * * sets `contenteditable` as `true` when {@link module:engine/view/editableelement~EditableElement#isReadOnly} is `false`
- * otherwise set `false`,
- * * adds `ck-editor__editable` and `ck-editor__nested-editable` CSS classes,
- * * adds `ck-editor__nested-editable_focused` CSS class when editable is focused and removes it when it is blurred.
- *
- * Similarly to {@link ~toWidget `toWidget()`} this function should be used in `dataDowncast` only and it is usually
- * used together with {@link module:engine/conversion/downcast-converters~downcastElementToElement `downcastElementToElement()`}.
- *
- * For example, in order to convert a `<nested>` model element to `<div class="nested">` in the view, you can define
- * such converters:
- *
- *		editor.conversion.for( 'editingDowncast' )
- *			.add( downcastElementToElement( {
- *				model: 'nested',
- *				view: ( modelItem, writer ) => {
- *					const div = writer.createEditableElement( 'div', { class: 'nested' } );
- *
- *					return toWidgetEditable( nested, writer );
- *				}
- *			} ) );
- *
- *		editor.conversion.for( 'dataDowncast' )
- *			.add( downcastElementToElement( {
- *				model: 'nested',
- *				view: ( modelItem, writer ) => {
- *					return writer.createContainerElement( 'div', { class: 'nested' } );
- *				}
- *			} ) );
- *
- * See a full source code of a widget (with nested editable) schema definition and converters in
- * [this sample](https://github.com/ckeditor/ckeditor5-widget/blob/master/tests/manual/widget-with-nestededitable.js).
- *
- * @param {module:engine/view/editableelement~EditableElement} editable
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer
- * @returns {module:engine/view/editableelement~EditableElement} Returns same element that was provided in `editable` param.
- */
-function toWidgetEditable( editable, writer ) {
-	writer.addClass( [ 'ck-editor__editable', 'ck-editor__nested-editable' ], editable );
-
-	// The selection on Edge behaves better when the whole editor contents is in a single contentedible element.
-	// https://github.com/ckeditor/ckeditor5/issues/1079
-	if ( !src_env.isEdge ) {
-		// Set initial contenteditable value.
-		writer.setAttribute( 'contenteditable', editable.isReadOnly ? 'false' : 'true', editable );
-
-		// Bind the contenteditable property to element#isReadOnly.
-		editable.on( 'change:isReadOnly', ( evt, property, is ) => {
-			writer.setAttribute( 'contenteditable', is ? 'false' : 'true', editable );
 		} );
 	}
-
-	editable.on( 'change:isFocused', ( evt, property, is ) => {
-		if ( is ) {
-			writer.addClass( 'ck-editor__nested-editable_focused', editable );
-		} else {
-			writer.removeClass( 'ck-editor__nested-editable_focused', editable );
-		}
-	} );
-
-	return editable;
 }
 
-/**
- * Returns a model position which is optimal (in terms of UX) for inserting a widget block.
- *
- * For instance, if a selection is in the middle of a paragraph, the position before this paragraph
- * will be returned so that it is not split. If the selection is at the end of a paragraph,
- * the position after this paragraph will be returned.
- *
- * Note: If the selection is placed in an empty block, that block will be returned. If that position
- * is then passed to {@link module:engine/model/model~Model#insertContent},
- * the block will be fully replaced by the image.
- *
- * @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
- * The selection based on which the insertion position should be calculated.
- * @returns {module:engine/model/position~Position} The optimal position.
- */
-function findOptimalInsertionPosition( selection ) {
-	const selectedElement = selection.getSelectedElement();
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/view/observer/clickobserver.js
 
-	if ( selectedElement ) {
-		return model_position_Position.createAfter( selectedElement );
-	}
-
-	const firstBlock = selection.getSelectedBlocks().next().value;
-
-	if ( firstBlock ) {
-		// If inserting into an empty block – return position in that block. It will get
-		// replaced with the image by insertContent(). #42.
-		if ( firstBlock.isEmpty ) {
-			return model_position_Position.createAt( firstBlock );
-		}
-
-		const positionAfter = model_position_Position.createAfter( firstBlock );
-
-		// If selection is at the end of the block - return position after the block.
-		if ( selection.focus.isTouching( positionAfter ) ) {
-			return positionAfter;
-		}
-
-		// Otherwise return position before the block.
-		return model_position_Position.createBefore( firstBlock );
-	}
-
-	return selection.focus;
-}
-
-// Default filler offset function applied to all widget elements.
-//
-// @returns {null}
-function utils_getFillerOffset() {
-	return null;
-}
-
-// Adds a drag handler to the editable element.
-//
-// @param {module:engine/view/editableelement~EditableElement}
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function addSelectionHandler( editable, writer ) {
-	const selectionHandler = writer.createUIElement( 'div', { class: 'ck ck-widget__selection-handler' }, function( domDocument ) {
-		const domElement = this.toDomElement( domDocument );
-
-		// Use the IconView from the ui library.
-		const icon = new iconview_IconView();
-		icon.set( 'content', drag_handler_default.a );
-
-		// Render the icon view right away to append its #element to the selectionHandler DOM element.
-		icon.render();
-
-		domElement.appendChild( icon.element );
-
-		return domElement;
-	} );
-
-	// Append the selection handler into the widget wrapper.
-	writer.insert( position_Position.createAt( editable ), selectionHandler );
-	writer.addClass( [ 'ck-widget_selectable' ], editable );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/image/utils.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module image/image/utils
- */
-
-
-
-
-const imageSymbol = Symbol( 'isImage' );
-
-/**
- * Converts a given {@link module:engine/view/element~Element} to an image widget:
- * * Adds a {@link module:engine/view/element~Element#_setCustomProperty custom property} allowing to recognize the image widget element.
- * * Calls the {@link module:widget/utils~toWidget} function with the proper element's label creator.
- *
- * @param {module:engine/view/element~Element} viewElement
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer An instance of the view writer.
- * @param {String} label The element's label. It will be concatenated with the image `alt` attribute if one is present.
- * @returns {module:engine/view/element~Element}
- */
-function toImageWidget( viewElement, writer, label ) {
-	writer.setCustomProperty( imageSymbol, true, viewElement );
-
-	return toWidget( viewElement, writer, { label: labelCreator } );
-
-	function labelCreator() {
-		const imgElement = viewElement.getChild( 0 );
-		const altText = imgElement.getAttribute( 'alt' );
-
-		return altText ? `${ altText } ${ label }` : label;
-	}
-}
-
-/**
- * Checks if a given view element is an image widget.
- *
- * @param {module:engine/view/element~Element} viewElement
- * @returns {Boolean}
- */
-function isImageWidget( viewElement ) {
-	return !!viewElement.getCustomProperty( imageSymbol ) && isWidget( viewElement );
-}
-
-/**
- * Checks if an image widget is the only selected element.
- *
- * @param {module:engine/view/selection~Selection|module:engine/view/documentselection~DocumentSelection} selection
- * @returns {Boolean}
- */
-function isImageWidgetSelected( selection ) {
-	const viewElement = selection.getSelectedElement();
-
-	return !!( viewElement && isImageWidget( viewElement ) );
-}
-
-/**
- * Checks if the provided model element is an instance of {@link module:engine/model/element~Element Element} and its name
- * is `image`.
- *
- * @param {module:engine/model/element~Element} modelElement
- * @returns {Boolean}
- */
-function isImage( modelElement ) {
-	return modelElement instanceof model_element_Element && modelElement.name == 'image';
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/image/imageediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/image/imageediting
- */
-
-
-
-
-
-
-
-/**
- * The image engine plugin.
- * It registers `<image>` as a block element in the document schema, and allows `alt`, `src` and `srcset` attributes.
- * It also egisters converters for editing and data pipelines.
- *
- * @extends module:core/plugin~Plugin
- */
-class imageediting_ImageEditing extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const schema = editor.model.schema;
-        const t = editor.t;
-        const conversion = editor.conversion;
-        // See https://github.com/ckeditor/ckeditor5-image/issues/142.
-        editor.editing.view.addObserver(imageloadobserver_ImageLoadObserver);
-        // Configure schema.
-        schema.register('image', {
-            isObject: true,
-            isBlock: true,
-            allowWhere: '$block',
-            allowAttributes: [
-                'alt',
-                'src',
-                'srcset'
-            ]
-        });
-        conversion.for('dataDowncast').add(downcastElementToElement({
-            model: 'image',
-            view: (modelElement, viewWriter) => createImageViewElement(viewWriter)
-        }));
-        conversion.for('editingDowncast').add(downcastElementToElement({
-            model: 'image',
-            view: (modelElement, viewWriter) => toImageWidget(createImageViewElement(viewWriter), viewWriter, t('e'))
-        }));
-        conversion.for('downcast').add(modelToViewAttributeConverter('src')).add(modelToViewAttributeConverter('alt')).add(srcsetAttributeConverter());
-        conversion.for('upcast').add(upcastElementToElement({
-            view: {
-                name: 'img',
-                attributes: { src: true }
-            },
-            model: (viewImage, modelWriter) => modelWriter.createElement('image', { src: viewImage.getAttribute('src') })
-        })).add(upcastAttributeToAttribute({
-            view: {
-                name: 'img',
-                key: 'alt'
-            },
-            model: 'alt'
-        })).add(upcastAttributeToAttribute({
-            view: {
-                name: 'img',
-                key: 'srcset'
-            },
-            model: {
-                key: 'srcset',
-                value: viewImage => {
-                    const value = { data: viewImage.getAttribute('srcset') };
-                    if (viewImage.hasAttribute('width')) {
-                        value.width = viewImage.getAttribute('width');
-                    }
-                    return value;
-                }
-            }
-        })).add(viewFigureToModel());
-    }
-}
-// Creates a view element representing the image.
-//
-//		<figure class="image"><img></img></figure>
-//
-// Note that `alt` and `src` attributes are converted separately, so they are not included.
-//
-// @private
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @returns {module:engine/view/containerelement~ContainerElement}
-function createImageViewElement(writer) {
-    const emptyElement = writer.createEmptyElement('img');
-    const figure = writer.createContainerElement('figure', { class: 'image' });
-    writer.insert(position_Position.createAt(figure), emptyElement);
-    return figure;
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/view/observer/mouseobserver.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module engine/view/observer/mouseobserver
+ * @module engine/view/observer/clickobserver
  */
 
 
 
 /**
- * Mouse events observer.
+ * {@link module:engine/view/document~Document#event:click Click} event observer.
  *
  * Note that this observer is not available by default. To make it available it needs to be added to
- * {@link module:engine/view/view~View} by {@link module:engine/view/view~View#addObserver} method.
+ * {@link module:engine/view/view~View view controller}
+ * by a {@link module:engine/view/view~View#addObserver} method.
  *
  * @extends module:engine/view/observer/domeventobserver~DomEventObserver
  */
-class mouseobserver_MouseObserver extends domeventobserver_DomEventObserver {
+class clickobserver_ClickObserver extends domeventobserver_DomEventObserver {
 	constructor( view ) {
 		super( view );
 
-		this.domEventType = 'mousedown';
+		this.domEventType = 'click';
 	}
 
 	onDomEvent( domEvent ) {
@@ -60428,1157 +51674,19 @@ class mouseobserver_MouseObserver extends domeventobserver_DomEventObserver {
 }
 
 /**
- * Fired when mouse button is pressed down on one of the editables.
+ * Fired when one of the editables has been clicked.
  *
- * Introduced by {@link module:engine/view/observer/mouseobserver~MouseObserver}.
+ * Introduced by {@link module:engine/view/observer/clickobserver~ClickObserver}.
  *
- * Note that this event is not available by default. To make it available {@link module:engine/view/observer/mouseobserver~MouseObserver}
- * needs to be added to {@link module:engine/view/view~View} by a {@link module:engine/view/view~View#addObserver} method.
+ * Note that this event is not available by default. To make it available
+ * {@link module:engine/view/observer/clickobserver~ClickObserver} needs to be added
+ * to {@link module:engine/view/view~View} by a {@link module:engine/view/view~View#addObserver} method.
  *
- * @see module:engine/view/observer/mouseobserver~MouseObserver
- * @event module:engine/view/document~Document#event:mousedown
+ * @see module:engine/view/observer/clickobserver~ClickObserver
+ * @event module:engine/view/document~Document#event:click
  * @param {module:engine/view/observer/domeventdata~DomEventData} data Event data.
  */
 
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-widget/theme/widget.css
-var theme_widget = __webpack_require__(64);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-widget/src/widget.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module widget/widget
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-const selectAllKeystrokeCode = parseKeystroke( 'Ctrl+A' );
-
-/**
- * The widget plugin. It enables base support for widgets.
- *
- * See {@glink api/widget package page} for more details and documentation.
- *
- * This plugin enables multiple behaiors required by the widgets:
- *
- * * The model to view selection converter for the editing pipeline (it handles widget custom selection rendering).
- * If a converted selection is wraps around a widget element, that selection is marked as
- * {@link module:engine/view/selection~Selection#isFake fake}. Additionally, proper the `ck-widget_selected` CSS class
- * is added to indicate that widget has been selected.
- * * The mouse and keyboard events handling on and around widget elements.
- *
- * @extends module:core/plugin~Plugin.
- */
-class widget_Widget extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Widget';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const view = this.editor.editing.view;
-		const viewDocument = view.document;
-
-		/**
-		 * Holds previously selected widgets.
-		 *
-		 * @private
-		 * @type {Set.<module:engine/view/element~Element>}
-		 */
-		this._previouslySelected = new Set();
-
-		// Model to view selection converter.
-		// Converts selection placed over widget element to fake selection
-		this.editor.editing.downcastDispatcher.on( 'selection', ( evt, data, conversionApi ) => {
-			// Remove selected class from previously selected widgets.
-			this._clearPreviouslySelectedWidgets( conversionApi.writer );
-
-			const viewWriter = conversionApi.writer;
-			const viewSelection = viewWriter.document.selection;
-			const selectedElement = viewSelection.getSelectedElement();
-
-			for ( const range of viewSelection.getRanges() ) {
-				for ( const value of range ) {
-					const node = value.item;
-
-					if ( node.is( 'element' ) && isWidget( node ) ) {
-						viewWriter.addClass( WIDGET_SELECTED_CLASS_NAME, node );
-						this._previouslySelected.add( node );
-
-						// Check if widget is a single element selected.
-						if ( node == selectedElement ) {
-							viewWriter.setSelection( viewSelection.getRanges(), { fake: true, label: getLabel( selectedElement ) } );
-						}
-					}
-				}
-			}
-		}, { priority: 'low' } );
-
-		// If mouse down is pressed on widget - create selection over whole widget.
-		view.addObserver( mouseobserver_MouseObserver );
-		this.listenTo( viewDocument, 'mousedown', ( ...args ) => this._onMousedown( ...args ) );
-
-		// Handle custom keydown behaviour.
-		this.listenTo( viewDocument, 'keydown', ( ...args ) => this._onKeydown( ...args ), { priority: 'high' } );
-
-		// Handle custom delete behaviour.
-		this.listenTo( viewDocument, 'delete', ( evt, data ) => {
-			if ( this._handleDelete( data.direction == 'forward' ) ) {
-				data.preventDefault();
-				evt.stop();
-			}
-		}, { priority: 'high' } );
-	}
-
-	/**
-	 * Handles {@link module:engine/view/document~Document#event:mousedown mousedown} events on widget elements.
-	 *
-	 * @private
-	 * @param {module:utils/eventinfo~EventInfo} eventInfo
-	 * @param {module:engine/view/observer/domeventdata~DomEventData} domEventData
-	 */
-	_onMousedown( eventInfo, domEventData ) {
-		const editor = this.editor;
-		const view = editor.editing.view;
-		const viewDocument = view.document;
-		let element = domEventData.target;
-
-		// Do nothing if inside nested editable.
-		if ( isInsideNestedEditable( element ) ) {
-			return;
-		}
-
-		// If target is not a widget element - check if one of the ancestors is.
-		if ( !isWidget( element ) ) {
-			element = element.findAncestor( isWidget );
-
-			if ( !element ) {
-				return;
-			}
-		}
-
-		domEventData.preventDefault();
-
-		// Focus editor if is not focused already.
-		if ( !viewDocument.isFocused ) {
-			view.focus();
-		}
-
-		// Create model selection over widget.
-		const modelElement = editor.editing.mapper.toModelElement( element );
-
-		this._setSelectionOverElement( modelElement );
-	}
-
-	/**
-	 * Handles {@link module:engine/view/document~Document#event:keydown keydown} events.
-	 *
-	 * @private
-	 * @param {module:utils/eventinfo~EventInfo} eventInfo
-	 * @param {module:engine/view/observer/domeventdata~DomEventData} domEventData
-	 */
-	_onKeydown( eventInfo, domEventData ) {
-		const keyCode = domEventData.keyCode;
-		const isForward = keyCode == keyCodes.delete || keyCode == keyCodes.arrowdown || keyCode == keyCodes.arrowright;
-		let wasHandled = false;
-
-		// Checks if the keys were handled and then prevents the default event behaviour and stops
-		// the propagation.
-		if ( isArrowKeyCode( keyCode ) ) {
-			wasHandled = this._handleArrowKeys( isForward );
-		} else if ( isSelectAllKeyCode( domEventData ) ) {
-			wasHandled = this._selectAllNestedEditableContent() || this._selectAllContent();
-		} else if ( keyCode === keyCodes.enter ) {
-			wasHandled = this._handleEnterKey( domEventData.shiftKey );
-		}
-
-		if ( wasHandled ) {
-			domEventData.preventDefault();
-			eventInfo.stop();
-		}
-	}
-
-	/**
-	 * Handles delete keys: backspace and delete.
-	 *
-	 * @private
-	 * @param {Boolean} isForward Set to true if delete was performed in forward direction.
-	 * @returns {Boolean|undefined} Returns `true` if keys were handled correctly.
-	 */
-	_handleDelete( isForward ) {
-		// Do nothing when the read only mode is enabled.
-		if ( this.editor.isReadOnly ) {
-			return;
-		}
-
-		const modelDocument = this.editor.model.document;
-		const modelSelection = modelDocument.selection;
-
-		// Do nothing on non-collapsed selection.
-		if ( !modelSelection.isCollapsed ) {
-			return;
-		}
-
-		const objectElement = this._getObjectElementNextToSelection( isForward );
-
-		if ( objectElement ) {
-			this.editor.model.change( writer => {
-				let previousNode = modelSelection.anchor.parent;
-
-				// Remove previous element if empty.
-				while ( previousNode.isEmpty ) {
-					const nodeToRemove = previousNode;
-					previousNode = nodeToRemove.parent;
-
-					writer.remove( nodeToRemove );
-				}
-
-				this._setSelectionOverElement( objectElement );
-			} );
-
-			return true;
-		}
-	}
-
-	/**
-	 * Handles arrow keys.
-	 *
-	 * @private
-	 * @param {Boolean} isForward Set to true if arrow key should be handled in forward direction.
-	 * @returns {Boolean|undefined} Returns `true` if keys were handled correctly.
-	 */
-	_handleArrowKeys( isForward ) {
-		const model = this.editor.model;
-		const schema = model.schema;
-		const modelDocument = model.document;
-		const modelSelection = modelDocument.selection;
-		const objectElement = modelSelection.getSelectedElement();
-
-		// If object element is selected.
-		if ( objectElement && schema.isObject( objectElement ) ) {
-			const position = isForward ? modelSelection.getLastPosition() : modelSelection.getFirstPosition();
-			const newRange = schema.getNearestSelectionRange( position, isForward ? 'forward' : 'backward' );
-
-			if ( newRange ) {
-				model.change( writer => {
-					writer.setSelection( newRange );
-				} );
-			}
-
-			return true;
-		}
-
-		// If selection is next to object element.
-		// Return if not collapsed.
-		if ( !modelSelection.isCollapsed ) {
-			return;
-		}
-
-		const objectElement2 = this._getObjectElementNextToSelection( isForward );
-
-		if ( objectElement2 instanceof model_element_Element && schema.isObject( objectElement2 ) ) {
-			this._setSelectionOverElement( objectElement2 );
-
-			return true;
-		}
-	}
-
-	/**
-	 * Handles the enter key, giving users and access to positions in the editable directly before
-	 * (<kbd>Shift</kbd>+<kbd>Enter</kbd>) or after (<kbd>Enter</kbd>) the selected widget.
-	 * It improves the UX, mainly when the widget is the first or last child of the root editable
-	 * and there's no other way to type after or before it.
-	 *
-	 * @private
-	 * @param {Boolean} isBackwards Set to true if the new paragraph is to be inserted before
-	 * the selected widget (<kbd>Shift</kbd>+<kbd>Enter</kbd>).
-	 * @returns {Boolean|undefined} Returns `true` if keys were handled correctly.
-	 */
-	_handleEnterKey( isBackwards ) {
-		const model = this.editor.model;
-		const modelSelection = model.document.selection;
-		const objectElement = modelSelection.getSelectedElement();
-
-		if ( objectElement && model.schema.isObject( objectElement ) ) {
-			model.change( writer => {
-				const paragraph = writer.createElement( 'paragraph' );
-
-				writer.insert( paragraph, objectElement, isBackwards ? 'before' : 'after' );
-				writer.setSelection( paragraph, 'in' );
-			} );
-
-			return true;
-		}
-	}
-
-	/**
-	 * Extends the {@link module:engine/model/selection~Selection document's selection} to span the entire
-	 * content of the nested editable if already anchored in one.
-	 *
-	 * See: {@link module:engine/model/schema~Schema#getLimitElement}.
-	 *
-	 * @private
-	 */
-	_selectAllNestedEditableContent() {
-		const model = this.editor.model;
-		const documentSelection = model.document.selection;
-		const limitElement = model.schema.getLimitElement( documentSelection );
-
-		if ( documentSelection.getFirstRange().root == limitElement ) {
-			return false;
-		}
-
-		model.change( writer => {
-			writer.setSelection( model_range_Range.createIn( limitElement ) );
-		} );
-
-		return true;
-	}
-
-	/**
-	 * Handles <kbd>CTRL + A</kbd> when widget is selected.
-	 *
-	 * @private
-	 * @returns {Boolean} Returns true if widget was selected and selecting all was handled by this method.
-	 */
-	_selectAllContent() {
-		const model = this.editor.model;
-		const editing = this.editor.editing;
-		const view = editing.view;
-		const viewDocument = view.document;
-		const viewSelection = viewDocument.selection;
-
-		const selectedElement = viewSelection.getSelectedElement();
-
-		// Only widget is selected.
-		// https://github.com/ckeditor/ckeditor5-widget/issues/23
-		if ( selectedElement && isWidget( selectedElement ) ) {
-			const widgetParent = editing.mapper.toModelElement( selectedElement.parent );
-
-			model.change( writer => {
-				writer.setSelection( model_range_Range.createIn( widgetParent ) );
-			} );
-
-			return true;
-		}
-
-		return false;
-	}
-
-	/**
-	 * Sets {@link module:engine/model/selection~Selection document's selection} over given element.
-	 *
-	 * @private
-	 * @param {module:engine/model/element~Element} element
-	 */
-	_setSelectionOverElement( element ) {
-		this.editor.model.change( writer => {
-			writer.setSelection( model_range_Range.createOn( element ) );
-		} );
-	}
-
-	/**
-	 * Checks if {@link module:engine/model/element~Element element} placed next to the current
-	 * {@link module:engine/model/selection~Selection model selection} exists and is marked in
-	 * {@link module:engine/model/schema~Schema schema} as `object`.
-	 *
-	 * @private
-	 * @param {Boolean} forward Direction of checking.
-	 * @returns {module:engine/model/element~Element|null}
-	 */
-	_getObjectElementNextToSelection( forward ) {
-		const model = this.editor.model;
-		const schema = model.schema;
-		const modelSelection = model.document.selection;
-
-		// Clone current selection to use it as a probe. We must leave default selection as it is so it can return
-		// to its current state after undo.
-		const probe = new model_selection_Selection( modelSelection );
-		model.modifySelection( probe, { direction: forward ? 'forward' : 'backward' } );
-		const objectElement = forward ? probe.focus.nodeBefore : probe.focus.nodeAfter;
-
-		if ( objectElement instanceof model_element_Element && schema.isObject( objectElement ) ) {
-			return objectElement;
-		}
-
-		return null;
-	}
-
-	/**
-	 * Removes CSS class from previously selected widgets.
-	 *
-	 * @private
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} writer
-	 */
-	_clearPreviouslySelectedWidgets( writer ) {
-		for ( const widget of this._previouslySelected ) {
-			writer.removeClass( WIDGET_SELECTED_CLASS_NAME, widget );
-		}
-
-		this._previouslySelected.clear();
-	}
-}
-
-// Returns 'true' if provided key code represents one of the arrow keys.
-//
-// @param {Number} keyCode
-// @returns {Boolean}
-function isArrowKeyCode( keyCode ) {
-	return keyCode == keyCodes.arrowright ||
-		keyCode == keyCodes.arrowleft ||
-		keyCode == keyCodes.arrowup ||
-		keyCode == keyCodes.arrowdown;
-}
-
-// Returns 'true' if provided (DOM) key event data corresponds with the Ctrl+A keystroke.
-//
-// @param {module:engine/view/observer/keyobserver~KeyEventData} domEventData
-// @returns {Boolean}
-function isSelectAllKeyCode( domEventData ) {
-	return getCode( domEventData ) == selectAllKeystrokeCode;
-}
-
-// Returns `true` when element is a nested editable or is placed inside one.
-//
-// @param {module:engine/view/element~Element}
-// @returns {Boolean}
-function isInsideNestedEditable( element ) {
-	while ( element ) {
-		if ( element instanceof editableelement_EditableElement && !( element instanceof rooteditableelement_RootEditableElement ) ) {
-			return true;
-		}
-
-		element = element.parent;
-	}
-
-	return false;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagetextalternative/imagetextalternativecommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagetextalternative/imagetextalternativecommand
- */
-
-
-
-
-/**
- * The image text alternative command. It is used to change the `alt` attribute of `<image>` elements.
- *
- * @extends module:core/command~Command
- */
-class imagetextalternativecommand_ImageTextAlternativeCommand extends Command {
-	/**
-	 * The command value: `false` if there is no `alt` attribute, otherwise the value of the `alt` attribute.
-	 *
-	 * @readonly
-	 * @observable
-	 * @member {String|Boolean} #value
-	 */
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const element = this.editor.model.document.selection.getSelectedElement();
-
-		this.isEnabled = isImage( element );
-
-		if ( isImage( element ) && element.hasAttribute( 'alt' ) ) {
-			this.value = element.getAttribute( 'alt' );
-		} else {
-			this.value = false;
-		}
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * @fires execute
-	 * @param {Object} options
-	 * @param {String} options.newValue The new value of the `alt` attribute to set.
-	 */
-	execute( options ) {
-		const model = this.editor.model;
-		const imageElement = model.document.selection.getSelectedElement();
-
-		model.change( writer => {
-			writer.setAttribute( 'alt', options.newValue, imageElement );
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagetextalternative/imagetextalternativeediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagetextalternative/imagetextalternativeediting
- */
-
-
-
-
-/**
- * The image text alternative editing plugin.
- *
- * Registers the `'imageTextAlternative'` command.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagetextalternativeediting_ImageTextAlternativeEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		this.editor.commands.add( 'imageTextAlternative', new imagetextalternativecommand_ImageTextAlternativeCommand( this.editor ) );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/bindings/clickoutsidehandler
- */
-
-/* global document */
-
-/**
- * Handles clicking **outside** of a specified set of elements, then fires an action.
- *
- * **Note**: Actually, the action is executed upon `mousedown`, not `click`. It prevents
- * certain issues when the user keeps holding the mouse button and the UI cannot react
- * properly.
- *
- * @param {Object} options Configuration options.
- * @param {module:utils/dom/emittermixin~Emitter} options.emitter The emitter to which this behavior
- * should be added.
- * @param {Function} options.activator Function returning a `Boolean`, to determine whether the handler is active.
- * @param {Array.<HTMLElement>} options.contextElements HTML elements that determine the scope of the
- * handler. Clicking any of them or their descendants will **not** fire the callback.
- * @param {Function} options.callback An action executed by the handler.
- */
-function clickOutsideHandler( { emitter, activator, callback, contextElements } ) {
-	emitter.listenTo( document, 'mousedown', ( evt, { target } ) => {
-		if ( !activator() ) {
-			return;
-		}
-
-		for ( const contextElement of contextElements ) {
-			if ( contextElement.contains( target ) ) {
-				return;
-			}
-		}
-
-		callback();
-	} );
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/labeledinput/labeledinput.css
-var labeledinput = __webpack_require__(66);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/labeledinput/labeledinputview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/labeledinput/labeledinputview
- */
-
-
-
-
-
-
-/**
- * The labeled input view class.
- *
- * @extends module:ui/view~View
- */
-class labeledinputview_LabeledInputView extends src_view_View {
-	/**
-	 * Creates an instance of the labeled input view class.
-	 *
-	 * @param {module:utils/locale~Locale} locale The locale instance.
-	 * @param {Function} InputView Constructor of the input view.
-	 */
-	constructor( locale, InputView ) {
-		super( locale );
-
-		const inputUid = `ck-input-${ uid_uid() }`;
-		const errorUid = `ck-error-${ uid_uid() }`;
-
-		/**
-		 * The text of the label.
-		 *
-		 * @observable
-		 * @member {String} #label
-		 */
-		this.set( 'label' );
-
-		/**
-		 * The value of the input.
-		 *
-		 * @observable
-		 * @member {String} #value
-		 */
-		this.set( 'value' );
-
-		/**
-		 * Controls whether the component is in read-only mode.
-		 *
-		 * @observable
-		 * @member {Boolean} #isReadOnly
-		 */
-		this.set( 'isReadOnly', false );
-
-		/**
-		 * The validation error text. When set, it will be displayed
-		 * next to the {@link #inputView} as a typical validation error message.
-		 * Set it to `null` to hide the message.
-		 *
-		 * **Note:** Setting this property to anything but `null` will automatically
-		 * make the {@link module:ui/inputtext/inputtextview~InputTextView#hasError `hasError`}
-		 * of the {@link #inputView} `true`.
-		 *
-		 * **Note:** Typing in the {@link #inputView} which fires the
-		 * {@link module:ui/inputtext/inputtextview~InputTextView#event:input `input` event}
-		 * resets this property back to `null`, indicating that the input field can be re–validated.
-		 *
-		 * @observable
-		 * @member {String|null} #errorText
-		 */
-		this.set( 'errorText', null );
-
-		/**
-		 * The label view.
-		 *
-		 * @member {module:ui/label/labelview~LabelView} #labelView
-		 */
-		this.labelView = this._createLabelView( inputUid );
-
-		/**
-		 * The input view.
-		 *
-		 * @member {module:ui/inputtext/inputtextview~InputTextView} #inputView
-		 */
-		this.inputView = this._createInputView( InputView, inputUid, errorUid );
-
-		/**
-		 * The error view for the {@link #inputView}.
-		 *
-		 * @member {module:ui/view~View} #errorView
-		 */
-		this.errorView = this._createErrorView( errorUid );
-
-		const bind = this.bindTemplate;
-
-		this.setTemplate( {
-			tag: 'div',
-			attributes: {
-				class: [
-					'ck',
-					'ck-labeled-input',
-					bind.if( 'isReadOnly', 'ck-disabled' )
-				]
-			},
-			children: [
-				this.labelView,
-				this.inputView,
-				this.errorView
-			]
-		} );
-	}
-
-	/**
-	 * Creates label view class instance and bind with view.
-	 *
-	 * @private
-	 * @param {String} id Unique id to set as labelView#for attribute.
-	 * @returns {module:ui/label/labelview~LabelView}
-	 */
-	_createLabelView( id ) {
-		const labelView = new labelview_LabelView( this.locale );
-
-		labelView.for = id;
-		labelView.bind( 'text' ).to( this, 'label' );
-
-		return labelView;
-	}
-
-	/**
-	 * Creates input view class instance and bind with view.
-	 *
-	 * @private
-	 * @param {Function} InputView Input view constructor.
-	 * @param {String} inputUid Unique id to set as inputView#id attribute.
-	 * @param {String} errorUid Unique id of the error for the input's `aria-describedby` attribute.
-	 * @returns {module:ui/inputtext/inputtextview~InputTextView}
-	 */
-	_createInputView( InputView, inputUid, errorUid ) {
-		const inputView = new InputView( this.locale, errorUid );
-
-		inputView.id = inputUid;
-		inputView.ariaDesribedById = errorUid;
-		inputView.bind( 'value' ).to( this );
-		inputView.bind( 'isReadOnly' ).to( this );
-		inputView.bind( 'hasError' ).to( this, 'errorText', value => !!value );
-
-		inputView.on( 'input', () => {
-			// UX: Make the error text disappear and disable the error indicator as the user
-			// starts fixing the errors.
-			this.errorText = null;
-		} );
-
-		return inputView;
-	}
-
-	/**
-	 * Creates the error view instance.
-	 *
-	 * @private
-	 * @param {String} errorUid Unique id of the error, shared with the input's `aria-describedby` attribute.
-	 * @returns {module:ui/view~View}
-	 */
-	_createErrorView( errorUid ) {
-		const errorView = new src_view_View( this.locale );
-		const bind = this.bindTemplate;
-
-		errorView.setTemplate( 				{
-			tag: 'div',
-			attributes: {
-				class: [
-					'ck',
-					'ck-labeled-input__error',
-					bind.if( 'errorText', 'ck-hidden', value => !value )
-				],
-				id: errorUid
-			},
-			children: [
-				{
-					text: bind.to( 'errorText' )
-				}
-			]
-		} );
-
-		return errorView;
-	}
-
-	/**
-	 * Moves the focus to the input and selects the value.
-	 */
-	select() {
-		this.inputView.select();
-	}
-
-	/**
-	 * Focuses the input.
-	 */
-	focus() {
-		this.inputView.focus();
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/inputtext/inputtext.css
-var inputtext = __webpack_require__(68);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/inputtext/inputtextview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/inputtext/inputtextview
- */
-
-
-
-
-/**
- * The text input view class.
- *
- * @extends module:ui/view~View
- */
-class inputtextview_InputTextView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		/**
-		 * The value of the input.
-		 *
-		 * @observable
-		 * @member {String} #value
-		 */
-		this.set( 'value' );
-
-		/**
-		 * The `id` attribute of the input (i.e. to pair with a `<label>` element).
-		 *
-		 * @observable
-		 * @member {String} #id
-		 */
-		this.set( 'id' );
-
-		/**
-		 * The `placeholder` attribute of the input.
-		 *
-		 * @observable
-		 * @member {String} #placeholder
-		 */
-		this.set( 'placeholder' );
-
-		/**
-		 * Controls whether the input view is in read-only mode.
-		 *
-		 * @observable
-		 * @member {Boolean} #isReadOnly
-		 */
-		this.set( 'isReadOnly', false );
-
-		/**
-		 * Set to `true` when the field has some error. Usually controlled via
-		 * {@link module:ui/labeledinput/labeledinputview~LabeledInputView#errorText}.
-		 *
-		 * @observable
-		 * @member {Boolean} #hasError
-		 */
-		this.set( 'hasError', false );
-
-		/**
-		 * The `id` of the element describing this field, e.g. when it has
-		 * some error, it helps screen readers read the error text.
-		 *
-		 * @observable
-		 * @member {Boolean} #ariaDesribedById
-		 */
-		this.set( 'ariaDesribedById' );
-
-		const bind = this.bindTemplate;
-
-		this.setTemplate( {
-			tag: 'input',
-			attributes: {
-				type: 'text',
-				class: [
-					'ck',
-					'ck-input',
-					'ck-input-text',
-					bind.if( 'hasError', 'ck-error' )
-				],
-				id: bind.to( 'id' ),
-				placeholder: bind.to( 'placeholder' ),
-				readonly: bind.to( 'isReadOnly' ),
-				'aria-invalid': bind.if( 'hasError', true ),
-				'aria-describedby': bind.to( 'ariaDesribedById' )
-			},
-			on: {
-				input: bind.to( 'input' )
-			}
-		} );
-
-		/**
-		 * Fired when the user types in the input. Corresponds to the native
-		 * DOM `input` event.
-		 *
-		 * @event input
-		 */
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	render() {
-		super.render();
-
-		const setValue = value => {
-			this.element.value = ( !value && value !== 0 ) ? '' : value;
-		};
-
-		setValue( this.value );
-
-		// Bind `this.value` to the DOM element's value.
-		// We cannot use `value` DOM attribute because removing it on Edge does not clear the DOM element's value property.
-		this.on( 'change:value', ( evt, name, value ) => {
-			setValue( value );
-		} );
-	}
-
-	/**
-	 * Moves the focus to the input and selects the value.
-	 */
-	select() {
-		this.element.select();
-	}
-
-	/**
-	 * Focuses the input.
-	 */
-	focus() {
-		this.element.focus();
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/bindings/submithandler.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/bindings/submithandler
- */
-
-/**
- * A handler useful for {@link module:ui/view~View views} working as HTML forms. It intercepts a native DOM
- * `submit` event, prevents the default web browser behavior (navigation and page reload) and
- * fires the `submit` event on a view instead. Such a custom event can be then used by any
- * {@link module:utils/dom/emittermixin~Emitter emitter}, e.g. to serialize the form data.
- *
- *		import submitHandler from '@ckeditor/ckeditor5-ui/src/bindings/submithandler';
- *
- *		// ...
- *
- *		class AnyFormView extends View {
- *			constructor() {
- *				super();
- *
- *				// ...
- *
- *				submitHandler( {
- *					view: this
- *				} );
- *			}
- *		}
- *
- *		// ...
- *
- *		const view = new AnyFormView();
- *
- *		// A sample listener attached by an emitter working with the view.
- *		this.listenTo( view, 'submit', () => {
- *			saveTheFormData();
- *			hideTheForm();
- *		} );
- *
- * @param {Object} [options] Configuration options.
- * @param {module:ui/view~View} options.view The view which DOM `submit` events should be handled.
- */
-function submitHandler( { view } ) {
-	view.listenTo( view.element, 'submit', ( evt, domEvt ) => {
-		domEvt.preventDefault();
-		view.fire( 'submit' );
-	}, { useCapture: true } );
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/check.svg
-var check = __webpack_require__(7);
-var check_default = /*#__PURE__*/__webpack_require__.n(check);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/cancel.svg
-var icons_cancel = __webpack_require__(8);
-var cancel_default = /*#__PURE__*/__webpack_require__.n(icons_cancel);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/textalternativeform.css
-var textalternativeform = __webpack_require__(70);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagetextalternative/ui/textalternativeformview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/imagetextalternative/ui/textalternativeformview
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The TextAlternativeFormView class.
- *
- * @extends module:ui/view~View
- */
-class textalternativeformview_TextAlternativeFormView extends src_view_View {
-    /**
-	 * @inheritDoc
-	 */
-    constructor(locale) {
-        super(locale);
-        const t = this.locale.t;
-        /**
-		 * Tracks information about the DOM focus in the form.
-		 *
-		 * @readonly
-		 * @member {module:utils/focustracker~FocusTracker}
-		 */
-        this.focusTracker = new focustracker_FocusTracker();
-        /**
-		 * An instance of the {@link module:utils/keystrokehandler~KeystrokeHandler}.
-		 *
-		 * @readonly
-		 * @member {module:utils/keystrokehandler~KeystrokeHandler}
-		 */
-        this.keystrokes = new keystrokehandler_KeystrokeHandler();
-        /**
-		 * A textarea with a label.
-		 *
-		 * @member {module:ui/labeledinput/labeledinputview~LabeledInputView} #labeledTextarea
-		 */
-        this.labeledInput = this._createLabeledInputView();
-        /**
-		 * A button used to submit the form.
-		 *
-		 * @member {module:ui/button/buttonview~ButtonView} #saveButtonView
-		 */
-        this.saveButtonView = this._createButton(t('az'), check_default.a, 'ck-button-save');
-        this.saveButtonView.type = 'submit';
-        /**
-		 * A button used to cancel the form.
-		 *
-		 * @member {module:ui/button/buttonview~ButtonView} #cancelButtonView
-		 */
-        this.cancelButtonView = this._createButton(t('ba'), cancel_default.a, 'ck-button-cancel', 'cancel');
-        /**
-		 * A collection of views which can be focused in the form.
-		 *
-		 * @readonly
-		 * @protected
-		 * @member {module:ui/viewcollection~ViewCollection}
-		 */
-        this._focusables = new viewcollection_ViewCollection();
-        /**
-		 * Helps cycling over {@link #_focusables} in the form.
-		 *
-		 * @readonly
-		 * @protected
-		 * @member {module:ui/focuscycler~FocusCycler}
-		 */
-        this._focusCycler = new FocusCycler({
-            focusables: this._focusables,
-            focusTracker: this.focusTracker,
-            keystrokeHandler: this.keystrokes,
-            actions: {
-                // Navigate form fields backwards using the Shift + Tab keystroke.
-                focusPrevious: 'shift + tab',
-                // Navigate form fields forwards using the Tab key.
-                focusNext: 'tab'
-            }
-        });
-        this.setTemplate({
-            tag: 'form',
-            attributes: {
-                class: [
-                    'ck',
-                    'ck-text-alternative-form'
-                ],
-                // https://github.com/ckeditor/ckeditor5-image/issues/40
-                tabindex: '-1'
-            },
-            children: [
-                this.labeledInput,
-                this.saveButtonView,
-                this.cancelButtonView
-            ]
-        });
-    }
-    /**
-	 * @inheritDoc
-	 */
-    render() {
-        super.render();
-        this.keystrokes.listenTo(this.element);
-        submitHandler({ view: this });
-        [
-            this.labeledInput,
-            this.saveButtonView,
-            this.cancelButtonView
-        ].forEach(v => {
-            // Register the view as focusable.
-            this._focusables.add(v);
-            // Register the view in the focus tracker.
-            this.focusTracker.add(v.element);
-        });
-    }
-    /**
-	 * Creates the button view.
-	 *
-	 * @private
-	 * @param {String} label The button label
-	 * @param {String} icon The button's icon.
-	 * @param {String} className The additional button CSS class name.
-	 * @param {String} [eventName] The event name that the ButtonView#execute event will be delegated to.
-	 * @returns {module:ui/button/buttonview~ButtonView} The button view instance.
-	 */
-    _createButton(label, icon, className, eventName) {
-        const button = new buttonview_ButtonView(this.locale);
-        button.set({
-            label,
-            icon,
-            tooltip: true
-        });
-        button.extendTemplate({ attributes: { class: className } });
-        if (eventName) {
-            button.delegate('execute').to(this, eventName);
-        }
-        return button;
-    }
-    /**
-	 * Creates an input with a label.
-	 *
-	 * @private
-	 * @returns {module:ui/labeledinput/labeledinputview~LabeledInputView}
-	 */
-    _createLabeledInputView() {
-        const t = this.locale.t;
-        const labeledInput = new labeledinputview_LabeledInputView(this.locale, inputtextview_InputTextView);
-        labeledInput.label = t('bb');
-        labeledInput.inputView.placeholder = t('bb');
-        return labeledInput;
-    }
-}
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/dom/getpositionedancestor.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
@@ -61917,7 +52025,7 @@ function getAbsoluteRectCoordinates( { left, top } ) {
  */
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/panel/balloonpanel.css
-var balloonpanel = __webpack_require__(72);
+var balloonpanel = __webpack_require__(45);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/panel/balloon/balloonpanelview.js
 /**
@@ -62894,280 +53002,60 @@ class contextualballoon_ContextualBalloon extends Plugin {
 	}
 }
 
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/low-vision.svg
-var low_vision = __webpack_require__(26);
-var low_vision_default = /*#__PURE__*/__webpack_require__.n(low_vision);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/image/ui/utils.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/bindings/clickoutsidehandler.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module image/image/ui/utils
+ * @module ui/bindings/clickoutsidehandler
  */
 
-
-
+/* global document */
 
 /**
- * A helper utility that positions the
- * {@link module:ui/panel/balloon/contextualballoon~ContextualBalloon contextual balloon} instance
- * with respect to the image in the editor content, if one is selected.
+ * Handles clicking **outside** of a specified set of elements, then fires an action.
  *
- * @param {module:core/editor/editor~Editor} editor The editor instance.
+ * **Note**: Actually, the action is executed upon `mousedown`, not `click`. It prevents
+ * certain issues when the user keeps holding the mouse button and the UI cannot react
+ * properly.
+ *
+ * @param {Object} options Configuration options.
+ * @param {module:utils/dom/emittermixin~Emitter} options.emitter The emitter to which this behavior
+ * should be added.
+ * @param {Function} options.activator Function returning a `Boolean`, to determine whether the handler is active.
+ * @param {Array.<HTMLElement>} options.contextElements HTML elements that determine the scope of the
+ * handler. Clicking any of them or their descendants will **not** fire the callback.
+ * @param {Function} options.callback An action executed by the handler.
  */
-function repositionContextualBalloon( editor ) {
-	const balloon = editor.plugins.get( 'ContextualBalloon' );
+function clickOutsideHandler( { emitter, activator, callback, contextElements } ) {
+	emitter.listenTo( document, 'mousedown', ( evt, { target } ) => {
+		if ( !activator() ) {
+			return;
+		}
 
-	if ( isImageWidgetSelected( editor.editing.view.document.selection ) ) {
-		const position = getBalloonPositionData( editor );
+		for ( const contextElement of contextElements ) {
+			if ( contextElement.contains( target ) ) {
+				return;
+			}
+		}
 
-		balloon.updatePosition( position );
-	}
+		callback();
+	} );
 }
 
-/**
- * Returns the positioning options that control the geometry of the
- * {@link module:ui/panel/balloon/contextualballoon~ContextualBalloon contextual balloon} with respect
- * to the selected element in the editor content.
- *
- * @param {module:core/editor/editor~Editor} editor The editor instance.
- * @returns {module:utils/dom/position~Options}
- */
-function getBalloonPositionData( editor ) {
-	const editingView = editor.editing.view;
-	const defaultPositions = balloonpanelview_BalloonPanelView.defaultPositions;
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/labeledinput/labeledinput.css
+var labeledinput = __webpack_require__(47);
 
-	return {
-		target: editingView.domConverter.viewToDom( editingView.document.selection.getSelectedElement() ),
-		positions: [
-			defaultPositions.northArrowSouth,
-			defaultPositions.northArrowSouthWest,
-			defaultPositions.northArrowSouthEast,
-			defaultPositions.southArrowNorth,
-			defaultPositions.southArrowNorthWest,
-			defaultPositions.southArrowNorthEast
-		]
-	};
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagetextalternative/imagetextalternativeui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/imagetextalternative/imagetextalternativeui
- */
-
-
-
-
-
-
-
-
-/**
- * The image text alternative UI plugin.
- *
- * The plugin uses the {@link module:ui/panel/balloon/contextualballoon~ContextualBalloon}.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagetextalternativeui_ImageTextAlternativeUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    static get requires() {
-        return [contextualballoon_ContextualBalloon];
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        this._createButton();
-        this._createForm();
-    }
-    /**
-	 * Creates a button showing the balloon panel for changing the image text alternative and
-	 * registers it in the editor {@link module:ui/componentfactory~ComponentFactory ComponentFactory}.
-	 *
-	 * @private
-	 */
-    _createButton() {
-        const editor = this.editor;
-        const t = editor.t;
-        editor.ui.componentFactory.add('imageTextAlternative', locale => {
-            const command = editor.commands.get('imageTextAlternative');
-            const view = new buttonview_ButtonView(locale);
-            view.set({
-                label: t('aq'),
-                icon: low_vision_default.a,
-                tooltip: true
-            });
-            view.bind('isEnabled').to(command, 'isEnabled');
-            this.listenTo(view, 'execute', () => this._showForm());
-            return view;
-        });
-    }
-    /**
-	 * Creates the {@link module:image/imagetextalternative/ui/textalternativeformview~TextAlternativeFormView}
-	 * form.
-	 *
-	 * @private
-	 */
-    _createForm() {
-        const editor = this.editor;
-        const view = editor.editing.view;
-        const viewDocument = view.document;
-        /**
-		 * The contextual balloon plugin instance.
-		 *
-		 * @private
-		 * @member {module:ui/panel/balloon/contextualballoon~ContextualBalloon}
-		 */
-        this._balloon = this.editor.plugins.get('ContextualBalloon');
-        /**
-		 * A form containing a textarea and buttons, used to change the `alt` text value.
-		 *
-		 * @member {module:image/imagetextalternative/ui/textalternativeformview~TextAlternativeFormView}
-		 */
-        this._form = new textalternativeformview_TextAlternativeFormView(editor.locale);
-        // Render the form so its #element is available for clickOutsideHandler.
-        this._form.render();
-        this.listenTo(this._form, 'submit', () => {
-            editor.execute('imageTextAlternative', { newValue: this._form.labeledInput.inputView.element.value });
-            this._hideForm(true);
-        });
-        this.listenTo(this._form, 'cancel', () => {
-            this._hideForm(true);
-        });
-        // Close the form on Esc key press.
-        this._form.keystrokes.set('Esc', (data, cancel) => {
-            this._hideForm(true);
-            cancel();
-        });
-        // Reposition the balloon or hide the form if an image widget is no longer selected.
-        this.listenTo(editor.ui, 'update', () => {
-            if (!isImageWidgetSelected(viewDocument.selection)) {
-                this._hideForm(true);
-            } else if (this._isVisible) {
-                repositionContextualBalloon(editor);
-            }
-        });
-        // Close on click outside of balloon panel element.
-        clickOutsideHandler({
-            emitter: this._form,
-            activator: () => this._isVisible,
-            contextElements: [this._form.element],
-            callback: () => this._hideForm()
-        });
-    }
-    /**
-	 * Shows the {@link #_form} in the {@link #_balloon}.
-	 *
-	 * @private
-	 */
-    _showForm() {
-        if (this._isVisible) {
-            return;
-        }
-        const editor = this.editor;
-        const command = editor.commands.get('imageTextAlternative');
-        const labeledInput = this._form.labeledInput;
-        if (!this._balloon.hasView(this._form)) {
-            this._balloon.add({
-                view: this._form,
-                position: getBalloonPositionData(editor)
-            });
-        }
-        // Make sure that each time the panel shows up, the field remains in sync with the value of
-        // the command. If the user typed in the input, then canceled the balloon (`labeledInput#value`
-        // stays unaltered) and re-opened it without changing the value of the command, they would see the
-        // old value instead of the actual value of the command.
-        // https://github.com/ckeditor/ckeditor5-image/issues/114
-        labeledInput.value = labeledInput.inputView.element.value = command.value || '';
-        this._form.labeledInput.select();
-    }
-    /**
-	 * Removes the {@link #_form} from the {@link #_balloon}.
-	 *
-	 * @param {Boolean} [focusEditable=false] Controls whether the editing view is focused afterwards.
-	 * @private
-	 */
-    _hideForm(focusEditable) {
-        if (!this._isVisible) {
-            return;
-        }
-        this._balloon.remove(this._form);
-        if (focusEditable) {
-            this.editor.editing.view.focus();
-        }
-    }
-    /**
-	 * Returns `true` when the {@link #_form} is the visible view in the {@link #_balloon}.
-	 *
-	 * @private
-	 * @type {Boolean}
-	 */
-    get _isVisible() {
-        return this._balloon.visibleView == this._form;
-    }
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagetextalternative.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/labeledinput/labeledinputview.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module image/imagetextalternative
- */
-
-
-
-
-
-/**
- * The image text alternative plugin.
- *
- * For a detailed overview, check the {@glink features/image#image-styles image styles} documentation.
- *
- * This is a "glue" plugin which loads the
- *  {@link module:image/imagetextalternative/imagetextalternativeediting~ImageTextAlternativeEditing}
- * and {@link module:image/imagetextalternative/imagetextalternativeui~ImageTextAlternativeUI} plugins.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagetextalternative_ImageTextAlternative extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ imagetextalternativeediting_ImageTextAlternativeEditing, imagetextalternativeui_ImageTextAlternativeUI ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ImageTextAlternative';
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/image.css
-var theme_image = __webpack_require__(74);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/image.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/image
+ * @module ui/labeledinput/labeledinputview
  */
 
 
@@ -63175,188 +53063,217 @@ var theme_image = __webpack_require__(74);
 
 
 
-
-
 /**
- * The image plugin.
- *
- * For a detailed overview, check the {@glink features/image image feature} documentation.
- *
- * This is a "glue" plugin which loads the following plugins:
- *
- * * {@link module:image/image/imageediting~ImageEditing},
- * * {@link module:image/imagetextalternative~ImageTextAlternative}.
- *
- * Usually, it is used in conjuction with other plugins from this package. See the {@glink api/image package page}
- * for more information.
- *
- * @extends module:core/plugin~Plugin
- */
-class image_Image extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ imageediting_ImageEditing, widget_Widget, imagetextalternative_ImageTextAlternative ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Image';
-	}
-}
-
-/**
- * The configuration of the image features. Used by the image features in the `@ckeditor/ckeditor5-image` package.
- *
- * Read more in {@link module:image/image~ImageConfig}.
- *
- * @member {module:image/image~ImageConfig} module:core/editor/editorconfig~EditorConfig#image
- */
-
-/**
- * The configuration of the image features. Used by the image features in the `@ckeditor/ckeditor5-image` package.
- *
- *		ClassicEditor
- *			.create( editorElement, {
- * 				image: ... // Image feature options.
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface ImageConfig
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-upload/src/ui/filedialogbuttonview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module upload/ui/filedialogbuttonview
- */
-
-
-
-
-/**
- * The file dialog button view.
- *
- * This component provides a button that opens the native file selection dialog.
- * It can be used to implement the UI of a file upload feature.
- *
- *		const view = new FileDialogButtonView( locale );
- *
- *		view.set( {
- *			acceptedType: 'image/*',
- *			allowMultipleFiles: true
- *		} );
- *
- *		view.buttonView.set( {
- *			label: t( 'Insert image' ),
- *			icon: imageIcon,
- *			tooltip: true
- *		} );
- *
- *		view.on( 'done', ( evt, files ) => {
- *			for ( const file of Array.from( files ) ) {
- *				console.log( 'Selected file', file );
- *			}
- *		} );
+ * The labeled input view class.
  *
  * @extends module:ui/view~View
  */
-class filedialogbuttonview_FileDialogButtonView extends src_view_View {
+class labeledinputview_LabeledInputView extends src_view_View {
 	/**
-	 * @inheritDoc
+	 * Creates an instance of the labeled input view class.
+	 *
+	 * @param {module:utils/locale~Locale} locale The locale instance.
+	 * @param {Function} InputView Constructor of the input view.
 	 */
-	constructor( locale ) {
+	constructor( locale, InputView ) {
 		super( locale );
 
-		/**
-		 * The button view of the component.
-		 *
-		 * @member {module:ui/button/buttonview~ButtonView}
-		 */
-		this.buttonView = new buttonview_ButtonView( locale );
+		const inputUid = `ck-input-${ uid_uid() }`;
+		const errorUid = `ck-error-${ uid_uid() }`;
 
 		/**
-		 * A hidden `<input>` view used to execute file dialog.
-		 *
-		 * @protected
-		 * @member {module:upload/ui/filedialogbuttonview~FileInputView}
-		 */
-		this._fileInputView = new filedialogbuttonview_FileInputView( locale );
-
-		/**
-		 * Accepted file types. Can be provided in form of file extensions, media type or one of:
-		 * * `audio/*`,
-		 * * `video/*`,
-		 * * `image/*`.
+		 * The text of the label.
 		 *
 		 * @observable
-		 * @member {String} #acceptedType
+		 * @member {String} #label
 		 */
-		this._fileInputView.bind( 'acceptedType' ).to( this );
+		this.set( 'label' );
 
 		/**
-		 * Indicates if multiple files can be selected. Defaults to `true`.
+		 * The value of the input.
 		 *
 		 * @observable
-		 * @member {Boolean} #allowMultipleFiles
+		 * @member {String} #value
 		 */
-		this._fileInputView.bind( 'allowMultipleFiles' ).to( this );
+		this.set( 'value' );
 
 		/**
-		 * Fired when file dialog is closed with file selected.
+		 * Controls whether the component is in read-only mode.
 		 *
-		 *		view.on( 'done', ( evt, files ) => {
-		 *			for ( const file of files ) {
-		 *				console.log( 'Selected file', file );
-		 *			}
-		 *		}
-		 *
-		 * @event done
-		 * @param {Array.<File>} files Array of selected files.
+		 * @observable
+		 * @member {Boolean} #isReadOnly
 		 */
-		this._fileInputView.delegate( 'done' ).to( this );
+		this.set( 'isReadOnly', false );
+
+		/**
+		 * The validation error text. When set, it will be displayed
+		 * next to the {@link #inputView} as a typical validation error message.
+		 * Set it to `null` to hide the message.
+		 *
+		 * **Note:** Setting this property to anything but `null` will automatically
+		 * make the {@link module:ui/inputtext/inputtextview~InputTextView#hasError `hasError`}
+		 * of the {@link #inputView} `true`.
+		 *
+		 * **Note:** Typing in the {@link #inputView} which fires the
+		 * {@link module:ui/inputtext/inputtextview~InputTextView#event:input `input` event}
+		 * resets this property back to `null`, indicating that the input field can be re–validated.
+		 *
+		 * @observable
+		 * @member {String|null} #errorText
+		 */
+		this.set( 'errorText', null );
+
+		/**
+		 * The label view.
+		 *
+		 * @member {module:ui/label/labelview~LabelView} #labelView
+		 */
+		this.labelView = this._createLabelView( inputUid );
+
+		/**
+		 * The input view.
+		 *
+		 * @member {module:ui/inputtext/inputtextview~InputTextView} #inputView
+		 */
+		this.inputView = this._createInputView( InputView, inputUid, errorUid );
+
+		/**
+		 * The error view for the {@link #inputView}.
+		 *
+		 * @member {module:ui/view~View} #errorView
+		 */
+		this.errorView = this._createErrorView( errorUid );
+
+		const bind = this.bindTemplate;
 
 		this.setTemplate( {
-			tag: 'span',
+			tag: 'div',
 			attributes: {
-				class: 'ck-file-dialog-button',
+				class: [
+					'ck',
+					'ck-labeled-input',
+					bind.if( 'isReadOnly', 'ck-disabled' )
+				]
 			},
 			children: [
-				this.buttonView,
-				this._fileInputView
+				this.labelView,
+				this.inputView,
+				this.errorView
+			]
+		} );
+	}
+
+	/**
+	 * Creates label view class instance and bind with view.
+	 *
+	 * @private
+	 * @param {String} id Unique id to set as labelView#for attribute.
+	 * @returns {module:ui/label/labelview~LabelView}
+	 */
+	_createLabelView( id ) {
+		const labelView = new labelview_LabelView( this.locale );
+
+		labelView.for = id;
+		labelView.bind( 'text' ).to( this, 'label' );
+
+		return labelView;
+	}
+
+	/**
+	 * Creates input view class instance and bind with view.
+	 *
+	 * @private
+	 * @param {Function} InputView Input view constructor.
+	 * @param {String} inputUid Unique id to set as inputView#id attribute.
+	 * @param {String} errorUid Unique id of the error for the input's `aria-describedby` attribute.
+	 * @returns {module:ui/inputtext/inputtextview~InputTextView}
+	 */
+	_createInputView( InputView, inputUid, errorUid ) {
+		const inputView = new InputView( this.locale, errorUid );
+
+		inputView.id = inputUid;
+		inputView.ariaDesribedById = errorUid;
+		inputView.bind( 'value' ).to( this );
+		inputView.bind( 'isReadOnly' ).to( this );
+		inputView.bind( 'hasError' ).to( this, 'errorText', value => !!value );
+
+		inputView.on( 'input', () => {
+			// UX: Make the error text disappear and disable the error indicator as the user
+			// starts fixing the errors.
+			this.errorText = null;
+		} );
+
+		return inputView;
+	}
+
+	/**
+	 * Creates the error view instance.
+	 *
+	 * @private
+	 * @param {String} errorUid Unique id of the error, shared with the input's `aria-describedby` attribute.
+	 * @returns {module:ui/view~View}
+	 */
+	_createErrorView( errorUid ) {
+		const errorView = new src_view_View( this.locale );
+		const bind = this.bindTemplate;
+
+		errorView.setTemplate( 				{
+			tag: 'div',
+			attributes: {
+				class: [
+					'ck',
+					'ck-labeled-input__error',
+					bind.if( 'errorText', 'ck-hidden', value => !value )
+				],
+				id: errorUid
+			},
+			children: [
+				{
+					text: bind.to( 'errorText' )
+				}
 			]
 		} );
 
-		this.buttonView.on( 'execute', () => {
-			this._fileInputView.open();
-		} );
+		return errorView;
 	}
 
 	/**
-	 * Focuses the {@link #buttonView}.
+	 * Moves the focus to the input and selects the value.
+	 */
+	select() {
+		this.inputView.select();
+	}
+
+	/**
+	 * Focuses the input.
 	 */
 	focus() {
-		this.buttonView.focus();
+		this.inputView.focus();
 	}
 }
 
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/inputtext/inputtext.css
+var inputtext = __webpack_require__(49);
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/inputtext/inputtextview.js
 /**
- * The hidden file input view class.
- *
- * @private
- * @extends {module:ui/view~View}
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
  */
-class filedialogbuttonview_FileInputView extends src_view_View {
+
+/**
+ * @module ui/inputtext/inputtextview
+ */
+
+
+
+
+/**
+ * The text input view class.
+ *
+ * @extends module:ui/view~View
+ */
+class inputtextview_InputTextView extends src_view_View {
 	/**
 	 * @inheritDoc
 	 */
@@ -63364,1877 +53281,83 @@ class filedialogbuttonview_FileInputView extends src_view_View {
 		super( locale );
 
 		/**
-		 * Accepted file types. Can be provided in form of file extensions, media type or one of:
-		 * * `audio/*`,
-		 * * `video/*`,
-		 * * `image/*`.
+		 * The value of the input.
 		 *
 		 * @observable
-		 * @member {String} #acceptedType
+		 * @member {String} #value
 		 */
-		this.set( 'acceptedType' );
+		this.set( 'value' );
 
 		/**
-		 * Indicates if multiple files can be selected. Defaults to `false`.
+		 * The `id` attribute of the input (i.e. to pair with a `<label>` element).
 		 *
 		 * @observable
-		 * @member {Boolean} #allowMultipleFiles
+		 * @member {String} #id
 		 */
-		this.set( 'allowMultipleFiles', false );
+		this.set( 'id' );
+
+		/**
+		 * The `placeholder` attribute of the input.
+		 *
+		 * @observable
+		 * @member {String} #placeholder
+		 */
+		this.set( 'placeholder' );
+
+		/**
+		 * Controls whether the input view is in read-only mode.
+		 *
+		 * @observable
+		 * @member {Boolean} #isReadOnly
+		 */
+		this.set( 'isReadOnly', false );
+
+		/**
+		 * Set to `true` when the field has some error. Usually controlled via
+		 * {@link module:ui/labeledinput/labeledinputview~LabeledInputView#errorText}.
+		 *
+		 * @observable
+		 * @member {Boolean} #hasError
+		 */
+		this.set( 'hasError', false );
+
+		/**
+		 * The `id` of the element describing this field, e.g. when it has
+		 * some error, it helps screen readers read the error text.
+		 *
+		 * @observable
+		 * @member {Boolean} #ariaDesribedById
+		 */
+		this.set( 'ariaDesribedById' );
 
 		const bind = this.bindTemplate;
 
 		this.setTemplate( {
 			tag: 'input',
-
 			attributes: {
+				type: 'text',
 				class: [
-					'ck-hidden'
+					'ck',
+					'ck-input',
+					'ck-input-text',
+					bind.if( 'hasError', 'ck-error' )
 				],
-				type: 'file',
-				tabindex: '-1',
-				accept: bind.to( 'acceptedType' ),
-				multiple: bind.to( 'allowMultipleFiles' )
+				id: bind.to( 'id' ),
+				placeholder: bind.to( 'placeholder' ),
+				readonly: bind.to( 'isReadOnly' ),
+				'aria-invalid': bind.if( 'hasError', true ),
+				'aria-describedby': bind.to( 'ariaDesribedById' )
 			},
-
 			on: {
-				// Removing from code coverage since we cannot programmatically set input element files.
-				change: bind.to( /* istanbul ignore next */ () => {
-					if ( this.element && this.element.files && this.element.files.length ) {
-						this.fire( 'done', this.element.files );
-					}
-
-					this.element.value = '';
-				} )
-			}
-		} );
-	}
-
-	/**
-	 * Opens file dialog.
-	 */
-	open() {
-		this.element.click();
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/image.svg
-var icons_image = __webpack_require__(27);
-var icons_image_default = /*#__PURE__*/__webpack_require__.n(icons_image);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imageupload/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imageupload/utils
- */
-
-/**
- * Checks if a given file is an image.
- *
- * @param {File} file
- * @returns {Boolean}
- */
-function isImageType( file ) {
-	const types = /^image\/(jpeg|png|gif|bmp)$/;
-
-	return types.test( file.type );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imageupload/imageuploadui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/imageupload/imageuploadui
- */
-
-
-
-
-/**
- * The image upload button plugin.
- *
- * For a detailed overview, check the {@glink features/image-upload Image upload feature} documentation.
- *
- * Adds the `'imageUpload'` button to the {@link module:ui/componentfactory~ComponentFactory UI component factory}.
- *
- * @extends module:core/plugin~Plugin
- */
-class imageuploadui_ImageUploadUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const t = editor.t;
-        // Setup `imageUpload` button.
-        editor.ui.componentFactory.add('imageUpload', locale => {
-            const view = new filedialogbuttonview_FileDialogButtonView(locale);
-            const command = editor.commands.get('imageUpload');
-            view.set({
-                acceptedType: 'image/*',
-                allowMultipleFiles: true
-            });
-            view.buttonView.set({
-                label: t('m'),
-                icon: icons_image_default.a,
-                tooltip: true
-            });
-            view.buttonView.bind('isEnabled').to(command);
-            view.on('done', (evt, files) => {
-                const imagesToUpload = Array.from(files).filter(isImageType);
-                if (imagesToUpload.length) {
-                    editor.execute('imageUpload', { files: imagesToUpload });
-                }
-            });
-            return view;
-        });
-    }
-}
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/icons/image_placeholder.svg
-var image_placeholder = __webpack_require__(28);
-var image_placeholder_default = /*#__PURE__*/__webpack_require__.n(image_placeholder);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/imageuploadprogress.css
-var imageuploadprogress = __webpack_require__(76);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/imageuploadicon.css
-var imageuploadicon = __webpack_require__(78);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/imageuploadloader.css
-var imageuploadloader = __webpack_require__(80);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imageupload/imageuploadprogress.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imageupload/imageuploadprogress
- */
-
-/* globals setTimeout */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The image upload progress plugin.
- * It shows a placeholder when the image is read from the disk and a progress bar while the image is uploading.
- *
- * @extends module:core/plugin~Plugin
- */
-class imageuploadprogress_ImageUploadProgress extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( editor ) {
-		super( editor );
-
-		/**
-		 * The image placeholder that is displayed before real image data can be accessed.
-		 *
-		 * @protected
-		 * @member {String} #placeholder
-		 */
-		this.placeholder = 'data:image/svg+xml;utf8,' + encodeURIComponent( image_placeholder_default.a );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-
-		// Upload status change - update image's view according to that status.
-		editor.editing.downcastDispatcher.on( 'attribute:uploadStatus:image', ( ...args ) => this.uploadStatusChange( ...args ) );
-	}
-
-	/**
-	 * This method is called each time the image `uploadStatus` attribute is changed.
-	 *
-	 * @param {module:utils/eventinfo~EventInfo} evt An object containing information about the fired event.
-	 * @param {Object} data Additional information about the change.
-	 * @param {module:engine/conversion/modelconsumable~ModelConsumable} consumable Values to consume.
-	 * @param {Object} conversionApi
-	 */
-	uploadStatusChange( evt, data, conversionApi ) {
-		const editor = this.editor;
-		const modelImage = data.item;
-		const uploadId = modelImage.getAttribute( 'uploadId' );
-
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		const fileRepository = editor.plugins.get( filerepository_FileRepository );
-		const status = uploadId ? data.attributeNewValue : null;
-		const placeholder = this.placeholder;
-		const viewFigure = editor.editing.mapper.toViewElement( modelImage );
-		const viewWriter = conversionApi.writer;
-
-		if ( status == 'reading' ) {
-			// Start "appearing" effect and show placeholder with infinite progress bar on the top
-			// while image is read from disk.
-			_startAppearEffect( viewFigure, viewWriter );
-			_showPlaceholder( placeholder, viewFigure, viewWriter );
-
-			return;
-		}
-
-		// Show progress bar on the top of the image when image is uploading.
-		if ( status == 'uploading' ) {
-			const loader = fileRepository.loaders.get( uploadId );
-
-			// Start appear effect if needed - see https://github.com/ckeditor/ckeditor5-image/issues/191.
-			_startAppearEffect( viewFigure, viewWriter );
-
-			if ( !loader ) {
-				// There is no loader associated with uploadId - this means that image came from external changes.
-				// In such cases we still want to show the placeholder until image is fully uploaded.
-				// Show placeholder if needed - see https://github.com/ckeditor/ckeditor5-image/issues/191.
-				_showPlaceholder( placeholder, viewFigure, viewWriter );
-			} else {
-				// Hide placeholder and initialize progress bar showing upload progress.
-				_hidePlaceholder( viewFigure, viewWriter );
-				_showProgressBar( viewFigure, viewWriter, loader, editor.editing.view );
-			}
-
-			return;
-		}
-
-		// Because in Edge there is no way to show fancy animation of completeIcon we need to skip it.
-		if ( status == 'complete' && fileRepository.loaders.get( uploadId ) && !src_env.isEdge ) {
-			_showCompleteIcon( viewFigure, viewWriter, editor.editing.view );
-		}
-
-		// Clean up.
-		_hideProgressBar( viewFigure, viewWriter );
-		_hidePlaceholder( viewFigure, viewWriter );
-		_stopAppearEffect( viewFigure, viewWriter );
-	}
-}
-
-// Symbol added to progress bar UIElement to distinguish it from other elements.
-const progressBarSymbol = Symbol( 'progress-bar' );
-
-// Symbol added to placeholder UIElement to distinguish it from other elements.
-const placeholderSymbol = Symbol( 'placeholder' );
-
-// Adds ck-appear class to the image figure if one is not already applied.
-//
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function _startAppearEffect( viewFigure, writer ) {
-	if ( !viewFigure.hasClass( 'ck-appear' ) ) {
-		writer.addClass( 'ck-appear', viewFigure );
-	}
-}
-
-// Removes ck-appear class to the image figure if one is not already removed.
-//
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function _stopAppearEffect( viewFigure, writer ) {
-	writer.removeClass( 'ck-appear', viewFigure );
-}
-
-// Shows placeholder together with infinite progress bar on given image figure.
-//
-// @param {String} Data-uri with a svg placeholder.
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function _showPlaceholder( placeholder, viewFigure, writer ) {
-	if ( !viewFigure.hasClass( 'ck-image-upload-placeholder' ) ) {
-		writer.addClass( 'ck-image-upload-placeholder', viewFigure );
-	}
-
-	const viewImg = viewFigure.getChild( 0 );
-
-	if ( viewImg.getAttribute( 'src' ) !== placeholder ) {
-		writer.setAttribute( 'src', placeholder, viewImg );
-	}
-
-	if ( !_getUIElement( viewFigure, placeholderSymbol ) ) {
-		writer.insert( position_Position.createAfter( viewImg ), _createPlaceholder( writer ) );
-	}
-}
-
-// Removes placeholder together with infinite progress bar on given image figure.
-//
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function _hidePlaceholder( viewFigure, writer ) {
-	if ( viewFigure.hasClass( 'ck-image-upload-placeholder' ) ) {
-		writer.removeClass( 'ck-image-upload-placeholder', viewFigure );
-	}
-
-	_removeUIElement( viewFigure, writer, placeholderSymbol );
-}
-
-// Shows progress bar displaying upload progress.
-// Attaches it to the file loader to update when upload percentace is changed.
-//
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @param {module:upload/filerepository~FileLoader} loader
-// @param {module:engine/view/view~View} view
-function _showProgressBar( viewFigure, writer, loader, view ) {
-	const progressBar = _createProgressBar( writer );
-	writer.insert( position_Position.createAt( viewFigure, 'end' ), progressBar );
-
-	// Update progress bar width when uploadedPercent is changed.
-	loader.on( 'change:uploadedPercent', ( evt, name, value ) => {
-		view.change( writer => {
-			writer.setStyle( 'width', value + '%', progressBar );
-		} );
-	} );
-}
-
-// Hides upload progress bar.
-//
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function _hideProgressBar( viewFigure, writer ) {
-	_removeUIElement( viewFigure, writer, progressBarSymbol );
-}
-
-// Shows complete icon and hides after a certain amount of time.
-//
-// @param {module:engine/view/containerelement~ContainerElement} viewFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @param {module:engine/view/view~View} view
-function _showCompleteIcon( viewFigure, writer, view ) {
-	const completeIcon = new uielement_UIElement( 'div', { class: 'ck-image-upload-complete-icon' } );
-
-	writer.insert( position_Position.createAt( viewFigure, 'end' ), completeIcon );
-
-	setTimeout( () => {
-		view.change( writer => writer.remove( range_Range.createOn( completeIcon ) ) );
-	}, 3000 );
-}
-
-// Create progress bar element using {@link module:engine/view/uielement~UIElement}.
-//
-// @private
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @returns {module:engine/view/uielement~UIElement}
-function _createProgressBar( writer ) {
-	const progressBar = writer.createUIElement( 'div', { class: 'ck-progress-bar' } );
-
-	writer.setCustomProperty( progressBarSymbol, true, progressBar );
-
-	return progressBar;
-}
-
-// Create placeholder element using {@link module:engine/view/uielement~UIElement}.
-//
-// @private
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @returns {module:engine/view/uielement~UIElement}
-function _createPlaceholder( writer ) {
-	const placeholder = writer.createUIElement( 'div', { class: 'ck-upload-placeholder-loader' } );
-
-	writer.setCustomProperty( placeholderSymbol, true, placeholder );
-
-	return placeholder;
-}
-
-// Returns {@link module:engine/view/uielement~UIElement} of given unique property from image figure element.
-// Returns `undefined` if element is not found.
-//
-// @private
-// @param {module:engine/view/element~Element} imageFigure
-// @param {Symbol} uniqueProperty
-// @returns {module:engine/view/uielement~UIElement|undefined}
-function _getUIElement( imageFigure, uniqueProperty ) {
-	for ( const child of imageFigure.getChildren() ) {
-		if ( child.getCustomProperty( uniqueProperty ) ) {
-			return child;
-		}
-	}
-}
-
-// Removes {@link module:engine/view/uielement~UIElement} of given unique property from image figure element.
-//
-// @private
-// @param {module:engine/view/element~Element} imageFigure
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @param {Symbol} uniqueProperty
-function _removeUIElement( viewFigure, writer, uniqueProperty ) {
-	const element = _getUIElement( viewFigure, uniqueProperty );
-
-	if ( element ) {
-		writer.remove( range_Range.createOn( element ) );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imageupload/imageuploadcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-
-
-
-
-/**
- * @module image/imageupload/imageuploadcommand
- */
-
-/**
- * Image upload command.
- *
- * @extends module:core/command~Command
- */
-class imageuploadcommand_ImageUploadCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-		const schema = model.schema;
-
-		this.isEnabled = isImageAllowedInParent( selection, schema ) && checkSelectionWithObject( selection, schema );
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * @fires execute
-	 * @param {Object} options Options for the executed command.
-	 * @param {File|Array.<File>} options.files The image file or an array of image files to upload.
-	 */
-	execute( options ) {
-		const editor = this.editor;
-
-		editor.model.change( writer => {
-			const filesToUpload = Array.isArray( options.files ) ? options.files : [ options.files ];
-
-			for ( const file of filesToUpload ) {
-				uploadImage( writer, editor, file );
-			}
-		} );
-	}
-}
-
-// Handles uploading single file.
-//
-// @param {module:engine/model/writer~writer} writer
-// @param {module:core/editor/editor~Editor} editor
-// @param {File} file
-function uploadImage( writer, editor, file ) {
-	const doc = editor.model.document;
-	const fileRepository = editor.plugins.get( filerepository_FileRepository );
-
-	const loader = fileRepository.createLoader( file );
-
-	// Do not throw when upload adapter is not set. FileRepository will log an error anyway.
-	if ( !loader ) {
-		return;
-	}
-
-	const imageElement = writer.createElement( 'image', { uploadId: loader.id } );
-
-	const insertAtSelection = findOptimalInsertionPosition( doc.selection );
-
-	editor.model.insertContent( imageElement, insertAtSelection );
-
-	// Inserting an image might've failed due to schema regulations.
-	if ( imageElement.parent ) {
-		writer.setSelection( imageElement, 'on' );
-	}
-}
-
-// Checks if image is allowed by schema in optimal insertion parent.
-function isImageAllowedInParent( selection, schema ) {
-	const parent = getInsertImageParent( selection );
-
-	return schema.checkChild( parent, 'image' );
-}
-
-// Additional check for when the command should be disabled:
-// - selection is on object
-// - selection is inside object
-function checkSelectionWithObject( selection, schema ) {
-	const selectedElement = selection.getSelectedElement();
-
-	const isSelectionOnObject = !!selectedElement && schema.isObject( selectedElement );
-	const isSelectionInObject = !![ ...selection.focus.getAncestors() ].find( ancestor => schema.isObject( ancestor ) );
-
-	return !isSelectionOnObject && !isSelectionInObject;
-}
-
-// Returns a node that will be used to insert image with `model.insertContent` to check if image can be placed there.
-function getInsertImageParent( selection ) {
-	const insertAt = findOptimalInsertionPosition( selection );
-
-	let parent = insertAt.parent;
-
-	if ( !parent.is( '$root' ) ) {
-		parent = parent.parent;
-	}
-
-	return parent;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/notification/notification.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/notification/notification
- */
-
-/* globals window */
-
-
-
-/**
- * The Notification plugin.
- *
- * This plugin sends few base types of notifications: `success`, `info` and `warning`. This notifications need to be
- * handled and displayed by plugin responsible for showing UI of the notifications. Using this plugin for dispatching
- * notifications makes possible to switch the notifications UI.
- *
- * Note that every unhandled and not stopped `warning` notification will be displayed as system alert.
- * See {@link module:ui/notification/notification~Notification#showWarning}.
- *
- * @extends module:core/plugin~Plugin
- */
-class notification_Notification extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Notification';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		// Each unhandled and not stopped `show:warning` event is displayed as system alert.
-		this.on( 'show:warning', ( evt, data ) => {
-			window.alert( data.message ); // eslint-disable-line no-alert
-		}, { priority: 'lowest' } );
-	}
-
-	/**
-	 * Shows success notification.
-	 *
-	 * At default it fires `show:success` event with given data but event namespace can be extended
-	 * by `data.namespace` option e.g.
-	 *
-	 * 		showSuccess( 'Image is uploaded.', {
-	 * 			namespace: 'upload:image'
-	 * 		} );
-	 *
-	 * will fire `show:success:upload:image` event.
-	 * Title of the notification can be provided:
-	 *
-	 *		showSuccess( 'Image is uploaded.', {
-	 *			title: 'Image upload success'
-	 *		});
-	 *
-	 * @param {String} message Content of the notification.
-	 * @param {Object} [data={}] Additional data.
-	 * @param {String} [data.namespace] Additional event namespace.
-	 * @param {String} [data.title] Title of the notification.
-	 */
-	showSuccess( message, data = {} ) {
-		this._showNotification( {
-			message,
-			type: 'success',
-			namespace: data.namespace,
-			title: data.title
-		} );
-	}
-
-	/**
-	 * Shows info notification.
-	 *
-	 * At default it fires `show:info` event with given data but event namespace can be extended
-	 * by `data.namespace` option e.g.
-	 *
-	 * 		showInfo( 'Editor is offline.', {
-	 * 			namespace: 'editor:status'
-	 * 		} );
-	 *
-	 * will fire `show:info:editor:status` event.
-	 * Title of the notification can be provided:
-	 *
-	 *		showInfo( 'Editor is offline.', {
-	 *			title: 'Network information'
-	 *		});
-	 *
-	 * @param {String} message Content of the notification.
-	 * @param {Object} [data={}] Additional data.
-	 * @param {String} [data.namespace] Additional event namespace.
-	 * @param {String} [data.title] Title of the notification.
-	 */
-	showInfo( message, data = {} ) {
-		this._showNotification( {
-			message,
-			type: 'info',
-			namespace: data.namespace,
-			title: data.title
-		} );
-	}
-
-	/**
-	 * Shows warning notification.
-	 *
-	 * At default it fires `show:warning` event with given data but event namespace can be extended
-	 * by `data.namespace` option e.g.
-	 *
-	 * 		showWarning( 'Image upload error.', {
-	 * 			namespace: 'upload:image'
-	 * 		} );
-	 *
-	 * will fire `show:warning:upload:image` event.
-	 * Title of the notification can be provided:
-	 *
-	 *		showWarning( 'Image upload error.', {
-	 *			title: 'Upload failed'
-	 *		});
-	 *
-	 * Note that each unhandled and not stopped `warning` notification will be displayed as system alert.
-	 * Plugin responsible for displaying warnings should `stop()` the event to prevent of displaying it as alert:
-	 *
-	 * 		notifications.on( 'show:warning', ( evt, data ) => {
-	 * 			// Do something with data.
-	 *
-	 * 			// Stop this event to prevent of displaying as alert.
-	 * 			evt.stop();
-	 * 		} );
-	 *
-	 * You can attach many listeners to the same event and `stop()` this event in the listener with the low priority:
-	 *
-	 * 		notifications.on( 'show:warning', ( evt, data ) => {
-	 * 			// Show warning in the UI, but not stop it.
-	 * 		} );
-	 *
-	 * 		notifications.on( 'show:warning', ( evt, data ) => {
-	 * 			// Log warning to some error tracker.
-	 *
-	 * 			// Stop this event to prevent of displaying as alert.
-	 * 			evt.stop();
-	 * 		}, { priority: 'low' } );
-	 *
-	 * @param {String} message Content of the notification.
-	 * @param {Object} [data={}] Additional data.
-	 * @param {String} [data.namespace] Additional event namespace.
-	 * @param {String} [data.title] Title of the notification.
-	 */
-	showWarning( message, data = {} ) {
-		this._showNotification( {
-			message,
-			type: 'warning',
-			namespace: data.namespace,
-			title: data.title
-		} );
-	}
-
-	/**
-	 * Fires `show` event with specified type, namespace and message.
-	 *
-	 * @private
-	 * @param {Object} data Message data.
-	 * @param {String} data.message Content of the notification.
-	 * @param {'success'|'info'|'warning'} data.type Type of message.
-	 * @param {String} [data.namespace] Additional event namespace.
-	 * @param {String} [data.title=''] Title of the notification.
-	 */
-	_showNotification( data ) {
-		const event = `show:${ data.type }` + ( data.namespace ? `:${ data.namespace }` : '' );
-
-		this.fire( event, {
-			message: data.message,
-			type: data.type,
-			title: data.title || ''
-		} );
-	}
-
-	/**
-	 * Fired when one of `showSuccess`, `showInfo`, `showWarning` methods is called.
-	 *
-	 * @event show
-	 * @param {Object} data Notification data.
-	 * @param {String} data.message Content of the notification.
-	 * @param {String} data.title Title of the notification.
-	 * @param {'success'|'info'|'warning'} data.type Type of notification.
-	 */
-
-	/**
-	 * Fired when `showSuccess` method is called.
-	 *
-	 * @event show:success
-	 * @param {Object} data Notification data.
-	 * @param {String} data.message Content of the notification.
-	 * @param {String} data.title Title of the notification.
-	 * @param {'success'} data.type Type of notification.
-	 */
-
-	/**
-	 * Fired when `showInfo` method is called.
-	 *
-	 * @event show:info
-	 * @param {Object} data Notification data.
-	 * @param {String} data.message Content of the notification.
-	 * @param {String} data.title Title of the notification.
-	 * @param {'info'} data.type Type of notification.
-	 */
-
-	/**
-	 * Fired when `showWarning` method is called.
-	 *
-	 * When this event won't be handled and stopped by `event.stop()` then data.message of this event will
-	 * be automatically displayed as system alert.
-	 *
-	 * @event show:warning
-	 * @param {Object} data Notification data.
-	 * @param {String} data.message Content of the notification.
-	 * @param {String} data.title Title of the notification.
-	 * @param {'warning'} data.type Type of notification.
-	 */
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imageupload/imageuploadediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/imageupload/imageuploadediting
- */
-
-
-
-
-
-
-/**
- * The editing part of the image upload feature.
- *
- * @extends module:core/plugin~Plugin
- */
-class imageuploadediting_ImageUploadEditing extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    static get requires() {
-        return [
-            filerepository_FileRepository,
-            notification_Notification
-        ];
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const doc = editor.model.document;
-        const schema = editor.model.schema;
-        const fileRepository = editor.plugins.get(filerepository_FileRepository);
-        // Setup schema to allow uploadId and uploadStatus for images.
-        schema.extend('image', {
-            allowAttributes: [
-                'uploadId',
-                'uploadStatus'
-            ]
-        });
-        // Register imageUpload command.
-        editor.commands.add('imageUpload', new imageuploadcommand_ImageUploadCommand(editor));
-        // Handle pasted images.
-        // For every image file, a new file loader is created and a placeholder image is
-        // inserted into the content. Then, those images are uploaded once they appear in the model
-        // (see Document#change listener below).
-        this.listenTo(editor.editing.view.document, 'clipboardInput', (evt, data) => {
-            // Skip if non empty HTML data is included.
-            // https://github.com/ckeditor/ckeditor5-upload/issues/68
-            if (isHtmlIncluded(data.dataTransfer)) {
-                return;
-            }
-            const images = Array.from(data.dataTransfer.files).filter(isImageType);
-            const targetModelSelection = new model_selection_Selection(data.targetRanges.map(viewRange => editor.editing.mapper.toModelRange(viewRange)));
-            editor.model.change(writer => {
-                // Set selection to paste target.
-                writer.setSelection(targetModelSelection);
-                if (images.length) {
-                    evt.stop();
-                    // Upload images after the selection has changed in order to ensure the command's state is refreshed.
-                    editor.model.enqueueChange('default', () => {
-                        editor.execute('imageUpload', { files: images });
-                    });
-                }
-            });
-        });
-        // Prevents from the browser redirecting to the dropped image.
-        editor.editing.view.document.on('dragover', (evt, data) => {
-            data.preventDefault();
-        });
-        // Upload placeholder images that appeared in the model.
-        doc.on('change', () => {
-            const changes = doc.differ.getChanges({ includeChangesInGraveyard: true });
-            for (const entry of changes) {
-                if (entry.type == 'insert' && entry.name == 'image') {
-                    const item = entry.position.nodeAfter;
-                    const isInGraveyard = entry.position.root.rootName == '$graveyard';
-                    // Check if the image element still has upload id.
-                    const uploadId = item.getAttribute('uploadId');
-                    if (!uploadId) {
-                        continue;
-                    }
-                    // Check if the image is loaded on this client.
-                    const loader = fileRepository.loaders.get(uploadId);
-                    if (!loader) {
-                        continue;
-                    }
-                    if (isInGraveyard) {
-                        // If the image was inserted to the graveyard - abort the loading process.
-                        loader.abort();
-                    } else if (loader.status == 'idle') {
-                        // If the image was inserted into content and has not been loaded yet, start loading it.
-                        this._readAndUpload(loader, item);
-                    }
-                }
-            }
-        });
-    }
-    /**
-	 * Read and upload an image.
-	 *
-	 * The image is read from the disk and as a base64 encoded string it is set temporarily to
-	 * `image[src]`. When the image is successfully uploaded the temporary data is replaced with the target
-	 * image's URL (the URL to the uploaded image on the server).
-	 *
-	 * @protected
-	 * @param {module:upload/filerepository~FileLoader} loader
-	 * @param {module:engine/model/element~Element} imageElement
-	 * @returns {Promise}
-	 */
-    _readAndUpload(loader, imageElement) {
-        const editor = this.editor;
-        const model = editor.model;
-        const t = editor.locale.t;
-        const fileRepository = editor.plugins.get(filerepository_FileRepository);
-        const notification = editor.plugins.get(notification_Notification);
-        model.enqueueChange('transparent', writer => {
-            writer.setAttribute('uploadStatus', 'reading', imageElement);
-        });
-        return loader.read().then(data => {
-            const viewFigure = editor.editing.mapper.toViewElement(imageElement);
-            const viewImg = viewFigure.getChild(0);
-            const promise = loader.upload();
-            editor.editing.view.change(writer => {
-                writer.setAttribute('src', data, viewImg);
-            });
-            model.enqueueChange('transparent', writer => {
-                writer.setAttribute('uploadStatus', 'uploading', imageElement);
-            });
-            return promise;
-        }).then(data => {
-            model.enqueueChange('transparent', writer => {
-                writer.setAttributes({
-                    uploadStatus: 'complete',
-                    src: data.default
-                }, imageElement);
-                // Srcset attribute for responsive images support.
-                let maxWidth = 0;
-                const srcsetAttribute = Object.keys(data)    // Filter out keys that are not integers.
-.filter(key => {
-                    const width = parseInt(key, 10);
-                    if (!isNaN(width)) {
-                        maxWidth = Math.max(maxWidth, width);
-                        return true;
-                    }
-                })    // Convert each key to srcset entry.
-.map(key => `${ data[key] } ${ key }w`)    // Join all entries.
-.join(', ');
-                if (srcsetAttribute != '') {
-                    writer.setAttribute('srcset', {
-                        data: srcsetAttribute,
-                        width: maxWidth
-                    }, imageElement);
-                }
-            });
-            clean();
-        }).catch(error => {
-            // If status is not 'error' nor 'aborted' - throw error because it means that something else went wrong,
-            // it might be generic error and it would be real pain to find what is going on.
-            if (loader.status !== 'error' && loader.status !== 'aborted') {
-                throw error;
-            }
-            // Might be 'aborted'.
-            if (loader.status == 'error') {
-                notification.showWarning(error, {
-                    title: t('n'),
-                    namespace: 'upload'
-                });
-            }
-            clean();
-            // Permanently remove image from insertion batch.
-            model.enqueueChange('transparent', writer => {
-                writer.remove(imageElement);
-            });
-        });
-        function clean() {
-            model.enqueueChange('transparent', writer => {
-                writer.removeAttribute('uploadId', imageElement);
-                writer.removeAttribute('uploadStatus', imageElement);
-            });
-            fileRepository.destroyLoader(loader);
-        }
-    }
-}
-// Returns `true` if non-empty `text/html` is included in the data transfer.
-//
-// @param {module:clipboard/datatransfer~DataTransfer} dataTransfer
-// @returns {Boolean}
-function isHtmlIncluded(dataTransfer) {
-    return Array.from(dataTransfer.types).includes('text/html') && dataTransfer.getData('text/html') !== '';
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imageupload.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imageupload
- */
-
-
-
-
-
-
-/**
- * The image upload plugin.
- *
- * For a detailed overview, check the {@glink features/image-upload image upload feature} documentation.
- *
- * This plugin does not do anything directly, but it loads a set of specific plugins to enable image uploading:
- *
- * * {@link module:image/imageupload/imageuploadediting~ImageUploadEditing},
- * * {@link module:image/imageupload/imageuploadui~ImageUploadUI},
- * * {@link module:image/imageupload/imageuploadprogress~ImageUploadProgress}.
- *
- * @extends module:core/plugin~Plugin
- */
-class imageupload_ImageUpload extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ImageUpload';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ imageuploadediting_ImageUploadEditing, imageuploadui_ImageUploadUI, imageuploadprogress_ImageUploadProgress ];
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-easy-image/src/easyimage.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module easy-image/easyimage
- */
-
-
-
-
-
-
-/**
- * The Easy Image feature.
- *
- * For a detailed overview, check the {@glink features/image-upload Image upload feature documentation}
- * and the {@glink api/easy-image package page}.
- *
- * After enabling the Easy Image plugin you need to configure the [CKEditor Cloud Services](https://ckeditor.com/ckeditor-cloud-services/)
- * integration through {@link module:cloud-services/cloudservices~CloudServicesConfig `config.cloudServices`}.
- *
- * This is a "glue" plugin which enables:
- *
- * * {@link module:image/image~Image},
- * * {@link module:image/imageupload~ImageUpload},
- * * {@link module:easy-image/cloudservicesuploadadapter~CloudServicesUploadAdapter}.
- *
- * @extends module:core/plugin~Plugin
- */
-class easyimage_EasyImage extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [
-			cloudservicesuploadadapter_CloudServicesUploadAdapter,
-			image_Image,
-			imageupload_ImageUpload
-		];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'EasyImage';
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-paragraph/src/paragraphcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module paragraph/paragraphcommand
- */
-
-
-
-
-/**
- * The paragraph command.
- *
- * @extends module:core/command~Command
- */
-class paragraphcommand_ParagraphCommand extends Command {
-	/**
-	 * The value of the command. Indicates whether the selection start is placed in a paragraph.
-	 *
-	 * @readonly
-	 * @observable
-	 * @member {Boolean} #value
-	 */
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const document = model.document;
-		const block = first_first( document.selection.getSelectedBlocks() );
-
-		this.value = !!block && block.is( 'paragraph' );
-		this.isEnabled = !!block && checkCanBecomeParagraph( block, model.schema );
-	}
-
-	/**
-	 * Executes the command. All the blocks (see {@link module:engine/model/schema~Schema}) in the selection
-	 * will be turned to paragraphs.
-	 *
-	 * @fires execute
-	 * @param {Object} [options] Options for the executed command.
-	 * @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} [options.selection]
-	 * The selection that the command should be applied to.
-	 * By default, if not provided, the command is applied to the {@link module:engine/model/document~Document#selection}.
-	 */
-	execute( options = {} ) {
-		const model = this.editor.model;
-		const document = model.document;
-
-		model.change( writer => {
-			const blocks = ( options.selection || document.selection ).getSelectedBlocks();
-
-			for ( const block of blocks ) {
-				if ( !block.is( 'paragraph' ) && checkCanBecomeParagraph( block, model.schema ) ) {
-					writer.rename( block, 'paragraph' );
-				}
-			}
-		} );
-	}
-}
-
-// Checks whether the given block can be replaced by a paragraph.
-//
-// @private
-// @param {module:engine/model/element~Element} block A block to be tested.
-// @param {module:engine/model/schema~Schema} schema The schema of the document.
-// @returns {Boolean}
-function checkCanBecomeParagraph( block, schema ) {
-	return schema.checkChild( block.parent, 'paragraph' ) && !schema.isObject( block );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-paragraph/src/paragraph.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module paragraph/paragraph
- */
-
-
-
-
-
-
-
-
-/**
- * The paragraph feature for the editor.
- *
- * It introduces the `<paragraph>` element in the model which renders as a `<p>` element in the DOM and data.
- *
- * @extends module:core/plugin~Plugin
- */
-class paragraph_Paragraph extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Paragraph';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const model = editor.model;
-		const data = editor.data;
-
-		editor.commands.add( 'paragraph', new paragraphcommand_ParagraphCommand( editor ) );
-
-		// Schema.
-		model.schema.register( 'paragraph', { inheritAllFrom: '$block' } );
-
-		editor.conversion.elementToElement( { model: 'paragraph', view: 'p' } );
-
-		// Content autoparagraphing. --------------------------------------------------
-
-		// Handles elements not converted by plugins and checks if would be converted if
-		// we wraps them by a paragraph or changes them to a paragraph.
-		data.upcastDispatcher.on( 'element', ( evt, data, conversionApi ) => {
-			// When element is already consumed by higher priority converters then do nothing.
-			if ( !conversionApi.consumable.test( data.viewItem, { name: data.viewItem.name } ) ) {
-				return;
-			}
-
-			// When element is paragraph-like lets try to change it into a paragraph.
-			if ( paragraph_Paragraph.paragraphLikeElements.has( data.viewItem.name ) ) {
-				if ( data.viewItem.isEmpty ) {
-					return;
-				}
-
-				const paragraph = conversionApi.writer.createElement( 'paragraph' );
-
-				// Find allowed parent for paragraph that we are going to insert.
-				// If current parent does not allow to insert paragraph but one of the ancestors does
-				// then split nodes to allowed parent.
-				const splitResult = conversionApi.splitToAllowedParent( paragraph, data.modelCursor );
-
-				// When there is no split result it means that we can't insert paragraph in this position.
-				if ( !splitResult ) {
-					return;
-				}
-
-				// Insert paragraph in allowed position.
-				conversionApi.writer.insert( paragraph, splitResult.position );
-
-				// Convert children to paragraph.
-				const { modelRange } = conversionApi.convertChildren( data.viewItem, model_position_Position.createAt( paragraph ) );
-
-				// Output range starts before paragraph but ends inside it after last child.
-				// This is because we want to keep siblings inside the same paragraph as long as it is possible.
-				// When next node won't be allowed in a paragraph it will split this paragraph anyway.
-				data.modelRange = new model_range_Range( model_position_Position.createBefore( paragraph ), modelRange.end );
-				data.modelCursor = data.modelRange.end;
-
-			// When element is not paragraph-like lets try to wrap it by a paragraph.
-			} else if ( isParagraphable( data.viewItem, data.modelCursor, conversionApi.schema ) ) {
-				data = Object.assign( data, wrapInParagraph( data.viewItem, data.modelCursor, conversionApi ) );
-			}
-		}, { priority: 'low' } );
-
-		// Handles not converted text nodes and checks if would be converted if we wraps then by a paragraph.
-		data.upcastDispatcher.on( 'text', ( evt, data, conversionApi ) => {
-			// When node is already converted then do nothing.
-			if ( data.modelRange ) {
-				return;
-			}
-
-			if ( isParagraphable( data.viewItem, data.modelCursor, conversionApi.schema ) ) {
-				data = Object.assign( data, wrapInParagraph( data.viewItem, data.modelCursor, conversionApi ) );
-			}
-		}, { priority: 'lowest' } );
-
-		// Empty roots autoparagraphing. -----------------------------------------------
-
-		// Post-fixer which takes care of adding empty paragraph elements to empty roots.
-		// Besides fixing content on #changesDone we also need to handle #dataReady because
-		// if initial data is empty or setData() wasn't even called there will be no #change fired.
-		model.document.registerPostFixer( writer => this._autoparagraphEmptyRoots( writer ) );
-
-		editor.on( 'dataReady', () => {
-			model.enqueueChange( 'transparent', writer => this._autoparagraphEmptyRoots( writer ) );
-		}, { priority: 'lowest' } );
-	}
-
-	/**
-	 * Fixes all empty roots.
-	 *
-	 * @private
-	 * @returns {Boolean} `true` if any change has been applied, `false` otherwise.
-	 */
-	_autoparagraphEmptyRoots( writer ) {
-		const model = this.editor.model;
-
-		for ( const rootName of model.document.getRootNames() ) {
-			const root = model.document.getRoot( rootName );
-
-			if ( root.isEmpty && root.rootName != '$graveyard' ) {
-				// If paragraph element is allowed in the root, create paragraph element.
-				if ( model.schema.checkChild( root, 'paragraph' ) ) {
-					writer.insertElement( 'paragraph', root );
-
-					return true;
-				}
-			}
-		}
-	}
-}
-
-/**
- * A list of element names which should be treated by the autoparagraphing algorithms as
- * paragraph-like. This means that e.g. the following content:
- *
- *		<h1>Foo</h1>
- *		<table>
- *			<tr>
- *				<td>X</td>
- *				<td>
- *					<ul>
- *						<li>Y</li>
- *						<li>Z</li>
- *					</ul>
- *				</td>
- *			</tr>
- *		</table>
- *
- * contains five paragraph-like elements: `<h1>`, two `<td>`s and two `<li>`s.
- * Hence, if none of the features is going to convert those elements the above content will be automatically handled
- * by the paragraph feature and converted to:
- *
- *		<p>Foo</p>
- *		<p>X</p>
- *		<p>Y</p>
- *		<p>Z</p>
- *
- * Note: The `<td>` containing two `<li>` elements was ignored as the innermost paragraph-like elements
- * have a priority upon conversion.
- *
- * @member {Set.<String>} module:paragraph/paragraph~Paragraph.paragraphLikeElements
- */
-paragraph_Paragraph.paragraphLikeElements = new Set( [
-	'blockquote',
-	'dd',
-	'div',
-	'dt',
-	'h1',
-	'h2',
-	'h3',
-	'h4',
-	'h5',
-	'h6',
-	'li',
-	'p',
-	'td'
-] );
-
-function wrapInParagraph( input, position, conversionApi ) {
-	const paragraph = conversionApi.writer.createElement( 'paragraph' );
-
-	conversionApi.writer.insert( paragraph, position );
-	return conversionApi.convertItem( input, model_position_Position.createAt( paragraph ) );
-}
-
-function isParagraphable( node, position, schema ) {
-	const context = new SchemaContext( position );
-
-	// When paragraph is allowed in this context...
-	if ( !schema.checkChild( context, 'paragraph' ) ) {
-		return false;
-	}
-
-	// And a node would be allowed in this paragraph...
-	if ( !schema.checkChild( context.push( 'paragraph' ), node ) ) {
-		return false;
-	}
-
-	return true;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-heading/src/headingcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module heading/headingcommand
- */
-
-
-
-
-/**
- * The heading command. It is used by the {@link module:heading/heading~Heading heading feature} to apply headings.
- *
- * @extends module:core/command~Command
- */
-class headingcommand_HeadingCommand extends Command {
-	/**
-	 * Creates an instance of the command.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor Editor instance.
-	 * @param {Array.<String>} modelElements Names of the element which this command can apply in the model.
-	 */
-	constructor( editor, modelElements ) {
-		super( editor );
-
-		/**
-		 * If the selection starts in a heading (which {@link #modelElements is supported by this command})
-		 * the value is set to the name of that heading model element.
-		 * It is  set to `false` otherwise.
-		 *
-		 * @observable
-		 * @readonly
-		 * @member {Boolean|String} #value
-		 */
-
-		/**
-		 * Set of defined model's elements names that this command support.
-		 * See {@link module:heading/heading~HeadingOption}.
-		 *
-		 * @readonly
-		 * @member {Array.<String>}
-		 */
-		this.modelElements = modelElements;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const block = first_first( this.editor.model.document.selection.getSelectedBlocks() );
-
-		this.value = !!block && this.modelElements.includes( block.name ) && block.name;
-		this.isEnabled = !!block && this.modelElements.some( heading => checkCanBecomeHeading( block, heading, this.editor.model.schema ) );
-	}
-
-	/**
-	 * Executes the command. Applies the heading to the selected blocks or, if the first selected
-	 * block is a heading already, turns selected headings (of this level only) to paragraphs.
-	 *
-	 * @param {Object} options
-	 * @param {String} options.value Name of the element which this command will apply in the model.
-	 * @fires execute
-	 */
-	execute( options ) {
-		const model = this.editor.model;
-		const document = model.document;
-
-		const modelElement = options.value;
-
-		model.change( writer => {
-			const blocks = Array.from( document.selection.getSelectedBlocks() )
-				.filter( block => {
-					return checkCanBecomeHeading( block, modelElement, model.schema );
-				} );
-
-			for ( const block of blocks ) {
-				if ( !block.is( modelElement ) ) {
-					writer.rename( block, modelElement );
-				}
-			}
-		} );
-	}
-}
-
-// Checks whether the given block can be replaced by a specific heading.
-//
-// @private
-// @param {module:engine/model/element~Element} block A block to be tested.
-// @param {module:heading/headingcommand~HeadingCommand#modelElement} heading Command element name in the model.
-// @param {module:engine/model/schema~Schema} schema The schema of the document.
-// @returns {Boolean}
-function checkCanBecomeHeading( block, heading, schema ) {
-	return schema.checkChild( block.parent, heading ) && !schema.isObject( block );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-heading/src/headingediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module heading/headingediting
- */
-
-
-
-
-
-const defaultModelElement = 'paragraph';
-
-/**
- * The headings engine feature. It handles switching between block formats &ndash; headings and paragraph.
- * This class represents the engine part of the heading feature. See also {@link module:heading/heading~Heading}.
- * It introduces `heading1`-`headingN` commands which allow to convert paragraphs into headings.
- *
- * @extends module:core/plugin~Plugin
- */
-class headingediting_HeadingEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( editor ) {
-		super( editor );
-
-		editor.config.define( 'heading', {
-			options: [
-				{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
-				{ model: 'heading1', view: 'h2', title: 'Heading 1', class: 'ck-heading_heading1' },
-				{ model: 'heading2', view: 'h3', title: 'Heading 2', class: 'ck-heading_heading2' },
-				{ model: 'heading3', view: 'h4', title: 'Heading 3', class: 'ck-heading_heading3' }
-			]
-		} );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ paragraph_Paragraph ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const options = editor.config.get( 'heading.options' );
-
-		const modelElements = [];
-
-		for ( const option of options ) {
-			// Skip paragraph - it is defined in required Paragraph feature.
-			if ( option.model !== defaultModelElement ) {
-				// Schema.
-				editor.model.schema.register( option.model, {
-					inheritAllFrom: '$block'
-				} );
-
-				editor.conversion.elementToElement( option );
-
-				modelElements.push( option.model );
-			}
-		}
-
-		// Register the heading command for this option.
-		editor.commands.add( 'heading', new headingcommand_HeadingCommand( editor, modelElements ) );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	afterInit() {
-		// If the enter command is added to the editor, alter its behavior.
-		// Enter at the end of a heading element should create a paragraph.
-		const editor = this.editor;
-		const enterCommand = editor.commands.get( 'enter' );
-		const options = editor.config.get( 'heading.options' );
-
-		if ( enterCommand ) {
-			this.listenTo( enterCommand, 'afterExecute', ( evt, data ) => {
-				const positionParent = editor.model.document.selection.getFirstPosition().parent;
-				const isHeading = options.some( option => positionParent.is( option.model ) );
-
-				if ( isHeading && !positionParent.is( defaultModelElement ) && positionParent.childCount === 0 ) {
-					data.writer.rename( positionParent, defaultModelElement );
-				}
-			} );
-		}
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/model.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/model
- */
-
-
-
-
-
-/**
- * The base MVC model class.
- *
- * @mixes module:utils/observablemixin~ObservableMixin
- */
-class src_model_Model {
-	/**
-	 * Creates a new Model instance.
-	 *
-	 * @param {Object} [attributes] The model state attributes to be defined during the instance creation.
-	 * @param {Object} [properties] The (out of state) properties to be appended to the instance during creation.
-	 */
-	constructor( attributes, properties ) {
-		// Extend this instance with the additional (out of state) properties.
-		if ( properties ) {
-			lodash_es_assignIn( this, properties );
-		}
-
-		// Initialize the attributes.
-		if ( attributes ) {
-			this.set( attributes );
-		}
-	}
-}
-
-mix( src_model_Model, observablemixin );
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/dropdown/dropdownpanelview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/dropdown/dropdownpanelview
- */
-
-
-
-/**
- * The dropdown panel view class.
- *
- * See {@link module:ui/dropdown/dropdownview~DropdownView} to learn about the common usage.
- *
- * @extends module:ui/view~View
- */
-class dropdownpanelview_DropdownPanelView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		const bind = this.bindTemplate;
-
-		/**
-		 * Controls whether the panel is visible.
-		 *
-		 * @observable
-		 * @member {Boolean} #isVisible
-		 */
-		this.set( 'isVisible', false );
-
-		/**
-		 * Collection of the child views in this panel.
-		 *
-		 * A common child type is the {@link module:ui/list/listview~ListView} and {@link module:ui/toolbar/toolbarview~ToolbarView}.
-		 * See {@link module:ui/dropdown/utils~addListToDropdown} and
-		 * {@link module:ui/dropdown/utils~addToolbarToDropdown} to learn more about child views of dropdowns.
-		 *
-		 * @readonly
-		 * @member {module:ui/viewcollection~ViewCollection}
-		 */
-		this.children = this.createCollection();
-
-		this.setTemplate( {
-			tag: 'div',
-
-			attributes: {
-				class: [
-					'ck',
-					'ck-reset',
-					'ck-dropdown__panel',
-					bind.if( 'isVisible', 'ck-dropdown__panel-visible' )
-				]
-			},
-
-			children: this.children,
-
-			on: {
-				// Drag and drop in the panel should not break the selection in the editor.
-				// https://github.com/ckeditor/ckeditor5-ui/issues/228
-				selectstart: bind.to( evt => evt.preventDefault() )
-			}
-		} );
-	}
-
-	/**
-	 * Focuses the view element or first item in view collection on opening dropdown's panel.
-	 *
-	 * See also {@link module:ui/dropdown/dropdownpanelfocusable~DropdownPanelFocusable}.
-	 */
-	focus() {
-		if ( this.children.length ) {
-			this.children.first.focus();
-		}
-	}
-
-	/**
-	 * Focuses the view element or last item in view collection on opening dropdown's panel.
-	 *
-	 * See also {@link module:ui/dropdown/dropdownpanelfocusable~DropdownPanelFocusable}.
-	 */
-	focusLast() {
-		if ( this.children.length ) {
-			const lastChild = this.children.last;
-
-			if ( typeof lastChild.focusLast === 'function' ) {
-				lastChild.focusLast();
-			} else {
-				lastChild.focus();
-			}
-		}
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/dropdown/dropdown.css
-var dropdown_dropdown = __webpack_require__(82);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/dropdown/dropdownview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/dropdown/dropdownview
- */
-
-
-
-
-
-
-
-/**
- * The dropdown view class. It manages the dropdown button and dropdown panel.
- *
- * In most cases, the easiest way to create a dropdown is by using the {@link module:ui/dropdown/utils~createDropdown}
- * util:
- *
- *		const dropdown = createDropdown( locale );
- *
- *		// Configure dropdown's button properties:
- *		dropdown.buttonView.set( {
- *			label: 'A dropdown',
- *			withText: true
- *		} );
- *
- *		dropdown.render();
- *
- *		dropdown.panelView.element.textContent = 'Content of the panel';
- *
- *		// Will render a dropdown with a panel containing a "Content of the panel" text.
- *		document.body.appendChild( dropdown.element );
- *
- * If you want to add a richer content to the dropdown panel, you can use the {@link module:ui/dropdown/utils~addListToDropdown}
- * and {@link module:ui/dropdown/utils~addToolbarToDropdown} helpers. See more examples in
- * {@link module:ui/dropdown/utils~createDropdown} documentation.
- *
- * If you want to create a completely custom dropdown, then you can compose it manually:
- *
- *		const button = new DropdownButtonView( locale );
- *		const panel = new DropdownPanelView( locale );
- *		const dropdown = new DropdownView( locale, button, panel );
- *
- *		button.set( {
- *			label: 'A dropdown',
- *			withText: true
- *		} );
- *
- *		dropdown.render();
- *
- *		panel.element.textContent = 'Content of the panel';
- *
- *		// Will render a dropdown with a panel containing a "Content of the panel" text.
- *		document.body.appendChild( dropdown.element );
- *
- * However, dropdown created this way will contain little behavior. You will need to implement handlers for actions
- * such as {@link module:ui/bindings/clickoutsidehandler~clickOutsideHandler clicking outside an open dropdown}
- * (which should close it) and support for arrow keys inside the panel. Therefore, unless you really know what
- * you do and you really need to do it, it is recommended to use the {@link module:ui/dropdown/utils~createDropdown} helper.
- *
- * @extends module:ui/view~View
- */
-class dropdownview_DropdownView extends src_view_View {
-	/**
-	 * Creates an instance of the dropdown.
-	 *
-	 * Also see {@link #render}.
-	 *
-	 * @param {module:utils/locale~Locale} [locale] The localization services instance.
-	 * @param {module:ui/dropdown/button/dropdownbutton~DropdownButton} buttonView
-	 * @param {module:ui/dropdown/dropdownpanelview~DropdownPanelView} panelView
-	 */
-	constructor( locale, buttonView, panelView ) {
-		super( locale );
-
-		const bind = this.bindTemplate;
-
-		/**
-		 * Button of the dropdown view. Clicking the button opens the {@link #panelView}.
-		 *
-		 * @readonly
-		 * @member {module:ui/button/buttonview~ButtonView} #buttonView
-		 */
-		this.buttonView = buttonView;
-
-		/**
-		 * Panel of the dropdown. It opens when the {@link #buttonView} is
-		 * {@link module:ui/button/buttonview~ButtonView#event:execute executed} (i.e. clicked).
-		 *
-		 * Child views can be added to the panel's `children` collection:
-		 *
-		 *		dropdown.panelView.children.add( childView );
-		 *
-		 * See {@link module:ui/dropdown/dropdownpanelview~DropdownPanelView#children} and
-		 * {@link module:ui/viewcollection~ViewCollection#add}.
-		 *
-		 * @readonly
-		 * @member {module:ui/dropdown/dropdownpanelview~DropdownPanelView} #panelView
-		 */
-		this.panelView = panelView;
-
-		/**
-		 * Controls whether the dropdown view is open, i.e. shows or hides the {@link #panelView panel}.
-		 *
-		 * @observable
-		 * @member {Boolean} #isOpen
-		 */
-		this.set( 'isOpen', false );
-
-		/**
-		 * Controls whether the dropdown is enabled, i.e. it can be clicked and execute an action.
-		 *
-		 * See {@link module:ui/button/buttonview~ButtonView#isEnabled}.
-		 *
-		 * @observable
-		 * @member {Boolean} #isEnabled
-		 */
-		this.set( 'isEnabled', true );
-
-		/**
-		 * Tracks information about DOM focus in the dropdown.
-		 *
-		 * @readonly
-		 * @member {module:utils/focustracker~FocusTracker}
-		 */
-		this.focusTracker = new focustracker_FocusTracker();
-
-		/**
-		 * Instance of the {@link module:utils/keystrokehandler~KeystrokeHandler}. It manages
-		 * keystrokes of the dropdown:
-		 *
-		 * * <kbd>▼</kbd> opens the dropdown,
-		 * * <kbd>◀</kbd> and <kbd>Esc</kbd> closes the dropdown.
-		 *
-		 * @readonly
-		 * @member {module:utils/keystrokehandler~KeystrokeHandler}
-		 */
-		this.keystrokes = new keystrokehandler_KeystrokeHandler();
-
-		this.setTemplate( {
-			tag: 'div',
-
-			attributes: {
-				class: [
-					'ck',
-					'ck-dropdown',
-					bind.if( 'isEnabled', 'ck-disabled', value => !value )
-				]
-			},
-
-			children: [
-				buttonView,
-				panelView
-			]
-		} );
-
-		buttonView.extendTemplate( {
-			attributes: {
-				class: [
-					'ck-dropdown__button',
-				]
+				input: bind.to( 'input' )
 			}
 		} );
 
 		/**
-		 * A child {@link module:ui/list/listview~ListView list view} of the dropdown located
-		 * in its {@link module:ui/dropdown/dropdownview~DropdownView#panelView panel}.
+		 * Fired when the user types in the input. Corresponds to the native
+		 * DOM `input` event.
 		 *
-		 * **Note**: Only supported when dropdown has list view added using {@link module:ui/dropdown/utils~addListToDropdown}.
-		 *
-		 * @readonly
-		 * @member {module:ui/list/listview~ListView} #listView
-		 */
-
-		/**
-		 * A child toolbar of the dropdown located in the
-		 * {@link module:ui/dropdown/dropdownview~DropdownView#panelView panel}.
-		 *
-		 * **Note**: Only supported when dropdown has list view added using {@link module:ui/dropdown/utils~addToolbarToDropdown}.
-		 *
-		 * @readonly
-		 * @member {module:ui/toolbar/toolbarview~ToolbarView} #toolbarView
-		 */
-
-		/**
-		 * Fired when the toolbar button or list item is executed.
-		 *
-		 * For {@link #listView} It fires when a child of some {@link module:ui/list/listitemview~ListItemView}
-		 * fired `execute`.
-		 *
-		 * For {@link #toolbarView} It fires when one of the buttons has been
-		 * {@link module:ui/button/buttonview~ButtonView#event:execute executed}.
-		 *
-		 * **Note**: Only supported when dropdown has list view added using {@link module:ui/dropdown/utils~addListToDropdown}
-		 * or {@link module:ui/dropdown/utils~addToolbarToDropdown}.
-		 *
-		 * @event execute
+		 * @event input
 		 */
 	}
 
@@ -65244,3554 +53367,96 @@ class dropdownview_DropdownView extends src_view_View {
 	render() {
 		super.render();
 
-		// Toggle the dropdown when its button has been clicked.
-		this.listenTo( this.buttonView, 'open', () => {
-			this.isOpen = !this.isOpen;
-		} );
-
-		// Toggle the visibility of the panel when the dropdown becomes open.
-		this.panelView.bind( 'isVisible' ).to( this, 'isOpen' );
-
-		// Listen for keystrokes coming from within #element.
-		this.keystrokes.listenTo( this.element );
-
-		// Register #element in the focus tracker.
-		this.focusTracker.add( this.element );
-
-		const closeDropdown = ( data, cancel ) => {
-			if ( this.isOpen ) {
-				this.buttonView.focus();
-				this.isOpen = false;
-				cancel();
-			}
+		const setValue = value => {
+			this.element.value = ( !value && value !== 0 ) ? '' : value;
 		};
 
-		// Open the dropdown panel using the arrow down key, just like with return or space.
-		this.keystrokes.set( 'arrowdown', ( data, cancel ) => {
-			// Don't open if the dropdown is disabled or already open.
-			if ( this.buttonView.isEnabled && !this.isOpen ) {
-				this.isOpen = true;
-				cancel();
-			}
-		} );
+		setValue( this.value );
 
-		// Block the right arrow key (until nested dropdowns are implemented).
-		this.keystrokes.set( 'arrowright', ( data, cancel ) => {
-			if ( this.isOpen ) {
-				cancel();
-			}
+		// Bind `this.value` to the DOM element's value.
+		// We cannot use `value` DOM attribute because removing it on Edge does not clear the DOM element's value property.
+		this.on( 'change:value', ( evt, name, value ) => {
+			setValue( value );
 		} );
-
-		// Close the dropdown using the arrow left/escape key.
-		this.keystrokes.set( 'arrowleft', closeDropdown );
-		this.keystrokes.set( 'esc', closeDropdown );
 	}
 
 	/**
-	 * Focuses the {@link #buttonView}.
+	 * Moves the focus to the input and selects the value.
+	 */
+	select() {
+		this.element.select();
+	}
+
+	/**
+	 * Focuses the input.
 	 */
 	focus() {
-		this.buttonView.focus();
+		this.element.focus();
 	}
 }
 
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/icons/dropdown-arrow.svg
-var dropdown_arrow = __webpack_require__(29);
-var dropdown_arrow_default = /*#__PURE__*/__webpack_require__.n(dropdown_arrow);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/dropdown/button/dropdownbuttonview.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/bindings/submithandler.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module ui/dropdown/button/dropdownbuttonview
+ * @module ui/bindings/submithandler
  */
 
-
-
-
-
-
-/**
- * The default dropdown button view class.
- *
- *		const view = new DropdownButtonView();
- *
- *		view.set( {
- *			label: 'A button',
- *			keystroke: 'Ctrl+B',
- *			tooltip: true
- *		} );
- *
- *		view.render();
- *
- *		document.body.append( view.element );
- *
- * Also see the {@link module:ui/dropdown/utils~createDropdown `createDropdown()` util}.
- *
- * @implements module:ui/dropdown/button/dropdownbutton~DropdownButton
- * @extends module:ui/button/buttonview~ButtonView
- */
-class dropdownbuttonview_DropdownButtonView extends buttonview_ButtonView {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		/**
-		 * An icon that displays arrow to indicate a dropdown button.
-		 *
-		 * @readonly
-		 * @member {module:ui/icon/iconview~IconView}
-		 */
-		this.arrowView = this._createArrowView();
-
-		this.extendTemplate( {
-			attributes: {
-				'aria-haspopup': true
-			}
-		} );
-
-		// The DropdownButton interface expects the open event upon which will open the dropdown.
-		this.delegate( 'execute' ).to( this, 'open' );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	render() {
-		super.render();
-
-		this.children.add( this.arrowView );
-	}
-
-	/**
-	 * Creates a {@link module:ui/icon/iconview~IconView} instance as {@link #arrowView}.
-	 *
-	 * @private
-	 * @returns {module:ui/icon/iconview~IconView}
-	 */
-	_createArrowView() {
-		const arrowView = new iconview_IconView();
-
-		arrowView.content = dropdown_arrow_default.a;
-
-		arrowView.extendTemplate( {
-			attributes: {
-				class: 'ck-dropdown__arrow'
-			}
-		} );
-
-		return arrowView;
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/list/list.css
-var list = __webpack_require__(84);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/list/listview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/list/listview
- */
-
-
-
-
-
-
-
-
-/**
- * The list view class.
- *
- * @extends module:ui/view~View
- * @implements module:ui/dropdown/dropdownpanelfocusable~DropdownPanelFocusable
- */
-class listview_ListView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor() {
-		super();
-
-		/**
-		 * Collection of the child list views.
-		 *
-		 * @readonly
-		 * @member {module:ui/viewcollection~ViewCollection}
-		 */
-		this.items = this.createCollection();
-
-		/**
-		 * Tracks information about DOM focus in the list.
-		 *
-		 * @readonly
-		 * @member {module:utils/focustracker~FocusTracker}
-		 */
-		this.focusTracker = new focustracker_FocusTracker();
-
-		/**
-		 * Instance of the {@link module:utils/keystrokehandler~KeystrokeHandler}.
-		 *
-		 * @readonly
-		 * @member {module:utils/keystrokehandler~KeystrokeHandler}
-		 */
-		this.keystrokes = new keystrokehandler_KeystrokeHandler();
-
-		/**
-		 * Helps cycling over focusable {@link #items} in the list.
-		 *
-		 * @readonly
-		 * @protected
-		 * @member {module:ui/focuscycler~FocusCycler}
-		 */
-		this._focusCycler = new FocusCycler( {
-			focusables: this.items,
-			focusTracker: this.focusTracker,
-			keystrokeHandler: this.keystrokes,
-			actions: {
-				// Navigate list items backwards using the arrowup key.
-				focusPrevious: 'arrowup',
-
-				// Navigate toolbar items forwards using the arrowdown key.
-				focusNext: 'arrowdown',
-			}
-		} );
-
-		this.setTemplate( {
-			tag: 'ul',
-
-			attributes: {
-				class: [
-					'ck',
-					'ck-reset',
-					'ck-list'
-				]
-			},
-
-			children: this.items
-		} );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	render() {
-		super.render();
-
-		// Items added before rendering should be known to the #focusTracker.
-		for ( const item of this.items ) {
-			this.focusTracker.add( item.element );
-		}
-
-		this.items.on( 'add', ( evt, item ) => {
-			this.focusTracker.add( item.element );
-		} );
-
-		this.items.on( 'remove', ( evt, item ) => {
-			this.focusTracker.remove( item.element );
-		} );
-
-		// Start listening for the keystrokes coming from #element.
-		this.keystrokes.listenTo( this.element );
-	}
-
-	/**
-	 * Focuses the first focusable in {@link #items}.
-	 */
-	focus() {
-		this._focusCycler.focusFirst();
-	}
-
-	/**
-	 * Focuses the last focusable in {@link #items}.
-	 */
-	focusLast() {
-		this._focusCycler.focusLast();
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/list/listitemview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/list/listitemview
- */
-
-
-
-/**
- * The list item view class.
- *
- * @extends module:ui/view~View
- */
-class listitemview_ListItemView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		/**
-		 * Collection of the child views inside of the list item {@link #element}.
-		 *
-		 * @readonly
-		 * @member {module:ui/viewcollection~ViewCollection}
-		 */
-		this.children = this.createCollection();
-
-		this.setTemplate( {
-			tag: 'li',
-
-			attributes: {
-				class: [
-					'ck',
-					'ck-list__item'
-				]
-			},
-
-			children: this.children
-		} );
-	}
-
-	/**
-	 * Focuses the list item.
-	 */
-	focus() {
-		this.children.first.focus();
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/list/listseparatorview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/list/listseparatorview
- */
-
-
-
-/**
- * The list separator view class.
- *
- * @extends module:ui/view~View
- */
-class listseparatorview_ListSeparatorView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		this.setTemplate( {
-			tag: 'li',
-			attributes: {
-				class: [
-					'ck',
-					'ck-list__separator'
-				]
-			}
-		} );
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/button/switchbutton.css
-var switchbutton = __webpack_require__(86);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/button/switchbuttonview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/button/switchbuttonview
- */
-
-
-
-
-
-
-/**
- * The switch button view class.
- *
- *		const view = new SwitchButtonView();
- *
- *		view.set( {
- *			withText: true,
- *			label: 'Switch me!'
- *		} );
- *
- *		view.render();
- *
- *		document.body.append( view.element );
- *
- * @extends module:ui/buttonview~ButtonView
- */
-class switchbuttonview_SwitchButtonView extends buttonview_ButtonView {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		/**
-		 * The toggle switch of the button.
-		 *
-		 * @readonly
-		 * @member {module:ui/view~View} #toggleSwitchView
-		 */
-		this.toggleSwitchView = this._createToggleView();
-
-		this.extendTemplate( {
-			attributes: {
-				class: 'ck-switchbutton'
-			}
-		} );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	render() {
-		super.render();
-
-		this.children.add( this.toggleSwitchView );
-	}
-
-	/**
-	 * Creates a toggle child view.
-	 *
-	 * @private
-	 * @returns {module:ui/view~View}
-	 */
-	_createToggleView() {
-		const toggleSwitchView = new src_view_View();
-
-		toggleSwitchView.setTemplate( {
-			tag: 'span',
-
-			attributes: {
-				class: [
-					'ck',
-					'ck-button__toggle'
-				],
-			},
-
-			children: [
-				{
-					tag: 'span',
-
-					attributes: {
-						class: [
-							'ck',
-							'ck-button__toggle__inner'
-						],
-					}
-				}
-			]
-		} );
-
-		return toggleSwitchView;
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/dropdown/toolbardropdown.css
-var toolbardropdown = __webpack_require__(88);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/dropdown/listdropdown.css
-var listdropdown = __webpack_require__(90);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/dropdown/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module ui/dropdown/utils
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * A helper for creating dropdowns. It creates an instance of a {@link module:ui/dropdown/dropdownview~DropdownView dropdown},
- * with a {@link module:ui/dropdown/button/dropdownbutton~DropdownButton button},
- * {@link module:ui/dropdown/dropdownpanelview~DropdownPanelView panel} and all standard dropdown's behaviors.
- *
- * # Creating dropdowns
- *
- * By default, the default {@link module:ui/dropdown/button/dropdownbuttonview~DropdownButtonView} class is used as
- * definition of the button:
- *
- *		const dropdown = createDropdown( model );
- *
- *		// Configure dropdown's button properties:
- *		dropdown.buttonView.set( {
- *			label: 'A dropdown',
- *			withText: true
- *		} );
- *
- *		dropdown.render();
- *
- *		// Will render a dropdown labeled "A dropdown" with an empty panel.
- *		document.body.appendChild( dropdown.element );
- *
- * You can also provide other button views (they need to implement the
- * {@link module:ui/dropdown/button/dropdownbutton~DropdownButton} interface). For instance, you can use
- * {@link module:ui/dropdown/button/splitbuttonview~SplitButtonView} to create a dropdown with a split button.
- *
- *		const dropdown = createDropdown( model, SplitButtonView );
- *
- *		// Configure dropdown's button properties:
- *		dropdown.buttonView.set( {
- *			label: 'A dropdown',
- *			withText: true
- *		} );
- *
- *		dropdown.buttonView.on( 'execute', () => {
- *			// Add the behavior of the "action part" of the split button.
- *			// Split button consists of the "action part" and "arrow part".
- *			// The arrow opens the dropdown while the action part can have some other behavior.
- * 		} );
- *
- *		dropdown.render();
- *
- *		// Will render a dropdown labeled "A dropdown" with an empty panel.
- *		document.body.appendChild( dropdown.element );
- *
- * # Adding content to the dropdown's panel
- *
- * The content of the panel can be inserted directly into the `dropdown.panelView.element`:
- *
- *		dropdown.panelView.element.textContent = 'Content of the panel';
- *
- * However, most of the time you will want to add there either a {@link module:ui/list/listview~ListView list of options}
- * or a list of buttons (i.e. a {@link module:ui/toolbar/toolbarview~ToolbarView toolbar}).
- * To simplify the task, you can use, respectively, {@link module:ui/dropdown/utils~addListToDropdown} or
- * {@link module:ui/dropdown/utils~addToolbarToDropdown} utils.
- *
- * @param {module:utils/locale~Locale} locale The locale instance.
- * @param {Function} ButtonClass The dropdown button view class. Needs to implement the
- * {@link module:ui/dropdown/button/dropdownbutton~DropdownButton} interface.
- * @returns {module:ui/dropdown/dropdownview~DropdownView} The dropdown view instance.
- */
-function createDropdown( locale, ButtonClass = dropdownbuttonview_DropdownButtonView ) {
-	const buttonView = new ButtonClass( locale );
-
-	const panelView = new dropdownpanelview_DropdownPanelView( locale );
-	const dropdownView = new dropdownview_DropdownView( locale, buttonView, panelView );
-
-	buttonView.bind( 'isEnabled' ).to( dropdownView );
-
-	if ( buttonView instanceof dropdownbuttonview_DropdownButtonView ) {
-		buttonView.bind( 'isOn' ).to( dropdownView, 'isOpen' );
-	} else {
-		buttonView.arrowView.bind( 'isOn' ).to( dropdownView, 'isOpen' );
-	}
-
-	addDefaultBehavior( dropdownView );
-
-	return dropdownView;
-}
-
-/**
- * Adds an instance of {@link module:ui/toolbar/toolbarview~ToolbarView} to a dropdown.
- *
- *		const buttons = [];
- *
- *		// Either create a new ButtonView instance or create existing.
- *		buttons.push( new ButtonView() );
- *		buttons.push( editor.ui.componentFactory.get( 'someButton' ) );
- *
- *		const dropdown = createDropdown( locale );
- *
- *		addToolbarToDropdown( dropdown, buttons );
- *
- *		dropdown.toolbarView.isVertical = true;
- *
- *		// Will render a vertical button dropdown labeled "A button dropdown"
- *		// with a button group in the panel containing two buttons.
- *		dropdown.render()
- *		document.body.appendChild( dropdown.element );
- *
- * See {@link module:ui/dropdown/utils~createDropdown} and {@link module:ui/toolbar/toolbarview~ToolbarView}.
- *
- * @param {module:ui/dropdown/dropdownview~DropdownView} dropdownView A dropdown instance to which `ToolbarView` will be added.
- * @param {Iterable.<module:ui/button/buttonview~ButtonView>} buttons
- */
-function addToolbarToDropdown( dropdownView, buttons ) {
-	const toolbarView = dropdownView.toolbarView = new toolbarview_ToolbarView();
-
-	dropdownView.extendTemplate( {
-		attributes: {
-			class: [ 'ck-toolbar-dropdown' ]
-		}
-	} );
-
-	buttons.map( view => toolbarView.items.add( view ) );
-
-	dropdownView.panelView.children.add( toolbarView );
-	toolbarView.items.delegate( 'execute' ).to( dropdownView );
-}
-
-/**
- * Adds an instance of {@link module:ui/list/listview~ListView} to a dropdown.
- *
- *		const items = new Collection();
- *
- *		items.add( {
- *			type: 'button',
- *			model: new Model( { label: 'First item', labelStyle: 'color: red' } )
- *		} );
- *
- *		items.add( {
- *			 type: 'button',
- *			 model: new Model( { label: 'Second item', labelStyle: 'color: green', class: 'foo' } )
- * 		} );
- *
- *		const dropdown = createDropdown( locale );
- *
- *		addListToDropdown( dropdown, items );
- *
- *		// Will render a dropdown with a list in the panel containing two items.
- *		dropdown.render()
- *		document.body.appendChild( dropdown.element );
- *
- * The `items` collection passed to this methods controls the presence and attributes of respective
- * {@link module:ui/list/listitemview~ListItemView list items}.
- *
- *
- * See {@link module:ui/dropdown/utils~createDropdown} and {@link module:list/list~List}.
- *
- * @param {module:ui/dropdown/dropdownview~DropdownView} dropdownView A dropdown instance to which `ListVIew` will be added.
- * @param {Iterable.<module:ui/dropdown/utils~ListDropdownItemDefinition>} items
- * A collection of the list item definitions to populate the list.
- */
-function addListToDropdown( dropdownView, items ) {
-	const locale = dropdownView.locale;
-	const listView = dropdownView.listView = new listview_ListView( locale );
-
-	listView.items.bindTo( items ).using( ( { type, model } ) => {
-		if ( type === 'separator' ) {
-			return new listseparatorview_ListSeparatorView( locale );
-		} else if ( type === 'button' || type === 'switchbutton' ) {
-			const listItemView = new listitemview_ListItemView( locale );
-			let buttonView;
-
-			if ( type === 'button' ) {
-				buttonView = new buttonview_ButtonView( locale );
-			} else {
-				buttonView = new switchbuttonview_SwitchButtonView( locale );
-			}
-
-			// Bind all model properties to the button view.
-			buttonView.bind( ...Object.keys( model ) ).to( model );
-			buttonView.delegate( 'execute' ).to( listItemView );
-
-			listItemView.children.add( buttonView );
-
-			return listItemView;
-		}
-	} );
-
-	dropdownView.panelView.children.add( listView );
-
-	listView.items.delegate( 'execute' ).to( dropdownView );
-}
-
-// Add a set of default behaviors to dropdown view.
-//
-// @param {module:ui/dropdown/dropdownview~DropdownView} dropdownView
-function addDefaultBehavior( dropdownView ) {
-	closeDropdownOnBlur( dropdownView );
-	closeDropdownOnExecute( dropdownView );
-	focusDropdownContentsOnArrows( dropdownView );
-}
-
-// Adds a behavior to a dropdownView that closes opened dropdown when user clicks outside the dropdown.
-//
-// @param {module:ui/dropdown/dropdownview~DropdownView} dropdownView
-function closeDropdownOnBlur( dropdownView ) {
-	dropdownView.on( 'render', () => {
-		clickOutsideHandler( {
-			emitter: dropdownView,
-			activator: () => dropdownView.isOpen,
-			callback: () => {
-				dropdownView.isOpen = false;
-			},
-			contextElements: [ dropdownView.element ]
-		} );
-	} );
-}
-
-// Adds a behavior to a dropdownView that closes the dropdown view on "execute" event.
-//
-// @param {module:ui/dropdown/dropdownview~DropdownView} dropdownView
-function closeDropdownOnExecute( dropdownView ) {
-	// Close the dropdown when one of the list items has been executed.
-	dropdownView.on( 'execute', evt => {
-		// Toggling a switch button view should not close the dropdown.
-		if ( evt.source instanceof switchbuttonview_SwitchButtonView ) {
-			return;
-		}
-
-		dropdownView.isOpen = false;
-	} );
-}
-
-// Adds a behavior to a dropdownView that focuses the dropdown's panel view contents on keystrokes.
-//
-// @param {module:ui/dropdown/dropdownview~DropdownView} dropdownView
-function focusDropdownContentsOnArrows( dropdownView ) {
-	// If the dropdown panel is already open, the arrow down key should focus the first child of the #panelView.
-	dropdownView.keystrokes.set( 'arrowdown', ( data, cancel ) => {
-		if ( dropdownView.isOpen ) {
-			dropdownView.panelView.focus();
-			cancel();
-		}
-	} );
-
-	// If the dropdown panel is already open, the arrow up key should focus the last child of the #panelView.
-	dropdownView.keystrokes.set( 'arrowup', ( data, cancel ) => {
-		if ( dropdownView.isOpen ) {
-			dropdownView.panelView.focusLast();
-			cancel();
-		}
-	} );
-}
-
-/**
- * A definition of the list item used by the {@link module:ui/dropdown/utils~addListToDropdown}
- * utility.
- *
- * @typedef {Object} module:ui/dropdown/utils~ListDropdownItemDefinition
- *
- * @property {String} type Either `'separator'`, `'button'` or `'switchbutton'`.
- * @property {module:ui/model~Model} [model] Model of the item (when **not** `'separator'`).
- * Its properties fuel the newly created list item (or its children, depending on the `type`).
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-heading/src/utils.js
-/**
- * Returns heading options as defined in `config.heading.options` but processed to consider
- * editor localization, i.e. to display {@link module:heading/heading~HeadingOption}
- * in the correct language.
- *
- * Note: The reason behind this method is that there's no way to use {@link module:utils/locale~Locale#t}
- * when the user config is defined because the editor does not exist yet.
- *
- * @param {module:core/editor/editor~Editor} editor
- * @returns {Array.<module:heading/heading~HeadingOption>}.
- */
-function getLocalizedOptions(editor) {
-    const t = editor.t;
-    const localizedTitles = {
-        Paragraph: t('ar'),
-        'Heading 1': t('as'),
-        'Heading 2': t('at'),
-        'Heading 3': t('au')
-    };
-    return editor.config.get('heading.options').map(option => {
-        const title = localizedTitles[option.title];
-        if (title && title != option.title) {
-            // Clone the option to avoid altering the original `config.heading.options`.
-            option = Object.assign({}, option, { title });
-        }
-        return option;
-    });
-}
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-heading/theme/heading.css
-var heading = __webpack_require__(17);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-heading/src/headingui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module heading/headingui
- */
-
-
-
-
-
-
-/**
- * The headings UI feature. It introduces the `headings` dropdown.
- *
- * @extends module:core/plugin~Plugin
- */
-class headingui_HeadingUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const t = editor.t;
-        const options = getLocalizedOptions(editor);
-        const defaultTitle = t('k');
-        const dropdownTooltip = t('l');
-        // Register UI component.
-        editor.ui.componentFactory.add('heading', locale => {
-            const titles = {};
-            const itemDefinitions = new collection_Collection();
-            const headingCommand = editor.commands.get('heading');
-            const paragraphCommand = editor.commands.get('paragraph');
-            const commands = [headingCommand];
-            for (const option of options) {
-                const def = {
-                    type: 'button',
-                    model: new src_model_Model({
-                        label: option.title,
-                        class: option.class,
-                        withText: true
-                    })
-                };
-                if (option.model === 'paragraph') {
-                    def.model.bind('isOn').to(paragraphCommand, 'value');
-                    def.model.set('commandName', 'paragraph');
-                    commands.push(paragraphCommand);
-                } else {
-                    def.model.bind('isOn').to(headingCommand, 'value', value => value === option.model);
-                    def.model.set({
-                        commandName: 'heading',
-                        commandValue: option.model
-                    });
-                }
-                // Add the option to the collection.
-                itemDefinitions.add(def);
-                titles[option.model] = option.title;
-            }
-            const dropdownView = createDropdown(locale);
-            addListToDropdown(dropdownView, itemDefinitions);
-            dropdownView.buttonView.set({
-                isOn: false,
-                withText: true,
-                tooltip: dropdownTooltip
-            });
-            dropdownView.extendTemplate({ attributes: { class: ['ck-heading-dropdown'] } });
-            dropdownView.bind('isEnabled').toMany(commands, 'isEnabled', (...areEnabled) => {
-                return areEnabled.some(isEnabled => isEnabled);
-            });
-            dropdownView.buttonView.bind('label').to(headingCommand, 'value', paragraphCommand, 'value', (value, para) => {
-                const whichModel = value || para && 'paragraph';
-                // If none of the commands is active, display default title.
-                return titles[whichModel] ? titles[whichModel] : defaultTitle;
-            });
-            // Execute command when an item from the dropdown is selected.
-            this.listenTo(dropdownView, 'execute', evt => {
-                editor.execute(evt.source.commandName, evt.source.commandValue ? { value: evt.source.commandValue } : undefined);
-                editor.editing.view.focus();
-            });
-            return dropdownView;
-        });
-    }
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-heading/src/heading.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module heading/heading
- */
-
-
-
-
-
-
-
-/**
- * The headings feature.
- *
- * For a detailed overview, check the {@glink features/headings Headings feature documentation}
- * and the {@glink api/heading package page}.
- *
- * This is a "glue" plugin which loads the {@link module:heading/headingediting~HeadingEditing heading editing feature}
- * and {@link module:heading/headingui~HeadingUI heading UI feature}.
- *
- * @extends module:core/plugin~Plugin
- */
-class heading_Heading extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ headingediting_HeadingEditing, headingui_HeadingUI ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Heading';
-	}
-}
-
-/**
- * The configuration of the heading feature. Introduced by the {@link module:heading/headingediting~HeadingEditing} feature.
- *
- * Read more in {@link module:heading/heading~HeadingConfig}.
- *
- * @member {module:heading/heading~HeadingConfig} module:core/editor/editorconfig~EditorConfig#heading
- */
-
-/**
- * The configuration of the heading feature.
- * The option is used by the {@link module:heading/headingediting~HeadingEditing} feature.
- *
- *		ClassicEditor
- *			.create( {
- * 				heading: ... // Heading feature config.
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface HeadingConfig
- */
-
-/**
- * The available heading options.
- *
- * The default value is:
- *
- *		const headingConfig = {
- *			options: [
- *				{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
- *				{ model: 'heading1', view: 'h2', title: 'Heading 1', class: 'ck-heading_heading1' },
- *				{ model: 'heading2', view: 'h3', title: 'Heading 2', class: 'ck-heading_heading2' },
- *				{ model: 'heading3', view: 'h4', title: 'Heading 3', class: 'ck-heading_heading3' }
- *			]
- *		};
- *
- * It defines 3 levels of headings. In the editor model they will use `heading1`, `heading2`, and `heading3` elements.
- * Their respective view elements (so the elements output by the editor) will be: `h2`, `h3`, and `h4`. This means that
- * if you choose "Heading 1" in the headings dropdown the editor will turn the current block to `<heading1>` in the model
- * which will result in rendering (and outputting to data) the `<h2>` element.
- *
- * The `title` and `class` properties will be used by the `headings` dropdown to render available options.
- * Usually, the first option in the headings dropdown is the "Paragraph" option, hence it's also defined on the list.
- * However, you don't need to define its view representation because it's handled by
- * the {@link module:paragraph/paragraph~Paragraph} feature (which is required by
- * the {@link module:heading/headingediting~HeadingEditing} feature).
- *
- * You can **read more** about configuring heading levels and **see more examples** in
- * the {@glink features/headings Headings} guide.
- *
- * Note: In the model you should always start from `heading1`, regardless of how the headings are represented in the view.
- * That's assumption is used by features like {@link module:autoformat/autoformat~Autoformat} to know which element
- * they should use when applying the first level heading.
- *
- * The defined headings are also available as values passed to the `'heading'` command under their model names.
- * For example, the below code will apply `<heading1>` to the current selection:
- *
- *		editor.execute( 'heading', { value: 'heading1' } );
- *
- * @member {Array.<module:heading/heading~HeadingOption>} module:heading/heading~HeadingConfig#options
- */
-
-/**
- * Heading option descriptor.
- *
- * @typedef {Object} module:heading/heading~HeadingOption
- * @property {String} model Name of the model element to convert.
- * @property {module:engine/view/elementdefinition~ElementDefinition} view Definition of a view element to convert from/to.
- * @property {String} title The user-readable title of the option.
- * @property {String} class The class which will be added to the dropdown item representing this option.
- * @property {String} [icon] Icon used by {@link module:heading/headingbuttonsui~HeadingButtonsUI}. It can be omitted when using
- * the default configuration.
- * @extends module:engine/conversion/conversion~ConverterDefinition
- */
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-engine/theme/placeholder.css
-var theme_placeholder = __webpack_require__(93);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/view/placeholder.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module engine/view/placeholder
- */
-
-
-
-// Each document stores information about its placeholder elements and check functions.
-const documentPlaceholders = new WeakMap();
-
-/**
- * Attaches placeholder to provided element and updates it's visibility. To change placeholder simply call this method
- * once again with new parameters.
- *
- * @param {module:engine/view/view~View} view View controller.
- * @param {module:engine/view/element~Element} element Element to attach placeholder to.
- * @param {String} placeholderText Placeholder text to use.
- * @param {Function} [checkFunction] If provided it will be called before checking if placeholder should be displayed.
- * If function returns `false` placeholder will not be showed.
- */
-function attachPlaceholder( view, element, placeholderText, checkFunction ) {
-	const document = view.document;
-
-	// Single listener per document.
-	if ( !documentPlaceholders.has( document ) ) {
-		documentPlaceholders.set( document, new Map() );
-
-		// Create view post-fixer that will add placeholder where needed.
-		document.registerPostFixer( writer => updateAllPlaceholders( document, writer ) );
-	}
-
-	// Store information about element with placeholder.
-	documentPlaceholders.get( document ).set( element, {
-		placeholderText,
-		checkFunction
-	} );
-
-	// Update view right away.
-	view.render();
-}
-
-/**
- * Removes placeholder functionality from given element.
- *
- * @param {module:engine/view/view~View} view
- * @param {module:engine/view/element~Element} element
- */
-function detachPlaceholder( view, element ) {
-	const doc = element.document;
-
-	view.change( writer => {
-		if ( documentPlaceholders.has( doc ) ) {
-			documentPlaceholders.get( doc ).delete( element );
-		}
-
-		writer.removeClass( 'ck-placeholder', element );
-		writer.removeAttribute( 'data-placeholder', element );
-	} );
-}
-
-// Updates all placeholders of given document.
-//
-// @private
-// @param {module:engine/view/document~Document} view
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-function updateAllPlaceholders( document, writer ) {
-	const placeholders = documentPlaceholders.get( document );
-	let changed = false;
-
-	for ( const [ element, info ] of placeholders ) {
-		if ( updateSinglePlaceholder( writer, element, info ) ) {
-			changed = true;
-		}
-	}
-
-	return changed;
-}
-
-// Updates placeholder class of given element.
-//
-// @private
-// @param {module:engine/view/downcastwriter~DowncastWriter} writer
-// @param {module:engine/view/element~Element} element
-// @param {Object} info
-function updateSinglePlaceholder( writer, element, info ) {
-	const document = element.document;
-	const text = info.placeholderText;
-	let changed = false;
-
-	// Element was removed from document.
-	if ( !document ) {
-		return false;
-	}
-
-	// Update data attribute if needed.
-	if ( element.getAttribute( 'data-placeholder' ) !== text ) {
-		writer.setAttribute( 'data-placeholder', text, element );
-		changed = true;
-	}
-
-	const viewSelection = document.selection;
-	const anchor = viewSelection.anchor;
-	const checkFunction = info.checkFunction;
-
-	// If checkFunction is provided and returns false - remove placeholder.
-	if ( checkFunction && !checkFunction() ) {
-		if ( element.hasClass( 'ck-placeholder' ) ) {
-			writer.removeClass( 'ck-placeholder', element );
-			changed = true;
-		}
-
-		return changed;
-	}
-
-	// Element is empty for placeholder purposes when it has no children or only ui elements.
-	// This check is taken from `view.ContainerElement#getFillerOffset`.
-	const isEmptyish = !Array.from( element.getChildren() ).some( element => !element.is( 'uiElement' ) );
-
-	// If element is empty and editor is blurred.
-	if ( !document.isFocused && isEmptyish ) {
-		if ( !element.hasClass( 'ck-placeholder' ) ) {
-			writer.addClass( 'ck-placeholder', element );
-			changed = true;
-		}
-
-		return changed;
-	}
-
-	// It there are no child elements and selection is not placed inside element.
-	if ( isEmptyish && anchor && anchor.parent !== element ) {
-		if ( !element.hasClass( 'ck-placeholder' ) ) {
-			writer.addClass( 'ck-placeholder', element );
-			changed = true;
-		}
-	} else {
-		if ( element.hasClass( 'ck-placeholder' ) ) {
-			writer.removeClass( 'ck-placeholder', element );
-			changed = true;
-		}
-	}
-
-	return changed;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagecaption/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagecaption/utils
- */
-
-
-
-
-
-const captionSymbol = Symbol( 'imageCaption' );
-
-/**
- * Returns a function that creates a caption editable element for the given {@link module:engine/view/document~Document}.
- *
- * @param {module:engine/view/view~View} view
- * @param {String} placeholderText The text to be displayed when the caption is empty.
- * @returns {Function}
- */
-function captionElementCreator( view, placeholderText ) {
-	return writer => {
-		const editable = writer.createEditableElement( 'figcaption' );
-		writer.setCustomProperty( captionSymbol, true, editable );
-		attachPlaceholder( view, editable, placeholderText );
-
-		return toWidgetEditable( editable, writer );
-	};
-}
-
-/**
- * Returns `true` if a given view element is the image caption editable.
- *
- * @param {module:engine/view/element~Element} viewElement
- * @returns {Boolean}
- */
-function isCaption( viewElement ) {
-	return !!viewElement.getCustomProperty( captionSymbol );
-}
-
-/**
- * Returns the caption model element from a given image element. Returns `null` if no caption is found.
- *
- * @param {module:engine/model/element~Element} imageModelElement
- * @returns {module:engine/model/element~Element|null}
- */
-function getCaptionFromImage( imageModelElement ) {
-	for ( const node of imageModelElement.getChildren() ) {
-		if ( node instanceof model_element_Element && node.name == 'caption' ) {
-			return node;
-		}
-	}
-
-	return null;
-}
-
-/**
- * {@link module:engine/view/matcher~Matcher} pattern. Checks if a given element is a `<figcaption>` element that is placed
- * inside the image `<figure>` element.
- *
- * @param {module:engine/view/element~Element} element
- * @returns {Object|null} Returns the object accepted by {@link module:engine/view/matcher~Matcher} or `null` if the element
- * cannot be matched.
- */
-function matchImageCaption( element ) {
-	const parent = element.parent;
-
-	// Convert only captions for images.
-	if ( element.name == 'figcaption' && parent && parent.name == 'figure' && parent.hasClass( 'image' ) ) {
-		return { name: true };
-	}
-
-	return null;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagecaption/imagecaptionediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/imagecaption/imagecaptionediting
- */
-
-
-
-
-
-/**
- * The image caption engine plugin.
- *
- * It registers proper converters. It takes care of adding a caption element if the image without it is inserted
- * to the model document.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagecaptionediting_ImageCaptionEditing extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const view = editor.editing.view;
-        const schema = editor.model.schema;
-        const data = editor.data;
-        const editing = editor.editing;
-        const t = editor.t;
-        /**
-		 * The last selected caption editable.
-		 * It is used for hiding the editable when it is empty and the image widget is no longer selected.
-		 *
-		 * @private
-		 * @member {module:engine/view/editableelement~EditableElement} #_lastSelectedCaption
-		 */
-        // Schema configuration.
-        schema.register('caption', {
-            allowIn: 'image',
-            allowContentOf: '$block',
-            isLimit: true
-        });
-        // Add caption element to each image inserted without it.
-        editor.model.document.registerPostFixer(writer => this._insertMissingModelCaptionElement(writer));
-        // View to model converter for the data pipeline.
-        editor.conversion.for('upcast').add(upcastElementToElement({
-            view: matchImageCaption,
-            model: 'caption'
-        }));
-        // Model to view converter for the data pipeline.
-        const createCaptionForData = writer => writer.createContainerElement('figcaption');
-        data.downcastDispatcher.on('insert:caption', captionModelToView(createCaptionForData, false));
-        // Model to view converter for the editing pipeline.
-        const createCaptionForEditing = captionElementCreator(view, t('ah'));
-        editing.downcastDispatcher.on('insert:caption', captionModelToView(createCaptionForEditing));
-        // Always show caption in view when something is inserted in model.
-        editing.downcastDispatcher.on('insert', this._fixCaptionVisibility(data => data.item), { priority: 'high' });
-        // Hide caption when everything is removed from it.
-        editing.downcastDispatcher.on('remove', this._fixCaptionVisibility(data => data.position.parent), { priority: 'high' });
-        // Update caption visibility on view in post fixer.
-        view.document.registerPostFixer(writer => this._updateCaptionVisibility(writer));
-    }
-    /**
-	 * Updates the view before each rendering, making sure that empty captions (so unnecessary ones) are hidden
-	 * and then visible when the image is selected.
-	 *
-	 * @private
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} viewWriter
-	 * @returns {Boolean} Returns `true` when the view is updated.
-	 */
-    _updateCaptionVisibility(viewWriter) {
-        const mapper = this.editor.editing.mapper;
-        const lastCaption = this._lastSelectedCaption;
-        let viewCaption;
-        // If whole image is selected.
-        const modelSelection = this.editor.model.document.selection;
-        const selectedElement = modelSelection.getSelectedElement();
-        if (selectedElement && selectedElement.is('image')) {
-            const modelCaption = getCaptionFromImage(selectedElement);
-            viewCaption = mapper.toViewElement(modelCaption);
-        }
-        // If selection is placed inside caption.
-        const position = modelSelection.getFirstPosition();
-        const modelCaption = getParentCaption(position.parent);
-        if (modelCaption) {
-            viewCaption = mapper.toViewElement(modelCaption);
-        }
-        // Is currently any caption selected?
-        if (viewCaption) {
-            // Was any caption selected before?
-            if (lastCaption) {
-                // Same caption as before?
-                if (lastCaption === viewCaption) {
-                    return showCaption(viewCaption, viewWriter);
-                } else {
-                    hideCaptionIfEmpty(lastCaption, viewWriter);
-                    this._lastSelectedCaption = viewCaption;
-                    return showCaption(viewCaption, viewWriter);
-                }
-            } else {
-                this._lastSelectedCaption = viewCaption;
-                return showCaption(viewCaption, viewWriter);
-            }
-        } else {
-            // Was any caption selected before?
-            if (lastCaption) {
-                const viewModified = hideCaptionIfEmpty(lastCaption, viewWriter);
-                this._lastSelectedCaption = null;
-                return viewModified;
-            } else {
-                return false;
-            }
-        }
-    }
-    /**
-	 * Returns a converter that fixes caption visibility during the model-to-view conversion.
-	 * Checks if the changed node is placed inside the caption element and fixes its visibility in the view.
-	 *
-	 * @private
-	 * @param {Function} nodeFinder
-	 * @returns {Function}
-	 */
-    _fixCaptionVisibility(nodeFinder) {
-        return (evt, data, conversionApi) => {
-            const node = nodeFinder(data);
-            const modelCaption = getParentCaption(node);
-            const mapper = this.editor.editing.mapper;
-            const viewWriter = conversionApi.writer;
-            if (modelCaption) {
-                const viewCaption = mapper.toViewElement(modelCaption);
-                if (viewCaption) {
-                    if (modelCaption.childCount) {
-                        viewWriter.removeClass('ck-hidden', viewCaption);
-                    } else {
-                        viewWriter.addClass('ck-hidden', viewCaption);
-                    }
-                }
-            }
-        };
-    }
-    /**
-	 * Checks whether the data inserted to the model document have an image element that has no caption element inside it.
-	 * If there is none, it adds it to the image element.
-	 *
-	 * @private
-	 * @param {module:engine/model/writer~Writer} writer The writer to make changes with.
-	 * @returns {Boolean} `true` if any change was applied, `false` otherwise.
-	 */
-    _insertMissingModelCaptionElement(writer) {
-        const model = this.editor.model;
-        const changes = model.document.differ.getChanges();
-        for (const entry of changes) {
-            if (entry.type == 'insert' && entry.name == 'image') {
-                const item = entry.position.nodeAfter;
-                if (!getCaptionFromImage(item)) {
-                    writer.appendElement('caption', item);
-                    return true;
-                }
-            }
-        }
-    }
-}
-// Creates a converter that converts image caption model element to view element.
-//
-// @private
-// @param {Function} elementCreator
-// @param {Boolean} [hide=true] When set to `false` view element will not be inserted when it's empty.
-// @returns {Function}
-function captionModelToView(elementCreator, hide = true) {
-    return (evt, data, conversionApi) => {
-        const captionElement = data.item;
-        // Return if element shouldn't be present when empty.
-        if (!captionElement.childCount && !hide) {
-            return;
-        }
-        if (isImage(captionElement.parent)) {
-            if (!conversionApi.consumable.consume(data.item, 'insert')) {
-                return;
-            }
-            const viewImage = conversionApi.mapper.toViewElement(data.range.start.parent);
-            const viewCaption = elementCreator(conversionApi.writer);
-            const viewWriter = conversionApi.writer;
-            // Hide if empty.
-            if (!captionElement.childCount) {
-                viewWriter.addClass('ck-hidden', viewCaption);
-            }
-            insertViewCaptionAndBind(viewCaption, data.item, viewImage, conversionApi);
-        }
-    };
-}
-// Inserts `viewCaption` at the end of `viewImage` and binds it to `modelCaption`.
-//
-// @private
-// @param {module:engine/view/containerelement~ContainerElement} viewCaption
-// @param {module:engine/model/element~Element} modelCaption
-// @param {module:engine/view/containerelement~ContainerElement} viewImage
-// @param {Object} conversionApi
-function insertViewCaptionAndBind(viewCaption, modelCaption, viewImage, conversionApi) {
-    const viewPosition = position_Position.createAt(viewImage, 'end');
-    conversionApi.writer.insert(viewPosition, viewCaption);
-    conversionApi.mapper.bindElements(modelCaption, viewCaption);
-}
-// Checks if the provided node or one of its ancestors is a caption element, and returns it.
-//
-// @private
-// @param {module:engine/model/node~Node} node
-// @returns {module:engine/model/element~Element|null}
-function getParentCaption(node) {
-    const ancestors = node.getAncestors({ includeSelf: true });
-    const caption = ancestors.find(ancestor => ancestor.name == 'caption');
-    if (caption && caption.parent && caption.parent.name == 'image') {
-        return caption;
-    }
-    return null;
-}
-// Hides a given caption in the view if it is empty.
-//
-// @private
-// @param {module:engine/view/containerelement~ContainerElement} caption
-// @param {module:engine/view/downcastwriter~DowncastWriter} viewWriter
-// @returns {Boolean} Returns `true` if the view was modified.
-function hideCaptionIfEmpty(caption, viewWriter) {
-    if (!caption.childCount && !caption.hasClass('ck-hidden')) {
-        viewWriter.addClass('ck-hidden', caption);
-        return true;
-    }
-    return false;
-}
-// Shows the caption.
-//
-// @private
-// @param {module:engine/view/containerelement~ContainerElement} caption
-// @param {module:engine/view/downcastwriter~DowncastWriter} viewWriter
-// @returns {Boolean} Returns `true` if the view was modified.
-function showCaption(caption, viewWriter) {
-    if (caption.hasClass('ck-hidden')) {
-        viewWriter.removeClass('ck-hidden', caption);
-        return true;
-    }
-    return false;
-}
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/imagecaption.css
-var imagecaption = __webpack_require__(95);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagecaption.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagecaption
- */
-
-
-
-
-
-
-/**
- * The image caption plugin.
- *
- * For a detailed overview, check the {@glink features/image#image-captions image caption} documentation.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagecaption_ImageCaption extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ imagecaptionediting_ImageCaptionEditing ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ImageCaption';
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagestyle/imagestylecommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagestyle/imagestylecommand
- */
-
-
-
-
-/**
- * The image style command. It is used to apply different image styles.
- *
- * @extends module:core/command~Command
- */
-class imagestylecommand_ImageStyleCommand extends Command {
-	/**
-	 * Creates an instance of the image style command. Each command instance is handling one style.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor The editor instance.
-	 * @param {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>} styles The styles that this command supports.
-	 */
-	constructor( editor, styles ) {
-		super( editor );
-
-		/**
-		 * The cached name of the default style if it is present. If there is no default style, it defaults to `false`.
-		 *
-		 * @type {Boolean|String}
-		 * @private
-		 */
-		this._defaultStyle = false;
-
-		/**
-		 * A style handled by this command.
-		 *
-		 * @readonly
-		 * @member {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>} #styles
-		 */
-		this.styles = styles.reduce( ( styles, style ) => {
-			styles[ style.name ] = style;
-
-			if ( style.isDefault ) {
-				this._defaultStyle = style.name;
-			}
-
-			return styles;
-		}, {} );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const element = this.editor.model.document.selection.getSelectedElement();
-
-		this.isEnabled = isImage( element );
-
-		if ( !element ) {
-			this.value = false;
-		} else if ( element.hasAttribute( 'imageStyle' ) ) {
-			const attributeValue = element.getAttribute( 'imageStyle' );
-			this.value = this.styles[ attributeValue ] ? attributeValue : false;
-		} else {
-			this.value = this._defaultStyle;
-		}
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 *		editor.execute( 'imageStyle', { value: 'side' } );
-	 *
-	 * @param {Object} options
-	 * @param {String} options.value The name of the style (based on the
-	 * {@link module:image/image~ImageConfig#styles `image.styles`} configuration option).
-	 * @fires execute
-	 */
-	execute( options ) {
-		const styleName = options.value;
-
-		const model = this.editor.model;
-		const imageElement = model.document.selection.getSelectedElement();
-
-		model.change( writer => {
-			// Default style means that there is no `imageStyle` attribute in the model.
-			// https://github.com/ckeditor/ckeditor5-image/issues/147
-			if ( this.styles[ styleName ].isDefault ) {
-				writer.removeAttribute( 'imageStyle', imageElement );
-			} else {
-				writer.setAttribute( 'imageStyle', styleName, imageElement );
-			}
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagestyle/converters.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-
-
-/**
- * @module image/imagestyle/converters
- */
-
-/**
- * Returns a converter for the `imageStyle` attribute. It can be used for adding, changing and removing the attribute.
- *
- * @param {Object} styles An object containing available styles. See {@link module:image/imagestyle/imagestyleediting~ImageStyleFormat}
- * for more details.
- * @returns {Function} A model-to-view attribute converter.
- */
-function modelToViewStyleAttribute( styles ) {
-	return ( evt, data, conversionApi ) => {
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		// Check if there is class name associated with given value.
-		const newStyle = getStyleByName( data.attributeNewValue, styles );
-		const oldStyle = getStyleByName( data.attributeOldValue, styles );
-
-		const viewElement = conversionApi.mapper.toViewElement( data.item );
-		const viewWriter = conversionApi.writer;
-
-		if ( oldStyle ) {
-			viewWriter.removeClass( oldStyle.className, viewElement );
-		}
-
-		if ( newStyle ) {
-			viewWriter.addClass( newStyle.className, viewElement );
-		}
-	};
-}
-
 /**
- * Returns a view-to-model converter converting image CSS classes to a proper value in the model.
- *
- * @param {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>} styles The styles for which the converter is created.
- * @returns {Function} A view-to-model converter.
- */
-function viewToModelStyleAttribute( styles ) {
-	// Convert only non–default styles.
-	const filteredStyles = styles.filter( style => !style.isDefault );
-
-	return ( evt, data, conversionApi ) => {
-		if ( !data.modelRange ) {
-			return;
-		}
-
-		const viewFigureElement = data.viewItem;
-		const modelImageElement = first_first( data.modelRange.getItems() );
-
-		// Check if `imageStyle` attribute is allowed for current element.
-		if ( !conversionApi.schema.checkAttribute( modelImageElement, 'imageStyle' ) ) {
-			return;
-		}
-
-		// Convert style one by one.
-		for ( const style of filteredStyles ) {
-			// Try to consume class corresponding with style.
-			if ( conversionApi.consumable.consume( viewFigureElement, { classes: style.className } ) ) {
-				// And convert this style to model attribute.
-				conversionApi.writer.setAttribute( 'imageStyle', style.name, modelImageElement );
-			}
-		}
-	};
-}
-
-// Returns the style with a given `name` from an array of styles.
-//
-// @param {String} name
-// @param {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat> } styles
-// @returns {module:image/imagestyle/imagestyleediting~ImageStyleFormat|undefined}
-function getStyleByName( name, styles ) {
-	for ( const style of styles ) {
-		if ( style.name === name ) {
-			return style;
-		}
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/object-full-width.svg
-var object_full_width = __webpack_require__(13);
-var object_full_width_default = /*#__PURE__*/__webpack_require__.n(object_full_width);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/object-left.svg
-var object_left = __webpack_require__(14);
-var object_left_default = /*#__PURE__*/__webpack_require__.n(object_left);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/object-center.svg
-var object_center = __webpack_require__(15);
-var object_center_default = /*#__PURE__*/__webpack_require__.n(object_center);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/object-right.svg
-var object_right = __webpack_require__(10);
-var object_right_default = /*#__PURE__*/__webpack_require__.n(object_right);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagestyle/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagestyle/utils
- */
-
-
-
-
-
-
-
-
-/**
- * Default image styles provided by the plugin that can be referred in the
- * {@link module:image/image~ImageConfig#styles} configuration.
- *
- * Among them, 2 default semantic content styles are available:
- *
- * * `full` is a full–width image without any CSS class,
- * * `side` is a side image styled with the `image-style-side` CSS class.
- *
- * There are also 3 styles focused on formatting:
- *
- * * `alignLeft` aligns the image to the left using the `image-style-align-left` class,
- * * `alignCenter` centers the image using the `image-style-align-center` class,
- * * `alignRight` aligns the image to the right using the `image-style-align-right` class,
- *
- * @member {Object.<String,Object>}
- */
-const defaultStyles = {
-	// This option is equal to the situation when no style is applied.
-	full: {
-		name: 'full',
-		title: 'Full size image',
-		icon: object_full_width_default.a,
-		isDefault: true
-	},
-
-	// This represents a side image.
-	side: {
-		name: 'side',
-		title: 'Side image',
-		icon: object_right_default.a,
-		className: 'image-style-side'
-	},
-
-	// This style represents an image aligned to the left.
-	alignLeft: {
-		name: 'alignLeft',
-		title: 'Left aligned image',
-		icon: object_left_default.a,
-		className: 'image-style-align-left'
-	},
-
-	// This style represents a centered image.
-	alignCenter: {
-		name: 'alignCenter',
-		title: 'Centered image',
-		icon: object_center_default.a,
-		className: 'image-style-align-center'
-	},
-
-	// This style represents an image aligned to the right.
-	alignRight: {
-		name: 'alignRight',
-		title: 'Right aligned image',
-		icon: object_right_default.a,
-		className: 'image-style-align-right'
-	}
-};
-
-/**
- * Default image style icons provided by the plugin that can be referred in the
- * {@link module:image/image~ImageConfig#styles} configuration.
- *
- * There are 4 icons available: `'full'`, `'left'`, `'center'` and `'right'`.
- *
- * @member {Object.<String, String>}
- */
-const defaultIcons = {
-	full: object_full_width_default.a,
-	left: object_left_default.a,
-	right: object_right_default.a,
-	center: object_center_default.a
-};
-
-/**
- * Returns a {@link module:image/image~ImageConfig#styles} array with items normalized in the
- * {@link module:image/imagestyle/imagestyleediting~ImageStyleFormat} format and a complete `icon` markup for each style.
- *
- * @returns {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>}
- */
-function normalizeImageStyles( configuredStyles = [] ) {
-	return configuredStyles
-		.map( _normalizeStyle )
-		.map( style => Object.assign( {}, style ) );
-}
-
-// Normalizes an image style provided in the {@link module:image/image~ImageConfig#styles}
-// and returns it in a {@link module:image/imagestyle/imagestyleediting~ImageStyleFormat}.
-//
-// @param {Object} style
-// @returns {@link module:image/imagestyle/imagestyleediting~ImageStyleFormat}
-function _normalizeStyle( style ) {
-	// Just the name of the style has been passed.
-	if ( typeof style == 'string' ) {
-		const styleName = style;
-
-		// If it's one of the defaults, just use it.
-		if ( defaultStyles[ styleName ] ) {
-			// Clone the style to avoid overriding defaults.
-			style = Object.assign( {}, defaultStyles[ styleName ] );
-		}
-		// If it's just a name but none of the defaults, warn because probably it's a mistake.
-		else {
-			log["a" /* default */].warn(
-				'image-style-not-found: There is no such image style of given name.',
-				{ name: styleName }
-			);
-
-			// Normalize the style anyway to prevent errors.
-			style = {
-				name: styleName
-			};
-		}
-	}
-	// If an object style has been passed and if the name matches one of the defaults,
-	// extend it with defaults – the user wants to customize a default style.
-	// Note: Don't override the user–defined style object, clone it instead.
-	else if ( defaultStyles[ style.name ] ) {
-		const defaultStyle = defaultStyles[ style.name ];
-		const extendedStyle = Object.assign( {}, style );
-
-		for ( const prop in defaultStyle ) {
-			if ( !style.hasOwnProperty( prop ) ) {
-				extendedStyle[ prop ] = defaultStyle[ prop ];
-			}
-		}
-
-		style = extendedStyle;
-	}
-
-	// If an icon is defined as a string and correspond with a name
-	// in default icons, use the default icon provided by the plugin.
-	if ( typeof style.icon == 'string' && defaultIcons[ style.icon ] ) {
-		style.icon = defaultIcons[ style.icon ];
-	}
-
-	return style;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagestyle/imagestyleediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagestyle/imagestyleediting
- */
-
-
-
-
-
-
-
-/**
- * The image style engine plugin. It sets the default configuration, creates converters and registers
- * {@link module:image/imagestyle/imagestylecommand~ImageStyleCommand ImageStyleCommand}.
- *
- * @extends {module:core/plugin~Plugin}
- */
-class imagestyleediting_ImageStyleEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ imageediting_ImageEditing ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ImageStyleEditing';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const schema = editor.model.schema;
-		const data = editor.data;
-		const editing = editor.editing;
-
-		// Define default configuration.
-		editor.config.define( 'image.styles', [ 'full', 'side' ] );
-
-		// Get configuration.
-		const styles = normalizeImageStyles( editor.config.get( 'image.styles' ) );
-
-		// Allow imageStyle attribute in image.
-		// We could call it 'style' but https://github.com/ckeditor/ckeditor5-engine/issues/559.
-		schema.extend( 'image', { allowAttributes: 'imageStyle' } );
-
-		// Converters for imageStyle attribute from model to view.
-		const modelToViewConverter = modelToViewStyleAttribute( styles );
-		editing.downcastDispatcher.on( 'attribute:imageStyle:image', modelToViewConverter );
-		data.downcastDispatcher.on( 'attribute:imageStyle:image', modelToViewConverter );
-
-		// Converter for figure element from view to model.
-		data.upcastDispatcher.on( 'element:figure', viewToModelStyleAttribute( styles ), { priority: 'low' } );
-
-		// Register imageStyle command.
-		editor.commands.add( 'imageStyle', new imagestylecommand_ImageStyleCommand( editor, styles ) );
-	}
-}
-
-/**
- * The image style format descriptor.
- *
- *		import fullSizeIcon from 'path/to/icon.svg';
- *
- *		const imageStyleFormat = {
- *			name: 'fullSize',
- *			icon: fullSizeIcon,
- *			title: 'Full size image',
- *			className: 'image-full-size'
- *		}
- *
- * @typedef {Object} module:image/imagestyle/imagestyleediting~ImageStyleFormat
- *
- * @property {String} name The unique name of the style. It will be used to:
- *
- * * Store the chosen style in the model by setting the `imageStyle` attribute of the `<image>` element.
- * * As a value of the {@link module:image/imagestyle/imagestylecommand~ImageStyleCommand#execute `imageStyle` command},
- * * when registering a button for each of the styles (`'imageStyle:{name}'`) in the
- * {@link module:ui/componentfactory~ComponentFactory UI components factory} (this functionality is provided by the
- * {@link module:image/imagestyle/imagestyleui~ImageStyleUI} plugin).
- *
- * @property {Boolean} [isDefault] When set, the style will be used as the default one.
- * A default style does not apply any CSS class to the view element.
- *
- * @property {String} icon One of the following to be used when creating the style's button:
- *
- * * An SVG icon source (as an XML string).
- * * One of {@link module:image/imagestyle/utils~defaultIcons} to use a default icon provided by the plugin.
- *
- * @property {String} title The style's title.
- *
- * @property {String} className The CSS class used to represent the style in the view.
- */
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-image/theme/imagestyle.css
-var imagestyle = __webpack_require__(97);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagestyle/imagestyleui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module image/imagestyle/imagestyleui
- */
-
-
-
-
-/**
- * The image style UI plugin.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagestyleui_ImageStyleUI extends Plugin {
-    /**
-	 * Returns the default localized style titles provided by the plugin.
-	 *
-	 * The following localized titles corresponding with
-	 * {@link module:image/imagestyle/utils~defaultStyles} are available:
-	 *
-	 * * `'Full size image'`,
-	 * * `'Side image'`,
-	 * * `'Left aligned image'`,
-	 * * `'Centered image'`,
-	 * * `'Right aligned image'`
-	 *
-	 * @returns {Object.<String,String>}
-	 */
-    get localizedDefaultStylesTitles() {
-        const t = this.editor.t;
-        return {
-            'Full size image': t('f'),
-            'Side image': t('g'),
-            'Left aligned image': t('h'),
-            'Centered image': t('i'),
-            'Right aligned image': t('j')
-        };
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const configuredStyles = editor.config.get('image.styles');
-        const translatedStyles = translateStyles(normalizeImageStyles(configuredStyles), this.localizedDefaultStylesTitles);
-        for (const style of translatedStyles) {
-            this._createButton(style);
-        }
-    }
-    /**
-	 * Creates a button for each style and stores it in the editor {@link module:ui/componentfactory~ComponentFactory ComponentFactory}.
-	 *
-	 * @private
-	 * @param {module:image/imagestyle/imagestyleediting~ImageStyleFormat} style
-	 */
-    _createButton(style) {
-        const editor = this.editor;
-        const componentName = `imageStyle:${ style.name }`;
-        editor.ui.componentFactory.add(componentName, locale => {
-            const command = editor.commands.get('imageStyle');
-            const view = new buttonview_ButtonView(locale);
-            view.set({
-                label: style.title,
-                icon: style.icon,
-                tooltip: true
-            });
-            view.bind('isEnabled').to(command, 'isEnabled');
-            view.bind('isOn').to(command, 'value', value => value === style.name);
-            this.listenTo(view, 'execute', () => editor.execute('imageStyle', { value: style.name }));
-            return view;
-        });
-    }
-}
-/**
- * Returns the translated `title` from the passed styles array.
- *
- * @param {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>} styles
- * @param titles
- * @returns {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>}
- */
-function translateStyles(styles, titles) {
-    for (const style of styles) {
-        // Localize the titles of the styles, if a title corresponds with
-        // a localized default provided by the plugin.
-        if (titles[style.title]) {
-            style.title = titles[style.title];
-        }
-    }
-    return styles;
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagestyle.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagestyle
- */
-
-
-
-
-
-/**
- * The image style plugin.
- *
- * For a detailed overview, check the {@glink features/image#image-styles image styles} documentation.
- *
- * This is a "glue" plugin which loads the {@link module:image/imagestyle/imagestyleediting~ImageStyleEditing}
- * and {@link module:image/imagestyle/imagestyleui~ImageStyleUI} plugins.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagestyle_ImageStyle extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ imagestyleediting_ImageStyleEditing, imagestyleui_ImageStyleUI ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ImageStyle';
-	}
-}
-
-/**
- * Available image styles.
- *
- * The default value is:
- *
- *		const imageConfig = {
- *			styles: [ 'full', 'side' ]
- *		};
- *
- * which configures two default styles:
- *
- *  * the "full" style which does not apply any class, e.g. for images styled to span 100% width of the content,
- *  * the "side" style with the `.image-style-side` CSS class.
- *
- * See {@link module:image/imagestyle/utils~defaultStyles} to learn more about default
- * styles provided by the image feature.
- *
- * The {@link module:image/imagestyle/utils~defaultStyles default styles} can be customized,
- * e.g. to change the icon, title or CSS class of the style. The feature also provides several
- * {@link module:image/imagestyle/utils~defaultIcons default icons} to choose from.
+ * A handler useful for {@link module:ui/view~View views} working as HTML forms. It intercepts a native DOM
+ * `submit` event, prevents the default web browser behavior (navigation and page reload) and
+ * fires the `submit` event on a view instead. Such a custom event can be then used by any
+ * {@link module:utils/dom/emittermixin~Emitter emitter}, e.g. to serialize the form data.
  *
- *		import customIcon from 'custom-icon.svg';
+ *		import submitHandler from '@ckeditor/ckeditor5-ui/src/bindings/submithandler';
  *
  *		// ...
  *
- *		const imageConfig = {
- *			styles: [
- *				// This will only customize the icon of the "full" style.
- *				// Note: 'right' is one of default icons provided by the feature.
- *				{ name: 'full', icon: 'right' },
+ *		class AnyFormView extends View {
+ *			constructor() {
+ *				super();
  *
- *				// This will customize the icon, title and CSS class of the default "side" style.
- *				{ name: 'side', icon: customIcon, title: 'My side style', class: 'custom-side-image' }
- *			]
- *		};
+ *				// ...
  *
- * If none of the default styles is good enough, it is possible to define independent custom styles, too:
- *
- *		import fullSizeIcon from '@ckeditor/ckeditor5-core/theme/icons/object-center.svg';
- *		import sideIcon from '@ckeditor/ckeditor5-core/theme/icons/object-right.svg';
- *
- *		// ...
- *
- *		const imageConfig = {
- *			styles: [
- *				// A completely custom full size style with no class, used as a default.
- *				{ name: 'fullSize', title: 'Full size', icon: fullSizeIcon, isDefault: true },
- *
- *				{ name: 'side', title: 'To the side', icon: sideIcon, className: 'side-image' }
- *			]
- *		};
- *
- * Note: Setting `title` to one of {@link module:image/imagestyle/imagestyleui~ImageStyleUI#localizedDefaultStylesTitles}
- * will automatically translate it to the language of the editor.
- *
- * Read more about styling images in the {@glink features/image#image-styles Image styles guide}.
- *
- * The feature creates commands based on defined styles, so you can change the style of a selected image by executing
- * the following command:
- *
- *		editor.execute( 'imageStyle' { value: 'side' } );
- *
- * The feature also creates buttons that execute the commands. So, assuming that you use the
- * default image styles setting, you can {@link module:image/image~ImageConfig#toolbar configure the image toolbar}
- * (or any other toolbar) to contain these options:
- *
- *		const imageConfig = {
- *			toolbar: [ 'imageStyle:full', 'imageStyle:side' ]
- *		};
- *
- * @member {Array.<module:image/imagestyle/imagestyleediting~ImageStyleFormat>} module:image/image~ImageConfig#styles
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-widget/src/widgettoolbarrepository.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module widget/widgettoolbarrepository
- */
-
-
-
-
-
-
-
-
-/**
- * Widget toolbar repository plugin. A central point for registering widget toolbars. This plugin handles the whole
- * toolbar rendering process and exposes a concise API.
- *
- * To add a toolbar for your widget use the {@link ~WidgetToolbarRepository#register `WidgetToolbarRepository#register()`} method.
- *
- * The following example comes from the {@link module:image/imagetoolbar~ImageToolbar} plugin:
- *
- * 		class ImageToolbar extends Plugin {
- *			static get requires() {
- *				return [ WidgetToolbarRepository ];
- *			}
- *
- *			afterInit() {
- *				const editor = this.editor;
- *				const widgetToolbarRepository = editor.plugins.get( WidgetToolbarRepository );
- *
- *				widgetToolbarRepository.register( 'image', {
- *					items: editor.config.get( 'image.toolbar' ),
- *					visibleWhen: viewSelection => isImageWidgetSelected( viewSelection )
+ *				submitHandler( {
+ *					view: this
  *				} );
  *			}
  *		}
+ *
+ *		// ...
+ *
+ *		const view = new AnyFormView();
+ *
+ *		// A sample listener attached by an emitter working with the view.
+ *		this.listenTo( view, 'submit', () => {
+ *			saveTheFormData();
+ *			hideTheForm();
+ *		} );
+ *
+ * @param {Object} [options] Configuration options.
+ * @param {module:ui/view~View} options.view The view which DOM `submit` events should be handled.
  */
-class widgettoolbarrepository_WidgetToolbarRepository extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ contextualballoon_ContextualBalloon ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'WidgetToolbarRepository';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const balloonToolbar = editor.plugins.get( 'BalloonToolbar' );
-
-		// Disables the default balloon toolbar for all widgets.
-		if ( balloonToolbar ) {
-			this.listenTo( balloonToolbar, 'show', evt => {
-				if ( isWidgetSelected( editor.editing.view.document.selection ) ) {
-					evt.stop();
-				}
-			}, { priority: 'high' } );
-		}
-
-		/**
-		 * A map of toolbars.
-		 *
-		 * @protected
-		 * @member {Map.<string,Object>} #_toolbars
-		 */
-		this._toolbars = new Map();
-
-		/**
-		 * @private
-		 */
-		this._balloon = this.editor.plugins.get( 'ContextualBalloon' );
-
-		this.listenTo( editor.ui, 'update', () => {
-			this._updateToolbarsVisibility();
-		} );
-
-		// UI#update is not fired after focus is back in editor, we need to check if balloon panel should be visible.
-		this.listenTo( editor.ui.focusTracker, 'change:isFocused', () => {
-			this._updateToolbarsVisibility();
-		}, { priority: 'low' } );
-	}
-
-	/**
-	 * Registers toolbar in the WidgetToolbarRepository. It renders it in the `ContextualBalloon` based on the value of the invoked
-	 * `visibleWhen` function. Toolbar items are gathered from `items` array.
-	 * The balloon's CSS class is by default `ck-toolbar-container` and may be override with the `balloonClassName` option.
-	 *
-	 * Note: This method should be called in the {@link module:core/plugin~PluginInterface#afterInit `Plugin#afterInit()`}
-	 * callback (or later) to make sure that the given toolbar items were already registered by other plugins.
-	 *
-	 * @param {String} toolbarId An id for the toolbar. Used to
-	 * @param {Object} options
-	 * @param {Array.<String>} options.items Array of toolbar items.
-	 * @param {Function} options.visibleWhen Callback which specifies when the toolbar should be visible for the widget.
-	 * @param {String} [options.balloonClassName='ck-toolbar-container'] CSS class for the widget balloon.
-	 */
-	register( toolbarId, { items, visibleWhen, balloonClassName = 'ck-toolbar-container' } ) {
-		const editor = this.editor;
-		const toolbarView = new toolbarview_ToolbarView();
-
-		if ( this._toolbars.has( toolbarId ) ) {
-			/**
-			 * Toolbar with the given id was already added.
-			 *
-			 * @error widget-toolbar-duplicated
-			 * @param toolbarId Toolbar id.
-			 */
-			throw new ckeditorerror["b" /* default */]( 'widget-toolbar-duplicated: Toolbar with the given id was already added.', { toolbarId } );
-		}
-
-		toolbarView.fillFromConfig( items, editor.ui.componentFactory );
-
-		this._toolbars.set( toolbarId, {
-			view: toolbarView,
-			visibleWhen,
-			balloonClassName,
-		} );
-	}
-
-	/**
-	 * Iterates over stored toolbars and makes them visible or hidden.
-	 *
-	 * @private
-	 */
-	_updateToolbarsVisibility() {
-		for ( const toolbar of this._toolbars.values() ) {
-			if ( !this.editor.ui.focusTracker.isFocused || !toolbar.visibleWhen( this.editor.editing.view.document.selection ) ) {
-				this._hideToolbar( toolbar );
-			} else {
-				this._showToolbar( toolbar );
-			}
-		}
-	}
-
-	/**
-	 * Hides the given toolbar.
-	 *
-	 * @private
-	 * @param {Object} toolbar
-	 */
-	_hideToolbar( toolbar ) {
-		if ( !this._isToolbarVisible( toolbar ) ) {
-			return;
-		}
-
-		this._balloon.remove( toolbar.view );
-	}
-
-	/**
-	 * Shows up the toolbar if the toolbar is not visible and repositions the toolbar's balloon when toolbar's
-	 * view is the most top view in balloon stack.
-	 *
-	 * It might happen here that the toolbar's view is under another view. Then do nothing as the other toolbar view
-	 * should be still visible after the {@link module:core/editor/editorui~EditorUI#event:update}.
-	 *
-	 * @private
-	 * @param {Object} toolbar
-	 */
-	_showToolbar( toolbar ) {
-		if ( this._isToolbarVisible( toolbar ) ) {
-			widgettoolbarrepository_repositionContextualBalloon( this.editor );
-		} else if ( !this._balloon.hasView( toolbar.view ) ) {
-			this._balloon.add( {
-				view: toolbar.view,
-				position: widgettoolbarrepository_getBalloonPositionData( this.editor ),
-				balloonClassName: toolbar.balloonClassName,
-			} );
-		}
-	}
-
-	/**
-	 * @private
-	 * @param {Object} toolbar
-	 */
-	_isToolbarVisible( toolbar ) {
-		return this._balloon.visibleView == toolbar.view;
-	}
+function submitHandler( { view } ) {
+	view.listenTo( view.element, 'submit', ( evt, domEvt ) => {
+		domEvt.preventDefault();
+		view.fire( 'submit' );
+	}, { useCapture: true } );
 }
 
-function widgettoolbarrepository_repositionContextualBalloon( editor ) {
-	const balloon = editor.plugins.get( 'ContextualBalloon' );
-	const position = widgettoolbarrepository_getBalloonPositionData( editor );
-
-	balloon.updatePosition( position );
-}
-
-function widgettoolbarrepository_getBalloonPositionData( editor ) {
-	const editingView = editor.editing.view;
-	const defaultPositions = balloonpanelview_BalloonPanelView.defaultPositions;
-	const widget = getParentWidget( editingView.document.selection );
-
-	return {
-		target: editingView.domConverter.viewToDom( widget ),
-		positions: [
-			defaultPositions.northArrowSouth,
-			defaultPositions.northArrowSouthWest,
-			defaultPositions.northArrowSouthEast,
-			defaultPositions.southArrowNorth,
-			defaultPositions.southArrowNorthWest,
-			defaultPositions.southArrowNorthEast
-		]
-	};
-}
-
-function getParentWidget( selection ) {
-	const selectedElement = selection.getSelectedElement();
-
-	if ( selectedElement && isWidget( selectedElement ) ) {
-		return selectedElement;
-	}
-
-	const position = selection.getFirstPosition();
-	let parent = position.parent;
-
-	while ( parent ) {
-		if ( parent.is( 'element' ) && isWidget( parent ) ) {
-			return parent;
-		}
-
-		parent = parent.parent;
-	}
-}
-
-function isWidgetSelected( selection ) {
-	const viewElement = selection.getSelectedElement();
-
-	return !!( viewElement && isWidget( viewElement ) );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-image/src/imagetoolbar.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module image/imagetoolbar
- */
-
-
-
-
-
-/**
- * The image toolbar plugin. It creates and manages the image toolbar (the toolbar displayed when an image is selected).
- *
- * For a detailed overview, check the {@glink features/image#image-contextual-toolbar image contextual toolbar} documentation.
- *
- * Instances of toolbar components (e.g. buttons) are created using the editor's
- * {@link module:ui/componentfactory~ComponentFactory component factory}
- * based on the {@link module:image/image~ImageConfig#toolbar `image.toolbar` configuration option}.
- *
- * The toolbar uses the {@link module:ui/panel/balloon/contextualballoon~ContextualBalloon}.
- *
- * @extends module:core/plugin~Plugin
- */
-class imagetoolbar_ImageToolbar extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ widgettoolbarrepository_WidgetToolbarRepository ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'ImageToolbar';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	afterInit() {
-		const editor = this.editor;
-		const widgetToolbarRepository = editor.plugins.get( widgettoolbarrepository_WidgetToolbarRepository );
-
-		widgetToolbarRepository.register( 'image', {
-			items: editor.config.get( 'image.toolbar' ) || [],
-			visibleWhen: isImageWidgetSelected,
-		} );
-	}
-}
-
-/**
- * Items to be placed in the image toolbar.
- * This option is used by the {@link module:image/imagetoolbar~ImageToolbar} feature.
- *
- * Assuming that you use the following features:
- *
- * * {@link module:image/imagestyle~ImageStyle} (with a default configuration),
- * * {@link module:image/imagetextalternative~ImageTextAlternative},
- *
- * three toolbar items will be available in {@link module:ui/componentfactory~ComponentFactory}:
- * `'imageStyle:full'`, `'imageStyle:side'`, and `'imageTextAlternative'` so you can configure the toolbar like this:
- *
- *		const imageConfig = {
- *			toolbar: [ 'imageStyle:full', 'imageStyle:side', '|', 'imageTextAlternative' ]
- *		};
- *
- * Of course, the same buttons can also be used in the
- * {@link module:core/editor/editorconfig~EditorConfig#toolbar main editor toolbar}.
- *
- * Read more about configuring toolbar in {@link module:core/editor/editorconfig~EditorConfig#toolbar}.
- *
- * @member {Array.<String>} module:image/image~ImageConfig#toolbar
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/findlinkrange.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module link/findlinkrange
- */
-
-
-
-
-/**
- * Returns a range containing the entire link in which the given `position` is placed.
- *
- * It can be used e.g. to get the entire range on which the `linkHref` attribute needs to be changed when having a
- * selection inside a link.
- *
- * @param {module:engine/model/position~Position} position The start position.
- * @param {String} value The `linkHref` attribute value.
- * @returns {module:engine/model/range~Range} The link range.
- */
-function findLinkRange( position, value ) {
-	return new model_range_Range( _findBound( position, value, true ), _findBound( position, value, false ) );
-}
-
-// Walks forward or backward (depends on the `lookBack` flag), node by node, as long as they have the same `linkHref` attribute value
-// and returns a position just before or after (depends on the `lookBack` flag) the last matched node.
-//
-// @param {module:engine/model/position~Position} position The start position.
-// @param {String} value The `linkHref` attribute value.
-// @param {Boolean} lookBack Whether the walk direction is forward (`false`) or backward (`true`).
-// @returns {module:engine/model/position~Position} The position just before the last matched node.
-function _findBound( position, value, lookBack ) {
-	// Get node before or after position (depends on `lookBack` flag).
-	// When position is inside text node then start searching from text node.
-	let node = position.textNode || ( lookBack ? position.nodeBefore : position.nodeAfter );
-
-	let lastNode = null;
-
-	while ( node && node.getAttribute( 'linkHref' ) == value ) {
-		lastNode = node;
-		node = lookBack ? node.previousSibling : node.nextSibling;
-	}
-
-	return lastNode ? model_position_Position.createAt( lastNode, lookBack ? 'before' : 'after' ) : position;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module link/linkcommand
- */
-
-
-
-
-
-
-/**
- * The link command. It is used by the {@link module:link/link~Link link feature}.
- *
- * @extends module:core/command~Command
- */
-class linkcommand_LinkCommand extends Command {
-	/**
-	 * The value of the `'linkHref'` attribute if the start of the selection is located in a node with this attribute.
-	 *
-	 * @observable
-	 * @readonly
-	 * @member {Object|undefined} #value
-	 */
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const doc = model.document;
-
-		this.value = doc.selection.getAttribute( 'linkHref' );
-		this.isEnabled = model.schema.checkAttributeInSelection( doc.selection, 'linkHref' );
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * When the selection is non-collapsed, the `linkHref` attribute will be applied to nodes inside the selection, but only to
-	 * those nodes where the `linkHref` attribute is allowed (disallowed nodes will be omitted).
-	 *
-	 * When the selection is collapsed and is not inside the text with the `linkHref` attribute, the
-	 * new {@link module:engine/model/text~Text Text node} with the `linkHref` attribute will be inserted in place of caret, but
-	 * only if such element is allowed in this place. The `_data` of the inserted text will equal the `href` parameter.
-	 * The selection will be updated to wrap the just inserted text node.
-	 *
-	 * When the selection is collapsed and inside the text with the `linkHref` attribute, the attribute value will be updated.
-	 *
-	 * @fires execute
-	 * @param {String} href Link destination.
-	 */
-	execute( href ) {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-
-		model.change( writer => {
-			// If selection is collapsed then update selected link or insert new one at the place of caret.
-			if ( selection.isCollapsed ) {
-				const position = selection.getFirstPosition();
-
-				// When selection is inside text with `linkHref` attribute.
-				if ( selection.hasAttribute( 'linkHref' ) ) {
-					// Then update `linkHref` value.
-					const linkRange = findLinkRange( selection.getFirstPosition(), selection.getAttribute( 'linkHref' ) );
-
-					writer.setAttribute( 'linkHref', href, linkRange );
-
-					// Create new range wrapping changed link.
-					writer.setSelection( linkRange );
-				}
-				// If not then insert text node with `linkHref` attribute in place of caret.
-				// However, since selection in collapsed, attribute value will be used as data for text node.
-				// So, if `href` is empty, do not create text node.
-				else if ( href !== '' ) {
-					const attributes = toMap( selection.getAttributes() );
-
-					attributes.set( 'linkHref', href );
-
-					const node = writer.createText( href, attributes );
-
-					writer.insert( node, position );
-
-					// Create new range wrapping created node.
-					writer.setSelection( model_range_Range.createOn( node ) );
-				}
-			} else {
-				// If selection has non-collapsed ranges, we change attribute on nodes inside those ranges
-				// omitting nodes where `linkHref` attribute is disallowed.
-				const ranges = model.schema.getValidRanges( selection.getRanges(), 'linkHref' );
-
-				for ( const range of ranges ) {
-					writer.setAttribute( 'linkHref', href, range );
-				}
-			}
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/unlinkcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module link/unlinkcommand
- */
-
-
-
-
-/**
- * The unlink command. It is used by the {@link module:link/link~Link link plugin}.
- *
- * @extends module:core/command~Command
- */
-class unlinkcommand_UnlinkCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		this.isEnabled = this.editor.model.document.selection.hasAttribute( 'linkHref' );
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * When the selection is collapsed, removes the `linkHref` attribute from each node with the same `linkHref` attribute value.
-	 * When the selection is non-collapsed, removes the `linkHref` attribute from each node in selected ranges.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-
-		model.change( writer => {
-			// Get ranges to unlink.
-			const rangesToUnlink = selection.isCollapsed ?
-				[ findLinkRange( selection.getFirstPosition(), selection.getAttribute( 'linkHref' ) ) ] : selection.getRanges();
-
-			// Remove `linkHref` attribute from specified ranges.
-			for ( const range of rangesToUnlink ) {
-				writer.removeAttribute( 'linkHref', range );
-			}
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module link/utils
- */
-
-const linkElementSymbol = Symbol( 'linkElement' );
-
-const ATTRIBUTE_WHITESPACES = /[\u0000-\u0020\u00A0\u1680\u180E\u2000-\u2029\u205f\u3000]/g; // eslint-disable-line no-control-regex
-const SAFE_URL = /^(?:(?:https?|ftps?|mailto):|[^a-z]|[a-z+.-]+(?:[^a-z+.:-]|$))/i;
-
-/**
- * Returns `true` if a given view node is the link element.
- *
- * @param {module:engine/view/node~Node} node
- * @returns {Boolean}
- */
-function isLinkElement( node ) {
-	return node.is( 'attributeElement' ) && !!node.getCustomProperty( linkElementSymbol );
-}
-
-/**
- * Creates link {@link module:engine/view/attributeelement~AttributeElement} with provided `href` attribute.
- *
- * @param {String} href
- * @returns {module:engine/view/attributeelement~AttributeElement}
- */
-function createLinkElement( href, writer ) {
-	// Priority 5 - https://github.com/ckeditor/ckeditor5-link/issues/121.
-	const linkElement = writer.createAttributeElement( 'a', { href }, { priority: 5 } );
-	writer.setCustomProperty( linkElementSymbol, true, linkElement );
-
-	return linkElement;
-}
-
-/**
- * Returns a safe URL based on a given value.
- *
- * An URL is considered safe if it is safe for the user (does not contain any malicious code).
- *
- * If URL is considered unsafe, a simple `"#"` is returned.
- *
- * @protected
- * @param {*} url
- * @returns {String} Safe URL.
- */
-function ensureSafeUrl( url ) {
-	url = String( url );
-
-	return isSafeUrl( url ) ? url : '#';
-}
-
-// Checks whether the given URL is safe for the user (does not contain any malicious code).
-//
-// @param {String} url URL to check.
-function isSafeUrl( url ) {
-	const normalizedUrl = url.replace( ATTRIBUTE_WHITESPACES, '' );
-
-	return normalizedUrl.match( SAFE_URL );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/utils/bindtwostepcarettoattribute.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module engine/utils/bindtwostepcarettoattribute
- */
-
-
-
-
-/**
- * This helper enabled the two-step caret (phantom) movement behavior for the given {@link module:engine/model/model~Model}
- * attribute on arrow right (<kbd>→</kbd>) and left (<kbd>←</kbd>) key press.
- *
- * Thanks to this (phantom) caret movement the user is able to type before/after as well as at the
- * beginning/end of an attribute.
- *
- * # Forward movement
- *
- * ## "Entering" an attribute:
- *
- * When this behavior is enabled for the `a` attribute and the selection is right before it
- * (at the attribute boundary), pressing the right arrow key will not move the selection but update its
- * attributes accordingly:
- *
- * * When enabled:
- *
- *   		foo{}<$text a="true">bar</$text>
- *
- *    <kbd>→</kbd>
- *
- *   		foo<$text a="true">{}bar</$text>
- *
- * * When disabled:
- *
- *   		foo{}<$text a="true">bar</$text>
- *
- *   <kbd>→</kbd>
- *
- *   		foo<$text a="true">b{}ar</$text>
- *
- *
- * ## "Leaving" an attribute:
- *
- * * When enabled:
- *
- *   		<$text a="true">bar{}</$text>baz
- *
- *    <kbd>→</kbd>
- *
- *   		<$text a="true">bar</$text>{}baz
- *
- * * When disabled:
- *
- *   		<$text a="true">bar{}</$text>baz
- *
- *   <kbd>→</kbd>
- *
- *   		<$text a="true">bar</$text>b{}az
- *
- * # Backward movement
- *
- * * When enabled:
- *
- *   		<$text a="true">bar</$text>{}baz
- *
- *    <kbd>←</kbd>
- *
- *   		<$text a="true">bar{}</$text>baz
- *
- * * When disabled:
- *
- *   		<$text a="true">bar</$text>{}baz
- *
- *   <kbd>←</kbd>
- *
- *   		<$text a="true">ba{}r</$text>b{}az
- *
- * @param {module:engine/view/view~View} view View controller instance.
- * @param {module:engine/model/model~Model} model Data model instance.
- * @param {module:utils/dom/emittermixin~Emitter} emitter The emitter to which this behavior should be added
- * (e.g. a plugin instance).
- * @param {String} attribute Attribute for which this behavior will be added.
- */
-function bindTwoStepCaretToAttribute( view, model, emitter, attribute ) {
-	const twoStepCaretHandler = new TwoStepCaretHandler( model, emitter, attribute );
-	const modelSelection = model.document.selection;
-
-	// Listen to keyboard events and handle the caret movement according to the 2-step caret logic.
-	//
-	// Note: This listener has the "high+1" priority:
-	// * "high" because of the filler logic implemented in the renderer which also engages on #keydown.
-	// When the gravity is overridden the attributes of the (model) selection attributes are reset.
-	// It may end up with the filler kicking in and breaking the selection.
-	// * "+1" because we would like to avoid collisions with other features (like Widgets), which
-	// take over the keydown events with the "high" priority. Two-step caret movement takes precedence
-	// over Widgets in that matter.
-	//
-	// Find out more in https://github.com/ckeditor/ckeditor5-engine/issues/1301.
-	emitter.listenTo( view.document, 'keydown', ( evt, data ) => {
-		// This implementation works only for collapsed selection.
-		if ( !modelSelection.isCollapsed ) {
-			return;
-		}
-
-		// When user tries to expand the selection or jump over the whole word or to the beginning/end then
-		// two-steps movement is not necessary.
-		if ( data.shiftKey || data.altKey || data.ctrlKey ) {
-			return;
-		}
-
-		const arrowRightPressed = data.keyCode == keyCodes.arrowright;
-		const arrowLeftPressed = data.keyCode == keyCodes.arrowleft;
-
-		// When neither left or right arrow has been pressed then do noting.
-		if ( !arrowRightPressed && !arrowLeftPressed ) {
-			return;
-		}
-
-		const position = modelSelection.getFirstPosition();
-		let isMovementHandled;
-
-		if ( arrowRightPressed ) {
-			isMovementHandled = twoStepCaretHandler.handleForwardMovement( position, data );
-		} else {
-			isMovementHandled = twoStepCaretHandler.handleBackwardMovement( position, data );
-		}
-
-		// Stop the keydown event if the two-step arent movement handled it. Avoid collisions
-		// with other features which may also take over the caret movement (e.g. Widget).
-		if ( isMovementHandled ) {
-			evt.stop();
-		}
-	}, { priority: src_priorities.get( 'high' ) + 1 } );
-}
-
-/**
- * This is a private helper–class for {@link module:engine/utils/bindtwostepcarettoattribute}.
- * It handles the state of the 2-step caret movement for a single {@link module:engine/model/model~Model}
- * attribute upon the `keypress` in the {@link module:engine/view/view~View}.
- *
- * @private
- */
-class TwoStepCaretHandler {
-	/*
-	 * Creates two step handler instance.
-	 *
-	 * @param {module:engine/model/model~Model} model Data model instance.
-	 * @param {module:utils/dom/emittermixin~Emitter} emitter The emitter to which this behavior should be added
-	 * (e.g. a plugin instance).
-	 * @param {String} attribute Attribute for which the behavior will be added.
-	 */
-	constructor( model, emitter, attribute ) {
-		/**
-		 * The model instance this class instance operates on.
-		 *
-		 * @readonly
-		 * @member {module:engine/model/model~Model#schema}
-		 */
-		this.model = model;
-
-		/**
-		 * The Attribute this class instance operates on.
-		 *
-		 * @readonly
-		 * @member {String}
-		 */
-		this.attribute = attribute;
-
-		/**
-		 * A reference to the document selection.
-		 *
-		 * @private
-		 * @member {module:engine/model/selection~Selection}
-		 */
-		this._modelSelection = model.document.selection;
-
-		/**
-		 * The current UID of the overridden gravity, as returned by
-		 * {@link module:engine/model/writer~Writer#overrideSelectionGravity}.
-		 *
-		 * @private
-		 * @member {String}
-		 */
-		this._overrideUid = null;
-
-		/**
-		 * A flag indicating that the automatic gravity restoration for this attribute
-		 * should not happen upon the next
-		 * {@link module:engine/model/selection~Selection#event:change:range} event.
-		 *
-		 * @private
-		 * @member {String}
-		 */
-		this._isNextGravityRestorationSkipped = false;
-
-		// The automatic gravity restoration logic.
-		emitter.listenTo( this._modelSelection, 'change:range', ( evt, data ) => {
-			// Skipping the automatic restoration is needed if the selection should change
-			// but the gravity must remain overridden afterwards. See the #handleBackwardMovement
-			// to learn more.
-			if ( this._isNextGravityRestorationSkipped ) {
-				this._isNextGravityRestorationSkipped = false;
-
-				return;
-			}
-
-			// Skip automatic restore when the gravity is not overridden — simply, there's nothing to restore
-			// at this moment.
-			if ( !this._isGravityOverridden ) {
-				return;
-			}
-
-			// Skip automatic restore when the change is indirect AND the selection is at the attribute boundary.
-			// It means that e.g. if the change was external (collaboration) and the user had their
-			// selection around the link, its gravity should remain intact in this change:range event.
-			if ( !data.directChange && isAtBoundary( this._modelSelection.getFirstPosition(), attribute ) ) {
-				return;
-			}
-
-			this._restoreGravity();
-		} );
-	}
-
-	/**
-	 * Updates the document selection and the view according to the two–step caret movement state
-	 * when moving **forwards**. Executed upon `keypress` in the {@link module:engine/view/view~View}.
-	 *
-	 * @param {module:engine/model/position~Position} position The model position at the moment of the key press.
-	 * @param {module:engine/view/observer/domeventdata~DomEventData} data Data of the key press.
-	 * @returns {Boolean} `true` when the handler prevented caret movement
-	 */
-	handleForwardMovement( position, data ) {
-		const attribute = this.attribute;
-
-		// DON'T ENGAGE 2-SCM if gravity is already overridden. It means that we just entered
-		//
-		// 		<paragraph>foo<$text attribute>{}bar</$text>baz</paragraph>
-		//
-		// or left the attribute
-		//
-		// 		<paragraph>foo<$text attribute>bar</$text>{}baz</paragraph>
-		//
-		// and the gravity will be restored automatically.
-		if ( this._isGravityOverridden ) {
-			return;
-		}
-
-		// DON'T ENGAGE 2-SCM when the selection is at the beginning of the block AND already has the
-		// attribute:
-		// * when the selection was initially set there using the mouse,
-		// * when the editor has just started
-		//
-		//		<paragraph><$text attribute>{}bar</$text>baz</paragraph>
-		//
-		if ( position.isAtStart && this._hasSelectionAttribute ) {
-			return;
-		}
-
-		// ENGAGE 2-SCM when about to leave one attribute value and enter another:
-		//
-		// 		<paragraph><$text attribute="1">foo{}</$text><$text attribute="2">bar</$text></paragraph>
-		//
-		// but DON'T when already in between of them (no attribute selection):
-		//
-		// 		<paragraph><$text attribute="1">foo</$text>{}<$text attribute="2">bar</$text></paragraph>
-		//
-		if ( isBetweenDifferentValues( position, attribute ) && this._hasSelectionAttribute ) {
-			this._preventCaretMovement( data );
-			this._removeSelectionAttribute();
-
-			return true;
-		}
-
-		// ENGAGE 2-SCM when entering an attribute:
-		//
-		// 		<paragraph>foo{}<$text attribute>bar</$text>baz</paragraph>
-		//
-		if ( isAtStartBoundary( position, attribute ) ) {
-			this._preventCaretMovement( data );
-			this._overrideGravity();
-
-			return true;
-		}
-
-		// ENGAGE 2-SCM when leaving an attribute:
-		//
-		//		<paragraph>foo<$text attribute>bar{}</$text>baz</paragraph>
-		//
-		if ( isAtEndBoundary( position, attribute ) && this._hasSelectionAttribute ) {
-			this._preventCaretMovement( data );
-			this._overrideGravity();
-
-			return true;
-		}
-	}
-
-	/**
-	 * Updates the document selection and the view according to the two–step caret movement state
-	 * when moving **backwards**. Executed upon `keypress` in the {@link module:engine/view/view~View}.
-	 *
-	 * @param {module:engine/model/position~Position} position The model position at the moment of the key press.
-	 * @param {module:engine/view/observer/domeventdata~DomEventData} data Data of the key press.
-	 * @returns {Boolean} `true` when the handler prevented caret movement
-	 */
-	handleBackwardMovement( position, data ) {
-		const attribute = this.attribute;
-
-		// When the gravity is already overridden...
-		if ( this._isGravityOverridden ) {
-			// ENGAGE 2-SCM & REMOVE SELECTION ATTRIBUTE
-			// when about to leave one attribute value and enter another:
-			//
-			// 		<paragraph><$text attribute="1">foo</$text><$text attribute="2">{}bar</$text></paragraph>
-			//
-			// but DON'T when already in between of them (no attribute selection):
-			//
-			// 		<paragraph><$text attribute="1">foo</$text>{}<$text attribute="2">bar</$text></paragraph>
-			//
-			if ( isBetweenDifferentValues( position, attribute ) && this._hasSelectionAttribute ) {
-				this._preventCaretMovement( data );
-				this._restoreGravity();
-				this._removeSelectionAttribute();
-
-				return true;
-			}
-
-			// ENGAGE 2-SCM when at any boundary of the attribute:
-			//
-			// 		<paragraph>foo<$text attribute>bar</$text>{}baz</paragraph>
-			// 		<paragraph>foo<$text attribute>{}bar</$text>baz</paragraph>
-			//
-			else {
-				this._preventCaretMovement( data );
-				this._restoreGravity();
-
-				// REMOVE SELECTION ATRIBUTE at the beginning of the block.
-				// It's like restoring gravity but towards a non-existent content when
-				// the gravity is overridden:
-				//
-				// 		<paragraph><$text attribute>{}bar</$text></paragraph>
-				//
-				// becomes:
-				//
-				// 		<paragraph>{}<$text attribute>bar</$text></paragraph>
-				//
-				if ( position.isAtStart ) {
-					this._removeSelectionAttribute();
-				}
-
-				return true;
-			}
-		} else {
-			// ENGAGE 2-SCM when between two different attribute values but selection has no attribute:
-			//
-			// 		<paragraph><$text attribute="1">foo</$text>{}<$text attribute="2">bar</$text></paragraph>
-			//
-			if ( isBetweenDifferentValues( position, attribute ) && !this._hasSelectionAttribute ) {
-				this._preventCaretMovement( data );
-				this._setSelectionAttributeFromTheNodeBefore( position );
-
-				return true;
-			}
-
-			// End of block boundary cases:
-			//
-			// 		<paragraph><$text attribute>bar{}</$text></paragraph>
-			// 		<paragraph><$text attribute>bar</$text>{}</paragraph>
-			//
-			if ( position.isAtEnd && isAtEndBoundary( position, attribute ) ) {
-				// DON'T ENGAGE 2-SCM if the selection has the attribute already.
-				// This is a common selection if set using the mouse.
-				//
-				// 		<paragraph><$text attribute>bar{}</$text></paragraph>
-				//
-				if ( this._hasSelectionAttribute ) {
-					// DON'T ENGAGE 2-SCM if the attribute at the end of the block which has length == 1.
-					// Make sure the selection will not the attribute after it moves backwards.
-					//
-					// 		<paragraph>foo<$text attribute>b{}</$text></paragraph>
-					//
-					if ( isStepAfterTheAttributeBoundary( position, attribute ) ) {
-						// Skip the automatic gravity restore upon the next selection#change:range event.
-						// If not skipped, it would automatically restore the gravity, which should remain
-						// overridden.
-						this._skipNextAutomaticGravityRestoration();
-						this._overrideGravity();
-
-						// Don't return "true" here because we didn't call _preventCaretMovement.
-						// Returning here will destabilize the filler logic, which also listens to
-						// keydown (and the event would be stopped).
-					}
-
-					return;
-				}
-				// ENGAGE 2-SCM if the selection has no attribute. This may happen when the user
-				// left the attribute using a FORWARD 2-SCM.
-				//
-				// 		<paragraph><$text attribute>bar</$text>{}</paragraph>
-				//
-				else {
-					this._preventCaretMovement( data );
-					this._setSelectionAttributeFromTheNodeBefore( position );
-
-					return true;
-				}
-			}
-
-			// REMOVE SELECTION ATRIBUTE when restoring gravity towards a non-existent content at the
-			// beginning of the block.
-			//
-			// 		<paragraph>{}<$text attribute>bar</$text></paragraph>
-			//
-			if ( position.isAtStart ) {
-				if ( this._hasSelectionAttribute ) {
-					this._removeSelectionAttribute();
-					this._preventCaretMovement( data );
-
-					return true;
-				}
-
-				return;
-			}
-
-			// DON'T ENGAGE 2-SCM when about to enter of leave an attribute.
-			// We need to check if the caret is a one position before the attribute boundary:
-			//
-			// 		<paragraph>foo<$text attribute>b{}ar</$text>baz</paragraph>
-			// 		<paragraph>foo<$text attribute>bar</$text>b{}az</paragraph>
-			//
-			if ( isStepAfterTheAttributeBoundary( position, attribute ) ) {
-				// Skip the automatic gravity restore upon the next selection#change:range event.
-				// If not skipped, it would automatically restore the gravity, which should remain
-				// overridden.
-				this._skipNextAutomaticGravityRestoration();
-				this._overrideGravity();
-
-				// Don't return "true" here because we didn't call _preventCaretMovement.
-				// Returning here will destabilize the filler logic, which also listens to
-				// keydown (and the event would be stopped).
-			}
-		}
-	}
-
-	/**
-	 * `true` when the gravity is overridden for the {@link #attribute}.
-	 *
-	 * @readonly
-	 * @private
-	 * @type {Boolean}
-	 */
-	get _isGravityOverridden() {
-		return !!this._overrideUid;
-	}
-
-	/**
-	 * `true` when the {@link module:engine/model/selection~Selection} has the {@link #attribute}.
-	 *
-	 * @readonly
-	 * @private
-	 * @type {Boolean}
-	 */
-	get _hasSelectionAttribute() {
-		return this._modelSelection.hasAttribute( this.attribute );
-	}
-
-	/**
-	 * Overrides the gravity using the {@link module:engine/model/writer~Writer model writer}
-	 * and stores the information about this fact in the {@link #_overrideUid}.
-	 *
-	 * A shorthand for {@link module:engine/model/writer~Writer#overrideSelectionGravity}.
-	 *
-	 * @private
-	 */
-	_overrideGravity() {
-		this._overrideUid = this.model.change( writer => writer.overrideSelectionGravity() );
-	}
-
-	/**
-	 * Restores the gravity using the {@link module:engine/model/writer~Writer model writer}.
-	 *
-	 * A shorthand for {@link module:engine/model/writer~Writer#restoreSelectionGravity}.
-	 *
-	 * @private
-	 */
-	_restoreGravity() {
-		this.model.change( writer => {
-			writer.restoreSelectionGravity( this._overrideUid );
-			this._overrideUid = null;
-		} );
-	}
-
-	/**
-	 * Prevents the caret movement in the view by calling `preventDefault` on the event data.
-	 *
-	 * @private
-	 */
-	_preventCaretMovement( data ) {
-		data.preventDefault();
-	}
-
-	/**
-	 * Removes the {@link #attribute} from the selection using using the
-	 * {@link module:engine/model/writer~Writer model writer}.
-	 *
-	 * @private
-	 */
-	_removeSelectionAttribute() {
-		this.model.change( writer => {
-			writer.removeSelectionAttribute( this.attribute );
-		} );
-	}
-
-	/**
-	 * Applies the {@link #attribute} to the current selection using using the
-	 * value from the node before the current position. Uses
-	 * the {@link module:engine/model/writer~Writer model writer}.
-	 *
-	 * @private
-	 * @param {module:engine/model/position~Position} position
-	 */
-	_setSelectionAttributeFromTheNodeBefore( position ) {
-		const attribute = this.attribute;
-
-		this.model.change( writer => {
-			writer.setSelectionAttribute( this.attribute, position.nodeBefore.getAttribute( attribute ) );
-		} );
-	}
-
-	/**
-	 * Skips the next automatic selection gravity restoration upon the
-	 * {@link module:engine/model/selection~Selection#event:change:range} event.
-	 *
-	 * See {@link #_isNextGravityRestorationSkipped}.
-	 *
-	 * @private
-	 */
-	_skipNextAutomaticGravityRestoration() {
-		this._isNextGravityRestorationSkipped = true;
-	}
-}
-
-// @param {module:engine/model/position~Position} position
-// @param {String} attribute
-// @returns {Boolean} `true` when position between the nodes sticks to the bound of text with given attribute.
-function isAtBoundary( position, attribute ) {
-	return isAtStartBoundary( position, attribute ) || isAtEndBoundary( position, attribute );
-}
-
-// @param {module:engine/model/position~Position} position
-// @param {String} attribute
-function isAtStartBoundary( position, attribute ) {
-	const { nodeBefore, nodeAfter } = position;
-	const isAttrBefore = nodeBefore ? nodeBefore.hasAttribute( attribute ) : false;
-	const isAttrAfter = nodeAfter ? nodeAfter.hasAttribute( attribute ) : false;
-
-	return isAttrAfter && ( !isAttrBefore || nodeBefore.getAttribute( attribute ) !== nodeAfter.getAttribute( attribute ) );
-}
-
-// @param {module:engine/model/position~Position} position
-// @param {String} attribute
-function isAtEndBoundary( position, attribute ) {
-	const { nodeBefore, nodeAfter } = position;
-	const isAttrBefore = nodeBefore ? nodeBefore.hasAttribute( attribute ) : false;
-	const isAttrAfter = nodeAfter ? nodeAfter.hasAttribute( attribute ) : false;
-
-	return isAttrBefore && ( !isAttrAfter || nodeBefore.getAttribute( attribute ) !== nodeAfter.getAttribute( attribute ) );
-}
-
-// @param {module:engine/model/position~Position} position
-// @param {String} attribute
-function isBetweenDifferentValues( position, attribute ) {
-	const { nodeBefore, nodeAfter } = position;
-	const isAttrBefore = nodeBefore ? nodeBefore.hasAttribute( attribute ) : false;
-	const isAttrAfter = nodeAfter ? nodeAfter.hasAttribute( attribute ) : false;
-
-	if ( !isAttrAfter || !isAttrBefore ) {
-		return;
-	}
-
-	return nodeAfter.getAttribute( attribute ) !== nodeBefore.getAttribute( attribute );
-}
-
-// @param {module:engine/model/position~Position} position
-// @param {String} attribute
-function isStepAfterTheAttributeBoundary( position, attribute ) {
-	return isAtBoundary( position.getShiftedBy( -1 ), attribute );
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/link.css
-var theme_link = __webpack_require__(99);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module link/linkediting
- */
-
-
-
-
-
-
-
-
-
-
-
-const HIGHLIGHT_CLASS = 'ck-link_selected';
-
-/**
- * The link engine feature.
- *
- * It introduces the `linkHref="url"` attribute in the model which renders to the view as a `<a href="url">` element
- * as well as `'link'` and `'unlink'` commands.
- *
- * @extends module:core/plugin~Plugin
- */
-class linkediting_LinkEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-
-		// Allow link attribute on all inline nodes.
-		editor.model.schema.extend( '$text', { allowAttributes: 'linkHref' } );
-
-		editor.conversion.for( 'dataDowncast' )
-			.add( downcastAttributeToElement( { model: 'linkHref', view: createLinkElement } ) );
-
-		editor.conversion.for( 'editingDowncast' )
-			.add( downcastAttributeToElement( { model: 'linkHref', view: ( href, writer ) => {
-				return createLinkElement( ensureSafeUrl( href ), writer );
-			} } ) );
-
-		editor.conversion.for( 'upcast' )
-			.add( upcastElementToAttribute( {
-				view: {
-					name: 'a',
-					attributes: {
-						href: true
-					}
-				},
-				model: {
-					key: 'linkHref',
-					value: viewElement => viewElement.getAttribute( 'href' )
-				}
-			} ) );
-
-		// Create linking commands.
-		editor.commands.add( 'link', new linkcommand_LinkCommand( editor ) );
-		editor.commands.add( 'unlink', new unlinkcommand_UnlinkCommand( editor ) );
-
-		// Enable two-step caret movement for `linkHref` attribute.
-		bindTwoStepCaretToAttribute( editor.editing.view, editor.model, this, 'linkHref' );
-
-		// Setup highlight over selected link.
-		this._setupLinkHighlight();
-	}
-
-	/**
-	 * Adds a visual highlight style to a link in which the selection is anchored.
-	 * Together with two-step caret movement, they indicate that the user is typing inside the link.
-	 *
-	 * Highlight is turned on by adding `.ck-link_selected` class to the link in the view:
-	 *
-	 * * the class is removed before conversion has started, as callbacks added with `'highest'` priority
-	 * to {@link module:engine/conversion/downcastdispatcher~DowncastDispatcher} events,
-	 * * the class is added in the view post fixer, after other changes in the model tree were converted to the view.
-	 *
-	 * This way, adding and removing highlight does not interfere with conversion.
-	 *
-	 * @private
-	 */
-	_setupLinkHighlight() {
-		const editor = this.editor;
-		const view = editor.editing.view;
-		const highlightedLinks = new Set();
-
-		// Adding the class.
-		view.document.registerPostFixer( writer => {
-			const selection = editor.model.document.selection;
-
-			if ( selection.hasAttribute( 'linkHref' ) ) {
-				const modelRange = findLinkRange( selection.getFirstPosition(), selection.getAttribute( 'linkHref' ) );
-				const viewRange = editor.editing.mapper.toViewRange( modelRange );
-
-				// There might be multiple `a` elements in the `viewRange`, for example, when the `a` element is
-				// broken by a UIElement.
-				for ( const item of viewRange.getItems() ) {
-					if ( item.is( 'a' ) ) {
-						writer.addClass( HIGHLIGHT_CLASS, item );
-						highlightedLinks.add( item );
-					}
-				}
-			}
-		} );
-
-		// Removing the class.
-		editor.conversion.for( 'editingDowncast' ).add( dispatcher => {
-			// Make sure the highlight is removed on every possible event, before conversion is started.
-			dispatcher.on( 'insert', removeHighlight, { priority: 'highest' } );
-			dispatcher.on( 'remove', removeHighlight, { priority: 'highest' } );
-			dispatcher.on( 'attribute', removeHighlight, { priority: 'highest' } );
-			dispatcher.on( 'selection', removeHighlight, { priority: 'highest' } );
-
-			function removeHighlight() {
-				view.change( writer => {
-					for ( const item of highlightedLinks.values() ) {
-						writer.removeClass( HIGHLIGHT_CLASS, item );
-						highlightedLinks.delete( item );
-					}
-				} );
-			}
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/view/observer/clickobserver.js
-
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module engine/view/observer/clickobserver
- */
-
-
-
-/**
- * {@link module:engine/view/document~Document#event:click Click} event observer.
- *
- * Note that this observer is not available by default. To make it available it needs to be added to
- * {@link module:engine/view/view~View view controller}
- * by a {@link module:engine/view/view~View#addObserver} method.
- *
- * @extends module:engine/view/observer/domeventobserver~DomEventObserver
- */
-class clickobserver_ClickObserver extends domeventobserver_DomEventObserver {
-	constructor( view ) {
-		super( view );
-
-		this.domEventType = 'click';
-	}
-
-	onDomEvent( domEvent ) {
-		this.fire( domEvent.type, domEvent );
-	}
-}
-
-/**
- * Fired when one of the editables has been clicked.
- *
- * Introduced by {@link module:engine/view/observer/clickobserver~ClickObserver}.
- *
- * Note that this event is not available by default. To make it available
- * {@link module:engine/view/observer/clickobserver~ClickObserver} needs to be added
- * to {@link module:engine/view/view~View} by a {@link module:engine/view/view~View#addObserver} method.
- *
- * @see module:engine/view/observer/clickobserver~ClickObserver
- * @event module:engine/view/document~Document#event:click
- * @param {module:engine/view/observer/domeventdata~DomEventData} data Event data.
- */
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/check.svg
+var check = __webpack_require__(16);
+var check_default = /*#__PURE__*/__webpack_require__.n(check);
+
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/cancel.svg
+var icons_cancel = __webpack_require__(17);
+var cancel_default = /*#__PURE__*/__webpack_require__.n(icons_cancel);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/linkform.css
-var linkform = __webpack_require__(101);
+var linkform = __webpack_require__(51);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/ui/linkformview.js
 /**
@@ -68852,14 +53517,14 @@ class linkformview_LinkFormView extends src_view_View {
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.saveButtonView = this._createButton(t('az'), check_default.a, 'ck-button-save');
+        this.saveButtonView = this._createButton(t('g'), check_default.a, 'ck-button-save');
         this.saveButtonView.type = 'submit';
         /**
 		 * The Cancel button view.
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.cancelButtonView = this._createButton(t('ba'), cancel_default.a, 'ck-button-cancel', 'cancel');
+        this.cancelButtonView = this._createButton(t('h'), cancel_default.a, 'ck-button-cancel', 'cancel');
         /**
 		 * A collection of views which can be focused in the form.
 		 *
@@ -68938,7 +53603,7 @@ class linkformview_LinkFormView extends src_view_View {
     _createUrlInput() {
         const t = this.locale.t;
         const labeledInput = new labeledinputview_LabeledInputView(this.locale, inputtextview_InputTextView);
-        labeledInput.label = t('bg');
+        labeledInput.label = t('i');
         labeledInput.inputView.placeholder = 'https://example.com';
         return labeledInput;
     }
@@ -68977,15 +53642,15 @@ class linkformview_LinkFormView extends src_view_View {
  * @event cancel
  */
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/icons/unlink.svg
-var unlink = __webpack_require__(30);
+var unlink = __webpack_require__(18);
 var unlink_default = /*#__PURE__*/__webpack_require__.n(unlink);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/pencil.svg
-var pencil = __webpack_require__(31);
+var pencil = __webpack_require__(19);
 var pencil_default = /*#__PURE__*/__webpack_require__.n(pencil);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/linkactions.css
-var linkactions = __webpack_require__(103);
+var linkactions = __webpack_require__(53);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/ui/linkactionsview.js
 /**
@@ -69043,13 +53708,13 @@ class linkactionsview_LinkActionsView extends src_view_View {
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.unlinkButtonView = this._createButton(t('bc'), unlink_default.a, 'unlink');
+        this.unlinkButtonView = this._createButton(t('j'), unlink_default.a, 'unlink');
         /**
 		 * The edit link button view.
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.editButtonView = this._createButton(t('bd'), pencil_default.a, 'edit');
+        this.editButtonView = this._createButton(t('k'), pencil_default.a, 'edit');
         /**
 		 * Value of the "href" attribute of the link to use in the {@link #previewButtonView}.
 		 *
@@ -69156,7 +53821,7 @@ class linkactionsview_LinkActionsView extends src_view_View {
         const t = this.t;
         button.set({
             withText: true,
-            tooltip: t('be')
+            tooltip: t('l')
         });
         button.extendTemplate({
             attributes: {
@@ -69169,7 +53834,7 @@ class linkactionsview_LinkActionsView extends src_view_View {
             }
         });
         button.bind('label').to(this, 'href', href => {
-            return href || t('bf');
+            return href || t('m');
         });
         button.bind('isEnabled').to(this, 'href', href => !!href);
         button.template.tag = 'a';
@@ -69187,7 +53852,7 @@ class linkactionsview_LinkActionsView extends src_view_View {
  * @event unlink
  */
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/icons/link.svg
-var icons_link = __webpack_require__(32);
+var icons_link = __webpack_require__(20);
 var icons_link_default = /*#__PURE__*/__webpack_require__.n(icons_link);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkui.js
@@ -69340,7 +54005,7 @@ class linkui_LinkUI extends Plugin {
         editor.ui.componentFactory.add('link', locale => {
             const button = new buttonview_ButtonView(locale);
             button.isEnabled = true;
-            button.label = t('am');
+            button.label = t('f');
             button.icon = icons_link_default.a;
             button.keystroke = linkKeystroke;
             button.tooltip = true;
@@ -69688,6 +54353,32 @@ class link_Link extends Plugin {
 	static get pluginName() {
 		return 'Link';
 	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/first.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module utils/first
+ */
+
+/**
+ * Returns first item of the given `iterable`.
+ *
+ * @param {Iterable.<*>} iterable
+ * @returns {*}
+ */
+function first_first( iterable ) {
+	const iteratorItem = iterable.next();
+
+	if ( iteratorItem.done ) {
+		return null;
+	}
+
+	return iteratorItem.value;
 }
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-list/src/listcommand.js
@@ -70143,6 +54834,292 @@ class indentcommand_IndentCommand extends Command {
 	}
 }
 
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-paragraph/src/paragraphcommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module paragraph/paragraphcommand
+ */
+
+
+
+
+/**
+ * The paragraph command.
+ *
+ * @extends module:core/command~Command
+ */
+class paragraphcommand_ParagraphCommand extends Command {
+	/**
+	 * The value of the command. Indicates whether the selection start is placed in a paragraph.
+	 *
+	 * @readonly
+	 * @observable
+	 * @member {Boolean} #value
+	 */
+
+	/**
+	 * @inheritDoc
+	 */
+	refresh() {
+		const model = this.editor.model;
+		const document = model.document;
+		const block = first_first( document.selection.getSelectedBlocks() );
+
+		this.value = !!block && block.is( 'paragraph' );
+		this.isEnabled = !!block && checkCanBecomeParagraph( block, model.schema );
+	}
+
+	/**
+	 * Executes the command. All the blocks (see {@link module:engine/model/schema~Schema}) in the selection
+	 * will be turned to paragraphs.
+	 *
+	 * @fires execute
+	 * @param {Object} [options] Options for the executed command.
+	 * @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} [options.selection]
+	 * The selection that the command should be applied to.
+	 * By default, if not provided, the command is applied to the {@link module:engine/model/document~Document#selection}.
+	 */
+	execute( options = {} ) {
+		const model = this.editor.model;
+		const document = model.document;
+
+		model.change( writer => {
+			const blocks = ( options.selection || document.selection ).getSelectedBlocks();
+
+			for ( const block of blocks ) {
+				if ( !block.is( 'paragraph' ) && checkCanBecomeParagraph( block, model.schema ) ) {
+					writer.rename( block, 'paragraph' );
+				}
+			}
+		} );
+	}
+}
+
+// Checks whether the given block can be replaced by a paragraph.
+//
+// @private
+// @param {module:engine/model/element~Element} block A block to be tested.
+// @param {module:engine/model/schema~Schema} schema The schema of the document.
+// @returns {Boolean}
+function checkCanBecomeParagraph( block, schema ) {
+	return schema.checkChild( block.parent, 'paragraph' ) && !schema.isObject( block );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-paragraph/src/paragraph.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module paragraph/paragraph
+ */
+
+
+
+
+
+
+
+
+/**
+ * The paragraph feature for the editor.
+ *
+ * It introduces the `<paragraph>` element in the model which renders as a `<p>` element in the DOM and data.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class paragraph_Paragraph extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Paragraph';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	init() {
+		const editor = this.editor;
+		const model = editor.model;
+		const data = editor.data;
+
+		editor.commands.add( 'paragraph', new paragraphcommand_ParagraphCommand( editor ) );
+
+		// Schema.
+		model.schema.register( 'paragraph', { inheritAllFrom: '$block' } );
+
+		editor.conversion.elementToElement( { model: 'paragraph', view: 'p' } );
+
+		// Content autoparagraphing. --------------------------------------------------
+
+		// Handles elements not converted by plugins and checks if would be converted if
+		// we wraps them by a paragraph or changes them to a paragraph.
+		data.upcastDispatcher.on( 'element', ( evt, data, conversionApi ) => {
+			// When element is already consumed by higher priority converters then do nothing.
+			if ( !conversionApi.consumable.test( data.viewItem, { name: data.viewItem.name } ) ) {
+				return;
+			}
+
+			// When element is paragraph-like lets try to change it into a paragraph.
+			if ( paragraph_Paragraph.paragraphLikeElements.has( data.viewItem.name ) ) {
+				if ( data.viewItem.isEmpty ) {
+					return;
+				}
+
+				const paragraph = conversionApi.writer.createElement( 'paragraph' );
+
+				// Find allowed parent for paragraph that we are going to insert.
+				// If current parent does not allow to insert paragraph but one of the ancestors does
+				// then split nodes to allowed parent.
+				const splitResult = conversionApi.splitToAllowedParent( paragraph, data.modelCursor );
+
+				// When there is no split result it means that we can't insert paragraph in this position.
+				if ( !splitResult ) {
+					return;
+				}
+
+				// Insert paragraph in allowed position.
+				conversionApi.writer.insert( paragraph, splitResult.position );
+
+				// Convert children to paragraph.
+				const { modelRange } = conversionApi.convertChildren( data.viewItem, model_position_Position.createAt( paragraph ) );
+
+				// Output range starts before paragraph but ends inside it after last child.
+				// This is because we want to keep siblings inside the same paragraph as long as it is possible.
+				// When next node won't be allowed in a paragraph it will split this paragraph anyway.
+				data.modelRange = new model_range_Range( model_position_Position.createBefore( paragraph ), modelRange.end );
+				data.modelCursor = data.modelRange.end;
+
+			// When element is not paragraph-like lets try to wrap it by a paragraph.
+			} else if ( isParagraphable( data.viewItem, data.modelCursor, conversionApi.schema ) ) {
+				data = Object.assign( data, wrapInParagraph( data.viewItem, data.modelCursor, conversionApi ) );
+			}
+		}, { priority: 'low' } );
+
+		// Handles not converted text nodes and checks if would be converted if we wraps then by a paragraph.
+		data.upcastDispatcher.on( 'text', ( evt, data, conversionApi ) => {
+			// When node is already converted then do nothing.
+			if ( data.modelRange ) {
+				return;
+			}
+
+			if ( isParagraphable( data.viewItem, data.modelCursor, conversionApi.schema ) ) {
+				data = Object.assign( data, wrapInParagraph( data.viewItem, data.modelCursor, conversionApi ) );
+			}
+		}, { priority: 'lowest' } );
+
+		// Empty roots autoparagraphing. -----------------------------------------------
+
+		// Post-fixer which takes care of adding empty paragraph elements to empty roots.
+		// Besides fixing content on #changesDone we also need to handle #dataReady because
+		// if initial data is empty or setData() wasn't even called there will be no #change fired.
+		model.document.registerPostFixer( writer => this._autoparagraphEmptyRoots( writer ) );
+
+		editor.on( 'dataReady', () => {
+			model.enqueueChange( 'transparent', writer => this._autoparagraphEmptyRoots( writer ) );
+		}, { priority: 'lowest' } );
+	}
+
+	/**
+	 * Fixes all empty roots.
+	 *
+	 * @private
+	 * @returns {Boolean} `true` if any change has been applied, `false` otherwise.
+	 */
+	_autoparagraphEmptyRoots( writer ) {
+		const model = this.editor.model;
+
+		for ( const rootName of model.document.getRootNames() ) {
+			const root = model.document.getRoot( rootName );
+
+			if ( root.isEmpty && root.rootName != '$graveyard' ) {
+				// If paragraph element is allowed in the root, create paragraph element.
+				if ( model.schema.checkChild( root, 'paragraph' ) ) {
+					writer.insertElement( 'paragraph', root );
+
+					return true;
+				}
+			}
+		}
+	}
+}
+
+/**
+ * A list of element names which should be treated by the autoparagraphing algorithms as
+ * paragraph-like. This means that e.g. the following content:
+ *
+ *		<h1>Foo</h1>
+ *		<table>
+ *			<tr>
+ *				<td>X</td>
+ *				<td>
+ *					<ul>
+ *						<li>Y</li>
+ *						<li>Z</li>
+ *					</ul>
+ *				</td>
+ *			</tr>
+ *		</table>
+ *
+ * contains five paragraph-like elements: `<h1>`, two `<td>`s and two `<li>`s.
+ * Hence, if none of the features is going to convert those elements the above content will be automatically handled
+ * by the paragraph feature and converted to:
+ *
+ *		<p>Foo</p>
+ *		<p>X</p>
+ *		<p>Y</p>
+ *		<p>Z</p>
+ *
+ * Note: The `<td>` containing two `<li>` elements was ignored as the innermost paragraph-like elements
+ * have a priority upon conversion.
+ *
+ * @member {Set.<String>} module:paragraph/paragraph~Paragraph.paragraphLikeElements
+ */
+paragraph_Paragraph.paragraphLikeElements = new Set( [
+	'blockquote',
+	'dd',
+	'div',
+	'dt',
+	'h1',
+	'h2',
+	'h3',
+	'h4',
+	'h5',
+	'h6',
+	'li',
+	'p',
+	'td'
+] );
+
+function wrapInParagraph( input, position, conversionApi ) {
+	const paragraph = conversionApi.writer.createElement( 'paragraph' );
+
+	conversionApi.writer.insert( paragraph, position );
+	return conversionApi.convertItem( input, model_position_Position.createAt( paragraph ) );
+}
+
+function isParagraphable( node, position, schema ) {
+	const context = new SchemaContext( position );
+
+	// When paragraph is allowed in this context...
+	if ( !schema.checkChild( context, 'paragraph' ) ) {
+		return false;
+	}
+
+	// And a node would be allowed in this paragraph...
+	if ( !schema.checkChild( context.push( 'paragraph' ), node ) ) {
+		return false;
+	}
+
+	return true;
+}
+
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-list/src/utils.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
@@ -70161,7 +55138,7 @@ class indentcommand_IndentCommand extends Command {
  */
 function createViewListItemElement( writer ) {
 	const viewItem = writer.createContainerElement( 'li' );
-	viewItem.getFillerOffset = src_utils_getFillerOffset;
+	viewItem.getFillerOffset = utils_getFillerOffset;
 
 	return viewItem;
 }
@@ -70169,7 +55146,7 @@ function createViewListItemElement( writer ) {
 // Implementation of getFillerOffset for view list item element.
 //
 // @returns {Number|null} Block filler offset or `null` if block filler is not needed.
-function src_utils_getFillerOffset() {
+function utils_getFillerOffset() {
 	const hasOnlyLists = !this.isEmpty && ( this.getChild( 0 ).name == 'ul' || this.getChild( 0 ).name == 'ol' );
 
 	return this.isEmpty || hasOnlyLists ? 0 : null;
@@ -71403,11 +56380,11 @@ function getViewListItemLength( element ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-list/theme/icons/numberedlist.svg
-var numberedlist = __webpack_require__(33);
+var numberedlist = __webpack_require__(21);
 var numberedlist_default = /*#__PURE__*/__webpack_require__.n(numberedlist);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-list/theme/icons/bulletedlist.svg
-var bulletedlist = __webpack_require__(34);
+var bulletedlist = __webpack_require__(22);
 var bulletedlist_default = /*#__PURE__*/__webpack_require__.n(bulletedlist);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-list/src/listui.js
@@ -71435,8 +56412,8 @@ class listui_ListUI extends Plugin {
     init() {
         // Create two buttons and link them with numberedList and bulletedList commands.
         const t = this.editor.t;
-        this._addButton('numberedList', t('an'), numberedlist_default.a);
-        this._addButton('bulletedList', t('ao'), bulletedlist_default.a);
+        this._addButton('numberedList', t('d'), numberedlist_default.a);
+        this._addButton('bulletedList', t('e'), bulletedlist_default.a);
     }
     /**
 	 * Helper method for initializing a button and linking it with an appropriate command.
@@ -71503,6284 +56480,6 @@ class list_List extends Plugin {
 	}
 }
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/converters.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module media-embed/converters
- */
-
-
-
-
-/**
- * Returns a function that converts the model "url" attribute to the view representation.
- *
- * Depending on the configuration, the view representation can be "semantic" (for the data pipeline):
- *
- *		<figure class="media">
- *			<oembed url="foo"></oembed>
- *		</figure>
- *
- * or "non-semantic" (for the editing view pipeline):
- *
- *		<figure class="media">
- *			<div data-oembed-url="foo">[ non-semantic media preview for "foo" ]</div>
- *		</figure>
- *
- * **Note:** Changing the model "url" attribute replaces the entire content of the
- * `<figure>` in the view.
- *
- * @param {module:media-embed/mediaregistry~MediaRegistry} registry The registry providing
- * the media and their content.
- * @param {Object} options
- * @param {String} [options.renderMediaPreview] When `true`, the converter will create the view in the non-semantic form.
- * @param {String} [options.renderForEditingView] When `true`, the converter will create a view specific for the
- * editing pipeline (e.g. including CSS classes, content placeholders).
- * @returns {Function}
- */
-function modelToViewUrlAttributeConverter( registry, options ) {
-	return dispatcher => {
-		dispatcher.on( 'attribute:url:media', converter );
-	};
-
-	function converter( evt, data, conversionApi ) {
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		const url = data.attributeNewValue;
-		const viewWriter = conversionApi.writer;
-		const figure = conversionApi.mapper.toViewElement( data.item );
-
-		// TODO: removing it and creating it from scratch is a hack. We can do better than that.
-		viewWriter.remove( range_Range.createIn( figure ) );
-
-		const mediaViewElement = registry.getMediaViewElement( viewWriter, url, options );
-
-		viewWriter.insert( position_Position.createAt( figure ), mediaViewElement );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module media-embed/utils
- */
-
-
-
-
-const mediaSymbol = Symbol( 'isMedia' );
-
-/**
- * Converts a given {@link module:engine/view/element~Element} to a media embed widget:
- * * Adds a {@link module:engine/view/element~Element#_setCustomProperty custom property} allowing to recognize the media widget element.
- * * Calls the {@link module:widget/utils~toWidget} function with the proper element's label creator.
- *
- * @param {module:engine/view/element~Element} viewElement
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer An instance of the view writer.
- * @param {String} label The element's label.
- * @returns {module:engine/view/element~Element}
- */
-function toMediaWidget( viewElement, writer, label ) {
-	writer.setCustomProperty( mediaSymbol, true, viewElement );
-
-	return toWidget( viewElement, writer, { label } );
-}
-
-function isMediaWidgetSelected( viewSelection ) {
-	const viewElement = viewSelection.getSelectedElement();
-
-	return !!( viewElement && isMediaWidget( viewElement ) );
-}
-
-function isMediaWidget( viewElement ) {
-	return !!viewElement.getCustomProperty( mediaSymbol ) && isWidget( viewElement );
-}
-
-/**
- * Creates a view element representing the media. Either "semantic" one for the data pipeline:
- *
- *		<figure class="media">
- *			<oembed url="foo"></oembed>
- *		</figure>
- *
- * or "non-semantic" (for the editing view pipeline):
- *
- *		<figure class="media">
- *			<div data-oembed-url="foo">[ non-semantic media preview for "foo" ]</div>
- *		</figure>
- *
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer
- * @param {module:media-embed/mediaregistry~MediaRegistry} registry
- * @param {String} url
- * @param {Object} options
- * @param {String} [options.useSemanticWrapper]
- * @param {String} [options.renderForEditingView]
- * @returns {module:engine/view/containerelement~ContainerElement}
- */
-function createMediaFigureElement( writer, registry, url, options ) {
-	const figure = writer.createContainerElement( 'figure', { class: 'media' } );
-
-	// TODO: This is a hack. Without it, the figure in the data pipeline will contain &nbsp; because
-	// its only child is the UIElement (wrapper).
-	//
-	// Note: The hack is a copy&paste from widget utils; it makes the figure act like it's a widget.
-	figure.getFillerOffset = ckeditor5_media_embed_src_utils_getFillerOffset;
-
-	writer.insert( position_Position.createAt( figure ), registry.getMediaViewElement( writer, url, options ) );
-
-	return figure;
-}
-
-/**
- * Returns a selected media element in the model, if any.
- *
- * @param {module:engine/model/selection~Selection} selection
- * @returns {module:engine/model/element~Element|null}
- */
-function getSelectedMediaElement( selection ) {
-	const selectedElement = selection.getSelectedElement();
-
-	if ( selectedElement && selectedElement.is( 'media' ) ) {
-		return selectedElement;
-	}
-
-	return null;
-}
-
-function ckeditor5_media_embed_src_utils_getFillerOffset() {
-	return null;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/mediaembedcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module media-embed/mediaembedcommand
- */
-
-
-
-
-
-/**
- * The insert media command.
- *
- * The command is registered by the {@link module:media-embed/mediaembedediting~MediaEmbedEditing} as `'mediaEmbed'`.
- *
- * To insert media at the current selection, execute the command and specify the URL:
- *
- *		editor.execute( 'mediaEmbed', 'http://url.to.the/media' );
- *
- * @extends module:core/command~Command
- */
-class mediaembedcommand_MediaEmbedCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-		const schema = model.schema;
-		const position = selection.getFirstPosition();
-		const selectedMedia = getSelectedMediaElement( selection );
-
-		let parent = position.parent;
-
-		if ( parent != parent.root ) {
-			parent = parent.parent;
-		}
-
-		this.value = selectedMedia ? selectedMedia.getAttribute( 'url' ) : null;
-		this.isEnabled = schema.checkChild( parent, 'media' );
-	}
-
-	/**
-	 * Executes the command, which either:
-	 *
-	 * * updates the URL of the selected media,
-	 * * inserts the new media into the editor and puts the selection around it.
-	 *
-	 * @fires execute
-	 * @param {String} url The URL of the media.
-	 */
-	execute( url ) {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-		const selectedMedia = getSelectedMediaElement( selection );
-
-		if ( selectedMedia ) {
-			model.change( writer => {
-				writer.setAttribute( 'url', url, selectedMedia );
-			} );
-		} else {
-			const insertPosition = findOptimalInsertionPosition( selection );
-
-			model.change( writer => {
-				const mediaElement = writer.createElement( 'media', { url } );
-
-				model.insertContent( mediaElement, insertPosition );
-
-				writer.setSelection( mediaElement, 'on' );
-			} );
-		}
-	}
-}
-
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/theme/icons/media-placeholder.svg
-var media_placeholder = __webpack_require__(35);
-var media_placeholder_default = /*#__PURE__*/__webpack_require__.n(media_placeholder);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/mediaregistry.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module media-embed/mediaregistry
- */
-
-
-
-
-
-
-
-const mediaPlaceholderIconViewBox = '0 0 64 42';
-
-/**
- * A bridge between the raw media content provider definitions and the editor view content.
- *
- * It helps translating media URLs to corresponding {@link module:engine/view/element~Element view elements}.
- *
- * Mostly used by the {@link module:media-embed/mediaembedediting~MediaEmbedEditing} plugin.
- */
-class mediaregistry_MediaRegistry {
-	/**
-	 * Creates an instance of the {@link module:media-embed/mediaregistry~MediaRegistry} class.
-	 *
-	 * @param {module:utils/locale~Locale} locale The localization services instance.
-	 * @param {module:media-embed/mediaembed~MediaEmbedConfig} config The configuration of the media embed feature.
-	 */
-	constructor( locale, config ) {
-		const providers = config.providers;
-		const extraProviders = config.extraProviders || [];
-		const removedProviders = new Set( config.removeProviders );
-		const providerDefinitions = providers
-			.concat( extraProviders )
-			.filter( provider => {
-				const name = provider.name;
-
-				if ( !name ) {
-					/**
-					 * One of the providers (or extra providers) specified in the media embed configuration
-					 * has no name and will not be used by the editor. In order to get this media
-					 * provider working, double check your editor configuration.
-					 *
-					 * @warning media-embed-no-provider-name
-					 */
-					log["a" /* default */].warn( 'media-embed-no-provider-name: The configured media provider has no name and cannot be used.',
-						{ provider } );
-
-					return false;
-				}
-
-				return !removedProviders.has( name );
-			} );
-
-		/**
-		 * The locale {@link module:utils/locale~Locale} instance.
-		 *
-		 * @member {module:utils/locale~Locale}
-		 */
-		this.locale = locale;
-
-		/**
-		 * The media provider definitions available for the registry. Usually corresponding with the
-		 * {@link module:media-embed/mediaembed~MediaEmbedConfig media configuration}.
-		 *
-		 * @member {Array}
-		 */
-		this.providerDefinitions = providerDefinitions;
-	}
-
-	/**
-	 * Checks whether the passed URL is representing a certain media type allowed in the editor.
-	 *
-	 * @param {String} url The URL to be checked
-	 * @returns {Boolean}
-	 */
-	hasMedia( url ) {
-		return !!this._getMedia( url );
-	}
-
-	/**
-	 * For the given media URL string and options, it returns the {@link module:engine/view/element~Element view element}
-	 * representing that media.
-	 *
-	 * **Note:** If no URL is specified, an empty view element is returned.
-	 *
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} writer The view writer used to produce a view element.
-	 * @param {String} url The URL to be translated into a view element.
-	 * @param {Object} options
-	 * @param {String} [options.renderMediaPreview]
-	 * @param {String} [options.renderForEditingView]
-	 * @returns {module:engine/view/element~Element}
-	 */
-	getMediaViewElement( writer, url, options ) {
-		return this._getMedia( url ).getViewElement( writer, options );
-	}
-
-	/**
-	 * Returns a `Media` instance for the given URL.
-	 *
-	 * @protected
-	 * @param {String} url The URL of the media.
-	 * @returns {module:media-embed/mediaregistry~Media|null} The `Media` instance or `null` when there is none.
-	 */
-	_getMedia( url ) {
-		if ( !url ) {
-			return new mediaregistry_Media( this.locale );
-		}
-
-		url = url.trim();
-
-		for ( const definition of this.providerDefinitions ) {
-			const previewRenderer = definition.html;
-			let pattern = definition.url;
-
-			if ( !Array.isArray( pattern ) ) {
-				pattern = [ pattern ];
-			}
-
-			for ( const subPattern of pattern ) {
-				const match = this._getUrlMatches( url, subPattern );
-
-				if ( match ) {
-					return new mediaregistry_Media( this.locale, url, match, previewRenderer );
-				}
-			}
-		}
-
-		return null;
-	}
-
-	/**
-	 * Tries to match `url` to `pattern`.
-	 *
-	 * @private
-	 * @param {String} url The URL of the media.
-	 * @param {RegExp} pattern The pattern that should accept the media URL.
-	 * @returns {Array|null}
-	 */
-	_getUrlMatches( url, pattern ) {
-		// 1. Try to match without stripping the protocol and "www" subdomain.
-		let match = url.match( pattern );
-
-		if ( match ) {
-			return match;
-		}
-
-		// 2. Try to match after stripping the protocol.
-		let rawUrl = url.replace( /^https?:\/\//, '' );
-		match = rawUrl.match( pattern );
-
-		if ( match ) {
-			return match;
-		}
-
-		// 3. Try to match after stripping the "www" subdomain.
-		rawUrl = rawUrl.replace( /^www\./, '' );
-		match = rawUrl.match( pattern );
-
-		if ( match ) {
-			return match;
-		}
-
-		return null;
-	}
-}
-
-/**
- * Represents media defined by the provider configuration.
- *
- * It can be rendered to the {@link module:engine/view/element~Element view element} and used in the editing or data pipeline.
- *
- * @private
- */
-class mediaregistry_Media {
-	constructor( locale, url, match, previewRenderer ) {
-		/**
-		 * The URL this Media instance represents.
-		 *
-		 * @member {String}
-		 */
-		this.url = this._getValidUrl( url );
-
-		/**
-		 * Shorthand for {@link module:utils/locale~Locale#t}.
-		 *
-		 * @see module:utils/locale~Locale#t
-		 * @method
-		 */
-		this._t = locale.t;
-
-		/**
-		 * The output of the `RegExp.match` which validated the {@link #url} of this media.
-		 *
-		 * @member {Object}
-		 */
-		this._match = match;
-
-		/**
-		 * The function returning the HTML string preview of this media.
-		 *
-		 * @member {Function}
-		 */
-		this._previewRenderer = previewRenderer;
-	}
-
-	/**
-	 * Returns the view element representation of the media.
-	 *
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} writer The view writer used to produce a view element.
-	 * @param {Object} options
-	 * @param {String} [options.renderMediaPreview]
-	 * @param {String} [options.renderForEditingView]
-	 * @returns {module:engine/view/element~Element}
-	 */
-	getViewElement( writer, options ) {
-		const attributes = {};
-
-		if ( options.renderForEditingView || ( options.renderMediaPreview && this.url && this._previewRenderer ) ) {
-			if ( this.url ) {
-				attributes[ 'data-oembed-url' ] = this.url;
-			}
-
-			if ( options.renderForEditingView ) {
-				attributes.class = 'ck-media__wrapper';
-			}
-
-			const mediaHtml = this._getPreviewHtml( options );
-
-			return writer.createUIElement( 'div', attributes, function( domDocument ) {
-				const domElement = this.toDomElement( domDocument );
-
-				domElement.innerHTML = mediaHtml;
-
-				return domElement;
-			} );
-		} else {
-			if ( this.url ) {
-				attributes.url = this.url;
-			}
-
-			return writer.createEmptyElement( 'oembed', attributes );
-		}
-	}
-
-	/**
-	 * Returns the HTML string of the media content preview.
-	 *
-	 * @param {module:engine/view/downcastwriter~DowncastWriter} writer The view writer used to produce a view element.
-	 * @param {Object} options
-	 * @param {String} [options.renderForEditingView]
-	 * @returns {String}
-	 */
-	_getPreviewHtml( options ) {
-		if ( this._previewRenderer ) {
-			return this._previewRenderer( this._match );
-		} else {
-			// The placeholder only makes sense for editing view and media which have URLs.
-			// Placeholder is never displayed in data and URL-less media have no content.
-			if ( this.url && options.renderForEditingView ) {
-				return this._getPlaceholderHtml();
-			}
-
-			return '';
-		}
-	}
-
-	/**
-	 * Returns the placeholder HTML when the media has no content preview.
-	 *
-	 * @returns {String}
-	 */
-	_getPlaceholderHtml() {
-		const tooltip = new tooltipview_TooltipView();
-		const icon = new iconview_IconView();
-
-		tooltip.text = this._t( 'Open media in new tab' );
-		icon.content = media_placeholder_default.a;
-		icon.viewBox = mediaPlaceholderIconViewBox;
-
-		const placeholder = new template_Template( {
-			tag: 'div',
-			attributes: {
-				class: 'ck ck-reset_all ck-media__placeholder'
-			},
-			children: [
-				{
-					tag: 'div',
-					attributes: {
-						class: 'ck-media__placeholder__icon'
-					},
-					children: [ icon ]
-				},
-				{
-					tag: 'a',
-					attributes: {
-						class: 'ck-media__placeholder__url',
-						target: 'new',
-						href: this.url
-					},
-					children: [
-						{
-							tag: 'span',
-							attributes: {
-								class: 'ck-media__placeholder__url__text'
-							},
-							children: [ this.url ]
-						},
-						tooltip
-					]
-				}
-			]
-		} ).render();
-
-		return placeholder.outerHTML;
-	}
-
-	/**
-	 * Returns the full URL to the specified media.
-	 *
-	 * @param {String} url The URL of the media.
-	 * @returns {String|null}
-	 */
-	_getValidUrl( url ) {
-		if ( !url ) {
-			return null;
-		}
-
-		if ( url.match( /^https?/ ) ) {
-			return url;
-		}
-
-		return 'https://' + url;
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/theme/mediaembedediting.css
-var mediaembedediting = __webpack_require__(105);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/mediaembedediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module media-embed/mediaembedediting
- */
-
-
-
-
-
-
-
-
-/**
- * The media embed editing feature.
- *
- * @extends module:core/plugin~Plugin
- */
-class mediaembedediting_MediaEmbedEditing extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    constructor(editor) {
-        super(editor);
-        editor.config.define('mediaEmbed', {
-            providers: [
-                {
-                    name: 'dailymotion',
-                    url: /^dailymotion\.com\/video\/(\w+)/,
-                    html: match => {
-                        const id = match[1];
-                        return '<div style="position: relative; padding-bottom: 100%; height: 0; ">' + `<iframe src="https://www.dailymotion.com/embed/video/${ id }" ` + 'style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" ' + 'frameborder="0" width="480" height="270" allowfullscreen allow="autoplay">' + '</iframe>' + '</div>';
-                    }
-                },
-                {
-                    name: 'spotify',
-                    url: [
-                        /^open\.spotify\.com\/(artist\/\w+)/,
-                        /^open\.spotify\.com\/(album\/\w+)/,
-                        /^open\.spotify\.com\/(track\/\w+)/
-                    ],
-                    html: match => {
-                        const id = match[1];
-                        return '<div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 126%;">' + `<iframe src="https://open.spotify.com/embed/${ id }" ` + 'style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" ' + 'frameborder="0" allowtransparency="true" allow="encrypted-media">' + '</iframe>' + '</div>';
-                    }
-                },
-                {
-                    name: 'youtube',
-                    url: [
-                        /^youtube\.com\/watch\?v=([\w-]+)/,
-                        /^youtube\.com\/v\/([\w-]+)/,
-                        /^youtube\.com\/embed\/([\w-]+)/,
-                        /^youtu\.be\/([\w-]+)/
-                    ],
-                    html: match => {
-                        const id = match[1];
-                        return '<div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;">' + `<iframe src="https://www.youtube.com/embed/${ id }" ` + 'style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" ' + 'frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>' + '</iframe>' + '</div>';
-                    }
-                },
-                {
-                    name: 'vimeo',
-                    url: [
-                        /^vimeo\.com\/(\d+)/,
-                        /^vimeo\.com\/[^/]+\/[^/]+\/video\/(\d+)/,
-                        /^vimeo\.com\/album\/[^/]+\/video\/(\d+)/,
-                        /^vimeo\.com\/channels\/[^/]+\/(\d+)/,
-                        /^vimeo\.com\/groups\/[^/]+\/videos\/(\d+)/,
-                        /^vimeo\.com\/ondemand\/[^/]+\/(\d+)/,
-                        /^player\.vimeo\.com\/video\/(\d+)/
-                    ],
-                    html: match => {
-                        const id = match[1];
-                        return '<div style="position: relative; padding-bottom: 100%; height: 0; padding-bottom: 56.2493%;">' + `<iframe src="https://player.vimeo.com/video/${ id }" ` + 'style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" ' + 'frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>' + '</iframe>' + '</div>';
-                    }
-                },
-                {
-                    name: 'instagram',
-                    url: /^instagram\.com\/p\/(\w+)/
-                },
-                {
-                    name: 'twitter',
-                    url: /^twitter\.com/
-                },
-                {
-                    name: 'googleMaps',
-                    url: /^google\.com\/maps/
-                },
-                {
-                    name: 'flickr',
-                    url: /^flickr\.com/
-                },
-                {
-                    name: 'facebook',
-                    url: /^facebook\.com/
-                }
-            ]
-        });
-        /**
-		 * The media registry managing the media providers in the editor.
-		 *
-		 * @member {module:media-embed/mediaregistry~MediaRegistry} #registry
-		 */
-        this.registry = new mediaregistry_MediaRegistry(editor.locale, editor.config.get('mediaEmbed'));
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const schema = editor.model.schema;
-        const t = editor.t;
-        const conversion = editor.conversion;
-        const renderMediaPreview = editor.config.get('mediaEmbed.previewsInData');
-        const registry = this.registry;
-        editor.commands.add('mediaEmbed', new mediaembedcommand_MediaEmbedCommand(editor));
-        // Configure the schema.
-        schema.register('media', {
-            isObject: true,
-            isBlock: true,
-            allowWhere: '$block',
-            allowAttributes: ['url']
-        });
-        // Model -> Data
-        conversion.for('dataDowncast').add(downcastElementToElement({
-            model: 'media',
-            view: (modelElement, viewWriter) => {
-                const url = modelElement.getAttribute('url');
-                return createMediaFigureElement(viewWriter, registry, url, { renderMediaPreview: url && renderMediaPreview });
-            }
-        }));
-        // Model -> Data (url -> data-oembed-url)
-        conversion.for('dataDowncast').add(modelToViewUrlAttributeConverter(registry, { renderMediaPreview }));
-        // Model -> View (element)
-        conversion.for('editingDowncast').add(downcastElementToElement({
-            model: 'media',
-            view: (modelElement, viewWriter) => {
-                const url = modelElement.getAttribute('url');
-                const figure = createMediaFigureElement(viewWriter, registry, url, { renderForEditingView: true });
-                return toMediaWidget(figure, viewWriter, t('ai'));
-            }
-        }));
-        // Model -> View (url -> data-oembed-url)
-        conversion.for('editingDowncast').add(modelToViewUrlAttributeConverter(registry, { renderForEditingView: true }));
-        // View -> Model (data-oembed-url -> url)
-        conversion.for('upcast')    // Upcast semantic media.
-.add(upcastElementToElement({
-            view: {
-                name: 'oembed',
-                attributes: { url: true }
-            },
-            model: (viewMedia, modelWriter) => {
-                const url = viewMedia.getAttribute('url');
-                if (registry.hasMedia(url)) {
-                    return modelWriter.createElement('media', { url });
-                }
-            }
-        }))    // Upcast non-semantic media.
-.add(upcastElementToElement({
-            view: {
-                name: 'div',
-                attributes: { 'data-oembed-url': true }
-            },
-            model: (viewMedia, modelWriter) => {
-                const url = viewMedia.getAttribute('data-oembed-url');
-                if (registry.hasMedia(url)) {
-                    return modelWriter.createElement('media', { url });
-                }
-            }
-        }));
-    }
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/automediaembed.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module media-embed/automediaembed
- */
-
-
-
-
-
-
-
-
-
-
-const URL_REGEXP = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w.-]+)+[\w\-._~:/?#[\]@!$&'()*+,;=]+$/;
-
-/**
- * The auto-media embed plugin. It recognizes media links in the pasted content and embeds
- * them shortly after they are injected into the document.
- *
- * @extends module:core/plugin~Plugin
- */
-class automediaembed_AutoMediaEmbed extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ clipboard_Clipboard, undo_Undo ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'AutoMediaEmbed';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	constructor( editor ) {
-		super( editor );
-
-		/**
-		 * The paste–to–embed `setTimeout` ID. Stored as a property to allow
-		 * cleaning of the timeout.
-		 *
-		 * @private
-		 * @member {Number} #_timeoutId
-		 */
-		this._timeoutId = null;
-
-		/**
-		 * The position where the `<media>` element will be inserted after the timeout,
-		 * determined each time the new content is pasted into the document.
-		 *
-		 * @private
-		 * @member {module:engine/model/liveposition~LivePosition} #_positionToInsert
-		 */
-		this._positionToInsert = null;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const modelDocument = editor.model.document;
-
-		// We need to listen on `Clipboard#inputTransformation` because we need to save positions of selection.
-		// After pasting, the content between those positions will be checked for a URL that could be transformed
-		// into media.
-		this.listenTo( editor.plugins.get( clipboard_Clipboard ), 'inputTransformation', () => {
-			const firstRange = modelDocument.selection.getFirstRange();
-
-			const leftLivePosition = liveposition_LivePosition.createFromPosition( firstRange.start );
-			leftLivePosition.stickiness = 'toPrevious';
-
-			const rightLivePosition = liveposition_LivePosition.createFromPosition( firstRange.end );
-			rightLivePosition.stickiness = 'toNext';
-
-			modelDocument.once( 'change:data', () => {
-				this._embedMediaBetweenPositions( leftLivePosition, rightLivePosition );
-
-				leftLivePosition.detach();
-				rightLivePosition.detach();
-			}, { priority: 'high' } );
-		} );
-
-		editor.commands.get( 'undo' ).on( 'execute', () => {
-			if ( this._timeoutId ) {
-				global.window.clearTimeout( this._timeoutId );
-				this._positionToInsert.detach();
-
-				this._timeoutId = null;
-				this._positionToInsert = null;
-			}
-		}, { priority: 'high' } );
-	}
-
-	/**
-	 * Analyzes the part of the document between provided positions in search for a URL representing media.
-	 * When the URL is found, it is automatically converted into media.
-	 *
-	 * @protected
-	 * @param {module:engine/model/liveposition~LivePosition} leftPosition Left position of the selection.
-	 * @param {module:engine/model/liveposition~LivePosition} rightPosition Right position of the selection.
-	 */
-	_embedMediaBetweenPositions( leftPosition, rightPosition ) {
-		const editor = this.editor;
-		const mediaRegistry = editor.plugins.get( mediaembedediting_MediaEmbedEditing ).registry;
-		const urlRange = new liverange_LiveRange( leftPosition, rightPosition );
-		const walker = new model_treewalker_TreeWalker( { boundaries: urlRange, ignoreElementEnd: true } );
-
-		let url = '';
-
-		for ( const node of walker ) {
-			if ( node.item.is( 'textProxy' ) ) {
-				url += node.item.data;
-			}
-		}
-
-		url = url.trim();
-
-		// If the URL does not match to universal URL regexp, let's skip that.
-		if ( !url.match( URL_REGEXP ) ) {
-			return;
-		}
-
-		// If the URL represents a media, let's use it.
-		if ( !mediaRegistry.hasMedia( url ) ) {
-			return;
-		}
-
-		// Position won't be available in the `setTimeout` function so let's clone it.
-		this._positionToInsert = liveposition_LivePosition.createFromPosition( leftPosition );
-
-		// This action mustn't be executed if undo was called between pasting and auto-embedding.
-		this._timeoutId = global.window.setTimeout( () => {
-			editor.model.change( writer => {
-				this._timeoutId = null;
-
-				writer.remove( urlRange );
-
-				// Check if position where the media element should be inserted is still valid.
-				if ( this._positionToInsert.root.rootName !== '$graveyard' ) {
-					writer.setSelection( this._positionToInsert );
-				}
-
-				editor.commands.execute( 'mediaEmbed', url );
-
-				this._positionToInsert.detach();
-				this._positionToInsert = null;
-			} );
-		}, 100 );
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/theme/mediaform.css
-var mediaform = __webpack_require__(107);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/ui/mediaformview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module media-embed/ui/mediaformview
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The media form view controller class.
- *
- * See {@link module:media-embed/ui/mediaformview~MediaFormView}.
- *
- * @extends module:ui/view~View
- */
-class mediaformview_MediaFormView extends src_view_View {
-    /**
-	 * @param {Array.<Function>} validators Form validators used by {@link #isValid}.
-	 * @param {module:utils/locale~Locale} [locale] The localization services instance.
-	 */
-    constructor(validators, locale) {
-        super(locale);
-        const t = locale.t;
-        /**
-		 * Tracks information about DOM focus in the form.
-		 *
-		 * @readonly
-		 * @member {module:utils/focustracker~FocusTracker}
-		 */
-        this.focusTracker = new focustracker_FocusTracker();
-        /**
-		 * An instance of the {@link module:utils/keystrokehandler~KeystrokeHandler}.
-		 *
-		 * @readonly
-		 * @member {module:utils/keystrokehandler~KeystrokeHandler}
-		 */
-        this.keystrokes = new keystrokehandler_KeystrokeHandler();
-        /**
-		 * The URL input view.
-		 *
-		 * @member {module:ui/labeledinput/labeledinputview~LabeledInputView}
-		 */
-        this.urlInputView = this._createUrlInput();
-        /**
-		 * The Save button view.
-		 *
-		 * @member {module:ui/button/buttonview~ButtonView}
-		 */
-        this.saveButtonView = this._createButton(t('az'), check_default.a, 'ck-button-save');
-        this.saveButtonView.type = 'submit';
-        /**
-		 * The Cancel button view.
-		 *
-		 * @member {module:ui/button/buttonview~ButtonView}
-		 */
-        this.cancelButtonView = this._createButton(t('ba'), cancel_default.a, 'ck-button-cancel', 'cancel');
-        /**
-		 * A collection of views that can be focused in the form.
-		 *
-		 * @readonly
-		 * @protected
-		 * @member {module:ui/viewcollection~ViewCollection}
-		 */
-        this._focusables = new viewcollection_ViewCollection();
-        /**
-		 * Helps cycling over {@link #_focusables} in the form.
-		 *
-		 * @readonly
-		 * @protected
-		 * @member {module:ui/focuscycler~FocusCycler}
-		 */
-        this._focusCycler = new FocusCycler({
-            focusables: this._focusables,
-            focusTracker: this.focusTracker,
-            keystrokeHandler: this.keystrokes,
-            actions: {
-                // Navigate form fields backwards using the Shift + Tab keystroke.
-                focusPrevious: 'shift + tab',
-                // Navigate form fields forwards using the Tab key.
-                focusNext: 'tab'
-            }
-        });
-        /**
-		 * An array of form validators used by {@link #isValid}.
-		 *
-		 * @readonly
-		 * @protected
-		 * @member {Array.<Function>}
-		 */
-        this._validators = validators;
-        this.setTemplate({
-            tag: 'form',
-            attributes: {
-                class: [
-                    'ck',
-                    'ck-media-form'
-                ],
-                tabindex: '-1'
-            },
-            children: [
-                this.urlInputView,
-                this.saveButtonView,
-                this.cancelButtonView
-            ]
-        });
-    }
-    /**
-	 * @inheritDoc
-	 */
-    render() {
-        super.render();
-        submitHandler({ view: this });
-        const childViews = [
-            this.urlInputView,
-            this.saveButtonView,
-            this.cancelButtonView
-        ];
-        childViews.forEach(v => {
-            // Register the view as focusable.
-            this._focusables.add(v);
-            // Register the view in the focus tracker.
-            this.focusTracker.add(v.element);
-        });
-        // Start listening for the keystrokes coming from #element.
-        this.keystrokes.listenTo(this.element);
-        const stopPropagation = data => data.stopPropagation();
-        // Since the form is in the dropdown panel which is a child of the toolbar, the toolbar's
-        // keystroke handler would take over the key management in the URL input. We need to prevent
-        // this ASAP. Otherwise, the basic caret movement using the arrow keys will be impossible.
-        this.keystrokes.set('arrowright', stopPropagation);
-        this.keystrokes.set('arrowleft', stopPropagation);
-        this.keystrokes.set('arrowup', stopPropagation);
-        this.keystrokes.set('arrowdown', stopPropagation);
-        // Intercept the "selectstart" event, which is blocked by default because of the default behavior
-        // of the DropdownView#panelView.
-        // TODO: blocking "selectstart" in the #panelView should be configurable per–drop–down instance.
-        this.listenTo(this.urlInputView.element, 'selectstart', (evt, domEvt) => {
-            domEvt.stopPropagation();
-        }, { priority: 'high' });
-    }
-    /**
-	 * Focuses the fist {@link #_focusables} in the form.
-	 */
-    focus() {
-        this._focusCycler.focusFirst();
-    }
-    /**
-	 * The native DOM `value` of the {@link #urlInputView} element.
-	 *
-	 * **Note**: Do not confuse it with the {@link module:ui/inputtext/inputtextview~InputTextView#value}
-	 * which works one way only and may not represent the actual state of the component in the DOM.
-	 *
-	 * @type {Number}
-	 */
-    get url() {
-        return this.urlInputView.inputView.element.value.trim();
-    }
-    /**
-	 * Sets the native DOM `value` of the {@link #urlInputView} element.
-	 *
-	 * **Note**: Do not confuse it with the {@link module:ui/inputtext/inputtextview~InputTextView#value}
-	 * which works one way only and may not represent the actual state of the component in the DOM.
-	 *
-	 * @param {String} url
-	 */
-    set url(url) {
-        this.urlInputView.inputView.element.value = url.trim();
-    }
-    /**
-	 * Validates the form and returns `false` when some fields are invalid.
-	 *
-	 * @returns {Boolean}
-	 */
-    isValid() {
-        this.resetErrors();
-        for (const validator of this._validators) {
-            const errorText = validator(this);
-            // One error per field is enough.
-            if (errorText) {
-                // Apply updated error.
-                this.urlInputView.errorText = errorText;
-                return false;
-            }
-        }
-        return true;
-    }
-    /**
-	 * Cleans up the errors in all form fields. See {@link #isValid}.
-	 */
-    resetErrors() {
-        this.urlInputView.errorText = false;
-    }
-    /**
-	 * Creates a labeled input view.
-	 *
-	 * @private
-	 * @returns {module:ui/labeledinput/labeledinputview~LabeledInputView} Labeled input view instance.
-	 */
-    _createUrlInput() {
-        const t = this.locale.t;
-        const labeledInput = new labeledinputview_LabeledInputView(this.locale, inputtextview_InputTextView);
-        labeledInput.label = t('bh');
-        labeledInput.inputView.placeholder = 'https://example.com';
-        return labeledInput;
-    }
-    /**
-	 * Creates a button view.
-	 *
-	 * @private
-	 * @param {String} label The button label.
-	 * @param {String} icon The button icon.
-	 * @param {String} className The additional button CSS class name.
-	 * @param {String} [eventName] An event name that the `ButtonView#execute` event will be delegated to.
-	 * @returns {module:ui/button/buttonview~ButtonView} The button view instance.
-	 */
-    _createButton(label, icon, className, eventName) {
-        const button = new buttonview_ButtonView(this.locale);
-        button.set({
-            label,
-            icon,
-            tooltip: true
-        });
-        button.extendTemplate({ attributes: { class: className } });
-        if (eventName) {
-            button.delegate('execute').to(this, eventName);
-        }
-        return button;
-    }
-}    /**
- * Fired when the form view is submitted (when one of the children triggered the submit event),
- * e.g. click on {@link #saveButtonView}.
- *
- * @event submit
- */
-     /**
- * Fired when the form view is canceled, e.g. click on {@link #cancelButtonView}.
- *
- * @event cancel
- */
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/theme/icons/media.svg
-var media = __webpack_require__(36);
-var media_default = /*#__PURE__*/__webpack_require__.n(media);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/mediaembedui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module media-embed/mediaembedui
- */
-
-
-
-
-
-/**
- * The media embed UI plugin.
- *
- * @extends module:core/plugin~Plugin
- */
-class mediaembedui_MediaEmbedUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    static get requires() {
-        return [mediaembedediting_MediaEmbedEditing];
-    }
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const command = editor.commands.get('mediaEmbed');
-        const registry = editor.plugins.get(mediaembedediting_MediaEmbedEditing).registry;
-        // Setup `imageUpload` button.
-        editor.ui.componentFactory.add('mediaEmbed', locale => {
-            const form = new mediaformview_MediaFormView(getFormValidators(editor.t, registry), locale);
-            const dropdown = createDropdown(locale);
-            this._setUpDropdown(dropdown, form, command, editor);
-            this._setUpForm(form, dropdown, command);
-            return dropdown;
-        });
-    }
-    _setUpDropdown(dropdown, form, command) {
-        const editor = this.editor;
-        const t = editor.t;
-        const button = dropdown.buttonView;
-        dropdown.bind('isEnabled').to(command);
-        dropdown.panelView.children.add(form);
-        button.set({
-            label: t('aj'),
-            icon: media_default.a,
-            tooltip: true
-        });
-        // Note: Use the low priority to make sure the following listener starts working after the
-        // default action of the drop-down is executed (i.e. the panel showed up). Otherwise, the
-        // invisible form/input cannot be focused/selected.
-        button.on('open', () => {
-            // Make sure that each time the panel shows up, the URL field remains in sync with the value of
-            // the command. If the user typed in the input, then canceled (`urlInputView#value` stays
-            // unaltered) and re-opened it without changing the value of the media command (e.g. because they
-            // didn't change the selection), they would see the old value instead of the actual value of the
-            // command.
-            form.url = command.value || '';
-            form.urlInputView.select();
-            form.focus();
-        }, { priority: 'low' });
-        dropdown.on('submit', () => {
-            if (form.isValid()) {
-                editor.execute('mediaEmbed', form.url);
-                closeUI();
-            }
-        });
-        dropdown.on('change:isOpen', () => form.resetErrors());
-        dropdown.on('cancel', () => closeUI());
-        function closeUI() {
-            editor.editing.view.focus();
-            dropdown.isOpen = false;
-        }
-    }
-    _setUpForm(form, dropdown, command) {
-        form.delegate('submit', 'cancel').to(dropdown);
-        form.urlInputView.bind('value').to(command, 'value');
-        // Form elements should be read-only when corresponding commands are disabled.
-        form.urlInputView.bind('isReadOnly').to(command, 'isEnabled', value => !value);
-        form.saveButtonView.bind('isEnabled').to(command);
-    }
-}
-function getFormValidators(t, registry) {
-    return [
-        form => {
-            if (!form.url.length) {
-                return t('ak');
-            }
-        },
-        form => {
-            if (!registry.hasMedia(form.url)) {
-                return t('al');
-            }
-        }
-    ];
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-media-embed/src/mediaembed.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module media-embed/mediaembed
- */
-
-
-
-
-
-
-
-/**
- * The media embed plugin.
- *
- * For a detailed overview, check the {@glink features/media-embed Media Embed feature documentation}.
- *
- * This is a "glue" plugin which loads the following plugins:
- *
- * * The {@link module:media-embed/mediaembedediting~MediaEmbedEditing media embed editing feature},
- * * The {@link module:media-embed/mediaembedui~MediaEmbedUI media embed UI feature} and
- * * The {@link module:media-embed/automediaembed~AutoMediaEmbed auto-media embed feature}.
- *
- * @extends module:core/plugin~Plugin
- */
-class mediaembed_MediaEmbed extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ mediaembedediting_MediaEmbedEditing, mediaembedui_MediaEmbedUI, automediaembed_AutoMediaEmbed, widget_Widget ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'MediaEmbed';
-	}
-}
-
-/**
- * The media embed provider descriptor. Used in
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#providers `config.mediaEmbed.providers`} and
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#extraProviders `config.mediaEmbed.extraProviders`}.
- *
- * See {@link module:media-embed/mediaembed~MediaEmbedConfig} to learn more.
- *
- *		{
- *			name: 'example',
- *
- *			// The following RegExp matches https://www.example.com/media/{media id},
- *			// (either with "http(s)://" and "www" or without), so the valid URLs are:
- *			//
- *			// * https://www.example.com/media/{media id},
- *			// * http://www.example.com/media/{media id},
- *			// * www.example.com/media/{media id},
- *			// * example.com/media/{media id}
- *			url: /^example\.com\/media\/(\w+)/,
- *
- *			// The rendering function of the provider.
- *			// Used to represent the media when editing the content (i.e. in the view)
- *			// and also in the data output of the editor if semantic data output is disabled.
- *			html: match => `The HTML representing the media with ID=${ match[ 1 ] }.`
- *		}
- *
- * You can allow any sort of media in the editor using the "allow–all" `RegExp`.
- * But mind that, since URLs are processed in the order of configuration, if one of the previous
- * `RegExps` matches the URL, it will have a precedence over this one.
- *
- *		{
- *			name: 'allow-all',
- *			url: /^.+/
- *		}
- *
- * To implement responsive media, you can use the following HTML structure:
- *
- *		{
- *			...
- *			html: match =>
- *				'<div style="position:relative; padding-bottom:100%; height:0">' +
- *					'<iframe src="..." frameborder="0" ' +
- *						'style="position:absolute; width:100%; height:100%; top:0; left:0">' +
- *					'</iframe>' +
- *				'</div>'
- *		}
- *
- * @typedef {Object} module:media-embed/mediaembed~MediaEmbedProvider
- * @property {String} name The name of the provider. Used e.g. when
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#removeProviders removing providers}.
- * @property {RegExp|Array.<RegExp>} url The `RegExp` object (or array of objects) defining the URL of the media.
- * If any URL matches the `RegExp`, it becomes the media in the editor model, as defined by the provider. The result
- * of matching (output of `String.prototype.match()`) is passed to the `html` rendering function of the media.
- *
- * **Note:** You do not need to include the protocol (`http://`, `https://`) and `www` subdomain in your `RegExps`,
- * they are stripped from the URLs before matching anyway.
- * @property {Function} [html] (optional) The rendering function of the media. The function receives the entire matching
- * array from the corresponding `url` `RegExp` as an argument, allowing rendering a dedicated
- * preview of the media identified by a certain ID or a hash. When not defined, the media embed feature
- * will use a generic media representation in the view and output data.
- * Note that when
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#previewsInData `config.mediaEmbed.previewsInData`}
- * is `true`, the rendering function **will always** be used for the media in the editor data output.
- */
-
-/**
- * The configuration of the {@link module:media-embed/mediaembed~MediaEmbed} feature.
- *
- * Read more in {@link module:media-embed/mediaembed~MediaEmbedConfig}.
- *
- * @member {module:media-embed/mediaembed~MediaEmbedConfig} module:core/editor/editorconfig~EditorConfig#mediaEmbed
- */
-
-/**
- * The configuration of the media embed features.
- *
- * Read more about {@glink features/media-embed#configuration configuring the media embed feature}.
- *
- *		ClassicEditor
- *			.create( editorElement, {
- * 				mediaEmbed: ... // Media embed feature options.
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface MediaEmbedConfig
- */
-
-/**
- * The default media providers supported by the editor.
- *
- * The names of providers with rendering functions (previews):
- *
- * * "dailymotion",
- * * "spotify",
- * * "youtube",
- * * "vimeo"
- *
- * The names of providers without rendering functions:
- *
- * * "instagram",
- * * "twitter",
- * * "googleMaps",
- * * "flickr",
- * * "facebook"
- *
- * See the {@link module:media-embed/mediaembed~MediaEmbedProvider provider syntax} to learn more about
- * different kinds of media and media providers.
- *
- * **Note**: The default media provider configuration may not support all possible media URLs,
- * only the most common are included.
- *
- * Media without rendering functions are always represented in the data using the "semantic" markup. See
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#previewsInData `config.mediaEmbed.previewsInData`} to
- * learn more about possible data outputs.
- *
- * The priority of media providers corresponds to the order of configuration. The first provider
- * to match the URL is always used, even if there are other providers that support a particular URL.
- * The URL is never matched against the remaining providers.
- *
- * To discard **all** default media providers, simply override this configuration with your own
- * {@link module:media-embed/mediaembed~MediaEmbedProvider definitions}:
- *
- *		ClassicEditor
- *			.create( editorElement, {
- *				plugins: [ MediaEmbed, ... ],
- *				mediaEmbed: {
- *					providers: [
- *						{
- *							 name: 'myProvider',
- *							 url: /^example\.com\/media\/(\w+)/,
- *							 html: match => '...'
- *						},
- *						...
- * 					]
- *				}
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * You can take inspiration from the default configuration of this feature which you can find in:
- * https://github.com/ckeditor/ckeditor5-media-embed/blob/master/src/mediaembedediting.js
- *
- * To **extend** the list of default providers, use
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#extraProviders `config.mediaEmbed.extraProviders`}.
- *
- * To **remove** certain providers, use
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#removeProviders `config.mediaEmbed.removeProviders`}.
- *
- * @member {Array.<module:media-embed/mediaembed~MediaEmbedProvider>} module:media-embed/mediaembed~MediaEmbedConfig#providers
- */
-
-/**
- * The additional media providers supported by the editor. This configuration helps extend the default
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#providers}.
- *
- *		ClassicEditor
- *			.create( editorElement, {
- *				plugins: [ MediaEmbed, ... ],
- *				mediaEmbed: {
- *					extraProviders: [
- *						{
- *							 name: 'extraProvider',
- *							 url: /^example\.com\/media\/(\w+)/,
- *							 html: match => '...'
- *						},
- *						...
- * 					]
- *				}
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See the {@link module:media-embed/mediaembed~MediaEmbedProvider provider syntax} to learn more.
- *
- * @member {Array.<module:media-embed/mediaembed~MediaEmbedProvider>} module:media-embed/mediaembed~MediaEmbedConfig#extraProviders
- */
-
-/**
- * The list of media providers that should not be used despite being available in
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#providers `config.mediaEmbed.providers`} and
- * {@link module:media-embed/mediaembed~MediaEmbedConfig#extraProviders `config.mediaEmbed.extraProviders`}
- *
- *		mediaEmbed: {
- *			removeProviders: [ 'youtube', 'twitter' ]
- *		}
- *
- * @member {Array.<String>} module:media-embed/mediaembed~MediaEmbedConfig#removeProviders
- */
-
-/**
- * Controls the data format produced by the feature.
- *
- * When `false` (default), the feature produces "semantic" data, i.e. it does not include the preview of
- * the media, just the `<oembed>` tag with the `url` attribute:
- *
- *		<figure class="media">
- *			<oembed url="https://url"></oembed>
- *		</figure>
- *
- * When `true`, the media is represented in the output in the same way it looks in the editor,
- * i.e. the media preview is saved to the database:
- *
- *		<figure class="media">
- *			<div data-oembed-url="https://url">
- *				<iframe src="https://preview"></iframe>
- *			</div>
- *		</figure>
- *
- * **Note:** Media without preview are always represented in the data using the "semantic" markup
- * regardless of the value of the `previewsInData`. Learn more about different kinds of media
- * in the {@link module:media-embed/mediaembed~MediaEmbedConfig#providers `config.mediaEmbed.providers`}
- * configuration description.
- *
- * @member {Boolean} [module:media-embed/mediaembed~MediaEmbedConfig#previewsInData=false]
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/utils
- */
-
-/**
- * Returns the parent element of given name. Returns undefined if position is not inside desired parent.
- *
- * @param {String} parentName Name of parent element to find.
- * @param {module:engine/model/position~Position|module:engine/model/position~Position} position Position to start searching.
- * @returns {module:engine/model/element~Element|module:engine/model/documentfragment~DocumentFragment}
- */
-function findAncestor( parentName, position ) {
-	let parent = position.parent;
-
-	while ( parent ) {
-		if ( parent.name === parentName ) {
-			return parent;
-		}
-
-		parent = parent.parent;
-	}
-}
-
-/**
- * A common method to update the numeric value. If a value is the default one, it will be unset.
- *
- * @param {String} key Attribute key.
- * @param {*} value The new attribute value.
- * @param {module:engine/model/item~Item} item Model item on which the attribute will be set.
- * @param {module:engine/model/writer~Writer} writer
- * @param {*} defaultValue Default attribute value. If a value is lower or equal, it will be unset.
- */
-function updateNumericAttribute( key, value, item, writer, defaultValue = 1 ) {
-	if ( value > defaultValue ) {
-		writer.setAttribute( key, value, item );
-	} else {
-		writer.removeAttribute( key, item );
-	}
-}
-
-/**
- * Common method to create empty table cell - it will create proper model structure as table cell must have at least one block inside.
- *
- * @param {module:engine/model/writer~Writer} writer Model writer.
- * @param {module:engine/model/position~Position} insertPosition Position at which table cell should be inserted.
- * @param {Object} attributes Element's attributes.
- */
-function createEmptyTableCell( writer, insertPosition, attributes = {} ) {
-	const tableCell = writer.createElement( 'tableCell', attributes );
-	writer.insertElement( 'paragraph', tableCell );
-	writer.insert( tableCell, insertPosition );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/converters/upcasttable.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/converters/upcasttable
- */
-
-
-
-
-
-/**
- * View table element to model table element conversion helper.
- *
- * This conversion helper converts the table element as well as table rows.
- *
- * @returns {Function} Conversion helper.
- */
-function upcastTable() {
-	return dispatcher => {
-		dispatcher.on( 'element:table', ( evt, data, conversionApi ) => {
-			const viewTable = data.viewItem;
-
-			// When element was already consumed then skip it.
-			if ( !conversionApi.consumable.test( viewTable, { name: true } ) ) {
-				return;
-			}
-
-			const { rows, headingRows, headingColumns } = scanTable( viewTable );
-
-			// Only set attributes if values is greater then 0.
-			const attributes = {};
-
-			if ( headingColumns ) {
-				attributes.headingColumns = headingColumns;
-			}
-
-			if ( headingRows ) {
-				attributes.headingRows = headingRows;
-			}
-
-			const table = conversionApi.writer.createElement( 'table', attributes );
-
-			// Insert element on allowed position.
-			const splitResult = conversionApi.splitToAllowedParent( table, data.modelCursor );
-
-			// When there is no split result it means that we can't insert element to model tree, so let's skip it.
-			if ( !splitResult ) {
-				return;
-			}
-
-			conversionApi.writer.insert( table, splitResult.position );
-			conversionApi.consumable.consume( viewTable, { name: true } );
-
-			if ( rows.length ) {
-				// Upcast table rows in proper order (heading rows first).
-				rows.forEach( row => conversionApi.convertItem( row, model_position_Position.createAt( table, 'end' ) ) );
-			} else {
-				// Create one row and one table cell for empty table.
-				const row = conversionApi.writer.createElement( 'tableRow' );
-				conversionApi.writer.insert( row, model_position_Position.createAt( table, 'end' ) );
-
-				createEmptyTableCell( conversionApi.writer, model_position_Position.createAt( row, 'end' ) );
-			}
-
-			// Set conversion result range.
-			data.modelRange = new model_range_Range(
-				// Range should start before inserted element
-				model_position_Position.createBefore( table ),
-				// Should end after but we need to take into consideration that children could split our
-				// element, so we need to move range after parent of the last converted child.
-				// before: <allowed>[]</allowed>
-				// after: <allowed>[<converted><child></child></converted><child></child><converted>]</converted></allowed>
-				model_position_Position.createAfter( table )
-			);
-
-			// Now we need to check where the modelCursor should be.
-			// If we had to split parent to insert our element then we want to continue conversion inside split parent.
-			//
-			// before: <allowed><notAllowed>[]</notAllowed></allowed>
-			// after:  <allowed><notAllowed></notAllowed><converted></converted><notAllowed>[]</notAllowed></allowed>
-			if ( splitResult.cursorParent ) {
-				data.modelCursor = model_position_Position.createAt( splitResult.cursorParent );
-
-				// Otherwise just continue after inserted element.
-			} else {
-				data.modelCursor = data.modelRange.end;
-			}
-		} );
-	};
-}
-
-function upcastTableCell( elementName ) {
-	return dispatcher => {
-		dispatcher.on( `element:${ elementName }`, ( evt, data, conversionApi ) => {
-			const viewTableCell = data.viewItem;
-
-			// When element was already consumed then skip it.
-			if ( !conversionApi.consumable.test( viewTableCell, { name: true } ) ) {
-				return;
-			}
-
-			const tableCell = conversionApi.writer.createElement( 'tableCell' );
-
-			// Insert element on allowed position.
-			const splitResult = conversionApi.splitToAllowedParent( tableCell, data.modelCursor );
-
-			// When there is no split result it means that we can't insert element to model tree, so let's skip it.
-			if ( !splitResult ) {
-				return;
-			}
-
-			conversionApi.writer.insert( tableCell, splitResult.position );
-			conversionApi.consumable.consume( viewTableCell, { name: true } );
-
-			const modelCursor = model_position_Position.createAt( tableCell );
-			conversionApi.convertChildren( viewTableCell, modelCursor );
-
-			// Ensure a paragraph in the model for empty table cells.
-			if ( !tableCell.childCount ) {
-				conversionApi.writer.insertElement( 'paragraph', modelCursor );
-			}
-
-			// Set conversion result range.
-			data.modelRange = new model_range_Range(
-				// Range should start before inserted element
-				model_position_Position.createBefore( tableCell ),
-				// Should end after but we need to take into consideration that children could split our
-				// element, so we need to move range after parent of the last converted child.
-				// before: <allowed>[]</allowed>
-				// after: <allowed>[<converted><child></child></converted><child></child><converted>]</converted></allowed>
-				model_position_Position.createAfter( tableCell )
-			);
-
-			// Continue after inserted element.
-			data.modelCursor = data.modelRange.end;
-		} );
-	};
-}
-
-// Scans table rows and extracts required metadata from the table:
-//
-// headingRows    - the number of rows that goes as table header.
-// headingColumns - max number of row headings.
-// rows           - sorted `<tr>`s as they should go into the model - ie. if `<thead>` is inserted after `<tbody>` in the view.
-//
-// @param {module:engine/view/element~Element} viewTable
-// @returns {{headingRows, headingColumns, rows}}
-function scanTable( viewTable ) {
-	const tableMeta = {
-		headingRows: 0,
-		headingColumns: 0
-	};
-
-	// The `<tbody>` and <thead> sections in the DOM do not have to be in order `<thead>` -> `<tbody>` and there might be more then one of
-	// them.
-	// As the model does not have those sections, rows from different sections must be sorted.
-	// For example, below is a valid HTML table:
-	//
-	//		<table>
-	//			<tbody><tr><td>2</td></tr></tbody>
-	//			<thead><tr><td>1</td></tr></thead>
-	//			<tbody><tr><td>3</td></tr></tbody>
-	//		</table>
-	//
-	// But browsers will render rows in order as: 1 as heading and 2 and 3 as (body).
-	const headRows = [];
-	const bodyRows = [];
-
-	// Currently the editor does not support more then one <thead> section.
-	// Only the first <thead> from the view will be used as heading rows and others will be converted to body rows.
-	let firstTheadElement;
-
-	for ( const tableChild of Array.from( viewTable.getChildren() ) ) {
-		// Only <thead>, <tbody> & <tfoot> from allowed table children can have <tr>s.
-		// The else is for future purposes (mainly <caption>).
-		if ( tableChild.name === 'tbody' || tableChild.name === 'thead' || tableChild.name === 'tfoot' ) {
-			// Save the first <thead> in the table as table header - all other ones will be converted to table body rows.
-			if ( tableChild.name === 'thead' && !firstTheadElement ) {
-				firstTheadElement = tableChild;
-			}
-
-			for ( const tr of Array.from( tableChild.getChildren() ) ) {
-				// This <tr> is a child of a first <thead> element.
-				if ( tr.parent.name === 'thead' && tr.parent === firstTheadElement ) {
-					tableMeta.headingRows++;
-					headRows.push( tr );
-				} else {
-					bodyRows.push( tr );
-					// For other rows check how many column headings this row has.
-
-					const headingCols = scanRowForHeadingColumns( tr, tableMeta, firstTheadElement );
-
-					if ( headingCols > tableMeta.headingColumns ) {
-						tableMeta.headingColumns = headingCols;
-					}
-				}
-			}
-		}
-	}
-
-	tableMeta.rows = [ ...headRows, ...bodyRows ];
-
-	return tableMeta;
-}
-
-// Scans `<tr>` and its children for metadata:
-// - For heading row:
-//     - either adds this row to heading or body rows.
-//     - updates number of heading rows.
-// - For body rows:
-//     - calculates the number of column headings.
-//
-// @param {module:engine/view/element~Element} tr
-// @returns {Number}
-function scanRowForHeadingColumns( tr ) {
-	let headingColumns = 0;
-	let index = 0;
-
-	// Filter out empty text nodes from tr children.
-	const children = Array.from( tr.getChildren() )
-		.filter( child => child.name === 'th' || child.name === 'td' );
-
-	// Count starting adjacent <th> elements of a <tr>.
-	while ( index < children.length && children[ index ].name === 'th' ) {
-		const th = children[ index ];
-
-		// Adjust columns calculation by the number of spanned columns.
-		const colspan = parseInt( th.getAttribute( 'colspan' ) || 1 );
-
-		headingColumns = headingColumns + colspan;
-		index++;
-	}
-
-	return headingColumns;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/tablewalker.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/tablewalker
- */
-
-/**
- * Table iterator class. It allows to iterate over table cells. For each cell the iterator yields
- * {@link module:table/tablewalker~TableWalkerValue} with proper table cell attributes.
- */
-class TableWalker {
-	/**
-	 * Creates an instance of the table walker.
-	 *
-	 *
-	 * The table walker iterates internally by traversing the table from row index = 0 and column index = 0.
-	 * It walks row by row and column by column in order to output values defined in the constructor.
-	 * By default it will output only those locations that are occupied by a cell. To include also spanned rows and columns,
-	 * pass the `includeSpanned` option to the constructor.
-	 *
-	 * The most important values of the iterator are column and row indexes of a cell.
-	 *
-	 * To iterate over a given row:
-	 *
-	 *		const tableWalker = new TableWalker( table, { startRow: 1, endRow: 2 } );
-	 *
-	 *		for ( const cellInfo of tableWalker ) {
-	 *			console.log( 'A cell at row ' + cellInfo.row + ' and column ' + cellInfo.column );
-	 *		}
-	 *
-	 * For instance the code above for the following table:
-	 *
-	 *		+----+----+----+----+----+----+
-	 *		| 00      | 02 | 03      | 05 |
-	 *		|         +----+----+----+----+
-	 *		|         | 12      | 14 | 15 |
-	 *		|         +----+----+----+----+
-	 *		|         | 22                |
-	 *		|----+----+                   +
-	 *		| 31 | 32 |                   |
-	 *		+----+----+----+----+----+----+
-	 *
-	 * will log in the console:
-	 *
-	 *		'A cell at row 1 and column 2'
-	 *		'A cell at row 1 and column 4'
-	 *		'A cell at row 1 and column 5'
-	 *		'A cell at row 2 and column 2'
-	 *
-	 * To also iterate over spanned cells:
-	 *
-	 *		const tableWalker = new TableWalker( table, { startRow: 1, endRow: 1, includeSpanned: true } );
-	 *
-	 *		for ( const cellInfo of tableWalker ) {
-	 *			console.log( 'Cell at ' + cellInfo.row + ' x ' + cellInfo.column + ' : ' + ( cellInfo.cell ? 'has data' : 'is spanned' ) );
-	 *		}
-	 *
-	 * will log in the console for the table from previous example:
-	 *
-	 *		'Cell at 1 x 0 : is spanned'
-	 *		'Cell at 1 x 1 : is spanned'
-	 *		'Cell at 1 x 2 : has data'
-	 *		'Cell at 1 x 3 : is spanned'
-	 *		'Cell at 1 x 4 : has data'
-	 *		'Cell at 1 x 5 : has data'
-	 *
-	 * @constructor
-	 * @param {module:engine/model/element~Element} table A table over which the walker iterates.
-	 * @param {Object} [options={}] An object with configuration.
-	 * @param {Number} [options.column] A column index for which this iterator will output cells.
-	 * @param {Number} [options.startRow=0] A row index for which this iterator should start.
-	 * @param {Number} [options.endRow] A row index for which this iterator should end.
-	 * @param {Boolean} [options.includeSpanned] Also return values for spanned cells.
-	 */
-	constructor( table, options = {} ) {
-		/**
-		 * The walker's table element.
-		 *
-		 * @readonly
-		 * @member {module:engine/model/element~Element}
-		 */
-		this.table = table;
-
-		/**
-		 * A row index on which this iterator will start.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 */
-		this.startRow = options.startRow || 0;
-
-		/**
-		 * A row index on which this iterator will end.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 */
-		this.endRow = typeof options.endRow == 'number' ? options.endRow : undefined;
-
-		/**
-		 * Enables output of spanned cells that are normally not yielded.
-		 *
-		 * @readonly
-		 * @member {Boolean}
-		 */
-		this.includeSpanned = !!options.includeSpanned;
-
-		/**
-		 * If set, the table walker will only output cells of a given column or cells that overlap it.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 */
-		this.column = typeof options.column == 'number' ? options.column : undefined;
-
-		/**
-		 * Row indexes to skip from the iteration.
-		 *
-		 * @readonly
-		 * @member {Set<Number>}
-		 * @private
-		 */
-		this._skipRows = new Set();
-
-		/**
-		 * The current row index.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 * @private
-		 */
-		this._row = 0;
-
-		/**
-		 * The current column index.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 * @private
-		 */
-		this._column = 0;
-
-		/**
-		 * The cell index in a parent row. For spanned cells when {@link #includeSpanned} is set to `true`,
-		 * this represents the index of the next table cell.
-		 *
-		 * @readonly
-		 * @member {Number}
-		 * @private
-		 */
-		this._cell = 0;
-
-		/**
-		 * Holds a map of spanned cells in a table.
-		 *
-		 * @readonly
-		 * @member {Map<Number, Map.<Number, Number>>}
-		 * @private
-		 */
-		this._spannedCells = new Map();
-	}
-
-	/**
-	 * Iterable interface.
-	 *
-	 * @returns {Iterable.<module:table/tablewalker~TableWalkerValue>}
-	 */
-	[ Symbol.iterator ]() {
-		return this;
-	}
-
-	/**
-	 * Gets the next table walker's value.
-	 *
-	 * @returns {module:table/tablewalker~TableWalkerValue} The next table walker's value.
-	 */
-	next() {
-		const row = this.table.getChild( this._row );
-
-		// Iterator is done when no row (table end) or the row is after #endRow.
-		if ( !row || this._isOverEndRow() ) {
-			return { done: true };
-		}
-
-		// Spanned cell location handling.
-		if ( this._isSpanned( this._row, this._column ) ) {
-			// Current column must be kept as it will be updated before returning current value.
-			const currentColumn = this._column;
-			const outValue = this._formatOutValue( undefined, currentColumn );
-
-			// Advance to next column - always.
-			this._column++;
-
-			const skipCurrentValue = !this.includeSpanned || this._shouldSkipRow() || this._shouldSkipColumn( currentColumn, 1 );
-
-			// The current value will be returned only if #includedSpanned=true and also current row and column are not skipped.
-			return skipCurrentValue ? this.next() : outValue;
-		}
-
-		// The cell location is not spanned by other cells.
-		const cell = row.getChild( this._cell );
-
-		if ( !cell ) {
-			// If there are no more cells left in row advance to next row.
-			this._row++;
-			// And reset column & cell indexes.
-			this._column = 0;
-			this._cell = 0;
-
-			// Return next value.
-			return this.next();
-		}
-
-		// Read table cell attributes.
-		const colspan = parseInt( cell.getAttribute( 'colspan' ) || 1 );
-		const rowspan = parseInt( cell.getAttribute( 'rowspan' ) || 1 );
-
-		// Record this cell spans if it's not 1x1 cell.
-		if ( colspan > 1 || rowspan > 1 ) {
-			this._recordSpans( this._row, this._column, rowspan, colspan );
-		}
-
-		// Current column must be kept as it will be updated before returning current value.
-		const currentColumn = this._column;
-		const outValue = this._formatOutValue( cell, currentColumn, rowspan, colspan );
-
-		// Advance to next column before returning value.
-		this._column++;
-
-		// Advance to next cell in a parent row before returning value.
-		this._cell++;
-
-		const skipCurrentValue = this._shouldSkipRow() || this._shouldSkipColumn( currentColumn, colspan );
-
-		// The current value will be returned only if current row & column are not skipped.
-		return skipCurrentValue ? this.next() : outValue;
-	}
-
-	/**
-	 * Marks a row to skip in the next iteration. It will also skip cells from the current row if there are any cells from the current row
-	 * to output.
-	 *
-	 * @param {Number} row Row index to skip.
-	 */
-	skipRow( row ) {
-		this._skipRows.add( row );
-	}
-
-	/**
-	 * Checks if the current row is over {@link #endRow}.
-	 *
-	 * @returns {Boolean}
-	 * @private
-	 */
-	_isOverEndRow() {
-		// If {@link #endRow) is defined skip all rows above it.
-		return this.endRow !== undefined && this._row > this.endRow;
-	}
-
-	/**
-	 * A common method for formatting the iterator's output value.
-	 *
-	 * @param {module:engine/model/element~Element|undefined} cell The table cell to output. It might be undefined for spanned cell
-	 * locations.
-	 * @param {Number} column Column index (use the cached value)
-	 * @param {Number} rowspan Rowspan of the current cell.
-	 * @param {Number} colspan Colspan of the current cell.
-	 * @returns {{done: boolean, value: {cell: *, row: Number, column: *, rowspan: *, colspan: *, cellIndex: Number}}}
-	 * @private
-	 */
-	_formatOutValue( cell, column, rowspan = 1, colspan = 1 ) {
-		return {
-			done: false,
-			value: {
-				cell,
-				row: this._row,
-				column,
-				rowspan,
-				colspan,
-				cellIndex: this._cell
-			}
-		};
-	}
-
-	/**
-	 * Checks if the current row should be skipped.
-	 *
-	 * @returns {Boolean}
-	 * @private
-	 */
-	_shouldSkipRow() {
-		const rowIsBelowStartRow = this._row < this.startRow;
-		const rowIsMarkedAsSkipped = this._skipRows.has( this._row );
-
-		return rowIsBelowStartRow || rowIsMarkedAsSkipped;
-	}
-
-	/**
-	 * Checks if the current column should be skipped.
-	 *
-	 * @param {Number} column
-	 * @param {Number} colspan
-	 * @returns {Boolean}
-	 * @private
-	 */
-	_shouldSkipColumn( column, colspan ) {
-		if ( this.column === undefined ) {
-			// The {@link #column} is not defined so output all columns.
-			return false;
-		}
-
-		// When outputting cells from given column we skip:
-		// - Cells that are not on that column.
-		const isCurrentColumn = column === this.column;
-		// - CSells that are before given column and they overlaps given column.
-		const isPreviousThatOverlapsColumn = column < this.column && column + colspan > this.column;
-
-		return !isCurrentColumn && !isPreviousThatOverlapsColumn;
-	}
-
-	/**
-	 * Checks if the current cell location (row x column) is spanned by another cell.
-	 *
-	 * @param {Number} row Row index of a cell location to check.
-	 * @param {Number} column Column index of a cell location to check.
-	 * @returns {Boolean}
-	 * @private
-	 */
-	_isSpanned( row, column ) {
-		if ( !this._spannedCells.has( row ) ) {
-			// No spans for given row.
-			return false;
-		}
-
-		const rowSpans = this._spannedCells.get( row );
-
-		// If spans for given rows has entry for column it means that this location if spanned by other cell.
-		return rowSpans.has( column );
-	}
-
-	/**
-	 * Updates spanned cells map relative to the current cell location and its span dimensions.
-	 *
-	 * @param {Number} row Row index of a cell.
-	 * @param {Number} column Column index of a cell.
-	 * @param {Number} rowspan Cell height.
-	 * @param {Number} colspan Cell width.
-	 * @private
-	 */
-	_recordSpans( row, column, rowspan, colspan ) {
-		// This will update all cell locations after current column - ie a cell has colspan set.
-		for ( let columnToUpdate = column + 1; columnToUpdate <= column + colspan - 1; columnToUpdate++ ) {
-			this._markSpannedCell( row, columnToUpdate );
-		}
-
-		// This will update all rows below current up to row's height.
-		for ( let rowToUpdate = row + 1; rowToUpdate < row + rowspan; rowToUpdate++ ) {
-			for ( let columnToUpdate = column; columnToUpdate <= column + colspan - 1; columnToUpdate++ ) {
-				this._markSpannedCell( rowToUpdate, columnToUpdate );
-			}
-		}
-	}
-
-	/**
-	 * Marks the cell location as spanned by another cell.
-	 *
-	 * @param {Number} row Row index of the cell location.
-	 * @param {Number} column Column index of the cell location.
-	 * @private
-	 */
-	_markSpannedCell( row, column ) {
-		if ( !this._spannedCells.has( row ) ) {
-			this._spannedCells.set( row, new Map() );
-		}
-
-		const rowSpans = this._spannedCells.get( row );
-
-		rowSpans.set( column, true );
-	}
-}
-
-/**
- * An object returned by {@link module:table/tablewalker~TableWalker} when traversing table cells.
- *
- * @typedef {Object} module:table/tablewalker~TableWalkerValue
- * @property {module:engine/model/element~Element} [cell] The current table cell. Might be empty if
- * {@link module:table/tablewalker~TableWalker#includeSpanned} is set to `true`.
- * @property {Number} row The row index of a cell.
- * @property {Number} column The column index of a cell. Column index is adjusted to widths and heights of previous cells.
- * @property {Number} [colspan] The `colspan` attribute of a cell. It is always defined even if the model attribute is not present. Not
- * set if {@link module:table/tablewalker~TableWalker#includeSpanned} is set to `true`.
- * @property {Number} [rowspan] The `rowspan` attribute of a cell. It is always defined even if the model attribute is not present. Not
- * set if {@link module:table/tablewalker~TableWalker#includeSpanned} is set to `true`.
- * @property {Number} cellIndex The index of the current cell in a parent row. When using the `includeSpanned` option it will indicate the
- * next child index if #cell is empty (which indicates that the cell is spanned by another cell).
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/utils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/utils
- */
-
-
-
-
-const tableSymbol = Symbol( 'isTable' );
-
-/**
- * Converts a given {@link module:engine/view/element~Element} to a table widget:
- * * Adds a {@link module:engine/view/element~Element#_setCustomProperty custom property} allowing to recognize the table widget element.
- * * Calls the {@link module:widget/utils~toWidget} function with the proper element's label creator.
- *
- * @param {module:engine/view/element~Element} viewElement
- * @param {module:engine/view/downcastwriter~DowncastWriter} writer An instance of the view writer.
- * @param {String} label The element's label. It will be concatenated with the table `alt` attribute if one is present.
- * @returns {module:engine/view/element~Element}
- */
-function toTableWidget( viewElement, writer ) {
-	writer.setCustomProperty( tableSymbol, true, viewElement );
-
-	return toWidget( viewElement, writer, { hasSelectionHandler: true } );
-}
-
-/**
- * Checks if a given view element is a table widget.
- *
- * @param {module:engine/view/element~Element} viewElement
- * @returns {Boolean}
- */
-function isTableWidget( viewElement ) {
-	return !!viewElement.getCustomProperty( tableSymbol ) && isWidget( viewElement );
-}
-
-/**
- * Checks if a table widget is the only selected element.
- *
- * @param {module:engine/view/selection~Selection|module:engine/view/documentselection~DocumentSelection} selection
- * @returns {Boolean}
- */
-function isTableWidgetSelected( selection ) {
-	const viewElement = selection.getSelectedElement();
-
-	return !!( viewElement && isTableWidget( viewElement ) );
-}
-
-/**
- * Checks if a table widget content is selected.
- *
- * @param {module:engine/view/selection~Selection|module:engine/view/documentselection~DocumentSelection} selection
- * @returns {Boolean}
- */
-function isTableContentSelected( selection ) {
-	const parentTable = findAncestor( 'table', selection.getFirstPosition() );
-
-	return !!( parentTable && isTableWidget( parentTable.parent ) );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/converters/downcast.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/converters/downcast
- */
-
-
-
-
-
-
-
-/**
- * Model table element to view table element conversion helper.
- *
- * This conversion helper creates the whole table element with child elements.
- *
- * @param {Object} options
- * @param {Boolean} options.asWidget If set to `true`, the downcast conversion will produce a widget.
- * @returns {Function} Conversion helper.
- */
-function downcastInsertTable( options = {} ) {
-	return dispatcher => dispatcher.on( 'insert:table', ( evt, data, conversionApi ) => {
-		const table = data.item;
-
-		if ( !conversionApi.consumable.consume( table, 'insert' ) ) {
-			return;
-		}
-
-		// Consume attributes if present to not fire attribute change downcast
-		conversionApi.consumable.consume( table, 'attribute:headingRows:table' );
-		conversionApi.consumable.consume( table, 'attribute:headingColumns:table' );
-
-		const asWidget = options && options.asWidget;
-
-		const figureElement = conversionApi.writer.createContainerElement( 'figure', { class: 'table' } );
-		const tableElement = conversionApi.writer.createContainerElement( 'table' );
-		conversionApi.writer.insert( position_Position.createAt( figureElement ), tableElement );
-
-		let tableWidget;
-
-		if ( asWidget ) {
-			tableWidget = toTableWidget( figureElement, conversionApi.writer );
-		}
-
-		const tableWalker = new TableWalker( table );
-
-		const tableAttributes = {
-			headingRows: table.getAttribute( 'headingRows' ) || 0,
-			headingColumns: table.getAttribute( 'headingColumns' ) || 0
-		};
-
-		for ( const tableWalkerValue of tableWalker ) {
-			const { row, cell } = tableWalkerValue;
-
-			const tableSection = getOrCreateTableSection( getSectionName( row, tableAttributes ), tableElement, conversionApi );
-			const tableRow = table.getChild( row );
-
-			// Check if row was converted
-			const trElement = getOrCreateTr( tableRow, row, tableSection, conversionApi );
-
-			// Consume table cell - it will be always consumed as we convert whole table at once.
-			conversionApi.consumable.consume( cell, 'insert' );
-
-			const insertPosition = position_Position.createAt( trElement, 'end' );
-
-			createViewTableCellElement( tableWalkerValue, tableAttributes, insertPosition, conversionApi, options );
-		}
-
-		const viewPosition = conversionApi.mapper.toViewPosition( data.range.start );
-
-		conversionApi.mapper.bindElements( table, asWidget ? tableWidget : figureElement );
-		conversionApi.writer.insert( viewPosition, asWidget ? tableWidget : figureElement );
-	} );
-}
-
-/**
- * Model row element to view `<tr>` element conversion helper.
- *
- * This conversion helper creates the whole `<tr>` element with child elements.
- *
- * @returns {Function} Conversion helper.
- */
-function downcastInsertRow( options = {} ) {
-	return dispatcher => dispatcher.on( 'insert:tableRow', ( evt, data, conversionApi ) => {
-		const tableRow = data.item;
-
-		if ( !conversionApi.consumable.consume( tableRow, 'insert' ) ) {
-			return;
-		}
-
-		const table = tableRow.parent;
-
-		const figureElement = conversionApi.mapper.toViewElement( table );
-		const tableElement = getViewTable( figureElement );
-
-		const row = table.getChildIndex( tableRow );
-
-		const tableWalker = new TableWalker( table, { startRow: row, endRow: row } );
-
-		const tableAttributes = {
-			headingRows: table.getAttribute( 'headingRows' ) || 0,
-			headingColumns: table.getAttribute( 'headingColumns' ) || 0
-		};
-
-		for ( const tableWalkerValue of tableWalker ) {
-			const tableSection = getOrCreateTableSection( getSectionName( row, tableAttributes ), tableElement, conversionApi );
-			const trElement = getOrCreateTr( tableRow, row, tableSection, conversionApi );
-
-			// Consume table cell - it will be always consumed as we convert whole row at once.
-			conversionApi.consumable.consume( tableWalkerValue.cell, 'insert' );
-
-			const insertPosition = position_Position.createAt( trElement, 'end' );
-
-			createViewTableCellElement( tableWalkerValue, tableAttributes, insertPosition, conversionApi, options );
-		}
-	} );
-}
-
-/**
- * Model table cell element to view `<td>` or `<th>` element conversion helper.
- *
- * This conversion helper will create proper `<th>` elements for table cells that are in the heading section (heading row or column)
- * and `<td>` otherwise.
- *
- * @returns {Function} Conversion helper.
- */
-function downcastInsertCell( options = {} ) {
-	return dispatcher => dispatcher.on( 'insert:tableCell', ( evt, data, conversionApi ) => {
-		const tableCell = data.item;
-
-		if ( !conversionApi.consumable.consume( tableCell, 'insert' ) ) {
-			return;
-		}
-
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-		const rowIndex = table.getChildIndex( tableRow );
-
-		const tableWalker = new TableWalker( table, { startRow: rowIndex, endRow: rowIndex } );
-
-		const tableAttributes = {
-			headingRows: table.getAttribute( 'headingRows' ) || 0,
-			headingColumns: table.getAttribute( 'headingColumns' ) || 0
-		};
-
-		// We need to iterate over a table in order to get proper row & column values from a walker
-		for ( const tableWalkerValue of tableWalker ) {
-			if ( tableWalkerValue.cell === tableCell ) {
-				const trElement = conversionApi.mapper.toViewElement( tableRow );
-				const insertPosition = position_Position.createAt( trElement, tableRow.getChildIndex( tableCell ) );
-
-				createViewTableCellElement( tableWalkerValue, tableAttributes, insertPosition, conversionApi, options );
-
-				// No need to iterate further.
-				return;
-			}
-		}
-	} );
-}
-
-/**
- * Conversion helper that acts on heading rows table attribute change.
- *
- * This converter will:
- *
- * * Rename `<td>` to `<th>` elements or vice versa depending on headings.
- * * Create `<thead>` or `<tbody>` elements if needed.
- * * Remove empty `<thead>` or `<tbody>` if needed.
- *
- * @returns {Function} Conversion helper.
- */
-function downcastTableHeadingRowsChange( options = {} ) {
-	const asWidget = !!options.asWidget;
-
-	return dispatcher => dispatcher.on( 'attribute:headingRows:table', ( evt, data, conversionApi ) => {
-		const table = data.item;
-
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		const figureElement = conversionApi.mapper.toViewElement( table );
-		const viewTable = getViewTable( figureElement );
-
-		const oldRows = data.attributeOldValue;
-		const newRows = data.attributeNewValue;
-
-		// The head section has grown so move rows from <tbody> to <thead>.
-		if ( newRows > oldRows ) {
-			// Filter out only those rows that are in wrong section.
-			const rowsToMove = Array.from( table.getChildren() ).filter( ( { index } ) => isBetween( index, oldRows - 1, newRows ) );
-
-			const viewTableHead = getOrCreateTableSection( 'thead', viewTable, conversionApi );
-			moveViewRowsToTableSection( rowsToMove, viewTableHead, conversionApi, 'end' );
-
-			// Rename all table cells from moved rows to 'th' as they lands in <thead>.
-			for ( const tableRow of rowsToMove ) {
-				for ( const tableCell of tableRow.getChildren() ) {
-					renameViewTableCell( tableCell, 'th', conversionApi, asWidget );
-				}
-			}
-
-			// Cleanup: this will remove any empty section from the view which may happen when moving all rows from a table section.
-			removeTableSectionIfEmpty( 'tbody', viewTable, conversionApi );
-		}
-		// The head section has shrunk so move rows from <thead> to <tbody>.
-		else {
-			// Filter out only those rows that are in wrong section.
-			const rowsToMove = Array.from( table.getChildren() )
-				.filter( ( { index } ) => isBetween( index, newRows - 1, oldRows ) )
-				.reverse(); // The rows will be moved from <thead> to <tbody> in reverse order at the beginning of a <tbody>.
-
-			const viewTableBody = getOrCreateTableSection( 'tbody', viewTable, conversionApi );
-			moveViewRowsToTableSection( rowsToMove, viewTableBody, conversionApi );
-
-			// Check if cells moved from <thead> to <tbody> requires renaming to <td> as this depends on current heading columns attribute.
-			const tableWalker = new TableWalker( table, { startRow: newRows ? newRows - 1 : newRows, endRow: oldRows - 1 } );
-
-			const tableAttributes = {
-				headingRows: table.getAttribute( 'headingRows' ) || 0,
-				headingColumns: table.getAttribute( 'headingColumns' ) || 0
-			};
-
-			for ( const tableWalkerValue of tableWalker ) {
-				renameViewTableCellIfRequired( tableWalkerValue, tableAttributes, conversionApi, asWidget );
-			}
-
-			// Cleanup: this will remove any empty section from the view which may happen when moving all rows from a table section.
-			removeTableSectionIfEmpty( 'thead', viewTable, conversionApi );
-		}
-
-		function isBetween( index, lower, upper ) {
-			return index > lower && index < upper;
-		}
-	} );
-}
-
-/**
- * Conversion helper that acts on heading columns table attribute change.
- *
- * Depending on changed attributes this converter will rename `<td` to `<th>` elements or vice versa depending of the cell column index.
- *
- * @returns {Function} Conversion helper.
- */
-function downcastTableHeadingColumnsChange( options = {} ) {
-	const asWidget = !!options.asWidget;
-
-	return dispatcher => dispatcher.on( 'attribute:headingColumns:table', ( evt, data, conversionApi ) => {
-		const table = data.item;
-
-		if ( !conversionApi.consumable.consume( data.item, evt.name ) ) {
-			return;
-		}
-
-		const tableAttributes = {
-			headingRows: table.getAttribute( 'headingRows' ) || 0,
-			headingColumns: table.getAttribute( 'headingColumns' ) || 0
-		};
-
-		const oldColumns = data.attributeOldValue;
-		const newColumns = data.attributeNewValue;
-
-		const lastColumnToCheck = ( oldColumns > newColumns ? oldColumns : newColumns ) - 1;
-
-		for ( const tableWalkerValue of new TableWalker( table ) ) {
-			// Skip cells that were not in heading section before and after the change.
-			if ( tableWalkerValue.column > lastColumnToCheck ) {
-				continue;
-			}
-
-			renameViewTableCellIfRequired( tableWalkerValue, tableAttributes, conversionApi, asWidget );
-		}
-	} );
-}
-
-/**
- * Conversion helper that acts on a removed row.
- *
- * @returns {Function} Conversion helper.
- */
-function downcastRemoveRow() {
-	return dispatcher => dispatcher.on( 'remove:tableRow', ( evt, data, conversionApi ) => {
-		// Prevent default remove converter.
-		evt.stop();
-
-		const viewStart = conversionApi.mapper.toViewPosition( data.position ).getLastMatchingPosition( value => !value.item.is( 'tr' ) );
-		const viewItem = viewStart.nodeAfter;
-		const tableSection = viewItem.parent;
-
-		// Remove associated <tr> from the view.
-		const removeRange = range_Range.createOn( viewItem );
-		const removed = conversionApi.writer.remove( removeRange );
-
-		for ( const child of range_Range.createIn( removed ).getItems() ) {
-			conversionApi.mapper.unbindViewElement( child );
-		}
-
-		// Check if table section has any children left - if not remove it from the view.
-		if ( !tableSection.childCount ) {
-			// No need to unbind anything as table section is not represented in the model.
-			conversionApi.writer.remove( range_Range.createOn( tableSection ) );
-		}
-	}, { priority: 'higher' } );
-}
-
-// Renames an existing table cell in the view to a given element name.
-//
-// **Note** This method will not do anything if a view table cell was not yet converted.
-//
-// @param {module:engine/model/element~Element} tableCell
-// @param {String} desiredCellElementName
-// @param {Object} conversionApi
-// @param {Boolean} asWidget
-function renameViewTableCell( tableCell, desiredCellElementName, conversionApi, asWidget ) {
-	const viewCell = conversionApi.mapper.toViewElement( tableCell );
-
-	// View cell might be not yet converted - skip it as it will be properly created by cell converter later on.
-	if ( !viewCell ) {
-		return;
-	}
-
-	let renamedCell;
-
-	if ( asWidget ) {
-		const editable = conversionApi.writer.createEditableElement( desiredCellElementName, viewCell.getAttributes() );
-		renamedCell = toWidgetEditable( editable, conversionApi.writer );
-
-		conversionApi.writer.insert( position_Position.createAfter( viewCell ), renamedCell );
-		conversionApi.writer.move( range_Range.createIn( viewCell ), position_Position.createAt( renamedCell ) );
-		conversionApi.writer.remove( range_Range.createOn( viewCell ) );
-	} else {
-		renamedCell = conversionApi.writer.rename( desiredCellElementName, viewCell );
-	}
-
-	conversionApi.mapper.bindElements( tableCell, renamedCell );
-}
-
-// Renames a table cell element in the view according to its location in the table.
-//
-// @param {module:table/tablewalker~TableWalkerValue} tableWalkerValue
-// @param {{headingColumns, headingRows}} tableAttributes
-// @param {Object} conversionApi
-// @param {Boolean} asWidget
-function renameViewTableCellIfRequired( tableWalkerValue, tableAttributes, conversionApi, asWidget ) {
-	const { cell } = tableWalkerValue;
-
-	// Check whether current columnIndex is overlapped by table cells from previous rows.
-	const desiredCellElementName = getCellElementName( tableWalkerValue, tableAttributes );
-
-	const viewCell = conversionApi.mapper.toViewElement( cell );
-
-	// If in single change we're converting attribute changes and inserting cell the table cell might not be inserted into view
-	// because of child conversion is done after parent.
-	if ( viewCell && viewCell.name !== desiredCellElementName ) {
-		renameViewTableCell( cell, desiredCellElementName, conversionApi, asWidget );
-	}
-}
-
-// Creates a table cell element in the view.
-//
-// @param {module:table/tablewalker~TableWalkerValue} tableWalkerValue
-// @param {module:engine/view/position~Position} insertPosition
-// @param {Object} conversionApi
-function createViewTableCellElement( tableWalkerValue, tableAttributes, insertPosition, conversionApi, options ) {
-	const asWidget = options && options.asWidget;
-	const cellElementName = getCellElementName( tableWalkerValue, tableAttributes );
-
-	const cellElement = asWidget ?
-		toWidgetEditable( conversionApi.writer.createEditableElement( cellElementName ), conversionApi.writer ) :
-		conversionApi.writer.createContainerElement( cellElementName );
-
-	const tableCell = tableWalkerValue.cell;
-
-	const isSingleParagraph = tableCell.childCount === 1 && tableCell.getChild( 0 ).name === 'paragraph';
-
-	conversionApi.writer.insert( insertPosition, cellElement );
-
-	if ( isSingleParagraph ) {
-		const innerParagraph = tableCell.getChild( 0 );
-		const paragraphInsertPosition = position_Position.createAt( cellElement, 'end' );
-
-		conversionApi.consumable.consume( innerParagraph, 'insert' );
-
-		if ( options.asWidget ) {
-			const containerName = [ ...innerParagraph.getAttributeKeys() ].length ? 'p' : 'span';
-
-			const fakeParagraph = conversionApi.writer.createContainerElement( containerName );
-
-			conversionApi.mapper.bindElements( innerParagraph, fakeParagraph );
-			conversionApi.writer.insert( paragraphInsertPosition, fakeParagraph );
-
-			conversionApi.mapper.bindElements( tableCell, cellElement );
-		} else {
-			conversionApi.mapper.bindElements( tableCell, cellElement );
-			conversionApi.mapper.bindElements( innerParagraph, cellElement );
-		}
-	} else {
-		conversionApi.mapper.bindElements( tableCell, cellElement );
-	}
-}
-
-// Creates or returns an existing `<tr>` element from the view.
-//
-// @param {module:engine/view/element~Element} tableRow
-// @param {Number} rowIndex
-// @param {module:engine/view/element~Element} tableSection
-// @param {Object} conversionApi
-// @returns {module:engine/view/element~Element}
-function getOrCreateTr( tableRow, rowIndex, tableSection, conversionApi ) {
-	let trElement = conversionApi.mapper.toViewElement( tableRow );
-
-	if ( !trElement ) {
-		// Will always consume since we're converting <tableRow> element from a parent <table>.
-		conversionApi.consumable.consume( tableRow, 'insert' );
-
-		trElement = conversionApi.writer.createContainerElement( 'tr' );
-		conversionApi.mapper.bindElements( tableRow, trElement );
-
-		const headingRows = tableRow.parent.getAttribute( 'headingRows' ) || 0;
-		const offset = headingRows > 0 && rowIndex >= headingRows ? rowIndex - headingRows : rowIndex;
-
-		const position = position_Position.createAt( tableSection, offset );
-		conversionApi.writer.insert( position, trElement );
-	}
-
-	return trElement;
-}
-
-// Returns `th` for heading cells and `td` for other cells for the current table walker value.
-//
-// @param {module:table/tablewalker~TableWalkerValue} tableWalkerValue
-// @param {{headingColumns, headingRows}} tableAttributes
-// @returns {String}
-function getCellElementName( tableWalkerValue, tableAttributes ) {
-	const { row, column } = tableWalkerValue;
-	const { headingColumns, headingRows } = tableAttributes;
-
-	// Column heading are all tableCells in the first `columnHeading` rows.
-	const isColumnHeading = headingRows && headingRows > row;
-
-	// So a whole row gets <th> element.
-	if ( isColumnHeading ) {
-		return 'th';
-	}
-
-	// Row heading are tableCells which columnIndex is lower then headingColumns.
-	const isRowHeading = headingColumns && headingColumns > column;
-
-	return isRowHeading ? 'th' : 'td';
-}
-
-// Returns the table section name for the current table walker value.
-//
-// @param {Number} row
-// @param {{headingColumns, headingRows}} tableAttributes
-// @returns {String}
-function getSectionName( row, tableAttributes ) {
-	return row < tableAttributes.headingRows ? 'thead' : 'tbody';
-}
-
-// Creates or returns an existing `<tbody>` or `<thead>` element witch caching.
-//
-// @param {String} sectionName
-// @param {module:engine/view/element~Element} viewTable
-// @param {Object} conversionApi
-// @param {Object} cachedTableSection An object that stores cached elements.
-// @returns {module:engine/view/containerelement~ContainerElement}
-function getOrCreateTableSection( sectionName, viewTable, conversionApi ) {
-	const viewTableSection = getExistingTableSectionElement( sectionName, viewTable );
-
-	return viewTableSection ? viewTableSection : createTableSection( sectionName, viewTable, conversionApi );
-}
-
-// Finds an existing `<tbody>` or `<thead>` element or returns undefined.
-//
-// @param {String} sectionName
-// @param {module:engine/view/element~Element} tableElement
-// @param {Object} conversionApi
-function getExistingTableSectionElement( sectionName, tableElement ) {
-	for ( const tableSection of tableElement.getChildren() ) {
-		if ( tableSection.name == sectionName ) {
-			return tableSection;
-		}
-	}
-}
-
-// Creates a table section at the end of the table.
-//
-// @param {String} sectionName
-// @param {module:engine/view/element~Element} tableElement
-// @param {Object} conversionApi
-// @returns {module:engine/view/containerelement~ContainerElement}
-function createTableSection( sectionName, tableElement, conversionApi ) {
-	const tableChildElement = conversionApi.writer.createContainerElement( sectionName );
-
-	conversionApi.writer.insert( position_Position.createAt( tableElement, sectionName == 'tbody' ? 'end' : 'start' ), tableChildElement );
-
-	return tableChildElement;
-}
-
-// Removes an existing `<tbody>` or `<thead>` element if it is empty.
-//
-// @param {String} sectionName
-// @param {module:engine/view/element~Element} tableElement
-// @param {Object} conversionApi
-function removeTableSectionIfEmpty( sectionName, tableElement, conversionApi ) {
-	const tableSection = getExistingTableSectionElement( sectionName, tableElement );
-
-	if ( tableSection && tableSection.childCount === 0 ) {
-		conversionApi.writer.remove( range_Range.createOn( tableSection ) );
-	}
-}
-
-// Moves view table rows associated with passed model rows to the provided table section element.
-//
-// **Note** This method will skip not converted table rows.
-//
-// @param {Array.<module:engine/model/element~Element>} rowsToMove
-// @param {module:engine/view/element~Element} viewTableSection
-// @param {Object} conversionApi
-// @param {Number|'end'|'before'|'after'} [offset=0] Offset or one of the flags.
-function moveViewRowsToTableSection( rowsToMove, viewTableSection, conversionApi, offset ) {
-	for ( const tableRow of rowsToMove ) {
-		const viewTableRow = conversionApi.mapper.toViewElement( tableRow );
-
-		// View table row might be not yet converted - skip it as it will be properly created by cell converter later on.
-		if ( viewTableRow ) {
-			conversionApi.writer.move( range_Range.createOn( viewTableRow ), position_Position.createAt( viewTableSection, offset ) );
-		}
-	}
-}
-
-// Properly finds '<table>' element inside `<figure>` widget.
-//
-// @param {module:engine/view/element~Element} viewFigure
-function getViewTable( viewFigure ) {
-	for ( const child of viewFigure.getChildren() ) {
-		if ( child.name === 'table' ) {
-			return child;
-		}
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/tableutils.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/tableutils
- */
-
-
-
-
-
-
-
-/**
- * The table utilities plugin.
- *
- * @extends module:core/plugin~Plugin
- */
-class tableutils_TableUtils extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'TableUtils';
-	}
-
-	/**
-	 * Returns the table cell location as an object with table row and table column indexes.
-	 *
-	 * For instance in the table below:
-	 *
-	 *		    0   1   2   3
-	 *		  +---+---+---+---+
-	 *		0 | a     | b | c |
-	 *		  +       +   +---+
-	 *		1 |       |   | d |
-	 *		  +---+---+   +---+
-	 *		2 | e     |   | f |
-	 *		  +---+---+---+---+
-	 *
-	 * the method will return:
-	 *
-	 *		const cellA = table.getNodeByPath( [ 0, 0 ] );
-	 *		editor.plugins.get( 'TableUtils' ).getCellLocation( cellA );
-	 *		// will return { row: 0, column: 0 }
-	 *
-	 *		const cellD = table.getNodeByPath( [ 1, 0 ] );
-	 *		editor.plugins.get( 'TableUtils' ).getCellLocation( cellD );
-	 *		// will return { row: 1, column: 3 }
-	 *
-	 * @param {module:engine/model/element~Element} tableCell
-	 * @returns {Object} Returns a `{row, column}` object.
-	 */
-	getCellLocation( tableCell ) {
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const rowIndex = table.getChildIndex( tableRow );
-
-		const tableWalker = new TableWalker( table, { startRow: rowIndex, endRow: rowIndex } );
-
-		for ( const { cell, row, column } of tableWalker ) {
-			if ( cell === tableCell ) {
-				return { row, column };
-			}
-		}
-	}
-
-	/**
-	 * Creates an empty table with proper structure. The table needs to be inserted into the model,
-	 * ie. using {@link module:engine/model/model~Model#insertContent} function.
-	 *
-	 *		model.change( ( writer ) => {
-	 *			// Create a table of 2 rows and 7 columns:
-	 *			const table = tableUtils.createTable( writer, 2, 7);
-	 *
-	 *			// Insert table to the model at the best position taking current selection:
-	 *			model.insertContent( table );
-	 *		}
-	 *
-	 * @param {module:engine/model/writer~Writer} writer The model writer.
-	 * @param {Number} rows The number of rows to create.
-	 * @param {Number} columns The number of columns to create.
-	 * @returns {module:engine/model/element~Element} The created table element.
-	 */
-	createTable( writer, rows, columns ) {
-		const table = writer.createElement( 'table' );
-
-		createEmptyRows( writer, table, 0, rows, columns );
-
-		return table;
-	}
-
-	/**
-	 * Inserts rows into a table.
-	 *
-	 *		editor.plugins.get( 'TableUtils' ).insertRows( table, { at: 1, rows: 2 } );
-	 *
-	 * Assuming the table on the left, the above code will transform it to the table on the right:
-	 *
-	 *		row index
-	 *		  0 +---+---+---+       `at` = 1,      +---+---+---+ 0
-	 *		    | a | b | c |       `rows` = 2,    | a | b | c |
-	 *		  1 +   +---+---+   <-- insert here    +   +---+---+ 1
-	 *		    |   | d | e |                      |   |   |   |
-	 *		  2 +   +---+---+       will give:     +   +---+---+ 2
-	 *		    |   | f | g |                      |   |   |   |
-	 *		  3 +---+---+---+                      +   +---+---+ 3
-	 *		                                       |   | d | e |
-	 *		                                       +---+---+---+ 4
-	 *		                                       +   + f | g |
-	 *		                                       +---+---+---+ 5
-	 *
-	 * @param {module:engine/model/element~Element} table The table model element where the rows will be inserted.
-	 * @param {Object} options
-	 * @param {Number} [options.at=0] Row index at which the rows will be inserted.
-	 * @param {Number} [options.rows=1] The number of rows to insert.
-	 */
-	insertRows( table, options = {} ) {
-		const model = this.editor.model;
-
-		const insertAt = options.at || 0;
-		const rowsToInsert = options.rows || 1;
-
-		model.change( writer => {
-			const headingRows = table.getAttribute( 'headingRows' ) || 0;
-
-			// Inserting rows inside heading section requires to update `headingRows` attribute as the heading section will grow.
-			if ( headingRows > insertAt ) {
-				writer.setAttribute( 'headingRows', headingRows + rowsToInsert, table );
-			}
-
-			// Inserting at the end and at the beginning of a table doesn't require to calculate anything special.
-			if ( insertAt === 0 || insertAt === table.childCount ) {
-				createEmptyRows( writer, table, insertAt, rowsToInsert, this.getColumns( table ) );
-
-				return;
-			}
-
-			// Iterate over all rows above inserted rows in order to check for rowspanned cells.
-			const tableIterator = new TableWalker( table, { endRow: insertAt } );
-
-			// Will hold number of cells needed to insert in created rows.
-			// The number might be different then table cell width when there are rowspanned cells.
-			let cellsToInsert = 0;
-
-			for ( const { row, rowspan, colspan, cell } of tableIterator ) {
-				const isBeforeInsertedRow = row < insertAt;
-				const overlapsInsertedRow = row + rowspan > insertAt;
-
-				if ( isBeforeInsertedRow && overlapsInsertedRow ) {
-					// This cell overlaps inserted rows so we need to expand it further.
-					writer.setAttribute( 'rowspan', rowspan + rowsToInsert, cell );
-				}
-
-				// Calculate how many cells to insert based on the width of cells in a row at insert position.
-				// It might be lower then table width as some cells might overlaps inserted row.
-				// In the table above the cell 'a' overlaps inserted row so only two empty cells are need to be created.
-				if ( row === insertAt ) {
-					cellsToInsert += colspan;
-				}
-			}
-
-			createEmptyRows( writer, table, insertAt, rowsToInsert, cellsToInsert );
-		} );
-	}
-
-	/**
-	 * Inserts columns into a table.
-	 *
-	 *		editor.plugins.get( 'TableUtils' ).insertColumns( table, { at: 1, columns: 2 } );
-	 *
-	 * Assuming the table on the left, the above code will transform it to the table on the right:
-	 *
-	 *		0   1   2   3                   0   1   2   3   4   5
-	 *		+---+---+---+                   +---+---+---+---+---+
-	 *		| a     | b |                   | a             | b |
-	 *		+       +---+                   +               +---+
-	 *		|       | c |                   |               | c |
-	 *		+---+---+---+     will give:    +---+---+---+---+---+
-	 *		| d | e | f |                   | d |   |   | e | f |
-	 *		+---+   +---+                   +---+---+---+  +---+
-	 *		| g |   | h |                   | g |   |   |   | h |
-	 *		+---+---+---+                   +---+---+---+---+---+
-	 *		| i         |                   | i                 |
-	 *		+---+---+---+                   +---+---+---+---+---+
-	 *		    ^---- insert here, `at` = 1, `columns` = 2
-	 *
-	 * @param {module:engine/model/element~Element} table The table model element where the columns will be inserted.
-	 * @param {Object} options
-	 * @param {Number} [options.at=0] Column index at which the columns will be inserted.
-	 * @param {Number} [options.columns=1] The number of columns to insert.
-	 */
-	insertColumns( table, options = {} ) {
-		const model = this.editor.model;
-
-		const insertAt = options.at || 0;
-		const columnsToInsert = options.columns || 1;
-
-		model.change( writer => {
-			const headingColumns = table.getAttribute( 'headingColumns' );
-
-			// Inserting columns inside heading section requires to update `headingColumns` attribute as the heading section will grow.
-			if ( insertAt < headingColumns ) {
-				writer.setAttribute( 'headingColumns', headingColumns + columnsToInsert, table );
-			}
-
-			const tableColumns = this.getColumns( table );
-
-			// Inserting at the end and at the beginning of a table doesn't require to calculate anything special.
-			if ( insertAt === 0 || tableColumns === insertAt ) {
-				for ( const tableRow of table.getChildren() ) {
-					createCells( columnsToInsert, writer, model_position_Position.createAt( tableRow, insertAt ? 'end' : 0 ) );
-				}
-
-				return;
-			}
-
-			const tableWalker = new TableWalker( table, { column: insertAt, includeSpanned: true } );
-
-			for ( const { row, column, cell, colspan, rowspan, cellIndex } of tableWalker ) {
-				// When iterating over column the table walker outputs either:
-				// - cells at given column index (cell "e" from method docs),
-				// - spanned columns (spanned cell from row between cells "g" and "h" - spanned by "e", only if `includeSpanned: true`),
-				// - or a cell from the same row which spans over this column (cell "a").
-
-				if ( column !== insertAt ) {
-					// If column is different than `insertAt`, it is a cell that spans over an inserted column (cell "a" & "i").
-					// For such cells expand them by a number of columns inserted.
-					writer.setAttribute( 'colspan', colspan + columnsToInsert, cell );
-
-					// The `includeSpanned` option will output the "empty"/spanned column so skip this row already.
-					tableWalker.skipRow( row );
-
-					// This cell will overlap cells in rows below so skip them also (because of `includeSpanned` option) - (cell "a")
-					if ( rowspan > 1 ) {
-						for ( let i = row + 1; i < row + rowspan; i++ ) {
-							tableWalker.skipRow( i );
-						}
-					}
-				} else {
-					// It's either cell at this column index or spanned cell by a rowspanned cell from row above.
-					// In table above it's cell "e" and a spanned position from row below (empty cell between cells "g" and "h")
-					const insertPosition = model_position_Position.createFromParentAndOffset( table.getChild( row ), cellIndex );
-
-					createCells( columnsToInsert, writer, insertPosition );
-				}
-			}
-		} );
-	}
-
-	/**
-	 * Divides a table cell vertically into several ones.
-	 *
-	 * The cell will be visually split into more cells by updating colspans of other cells in a column
-	 * and inserting cells (columns) after that cell.
-	 *
-	 * In the table below, if cell "a" is split to 3 cells:
-	 *
-	 *		+---+---+---+
-	 *		| a | b | c |
-	 *		+---+---+---+
-	 *		| d | e | f |
-	 *		+---+---+---+
-	 *
-	 * it will result in the table below:
-	 *
-	 *		+---+---+---+---+---+
-	 *		| a |   |   | b | c |
-	 *		+---+---+---+---+---+
-	 *		| d         | e | f |
-	 *		+---+---+---+---+---+
-	 *
-	 * So cell "d" will get its `colspan` updated to `3` and 2 cells will be added (2 columns will be created).
-	 *
-	 * Splitting a cell that already has a `colspan` attribute set will distribute the cell `colspan` evenly and the remainder
-	 * will be left to the original cell:
-	 *
-	 *		+---+---+---+
-	 *		| a         |
-	 *		+---+---+---+
-	 *		| b | c | d |
-	 *		+---+---+---+
-	 *
-	 * Splitting cell "a" with `colspan=3` to 2 cells will create 1 cell with a `colspan=a` and cell "a" that will have `colspan=2`:
-	 *
-	 *		+---+---+---+
-	 *		| a     |   |
-	 *		+---+---+---+
-	 *		| b | c | d |
-	 *		+---+---+---+
-	 *
-	 * @param {module:engine/model/element~Element} tableCell
-	 * @param {Number} numberOfCells
-	 */
-	splitCellVertically( tableCell, numberOfCells = 2 ) {
-		const model = this.editor.model;
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const rowspan = parseInt( tableCell.getAttribute( 'rowspan' ) || 1 );
-		const colspan = parseInt( tableCell.getAttribute( 'colspan' ) || 1 );
-
-		model.change( writer => {
-			// First check - the cell spans over multiple rows so before doing anything else just split this cell.
-			if ( colspan > 1 ) {
-				// Get spans of new (inserted) cells and span to update of split cell.
-				const { newCellsSpan, updatedSpan } = breakSpanEvenly( colspan, numberOfCells );
-
-				updateNumericAttribute( 'colspan', updatedSpan, tableCell, writer );
-
-				// Each inserted cell will have the same attributes:
-				const newCellsAttributes = {};
-
-				// Do not store default value in the model.
-				if ( newCellsSpan > 1 ) {
-					newCellsAttributes.colspan = newCellsSpan;
-				}
-
-				// Copy rowspan of split cell.
-				if ( rowspan > 1 ) {
-					newCellsAttributes.rowspan = rowspan;
-				}
-
-				const cellsToInsert = colspan > numberOfCells ? numberOfCells - 1 : colspan - 1;
-				createCells( cellsToInsert, writer, model_position_Position.createAfter( tableCell ), newCellsAttributes );
-			}
-
-			// Second check - the cell has colspan of 1 or we need to create more cells then the currently one spans over.
-			if ( colspan < numberOfCells ) {
-				const cellsToInsert = numberOfCells - colspan;
-
-				// First step: expand cells on the same column as split cell.
-				const tableMap = [ ...new TableWalker( table ) ];
-
-				// Get the column index of split cell.
-				const { column: splitCellColumn } = tableMap.find( ( { cell } ) => cell === tableCell );
-
-				// Find cells which needs to be expanded vertically - those on the same column or those that spans over split cell's column.
-				const cellsToUpdate = tableMap.filter( ( { cell, colspan, column } ) => {
-					const isOnSameColumn = cell !== tableCell && column === splitCellColumn;
-					const spansOverColumn = ( column < splitCellColumn && column + colspan > splitCellColumn );
-
-					return isOnSameColumn || spansOverColumn;
-				} );
-
-				// Expand cells vertically.
-				for ( const { cell, colspan } of cellsToUpdate ) {
-					writer.setAttribute( 'colspan', colspan + cellsToInsert, cell );
-				}
-
-				// Second step: create columns after split cell.
-
-				// Each inserted cell will have the same attributes:
-				const newCellsAttributes = {};
-
-				// Do not store default value in the model.
-
-				// Copy rowspan of split cell.
-				if ( rowspan > 1 ) {
-					newCellsAttributes.rowspan = rowspan;
-				}
-
-				createCells( cellsToInsert, writer, model_position_Position.createAfter( tableCell ), newCellsAttributes );
-
-				const headingColumns = table.getAttribute( 'headingColumns' ) || 0;
-
-				// Update heading section if split cell is in heading section.
-				if ( headingColumns > splitCellColumn ) {
-					updateNumericAttribute( 'headingColumns', headingColumns + cellsToInsert, table, writer );
-				}
-			}
-		} );
-	}
-
-	/**
-	 * Divides a table cell horizontally into several ones.
-	 *
-	 * The cell will be visually split into more cells by updating rowspans of other cells in the row and inserting rows with a single cell
-	 * below.
-	 *
-	 * If in the table below cell "b" is split to 3 cells:
-	 *
-	 *		+---+---+---+
-	 *		| a | b | c |
-	 *		+---+---+---+
-	 *		| d | e | f |
-	 *		+---+---+---+
-	 *
-	 * It will result in the table below:
-	 *
-	 *		+---+---+---+
-	 *		| a | b | c |
-	 *		+   +---+   +
-	 *		|   |   |   |
-	 *		+   +---+   +
-	 *		|   |   |   |
-	 *		+---+---+---+
-	 *		| d | e | f |
-	 *		+---+---+---+
-	 *
-	 * So cells "a" and "b" will get their `rowspan` updated to `3` and 2 rows with a single cell will be added.
-	 *
-	 * Splitting a cell that already has a `rowspan` attribute set will distribute the cell `rowspan` evenly and the remainder
-	 * will be left to the original cell:
-	 *
-	 *		+---+---+---+
-	 *		| a | b | c |
-	 *		+   +---+---+
-	 *		|   | d | e |
-	 *		+   +---+---+
-	 *		|   | f | g |
-	 *		+   +---+---+
-	 *		|   | h | i |
-	 *		+---+---+---+
-	 *
-	 * Splitting cell "a" with `rowspan=4` to 3 cells will create 2 cells with a `rowspan=1` and cell "a" will have `rowspan=2`:
-	 *
-	 *		+---+---+---+
-	 *		| a | b | c |
-	 *		+   +---+---+
-	 *		|   | d | e |
-	 *		+---+---+---+
-	 *		|   | f | g |
-	 *		+---+---+---+
-	 *		|   | h | i |
-	 *		+---+---+---+
-	 *
-	 * @param {module:engine/model/element~Element} tableCell
-	 * @param {Number} numberOfCells
-	 */
-	splitCellHorizontally( tableCell, numberOfCells = 2 ) {
-		const model = this.editor.model;
-
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-		const splitCellRow = table.getChildIndex( tableRow );
-
-		const rowspan = parseInt( tableCell.getAttribute( 'rowspan' ) || 1 );
-		const colspan = parseInt( tableCell.getAttribute( 'colspan' ) || 1 );
-
-		model.change( writer => {
-			// First check - the cell spans over multiple rows so before doing anything else just split this cell.
-			if ( rowspan > 1 ) {
-				// Cache table map before updating table.
-				const tableMap = [ ...new TableWalker( table, {
-					startRow: splitCellRow,
-					endRow: splitCellRow + rowspan - 1,
-					includeSpanned: true
-				} ) ];
-
-				// Get spans of new (inserted) cells and span to update of split cell.
-				const { newCellsSpan, updatedSpan } = breakSpanEvenly( rowspan, numberOfCells );
-
-				updateNumericAttribute( 'rowspan', updatedSpan, tableCell, writer );
-
-				const { column: cellColumn } = tableMap.find( ( { cell } ) => cell === tableCell );
-
-				// Each inserted cell will have the same attributes:
-				const newCellsAttributes = {};
-
-				// Do not store default value in the model.
-				if ( newCellsSpan > 1 ) {
-					newCellsAttributes.rowspan = newCellsSpan;
-				}
-
-				// Copy colspan of split cell.
-				if ( colspan > 1 ) {
-					newCellsAttributes.colspan = colspan;
-				}
-
-				for ( const { column, row, cellIndex } of tableMap ) {
-					// As both newly created cells and the split cell might have rowspan,
-					// the insertion of new cells must go to appropriate rows:
-					//
-					// 1. It's a row after split cell + it's height.
-					const isAfterSplitCell = row >= splitCellRow + updatedSpan;
-					// 2. Is on the same column.
-					const isOnSameColumn = column === cellColumn;
-					// 3. And it's row index is after previous cell height.
-					const isInEvenlySplitRow = ( row + splitCellRow + updatedSpan ) % newCellsSpan === 0;
-
-					if ( isAfterSplitCell && isOnSameColumn && isInEvenlySplitRow ) {
-						const position = model_position_Position.createFromParentAndOffset( table.getChild( row ), cellIndex );
-
-						createCells( 1, writer, position, newCellsAttributes );
-					}
-				}
-			}
-
-			// Second check - the cell has rowspan of 1 or we need to create more cells than the current cell spans over.
-			if ( rowspan < numberOfCells ) {
-				// We already split the cell in check one so here we split to the remaining number of cells only.
-				const cellsToInsert = numberOfCells - rowspan;
-
-				// This check is needed since we need to check if there are any cells from previous rows than spans over this cell's row.
-				const tableMap = [ ...new TableWalker( table, { startRow: 0, endRow: splitCellRow } ) ];
-
-				// First step: expand cells.
-				for ( const { cell, rowspan, row } of tableMap ) {
-					// Expand rowspan of cells that are either:
-					// - on the same row as current cell,
-					// - or are below split cell row and overlaps that row.
-					if ( cell !== tableCell && row + rowspan > splitCellRow ) {
-						const rowspanToSet = rowspan + cellsToInsert;
-
-						writer.setAttribute( 'rowspan', rowspanToSet, cell );
-					}
-				}
-
-				// Second step: create rows with single cell below split cell.
-				const newCellsAttributes = {};
-
-				// Copy colspan of split cell.
-				if ( colspan > 1 ) {
-					newCellsAttributes.colspan = colspan;
-				}
-
-				createEmptyRows( writer, table, splitCellRow + 1, cellsToInsert, 1, newCellsAttributes );
-
-				// Update heading section if split cell is in heading section.
-				const headingRows = table.getAttribute( 'headingRows' ) || 0;
-
-				if ( headingRows > splitCellRow ) {
-					updateNumericAttribute( 'headingRows', headingRows + cellsToInsert, table, writer );
-				}
-			}
-		} );
-	}
-
-	/**
-	 * Returns the number of columns for a given table.
-	 *
-	 *		editor.plugins.get( 'TableUtils' ).getColumns( table );
-	 *
-	 * @param {module:engine/model/element~Element} table The table to analyze.
-	 * @returns {Number}
-	 */
-	getColumns( table ) {
-		// Analyze first row only as all the rows should have the same width.
-		const row = table.getChild( 0 );
-
-		return [ ...row.getChildren() ].reduce( ( columns, row ) => {
-			const columnWidth = parseInt( row.getAttribute( 'colspan' ) || 1 );
-
-			return columns + columnWidth;
-		}, 0 );
-	}
-}
-
-// Creates empty rows at the given index in an existing table.
-//
-// @param {module:engine/model/writer~Writer} writer
-// @param {module:engine/model/element~Element} table
-// @param {Number} insertAt Row index of row insertion.
-// @param {Number} rows Number of rows to create.
-// @param {Number} tableCellToInsert Number of cells to insert in each row.
-function createEmptyRows( writer, table, insertAt, rows, tableCellToInsert, attributes = {} ) {
-	for ( let i = 0; i < rows; i++ ) {
-		const tableRow = writer.createElement( 'tableRow' );
-
-		writer.insert( tableRow, table, insertAt );
-
-		createCells( tableCellToInsert, writer, model_position_Position.createAt( tableRow, 'end' ), attributes );
-	}
-}
-
-// Creates cells at a given position.
-//
-// @param {Number} columns Number of columns to create
-// @param {module:engine/model/writer~Writer} writer
-// @param {module:engine/model/position~Position} insertPosition
-function createCells( cells, writer, insertPosition, attributes = {} ) {
-	for ( let i = 0; i < cells; i++ ) {
-		createEmptyTableCell( writer, insertPosition, attributes );
-	}
-}
-
-// Evenly distributes the span of a cell to a number of provided cells.
-// The resulting spans will always be integer values.
-//
-// For instance breaking a span of 7 into 3 cells will return:
-//
-//		{ newCellsSpan: 2, updatedSpan: 3 }
-//
-// as two cells will have a span of 2 and the remainder will go the first cell so its span will change to 3.
-//
-// @param {Number} span Span value do break.
-// @param {Number} numberOfCells Number of resulting spans.
-// @returns {{newCellsSpan: Number, updatedSpan: Number}}
-function breakSpanEvenly( span, numberOfCells ) {
-	if ( span < numberOfCells ) {
-		return { newCellsSpan: 1, updatedSpan: 1 };
-	}
-
-	const newCellsSpan = Math.floor( span / numberOfCells );
-	const updatedSpan = ( span - newCellsSpan * numberOfCells ) + newCellsSpan;
-
-	return { newCellsSpan, updatedSpan };
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/inserttablecommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/inserttablecommand
- */
-
-
-
-
-
-
-/**
- * The insert table command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'insertTable'` editor command.
- *
- * To insert a table at the current selection, execute the command and specify the dimensions:
- *
- *		editor.execute( 'insertTable', { rows: 20, columns: 5 } );
- *
- * @extends module:core/command~Command
- */
-class inserttablecommand_InsertTableCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-		const schema = model.schema;
-
-		const validParent = getInsertTableParent( selection.getFirstPosition() );
-
-		this.isEnabled = schema.checkChild( validParent, 'table' );
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * Inserts a table with the given number of rows and columns into the editor.
-	 *
-	 * @param {Object} options
-	 * @param {Number} [options.rows=2] The number of rows to create in the inserted table.
-	 * @param {Number} [options.columns=2] The number of columns to create in the inserted table.
-	 * @fires execute
-	 */
-	execute( options = {} ) {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-		const tableUtils = this.editor.plugins.get( tableutils_TableUtils );
-
-		const rows = parseInt( options.rows ) || 2;
-		const columns = parseInt( options.columns ) || 2;
-
-		const insertPosition = findOptimalInsertionPosition( selection );
-
-		model.change( writer => {
-			const table = tableUtils.createTable( writer, rows, columns );
-
-			model.insertContent( table, insertPosition );
-
-			writer.setSelection( model_position_Position.createAt( table.getChild( 0 ).getChild( 0 ).getChild( 0 ) ) );
-		} );
-	}
-}
-
-// Returns valid parent to insert table
-//
-// @param {module:engine/model/position} position
-function getInsertTableParent( position ) {
-	const parent = position.parent;
-
-	return parent === parent.root ? parent : parent.parent;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/insertrowcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/insertrowcommand
- */
-
-
-
-
-
-/**
- * The insert row command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'insertTableRowBelow'` and
- * `'insertTableRowAbove'` editor commands.
- *
- * To insert a row below the selected cell, execute the following command:
- *
- *		editor.execute( 'insertTableRowBelow' );
- *
- * To insert a row above the selected cell, execute the following command:
- *
- *		editor.execute( 'insertTableRowAbove' );
- *
- * @extends module:core/command~Command
- */
-class insertrowcommand_InsertRowCommand extends Command {
-	/**
-	 * Creates a new `InsertRowCommand` instance.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor The editor on which this command will be used.
-	 * @param {Object} options
-	 * @param {String} [options.order="below"] The order of insertion relative to the row in which the caret is located.
-	 * Possible values: `"above"` and `"below"`.
-	 */
-	constructor( editor, options = {} ) {
-		super( editor );
-
-		/**
-		 * The order of insertion relative to the row in which the caret is located.
-		 *
-		 * @readonly
-		 * @member {String} module:table/commands/insertrowcommand~InsertRowCommand#order
-		 */
-		this.order = options.order || 'below';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const selection = this.editor.model.document.selection;
-
-		const tableParent = findAncestor( 'table', selection.getFirstPosition() );
-
-		this.isEnabled = !!tableParent;
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * Depending on the command's {@link #order} value, it inserts a row `'below'` or `'above'` the row in which selection is set.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const editor = this.editor;
-		const selection = editor.model.document.selection;
-		const tableUtils = editor.plugins.get( tableutils_TableUtils );
-
-		const tableCell = findAncestor( 'tableCell', selection.getFirstPosition() );
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const row = table.getChildIndex( tableRow );
-		const insertAt = this.order === 'below' ? row + 1 : row;
-
-		tableUtils.insertRows( table, { rows: 1, at: insertAt } );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/insertcolumncommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/insertcolumncommand
- */
-
-
-
-
-
-/**
- * The insert column command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'insertTableColumnBefore'` and
- * `'insertTableColumnAfter'` editor commands.
- *
- * To insert a column before the selected cell, execute the following command:
- *
- *		editor.execute( 'insertTableColumnBefore' );
- *
- * To insert a column after the selected cell, execute the following command:
- *
- *		editor.execute( 'insertTableColumnAfter' );
- *
- * @extends module:core/command~Command
- */
-class insertcolumncommand_InsertColumnCommand extends Command {
-	/**
-	 * Creates a new `InsertColumnCommand` instance.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor An editor on which this command will be used.
-	 * @param {Object} options
-	 * @param {String} [options.order="after"] The order of insertion relative to the column in which the caret is located.
-	 * Possible values: `"after"` and `"before"`.
-	 */
-	constructor( editor, options = {} ) {
-		super( editor );
-
-		/**
-		 * The order of insertion relative to the column in which the caret is located.
-		 *
-		 * @readonly
-		 * @member {String} module:table/commands/insertcolumncommand~InsertColumnCommand#order
-		 */
-		this.order = options.order || 'after';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const selection = this.editor.model.document.selection;
-
-		const tableParent = findAncestor( 'table', selection.getFirstPosition() );
-
-		this.isEnabled = !!tableParent;
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * Depending on the command's {@link #order} value, it inserts a column `'before'` or `'after'` the column in which the selection is
-	 * set.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const editor = this.editor;
-		const selection = editor.model.document.selection;
-		const tableUtils = editor.plugins.get( tableutils_TableUtils );
-
-		const firstPosition = selection.getFirstPosition();
-
-		const tableCell = findAncestor( 'tableCell', firstPosition );
-		const table = tableCell.parent.parent;
-
-		const { column } = tableUtils.getCellLocation( tableCell );
-		const insertAt = this.order === 'after' ? column + 1 : column;
-
-		tableUtils.insertColumns( table, { columns: 1, at: insertAt } );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/splitcellcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/splitcellcommand
- */
-
-
-
-
-
-/**
- * The split cell command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'splitTableCellVertically'`
- * and `'splitTableCellHorizontally'`  editor commands.
- *
- * You can split any cell vertically or horizontally by executing this command. For example, to split the selected table cell vertically:
- *
- *		editor.execute( 'splitTableCellVertically' );
- *
- * @extends module:core/command~Command
- */
-class splitcellcommand_SplitCellCommand extends Command {
-	/**
-	 * Creates a new `SplitCellCommand` instance.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor The editor on which this command will be used.
-	 * @param {Object} options
-	 * @param {String} options.direction Indicates whether the command should split cells `'horizontally'` or `'vertically'`.
-	 */
-	constructor( editor, options = {} ) {
-		super( editor );
-
-		/**
-		 * The direction that indicates which cell will be split.
-		 *
-		 * @readonly
-		 * @member {String} #direction
-		 */
-		this.direction = options.direction || 'horizontally';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const doc = model.document;
-
-		const tableCell = findAncestor( 'tableCell', doc.selection.getFirstPosition() );
-
-		this.isEnabled = !!tableCell;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	execute() {
-		const model = this.editor.model;
-		const document = model.document;
-		const selection = document.selection;
-
-		const firstPosition = selection.getFirstPosition();
-		const tableCell = findAncestor( 'tableCell', firstPosition );
-
-		const isHorizontally = this.direction === 'horizontally';
-
-		const tableUtils = this.editor.plugins.get( tableutils_TableUtils );
-
-		if ( isHorizontally ) {
-			tableUtils.splitCellHorizontally( tableCell, 2 );
-		} else {
-			tableUtils.splitCellVertically( tableCell, 2 );
-		}
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/mergecellcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/mergecellcommand
- */
-
-
-
-
-
-
-
-
-/**
- * The merge cell command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'mergeTableCellRight'`, `'mergeTableCellLeft'`,
- * `'mergeTableCellUp'` and `'mergeTableCellDown'` editor commands.
- *
- * To merge a table cell at the current selection with another cell, execute the command corresponding with the preferred direction.
- *
- * For example, to merge with a cell to the right:
- *
- *		editor.execute( 'mergeTableCellRight' );
- *
- * **Note**: If a table cell has a different [`rowspan`](https://www.w3.org/TR/html50/tabular-data.html#attr-tdth-rowspan)
- * (for `'mergeTableCellRight'` and `'mergeTableCellLeft'`) or [`colspan`](https://www.w3.org/TR/html50/tabular-data.html#attr-tdth-colspan)
- * (for `'mergeTableCellUp'` and `'mergeTableCellDown'`), the command will be disabled.
- *
- * @extends module:core/command~Command
- */
-class mergecellcommand_MergeCellCommand extends Command {
-	/**
-	 * Creates a new `MergeCellCommand` instance.
-	 *
-	 * @param {module:core/editor/editor~Editor} editor The editor on which this command will be used.
-	 * @param {Object} options
-	 * @param {String} options.direction Indicates which cell to merge with the currently selected one.
-	 * Possible values are: `'left'`, `'right'`, `'up'` and `'down'`.
-	 */
-	constructor( editor, options ) {
-		super( editor );
-
-		/**
-		 * The direction that indicates which cell will be merged with the currently selected one.
-		 *
-		 * @readonly
-		 * @member {String} #direction
-		 */
-		this.direction = options.direction;
-
-		/**
-		 * Whether the merge is horizontal (left/right) or vertical (up/down).
-		 *
-		 * @readonly
-		 * @member {Boolean} #isHorizontal
-		 */
-		this.isHorizontal = this.direction == 'right' || this.direction == 'left';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const cellToMerge = this._getMergeableCell();
-
-		this.isEnabled = !!cellToMerge;
-		// In order to check if currently selected cell can be merged with one defined by #direction some computation are done beforehand.
-		// As such we can cache it as a command's value.
-		this.value = cellToMerge;
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * Depending on the command's {@link #direction} value, it will merge the cell that is to the `'left'`, `'right'`, `'up'` or `'down'`.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const model = this.editor.model;
-		const doc = model.document;
-		const tableCell = findAncestor( 'tableCell', doc.selection.getFirstPosition() );
-		const cellToMerge = this.value;
-		const direction = this.direction;
-
-		model.change( writer => {
-			const isMergeNext = direction == 'right' || direction == 'down';
-
-			// The merge mechanism is always the same so sort cells to be merged.
-			const cellToExpand = isMergeNext ? tableCell : cellToMerge;
-			const cellToRemove = isMergeNext ? cellToMerge : tableCell;
-
-			// Cache the parent of cell to remove for later check.
-			const removedTableCellRow = cellToRemove.parent;
-
-			mergeTableCells( cellToRemove, cellToExpand, writer );
-
-			const spanAttribute = this.isHorizontal ? 'colspan' : 'rowspan';
-			const cellSpan = parseInt( tableCell.getAttribute( spanAttribute ) || 1 );
-			const cellToMergeSpan = parseInt( cellToMerge.getAttribute( spanAttribute ) || 1 );
-
-			// Update table cell span attribute and merge set selection on merged contents.
-			writer.setAttribute( spanAttribute, cellSpan + cellToMergeSpan, cellToExpand );
-			writer.setSelection( model_range_Range.createIn( cellToExpand ) );
-
-			// Remove empty row after merging.
-			if ( !removedTableCellRow.childCount ) {
-				removeEmptyRow( removedTableCellRow, writer );
-			}
-		} );
-	}
-
-	/**
-	 * Returns a cell that can be merged with the current cell depending on the command's direction.
-	 *
-	 * @returns {module:engine/model/element|undefined}
-	 * @private
-	 */
-	_getMergeableCell() {
-		const model = this.editor.model;
-		const doc = model.document;
-		const tableCell = findAncestor( 'tableCell', doc.selection.getFirstPosition() );
-
-		if ( !tableCell ) {
-			return;
-		}
-
-		const tableUtils = this.editor.plugins.get( tableutils_TableUtils );
-
-		// First get the cell on proper direction.
-		const cellToMerge = this.isHorizontal ?
-			getHorizontalCell( tableCell, this.direction, tableUtils ) :
-			getVerticalCell( tableCell, this.direction );
-
-		if ( !cellToMerge ) {
-			return;
-		}
-
-		// If found check if the span perpendicular to merge direction is equal on both cells.
-		const spanAttribute = this.isHorizontal ? 'rowspan' : 'colspan';
-		const span = parseInt( tableCell.getAttribute( spanAttribute ) || 1 );
-
-		const cellToMergeSpan = parseInt( cellToMerge.getAttribute( spanAttribute ) || 1 );
-
-		if ( cellToMergeSpan === span ) {
-			return cellToMerge;
-		}
-	}
-}
-
-// Returns the cell that can be merged horizontally.
-//
-// @param {module:engine/model/element~Element} tableCell
-// @param {String} direction
-// @returns {module:engine/model/node~Node|null}
-function getHorizontalCell( tableCell, direction, tableUtils ) {
-	const horizontalCell = direction == 'right' ? tableCell.nextSibling : tableCell.previousSibling;
-
-	if ( !horizontalCell ) {
-		return;
-	}
-
-	// Sort cells:
-	const cellOnLeft = direction == 'right' ? tableCell : horizontalCell;
-	const cellOnRight = direction == 'right' ? horizontalCell : tableCell;
-
-	// Get their column indexes:
-	const { column: leftCellColumn } = tableUtils.getCellLocation( cellOnLeft );
-	const { column: rightCellColumn } = tableUtils.getCellLocation( cellOnRight );
-
-	const leftCellSpan = parseInt( cellOnLeft.getAttribute( 'colspan' ) || 1 );
-
-	// The cell on the right must have index that is distant to the cell on the left by the left cell's width (colspan).
-	const cellsAreTouching = leftCellColumn + leftCellSpan === rightCellColumn;
-
-	// If the right cell's column index is different it means that there are rowspanned cells between them.
-	return cellsAreTouching ? horizontalCell : undefined;
-}
-
-// Returns the cell that can be merged vertically.
-//
-// @param {module:engine/model/element~Element} tableCell
-// @param {String} direction
-// @returns {module:engine/model/node~Node|null}
-function getVerticalCell( tableCell, direction ) {
-	const tableRow = tableCell.parent;
-	const table = tableRow.parent;
-
-	const rowIndex = table.getChildIndex( tableRow );
-
-	// Don't search for mergeable cell if direction points out of the table.
-	if ( ( direction == 'down' && rowIndex === table.childCount - 1 ) || ( direction == 'up' && rowIndex === 0 ) ) {
-		return;
-	}
-
-	const rowspan = parseInt( tableCell.getAttribute( 'rowspan' ) || 1 );
-	const headingRows = table.getAttribute( 'headingRows' ) || 0;
-
-	const isMergeWithBodyCell = direction == 'down' && ( rowIndex + rowspan ) === headingRows;
-	const isMergeWithHeadCell = direction == 'up' && rowIndex === headingRows;
-
-	// Don't search for mergeable cell if direction points out of the current table section.
-	if ( headingRows && ( isMergeWithBodyCell || isMergeWithHeadCell ) ) {
-		return;
-	}
-
-	const currentCellRowSpan = parseInt( tableCell.getAttribute( 'rowspan' ) || 1 );
-	const rowOfCellToMerge = direction == 'down' ? rowIndex + currentCellRowSpan : rowIndex;
-
-	const tableMap = [ ...new TableWalker( table, { endRow: rowOfCellToMerge } ) ];
-
-	const currentCellData = tableMap.find( value => value.cell === tableCell );
-	const mergeColumn = currentCellData.column;
-
-	const cellToMergeData = tableMap.find( ( { row, rowspan, column } ) => {
-		if ( column !== mergeColumn ) {
-			return false;
-		}
-
-		if ( direction == 'down' ) {
-			// If merging a cell below the mergeRow is already calculated.
-			return row === rowOfCellToMerge;
-		} else {
-			// If merging a cell above calculate if it spans to mergeRow.
-			return rowOfCellToMerge === row + rowspan;
-		}
-	} );
-
-	return cellToMergeData && cellToMergeData.cell;
-}
-
-// Properly removes empty row from a table. Will update `rowspan` attribute of cells that overlaps removed row.
-//
-// @param {module:engine/model/element~Element} removedTableCellRow
-// @param {module:engine/model/writer~Writer} writer
-function removeEmptyRow( removedTableCellRow, writer ) {
-	const table = removedTableCellRow.parent;
-
-	const removedRowIndex = table.getChildIndex( removedTableCellRow );
-
-	for ( const { cell, row, rowspan } of new TableWalker( table, { endRow: removedRowIndex } ) ) {
-		const overlapsRemovedRow = row + rowspan - 1 >= removedRowIndex;
-
-		if ( overlapsRemovedRow ) {
-			updateNumericAttribute( 'rowspan', rowspan - 1, cell, writer );
-		}
-	}
-
-	writer.remove( removedTableCellRow );
-}
-
-// Merges two table cells - will ensure that after merging cells with empty paragraph the result table cell will only have one paragraph.
-// If one of the merged table cell is empty the merged table cell will have contents of the non-empty table cell.
-// If both are empty the merged table cell will have only one empty paragraph.
-//
-// @param {module:engine/model/element~Element} cellToRemove
-// @param {module:engine/model/element~Element} cellToExpand
-// @param {module:engine/model/writer~Writer} writer
-function mergeTableCells( cellToRemove, cellToExpand, writer ) {
-	if ( !mergecellcommand_isEmpty( cellToRemove ) ) {
-		if ( mergecellcommand_isEmpty( cellToExpand ) ) {
-			writer.remove( model_range_Range.createIn( cellToExpand ) );
-		}
-
-		writer.move( model_range_Range.createIn( cellToRemove ), model_position_Position.createAt( cellToExpand, 'end' ) );
-	}
-
-	// Remove merged table cell.
-	writer.remove( cellToRemove );
-}
-
-// Checks if passed table cell contains empty paragraph.
-//
-// @param {module:engine/model/element~Element} tableCell
-// @returns {Boolean}
-function mergecellcommand_isEmpty( tableCell ) {
-	return tableCell.childCount == 1 && tableCell.getChild( 0 ).is( 'paragraph' ) && tableCell.getChild( 0 ).isEmpty;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/removerowcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/removerowcommand
- */
-
-
-
-
-
-
-
-
-/**
- * The remove row command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'removeTableRow'` editor command.
- *
- * To remove the row containing the selected cell, execute the command:
- *
- *		editor.execute( 'removeTableRow' );
- *
- * @extends module:core/command~Command
- */
-class removerowcommand_RemoveRowCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const doc = model.document;
-
-		const tableCell = findAncestor( 'tableCell', doc.selection.getFirstPosition() );
-
-		this.isEnabled = !!tableCell && tableCell.parent.parent.childCount > 1;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	execute() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-
-		const firstPosition = selection.getFirstPosition();
-		const tableCell = findAncestor( 'tableCell', firstPosition );
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const currentRow = table.getChildIndex( tableRow );
-		const headingRows = table.getAttribute( 'headingRows' ) || 0;
-
-		model.change( writer => {
-			if ( headingRows && currentRow <= headingRows ) {
-				updateNumericAttribute( 'headingRows', headingRows - 1, table, writer, 0 );
-			}
-
-			const tableMap = [ ...new TableWalker( table, { endRow: currentRow } ) ];
-
-			const cellsToMove = new Map();
-
-			// Get cells from removed row that are spanned over multiple rows.
-			tableMap
-				.filter( ( { row, rowspan } ) => row === currentRow && rowspan > 1 )
-				.forEach( ( { column, cell, rowspan } ) => cellsToMove.set( column, { cell, rowspanToSet: rowspan - 1 } ) );
-
-			// Reduce rowspan on cells that are above removed row and overlaps removed row.
-			tableMap
-				.filter( ( { row, rowspan } ) => row <= currentRow - 1 && row + rowspan > currentRow )
-				.forEach( ( { cell, rowspan } ) => updateNumericAttribute( 'rowspan', rowspan - 1, cell, writer ) );
-
-			// Move cells to another row.
-			const targetRow = currentRow + 1;
-			const tableWalker = new TableWalker( table, { includeSpanned: true, startRow: targetRow, endRow: targetRow } );
-
-			let previousCell;
-
-			for ( const { row, column, cell } of [ ...tableWalker ] ) {
-				if ( cellsToMove.has( column ) ) {
-					const { cell: cellToMove, rowspanToSet } = cellsToMove.get( column );
-					const targetPosition = previousCell ? model_position_Position.createAfter( previousCell ) : model_position_Position.createAt( table.getChild( row ) );
-
-					writer.move( model_range_Range.createOn( cellToMove ), targetPosition );
-					updateNumericAttribute( 'rowspan', rowspanToSet, cellToMove, writer );
-
-					previousCell = cellToMove;
-				} else {
-					previousCell = cell;
-				}
-			}
-
-			writer.remove( tableRow );
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/removecolumncommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/removecolumncommand
- */
-
-
-
-
-
-
-
-/**
- * The remove column command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'removeTableColumn'` editor command.
- *
- * To remove the column containing the selected cell, execute the command:
- *
- *		editor.execute( 'removeTableColumn' );
- *
- * @extends module:core/command~Command
- */
-class removecolumncommand_RemoveColumnCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const editor = this.editor;
-		const selection = editor.model.document.selection;
-		const tableUtils = editor.plugins.get( tableutils_TableUtils );
-
-		const tableCell = findAncestor( 'tableCell', selection.getFirstPosition() );
-
-		this.isEnabled = !!tableCell && tableUtils.getColumns( tableCell.parent.parent ) > 1;
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	execute() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-
-		const firstPosition = selection.getFirstPosition();
-
-		const tableCell = findAncestor( 'tableCell', firstPosition );
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const headingColumns = table.getAttribute( 'headingColumns' ) || 0;
-		const row = table.getChildIndex( tableRow );
-
-		// Cache the table before removing or updating colspans.
-		const tableMap = [ ...new TableWalker( table ) ];
-
-		// Get column index of removed column.
-		const cellData = tableMap.find( value => value.cell === tableCell );
-		const removedColumn = cellData.column;
-
-		model.change( writer => {
-			// Update heading columns attribute if removing a row from head section.
-			if ( headingColumns && row <= headingColumns ) {
-				writer.setAttribute( 'headingColumns', headingColumns - 1, table );
-			}
-
-			for ( const { cell, column, colspan } of tableMap ) {
-				// If colspaned cell overlaps removed column decrease it's span.
-				if ( column <= removedColumn && colspan > 1 && column + colspan > removedColumn ) {
-					updateNumericAttribute( 'colspan', colspan - 1, cell, writer );
-				} else if ( column === removedColumn ) {
-					// The cell in removed column has colspan of 1.
-					writer.remove( cell );
-				}
-			}
-		} );
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/setheaderrowcommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/setheaderrowcommand
- */
-
-
-
-
-
-
-
-/**
- * The header row command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'setTableColumnHeader'` editor command.
- *
- * You can make the row containing the selected cell a [header](https://www.w3.org/TR/html50/tabular-data.html#the-th-element) by executing:
- *
- *		editor.execute( 'setTableRowHeader' );
- *
- * **Note:** All preceding rows will also become headers. If the current row is already a header, executing this command
- * will make it a regular row back again (including the following rows).
- *
- * @extends module:core/command~Command
- */
-class setheaderrowcommand_SetHeaderRowCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-
-		const position = selection.getFirstPosition();
-		const tableCell = findAncestor( 'tableCell', position );
-		const isInTable = !!tableCell;
-
-		this.isEnabled = isInTable;
-
-		/**
-		 * Flag indicating whether the command is active. The command is active when the
-		 * {@link module:engine/model/selection~Selection} is in a header row.
-		 *
-		 * @observable
-		 * @readonly
-		 * @member {Boolean} #value
-		 */
-		this.value = isInTable && this._isInHeading( tableCell, tableCell.parent.parent );
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * When the selection is in a non-header row, the command will set the `headingRows` table attribute to cover that row.
-	 *
-	 * When the selection is already in a header row, it will set `headingRows` so the heading section will end before that row.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-
-		const position = selection.getFirstPosition();
-		const tableCell = findAncestor( 'tableCell', position );
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const currentHeadingRows = table.getAttribute( 'headingRows' ) || 0;
-		const selectionRow = tableRow.index;
-
-		const headingRowsToSet = currentHeadingRows > selectionRow ? selectionRow : selectionRow + 1;
-
-		model.change( writer => {
-			if ( headingRowsToSet ) {
-				// Changing heading rows requires to check if any of a heading cell is overlapping vertically the table head.
-				// Any table cell that has a rowspan attribute > 1 will not exceed the table head so we need to fix it in rows below.
-				const cellsToSplit = getOverlappingCells( table, headingRowsToSet, currentHeadingRows );
-
-				for ( const cell of cellsToSplit ) {
-					splitHorizontally( cell, headingRowsToSet, writer );
-				}
-			}
-
-			updateNumericAttribute( 'headingRows', headingRowsToSet, table, writer, 0 );
-		} );
-	}
-
-	/**
-	 * Checks if a table cell is in the heading section.
-	 *
-	 * @param {module:engine/model/element~Element} tableCell
-	 * @param {module:engine/model/element~Element} table
-	 * @returns {Boolean}
-	 * @private
-	 */
-	_isInHeading( tableCell, table ) {
-		const headingRows = parseInt( table.getAttribute( 'headingRows' ) || 0 );
-
-		return !!headingRows && tableCell.parent.index < headingRows;
-	}
-}
-
-// Returns cells that span beyond the new heading section.
-//
-// @param {module:engine/model/element~Element} table The table to check.
-// @param {Number} headingRowsToSet New heading rows attribute.
-// @param {Number} currentHeadingRows Current heading rows attribute.
-// @returns {Array.<module:engine/model/element~Element>}
-function getOverlappingCells( table, headingRowsToSet, currentHeadingRows ) {
-	const cellsToSplit = [];
-
-	const startAnalysisRow = headingRowsToSet > currentHeadingRows ? currentHeadingRows : 0;
-	// We're analyzing only when headingRowsToSet > 0.
-	const endAnalysisRow = headingRowsToSet - 1;
-
-	const tableWalker = new TableWalker( table, { startRow: startAnalysisRow, endRow: endAnalysisRow } );
-
-	for ( const { row, rowspan, cell } of tableWalker ) {
-		if ( rowspan > 1 && row + rowspan > headingRowsToSet ) {
-			cellsToSplit.push( cell );
-		}
-	}
-
-	return cellsToSplit;
-}
-
-// Splits the table cell horizontally.
-//
-// @param {module:engine/model/element~Element} tableCell
-// @param {Number} headingRows
-// @param {module:engine/model/writer~Writer} writer
-function splitHorizontally( tableCell, headingRows, writer ) {
-	const tableRow = tableCell.parent;
-	const table = tableRow.parent;
-	const rowIndex = tableRow.index;
-
-	const rowspan = parseInt( tableCell.getAttribute( 'rowspan' ) );
-	const newRowspan = headingRows - rowIndex;
-
-	const attributes = {};
-
-	const spanToSet = rowspan - newRowspan;
-
-	if ( spanToSet > 1 ) {
-		attributes.rowspan = spanToSet;
-	}
-
-	const startRow = table.getChildIndex( tableRow );
-	const endRow = startRow + newRowspan;
-	const tableMap = [ ...new TableWalker( table, { startRow, endRow, includeSpanned: true } ) ];
-
-	let columnIndex;
-
-	for ( const { row, column, cell, colspan, cellIndex } of tableMap ) {
-		if ( cell === tableCell ) {
-			columnIndex = column;
-
-			if ( colspan > 1 ) {
-				attributes.colspan = colspan;
-			}
-		}
-
-		if ( columnIndex !== undefined && columnIndex === column && row === endRow ) {
-			const tableRow = table.getChild( row );
-			const tableCellPosition = model_position_Position.createFromParentAndOffset( tableRow, cellIndex );
-
-			createEmptyTableCell( writer, tableCellPosition, attributes );
-		}
-	}
-
-	// Update the rowspan attribute after updating table.
-	updateNumericAttribute( 'rowspan', newRowspan, tableCell, writer );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/commands/setheadercolumncommand.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/commands/setheadercolumncommand
- */
-
-
-
-
-
-/**
- * The header column command.
- *
- * The command is registered by {@link module:table/tableediting~TableEditing} as `'setTableColumnHeader'` editor command.
- *
- * You can make the column containing the selected cell a [header](https://www.w3.org/TR/html50/tabular-data.html#the-th-element)
- * by executing:
- *
- *		editor.execute( 'setTableColumnHeader' );
- *
- * **Note:** All preceding columns will also become headers. If the current column is already a header, executing this command
- * will make it a regular column back again (including the following columns).
- *
- * @extends module:core/command~Command
- */
-class setheadercolumncommand_SetHeaderColumnCommand extends Command {
-	/**
-	 * @inheritDoc
-	 */
-	refresh() {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-
-		const position = selection.getFirstPosition();
-		const tableCell = findAncestor( 'tableCell', position );
-
-		const isInTable = !!tableCell;
-
-		this.isEnabled = isInTable;
-
-		/**
-		 * Flag indicating whether the command is active. The command is active when the
-		 * {@link module:engine/model/selection~Selection} is in a header column.
-		 *
-		 * @observable
-		 * @readonly
-		 * @member {Boolean} #value
-		 */
-		this.value = isInTable && this._isInHeading( tableCell, tableCell.parent.parent );
-	}
-
-	/**
-	 * Executes the command.
-	 *
-	 * When the selection is in a non-header column, the command will set the `headingColumns` table attribute to cover that column.
-	 *
-	 * When the selection is already in a header column, it will set `headingColumns` so the heading section will end before that column.
-	 *
-	 * @fires execute
-	 */
-	execute() {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-		const tableUtils = this.editor.plugins.get( 'TableUtils' );
-
-		const position = selection.getFirstPosition();
-		const tableCell = findAncestor( 'tableCell', position.parent );
-		const tableRow = tableCell.parent;
-		const table = tableRow.parent;
-
-		const currentHeadingColumns = parseInt( table.getAttribute( 'headingColumns' ) || 0 );
-		const { column: selectionColumn } = tableUtils.getCellLocation( tableCell );
-
-		const headingColumnsToSet = currentHeadingColumns > selectionColumn ? selectionColumn : selectionColumn + 1;
-
-		model.change( writer => {
-			updateNumericAttribute( 'headingColumns', headingColumnsToSet, table, writer, 0 );
-		} );
-	}
-
-	/**
-	 * Checks if a table cell is in the heading section.
-	 *
-	 * @param {module:engine/model/element~Element} tableCell
-	 * @param {module:engine/model/element~Element} table
-	 * @returns {Boolean}
-	 * @private
-	 */
-	_isInHeading( tableCell, table ) {
-		const headingColumns = parseInt( table.getAttribute( 'headingColumns' ) || 0 );
-
-		const tableUtils = this.editor.plugins.get( 'TableUtils' );
-
-		const { column } = tableUtils.getCellLocation( tableCell );
-
-		return !!headingColumns && column < headingColumns;
-	}
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/converters/table-layout-post-fixer.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/converters/table-layout-post-fixer
- */
-
-
-
-
-
-/**
- * Injects a table layout post-fixer into the model.
- *
- * The role of the table layout post-fixer is to ensure that the table rows have the correct structure
- * after a {@link module:engine/model/model~Model#change `change()`} block was executed.
- *
- * The correct structure means that:
- *
- * * All table rows have the same size.
- * * None of a table cells that extend vertically beyond their section (either header or body).
- * * A table cell has always at least one element as child.
- *
- * If the table structure is not correct, the post-fixer will automatically correct it in two steps:
- *
- * 1. It will clip table cells that extends beyond it section.
- * 2. It will add empty table cells to those rows which are narrower then the widest table row.
- *
- * ## Clipping overlapping table cells
- *
- * Such situation may occur when pasting a table (or part of a table) to the editor from external sources.
- *
- * For example, see the following table which has the cell (FOO) with the rowspan attribute (2):
- *
- *		<table headingRows="1">
- *			<tableRow>
- *				<tableCell rowspan="2"><paragraph>FOO</paragraph></tableCell>
- *				<tableCell colspan="2"><paragraph>BAR</paragraph></tableCell>
- *			</tableRow>
- *			<tableRow>
- *				<tableCell><paragraph>BAZ</paragraph></tableCell>
- *				<tableCell><paragraph>XYZ</paragraph></tableCell>
- *			</tableRow>
- *		</table>
- *
- * will be rendered in the view as:
- *
- *		<table>
- *			<thead>
- *				<tr>
- *					<td rowspan="2">FOO</td>
- *					<td colspan="2">BAR</td>
- *				</tr>
- *			</thead>
- *			<tbody>
- *				<tr>
- *					<td>BAZ</td>
- *					<td>XYZ</td>
- *				</tr>
- *			</tbody>
- *		</table>
- *
- * In the above example the table will be rendered as a table with two rows - one in the header and second one in the body.
- * The table cell (FOO) cannot span over multiple rows as it would expand from the header to the body section.
- * The `rowspan` attribute must be changed to (1). The value (1) is a default value of the `rowspan` attribute
- * so the `rowspan` attribute will be removed from the model.
- *
- * The table cell with BAZ contents will be in the first column of the table.
- *
- * ## Adding missing table cells
- *
- * The table post-fixer will insert empty table cells to equalize table rows sizes (number of columns).
- * The size of a table row is calculated by counting column spans of table cells - both horizontal (from the same row) and
- * vertical (from rows above).
- *
- * In the above example, the table row in the body section of the table is narrower then the row from the header - it has two cells
- * with the default colspan (1). The header row has one cell with colspan (1) and second with colspan (2).
- * The table cell (FOO) does not expand beyond the head section (and as such will be fixed in the first step of this post-fixer).
- * The post-fixer will add a missing table cell to the row in the body section of the table.
- *
- * The table from the above example will be fixed and rendered to the view as below:
- *
- *		<table>
- *			<thead>
- *				<tr>
- *					<td rowspan="2">FOO</td>
- *					<td colspan="2">BAR</td>
- *				</tr>
- *			</thead>
- *			<tbody>
- *				<tr>
- *					<td>BAZ</td>
- *					<td>XYZ</td>
- *				</tr>
- *			</tbody>
- *		</table>
- *
- * ## Collaboration & Undo - Expectations vs post-fixer results
- *
- * The table post-fixer only ensures proper structure without deeper analysis of the nature of a change. As such, it might lead
- * to a structure which was not intended by the user changes. In particular, it will also fix undo steps (in conjunction with collaboration)
- * in which editor content might not return to the original state.
- *
- * This will usually happen when one or more users changes size of the table.
- *
- * As en example see a table below:
- *
- *		<table>
- *			<tbody>
- *				<tr>
- *					<td>11</td>
- *					<td>12</td>
- *				</tr>
- *				<tr>
- *					<td>21</td>
- *					<td>22</td>
- *				</tr>
- *			</tbody>
- *		</table>
- *
- * and user actions:
- *
- * 1. Both user have table with two rows and two columns.
- * 2. User A adds a column at the end of the table - this will insert empty table cells to two rows.
- * 3. User B adds a row at the end of the table- this will insert a row with two empty table cells.
- * 4. Both users will have a table as below:
- *
- *
- *		<table>
- *			<tbody>
- *				<tr>
- *					<td>11</td>
- *					<td>12</td>
- *					<td>(empty, inserted by A)</td>
- *				</tr>
- *				<tr>
- *					<td>21</td>
- *					<td>22</td>
- *					<td>(empty, inserted by A)</td>
- *				</tr>
- *				<tr>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by B)</td>
- *				</tr>
- *			</tbody>
- *		</table>
- *
- * The last row is shorter then others so table post-fixer will add empty row to tha last row:
- *
- *		<table>
- *			<tbody>
- *				<tr>
- *					<td>11</td>
- *					<td>12</td>
- *					<td>(empty, inserted by A)</td>
- *				</tr>
- *				<tr>
- *					<td>21</td>
- *					<td>22</td>
- *					<td>(empty, inserted by A)</td>
- *				</tr>
- *				<tr>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by a post-fixer)</td>
- *				</tr>
- *			</tbody>
- *		</table>
- *
- * Unfortunately undo doesn't know the nature of changes and depending which user will apply post-fixer changes undoing them might lead to
- * broken table. If User B will undo inserting column to a table the undo engine will undo only operations of
- * inserting empty cells to rows from initial table state (row 1 & 2) but the cell in post-fixed row will remain:
- *
- *		<table>
- *			<tbody>
- *				<tr>
- *					<td>11</td>
- *					<td>12</td>
- *				</tr>
- *				<tr>
- *					<td>21</td>
- *					<td>22</td>
- *				</tr>
- *				<tr>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by a post-fixer)</td>
- *				</tr>
- *			</tbody>
- *		</table>
- *
- * After undo the table post-fixer will detect that two rows are shorter then other and will fix table to:
- *
- *		<table>
- *			<tbody>
- *				<tr>
- *					<td>11</td>
- *					<td>12</td>
- *					<td>(empty, inserted by a post-fixer after undo)</td>
- *				</tr>
- *				<tr>
- *					<td>21</td>
- *					<td>22</td>
- *					<td>(empty, inserted by a post-fixer after undo)</td>
- *				</tr>
- *				<tr>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by B)</td>
- *					<td>(empty, inserted by a post-fixer)</td>
- *				</tr>
- *			</tbody>
- *		</table>
- * @param {module:engine/model/model~Model} model
- */
-function injectTableLayoutPostFixer( model ) {
-	model.document.registerPostFixer( writer => tableLayoutPostFixer( writer, model ) );
-}
-
-// The table layout post-fixer.
-//
-// @param {module:engine/model/writer~Writer} writer
-// @param {module:engine/model/model~Model} model
-function tableLayoutPostFixer( writer, model ) {
-	const changes = model.document.differ.getChanges();
-
-	let wasFixed = false;
-
-	// Do not analyze the same table more then once - may happen for multiple changes in the same table.
-	const analyzedTables = new Set();
-
-	for ( const entry of changes ) {
-		let table;
-
-		if ( entry.name == 'table' && entry.type == 'insert' ) {
-			table = entry.position.nodeAfter;
-		}
-
-		// Fix table on adding/removing table cells and rows.
-		if ( entry.name == 'tableRow' || entry.name == 'tableCell' ) {
-			table = findAncestor( 'table', entry.position );
-		}
-
-		// Fix table on any table's attribute change - including attributes of table cells.
-		if ( isTableAttributeEntry( entry ) ) {
-			table = findAncestor( 'table', entry.range.start );
-		}
-
-		if ( table && !analyzedTables.has( table ) ) {
-			// Step 1: correct rowspans of table cells if necessary.
-			// The wasFixed flag should be true if any of tables in batch was fixed - might be more then one.
-			wasFixed = fixTableCellsRowspan( table, writer ) || wasFixed;
-			// Step 2: fix table rows sizes.
-			wasFixed = fixTableRowsSizes( table, writer ) || wasFixed;
-
-			analyzedTables.add( table );
-		}
-	}
-
-	return wasFixed;
-}
-
-// Fixes the invalid value of the rowspan attribute because a table cell cannot vertically extend beyond the table section it belongs to.
-//
-// @param {module:engine/model/element~Element} table
-// @param {module:engine/model/writer~Writer} writer
-// @returns {Boolean} Returns true if table was fixed.
-function fixTableCellsRowspan( table, writer ) {
-	let wasFixed = false;
-
-	const cellsToTrim = findCellsToTrim( table );
-
-	if ( cellsToTrim.length ) {
-		wasFixed = true;
-
-		for ( const data of cellsToTrim ) {
-			updateNumericAttribute( 'rowspan', data.rowspan, data.cell, writer, 1 );
-		}
-	}
-
-	return wasFixed;
-}
-
-// Makes all table rows in a table the same size.
-//
-// @param {module:engine/model/element~Element} table
-// @param {module:engine/model/writer~Writer} writer
-// @returns {Boolean} Returns true if table was fixed.
-function fixTableRowsSizes( table, writer ) {
-	let wasFixed = false;
-
-	const rowsLengths = getRowsLengths( table );
-	const tableSize = rowsLengths[ 0 ];
-
-	const isValid = Object.values( rowsLengths ).every( length => length === tableSize );
-
-	if ( !isValid ) {
-		const maxColumns = Object.values( rowsLengths ).reduce( ( prev, current ) => current > prev ? current : prev, 0 );
-
-		for ( const [ rowIndex, size ] of Object.entries( rowsLengths ) ) {
-			const columnsToInsert = maxColumns - size;
-
-			if ( columnsToInsert ) {
-				for ( let i = 0; i < columnsToInsert; i++ ) {
-					createEmptyTableCell( writer, model_position_Position.createAt( table.getChild( rowIndex ), 'end' ) );
-				}
-
-				wasFixed = true;
-			}
-		}
-	}
-
-	return wasFixed;
-}
-
-// Searches for the table cells that extends beyond the table section to which they belong to. It will return an array of objects
-// that holds table cells to be trimmed and correct value of a rowspan attribute to set.
-//
-// @param {module:engine/model/element~Element} table
-// @returns {Array.<{{cell, rowspan}}>}
-function findCellsToTrim( table ) {
-	const headingRows = parseInt( table.getAttribute( 'headingRows' ) || 0 );
-	const maxRows = table.childCount;
-
-	const cellsToTrim = [];
-
-	for ( const { row, rowspan, cell } of new TableWalker( table ) ) {
-		// Skip cells that do not expand over its row.
-		if ( rowspan < 2 ) {
-			continue;
-		}
-
-		const isInHeader = row < headingRows;
-
-		// Row limit is either end of header section or whole table as table body is after the header.
-		const rowLimit = isInHeader ? headingRows : maxRows;
-
-		// If table cell expands over its limit reduce it height to proper value.
-		if ( row + rowspan > rowLimit ) {
-			const newRowspan = rowLimit - row;
-
-			cellsToTrim.push( { cell, rowspan: newRowspan } );
-		}
-	}
-
-	return cellsToTrim;
-}
-
-// Returns an object with lengths of rows assigned to the corresponding row index.
-//
-// @param {module:engine/model/element~Element} table
-// @returns {Object}
-function getRowsLengths( table ) {
-	const lengths = {};
-
-	for ( const { row } of new TableWalker( table, { includeSpanned: true } ) ) {
-		if ( !lengths[ row ] ) {
-			lengths[ row ] = 0;
-		}
-
-		lengths[ row ] += 1;
-	}
-
-	return lengths;
-}
-
-// Checks if the differ entry for an attribute change is one of table's attributes.
-//
-// @param entry
-// @returns {Boolean}
-function isTableAttributeEntry( entry ) {
-	const isAttributeType = entry.type === 'attribute';
-	const key = entry.attributeKey;
-
-	return isAttributeType && ( key === 'headingRows' || key === 'colspan' || key === 'rowspan' );
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/converters/table-cell-content-post-fixer.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/converters/table-cell-content-post-fixer
- */
-
-/**
- * Injects a table cell post-fixer into the model.
- *
- * The role of the table post-fixer is to ensure that the table cells have the correct content
- * after a {@link module:engine/model/model~Model#change `change()`} block was executed.
- *
- * A table cells must contains at least one block as a child. The empty table cell will have empty `<paragraph>` as a child.
- *
- *        <table>
- *            <tableRow>
- *                <tableCell></tableCell>
- *            </tableRow>
- *        </table>
- *
- * Will be fixed to:
- *
- *        <table>
- *            <tableRow>
- *                <tableCell><paragraph></paragraph></tableCell>
- *            </tableRow>
- *        </table>
- *
- * @param {module:engine/model/model~Model} model
- */
-function injectTableCellContentPostFixer( model ) {
-	model.document.registerPostFixer( writer => tableCellContentsPostFixer( writer, model ) );
-}
-
-// The table cell contents post-fixer.
-//
-// @param {module:engine/model/writer~Writer} writer
-// @param {module:engine/model/model~Model} model
-function tableCellContentsPostFixer( writer, model ) {
-	const changes = model.document.differ.getChanges();
-
-	let wasFixed = false;
-
-	for ( const entry of changes ) {
-		// Enforce paragraph in tableCell even after other feature remove its contents.
-		if ( entry.type == 'remove' && entry.position.parent.is( 'tableCell' ) ) {
-			wasFixed = fixTableCellContent( entry.position.parent, writer ) || wasFixed;
-		}
-
-		// Analyze table cells on insertion.
-		if ( entry.type == 'insert' ) {
-			if ( entry.name == 'table' ) {
-				wasFixed = fixTable( entry.position.nodeAfter, writer ) || wasFixed;
-			}
-
-			if ( entry.name == 'tableRow' ) {
-				wasFixed = fixTableRow( entry.position.nodeAfter, writer ) || wasFixed;
-			}
-
-			if ( entry.name == 'tableCell' ) {
-				wasFixed = fixTableCellContent( entry.position.nodeAfter, writer ) || wasFixed;
-			}
-		}
-	}
-
-	return wasFixed;
-}
-
-// Fixes all table cells in a table.
-//
-// @param {module:engine/model/element~Element} table
-// @param {module:engine/model/writer~Writer} writer
-function fixTable( table, writer ) {
-	let wasFixed = false;
-
-	for ( const row of table.getChildren() ) {
-		wasFixed = fixTableRow( row, writer ) || wasFixed;
-	}
-
-	return wasFixed;
-}
-
-// Fixes all table cells in a table row.
-//
-// @param {module:engine/model/element~Element} tableRow
-// @param {module:engine/model/writer~Writer} writer
-function fixTableRow( tableRow, writer ) {
-	let wasFixed = false;
-
-	for ( const tableCell of tableRow.getChildren() ) {
-		wasFixed = fixTableCellContent( tableCell, writer ) || wasFixed;
-	}
-
-	return wasFixed;
-}
-
-// Fixes all table cell content by adding paragraph to a table cell without any child.
-//
-// @param {module:engine/model/element~Element} table
-// @param {module:engine/model/writer~Writer} writer
-function fixTableCellContent( tableCell, writer ) {
-	if ( tableCell.childCount == 0 ) {
-		writer.insertElement( 'paragraph', tableCell );
-
-		return true;
-	}
-
-	return false;
-}
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/converters/tablecell-post-fixer.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/converters/tablecell-post-fixer
- */
-
-/**
- * Injects a table cell post-fixer into the editing controller.
- *
- * The role of the table cell post-fixer is to ensure that the table cell contents in the editing view are properly converted.
- *
- * This post-fixer will ensure that after model changes in the editing view:
- * * single paragraphs are rendered as `<span>
- * * single paragraphs with one or more attributes are rendered as `<p>`
- * * single paragraphs in table cell with other block elements are rendered as `<p>`
- * * paragraphs in table cells with other block elements (including other paragraphs) are rendered as `<p>`.
- *
- * In the model each table cell has always at least one block element inside. If no other block was defined (empty table cell) the table
- * feature will insert empty `<paragraph>`. Similarly text nodes will be wrapped in paragraphs. Rendering in the data pipeline differs
- * from rendering in the editing pipeline - text nodes in single `<paragraph>` are rendered in the data pipeline as direct children
- * of the `<td>` or `<th>` elements. In other cases `<paragraph>` elements are rendered as `<p>` blocks.
- *
- * To ensure proper mappings between model and view elements and positions in the editing pipeline the table feature will always render
- * an element in the view: `<span>` for single or empty `<paragraph>` and `<p>` otherwise.
- *
- * Example:
- *
- *		<table>
- *			<tableRow>
- *				<tableCell><paragraph></paragraph></tableCell>
- *				<tableCell><paragraph>foo</paragraph></tableCell>
- *				<tableCell><paragraph baz="bar">foo</paragraph></tableCell>
- *				<tableCell><heading2>bar</heading2><paragraph>baz</paragraph></tableCell>
- *			</tableRow>
- *		</table>
- *
- * The editor will render in the data pipeline:
- *
- *		<figure>
- *			<table>
- *				<tbody>
- *					<tr>
- *						<td></td>
- *						<td>foo</td>
- *						<td><p baz="bar">foo</p></td>
- *						<td><h3>bar</h3><p>baz</p></td>
- *					</tr>
- *				</tbody>
- *			</table>
- *		</figure>
- *
- * and in the editing view (without widget markup):
- *
- *		<figure>
- *			<table>
- *				<tbody>
- *					<tr>
- *						<td><span></span></td>
- *						<td><span>foo</span></td>
- *						<td><p baz="bar">foo</p></td>
- *						<td><h3>bar</h3><p>baz</p></td>
- *					</tr>
- *				</tbody>
- *			</table>
- *		</figure>
- *
- * @param {module:engine/model/model~Model} model
- * @param {module:engine/controller/editingcontroller~EditingController} editing
- */
-function injectTableCellPostFixer( model, editing ) {
-	editing.view.document.registerPostFixer( writer => tableCellPostFixer( writer, model, editing.mapper, editing.view ) );
-}
-
-// The table cell post-fixer.
-//
-// @param {module:engine/view/writer~Writer} writer
-// @param {module:engine/model/model~Model} model
-// @param {module:engine/conversion/mapper~Mapper} mapper
-function tableCellPostFixer( writer, model, mapper, view ) {
-	let wasFixed = false;
-
-	const elementsToCheck = getElementsToCheck( view );
-
-	for ( const element of elementsToCheck ) {
-		wasFixed = ensureProperElementName( element, mapper, writer ) || wasFixed;
-	}
-
-	// Selection in the view might not be updated to renamed elements. Happens mostly when other feature inserts paragraph to the table cell
-	// (ie. when deleting table cell contents) and sets selection to it while table-post fixer changes view <p> to <span> element.
-	// The view.selection would have outdated nodes.
-	if ( wasFixed ) {
-		updateRangesInViewSelection( model.document.selection, mapper, writer );
-	}
-
-	return wasFixed;
-}
-
-// Returns view elements changed in current view.change() block.
-//
-// **Note**: Currently it uses private property of the view: _renderer to get changed view elements to check.
-//
-// @param {module:engine/view/view~View} view
-function getElementsToCheck( view ) {
-	const elementsWithChangedAttributes = Array.from( view._renderer.markedAttributes )
-		.filter( el => !!el.parent )
-		.filter( isSpanOrP )
-		.filter( el => isTdOrTh( el.parent ) );
-
-	const changedChildren = Array.from( view._renderer.markedChildren )
-		.filter( el => !!el.parent )
-		.filter( isTdOrTh )
-		.reduce( ( prev, element ) => {
-			const childrenToCheck = Array.from( element.getChildren() ).filter( isSpanOrP );
-
-			return [ ...prev, ...childrenToCheck ];
-		}, [] );
-
-	return [ ...elementsWithChangedAttributes, ...changedChildren ];
-}
-
-// This method checks if view element for model's <paragraph> was properly converter.
-// Paragraph should be either
-// - span: for single paragraph with no attributes.
-// - p   : in other cases.
-function ensureProperElementName( currentViewElement, mapper, writer ) {
-	const modelParagraph = mapper.toModelElement( currentViewElement );
-	const expectedViewElementName = getExpectedElementName( modelParagraph.parent, modelParagraph );
-
-	if ( currentViewElement.name !== expectedViewElementName ) {
-		// Unbind current view element as it should be cleared from mapper.
-		mapper.unbindViewElement( currentViewElement );
-
-		const renamedViewElement = writer.rename( expectedViewElementName, currentViewElement );
-
-		// Bind paragraph inside table cell to the renamed view element.
-		mapper.bindElements( modelParagraph, renamedViewElement );
-
-		return true;
-	}
-
-	return false;
-}
-
-// Expected view element name depends on model elements:
-// - <paragraph> with any attribute set should be rendered as <p>
-// - all <paragraphs> in <tableCell> that has more then one children should be rendered as <p>
-// - an only <paragraph> child with no attributes should be rendered as <span>
-//
-// @param {module:engine/model/element~Element} tableCell
-// @param {module:engine/model/element~Element} paragraph
-// @returns {String}
-function getExpectedElementName( tableCell, paragraph ) {
-	const isOnlyChild = tableCell.childCount > 1;
-	const hasAttributes = !![ ...paragraph.getAttributes() ].length;
-
-	return ( isOnlyChild || hasAttributes ) ? 'p' : 'span';
-}
-
-// Method to filter out <span> and <p> elements.
-//
-// @param {module:engine/view/element~Element} element
-function isSpanOrP( element ) {
-	return element.is( 'p' ) || element.is( 'span' );
-}
-
-// Method to filter out <td> and <th> elements.
-//
-// @param {module:engine/view/element~Element} element
-function isTdOrTh( element ) {
-	return element.is( 'td' ) || element.is( 'th' );
-}
-
-// Resets view selections based on model selection.
-function updateRangesInViewSelection( selection, mapper, writer ) {
-	const fixedRanges = Array.from( selection.getRanges() )
-		.map( range => mapper.toViewRange( range ) );
-
-	writer.setSelection( fixedRanges, { backward: selection.isBackward } );
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/tableediting.css
-var tableediting = __webpack_require__(109);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/tableediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/tableediting
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
- * The table editing feature.
- *
- * @extends module:core/plugin~Plugin
- */
-class tableediting_TableEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-		const model = editor.model;
-		const schema = model.schema;
-		const conversion = editor.conversion;
-
-		schema.register( 'table', {
-			allowWhere: '$block',
-			allowAttributes: [ 'headingRows', 'headingColumns' ],
-			isLimit: true,
-			isObject: true
-		} );
-
-		schema.register( 'tableRow', {
-			allowIn: 'table',
-			isLimit: true
-		} );
-
-		schema.register( 'tableCell', {
-			allowIn: 'tableRow',
-			allowAttributes: [ 'colspan', 'rowspan' ],
-			isLimit: true
-		} );
-
-		// Allow all $block content inside table cell.
-		schema.extend( '$block', { allowIn: 'tableCell' } );
-
-		// Disallow table in table.
-		schema.addChildCheck( ( context, childDefinition ) => {
-			if ( childDefinition.name == 'table' && Array.from( context.getNames() ).includes( 'table' ) ) {
-				return false;
-			}
-		} );
-
-		// Disallow image and media in table cell.
-		schema.addChildCheck( ( context, childDefinition ) => {
-			if ( !Array.from( context.getNames() ).includes( 'table' ) ) {
-				return;
-			}
-
-			if ( childDefinition.name == 'image' || childDefinition.name == 'media' ) {
-				return false;
-			}
-		} );
-
-		// Table conversion.
-		conversion.for( 'upcast' ).add( upcastTable() );
-
-		conversion.for( 'editingDowncast' ).add( downcastInsertTable( { asWidget: true } ) );
-		conversion.for( 'dataDowncast' ).add( downcastInsertTable() );
-
-		// Table row conversion.
-		conversion.for( 'upcast' ).add( upcastElementToElement( { model: 'tableRow', view: 'tr' } ) );
-
-		conversion.for( 'editingDowncast' ).add( downcastInsertRow( { asWidget: true } ) );
-		conversion.for( 'dataDowncast' ).add( downcastInsertRow() );
-		conversion.for( 'downcast' ).add( downcastRemoveRow() );
-
-		// Table cell conversion.
-		conversion.for( 'upcast' ).add( upcastTableCell( 'td' ) );
-		conversion.for( 'upcast' ).add( upcastTableCell( 'th' ) );
-
-		conversion.for( 'editingDowncast' ).add( downcastInsertCell( { asWidget: true } ) );
-		conversion.for( 'dataDowncast' ).add( downcastInsertCell() );
-
-		// Table attributes conversion.
-		conversion.attributeToAttribute( { model: 'colspan', view: 'colspan' } );
-		conversion.attributeToAttribute( { model: 'rowspan', view: 'rowspan' } );
-
-		// Table heading rows and cols conversion.
-		conversion.for( 'editingDowncast' ).add( downcastTableHeadingColumnsChange( { asWidget: true } ) );
-		conversion.for( 'dataDowncast' ).add( downcastTableHeadingColumnsChange() );
-		conversion.for( 'editingDowncast' ).add( downcastTableHeadingRowsChange( { asWidget: true } ) );
-		conversion.for( 'dataDowncast' ).add( downcastTableHeadingRowsChange() );
-
-		injectTableCellPostFixer( editor.model, editor.editing );
-
-		// Define all the commands.
-		editor.commands.add( 'insertTable', new inserttablecommand_InsertTableCommand( editor ) );
-		editor.commands.add( 'insertTableRowAbove', new insertrowcommand_InsertRowCommand( editor, { order: 'above' } ) );
-		editor.commands.add( 'insertTableRowBelow', new insertrowcommand_InsertRowCommand( editor, { order: 'below' } ) );
-		editor.commands.add( 'insertTableColumnBefore', new insertcolumncommand_InsertColumnCommand( editor, { order: 'before' } ) );
-		editor.commands.add( 'insertTableColumnAfter', new insertcolumncommand_InsertColumnCommand( editor, { order: 'after' } ) );
-
-		editor.commands.add( 'removeTableRow', new removerowcommand_RemoveRowCommand( editor ) );
-		editor.commands.add( 'removeTableColumn', new removecolumncommand_RemoveColumnCommand( editor ) );
-
-		editor.commands.add( 'splitTableCellVertically', new splitcellcommand_SplitCellCommand( editor, { direction: 'vertically' } ) );
-		editor.commands.add( 'splitTableCellHorizontally', new splitcellcommand_SplitCellCommand( editor, { direction: 'horizontally' } ) );
-
-		editor.commands.add( 'mergeTableCellRight', new mergecellcommand_MergeCellCommand( editor, { direction: 'right' } ) );
-		editor.commands.add( 'mergeTableCellLeft', new mergecellcommand_MergeCellCommand( editor, { direction: 'left' } ) );
-		editor.commands.add( 'mergeTableCellDown', new mergecellcommand_MergeCellCommand( editor, { direction: 'down' } ) );
-		editor.commands.add( 'mergeTableCellUp', new mergecellcommand_MergeCellCommand( editor, { direction: 'up' } ) );
-
-		editor.commands.add( 'setTableColumnHeader', new setheadercolumncommand_SetHeaderColumnCommand( editor ) );
-		editor.commands.add( 'setTableRowHeader', new setheaderrowcommand_SetHeaderRowCommand( editor ) );
-
-		injectTableLayoutPostFixer( model );
-		injectTableCellContentPostFixer( model );
-
-		// Handle tab key navigation.
-		this.editor.keystrokes.set( 'Tab', ( ...args ) => this._handleTabOnSelectedTable( ...args ), { priority: 'low' } );
-		this.editor.keystrokes.set( 'Tab', this._getTabHandler( true ), { priority: 'low' } );
-		this.editor.keystrokes.set( 'Shift+Tab', this._getTabHandler( false ), { priority: 'low' } );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ tableutils_TableUtils ];
-	}
-
-	/**
-	 * Handles {@link module:engine/view/document~Document#event:keydown keydown} events for the <kbd>Tab</kbd> key executed
-	 * when the table widget is selected.
-	 *
-	 * @private
-	 * @param {module:utils/eventinfo~EventInfo} eventInfo
-	 * @param {module:engine/view/observer/domeventdata~DomEventData} domEventData
-	 */
-	_handleTabOnSelectedTable( domEventData, cancel ) {
-		const editor = this.editor;
-		const selection = editor.model.document.selection;
-
-		if ( !selection.isCollapsed && selection.rangeCount === 1 && selection.getFirstRange().isFlat ) {
-			const selectedElement = selection.getSelectedElement();
-
-			if ( !selectedElement || !selectedElement.is( 'table' ) ) {
-				return;
-			}
-
-			cancel();
-
-			editor.model.change( writer => {
-				writer.setSelection( model_range_Range.createIn( selectedElement.getChild( 0 ).getChild( 0 ) ) );
-			} );
-		}
-	}
-
-	/**
-	 * Returns a handler for {@link module:engine/view/document~Document#event:keydown keydown} events for the <kbd>Tab</kbd> key executed
-	 * inside table cell.
-	 *
-	 * @private
-	 * @param {Boolean} isForward Whether this handler will move selection to the next cell or previous.
-	 */
-	_getTabHandler( isForward ) {
-		const editor = this.editor;
-
-		return ( domEventData, cancel ) => {
-			const selection = editor.model.document.selection;
-
-			const firstPosition = selection.getFirstPosition();
-
-			const tableCell = findAncestor( 'tableCell', firstPosition );
-
-			if ( !tableCell ) {
-				return;
-			}
-
-			cancel();
-
-			const tableRow = tableCell.parent;
-			const table = tableRow.parent;
-
-			const currentRowIndex = table.getChildIndex( tableRow );
-			const currentCellIndex = tableRow.getChildIndex( tableCell );
-
-			const isFirstCellInRow = currentCellIndex === 0;
-
-			if ( !isForward && isFirstCellInRow && currentRowIndex === 0 ) {
-				// It's the first cell of a table - don't do anything (stay in current position).
-				return;
-			}
-
-			const isLastCellInRow = currentCellIndex === tableRow.childCount - 1;
-			const isLastRow = currentRowIndex === table.childCount - 1;
-
-			if ( isForward && isLastRow && isLastCellInRow ) {
-				editor.plugins.get( tableutils_TableUtils ).insertRows( table, { at: table.childCount } );
-			}
-
-			let cellToFocus;
-
-			// Move to first cell in next row.
-			if ( isForward && isLastCellInRow ) {
-				const nextRow = table.getChild( currentRowIndex + 1 );
-
-				cellToFocus = nextRow.getChild( 0 );
-			}
-			// Move to last cell in a previous row.
-			else if ( !isForward && isFirstCellInRow ) {
-				const previousRow = table.getChild( currentRowIndex - 1 );
-
-				cellToFocus = previousRow.getChild( previousRow.childCount - 1 );
-			}
-			// Move to next/previous cell.
-			else {
-				cellToFocus = tableRow.getChild( currentCellIndex + ( isForward ? 1 : -1 ) );
-			}
-
-			editor.model.change( writer => {
-				writer.setSelection( model_range_Range.createIn( cellToFocus ) );
-			} );
-		};
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/inserttable.css
-var inserttable = __webpack_require__(111);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/ui/inserttableview.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/ui/inserttableview
- */
-
-
-
-
-
-/**
- * The table size view.
- *
- * It renders a 10x10 grid to choose the inserted table size.
- *
- * @extends module:ui/view~View
- * @implements module:ui/dropdown/dropdownpanelfocusable~DropdownPanelFocusable
- */
-class inserttableview_InsertTableView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		const bind = this.bindTemplate;
-
-		/**
-		 * A collection of table size box items.
-		 *
-		 * @readonly
-		 * @member {module:ui/viewcollection~ViewCollection}
-		 */
-		this.items = this.createCollection();
-
-		/**
-		 * The currently selected number of rows of the new table.
-		 *
-		 * @observable
-		 * @member {Number} #rows
-		 */
-		this.set( 'rows', 0 );
-
-		/**
-		 * The currently selected number of columns of the new table.
-		 *
-		 * @observable
-		 * @member {Number} #columns
-		 */
-		this.set( 'columns', 0 );
-
-		/**
-		 * The label text displayed under the boxes.
-		 *
-		 * @observable
-		 * @member {String} #label
-		 */
-		this.bind( 'label' )
-			.to( this, 'columns', this, 'rows', ( columns, rows ) => `${ rows } x ${ columns }` );
-
-		this.setTemplate( {
-			tag: 'div',
-			attributes: {
-				class: [ 'ck' ]
-			},
-
-			children: [
-				{
-					tag: 'div',
-					attributes: {
-						class: [ 'ck-insert-table-dropdown__grid' ]
-					},
-					children: this.items
-				},
-				{
-					tag: 'div',
-					attributes: {
-						class: [ 'ck-insert-table-dropdown__label' ]
-					},
-					children: [
-						{
-							text: bind.to( 'label' )
-						}
-					]
-				}
-			],
-
-			on: {
-				mousedown: bind.to( evt => {
-					evt.preventDefault();
-				} ),
-
-				click: bind.to( () => {
-					this.fire( 'execute' );
-				} )
-			}
-		} );
-
-		// Add grid boxes to table selection view.
-		for ( let index = 0; index < 100; index++ ) {
-			const boxView = new inserttableview_TableSizeGridBoxView();
-
-			// Listen to box view 'over' event which indicates that mouse is over this box.
-			boxView.on( 'over', () => {
-				// Translate box index to the row & column index.
-				const row = Math.floor( index / 10 );
-				const column = index % 10;
-
-				// As row & column indexes are zero-based transform it to number of selected rows & columns.
-				this.set( 'rows', row + 1 );
-				this.set( 'columns', column + 1 );
-			} );
-
-			this.items.add( boxView );
-		}
-
-		this.on( 'change:columns', () => {
-			this._highlightGridBoxes();
-		} );
-
-		this.on( 'change:rows', () => {
-			this._highlightGridBoxes();
-		} );
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	focus() {
-		// The dropdown panel expects DropdownPanelFocusable interface on views passed to dropdown panel. See #30.
-		// The method should be implemented while working on keyboard support for this view. See #22.
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	focusLast() {
-		// The dropdown panel expects DropdownPanelFocusable interface on views passed to dropdown panel. See #30.
-		// The method should be implemented while working on keyboard support for this view. See #22.
-	}
-
-	/**
-	 * Highlights grid boxes depending on rows and columns selected.
-	 *
-	 * @private
-	 */
-	_highlightGridBoxes() {
-		const rows = this.rows;
-		const columns = this.columns;
-
-		this.items.map( ( boxView, index ) => {
-			// Translate box index to the row & column index.
-			const itemRow = Math.floor( index / 10 );
-			const itemColumn = index % 10;
-
-			// Grid box is highlighted when its row & column index belongs to selected number of rows & columns.
-			const isOn = itemRow < rows && itemColumn < columns;
-
-			boxView.set( 'isOn', isOn );
-		} );
-	}
-}
-
-/**
- * A single grid box view element.
- *
- * This class is used to render the table size selection grid in {@link module:table/ui/inserttableview~InsertTableView}.
- *
- * @private
- */
-class inserttableview_TableSizeGridBoxView extends src_view_View {
-	/**
-	 * @inheritDoc
-	 */
-	constructor( locale ) {
-		super( locale );
-
-		const bind = this.bindTemplate;
-
-		/**
-		 * Controls whether the grid box view is "on".
-		 *
-		 * @observable
-		 * @member {Boolean} #isOn
-		 */
-		this.set( 'isOn', false );
-
-		this.setTemplate( {
-			tag: 'div',
-			attributes: {
-				class: [
-					'ck-insert-table-dropdown-grid-box',
-					bind.if( 'isOn', 'ck-on' )
-				]
-			},
-			on: {
-				mouseover: bind.to( 'over' )
-			}
-		} );
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/icons/table.svg
-var icons_table = __webpack_require__(37);
-var table_default = /*#__PURE__*/__webpack_require__.n(icons_table);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/icons/table-column.svg
-var table_column = __webpack_require__(38);
-var table_column_default = /*#__PURE__*/__webpack_require__.n(table_column);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/icons/table-row.svg
-var table_row = __webpack_require__(39);
-var table_row_default = /*#__PURE__*/__webpack_require__.n(table_row);
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/icons/table-merge-cell.svg
-var table_merge_cell = __webpack_require__(40);
-var table_merge_cell_default = /*#__PURE__*/__webpack_require__.n(table_merge_cell);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/tableui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module table/tableui
- */
-
-
-
-
-
-
-
-
-
-/**
- * The table UI plugin. It introduces:
- *
- * * The `'insertTable'` dropdown,
- * * The `'tableColumn'` dropdown,
- * * The `'tableRow'` dropdown,
- * * The `'mergeTableCells'` dropdown.
- *
- * The `'tableColumn'`, `'tableRow'`, `'mergeTableCells'` dropdowns work best with {@link module:table/tabletoolbar~TableToolbar}.
- *
- * @extends module:core/plugin~Plugin
- */
-class tableui_TableUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const t = this.editor.t;
-        editor.ui.componentFactory.add('insertTable', locale => {
-            const command = editor.commands.get('insertTable');
-            const dropdownView = createDropdown(locale);
-            dropdownView.bind('isEnabled').to(command);
-            // Decorate dropdown's button.
-            dropdownView.buttonView.set({
-                icon: table_default.a,
-                label: t('p'),
-                tooltip: true
-            });
-            // Prepare custom view for dropdown's panel.
-            const insertTableView = new inserttableview_InsertTableView(locale);
-            dropdownView.panelView.children.add(insertTableView);
-            insertTableView.delegate('execute').to(dropdownView);
-            dropdownView.buttonView.on('open', () => {
-                // Reset the chooser before showing it to the user.
-                insertTableView.rows = 0;
-                insertTableView.columns = 0;
-            });
-            dropdownView.on('execute', () => {
-                editor.execute('insertTable', {
-                    rows: insertTableView.rows,
-                    columns: insertTableView.columns
-                });
-                editor.editing.view.focus();
-            });
-            return dropdownView;
-        });
-        editor.ui.componentFactory.add('tableColumn', locale => {
-            const options = [
-                {
-                    type: 'switchbutton',
-                    model: {
-                        commandName: 'setTableColumnHeader',
-                        label: t('q'),
-                        bindIsOn: true
-                    }
-                },
-                { type: 'separator' },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'insertTableColumnBefore',
-                        label: t('r')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'insertTableColumnAfter',
-                        label: t('s')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'removeTableColumn',
-                        label: t('t')
-                    }
-                }
-            ];
-            return this._prepareDropdown(t('u'), table_column_default.a, options, locale);
-        });
-        editor.ui.componentFactory.add('tableRow', locale => {
-            const options = [
-                {
-                    type: 'switchbutton',
-                    model: {
-                        commandName: 'setTableRowHeader',
-                        label: t('v'),
-                        bindIsOn: true
-                    }
-                },
-                { type: 'separator' },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'insertTableRowBelow',
-                        label: t('w')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'insertTableRowAbove',
-                        label: t('x')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'removeTableRow',
-                        label: t('y')
-                    }
-                }
-            ];
-            return this._prepareDropdown(t('z'), table_row_default.a, options, locale);
-        });
-        editor.ui.componentFactory.add('mergeTableCells', locale => {
-            const options = [
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'mergeTableCellUp',
-                        label: t('aa')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'mergeTableCellRight',
-                        label: t('ab')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'mergeTableCellDown',
-                        label: t('ac')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'mergeTableCellLeft',
-                        label: t('ad')
-                    }
-                },
-                { type: 'separator' },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'splitTableCellVertically',
-                        label: t('ae')
-                    }
-                },
-                {
-                    type: 'button',
-                    model: {
-                        commandName: 'splitTableCellHorizontally',
-                        label: t('af')
-                    }
-                }
-            ];
-            return this._prepareDropdown(t('ag'), table_merge_cell_default.a, options, locale);
-        });
-    }
-    /**
-	 * Creates a dropdown view from the set of options.
-	 *
-	 * @private
-	 * @param {String} label The dropdown button label.
-	 * @param {String} icon An icon for the dropdown button.
-	 * @param {Array.<module:ui/dropdown/utils~ListDropdownItemDefinition>} options The list of options for the dropdown.
-	 * @param {module:utils/locale~Locale} locale
-	 * @returns {module:ui/dropdown/dropdownview~DropdownView}
-	 */
-    _prepareDropdown(label, icon, options, locale) {
-        const editor = this.editor;
-        const dropdownView = createDropdown(locale);
-        const commands = [];
-        // Prepare dropdown list items for list dropdown.
-        const itemDefinitions = new collection_Collection();
-        for (const option of options) {
-            addListOption(option, editor, commands, itemDefinitions);
-        }
-        addListToDropdown(dropdownView, itemDefinitions);
-        // Decorate dropdown's button.
-        dropdownView.buttonView.set({
-            label,
-            icon,
-            tooltip: true
-        });
-        // Make dropdown button disabled when all options are disabled.
-        dropdownView.bind('isEnabled').toMany(commands, 'isEnabled', (...areEnabled) => {
-            return areEnabled.some(isEnabled => isEnabled);
-        });
-        this.listenTo(dropdownView, 'execute', evt => {
-            editor.execute(evt.source.commandName);
-            editor.editing.view.focus();
-        });
-        return dropdownView;
-    }
-}
-// Adds an option to a list view.
-//
-// @param {module:table/tableui~DropdownOption} option Configuration option.
-// @param {module:core/editor/editor~Editor} editor
-// @param {Array.<module:core/command~Command>} commands List of commands to update.
-// @param {Iterable.<module:ui/dropdown/utils~ListDropdownItemDefinition>} itemDefinitions
-// Collection of dropdown items to update with given option.
-function addListOption(option, editor, commands, itemDefinitions) {
-    const model = option.model = new src_model_Model(option.model);
-    const {commandName, bindIsOn} = option.model;
-    if (option.type !== 'separator') {
-        const command = editor.commands.get(commandName);
-        commands.push(command);
-        model.set({ commandName });
-        model.bind('isEnabled').to(command);
-        if (bindIsOn) {
-            model.bind('isOn').to(command, 'value');
-        }
-    }
-    model.set({ withText: true });
-    itemDefinitions.add(option);
-}
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-table/theme/table.css
-var theme_table = __webpack_require__(113);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/table.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/table
- */
-
-
-
-
-
-
-
-
-
-/**
- * The table plugin.
- *
- * For a detailed overview, check the {@glink features/table Table feature documentation}.
- *
- * This is a "glue" plugin which loads the {@link module:table/tableediting~TableEditing table editing feature}
- * and {@link module:table/tableui~TableUI table UI feature}.
- *
- * @extends module:core/plugin~Plugin
- */
-class table_Table extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ tableediting_TableEditing, tableui_TableUI, widget_Widget ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Table';
-	}
-}
-
-/**
- * The configuration of the table features. Used by the table features in the `@ckeditor/ckeditor5-table` package.
- *
- *		ClassicEditor
- *			.create( editorElement, {
- * 				table: ... // Table feature options.
- *			} )
- *			.then( ... )
- *			.catch( ... );
- *
- * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
- *
- * @interface TableConfig
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-table/src/tabletoolbar.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module table/tabletoolbar
- */
-
-
-
-
-
-/**
- * The table toolbar class. It creates toolbars for the table feature and its content (for now only for a table cell content).
- *
- * Table toolbar shows up when a table widget is selected. Its components (e.g. buttons) are created based on the
- * {@link module:table/table~TableConfig#toolbar `table.tableToolbar` configuration option}.
- *
- * Table content toolbar shows up when the selection is inside the content of a table. It creates its component based on the
- * {@link module:table/table~TableConfig#contentToolbar `table.contentToolbar` configuration option}.
- *
- * Note that the old {@link module:table/table~TableConfig#toolbar `table.toolbar` configuration option} is deprecated
- * and will be removed in the next major release.
- *
- * @extends module:core/plugin~Plugin
- */
-class tabletoolbar_TableToolbar extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ widgettoolbarrepository_WidgetToolbarRepository ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'TableToolbar';
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	afterInit() {
-		const editor = this.editor;
-		const widgetToolbarRepository = editor.plugins.get( widgettoolbarrepository_WidgetToolbarRepository );
-
-		const tableContentToolbarItems = editor.config.get( 'table.contentToolbar' );
-		const deprecatedTableContentToolbarItems = editor.config.get( 'table.toolbar' );
-
-		const tableToolbarItems = editor.config.get( 'table.tableToolbar' );
-
-		if ( deprecatedTableContentToolbarItems ) {
-			// eslint-disable-next-line
-			console.warn(
-				'`config.table.toolbar` is deprecated and will be removed in the next major release.' +
-				' Use `config.table.contentToolbar` instead.'
-			);
-		}
-
-		if ( tableContentToolbarItems || deprecatedTableContentToolbarItems ) {
-			widgetToolbarRepository.register( 'tableContent', {
-				items: tableContentToolbarItems || deprecatedTableContentToolbarItems,
-				visibleWhen: isTableContentSelected,
-			} );
-		}
-
-		if ( tableToolbarItems ) {
-			widgetToolbarRepository.register( 'table', {
-				items: tableToolbarItems,
-				visibleWhen: isTableWidgetSelected,
-			} );
-		}
-	}
-}
-
-/**
- * Items to be placed in the table content toolbar.
- *
- * **Note:** This configuration option is deprecated! Use {@link module:table/table~TableConfig#contentToolbar} instead.
- *
- * Read more about configuring toolbar in {@link module:core/editor/editorconfig~EditorConfig#toolbar}.
- *
- * @deprecated
- * @member {Array.<String>} module:table/table~TableConfig#toolbar
- */
-
-/**
- * Items to be placed in the table content toolbar.
- * The {@link module:table/tabletoolbar~TableToolbar} plugin is required to make this toolbar working.
- *
- * Assuming that you use the {@link module:table/tableui~TableUI} feature, the following toolbar items will be available
- * in {@link module:ui/componentfactory~ComponentFactory}:
- *
- * * `'tableRow'`,
- * * `'tableColumn'`,
- * * `'mergeTableCells'`.
- *
- * You can thus configure the toolbar like this:
- *
- *		const tableConfig = {
- *			contentToolbar: [ 'tableRow', 'tableColumn', 'mergeTableCells' ]
- *		};
- *
- * Of course, the same buttons can also be used in the
- * {@link module:core/editor/editorconfig~EditorConfig#toolbar main editor toolbar}.
- *
- * Read more about configuring toolbar in {@link module:core/editor/editorconfig~EditorConfig#toolbar}.
- *
- * @member {Array.<String>} module:table/table~TableConfig#contentToolbar
- */
-
-/**
- * Items to be placed in the table toolbar.
- * The {@link module:table/tabletoolbar~TableToolbar} plugin is required to make this toolbar working.
- *
- * You can thus configure the toolbar like this:
- *
- *		const tableConfig = {
- *			tableToolbar: [ 'blockQuote' ]
- *		};
- *
- * Of course, the same buttons can also be used in the
- * {@link module:core/editor/editorconfig~EditorConfig#toolbar main editor toolbar}.
- *
- * Read more about configuring toolbar in {@link module:core/editor/editorconfig~EditorConfig#toolbar}.
- *
- * @member {Array.<String>} module:table/table~TableConfig#tableToolbar
- */
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline/underlineediting.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module basic-styles/underline/underlineediting
- */
-
-
-
-
-const UNDERLINE = 'underline';
-
-/**
- * The underline editing feature.
- *
- * It registers the `'underline'` command, the <kbd>Ctrl+U</kbd> keystroke
- * and introduces the `underline` attribute in the model which renders to the view as an `<u>` element.
- *
- * @extends module:core/plugin~Plugin
- */
-class underlineediting_UnderlineEditing extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	init() {
-		const editor = this.editor;
-
-		// Allow strikethrough attribute on text nodes.
-		editor.model.schema.extend( '$text', { allowAttributes: UNDERLINE } );
-
-		editor.conversion.attributeToElement( {
-			model: UNDERLINE,
-			view: 'u',
-			upcastAlso: {
-				styles: {
-					'text-decoration': 'underline'
-				}
-			}
-		} );
-
-		// Create underline command.
-		editor.commands.add( UNDERLINE, new attributecommand_AttributeCommand( editor, UNDERLINE ) );
-
-		// Set the Ctrl+U keystroke.
-		editor.keystrokes.set( 'CTRL+U', 'underline' );
-	}
-}
-
-// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/underline.svg
-var underline = __webpack_require__(41);
-var underline_default = /*#__PURE__*/__webpack_require__.n(underline);
-
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline/underlineui.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-/**
- * @module basic-styles/underline/underlineui
- */
-
-
-
-const underlineui_UNDERLINE = 'underline';
-/**
- * The underline UI feature. It introduces the Underline button.
- *
- * @extends module:core/plugin~Plugin
- */
-class underlineui_UnderlineUI extends Plugin {
-    /**
-	 * @inheritDoc
-	 */
-    init() {
-        const editor = this.editor;
-        const t = editor.t;
-        // Add bold button to feature components.
-        editor.ui.componentFactory.add(underlineui_UNDERLINE, locale => {
-            const command = editor.commands.get(underlineui_UNDERLINE);
-            const view = new buttonview_ButtonView(locale);
-            view.set({
-                label: t('d'),
-                icon: underline_default.a,
-                keystroke: 'CTRL+U',
-                tooltip: true
-            });
-            view.bind('isOn', 'isEnabled').to(command, 'value', 'isEnabled');
-            // Execute command.
-            this.listenTo(view, 'execute', () => editor.execute(underlineui_UNDERLINE));
-            return view;
-        });
-    }
-}
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline.js
-/**
- * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-/**
- * @module basic-styles/underline
- */
-
-
-
-
-
-/**
- * The underline feature.
- *
- * For a detailed overview check the {@glink features/basic-styles Basic styles feature documentation}
- * and the {@glink api/basic-styles package page}.
- *
- * This is a "glue" plugin which loads the {@link module:basic-styles/underline/underlineediting~UnderlineEditing} and
- * {@link module:basic-styles/underline/underlineui~UnderlineUI} plugins.
- *
- * @extends module:core/plugin~Plugin
- */
-class underline_Underline extends Plugin {
-	/**
-	 * @inheritDoc
-	 */
-	static get requires() {
-		return [ underlineediting_UnderlineEditing, underlineui_UnderlineUI ];
-	}
-
-	/**
-	 * @inheritDoc
-	 */
-	static get pluginName() {
-		return 'Underline';
-	}
-}
-
 // CONCATENATED MODULE: ./src/ckeditor.js
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ckeditor_ClassicEditor; });
 /**
@@ -77797,44 +56496,14 @@ class underline_Underline extends Plugin {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class ckeditor_ClassicEditor extends classiceditor_ClassicEditor {}
 
 // Plugins to include in the build.
 ckeditor_ClassicEditor.builtinPlugins = [
-	essentials_Essentials,
-	uploadadapter_CKFinderUploadAdapter,
-	autoformat_Autoformat,
 	bold_Bold,
 	italic_Italic,
-	blockquote_BlockQuote,
-	easyimage_EasyImage,
-	heading_Heading,
-	image_Image,
-	imagecaption_ImageCaption,
-	imagestyle_ImageStyle,
-	imagetoolbar_ImageToolbar,
-	imageupload_ImageUpload,
 	link_Link,
 	list_List,
-	mediaembed_MediaEmbed,
-	paragraph_Paragraph,
-	table_Table,
-	tabletoolbar_TableToolbar,
 	underline_Underline
 ];
 
@@ -77842,35 +56511,14 @@ ckeditor_ClassicEditor.builtinPlugins = [
 ckeditor_ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'|',
 			'bold',
 			'italic',
 			'underline',
-			'link',
+			'|',
 			'bulletedList',
 			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
 			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
+			'link',
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
