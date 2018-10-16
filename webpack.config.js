@@ -30,17 +30,7 @@ module.exports = {
 	},
 
 	optimization: {
-		// minimizer: [
-		// 	new UglifyJsWebpackPlugin( {
-		// 		sourceMap: true,
-		// 		uglifyOptions: {
-		// 			output: {
-		// 				// Preserve CKEditor 5 license comments.
-		// 				comments: /^!/
-		// 			}
-		// 		}
-		// 	} )
-		// ]
+		minimize: false
 	},
 
 	plugins: [
