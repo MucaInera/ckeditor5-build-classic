@@ -1,1 +1,1 @@
-(function(d){d['zh-cn']=Object.assign(d['zh-cn']||{},{a:"加粗",b:"倾斜",c:"下划线",d:"编号列表",e:"项目列表",f:"超链接",g:"保存",h:"取消",i:"链接网址",j:"取消超链接",k:"修改链接",l:"在新标签页中打开链接",m:"此链接没有设置网址",n:"富文本编辑器， %0",o:"富文本编辑器"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
+(function(d){d['zh-cn']=Object.assign(d['zh-cn']||{},{a:"加粗",b:"倾斜",c:"下划线",d:"编号列表",e:"项目列表",f:"超链接",g:"取消超链接",h:"修改链接",i:"在新标签页中打开链接",j:"此链接没有设置网址",k:"保存",l:"取消",m:"链接网址",n:"撤销",o:"重做",p:"富文本编辑器",q:"富文本编辑器， %0"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));

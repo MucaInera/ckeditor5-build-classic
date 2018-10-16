@@ -2,7 +2,7 @@
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
-(function(d){d['en']=Object.assign(d['en']||{},{a:"Bold",b:"Italic",c:"Underline",d:"Numbered List",e:"Bulleted List",f:"Link",g:"Save",h:"Cancel",i:"Link URL",j:"Unlink",k:"Edit link",l:"Open link in new tab",m:"This link has no URL",n:"Rich Text Editor, %0",o:"Rich Text Editor"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
+(function(d){d['en']=Object.assign(d['en']||{},{a:"Bold",b:"Italic",c:"Underline",d:"Numbered List",e:"Bulleted List",f:"Link",g:"Unlink",h:"Edit link",i:"Open link in new tab",j:"This link has no URL",k:"Save",l:"Cancel",m:"Link URL",n:"Undo",o:"Redo",p:"Rich Text Editor",q:"Rich Text Editor, %0"})})(window.CKEDITOR_TRANSLATIONS||(window.CKEDITOR_TRANSLATIONS={}));
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -96,7 +96,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 55);
+/******/ 	return __webpack_require__(__webpack_require__.s = 57);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -196,25 +196,7 @@ function attachLinkToDocumentation( message ) {
 
 
 /***/ }),
-/* 1 */,
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"] || freeSelf || Function('return this')();
-
-/* harmony default export */ __webpack_exports__["a"] = (root);
-
-
-/***/ }),
-/* 3 */
+/* 1 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -298,6 +280,24 @@ const log = {
 
 
 /***/ }),
+/* 2 */,
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = _freeGlobal_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"] || freeSelf || Function('return this')();
+
+/* harmony default export */ __webpack_exports__["a"] = (root);
+
+
+/***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -367,7 +367,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(26);
+var	fixUrls = __webpack_require__(28);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -745,7 +745,7 @@ var nodeUtil = (function() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 /* harmony import */ var _stubFalse_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
 
@@ -892,7 +892,7 @@ function stubFalse() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _root_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 
 
 /** Detect free variable `exports`. */
@@ -935,68 +935,80 @@ function cloneBuffer(buffer, isDeep) {
 /* 13 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>\n"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.042 9.367l2.189 1.837a.75.75 0 0 1-.965 1.149l-3.788-3.18a.747.747 0 0 1-.21-.284.75.75 0 0 1 .17-.945L6.23 4.762a.75.75 0 1 1 .964 1.15L4.863 7.866h8.917A.75.75 0 0 1 14 7.9a4 4 0 1 1-1.477 7.718l.344-1.489a2.5 2.5 0 1 0 1.094-4.73l.008-.032H5.042z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>"
 
 /***/ }),
 /* 14 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.586 14.633l.021.004c-.036.335.095.655.393.962.082.083.173.15.274.201h1.474a.6.6 0 1 1 0 1.2H5.304a.6.6 0 0 1 0-1.2h1.15c.474-.07.809-.182 1.005-.334.157-.122.291-.32.404-.597l2.416-9.55a1.053 1.053 0 0 0-.281-.823 1.12 1.12 0 0 0-.442-.296H8.15a.6.6 0 0 1 0-1.2h6.443a.6.6 0 1 1 0 1.2h-1.195c-.376.056-.65.155-.823.296-.215.175-.423.439-.623.79l-2.366 9.347z\" fill=\"#333\" fill-rule=\"evenodd\"/></svg>"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M14.958 9.367l-2.189 1.837a.75.75 0 0 0 .965 1.149l3.788-3.18a.747.747 0 0 0 .21-.284.75.75 0 0 0-.17-.945L13.77 4.762a.75.75 0 1 0-.964 1.15l2.331 1.955H6.22A.75.75 0 0 0 6 7.9a4 4 0 1 0 1.477 7.718l-.344-1.489A2.5 2.5 0 1 1 6.039 9.4l-.008-.032h8.927z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>"
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"#333\"><path fill-rule=\"nonzero\" d=\"M3 18v-1.5h14V18z\"/><path d=\"M5.2 10V3.6c0-.4.4-.6.8-.6.3 0 .7.2.7.6v6.2c0 2 1.3 2.8 3.2 2.8 1.9 0 3.4-.9 3.4-2.9V3.6c0-.3.4-.5.8-.5.3 0 .7.2.7.5V10c0 2.7-2.2 4-4.9 4-2.6 0-4.7-1.2-4.7-4z\"/></g></g></svg>\n"
+module.exports = "<svg width=\"20\" height=\"20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M10.187 17H5.773c-.637 0-1.092-.138-1.364-.415-.273-.277-.409-.718-.409-1.323V4.738c0-.617.14-1.062.419-1.332.279-.27.73-.406 1.354-.406h4.68c.69 0 1.288.041 1.793.124.506.083.96.242 1.36.478.341.197.644.447.906.75a3.262 3.262 0 0 1 .808 2.162c0 1.401-.722 2.426-2.167 3.075C15.05 10.175 16 11.315 16 13.01a3.756 3.756 0 0 1-2.296 3.504 6.1 6.1 0 0 1-1.517.377c-.571.073-1.238.11-2 .11zm-.217-6.217H7v4.087h3.069c1.977 0 2.965-.69 2.965-2.072 0-.707-.256-1.22-.768-1.537-.512-.319-1.277-.478-2.296-.478zM7 5.13v3.619h2.606c.729 0 1.292-.067 1.69-.2a1.6 1.6 0 0 0 .91-.765c.165-.267.247-.566.247-.897 0-.707-.26-1.176-.778-1.409-.519-.232-1.31-.348-2.375-.348H7z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>\n"
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.972 16.615a.997.997 0 0 1-.744-.292l-4.596-4.596a1 1 0 1 1 1.414-1.414l3.926 3.926 9.937-9.937a1 1 0 0 1 1.414 1.415L7.717 16.323a.997.997 0 0 1-.745.292z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M9.586 14.633l.021.004c-.036.335.095.655.393.962.082.083.173.15.274.201h1.474a.6.6 0 1 1 0 1.2H5.304a.6.6 0 0 1 0-1.2h1.15c.474-.07.809-.182 1.005-.334.157-.122.291-.32.404-.597l2.416-9.55a1.053 1.053 0 0 0-.281-.823 1.12 1.12 0 0 0-.442-.296H8.15a.6.6 0 0 1 0-1.2h6.443a.6.6 0 1 1 0 1.2h-1.195c-.376.056-.65.155-.823.296-.215.175-.423.439-.623.79l-2.366 9.347z\" fill=\"#333\" fill-rule=\"evenodd\"/></svg>"
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.591 10.177l4.243 4.242a1 1 0 0 1-1.415 1.415l-4.242-4.243-4.243 4.243a1 1 0 0 1-1.414-1.415l4.243-4.242L4.52 5.934A1 1 0 0 1 5.934 4.52l4.243 4.243 4.242-4.243a1 1 0 1 1 1.415 1.414l-4.243 4.243z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
+module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><g fill=\"#333\"><path fill-rule=\"nonzero\" d=\"M3 18v-1.5h14V18z\"/><path d=\"M5.2 10V3.6c0-.4.4-.6.8-.6.3 0 .7.2.7.6v6.2c0 2 1.3 2.8 3.2 2.8 1.9 0 3.4-.9 3.4-2.9V3.6c0-.3.4-.5.8-.5.3 0 .7.2.7.5V10c0 2.7-2.2 4-4.9 4-2.6 0-4.7-1.2-4.7-4z\"/></g></g></svg>\n"
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"evenodd\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184zM16.927 17.695l-1.414 1.414a.75.75 0 1 1-1.06-1.06l1.414-1.415-1.415-1.414a.75.75 0 0 1 1.061-1.06l1.414 1.414 1.414-1.415a.75.75 0 0 1 1.061 1.061l-1.414 1.414 1.414 1.415a.75.75 0 0 1-1.06 1.06l-1.415-1.414z\"/></g></svg>"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M6.972 16.615a.997.997 0 0 1-.744-.292l-4.596-4.596a1 1 0 1 1 1.414-1.414l3.926 3.926 9.937-9.937a1 1 0 0 1 1.414 1.415L7.717 16.323a.997.997 0 0 1-.745.292z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
 
 /***/ }),
 /* 19 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.3 17.37l-.061.088a1.518 1.518 0 0 1-.934.535l-4.178.663-.806-4.153a1.495 1.495 0 0 1 .187-1.058l.056-.086L8.77 2.639c.958-1.351 2.803-1.076 4.296-.03 1.497 1.047 2.387 2.693 1.433 4.055L7.3 17.37zM9.14 4.728l-5.545 8.346 3.277 2.294 5.544-8.346L9.14 4.728zM6.07 16.512l-3.276-2.295.53 2.73 2.746-.435zM9.994 3.506L13.271 5.8c.316-.452-.16-1.333-1.065-1.966-.905-.634-1.895-.78-2.212-.328zM8 18.5L9.375 17H19v1.5H8z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>\n"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.591 10.177l4.243 4.242a1 1 0 0 1-1.415 1.415l-4.242-4.243-4.243 4.243a1 1 0 0 1-1.414-1.415l4.243-4.242L4.52 5.934A1 1 0 0 1 5.934 4.52l4.243 4.243 4.242-4.243a1 1 0 1 1 1.415 1.414l-4.243 4.243z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
 
 /***/ }),
 /* 20 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"#000\" fill-rule=\"evenodd\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184zM16.927 17.695l-1.414 1.414a.75.75 0 1 1-1.06-1.06l1.414-1.415-1.415-1.414a.75.75 0 0 1 1.061-1.06l1.414 1.414 1.414-1.415a.75.75 0 0 1 1.061 1.061l-1.414 1.414 1.414 1.415a.75.75 0 0 1-1.06 1.06l-1.415-1.414z\"/></g></svg>"
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM3.5 3v5H2V3.7H1v-1h2.5V3zM.343 17.857l2.59-3.257H2.92a.6.6 0 1 0-1.04 0H.302a2 2 0 1 1 3.995 0h-.001c-.048.405-.16.734-.333.988-.175.254-.59.692-1.244 1.312H4.3v1h-4l.043-.043zM7 14.75a.75.75 0 0 1 .75-.75h9.5a.75.75 0 1 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
+module.exports = "<svg viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7.3 17.37l-.061.088a1.518 1.518 0 0 1-.934.535l-4.178.663-.806-4.153a1.495 1.495 0 0 1 .187-1.058l.056-.086L8.77 2.639c.958-1.351 2.803-1.076 4.296-.03 1.497 1.047 2.387 2.693 1.433 4.055L7.3 17.37zM9.14 4.728l-5.545 8.346 3.277 2.294 5.544-8.346L9.14 4.728zM6.07 16.512l-3.276-2.295.53 2.73 2.746-.435zM9.994 3.506L13.271 5.8c.316-.452-.16-1.333-1.065-1.966-.905-.634-1.895-.78-2.212-.328zM8 18.5L9.375 17H19v1.5H8z\" fill=\"#000\" fill-rule=\"nonzero\"/></svg>\n"
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports) {
 
-module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0C1 4.784 1.777 4 2.75 4c.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75C1.784 7.5 1 6.723 1 5.75zm6 9c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0c0-.966.777-1.75 1.75-1.75.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75-.966 0-1.75-.777-1.75-1.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M11.077 15l.991-1.416a.75.75 0 1 1 1.229.86l-1.148 1.64a.748.748 0 0 1-.217.206 5.251 5.251 0 0 1-8.503-5.955c.02-.095.06-.189.12-.274l1.147-1.639a.75.75 0 1 1 1.228.86L4.933 10.7l.006.003a3.75 3.75 0 0 0 6.132 4.294l.006.004zm5.494-5.335a.748.748 0 0 1-.12.274l-1.147 1.639a.75.75 0 1 1-1.228-.86l.86-1.23a3.75 3.75 0 0 0-6.144-4.301l-.86 1.229a.75.75 0 0 1-1.229-.86l1.148-1.64a.748.748 0 0 1 .217-.206 5.251 5.251 0 0 1 8.503 5.955zm-4.563-2.532a.75.75 0 0 1 .184 1.045l-3.155 4.505a.75.75 0 1 1-1.229-.86l3.155-4.506a.75.75 0 0 1 1.045-.184z\" fill=\"#000\" fill-rule=\"evenodd\"/></svg>"
 
 /***/ }),
 /* 23 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zM3.5 3v5H2V3.7H1v-1h2.5V3zM.343 17.857l2.59-3.257H2.92a.6.6 0 1 0-1.04 0H.302a2 2 0 1 1 3.995 0h-.001c-.048.405-.16.734-.333.988-.175.254-.59.692-1.244 1.312H4.3v1h-4l.043-.043zM7 14.75a.75.75 0 0 1 .75-.75h9.5a.75.75 0 1 1 0 1.5h-9.5a.75.75 0 0 1-.75-.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+module.exports = "<svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M7 5.75c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0C1 4.784 1.777 4 2.75 4c.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75C1.784 7.5 1 6.723 1 5.75zm6 9c0 .414.336.75.75.75h9.5a.75.75 0 1 0 0-1.5h-9.5a.75.75 0 0 0-.75.75zm-6 0c0-.966.777-1.75 1.75-1.75.966 0 1.75.777 1.75 1.75 0 .966-.777 1.75-1.75 1.75-.966 0-1.75-.777-1.75-1.75z\" fill=\"#454545\" fill-rule=\"evenodd\"/></svg>"
+
+/***/ }),
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _log__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 var ckeditor5_package_json__WEBPACK_IMPORTED_MODULE_1___namespace = /*#__PURE__*/__webpack_require__.t(9, 1);
 /**
@@ -1060,11 +1072,11 @@ if ( windowOrGlobal.CKEDITOR_VERSION ) {
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(10)))
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(25);
+var content = __webpack_require__(27);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1085,13 +1097,13 @@ if(content.locals) module.exports = content.locals;
 if(false) {}
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = ".ck-hidden{display:none!important}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{box-sizing:border-box;width:auto;height:auto;position:static}:root{--ck-z-default:1;--ck-z-modal:calc(var(--ck-z-default) + 999);--ck-color-base-foreground:#fafafa;--ck-color-base-background:#fff;--ck-color-base-border:#c4c4c4;--ck-color-base-action:#61b045;--ck-color-base-focus:#6cb5f9;--ck-color-base-text:#333;--ck-color-base-active:#198cf0;--ck-color-base-active-focus:#0e7fe1;--ck-color-base-error:#db3700;--ck-color-focus-border:#47a4f5;--ck-color-focus-shadow:rgba(119,186,248,0.5);--ck-color-focus-disabled-shadow:rgba(119,186,248,0.3);--ck-color-focus-error-shadow:rgba(255,64,31,0.3);--ck-color-text:var(--ck-color-base-text);--ck-color-shadow-drop:rgba(0,0,0,0.15);--ck-color-shadow-inner:rgba(0,0,0,0.1);--ck-color-button-default-background:transparent;--ck-color-button-default-hover-background:#e6e6e6;--ck-color-button-default-active-background:#d9d9d9;--ck-color-button-default-active-shadow:#bfbfbf;--ck-color-button-default-disabled-background:transparent;--ck-color-button-on-background:#dedede;--ck-color-button-on-hover-background:#c4c4c4;--ck-color-button-on-active-background:#bababa;--ck-color-button-on-active-shadow:#a1a1a1;--ck-color-button-on-disabled-background:#dedede;--ck-color-button-action-background:var(--ck-color-base-action);--ck-color-button-action-hover-background:#579e3d;--ck-color-button-action-active-background:#53973b;--ck-color-button-action-active-shadow:#498433;--ck-color-button-action-disabled-background:#7ec365;--ck-color-button-action-text:var(--ck-color-base-background);--ck-color-button-save:#008a00;--ck-color-button-cancel:#db3700;--ck-color-switch-button-off-background:#b0b0b0;--ck-color-switch-button-on-background:var(--ck-color-button-action-background);--ck-color-switch-button-inner-background:var(--ck-color-base-background);--ck-color-dropdown-panel-background:var(--ck-color-base-background);--ck-color-dropdown-panel-border:var(--ck-color-base-border);--ck-color-input-background:var(--ck-color-base-background);--ck-color-input-border:#c7c7c7;--ck-color-input-error-border:var(--ck-color-base-error);--ck-color-input-text:var(--ck-color-base-text);--ck-color-input-disabled-background:#f2f2f2;--ck-color-input-disabled-border:#c7c7c7;--ck-color-input-disabled-text:#5c5c5c;--ck-color-list-background:var(--ck-color-base-background);--ck-color-list-button-hover-background:var(--ck-color-base-foreground);--ck-color-list-button-on-background:var(--ck-color-base-active);--ck-color-list-button-on-background-focus:var(--ck-color-base-active-focus);--ck-color-list-button-on-text:var(--ck-color-base-background);--ck-color-panel-background:var(--ck-color-base-background);--ck-color-panel-border:var(--ck-color-base-border);--ck-color-toolbar-background:var(--ck-color-base-foreground);--ck-color-toolbar-border:var(--ck-color-base-border);--ck-color-tooltip-background:var(--ck-color-base-text);--ck-color-tooltip-text:var(--ck-color-base-background);--ck-color-engine-placeholder-text:#c2c2c2;--ck-color-upload-bar-background:#6cb5f9;--ck-color-upload-infinite-background:rgba(0,0,0,0.1);--ck-color-link-default:#0000f0;--ck-color-link-selected-background:#ebf8ff;--ck-disabled-opacity:.5;--ck-focus-outer-shadow-geometry:0 0 0 3px;--ck-focus-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-shadow);--ck-focus-disabled-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-disabled-shadow);--ck-focus-error-outer-shadow:var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-error-shadow);--ck-focus-ring:1px solid var(--ck-color-focus-border);--ck-font-size-base:13px;--ck-line-height-base:1.84615;--ck-font-face:Helvetica,Arial,Tahoma,Verdana,Sans-Serif;--ck-font-size-tiny:0.7em;--ck-font-size-small:0.75em;--ck-font-size-normal:1em;--ck-font-size-big:1.4em;--ck-font-size-large:1.8em;--ck-ui-component-min-height:2.3em}.ck.ck-reset,.ck.ck-reset_all,.ck.ck-reset_all *{margin:0;padding:0;border:0;background:transparent;text-decoration:none;vertical-align:middle;transition:none;word-wrap:break-word}.ck.ck-reset_all,.ck.ck-reset_all *{border-collapse:collapse;font:normal normal normal var(--ck-font-size-base)/var(--ck-line-height-base) var(--ck-font-face);color:var(--ck-color-text);text-align:left;white-space:nowrap;cursor:auto;float:none}.ck.ck-reset_all .ck-rtl *{text-align:right}.ck.ck-reset_all iframe{vertical-align:inherit}.ck.ck-reset_all textarea{white-space:pre-wrap}.ck.ck-reset_all input[type=password],.ck.ck-reset_all input[type=text],.ck.ck-reset_all textarea{cursor:text}.ck.ck-reset_all input[type=password][disabled],.ck.ck-reset_all input[type=text][disabled],.ck.ck-reset_all textarea[disabled]{cursor:default}.ck.ck-reset_all fieldset{padding:10px;border:2px groove #dfdee3}.ck.ck-reset_all button::-moz-focus-inner{padding:0;border:0}:root{--ck-border-radius:2px;--ck-inner-shadow:2px 2px 3px var(--ck-color-shadow-inner) inset;--ck-drop-shadow:0 1px 2px 1px var(--ck-color-shadow-drop);--ck-spacing-unit:0.6em;--ck-spacing-large:calc(var(--ck-spacing-unit) * 1.5);--ck-spacing-standard:var(--ck-spacing-unit);--ck-spacing-medium:calc(var(--ck-spacing-unit) * 0.8);--ck-spacing-small:calc(var(--ck-spacing-unit) * 0.5);--ck-spacing-tiny:calc(var(--ck-spacing-unit) * 0.3);--ck-spacing-extra-tiny:calc(var(--ck-spacing-unit) * 0.16)}"
 
 /***/ }),
-/* 26 */
+/* 28 */
 /***/ (function(module, exports) {
 
 
@@ -1186,37 +1198,6 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(28);
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"singleton":true,"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(4)(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports) {
-
-module.exports = ".ck.ck-editor__editable:not(.ck-editor__nested-editable){border-radius:0}.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0}.ck.ck-editor__editable_inline{overflow:auto;padding:0 var(--ck-spacing-standard);border:1px solid transparent}.ck.ck-editor__editable_inline>:first-child{margin-top:var(--ck-spacing-large)}.ck.ck-editor__editable_inline>:last-child{margin-bottom:var(--ck-spacing-large)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_n]:after{border-bottom-color:var(--ck-color-base-foreground)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_s]:after{border-top-color:var(--ck-color-base-foreground)}"
-
-/***/ }),
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1245,7 +1226,7 @@ if(false) {}
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-label{display:block}.ck.ck-voice-label{display:none}.ck.ck-label{font-weight:700}"
+module.exports = ".ck.ck-editor__editable:not(.ck-editor__nested-editable){border-radius:0}.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable),.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-inner-shadow),0 0}.ck.ck-editor__editable_inline{overflow:auto;padding:0 var(--ck-spacing-standard);border:1px solid transparent}.ck.ck-editor__editable_inline>:first-child{margin-top:var(--ck-spacing-large)}.ck.ck-editor__editable_inline>:last-child{margin-bottom:var(--ck-spacing-large)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_n]:after{border-bottom-color:var(--ck-color-base-foreground)}.ck.ck-balloon-panel.ck-toolbar-container[class*=arrow_s]:after{border-top-color:var(--ck-color-base-foreground)}"
 
 /***/ }),
 /* 31 */
@@ -1276,7 +1257,7 @@ if(false) {}
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-sticky-panel .ck-sticky-panel__content_sticky{z-index:var(--ck-z-modal);position:fixed;top:0}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky_bottom-limit{top:auto;position:absolute}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{box-shadow:var(--ck-drop-shadow),0 0;border-width:0 1px 1px;border-top-left-radius:0;border-top-right-radius:0}"
+module.exports = ".ck.ck-label{display:block}.ck.ck-voice-label{display:none}.ck.ck-label{font-weight:700}"
 
 /***/ }),
 /* 33 */
@@ -1307,7 +1288,7 @@ if(false) {}
 /* 34 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-toolbar{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;display:flex;flex-flow:row wrap;align-items:center}.ck.ck-toolbar.ck-toolbar_vertical{flex-direction:column}.ck.ck-toolbar.ck-toolbar_floating{flex-wrap:nowrap}.ck.ck-toolbar__separator{display:inline-block}.ck.ck-toolbar__newline{display:block;width:100%}.ck.ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-toolbar,.ck.ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-toolbar{background:var(--ck-color-toolbar-background);padding:0 var(--ck-spacing-small);border:1px solid var(--ck-color-toolbar-border)}.ck.ck-toolbar>*{margin-right:var(--ck-spacing-small);margin-top:var(--ck-spacing-small);margin-bottom:var(--ck-spacing-small)}.ck.ck-toolbar.ck-toolbar_vertical{padding:0}.ck.ck-toolbar.ck-toolbar_vertical>*{width:100%;margin:0;border-radius:0;border:0}.ck.ck-toolbar>:last-child{margin-right:0}.ck-toolbar-container .ck.ck-toolbar{border:0}.ck.ck-toolbar__separator{align-self:stretch;width:1px;margin-top:0;margin-bottom:0;background:var(--ck-color-toolbar-border)}.ck.ck-toolbar__newline{margin:0}"
+module.exports = ".ck.ck-sticky-panel .ck-sticky-panel__content_sticky{z-index:var(--ck-z-modal);position:fixed;top:0}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky_bottom-limit{top:auto;position:absolute}.ck.ck-sticky-panel .ck-sticky-panel__content_sticky{box-shadow:var(--ck-drop-shadow),0 0;border-width:0 1px 1px;border-top-left-radius:0;border-top-right-radius:0}"
 
 /***/ }),
 /* 35 */
@@ -1338,7 +1319,7 @@ if(false) {}
 /* 36 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-editor{position:relative}.ck.ck-editor .ck-editor__top .ck-sticky-panel .ck-toolbar{z-index:var(--ck-z-modal)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-bottom-width:0}.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar{border-bottom-width:1px;border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:0}.ck.ck-editor__main>.ck-editor__editable{background:var(--ck-color-base-background);border-radius:0}.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){border-color:var(--ck-color-base-border)}"
+module.exports = ".ck.ck-toolbar{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;display:flex;flex-flow:row wrap;align-items:center}.ck.ck-toolbar.ck-toolbar_vertical{flex-direction:column}.ck.ck-toolbar.ck-toolbar_floating{flex-wrap:nowrap}.ck.ck-toolbar__separator{display:inline-block}.ck.ck-toolbar__newline{display:block;width:100%}.ck.ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-toolbar,.ck.ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-toolbar{background:var(--ck-color-toolbar-background);padding:0 var(--ck-spacing-small);border:1px solid var(--ck-color-toolbar-border)}.ck.ck-toolbar>*{margin-right:var(--ck-spacing-small);margin-top:var(--ck-spacing-small);margin-bottom:var(--ck-spacing-small)}.ck.ck-toolbar.ck-toolbar_vertical{padding:0}.ck.ck-toolbar.ck-toolbar_vertical>*{width:100%;margin:0;border-radius:0;border:0}.ck.ck-toolbar>:last-child{margin-right:0}.ck-toolbar-container .ck.ck-toolbar{border:0}.ck.ck-toolbar__separator{align-self:stretch;width:1px;margin-top:0;margin-bottom:0;background:var(--ck-color-toolbar-border)}.ck.ck-toolbar__newline{margin:0}"
 
 /***/ }),
 /* 37 */
@@ -1369,7 +1350,7 @@ if(false) {}
 /* 38 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-icon{vertical-align:middle}:root{--ck-icon-size:calc(var(--ck-line-height-base) * var(--ck-font-size-normal))}.ck.ck-icon{width:var(--ck-icon-size);height:var(--ck-icon-size);font-size:.8333350694em;will-change:transform}.ck.ck-icon,.ck.ck-icon *{color:inherit;cursor:inherit}.ck.ck-icon *{fill:currentColor}"
+module.exports = ".ck.ck-editor{position:relative}.ck.ck-editor .ck-editor__top .ck-sticky-panel .ck-toolbar{z-index:var(--ck-z-modal)}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-bottom-left-radius:0;border-bottom-right-radius:0}.ck.ck-editor__top .ck-sticky-panel .ck-toolbar{border-bottom-width:0}.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar{border-bottom-width:1px;border-radius:0}.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar,.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content_sticky .ck-toolbar.ck-rounded-corners{border-radius:var(--ck-border-radius);border-radius:0}.ck.ck-editor__main>.ck-editor__editable{background:var(--ck-color-base-background);border-radius:0}.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners{border-radius:var(--ck-border-radius);border-top-left-radius:0;border-top-right-radius:0}.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused){border-color:var(--ck-color-base-border)}"
 
 /***/ }),
 /* 39 */
@@ -1400,7 +1381,7 @@ if(false) {}
 /* 40 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{position:absolute;pointer-events:none;-webkit-backface-visibility:hidden}.ck-tooltip{visibility:hidden;opacity:0;display:none;z-index:var(--ck-z-modal)}.ck-tooltip .ck-tooltip__text{display:inline-block}.ck-tooltip .ck-tooltip__text:after{content:\"\";width:0;height:0}:root{--ck-tooltip-arrow-size:5px}.ck.ck-tooltip{left:50%}.ck.ck-tooltip.ck-tooltip_s{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(100%)}.ck.ck-tooltip.ck-tooltip_s .ck-tooltip__text:after{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%);border-left-color:transparent;border-bottom-color:var(--ck-color-tooltip-background);border-right-color:transparent;border-top-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-bottom-width:var(--ck-tooltip-arrow-size);border-right-width:var(--ck-tooltip-arrow-size);border-top-width:0}.ck.ck-tooltip.ck-tooltip_n{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(-100%)}.ck.ck-tooltip.ck-tooltip_n .ck-tooltip__text:after{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%);border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent;border-top-color:var(--ck-color-tooltip-background);border-left-width:var(--ck-tooltip-arrow-size);border-bottom-width:0;border-right-width:var(--ck-tooltip-arrow-size);border-top-width:var(--ck-tooltip-arrow-size)}.ck.ck-tooltip .ck-tooltip__text{border-radius:0}.ck-rounded-corners .ck.ck-tooltip .ck-tooltip__text,.ck.ck-tooltip .ck-tooltip__text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-tooltip .ck-tooltip__text{font-size:.9em;line-height:1.5;color:var(--ck-color-tooltip-text);padding:var(--ck-spacing-small) var(--ck-spacing-medium);background:var(--ck-color-tooltip-background);position:relative;left:-50%}.ck.ck-tooltip .ck-tooltip__text:after{border-style:solid;left:50%}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{transition:opacity .2s ease-in-out .2s}"
+module.exports = ".ck.ck-icon{vertical-align:middle}:root{--ck-icon-size:calc(var(--ck-line-height-base) * var(--ck-font-size-normal))}.ck.ck-icon{width:var(--ck-icon-size);height:var(--ck-icon-size);font-size:.8333350694em;will-change:transform}.ck.ck-icon,.ck.ck-icon *{color:inherit;cursor:inherit}.ck.ck-icon *{fill:currentColor}"
 
 /***/ }),
 /* 41 */
@@ -1431,7 +1412,7 @@ if(false) {}
 /* 42 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-button,a.ck.ck-button{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:block}@media (hover:none){.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:none}}.ck.ck-button,a.ck.ck-button{position:relative;display:inline-flex;align-items:center;justify-content:left}.ck.ck-button.ck-button_with-text .ck-button__label,a.ck.ck-button.ck-button_with-text .ck-button__label{display:inline-block}.ck.ck-button:not(.ck-button_with-text),a.ck.ck-button:not(.ck-button_with-text){justify-content:center}.ck.ck-button:hover .ck-tooltip,a.ck.ck-button:hover .ck-tooltip{visibility:visible;opacity:1}.ck.ck-button .ck-button__label,.ck.ck-button:focus:not(:hover) .ck-tooltip,a.ck.ck-button .ck-button__label,a.ck.ck-button:focus:not(:hover) .ck-tooltip{display:none}.ck.ck-button,a.ck.ck-button{background:var(--ck-color-button-default-background)}.ck.ck-button:not(.ck-disabled):hover,a.ck.ck-button:not(.ck-disabled):hover{background:var(--ck-color-button-default-hover-background)}.ck.ck-button:not(.ck-disabled):active,a.ck.ck-button:not(.ck-disabled):active{background:var(--ck-color-button-default-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-default-active-shadow)}.ck.ck-button.ck-disabled,a.ck.ck-button.ck-disabled{background:var(--ck-color-button-default-disabled-background)}.ck.ck-button,a.ck.ck-button{border-radius:0}.ck-rounded-corners .ck.ck-button,.ck-rounded-corners a.ck.ck-button,.ck.ck-button.ck-rounded-corners,a.ck.ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button,a.ck.ck-button{white-space:nowrap;cursor:default;vertical-align:middle;padding:var(--ck-spacing-tiny);text-align:center;min-width:var(--ck-ui-component-min-height);min-height:var(--ck-ui-component-min-height);line-height:1;font-size:inherit;border:1px solid transparent;transition:box-shadow .2s ease-in-out;-webkit-appearance:none}.ck.ck-button:active,.ck.ck-button:focus,a.ck.ck-button:active,a.ck.ck-button:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),0 0;border-color:transparent}.ck.ck-button.ck-disabled:active,.ck.ck-button.ck-disabled:focus,a.ck.ck-button.ck-disabled:active,a.ck.ck-button.ck-disabled:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),0 0}.ck.ck-button.ck-disabled .ck-button__icon,a.ck.ck-button.ck-disabled .ck-button__icon{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-disabled .ck-button__label,a.ck.ck-button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-button_with-text,a.ck.ck-button.ck-button_with-text{padding:var(--ck-spacing-tiny) var(--ck-spacing-standard)}.ck.ck-button.ck-button_with-text .ck-button__icon,a.ck.ck-button.ck-button_with-text .ck-button__icon{margin-left:calc(-1 * var(--ck-spacing-small));margin-right:var(--ck-spacing-small)}.ck.ck-button.ck-on,a.ck.ck-button.ck-on{background:var(--ck-color-button-on-background)}.ck.ck-button.ck-on:not(.ck-disabled):hover,a.ck.ck-button.ck-on:not(.ck-disabled):hover{background:var(--ck-color-button-on-hover-background)}.ck.ck-button.ck-on:not(.ck-disabled):active,a.ck.ck-button.ck-on:not(.ck-disabled):active{background:var(--ck-color-button-on-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-on-active-shadow)}.ck.ck-button.ck-on.ck-disabled,a.ck.ck-button.ck-on.ck-disabled{background:var(--ck-color-button-on-disabled-background)}.ck.ck-button.ck-button-save,a.ck.ck-button.ck-button-save{color:var(--ck-color-button-save)}.ck.ck-button.ck-button-cancel,a.ck.ck-button.ck-button-cancel{color:var(--ck-color-button-cancel)}.ck.ck-button .ck-button__icon use,.ck.ck-button .ck-button__icon use *,a.ck.ck-button .ck-button__icon use,a.ck.ck-button .ck-button__icon use *{color:inherit}.ck.ck-button .ck-button__label,a.ck.ck-button .ck-button__label{font-size:inherit;font-weight:inherit;color:inherit;cursor:inherit;vertical-align:middle}.ck.ck-button-action,a.ck.ck-button-action{background:var(--ck-color-button-action-background)}.ck.ck-button-action:not(.ck-disabled):hover,a.ck.ck-button-action:not(.ck-disabled):hover{background:var(--ck-color-button-action-hover-background)}.ck.ck-button-action:not(.ck-disabled):active,a.ck.ck-button-action:not(.ck-disabled):active{background:var(--ck-color-button-action-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-action-active-shadow)}.ck.ck-button-action.ck-disabled,a.ck.ck-button-action.ck-disabled{background:var(--ck-color-button-action-disabled-background)}.ck.ck-button-action,a.ck.ck-button-action{color:var(--ck-color-button-action-text)}.ck.ck-button-bold,a.ck.ck-button-bold{font-weight:700}"
+module.exports = ".ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{position:absolute;pointer-events:none;-webkit-backface-visibility:hidden}.ck-tooltip{visibility:hidden;opacity:0;display:none;z-index:var(--ck-z-modal)}.ck-tooltip .ck-tooltip__text{display:inline-block}.ck-tooltip .ck-tooltip__text:after{content:\"\";width:0;height:0}:root{--ck-tooltip-arrow-size:5px}.ck.ck-tooltip{left:50%}.ck.ck-tooltip.ck-tooltip_s{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(100%)}.ck.ck-tooltip.ck-tooltip_s .ck-tooltip__text:after{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%);border-left-color:transparent;border-bottom-color:var(--ck-color-tooltip-background);border-right-color:transparent;border-top-color:transparent;border-left-width:var(--ck-tooltip-arrow-size);border-bottom-width:var(--ck-tooltip-arrow-size);border-right-width:var(--ck-tooltip-arrow-size);border-top-width:0}.ck.ck-tooltip.ck-tooltip_n{top:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateY(-100%)}.ck.ck-tooltip.ck-tooltip_n .ck-tooltip__text:after{bottom:calc(-1 * var(--ck-tooltip-arrow-size));transform:translateX(-50%);border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent;border-top-color:var(--ck-color-tooltip-background);border-left-width:var(--ck-tooltip-arrow-size);border-bottom-width:0;border-right-width:var(--ck-tooltip-arrow-size);border-top-width:var(--ck-tooltip-arrow-size)}.ck.ck-tooltip .ck-tooltip__text{border-radius:0}.ck-rounded-corners .ck.ck-tooltip .ck-tooltip__text,.ck.ck-tooltip .ck-tooltip__text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-tooltip .ck-tooltip__text{font-size:.9em;line-height:1.5;color:var(--ck-color-tooltip-text);padding:var(--ck-spacing-small) var(--ck-spacing-medium);background:var(--ck-color-tooltip-background);position:relative;left:-50%}.ck.ck-tooltip .ck-tooltip__text:after{border-style:solid;left:50%}.ck.ck-tooltip,.ck.ck-tooltip .ck-tooltip__text:after{transition:opacity .2s ease-in-out .2s}"
 
 /***/ }),
 /* 43 */
@@ -1462,7 +1443,7 @@ if(false) {}
 /* 44 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck .ck-link_selected{background:var(--ck-color-link-selected-background)}"
+module.exports = ".ck.ck-button,a.ck.ck-button{-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:block}@media (hover:none){.ck.ck-button .ck-tooltip,a.ck.ck-button .ck-tooltip{display:none}}.ck.ck-button,a.ck.ck-button{position:relative;display:inline-flex;align-items:center;justify-content:left}.ck.ck-button.ck-button_with-text .ck-button__label,a.ck.ck-button.ck-button_with-text .ck-button__label{display:inline-block}.ck.ck-button:not(.ck-button_with-text),a.ck.ck-button:not(.ck-button_with-text){justify-content:center}.ck.ck-button:hover .ck-tooltip,a.ck.ck-button:hover .ck-tooltip{visibility:visible;opacity:1}.ck.ck-button .ck-button__label,.ck.ck-button:focus:not(:hover) .ck-tooltip,a.ck.ck-button .ck-button__label,a.ck.ck-button:focus:not(:hover) .ck-tooltip{display:none}.ck.ck-button,a.ck.ck-button{background:var(--ck-color-button-default-background)}.ck.ck-button:not(.ck-disabled):hover,a.ck.ck-button:not(.ck-disabled):hover{background:var(--ck-color-button-default-hover-background)}.ck.ck-button:not(.ck-disabled):active,a.ck.ck-button:not(.ck-disabled):active{background:var(--ck-color-button-default-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-default-active-shadow)}.ck.ck-button.ck-disabled,a.ck.ck-button.ck-disabled{background:var(--ck-color-button-default-disabled-background)}.ck.ck-button,a.ck.ck-button{border-radius:0}.ck-rounded-corners .ck.ck-button,.ck-rounded-corners a.ck.ck-button,.ck.ck-button.ck-rounded-corners,a.ck.ck-button.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-button,a.ck.ck-button{white-space:nowrap;cursor:default;vertical-align:middle;padding:var(--ck-spacing-tiny);text-align:center;min-width:var(--ck-ui-component-min-height);min-height:var(--ck-ui-component-min-height);line-height:1;font-size:inherit;border:1px solid transparent;transition:box-shadow .2s ease-in-out;-webkit-appearance:none}.ck.ck-button:active,.ck.ck-button:focus,a.ck.ck-button:active,a.ck.ck-button:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),0 0;border-color:transparent}.ck.ck-button.ck-disabled:active,.ck.ck-button.ck-disabled:focus,a.ck.ck-button.ck-disabled:active,a.ck.ck-button.ck-disabled:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),0 0}.ck.ck-button.ck-disabled .ck-button__icon,a.ck.ck-button.ck-disabled .ck-button__icon{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-disabled .ck-button__label,a.ck.ck-button.ck-disabled .ck-button__label{opacity:var(--ck-disabled-opacity)}.ck.ck-button.ck-button_with-text,a.ck.ck-button.ck-button_with-text{padding:var(--ck-spacing-tiny) var(--ck-spacing-standard)}.ck.ck-button.ck-button_with-text .ck-button__icon,a.ck.ck-button.ck-button_with-text .ck-button__icon{margin-left:calc(-1 * var(--ck-spacing-small));margin-right:var(--ck-spacing-small)}.ck.ck-button.ck-on,a.ck.ck-button.ck-on{background:var(--ck-color-button-on-background)}.ck.ck-button.ck-on:not(.ck-disabled):hover,a.ck.ck-button.ck-on:not(.ck-disabled):hover{background:var(--ck-color-button-on-hover-background)}.ck.ck-button.ck-on:not(.ck-disabled):active,a.ck.ck-button.ck-on:not(.ck-disabled):active{background:var(--ck-color-button-on-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-on-active-shadow)}.ck.ck-button.ck-on.ck-disabled,a.ck.ck-button.ck-on.ck-disabled{background:var(--ck-color-button-on-disabled-background)}.ck.ck-button.ck-button-save,a.ck.ck-button.ck-button-save{color:var(--ck-color-button-save)}.ck.ck-button.ck-button-cancel,a.ck.ck-button.ck-button-cancel{color:var(--ck-color-button-cancel)}.ck.ck-button .ck-button__icon use,.ck.ck-button .ck-button__icon use *,a.ck.ck-button .ck-button__icon use,a.ck.ck-button .ck-button__icon use *{color:inherit}.ck.ck-button .ck-button__label,a.ck.ck-button .ck-button__label{font-size:inherit;font-weight:inherit;color:inherit;cursor:inherit;vertical-align:middle}.ck.ck-button-action,a.ck.ck-button-action{background:var(--ck-color-button-action-background)}.ck.ck-button-action:not(.ck-disabled):hover,a.ck.ck-button-action:not(.ck-disabled):hover{background:var(--ck-color-button-action-hover-background)}.ck.ck-button-action:not(.ck-disabled):active,a.ck.ck-button-action:not(.ck-disabled):active{background:var(--ck-color-button-action-active-background);box-shadow:inset 0 2px 2px var(--ck-color-button-action-active-shadow)}.ck.ck-button-action.ck-disabled,a.ck.ck-button-action.ck-disabled{background:var(--ck-color-button-action-disabled-background)}.ck.ck-button-action,a.ck.ck-button-action{color:var(--ck-color-button-action-text)}.ck.ck-button-bold,a.ck.ck-button-bold{font-weight:700}"
 
 /***/ }),
 /* 45 */
@@ -1493,7 +1474,7 @@ if(false) {}
 /* 46 */
 /***/ (function(module, exports) {
 
-module.exports = ":root{--ck-balloon-panel-arrow-z-index:calc(var(--ck-z-default) - 3)}.ck.ck-balloon-panel{display:none;position:absolute;z-index:var(--ck-z-modal)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{content:\"\";position:absolute}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_n]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_n]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_s]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_s]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel.ck-balloon-panel_visible{display:block}:root{--ck-balloon-arrow-offset:2px;--ck-balloon-arrow-height:10px;--ck-balloon-arrow-half-width:8px}.ck.ck-balloon-panel{border-radius:0}.ck-rounded-corners .ck.ck-balloon-panel,.ck.ck-balloon-panel.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-balloon-panel{box-shadow:var(--ck-drop-shadow),0 0;min-height:15px;background:var(--ck-color-panel-background);border:1px solid var(--ck-color-panel-border)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{width:0;height:0;border-style:solid}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:var(--ck-balloon-arrow-height);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:0}.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-color:transparent;border-right-color:transparent;border-top-color:transparent}.ck.ck-balloon-panel[class*=arrow_n]:after{border-bottom-color:var(--ck-color-panel-background);margin-top:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:0;border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:var(--ck-balloon-arrow-height)}.ck.ck-balloon-panel[class*=arrow_s]:before{border-top-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent}.ck.ck-balloon-panel[class*=arrow_s]:after{border-top-color:var(--ck-color-panel-background);margin-bottom:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:before{right:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:before{right:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}"
+module.exports = ".ck .ck-link_selected{background:var(--ck-color-link-selected-background)}"
 
 /***/ }),
 /* 47 */
@@ -1524,7 +1505,7 @@ if(false) {}
 /* 48 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-labeled-input .ck-labeled-input__error{font-size:var(--ck-font-size-small);color:var(--ck-color-base-error);margin-top:var(--ck-spacing-small)}"
+module.exports = ":root{--ck-balloon-panel-arrow-z-index:calc(var(--ck-z-default) - 3)}.ck.ck-balloon-panel{display:none;position:absolute;z-index:var(--ck-z-modal)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{content:\"\";position:absolute}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_n]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_n]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel[class*=arrow_s]:before{z-index:var(--ck-balloon-panel-arrow-z-index)}.ck.ck-balloon-panel[class*=arrow_s]:after{z-index:calc(var(--ck-balloon-panel-arrow-z-index) + 1)}.ck.ck-balloon-panel.ck-balloon-panel_visible{display:block}:root{--ck-balloon-arrow-offset:2px;--ck-balloon-arrow-height:10px;--ck-balloon-arrow-half-width:8px}.ck.ck-balloon-panel{border-radius:0}.ck-rounded-corners .ck.ck-balloon-panel,.ck.ck-balloon-panel.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-balloon-panel{box-shadow:var(--ck-drop-shadow),0 0;min-height:15px;background:var(--ck-color-panel-background);border:1px solid var(--ck-color-panel-border)}.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:after,.ck.ck-balloon-panel.ck-balloon-panel_with-arrow:before{width:0;height:0;border-style:solid}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:var(--ck-balloon-arrow-height);border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:0}.ck.ck-balloon-panel[class*=arrow_n]:before{border-bottom-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_n]:after,.ck.ck-balloon-panel[class*=arrow_n]:before{border-left-color:transparent;border-right-color:transparent;border-top-color:transparent}.ck.ck-balloon-panel[class*=arrow_n]:after{border-bottom-color:var(--ck-color-panel-background);margin-top:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-width:var(--ck-balloon-arrow-half-width);border-bottom-width:0;border-right-width:var(--ck-balloon-arrow-half-width);border-top-width:var(--ck-balloon-arrow-height)}.ck.ck-balloon-panel[class*=arrow_s]:before{border-top-color:var(--ck-color-panel-border)}.ck.ck-balloon-panel[class*=arrow_s]:after,.ck.ck-balloon-panel[class*=arrow_s]:before{border-left-color:transparent;border-bottom-color:transparent;border-right-color:transparent}.ck.ck-balloon-panel[class*=arrow_s]:after{border-top-color:var(--ck-color-panel-background);margin-bottom:var(--ck-balloon-arrow-offset)}.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_n:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_nw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_ne:before{right:calc(2 * var(--ck-balloon-arrow-half-width));top:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_s:before{left:50%;margin-left:calc(-1 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_sw:before{left:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:after,.ck.ck-balloon-panel.ck-balloon-panel_arrow_se:before{right:calc(2 * var(--ck-balloon-arrow-half-width));bottom:calc(-1 * var(--ck-balloon-arrow-height))}"
 
 /***/ }),
 /* 49 */
@@ -1555,7 +1536,7 @@ if(false) {}
 /* 50 */
 /***/ (function(module, exports) {
 
-module.exports = ":root{--ck-input-text-width:18em}.ck.ck-input-text{border-radius:0}.ck-rounded-corners .ck.ck-input-text,.ck.ck-input-text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-input-text{box-shadow:var(--ck-inner-shadow),0 0;background:var(--ck-color-input-background);border:1px solid var(--ck-color-input-border);padding:var(--ck-spacing-extra-tiny) var(--ck-spacing-medium);min-width:var(--ck-input-text-width);min-height:var(--ck-ui-component-min-height);transition-property:box-shadow,border;transition:.2s ease-in-out}.ck.ck-input-text:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text[readonly]{border:1px solid var(--ck-color-input-disabled-border);background:var(--ck-color-input-disabled-background);color:var(--ck-color-input-disabled-text)}.ck.ck-input-text[readonly]:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text.ck-error{border-color:var(--ck-color-input-error-border);animation:ck-text-input-shake .3s ease both}.ck.ck-input-text.ck-error:focus{box-shadow:var(--ck-focus-error-outer-shadow),var(--ck-inner-shadow)}@keyframes ck-text-input-shake{20%{transform:translateX(-2px)}40%{transform:translateX(2px)}60%{transform:translateX(-1px)}80%{transform:translateX(1px)}}"
+module.exports = ".ck.ck-labeled-input .ck-labeled-input__error{font-size:var(--ck-font-size-small);color:var(--ck-color-base-error);margin-top:var(--ck-spacing-small)}"
 
 /***/ }),
 /* 51 */
@@ -1586,7 +1567,7 @@ if(false) {}
 /* 52 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-link-form .ck-labeled-input{display:inline-block}.ck.ck-link-form .ck-label{display:none}.ck.ck-link-form{padding:var(--ck-spacing-standard)}.ck.ck-link-form:focus{outline:none}.ck.ck-link-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
+module.exports = ":root{--ck-input-text-width:18em}.ck.ck-input-text{border-radius:0}.ck-rounded-corners .ck.ck-input-text,.ck.ck-input-text.ck-rounded-corners{border-radius:var(--ck-border-radius)}.ck.ck-input-text{box-shadow:var(--ck-inner-shadow),0 0;background:var(--ck-color-input-background);border:1px solid var(--ck-color-input-border);padding:var(--ck-spacing-extra-tiny) var(--ck-spacing-medium);min-width:var(--ck-input-text-width);min-height:var(--ck-ui-component-min-height);transition-property:box-shadow,border;transition:.2s ease-in-out}.ck.ck-input-text:focus{outline:none;border:var(--ck-focus-ring);box-shadow:var(--ck-focus-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text[readonly]{border:1px solid var(--ck-color-input-disabled-border);background:var(--ck-color-input-disabled-background);color:var(--ck-color-input-disabled-text)}.ck.ck-input-text[readonly]:focus{box-shadow:var(--ck-focus-disabled-outer-shadow),var(--ck-inner-shadow)}.ck.ck-input-text.ck-error{border-color:var(--ck-color-input-error-border);animation:ck-text-input-shake .3s ease both}.ck.ck-input-text.ck-error:focus{box-shadow:var(--ck-focus-error-outer-shadow),var(--ck-inner-shadow)}@keyframes ck-text-input-shake{20%{transform:translateX(-2px)}40%{transform:translateX(2px)}60%{transform:translateX(-1px)}80%{transform:translateX(1px)}}"
 
 /***/ }),
 /* 53 */
@@ -1617,17 +1598,48 @@ if(false) {}
 /* 54 */
 /***/ (function(module, exports) {
 
-module.exports = ".ck.ck-link-actions .ck-link-actions__preview{display:inline-block}.ck.ck-link-actions .ck-link-actions__preview .ck-button__label{overflow:hidden}.ck.ck-link-actions{padding:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-button.ck-link-actions__preview{padding-left:0;padding-right:0}.ck.ck-link-actions .ck-button.ck-link-actions__preview,.ck.ck-link-actions .ck-button.ck-link-actions__preview:active,.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus,.ck.ck-link-actions .ck-button.ck-link-actions__preview:hover{background:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:active{box-shadow:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus .ck-button__label{text-decoration:underline}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label{padding:0 var(--ck-spacing-medium);color:var(--ck-color-link-default);text-overflow:ellipsis;cursor:pointer;max-width:var(--ck-input-text-width);min-width:3em;text-align:center}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label:hover{text-decoration:underline}.ck.ck-link-actions:focus{outline:none}.ck.ck-link-actions>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
+module.exports = ".ck.ck-link-form .ck-labeled-input{display:inline-block}.ck.ck-link-form .ck-label{display:none}.ck.ck-link-form{padding:var(--ck-spacing-standard)}.ck.ck-link-form:focus{outline:none}.ck.ck-link-form>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
 
 /***/ }),
 /* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(56);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"singleton":true,"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(4)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports) {
+
+module.exports = ".ck.ck-link-actions .ck-link-actions__preview{display:inline-block}.ck.ck-link-actions .ck-link-actions__preview .ck-button__label{overflow:hidden}.ck.ck-link-actions{padding:var(--ck-spacing-standard)}.ck.ck-link-actions .ck-button.ck-link-actions__preview{padding-left:0;padding-right:0}.ck.ck-link-actions .ck-button.ck-link-actions__preview,.ck.ck-link-actions .ck-button.ck-link-actions__preview:active,.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus,.ck.ck-link-actions .ck-button.ck-link-actions__preview:hover{background:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:active{box-shadow:none}.ck.ck-link-actions .ck-button.ck-link-actions__preview:focus .ck-button__label{text-decoration:underline}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label{padding:0 var(--ck-spacing-medium);color:var(--ck-color-link-default);text-overflow:ellipsis;cursor:pointer;max-width:var(--ck-input-text-width);min-width:3em;text-align:center}.ck.ck-link-actions .ck-button.ck-link-actions__preview .ck-button__label:hover{text-decoration:underline}.ck.ck-link-actions:focus{outline:none}.ck.ck-link-actions>:not(:first-child){margin-left:var(--ck-spacing-standard)}"
+
+/***/ }),
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 
 // EXTERNAL MODULE: ./node_modules/lodash-es/_root.js
-var _root = __webpack_require__(2);
+var _root = __webpack_require__(3);
 
 // CONCATENATED MODULE: ./node_modules/lodash-es/_Symbol.js
 
@@ -19900,7 +19912,7 @@ function _isArrowKeyCode( keyCode ) {
 
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/log.js
-var log = __webpack_require__(3);
+var log = __webpack_require__(1);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/view/observer/selectionobserver.js
 /**
@@ -29489,7 +29501,7 @@ function insertElement( elementCreator ) {
  *
  * @returns {Function} Insert text event converter.
  */
-function insertText() {
+function downcast_converters_insertText() {
 	return ( evt, data, conversionApi ) => {
 		if ( !conversionApi.consumable.consume( data.item, 'insert' ) ) {
 			return;
@@ -30326,7 +30338,7 @@ class editingcontroller_EditingController {
 		this.listenTo( this.view.document, 'selectionChange', convertSelectionChange( this.model, this.mapper ) );
 
 		// Attach default model converters.
-		this.downcastDispatcher.on( 'insert:$text', insertText(), { priority: 'lowest' } );
+		this.downcastDispatcher.on( 'insert:$text', downcast_converters_insertText(), { priority: 'lowest' } );
 		this.downcastDispatcher.on( 'remove', downcast_converters_remove(), { priority: 'low' } );
 
 		// Attach default model selection converters.
@@ -34237,7 +34249,7 @@ class datacontroller_DataController {
 		this.downcastDispatcher = new downcastdispatcher_DowncastDispatcher( {
 			mapper: this.mapper
 		} );
-		this.downcastDispatcher.on( 'insert:$text', insertText(), { priority: 'lowest' } );
+		this.downcastDispatcher.on( 'insert:$text', downcast_converters_insertText(), { priority: 'lowest' } );
 
 		/**
 		 * Upcast dispatcher used by the {@link #set set method}. Upcast converters should be attached to it.
@@ -43625,7 +43637,7 @@ class editingkeystrokehandler_EditingKeystrokeHandler extends keystrokehandler_K
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/version.js
-var src_version = __webpack_require__(23);
+var src_version = __webpack_require__(25);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-core/src/editor/editor.js
 /**
@@ -47044,7 +47056,7 @@ function shouldExtend( attrName ) {
  */
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/globals/globals.css
-var globals = __webpack_require__(24);
+var globals = __webpack_require__(26);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/view.js
 /**
@@ -47558,7 +47570,7 @@ mix( src_view_View, dom_emittermixin );
 mix( src_view_View, observablemixin );
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/editorui/editorui.css
-var editorui = __webpack_require__(27);
+var editorui = __webpack_require__(29);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/editorui/editoruiview.js
 /**
@@ -47650,7 +47662,7 @@ class editoruiview_EditorUIView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/label/label.css
-var label_label = __webpack_require__(29);
+var label_label = __webpack_require__(31);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/label/labelview.js
 /**
@@ -47815,7 +47827,7 @@ class boxededitoruiview_BoxedEditorUIView extends editoruiview_EditorUIView {
     _createVoiceLabel(ariaLabelUid) {
         const t = this.t;
         const voiceLabel = new labelview_LabelView();
-        voiceLabel.text = t('o');
+        voiceLabel.text = t('p');
         voiceLabel.extendTemplate({
             attributes: {
                 id: `ck-editor__aria-label_${ ariaLabelUid }`,
@@ -47966,7 +47978,7 @@ class inlineeditableuiview_InlineEditableUIView extends editableuiview_EditableU
 		 */
         this.set('name', null);
         const getLabel = value => {
-            return t('n', [value]);
+            return t('q', [value]);
         };
         this.extendTemplate({
             attributes: {
@@ -48007,7 +48019,7 @@ function toUnit( unit ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/panel/stickypanel.css
-var stickypanel = __webpack_require__(31);
+var stickypanel = __webpack_require__(33);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/panel/sticky/stickypanelview.js
 /**
@@ -48663,7 +48675,7 @@ function preventDefault( view ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/toolbar/toolbar.css
-var toolbar = __webpack_require__(33);
+var toolbar = __webpack_require__(35);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/toolbar/toolbarview.js
 /**
@@ -48859,7 +48871,7 @@ class toolbarview_ToolbarView extends src_view_View {
 
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-editor-classic/theme/classiceditor.css
-var classiceditor = __webpack_require__(35);
+var classiceditor = __webpack_require__(37);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-editor-classic/src/classiceditoruiview.js
 /**
@@ -49419,6 +49431,604 @@ mix( Plugin, observablemixin );
  * @returns {null|Promise}
  */
 
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/datatransfer.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module clipboard/datatransfer
+ */
+
+/**
+ * Facade over the native [`DataTransfer`](https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer) object.
+ */
+class DataTransfer {
+	constructor( nativeDataTransfer ) {
+		/**
+		 * The array of files created from the native `DataTransfer#files` or `DataTransfer#items`.
+		 *
+		 * @readonly
+		 * @member {Array.<File>} #files
+		 */
+		this.files = getFiles( nativeDataTransfer );
+
+		/**
+		 * The native DataTransfer object.
+		 *
+		 * @private
+		 * @member {DataTransfer} #_native
+		 */
+		this._native = nativeDataTransfer;
+	}
+
+	/**
+	 * Returns an array of available native content types.
+	 *
+	 * @returns {Array.<String>}
+	 */
+	get types() {
+		return this._native.types;
+	}
+
+	/**
+	 * Gets data from the data transfer by its mime type.
+	 *
+	 *		dataTransfer.getData( 'text/plain' );
+	 *
+	 * @param {String} type The mime type. E.g. `text/html` or `text/plain`.
+	 * @returns {String}
+	 */
+	getData( type ) {
+		return this._native.getData( type );
+	}
+
+	/**
+	 * Sets data in the data transfer.
+	 *
+	 * @param {String} type The mime type. E.g. `text/html` or `text/plain`.
+	 * @param {String} data
+	 */
+	setData( type, data ) {
+		this._native.setData( type, data );
+	}
+}
+
+function getFiles( nativeDataTransfer ) {
+	// DataTransfer.files and items are Array-like and might not have an iterable interface.
+	const files = nativeDataTransfer.files ? Array.from( nativeDataTransfer.files ) : [];
+	const items = nativeDataTransfer.items ? Array.from( nativeDataTransfer.items ) : [];
+
+	if ( files.length ) {
+		return files;
+	}
+	// Chrome have empty DataTransfer.files, but let get files through the items interface.
+	return items
+		.filter( item => item.kind === 'file' )
+		.map( item => item.getAsFile() );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/clipboardobserver.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module clipboard/clipboardobserver
+ */
+
+
+
+
+/**
+ * Clipboard events observer.
+ *
+ * Fires the following events:
+ *
+ * * {@link module:engine/view/document~Document#event:clipboardInput}
+ * * {@link module:engine/view/document~Document#event:dragover}
+ * * {@link module:engine/view/document~Document#event:drop}
+ * * {@link module:engine/view/document~Document#event:paste}
+ * * {@link module:engine/view/document~Document#event:copy}
+ * * {@link module:engine/view/document~Document#event:cut}
+ *
+ * Note that this observer is not available by default (it is not added by the engine).
+ * To make it available it needs to be added to {@link module:engine/view/document~Document} by
+ * the {@link module:engine/view/view~View#addObserver `View#addObserver()`} method. You can also load the
+ * {@link module:clipboard/clipboard~Clipboard} plugin which adds this observer automatically (because it uses it).
+ *
+ * @extends module:engine/view/observer/domeventobserver~DomEventObserver
+ */
+class clipboardobserver_ClipboardObserver extends domeventobserver_DomEventObserver {
+	constructor( view ) {
+		super( view );
+
+		const viewDocument = this.document;
+
+		this.domEventType = [ 'paste', 'copy', 'cut', 'drop', 'dragover' ];
+
+		this.listenTo( viewDocument, 'paste', handleInput, { priority: 'low' } );
+		this.listenTo( viewDocument, 'drop', handleInput, { priority: 'low' } );
+
+		function handleInput( evt, data ) {
+			data.preventDefault();
+
+			const targetRanges = data.dropRange ? [ data.dropRange ] : Array.from( viewDocument.selection.getRanges() );
+
+			viewDocument.fire( 'clipboardInput', {
+				dataTransfer: data.dataTransfer,
+				targetRanges
+			} );
+		}
+	}
+
+	onDomEvent( domEvent ) {
+		const evtData = {
+			dataTransfer: new DataTransfer( domEvent.clipboardData ? domEvent.clipboardData : domEvent.dataTransfer )
+		};
+
+		if ( domEvent.type == 'drop' ) {
+			evtData.dropRange = getDropViewRange( this.view, domEvent );
+		}
+
+		this.fire( domEvent.type, domEvent, evtData );
+	}
+}
+
+function getDropViewRange( view, domEvent ) {
+	const domDoc = domEvent.target.ownerDocument;
+	const x = domEvent.clientX;
+	const y = domEvent.clientY;
+	let domRange;
+
+	// Webkit & Blink.
+	if ( domDoc.caretRangeFromPoint && domDoc.caretRangeFromPoint( x, y ) ) {
+		domRange = domDoc.caretRangeFromPoint( x, y );
+	}
+	// FF.
+	else if ( domEvent.rangeParent ) {
+		domRange = domDoc.createRange();
+		domRange.setStart( domEvent.rangeParent, domEvent.rangeOffset );
+		domRange.collapse( true );
+	}
+
+	if ( domRange ) {
+		return view.domConverter.domRangeToView( domRange );
+	} else {
+		return view.document.selection.getFirstRange();
+	}
+}
+
+/**
+ * Fired as a continuation of {@link #event:paste} and {@link #event:drop} events.
+ *
+ * It is a part of the {@glink framework/guides/deep-dive/clipboard#input-pipeline "clipboard input pipeline"}.
+ *
+ * Fired with a `dataTransfer` which comes from the clipboard and which content should be processed
+ * and inserted into the editor.
+ *
+ * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
+ * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
+ * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
+ *
+ * @see module:clipboard/clipboardobserver~ClipboardObserver
+ * @see module:clipboard/clipboard~Clipboard
+ * @event module:engine/view/document~Document#event:clipboardInput
+ * @param {Object} data Event data.
+ * @param {module:clipboard/datatransfer~DataTransfer} data.dataTransfer Data transfer instance.
+ * @param {Array.<module:engine/view/range~Range>} data.targetRanges Ranges which are the target of the operation
+ * (usually – into which the content should be inserted).
+ * If clipboard input was triggered by a paste operation, then these are the selection ranges. If by a drop operation,
+ * then it's the drop position (which can be different than the selection at the moment of drop).
+ */
+
+/**
+ * Fired when user drags content over one of the editables.
+ *
+ * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
+ *
+ * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
+ * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
+ * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
+ *
+ * @see module:engine/view/document~Document#event:clipboardInput
+ * @event module:engine/view/document~Document#event:dragover
+ * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
+ */
+
+/**
+ * Fired when user dropped content into one of the editables.
+ *
+ * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
+ *
+ * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
+ * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
+ * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
+ *
+ * @see module:engine/view/document~Document#event:clipboardInput
+ * @event module:engine/view/document~Document#event:drop
+ * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
+ * @param {module:engine/view/range~Range} dropRange The position into which the content is dropped.
+ */
+
+/**
+ * Fired when user pasted content into one of the editables.
+ *
+ * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
+ *
+ * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
+ * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
+ * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
+ *
+ * @see module:engine/view/document~Document#event:clipboardInput
+ * @event module:engine/view/document~Document#event:paste
+ * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
+ */
+
+/**
+ * Fired when user copied content from one of the editables.
+ *
+ * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
+ *
+ * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
+ * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
+ * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
+ *
+ * @see module:clipboard/clipboardobserver~ClipboardObserver
+ * @event module:engine/view/document~Document#event:copy
+ * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
+ */
+
+/**
+ * Fired when user cut content from one of the editables.
+ *
+ * Introduced by {@link module:clipboard/clipboardobserver~ClipboardObserver}.
+ *
+ * Note that this event is not available by default. To make it available {@link module:clipboard/clipboardobserver~ClipboardObserver}
+ * needs to be added to {@link module:engine/view/document~Document} by the {@link module:engine/view/view~View#addObserver} method.
+ * It's done by the {@link module:clipboard/clipboard~Clipboard} feature. If it's not loaded, it must be done manually.
+ *
+ * @see module:clipboard/clipboardobserver~ClipboardObserver
+ * @event module:engine/view/document~Document#event:cut
+ * @param {module:clipboard/clipboardobserver~ClipboardEventData} data Event data.
+ */
+
+/**
+ * The value of the {@link module:engine/view/document~Document#event:paste},
+ * {@link module:engine/view/document~Document#event:copy} and {@link module:engine/view/document~Document#event:cut} events.
+ *
+ * In order to access clipboard data use `dataTransfer` property.
+ *
+ * @class module:clipboard/clipboardobserver~ClipboardEventData
+ * @extends module:engine/view/observer/domeventdata~DomEventData
+ */
+
+/**
+ * Data transfer instance.
+ *
+ * @readonly
+ * @member {module:clipboard/datatransfer~DataTransfer} module:clipboard/clipboardobserver~ClipboardEventData#dataTransfer
+ */
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/utils/plaintexttohtml.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module clipboard/utils/plaintexttohtml
+ */
+
+/**
+ * Converts plain text to its HTML-ized version.
+ *
+ * @param {String} text The plain text to convert.
+ * @returns {String} HTML generated from the plain text.
+ */
+function plainTextToHtml( text ) {
+	text = text
+		// Encode <>.
+		.replace( /</g, '&lt;' )
+		.replace( />/g, '&gt;' )
+		// Creates paragraphs for double line breaks and change single line breaks to <br>s.
+		.replace( /\n\n/g, '</p><p>' )
+		.replace( /\n/g, '<br>' )
+		// Preserve trailing spaces (only the first and last one – the rest is handled below).
+		.replace( /^\s/, '&nbsp;' )
+		.replace( /\s$/, '&nbsp;' )
+		// Preserve other subsequent spaces now.
+		.replace( /\s\s/g, ' &nbsp;' );
+
+	if ( text.indexOf( '</p><p>' ) > -1 ) {
+		// If we created paragraphs above, add the trailing ones.
+		text = `<p>${ text }</p>`;
+	}
+
+	// TODO:
+	// * What about '\nfoo' vs ' foo'?
+
+	return text;
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/utils/normalizeclipboarddata.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module clipboard/utils/normalizeclipboarddata
+ */
+
+/**
+ * Removes some popular browser quirks out of the clipboard data (HTML).
+ *
+ * @param {String} data The HTML data to normalize.
+ * @returns {String} Normalized HTML.
+ */
+function normalizeClipboardData( data ) {
+	return data
+		.replace( /<span(?: class="Apple-converted-space"|)>(\s+)<\/span>/g, ( fullMatch, spaces ) => {
+			// Handle the most popular and problematic case when even a single space becomes an nbsp;.
+			// Decode those to normal spaces. Read more in https://github.com/ckeditor/ckeditor5-clipboard/issues/2.
+			if ( spaces.length == 1 ) {
+				return ' ';
+			}
+
+			return spaces;
+		} );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/utils/viewtoplaintext.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module clipboard/utils/viewtoplaintext
+ */
+
+// Elements which should not have empty-line padding.
+// Most `view.ContainerElement` want to be separate by new-line, but some are creating one structure
+// together (like `<li>`) so it is better to separate them by only one "\n".
+const smallPaddingElements = [ 'figcaption', 'li' ];
+
+/**
+ * Converts {@link module:engine/view/item~Item view item} and all of its children to plain text.
+ *
+ * @param {module:engine/view/item~Item} viewItem View item to convert.
+ * @returns {String} Plain text representation of `viewItem`.
+ */
+function viewToPlainText( viewItem ) {
+	let text = '';
+
+	if ( viewItem.is( 'text' ) || viewItem.is( 'textProxy' ) ) {
+		// If item is `Text` or `TextProxy` simple take its text data.
+		text = viewItem.data;
+	} else if ( viewItem.is( 'img' ) && viewItem.hasAttribute( 'alt' ) ) {
+		// Special case for images - use alt attribute if it is provided.
+		text = viewItem.getAttribute( 'alt' );
+	} else {
+		// Other elements are document fragments, attribute elements or container elements.
+		// They don't have their own text value, so convert their children.
+		let prev = null;
+
+		for ( const child of viewItem.getChildren() ) {
+			const childText = viewToPlainText( child );
+
+			// Separate container element children with one or more new-line characters.
+			if ( prev && ( prev.is( 'containerElement' ) || child.is( 'containerElement' ) ) ) {
+				if ( smallPaddingElements.includes( prev.name ) || smallPaddingElements.includes( child.name ) ) {
+					text += '\n';
+				} else {
+					text += '\n\n';
+				}
+			}
+
+			text += childText;
+			prev = child;
+		}
+	}
+
+	return text;
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-clipboard/src/clipboard.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module clipboard/clipboard
+ */
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * The clipboard feature. It is responsible for intercepting the `paste` and `drop` events and
+ * passing the pasted content through the clipboard pipeline in order to insert it into the editor's content.
+ * It also handles the `cut` and `copy` events to fill the native clipboard with serialized editor's data.
+ *
+ * Read more about the clipboard integration in {@glink framework/guides/deep-dive/clipboard "Clipboard" deep dive} guide.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class clipboard_Clipboard extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Clipboard';
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	init() {
+		const editor = this.editor;
+		const modelDocument = editor.model.document;
+		const view = editor.editing.view;
+		const viewDocument = view.document;
+
+		/**
+		 * Data processor used to convert pasted HTML to a view structure.
+		 *
+		 * @private
+		 * @member {module:engine/dataprocessor/htmldataprocessor~HtmlDataProcessor} #_htmlDataProcessor
+		 */
+		this._htmlDataProcessor = new htmldataprocessor_HtmlDataProcessor();
+
+		view.addObserver( clipboardobserver_ClipboardObserver );
+
+		// The clipboard paste pipeline.
+
+		// Pasting and dropping is disabled when editor is read-only.
+		// See: https://github.com/ckeditor/ckeditor5-clipboard/issues/26.
+		this.listenTo( viewDocument, 'clipboardInput', evt => {
+			if ( editor.isReadOnly ) {
+				evt.stop();
+			}
+		}, { priority: 'highest' } );
+
+		this.listenTo( viewDocument, 'clipboardInput', ( evt, data ) => {
+			const dataTransfer = data.dataTransfer;
+			let content = '';
+
+			if ( dataTransfer.getData( 'text/html' ) ) {
+				content = normalizeClipboardData( dataTransfer.getData( 'text/html' ) );
+			} else if ( dataTransfer.getData( 'text/plain' ) ) {
+				content = plainTextToHtml( dataTransfer.getData( 'text/plain' ) );
+			}
+
+			content = this._htmlDataProcessor.toView( content );
+
+			this.fire( 'inputTransformation', { content, dataTransfer } );
+
+			view.scrollToTheSelection();
+		}, { priority: 'low' } );
+
+		this.listenTo( this, 'inputTransformation', ( evt, data ) => {
+			if ( !data.content.isEmpty ) {
+				const dataController = this.editor.data;
+				const model = this.editor.model;
+
+				// Convert the pasted content to a model document fragment.
+				// Conversion is contextual, but in this case we need an "all allowed" context and for that
+				// we use the $clipboardHolder item.
+				const modelFragment = dataController.toModel( data.content, '$clipboardHolder' );
+
+				if ( modelFragment.childCount == 0 ) {
+					return;
+				}
+
+				model.insertContent( modelFragment );
+			}
+		}, { priority: 'low' } );
+
+		// The clipboard copy/cut pipeline.
+
+		function onCopyCut( evt, data ) {
+			const dataTransfer = data.dataTransfer;
+
+			data.preventDefault();
+
+			const content = editor.data.toView( editor.model.getSelectedContent( modelDocument.selection ) );
+
+			viewDocument.fire( 'clipboardOutput', { dataTransfer, content, method: evt.name } );
+		}
+
+		this.listenTo( viewDocument, 'copy', onCopyCut, { priority: 'low' } );
+		this.listenTo( viewDocument, 'cut', ( evt, data ) => {
+			// Cutting is disabled when editor is read-only.
+			// See: https://github.com/ckeditor/ckeditor5-clipboard/issues/26.
+			if ( editor.isReadOnly ) {
+				data.preventDefault();
+			} else {
+				onCopyCut( evt, data );
+			}
+		}, { priority: 'low' } );
+
+		this.listenTo( viewDocument, 'clipboardOutput', ( evt, data ) => {
+			if ( !data.content.isEmpty ) {
+				data.dataTransfer.setData( 'text/html', this._htmlDataProcessor.toData( data.content ) );
+				data.dataTransfer.setData( 'text/plain', viewToPlainText( data.content ) );
+			}
+
+			if ( data.method == 'cut' ) {
+				editor.model.deleteContent( modelDocument.selection );
+			}
+		}, { priority: 'low' } );
+	}
+}
+
+/**
+ * Fired with a `content` and `dataTransfer` objects. The `content` which comes from the clipboard (was pasted or dropped)
+ * should be processed in order to be inserted into the editor. The `dataTransfer` object is available
+ * in case the transformation functions needs access to a raw clipboard data.
+ *
+ * It is a part of the {@glink framework/guides/deep-dive/clipboard#input-pipeline "clipboard input pipeline"}.
+ *
+ * @see module:clipboard/clipboardobserver~ClipboardObserver
+ * @see module:clipboard/clipboard~Clipboard
+ * @event module:clipboard/clipboard~Clipboard#event:inputTransformation
+ * @param {Object} data Event data.
+ * @param {module:engine/view/documentfragment~DocumentFragment} data.content Event data. Content to be inserted into the editor.
+ * It can be modified by the event listeners. Read more about the clipboard pipelines in
+ * {@glink framework/guides/deep-dive/clipboard "Clipboard" deep dive}.
+ * @param {module:clipboard/datatransfer~DataTransfer} data.dataTransfer Data transfer instance.
+ */
+
+/**
+ * Fired on {@link module:engine/view/document~Document#event:copy} and {@link module:engine/view/document~Document#event:cut}
+ * with a copy of selected content. The content can be processed before it ends up in the clipboard.
+ *
+ * It is a part of the {@glink framework/guides/deep-dive/clipboard#output-pipeline "clipboard output pipeline"}.
+ *
+ * @see module:clipboard/clipboardobserver~ClipboardObserver
+ * @see module:clipboard/clipboard~Clipboard
+ * @event module:engine/view/document~Document#event:clipboardOutput
+ * @param {module:clipboard/clipboard~ClipboardOutputEventData} data Event data.
+ */
+
+/**
+ * The value of the {@link module:engine/view/document~Document#event:clipboardOutput} event.
+ *
+ * @class module:clipboard/clipboard~ClipboardOutputEventData
+ */
+
+/**
+ * Data transfer instance.
+ *
+ * @readonly
+ * @member {module:clipboard/datatransfer~DataTransfer} module:clipboard/clipboard~ClipboardOutputEventData#dataTransfer
+ */
+
+/**
+ * Content to be put into the clipboard. It can be modified by the event listeners.
+ * Read more about the clipboard pipelines in {@glink framework/guides/deep-dive/clipboard "Clipboard" deep dive}.
+ *
+ * @member {module:engine/view/documentfragment~DocumentFragment} module:clipboard/clipboard~ClipboardOutputEventData#content
+ */
+
+/**
+ * Whether the event was triggered by copy or cut operation.
+ *
+ * @member {'copy'|'cut'} module:clipboard/clipboard~ClipboardOutputEventData#method
+ */
+
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-core/src/command.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
@@ -49597,203 +50207,4610 @@ function forceDisable( evt ) {
 	evt.stop();
 }
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/attributecommand.js
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/entercommand.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module basic-styles/attributecommand
+ * @module enter/entercommand
  */
 
 
 
 /**
- * An extension of the base {@link module:core/command~Command} class, which provides utilities for a command
- * that toggles a single attribute on a text or an element.
- *
- * `AttributeCommand` uses {@link module:engine/model/document~Document#selection}
- * to decide which nodes (if any) should be changed, and applies or removes the attribute from them.
- *
- * The command checks the {@link module:engine/model/model~Model#schema} to decide if it can be enabled
- * for the current selection and to which nodes the attribute can be applied.
+ * Enter command. It is used by the {@link module:enter/enter~Enter Enter feature} to handle the <kbd>Enter</kbd> key.
  *
  * @extends module:core/command~Command
  */
-class attributecommand_AttributeCommand extends Command {
+class entercommand_EnterCommand extends Command {
 	/**
-	 * @param {module:core/editor/editor~Editor} editor
-	 * @param {String} attributeKey Attribute that will be set by the command.
+	 * @inheritDoc
 	 */
-	constructor( editor, attributeKey ) {
-		super( editor );
-
-		/**
-		 * The attribute that will be set by the command.
-		 *
-		 * @readonly
-		 * @member {String}
-		 */
-		this.attributeKey = attributeKey;
-
-		/**
-		 * Flag indicating whether the command is active. The command is active when the
-		 * {@link module:engine/model/selection~Selection#hasAttribute selection has the attribute} which means that:
-		 *
-		 * * If the selection is not empty &ndash; That the attribute is set on the first node in the selection that allows this attribute.
-		 * * If the selection is empty &ndash; That the selection has the attribute itself (which means that newly typed
-		 * text will have this attribute, too).
-		 *
-		 * @observable
-		 * @readonly
-		 * @member {Boolean} #value
-		 */
-	}
-
-	/**
-	 * Updates the command's {@link #value} and {@link #isEnabled} based on the current selection.
-	 */
-	refresh() {
+	execute() {
 		const model = this.editor.model;
 		const doc = model.document;
-
-		this.value = this._getValueFromFirstAllowedNode();
-		this.isEnabled = model.schema.checkAttributeInSelection( doc.selection, this.attributeKey );
-	}
-
-	/**
-	 * Executes the command &mdash; applies the attribute to the selection or removes it from the selection.
-	 *
-	 * If the command is active (`value == true`), it will remove attributes. Otherwise, it will set attributes.
-	 *
-	 * The execution result differs, depending on the {@link module:engine/model/document~Document#selection}:
-	 *
-	 * * If the selection is on a range, the command applies the attribute to all nodes in that range
-	 * (if they are allowed to have this attribute by the {@link module:engine/model/schema~Schema schema}).
-	 * * If the selection is collapsed in a non-empty node, the command applies the attribute to the
-	 * {@link module:engine/model/document~Document#selection} itself (note that typed characters copy attributes from the selection).
-	 * * If the selection is collapsed in an empty node, the command applies the attribute to the parent node of the selection (note
-	 * that the selection inherits all attributes from a node if it is in an empty node).
-	 *
-	 * @fires execute
-	 * @param {Object} [options] Command options.
-	 * @param {Boolean} [options.forceValue] If set, it will force the command behavior. If `true`, the command will apply the attribute,
-	 * otherwise the command will remove the attribute.
-	 * If not set, the command will look for its current value to decide what it should do.
-	 */
-	execute( options = {} ) {
-		const model = this.editor.model;
-		const doc = model.document;
-		const selection = doc.selection;
-		const value = ( options.forceValue === undefined ) ? !this.value : options.forceValue;
 
 		model.change( writer => {
-			if ( selection.isCollapsed ) {
-				if ( value ) {
-					writer.setSelectionAttribute( this.attributeKey, true );
-				} else {
-					writer.removeSelectionAttribute( this.attributeKey );
-				}
-			} else {
-				const ranges = model.schema.getValidRanges( selection.getRanges(), this.attributeKey );
+			enterBlock( this.editor.model, writer, doc.selection, model.schema );
+			this.fire( 'afterExecute', { writer } );
+		} );
+	}
+}
 
-				for ( const range of ranges ) {
-					if ( value ) {
-						writer.setAttribute( this.attributeKey, value, range );
-					} else {
-						writer.removeAttribute( this.attributeKey, range );
-					}
+// Creates a new block in the way that the <kbd>Enter</kbd> key is expected to work.
+//
+// @param {module:engine/model~Model} model
+// @param {module:engine/model/writer~Writer} writer
+// @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
+// Selection on which the action should be performed.
+// @param {module:engine/model/schema~Schema} schema
+function enterBlock( model, writer, selection, schema ) {
+	const isSelectionEmpty = selection.isCollapsed;
+	const range = selection.getFirstRange();
+	const startElement = range.start.parent;
+	const endElement = range.end.parent;
+
+	// Don't touch the roots and other limit elements.
+	if ( schema.isLimit( startElement ) || schema.isLimit( endElement ) ) {
+		// Delete the selected content but only if inside a single limit element.
+		// Abort, when crossing limit elements boundary (e.g. <limit1>x[x</limit1>donttouchme<limit2>y]y</limit2>).
+		// This is an edge case and it's hard to tell what should actually happen because such a selection
+		// is not entirely valid.
+		if ( !isSelectionEmpty && startElement == endElement ) {
+			model.deleteContent( selection );
+		}
+
+		return;
+	}
+
+	if ( isSelectionEmpty ) {
+		splitBlock( writer, selection, range.start );
+	} else {
+		const leaveUnmerged = !( range.start.isAtStart && range.end.isAtEnd );
+		const isContainedWithinOneElement = ( startElement == endElement );
+
+		model.deleteContent( selection, { leaveUnmerged } );
+
+		if ( leaveUnmerged ) {
+			// Partially selected elements.
+			//
+			// <h>x[xx]x</h>		-> <h>x^x</h>			-> <h>x</h><h>^x</h>
+			if ( isContainedWithinOneElement ) {
+				splitBlock( writer, selection, selection.focus );
+			}
+			// Selection over multiple elements.
+			//
+			// <h>x[x</h><p>y]y<p>	-> <h>x^</h><p>y</p>	-> <h>x</h><p>^y</p>
+			else {
+				writer.setSelection( endElement, 0 );
+			}
+		}
+	}
+}
+
+function splitBlock( writer, selection, splitPos ) {
+	const oldElement = splitPos.parent;
+	const newElement = new oldElement.constructor( oldElement.name, oldElement.getAttributes() );
+
+	if ( splitPos.isAtEnd ) {
+		// If the split is at the end of element, instead of splitting, just create a clone of position's parent
+		// element and insert it after split element. The result is the same but less operations are done
+		// and it's more semantically correct (when it comes to operational transformation).
+		writer.insert( newElement, splitPos.parent, 'after' );
+	} else if ( splitPos.isAtStart ) {
+		// If the split is at the start of element, instead of splitting, just create a clone of position's parent
+		// element and insert it before split element. The result is the same but less operations are done
+		// and it's more semantically correct (when it comes to operational transformation).
+		writer.insert( newElement, splitPos.parent, 'before' );
+	} else {
+		writer.split( splitPos );
+	}
+
+	writer.setSelection( splitPos.parent.nextSibling, 0 );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/enterobserver.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module enter/enterobserver
+ */
+
+
+
+
+
+/**
+ * Enter observer introduces the {@link module:engine/view/document~Document#event:enter} event.
+ *
+ * @extends module:engine/view/observer~Observer
+ */
+class enterobserver_EnterObserver extends Observer {
+	constructor( view ) {
+		super( view );
+
+		const doc = this.document;
+
+		doc.on( 'keydown', ( evt, data ) => {
+			if ( this.isEnabled && data.keyCode == keyCodes.enter ) {
+				// Save the event object to check later if it was stopped or not.
+				let event;
+				doc.once( 'enter', evt => ( event = evt ), { priority: 'highest' } );
+
+				doc.fire( 'enter', new domeventdata_DomEventData( doc, data.domEvent, {
+					isSoft: data.shiftKey
+				} ) );
+
+				// Stop `keydown` event if `enter` event was stopped.
+				// https://github.com/ckeditor/ckeditor5/issues/753
+				if ( event && event.stop.called ) {
+					evt.stop();
 				}
 			}
 		} );
 	}
 
 	/**
-	 * Checks the attribute value of the first node in the selection that allows the attribute.
-	 * For the collapsed selection returns the selection attribute.
-	 *
-	 * @private
-	 * @returns {Boolean} The attribute value.
+	 * @inheritDoc
 	 */
-	_getValueFromFirstAllowedNode() {
-		const model = this.editor.model;
-		const schema = model.schema;
-		const selection = model.document.selection;
-
-		if ( selection.isCollapsed ) {
-			return selection.hasAttribute( this.attributeKey );
-		}
-
-		for ( const range of selection.getRanges() ) {
-			for ( const item of range.getItems() ) {
-				if ( schema.checkAttribute( item, this.attributeKey ) ) {
-					return item.hasAttribute( this.attributeKey );
-				}
-			}
-		}
-
-		return false;
-	}
+	observe() {}
 }
 
-// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/bold/boldediting.js
+/**
+ * Event fired when the user presses the <kbd>Enter</kbd> key.
+ *
+ * Note: This event is fired by the {@link module:enter/enterobserver~EnterObserver observer}
+ * (usually registered by the {@link module:enter/enter~Enter Enter feature} and
+ * {@link module:enter/shiftenter~ShiftEnter ShiftEnter feature}).
+ *
+ * @event module:engine/view/document~Document#event:enter
+ * @param {module:engine/view/observer/domeventdata~DomEventData} data
+ * @param {Boolean} data.isSoft Whether it's a soft enter (<kbd>Shift</kbd>+<kbd>Enter</kbd>) or hard enter (<kbd>Enter</kbd>).
+ */
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/enter.js
 /**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
 
 /**
- * @module basic-styles/bold/boldediting
+ * @module enter/enter
  */
 
 
 
 
-const BOLD = 'bold';
 
 /**
- * The bold editing feature.
+ * This plugin handles the <kbd>Enter</kbd> key (hard line break) in the editor.
  *
- * It registers the `'bold'` command and introduces the `bold` attribute in the model which renders to the view
- * as a `<strong>` element.
+ * See also the {@link module:enter/shiftenter~ShiftEnter} plugin.
+ *
+ * For more information about this feature see the {@glink api/enter package page}.
  *
  * @extends module:core/plugin~Plugin
  */
-class boldediting_BoldEditing extends Plugin {
+class enter_Enter extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Enter';
+	}
+
+	init() {
+		const editor = this.editor;
+		const view = editor.editing.view;
+		const viewDocument = view.document;
+
+		view.addObserver( enterobserver_EnterObserver );
+
+		editor.commands.add( 'enter', new entercommand_EnterCommand( editor ) );
+
+		this.listenTo( viewDocument, 'enter', ( evt, data ) => {
+			data.preventDefault();
+
+			// The soft enter key is handled by the ShiftEnter plugin.
+			if ( data.isSoft ) {
+				return;
+			}
+
+			editor.execute( 'enter' );
+			view.scrollToTheSelection();
+		}, { priority: 'low' } );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/shiftentercommand.js
+/**
+ * @module enter/shiftentercommand
+ */
+
+
+
+/**
+ * ShiftEnter command. It is used by the {@link module:enter/shiftenter~ShiftEnter ShiftEnter feature} to handle
+ * the <kbd>Shift</kbd>+<kbd>Enter</kbd> keystroke.
+ *
+ * @extends module:core/command~Command
+ */
+class shiftentercommand_ShiftEnterCommand extends Command {
+	/**
+	 * @inheritDoc
+	 */
+	execute() {
+		const model = this.editor.model;
+		const doc = model.document;
+
+		model.change( writer => {
+			softBreakAction( model, writer, doc.selection );
+			this.fire( 'afterExecute', { writer } );
+		} );
+	}
+
+	refresh() {
+		const model = this.editor.model;
+		const doc = model.document;
+
+		this.isEnabled = isEnabled( model.schema, doc.selection );
+	}
+}
+
+// Checks whether the ShiftEnter command should be enabled in the specified selection.
+//
+// @param {module:engine/model/schema~Schema} schema
+// @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
+function isEnabled( schema, selection ) {
+	// At this moment it is okay to support single range selections only.
+	// But in the future we may need to change that.
+	if ( selection.rangeCount > 1 ) {
+		return false;
+	}
+
+	const anchorPos = selection.anchor;
+
+	// Check whether the break element can be inserted in the current selection anchor.
+	if ( !anchorPos || !schema.checkChild( anchorPos, 'softBreak' ) ) {
+		return false;
+	}
+
+	const range = selection.getFirstRange();
+	const startElement = range.start.parent;
+	const endElement = range.end.parent;
+
+	// Do not modify the content if selection is cross-limit elements.
+	if ( ( isInsideLimitElement( startElement, schema ) || isInsideLimitElement( endElement, schema ) ) && startElement !== endElement ) {
+		return false;
+	}
+
+	return true;
+}
+
+// Creates a break in the way that the <kbd>Shift</kbd>+<kbd>Enter</kbd> keystroke is expected to work.
+//
+// @param {module:engine/model~Model} model
+// @param {module:engine/model/writer~Writer} writer
+// @param {module:engine/model/selection~Selection|module:engine/model/documentselection~DocumentSelection} selection
+// Selection on which the action should be performed.
+function softBreakAction( model, writer, selection ) {
+	const isSelectionEmpty = selection.isCollapsed;
+	const range = selection.getFirstRange();
+	const startElement = range.start.parent;
+	const endElement = range.end.parent;
+	const isContainedWithinOneElement = ( startElement == endElement );
+
+	if ( isSelectionEmpty ) {
+		insertBreak( writer, range.end );
+	} else {
+		const leaveUnmerged = !( range.start.isAtStart && range.end.isAtEnd );
+		model.deleteContent( selection, { leaveUnmerged } );
+
+		// Selection within one element:
+		//
+		// <h>x[xx]x</h>		-> <h>x^x</h>			-> <h>x<br>^x</h>
+		if ( isContainedWithinOneElement ) {
+			insertBreak( writer, selection.focus );
+		}
+		// Selection over multiple elements.
+		//
+		// <h>x[x</h><p>y]y<p>	-> <h>x^</h><p>y</p>	-> <h>x</h><p>^y</p>
+		//
+		// We chose not to insert a line break in this case because:
+		//
+		// * it's not a very common scenario,
+		// * it actually surprised me when I saw the "expected behavior" in real life.
+		//
+		// It's ok if the user will need to be more specific where they want the <br> to be inserted.
+		else {
+			// Move the selection to the 2nd element (last step of the example above).
+			if ( leaveUnmerged ) {
+				writer.setSelection( endElement, 0 );
+			}
+		}
+	}
+}
+
+function insertBreak( writer, position ) {
+	const breakLineElement = writer.createElement( 'softBreak' );
+
+	writer.insert( breakLineElement, position );
+	writer.setSelection( breakLineElement, 'after' );
+}
+
+// Checks whether the specified `element` is a child of the limit element.
+//
+// Checking whether the `<p>` element is inside a limit element:
+//   - <$root><p>Text.</p></$root> => false
+//   - <$root><limitElement><p>Text</p></limitElement></$root> => true
+//
+// @param {module:engine/model/element~Element} element
+// @param {module:engine/schema~Schema} schema
+// @returns {Boolean}
+function isInsideLimitElement( element, schema ) {
+	// `$root` is a limit element but in this case is an invalid element.
+	if ( element.is( 'rootElement' ) ) {
+		return false;
+	}
+
+	return schema.isLimit( element ) || isInsideLimitElement( element.parent, schema );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-enter/src/shiftenter.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module enter/shiftenter
+ */
+
+
+
+
+
+
+
+/**
+ * This plugin handles the <kbd>Shift</kbd>+<kbd>Enter</kbd> keystroke (soft line break) in the editor.
+ *
+ * See also the {@link module:enter/enter~Enter} plugin.
+ *
+ * For more information about this feature see the {@glink api/enter package page}.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class shiftenter_ShiftEnter extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'ShiftEnter';
+	}
+
+	init() {
+		const editor = this.editor;
+		const schema = editor.model.schema;
+		const conversion = editor.conversion;
+		const view = editor.editing.view;
+		const viewDocument = view.document;
+
+		// Configure the schema.
+		schema.register( 'softBreak', {
+			allowWhere: '$text'
+		} );
+
+		// Configure converters.
+		conversion.for( 'upcast' )
+			.add( upcastElementToElement( {
+				model: 'softBreak',
+				view: 'br'
+			} ) );
+
+		conversion.for( 'downcast' )
+			.add( downcastElementToElement( {
+				model: 'softBreak',
+				view: ( modelElement, viewWriter ) => viewWriter.createEmptyElement( 'br' )
+			} ) );
+
+		view.addObserver( enterobserver_EnterObserver );
+
+		editor.commands.add( 'shiftEnter', new shiftentercommand_ShiftEnterCommand( editor ) );
+
+		this.listenTo( viewDocument, 'enter', ( evt, data ) => {
+			data.preventDefault();
+
+			// The hard enter key is handled by the Enter plugin.
+			if ( !data.isSoft ) {
+				return;
+			}
+
+			editor.execute( 'shiftEnter' );
+			view.scrollToTheSelection();
+		}, { priority: 'low' } );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/changebuffer.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/utils/changebuffer
+ */
+
+
+
+/**
+ * Change buffer allows to group atomic changes (like characters that have been typed) into
+ * {@link module:engine/model/batch~Batch batches}.
+ *
+ * Batches represent single undo steps, hence changes added to one single batch are undone together.
+ *
+ * The buffer has a configurable limit of atomic changes that it can accommodate. After the limit was
+ * exceeded (see {@link ~ChangeBuffer#input}), a new batch is created in {@link ~ChangeBuffer#batch}.
+ *
+ * To use the change buffer you need to let it know about the number of changes that were added to the batch:
+ *
+ *		const buffer = new ChangeBuffer( model, LIMIT );
+ *
+ *		// Later on in your feature:
+ *		buffer.batch.insert( pos, insertedCharacters );
+ *		buffer.input( insertedCharacters.length );
+ *
+ */
+class changebuffer_ChangeBuffer {
+	/**
+	 * Creates a new instance of the change buffer.
+	 *
+	 * @param {module:engine/model/model~Model} model
+	 * @param {Number} [limit=20] The maximum number of atomic changes which can be contained in one batch.
+	 */
+	constructor( model, limit = 20 ) {
+		/**
+		 * The model instance.
+		 *
+		 * @readonly
+		 * @member {module:engine/model/model~Model} #model
+		 */
+		this.model = model;
+
+		/**
+		 * The number of atomic changes in the buffer. Once it exceeds the {@link #limit},
+		 * the {@link #batch batch} is set to a new one.
+		 *
+		 * @readonly
+		 * @member {Number} #size
+		 */
+		this.size = 0;
+
+		/**
+		 * The maximum number of atomic changes which can be contained in one batch.
+		 *
+		 * @readonly
+		 * @member {Number} #limit
+		 */
+		this.limit = limit;
+
+		/**
+		 * Whether the buffer is locked. A locked buffer cannot be reset unless it gets unlocked.
+		 *
+		 * @readonly
+		 * @member {Boolean} #isLocked
+		 */
+		this.isLocked = false;
+
+		// The function to be called in order to notify the buffer about batches which appeared in the document.
+		// The callback will check whether it is a new batch and in that case the buffer will be flushed.
+		//
+		// The reason why the buffer needs to be flushed whenever a new batch appears is that the changes added afterwards
+		// should be added to a new batch. For instance, when the  user types, then inserts an image, and then types again,
+		// the characters typed after inserting the image should be added to a different batch than the characters typed before.
+		this._changeCallback = ( evt, batch ) => {
+			if ( batch.type != 'transparent' && batch !== this._batch ) {
+				this._reset( true );
+			}
+		};
+
+		this._selectionChangeCallback = () => {
+			this._reset();
+		};
+
+		this.model.document.on( 'change', this._changeCallback );
+
+		this.model.document.selection.on( 'change:range', this._selectionChangeCallback );
+		this.model.document.selection.on( 'change:attribute', this._selectionChangeCallback );
+
+		/**
+		 * The current batch instance.
+		 *
+		 * @private
+		 * @member #_batch
+		 */
+
+		/**
+		 * The callback to document the change event which later needs to be removed.
+		 *
+		 * @private
+		 * @member #_changeCallback
+		 */
+
+		/**
+		 * The callback to document selection `change:attribute` and `change:range` events which resets the buffer.
+		 *
+		 * @private
+		 * @member #_selectionChangeCallback
+		 */
+	}
+
+	/**
+	 * The current batch to which a feature should add its operations. Once the {@link #size}
+	 * is reached or exceeds the {@link #limit}, the batch is set to a new instance and the size is reset.
+	 *
+	 * @type {module:engine/model/batch~Batch}
+	 */
+	get batch() {
+		if ( !this._batch ) {
+			this._batch = new Batch();
+		}
+
+		return this._batch;
+	}
+
+	/**
+	 * The input number of changes into the buffer. Once the {@link #size} is
+	 * reached or exceeds the {@link #limit}, the batch is set to a new instance and the size is reset.
+	 *
+	 * @param {Number} changeCount The number of atomic changes to input.
+	 */
+	input( changeCount ) {
+		this.size += changeCount;
+
+		if ( this.size >= this.limit ) {
+			this._reset( true );
+		}
+	}
+
+	/**
+	 * Locks the buffer.
+	 */
+	lock() {
+		this.isLocked = true;
+	}
+
+	/**
+	 * Unlocks the buffer.
+	 */
+	unlock() {
+		this.isLocked = false;
+	}
+
+	/**
+	 * Destroys the buffer.
+	 */
+	destroy() {
+		this.model.document.off( 'change', this._changeCallback );
+		this.model.document.selection.off( 'change:range', this._selectionChangeCallback );
+		this.model.document.selection.off( 'change:attribute', this._selectionChangeCallback );
+	}
+
+	/**
+	 * Resets the change buffer.
+	 *
+	 * @private
+	 * @param {Boolean} [ignoreLock] Whether internal lock {@link #isLocked} should be ignored.
+	 */
+	_reset( ignoreLock ) {
+		if ( !this.isLocked || ignoreLock ) {
+			this._batch = null;
+			this.size = 0;
+		}
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/inputcommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/inputcommand
+ */
+
+
+
+
+/**
+ * The input command. Used by the {@link module:typing/input~Input input feature} to handle typing.
+ *
+ * @extends module:core/command~Command
+ */
+class inputcommand_InputCommand extends Command {
+	/**
+	 * Creates an instance of the command.
+	 *
+	 * @param {module:core/editor/editor~Editor} editor
+	 * @param {Number} undoStepSize The maximum number of atomic changes
+	 * which can be contained in one batch in the command buffer.
+	 */
+	constructor( editor, undoStepSize ) {
+		super( editor );
+
+		/**
+		 * Typing's change buffer used to group subsequent changes into batches.
+		 *
+		 * @readonly
+		 * @private
+		 * @member {module:typing/utils/changebuffer~ChangeBuffer} #_buffer
+		 */
+		this._buffer = new changebuffer_ChangeBuffer( editor.model, undoStepSize );
+	}
+
+	/**
+	 * The current change buffer.
+	 *
+	 * @type {module:typing/utils/changebuffer~ChangeBuffer}
+	 */
+	get buffer() {
+		return this._buffer;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	destroy() {
+		super.destroy();
+
+		this._buffer.destroy();
+	}
+
+	/**
+	 * Executes the input command. It replaces the content within the given range with the given text.
+	 * Replacing is a two step process, first the content within the range is removed and then the new text is inserted
+	 * at the beginning of the range (which after the removal is a collapsed range).
+	 *
+	 * @fires execute
+	 * @param {Object} [options] The command options.
+	 * @param {String} [options.text=''] The text to be inserted.
+	 * @param {module:engine/model/range~Range} [options.range] The range in which the text is inserted. Defaults
+	 * to the first range in the current selection.
+	 * @param {module:engine/model/range~Range} [options.resultRange] The range where the selection
+	 * should be placed after the insertion. If not specified, the selection will be placed right after
+	 * the inserted text.
+	 */
+	execute( options = {} ) {
+		const model = this.editor.model;
+		const doc = model.document;
+		const text = options.text || '';
+		const textInsertions = text.length;
+		const range = options.range || doc.selection.getFirstRange();
+		const resultRange = options.resultRange;
+
+		model.enqueueChange( this._buffer.batch, writer => {
+			const isCollapsedRange = range.isCollapsed;
+
+			this._buffer.lock();
+
+			if ( !isCollapsedRange ) {
+				writer.remove( range );
+			}
+
+			if ( text ) {
+				writer.insertText( text, doc.selection.getAttributes(), range.start );
+			}
+
+			if ( resultRange ) {
+				writer.setSelection( resultRange );
+			} else if ( isCollapsedRange ) {
+				// If range was collapsed just shift the selection by the number of inserted characters.
+				writer.setSelection( range.start.getShiftedBy( textInsertions ) );
+			}
+
+			this._buffer.unlock();
+
+			this._buffer.input( textInsertions );
+		} );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/injectunsafekeystrokeshandling.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/utils/injectunsafekeystrokeshandling
+ */
+
+
+
+
+
+/**
+ * Handles keystrokes which are unsafe for typing. This handler's logic is explained
+ * in https://github.com/ckeditor/ckeditor5-typing/issues/83#issuecomment-398690251.
+ *
+ * @param {module:core/editor/editor~Editor} editor The editor instance.
+ */
+function injectUnsafeKeystrokesHandling( editor ) {
+	let latestCompositionSelection = null;
+
+	const model = editor.model;
+	const view = editor.editing.view;
+	const inputCommand = editor.commands.get( 'input' );
+
+	view.document.on( 'keydown', ( evt, evtData ) => handleKeydown( evtData ), { priority: 'lowest' } );
+
+	view.document.on( 'compositionstart', handleCompositionStart, { priority: 'lowest' } );
+
+	view.document.on( 'compositionend', () => {
+		latestCompositionSelection = new model_selection_Selection( model.document.selection );
+	}, { priority: 'lowest' } );
+
+	// Handles the keydown event. We need to guess whether such keystroke is going to result
+	// in typing. If so, then before character insertion happens, any selected content needs
+	// to be deleted. Otherwise the default browser deletion mechanism would be
+	// triggered, resulting in:
+	//
+	// * Hundreds of mutations which could not be handled.
+	// * But most importantly, loss of control over how the content is being deleted.
+	//
+	// The method is used in a low-priority listener, hence allowing other listeners (e.g. delete or enter features)
+	// to handle the event.
+	//
+	// @param {module:engine/view/observer/keyobserver~KeyEventData} evtData
+	function handleKeydown( evtData ) {
+		const doc = model.document;
+		const isComposing = view.document.isComposing;
+		const isSelectionUnchanged = latestCompositionSelection && latestCompositionSelection.isEqual( doc.selection );
+
+		// Reset stored composition selection.
+		latestCompositionSelection = null;
+
+		// By relying on the state of the input command we allow disabling the entire input easily
+		// by just disabling the input command. We could’ve used here the delete command but that
+		// would mean requiring the delete feature which would block loading one without the other.
+		// We could also check the editor.isReadOnly property, but that wouldn't allow to block
+		// the input without blocking other features.
+		if ( !inputCommand.isEnabled ) {
+			return;
+		}
+
+		if ( isSafeKeystroke( evtData ) || doc.selection.isCollapsed ) {
+			return;
+		}
+
+		// If during composition, deletion should be prevented as it may remove composed sequence (#83).
+		if ( isComposing && evtData.keyCode === 229 ) {
+			return;
+		}
+
+		// If there is a `keydown` event fired with '229' keycode it might be related
+		// to recent composition. Check if selection is the same as upon ending recent composition,
+		// if so do not remove selected content as it will remove composed sequence (#83).
+		if ( !isComposing && evtData.keyCode === 229 && isSelectionUnchanged ) {
+			return;
+		}
+
+		deleteSelectionContent();
+	}
+
+	// Handles the `compositionstart` event. It is used only in special cases to remove the contents
+	// of a non-collapsed selection so composition itself does not result in complex mutations.
+	//
+	// The special case mentioned above is a situation in which the `keydown` event is fired after
+	// `compositionstart` event. In such cases {@link #handleKeydown} cannot clear current selection
+	// contents (because it is too late and will break the composition) so the composition handler takes care of it.
+	function handleCompositionStart() {
+		const doc = model.document;
+		const isFlatSelection = doc.selection.rangeCount === 1 ? doc.selection.getFirstRange().isFlat : true;
+
+		// If on `compositionstart` there is a non-collapsed selection which start and end have different parents
+		// it means the `handleKeydown()` method did not remove its contents. It happens usually because
+		// of different order of events (`compositionstart` before `keydown` - in Safari). In such cases
+		// we need to remove selection contents on composition start (#83).
+		if ( doc.selection.isCollapsed || isFlatSelection ) {
+			return;
+		}
+
+		deleteSelectionContent();
+	}
+
+	function deleteSelectionContent() {
+		const buffer = inputCommand.buffer;
+
+		buffer.lock();
+
+		model.enqueueChange( buffer.batch, () => {
+			model.deleteContent( model.document.selection );
+		} );
+
+		buffer.unlock();
+	}
+}
+
+const safeKeycodes = [
+	getCode( 'arrowUp' ),
+	getCode( 'arrowRight' ),
+	getCode( 'arrowDown' ),
+	getCode( 'arrowLeft' ),
+	9, // Tab
+	16, // Shift
+	17, // Ctrl
+	18, // Alt
+	20, // CapsLock
+	27, // Escape
+	33, // PageUp
+	34, // PageDown
+	35, // Home
+	36 // End
+];
+
+// Function keys.
+for ( let code = 112; code <= 135; code++ ) {
+	safeKeycodes.push( code );
+}
+
+// Returns `true` if a keystroke should not cause any content change caused by "typing".
+//
+// Note: This implementation is very simple and will need to be refined with time.
+//
+// @private
+// @param {engine.view.observer.keyObserver.KeyEventData} keyData
+// @returns {Boolean}
+function isSafeKeystroke( keyData ) {
+	// Keystrokes which contain Ctrl don't represent typing.
+	if ( keyData.ctrlKey ) {
+		return true;
+	}
+
+	return safeKeycodes.includes( keyData.keyCode );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-utils/src/difftochanges.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module utils/difftochanges
+ */
+
+/**
+ * Creates a set of changes which need to be applied to the input in order to transform
+ * it into the output. This function can be used with strings or arrays.
+ *
+ *		const input = Array.from( 'abc' );
+ *		const output = Array.from( 'xaby' );
+ *		const changes = diffToChanges( diff( input, output ), output );
+ *
+ *		changes.forEach( change => {
+ *			if ( change.type == 'insert' ) {
+ *				input.splice( change.index, 0, ...change.values );
+ *			} else if ( change.type == 'delete' ) {
+ *				input.splice( change.index, change.howMany );
+ *			}
+ *		} );
+ *
+ *		input.join( '' ) == output.join( '' ); // -> true
+ *
+ * @param {Array.<'equal'|'insert'|'delete'>} diff Result of {@link module:utils/diff~diff}.
+ * @param {String|Array} output The string or array which was passed as diff's output.
+ * @returns {Array.<Object>} Set of changes (insert or delete) which need to be applied to the input
+ * in order to transform it into the output.
+ */
+function diffToChanges( diff, output ) {
+	const changes = [];
+	let index = 0;
+	let lastOperation;
+
+	diff.forEach( change => {
+		if ( change == 'equal' ) {
+			pushLast();
+
+			index++;
+		} else if ( change == 'insert' ) {
+			if ( isContinuationOf( 'insert' ) ) {
+				lastOperation.values.push( output[ index ] );
+			} else {
+				pushLast();
+
+				lastOperation = {
+					type: 'insert',
+					index,
+					values: [ output[ index ] ]
+				};
+			}
+
+			index++;
+		} else /* if ( change == 'delete' ) */ {
+			if ( isContinuationOf( 'delete' ) ) {
+				lastOperation.howMany++;
+			} else {
+				pushLast();
+
+				lastOperation = {
+					type: 'delete',
+					index,
+					howMany: 1
+				};
+			}
+		}
+	} );
+
+	pushLast();
+
+	return changes;
+
+	function pushLast() {
+		if ( lastOperation ) {
+			changes.push( lastOperation );
+			lastOperation = null;
+		}
+	}
+
+	function isContinuationOf( expected ) {
+		return lastOperation && lastOperation.type == expected;
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/utils.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/utils/utils
+ */
+
+
+
+
+
+/**
+ * Returns true if container children have mutated or more than a single text node was changed.
+ *
+ * @private
+ * @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
+ * module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
+ * @returns {Boolean}
+ */
+function containerChildrenMutated( mutations ) {
+	if ( mutations.length == 0 ) {
+		return false;
+	}
+
+	// Check if there is any mutation of `children` type or any mutation that changes more than one text node.
+	for ( const mutation of mutations ) {
+		if ( mutation.type === 'children' && !getSingleTextNodeChange( mutation ) ) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+/**
+ * Returns change made to a single text node.
+ *
+ * @private
+ * @param {module:engine/view/observer/mutationobserver~MutatedText|
+ * module:engine/view/observer/mutationobserver~MutatedChildren} mutation
+ * @returns {Object|undefined} Change object (see {@link module:utils/difftochanges~diffToChanges} output)
+ * or undefined if more than a single text node was changed.
+ */
+function getSingleTextNodeChange( mutation ) {
+	// One new node.
+	if ( mutation.newChildren.length - mutation.oldChildren.length != 1 ) {
+		return;
+	}
+
+	// Which is text.
+	const diffResult = diff_diff( mutation.oldChildren, mutation.newChildren, compareChildNodes );
+	const changes = diffToChanges( diffResult, mutation.newChildren );
+
+	// In case of [ delete, insert, insert ] the previous check will not exit.
+	if ( changes.length > 1 ) {
+		return;
+	}
+
+	const change = changes[ 0 ];
+
+	// Which is text.
+	if ( !( change.values[ 0 ] instanceof text_Text ) ) {
+		return;
+	}
+
+	return change;
+}
+
+/**
+ * Checks whether two view nodes are identical, which means they are the same object
+ * or contain exactly same data (in case of text nodes).
+ *
+ * @private
+ * @param {module:engine/view/node~Node} oldChild
+ * @param {module:engine/view/node~Node} newChild
+ * @returns {Boolean}
+ */
+function compareChildNodes( oldChild, newChild ) {
+	if ( oldChild instanceof text_Text && newChild instanceof text_Text ) {
+		return oldChild.data === newChild.data;
+	} else {
+		return oldChild === newChild;
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/injecttypingmutationshandling.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/utils/injecttypingmutationshandling
+ */
+
+
+
+
+
+
+
+
+/**
+ * Handles mutations caused by normal typing.
+ *
+ * @param {module:core/editor/editor~Editor} editor The editor instance.
+ */
+function injectTypingMutationsHandling( editor ) {
+	editor.editing.view.document.on( 'mutations', ( evt, mutations, viewSelection ) => {
+		new injecttypingmutationshandling_MutationHandler( editor ).handle( mutations, viewSelection );
+	} );
+}
+
+/**
+ * Helper class for translating DOM mutations into model changes.
+ *
+ * @private
+ */
+class injecttypingmutationshandling_MutationHandler {
+	/**
+	 * Creates an instance of the mutation handler.
+	 *
+	 * @param {module:core/editor/editor~Editor} editor
+	 */
+	constructor( editor ) {
+		/**
+		 * Editor instance for which mutations are handled.
+		 *
+		 * @readonly
+		 * @member {module:core/editor/editor~Editor} #editor
+		 */
+		this.editor = editor;
+
+		/**
+		 * The editing controller.
+		 *
+		 * @readonly
+		 * @member {module:engine/controller/editingcontroller~EditingController} #editing
+		 */
+		this.editing = this.editor.editing;
+	}
+
+	/**
+	 * Handles given mutations.
+	 *
+	 * @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
+	 * module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
+	 * @param {module:engine/view/selection~Selection|null} viewSelection
+	 */
+	handle( mutations, viewSelection ) {
+		if ( containerChildrenMutated( mutations ) ) {
+			this._handleContainerChildrenMutations( mutations, viewSelection );
+		} else {
+			for ( const mutation of mutations ) {
+				// Fortunately it will never be both.
+				this._handleTextMutation( mutation, viewSelection );
+				this._handleTextNodeInsertion( mutation );
+			}
+		}
+	}
+
+	/**
+	 * Handles situations when container's children mutated during input. This can happen when
+	 * the browser is trying to "fix" DOM in certain situations. For example, when the user starts to type
+	 * in `<p><a href=""><i>Link{}</i></a></p>`, the browser might change the order of elements
+	 * to `<p><i><a href="">Link</a>x{}</i></p>`. A similar situation happens when the spell checker
+	 * replaces a word wrapped with `<strong>` with a word wrapped with a `<b>` element.
+	 *
+	 * To handle such situations, the common DOM ancestor of all mutations is converted to the model representation
+	 * and then compared with the current model to calculate the proper text change.
+	 *
+	 * Note: Single text node insertion is handled in {@link #_handleTextNodeInsertion} and text node mutation is handled
+	 * in {@link #_handleTextMutation}).
+	 *
+	 * @private
+	 * @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
+	 * module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
+	 * @param {module:engine/view/selection~Selection|null} viewSelection
+	 */
+	_handleContainerChildrenMutations( mutations, viewSelection ) {
+		// Get common ancestor of all mutations.
+		const mutationsCommonAncestor = getMutationsContainer( mutations );
+
+		// Quit if there is no common ancestor.
+		if ( !mutationsCommonAncestor ) {
+			return;
+		}
+
+		const domConverter = this.editor.editing.view.domConverter;
+
+		// Get common ancestor in DOM.
+		const domMutationCommonAncestor = domConverter.mapViewToDom( mutationsCommonAncestor );
+
+		// Create fresh DomConverter so it will not use existing mapping and convert current DOM to model.
+		// This wouldn't be needed if DomConverter would allow to create fresh view without checking any mappings.
+		const freshDomConverter = new domconverter_DomConverter();
+		const modelFromCurrentDom = this.editor.data.toModel(
+			freshDomConverter.domToView( domMutationCommonAncestor )
+		).getChild( 0 );
+
+		// Current model.
+		const currentModel = this.editor.editing.mapper.toModelElement( mutationsCommonAncestor );
+
+		// If common ancestor is not mapped, do not do anything. It probably is a parent of another view element.
+		// That means that we would need to diff model elements (see `if` below). Better return early instead of
+		// trying to get a reasonable model ancestor. It will fell into the `if` below anyway.
+		// This situation happens for example for lists. If `<ul>` is a common ancestor, `currentModel` is `undefined`
+		// because `<ul>` is not mapped (`<li>`s are).
+		// See https://github.com/ckeditor/ckeditor5/issues/718.
+		if ( !currentModel ) {
+			return;
+		}
+
+		// Get children from both ancestors.
+		const modelFromDomChildren = Array.from( modelFromCurrentDom.getChildren() );
+		const currentModelChildren = Array.from( currentModel.getChildren() );
+
+		// Remove the last `<softBreak>` from the end of `modelFromDomChildren` if there is no `<softBreak>` in current model.
+		// If the described scenario happened, it means that this is a bogus `<br />` added by a browser.
+		const lastDomChild = modelFromDomChildren[ modelFromDomChildren.length - 1 ];
+		const lastCurrentChild = currentModelChildren[ currentModelChildren.length - 1 ];
+
+		if ( lastDomChild && lastDomChild.is( 'softBreak' ) && lastCurrentChild && !lastCurrentChild.is( 'softBreak' ) ) {
+			modelFromDomChildren.pop();
+		}
+
+		// Skip situations when common ancestor has any container elements.
+		if ( !isSafeForTextMutation( modelFromDomChildren ) || !isSafeForTextMutation( currentModelChildren ) ) {
+			return;
+		}
+
+		// Replace &nbsp; inserted by the browser with normal space. See comment in `_handleTextMutation`.
+		// Replace non-texts with any character. This is potentially dangerous but passes in manual tests. The thing is
+		// that we need to take care of proper indexes so we cannot simply remove non-text elements from the content.
+		// By inserting a character we keep all the real texts on their indexes.
+		const newText = modelFromDomChildren.map( item => item.is( 'text' ) ? item.data : '@' ).join( '' ).replace( /\u00A0/g, ' ' );
+		const oldText = currentModelChildren.map( item => item.is( 'text' ) ? item.data : '@' ).join( '' ).replace( /\u00A0/g, ' ' );
+
+		// Do nothing if mutations created same text.
+		if ( oldText === newText ) {
+			return;
+		}
+
+		const diffResult = diff_diff( oldText, newText );
+
+		const { firstChangeAt, insertions, deletions } = calculateChanges( diffResult );
+
+		// Try setting new model selection according to passed view selection.
+		let modelSelectionRange = null;
+
+		if ( viewSelection ) {
+			modelSelectionRange = this.editing.mapper.toModelRange( viewSelection.getFirstRange() );
+		}
+
+		const insertText = newText.substr( firstChangeAt, insertions );
+		const removeRange = model_range_Range.createFromParentsAndOffsets(
+			currentModel,
+			firstChangeAt,
+			currentModel,
+			firstChangeAt + deletions
+		);
+
+		this.editor.execute( 'input', {
+			text: insertText,
+			range: removeRange,
+			resultRange: modelSelectionRange
+		} );
+	}
+
+	/**
+	 * @private
+	 */
+	_handleTextMutation( mutation, viewSelection ) {
+		if ( mutation.type != 'text' ) {
+			return;
+		}
+
+		// Replace &nbsp; inserted by the browser with normal space.
+		// We want only normal spaces in the model and in the view. Renderer and DOM Converter will be then responsible
+		// for rendering consecutive spaces using &nbsp;, but the model and the view has to be clear.
+		// Other feature may introduce inserting non-breakable space on specific key stroke (for example shift + space).
+		// However then it will be handled outside of mutations, like enter key is.
+		// The replacing is here because it has to be done before `diff` and `diffToChanges` functions, as they
+		// take `newText` and compare it to (cleaned up) view.
+		// It could also be done in mutation observer too, however if any outside plugin would like to
+		// introduce additional events for mutations, they would get already cleaned up version (this may be good or not).
+		const newText = mutation.newText.replace( /\u00A0/g, ' ' );
+		// To have correct `diffResult`, we also compare view node text data with &nbsp; replaced by space.
+		const oldText = mutation.oldText.replace( /\u00A0/g, ' ' );
+
+		const diffResult = diff_diff( oldText, newText );
+
+		const { firstChangeAt, insertions, deletions } = calculateChanges( diffResult );
+
+		// Try setting new model selection according to passed view selection.
+		let modelSelectionRange = null;
+
+		if ( viewSelection ) {
+			modelSelectionRange = this.editing.mapper.toModelRange( viewSelection.getFirstRange() );
+		}
+
+		// Get the position in view and model where the changes will happen.
+		const viewPos = new position_Position( mutation.node, firstChangeAt );
+		const modelPos = this.editing.mapper.toModelPosition( viewPos );
+		const removeRange = model_range_Range.createFromPositionAndShift( modelPos, deletions );
+		const insertText = newText.substr( firstChangeAt, insertions );
+
+		this.editor.execute( 'input', {
+			text: insertText,
+			range: removeRange,
+			resultRange: modelSelectionRange
+		} );
+	}
+
+	/**
+	 * @private
+	 */
+	_handleTextNodeInsertion( mutation ) {
+		if ( mutation.type != 'children' ) {
+			return;
+		}
+
+		const change = getSingleTextNodeChange( mutation );
+		const viewPos = new position_Position( mutation.node, change.index );
+		const modelPos = this.editing.mapper.toModelPosition( viewPos );
+		const insertedText = change.values[ 0 ].data;
+
+		this.editor.execute( 'input', {
+			// Replace &nbsp; inserted by the browser with normal space.
+			// See comment in `_handleTextMutation`.
+			// In this case we don't need to do this before `diff` because we diff whole nodes.
+			// Just change &nbsp; in case there are some.
+			text: insertedText.replace( /\u00A0/g, ' ' ),
+			range: new model_range_Range( modelPos )
+		} );
+	}
+}
+
+// Returns first common ancestor of all mutations that is either {@link module:engine/view/containerelement~ContainerElement}
+// or {@link module:engine/view/rootelement~RootElement}.
+//
+// @private
+// @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
+// module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
+// @returns {module:engine/view/containerelement~ContainerElement|engine/view/rootelement~RootElement|undefined}
+function getMutationsContainer( mutations ) {
+	const lca = mutations
+		.map( mutation => mutation.node )
+		.reduce( ( commonAncestor, node ) => {
+			return commonAncestor.getCommonAncestor( node, { includeSelf: true } );
+		} );
+
+	if ( !lca ) {
+		return;
+	}
+
+	// We need to look for container and root elements only, so check all LCA's
+	// ancestors (starting from itself).
+	return lca.getAncestors( { includeSelf: true, parentFirst: true } )
+		.find( element => element.is( 'containerElement' ) || element.is( 'rootElement' ) );
+}
+
+// Returns true if provided array contains content that won't be problematic during diffing and text mutation handling.
+//
+// @param {Array.<module:engine/model/node~Node>} children
+// @returns {Boolean}
+function isSafeForTextMutation( children ) {
+	return children.every( child => child.is( 'text' ) || child.is( 'softBreak' ) );
+}
+
+// Calculates first change index and number of characters that should be inserted and deleted starting from that index.
+//
+// @private
+// @param diffResult
+// @returns {{insertions: number, deletions: number, firstChangeAt: *}}
+function calculateChanges( diffResult ) {
+	// Index where the first change happens. Used to set the position from which nodes will be removed and where will be inserted.
+	let firstChangeAt = null;
+	// Index where the last change happens. Used to properly count how many characters have to be removed and inserted.
+	let lastChangeAt = null;
+
+	// Get `firstChangeAt` and `lastChangeAt`.
+	for ( let i = 0; i < diffResult.length; i++ ) {
+		const change = diffResult[ i ];
+
+		if ( change != 'equal' ) {
+			firstChangeAt = firstChangeAt === null ? i : firstChangeAt;
+			lastChangeAt = i;
+		}
+	}
+
+	// How many characters, starting from `firstChangeAt`, should be removed.
+	let deletions = 0;
+	// How many characters, starting from `firstChangeAt`, should be inserted.
+	let insertions = 0;
+
+	for ( let i = firstChangeAt; i <= lastChangeAt; i++ ) {
+		// If there is no change (equal) or delete, the character is existing in `oldText`. We count it for removing.
+		if ( diffResult[ i ] != 'insert' ) {
+			deletions++;
+		}
+
+		// If there is no change (equal) or insert, the character is existing in `newText`. We count it for inserting.
+		if ( diffResult[ i ] != 'delete' ) {
+			insertions++;
+		}
+	}
+
+	return { insertions, deletions, firstChangeAt };
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/input.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/input
+ */
+
+
+
+
+
+
+
+/**
+ * Handles text input coming from the keyboard or other input methods.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class input_Input extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Input';
+	}
+
 	/**
 	 * @inheritDoc
 	 */
 	init() {
 		const editor = this.editor;
-		// Allow bold attribute on text nodes.
-		editor.model.schema.extend( '$text', { allowAttributes: BOLD } );
 
-		// Build converter from model to view for data and editing pipelines.
+		// TODO The above default configuration value should be defined using editor.config.define() once it's fixed.
+		const inputCommand = new inputcommand_InputCommand( editor, editor.config.get( 'typing.undoStep' ) || 20 );
 
-		editor.conversion.attributeToElement( {
-			model: BOLD,
-			view: 'strong',
-			upcastAlso: [
-				'b',
-				{
-					styles: {
-						'font-weight': 'bold'
-					}
-				}
-			]
+		editor.commands.add( 'input', inputCommand );
+
+		injectUnsafeKeystrokesHandling( editor );
+		injectTypingMutationsHandling( editor );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/deletecommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/deletecommand
+ */
+
+
+
+
+
+
+
+
+/**
+ * The delete command. Used by the {@link module:typing/delete~Delete delete feature} to handle the <kbd>Delete</kbd> and
+ * <kbd>Backspace</kbd> keys.
+ *
+ * @extends module:core/command~Command
+ */
+class deletecommand_DeleteCommand extends Command {
+	/**
+	 * Creates an instance of the command.
+	 *
+	 * @param {module:core/editor/editor~Editor} editor
+	 * @param {'forward'|'backward'} direction The directionality of the delete describing in what direction it
+	 * should consume the content when the selection is collapsed.
+	 */
+	constructor( editor, direction ) {
+		super( editor );
+
+		/**
+		 * The directionality of the delete describing in what direction it should
+		 * consume the content when the selection is collapsed.
+		 *
+		 * @readonly
+		 * @member {'forward'|'backward'} #direction
+		 */
+		this.direction = direction;
+
+		/**
+		 * Delete's change buffer used to group subsequent changes into batches.
+		 *
+		 * @readonly
+		 * @private
+		 * @member {typing.ChangeBuffer} #buffer
+		 */
+		this._buffer = new changebuffer_ChangeBuffer( editor.model, editor.config.get( 'typing.undoStep' ) );
+	}
+
+	/**
+	 * Executes the delete command. Depending on whether the selection is collapsed or not, deletes its content
+	 * or a piece of content in the {@link #direction defined direction}.
+	 *
+	 * @fires execute
+	 * @param {Object} [options] The command options.
+	 * @param {'character'} [options.unit='character'] See {@link module:engine/model/utils/modifyselection~modifySelection}'s options.
+	 * @param {Number} [options.sequence=1] A number describing which subsequent delete event it is without the key being released.
+	 * See the {@link module:engine/view/document~Document#event:delete} event data.
+	 */
+	execute( options = {} ) {
+		const model = this.editor.model;
+		const doc = model.document;
+
+		model.enqueueChange( this._buffer.batch, writer => {
+			this._buffer.lock();
+
+			const selection = new model_selection_Selection( doc.selection );
+
+			// Do not replace the whole selected content if selection was collapsed.
+			// This prevents such situation:
+			//
+			// <h1></h1><p>[]</p>	-->  <h1>[</h1><p>]</p> 		-->  <p></p>
+			// starting content		-->   after `modifySelection`	-->  after `deleteContent`.
+			const doNotResetEntireContent = selection.isCollapsed;
+
+			// Try to extend the selection in the specified direction.
+			if ( selection.isCollapsed ) {
+				model.modifySelection( selection, { direction: this.direction, unit: options.unit } );
+			}
+
+			// Check if deleting in an empty editor. See #61.
+			if ( this._shouldEntireContentBeReplacedWithParagraph( options.sequence || 1 ) ) {
+				this._replaceEntireContentWithParagraph( writer );
+
+				return;
+			}
+
+			// If selection is still collapsed, then there's nothing to delete.
+			if ( selection.isCollapsed ) {
+				return;
+			}
+
+			let changeCount = 0;
+
+			selection.getFirstRange().getMinimalFlatRanges().forEach( range => {
+				changeCount += count_count(
+					range.getWalker( { singleCharacters: true, ignoreElementEnd: true, shallow: true } )
+				);
+			} );
+
+			model.deleteContent( selection, { doNotResetEntireContent } );
+			this._buffer.input( changeCount );
+
+			writer.setSelection( selection );
+
+			this._buffer.unlock();
+		} );
+	}
+
+	/**
+	 * If the user keeps <kbd>Backspace</kbd> or <kbd>Delete</kbd> key pressed, the content of the current
+	 * editable will be cleared. However, this will not yet lead to resetting the remaining block to a paragraph
+	 * (which happens e.g. when the user does <kbd>Ctrl</kbd> + <kbd>A</kbd>, <kbd>Backspace</kbd>).
+	 *
+	 * But, if the user pressed the key in an empty editable for the first time,
+	 * we want to replace the entire content with a paragraph if:
+	 *
+	 * * the current limit element is empty,
+	 * * the paragraph is allowed in the limit element,
+	 * * the limit doesn't already have a paragraph inside.
+	 *
+	 * See https://github.com/ckeditor/ckeditor5-typing/issues/61.
+	 *
+	 * @private
+	 * @param {Number} sequence A number describing which subsequent delete event it is without the key being released.
+	 * @returns {Boolean}
+	 */
+	_shouldEntireContentBeReplacedWithParagraph( sequence ) {
+		// Does nothing if user pressed and held the "Backspace" or "Delete" key.
+		if ( sequence > 1 ) {
+			return false;
+		}
+
+		const model = this.editor.model;
+		const doc = model.document;
+		const selection = doc.selection;
+		const limitElement = model.schema.getLimitElement( selection );
+
+		// If a collapsed selection contains the whole content it means that the content is empty
+		// (from the user perspective).
+		const limitElementIsEmpty = selection.isCollapsed && selection.containsEntireContent( limitElement );
+
+		if ( !limitElementIsEmpty ) {
+			return false;
+		}
+
+		if ( !model.schema.checkChild( limitElement, 'paragraph' ) ) {
+			return false;
+		}
+
+		const limitElementFirstChild = limitElement.getChild( 0 );
+
+		// Does nothing if the limit element already contains only a paragraph.
+		// We ignore the case when paragraph might have some inline elements (<p><inlineWidget>[]</inlineWidget></p>)
+		// because we don't support such cases yet and it's unclear whether inlineWidget shouldn't be a limit itself.
+		if ( limitElementFirstChild && limitElementFirstChild.name === 'paragraph' ) {
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * The entire content is replaced with the paragraph. Selection is moved inside the paragraph.
+	 *
+	 * @private
+	 */
+	_replaceEntireContentWithParagraph( writer ) {
+		const model = this.editor.model;
+		const doc = model.document;
+		const selection = doc.selection;
+		const limitElement = model.schema.getLimitElement( selection );
+		const paragraph = new model_element_Element( 'paragraph' );
+
+		writer.remove( model_range_Range.createIn( limitElement ) );
+		writer.insert( paragraph, limitElement );
+
+		writer.setSelection( paragraph, 0 );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/deleteobserver.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/deleteobserver
+ */
+
+
+
+
+
+
+/**
+ * Delete observer introduces the {@link module:engine/view/document~Document#event:delete} event.
+ *
+ * @extends module:engine/view/observer/observer~Observer
+ */
+class deleteobserver_DeleteObserver extends Observer {
+	constructor( view ) {
+		super( view );
+
+		const document = view.document;
+		let sequence = 0;
+
+		document.on( 'keyup', ( evt, data ) => {
+			if ( data.keyCode == keyCodes.delete || data.keyCode == keyCodes.backspace ) {
+				sequence = 0;
+			}
 		} );
 
-		// Create bold command.
-		editor.commands.add( BOLD, new attributecommand_AttributeCommand( editor, BOLD ) );
+		document.on( 'keydown', ( evt, data ) => {
+			const deleteData = {};
 
-		// Set the Ctrl+B keystroke.
-		editor.keystrokes.set( 'CTRL+B', BOLD );
+			if ( data.keyCode == keyCodes.delete ) {
+				deleteData.direction = 'forward';
+				deleteData.unit = 'character';
+			} else if ( data.keyCode == keyCodes.backspace ) {
+				deleteData.direction = 'backward';
+				deleteData.unit = 'codePoint';
+			} else {
+				return;
+			}
+
+			const hasWordModifier = src_env.isMac ? data.altKey : data.ctrlKey;
+			deleteData.unit = hasWordModifier ? 'word' : deleteData.unit;
+			deleteData.sequence = ++sequence;
+
+			// Save the event object to check later if it was stopped or not.
+			let event;
+			document.once( 'delete', evt => ( event = evt ), { priority: 'highest' } );
+
+			document.fire( 'delete', new domeventdata_DomEventData( document, data.domEvent, deleteData ) );
+
+			// Stop `keydown` event if `delete` event was stopped.
+			// https://github.com/ckeditor/ckeditor5/issues/753
+			if ( event && event.stop.called ) {
+				evt.stop();
+			}
+		} );
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	observe() {}
+}
+
+/**
+ * Event fired when the user tries to delete content (e.g. presses <kbd>Delete</kbd> or <kbd>Backspace</kbd>).
+ *
+ * Note: This event is fired by the {@link module:typing/deleteobserver~DeleteObserver observer}
+ * (usually registered by the {@link module:typing/delete~Delete delete feature}).
+ *
+ * @event module:engine/view/document~Document#event:delete
+ * @param {module:engine/view/observer/domeventdata~DomEventData} data
+ * @param {'forward'|'delete'} data.direction The direction in which the deletion should happen.
+ * @param {'character'|'word'} data.unit The "amount" of content that should be deleted.
+ * @param {Number} data.sequence A number describing which subsequent delete event it is without the key being released.
+ * If it's 2 or more it means that the key was pressed and hold.
+ */
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/utils/injectandroidbackspacemutationshandling.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/utils/injectandroidbackspacenutationshandling
+ */
+
+
+
+
+
+
+/**
+ * Handles mutations triggered by <kbd>Backspace</kbd> on Android.
+ * Due to the fact that on Android `keydown` events don't have the `keyCode` set, we are not able
+ * to handle backspacing directly. We need to guess that from mutations which the IME
+ * on Android caused.
+ *
+ * @param {module:core/editor/editor~Editor} editor The editor instance.
+ */
+function injectAndroidBackspaceMutationsHandling( editor ) {
+	const model = editor.model;
+	const view = editor.editing.view;
+	const selectionChangeToleranceMs = 200;
+
+	let previousSelection = null;
+	let currentSelection = new model_selection_Selection( model.document.selection );
+	let latestSelectionChangeMs = Date.now();
+
+	model.document.selection.on( 'change', handleSelectionChange );
+
+	view.document.on( 'mutations', handleMutations, { priority: 'highest' } );
+
+	// Saves current and previous selection when it changes. Saved selections are used
+	// to remove correct piece of content when `Backspace` mutations are detected.
+	//
+	// @param {Object} evt
+	function handleSelectionChange( evt ) {
+		const newSelection = new model_selection_Selection( evt.source );
+		if ( !currentSelection.isEqual( newSelection ) ) {
+			previousSelection = currentSelection;
+			currentSelection = newSelection;
+			latestSelectionChangeMs = Date.now();
+		}
+	}
+
+	// Handles DOM mutations and checks if they should be processed as block elements removal mutations.
+	//
+	// @param {Object} evt
+	// @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
+	// module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
+	function handleMutations( evt, mutations ) {
+		if ( containerChildrenMutated( mutations ) && containsContainersRemoval( mutations ) ) {
+			handleContainerRemovalMutations();
+
+			// Stop mutations event propagation so other mutation handlers are not triggered.
+			evt.stop();
+		}
+	}
+
+	// Handles situations when mutations were generated by container removal.
+	// It happens on Android devices where every typing input has `229` key code
+	// and delete observer will not be triggered. In such cases we need to handle
+	// container removal mutations manually.
+	function handleContainerRemovalMutations() {
+		if ( shouldUsePreviousSelection() ) {
+			// If previous selection is used, update model selection in order
+			// to use `delete` command and to make `undo` work correctly.
+			model.enqueueChange( writer => {
+				writer.setSelection( previousSelection );
+			} );
+		}
+
+		editor.execute( 'delete' );
+	}
+
+	// Whether previously saved selection should be used instead of the current one to remove content.
+	//
+	// On Android devices when pressing backspace on non-collapsed selection, selection like:
+	//
+	//		`<h1>[Foo</h1><p>Bar]</p>`
+	//
+	// is changed to:
+	//
+	//		`<h1>Foo</h1><p>Bar[]</p>`
+	//
+	// even before `keypress` event, so in such cases we have to rely on previous selection to correctly process selected content.
+	//
+	// Previous selection will be used if:
+	//
+	//		* current selection is collapsed (see example above),
+	//		* previous selection exists, is non-collapsed and has same ending (last position) as the current one,
+	//		* change of the selection happened not earlier than X milliseconds ago (see `selectionChangeToleranceMs`).
+	//
+	// The last check is needed, because user can manually collapse the selection on its current end and then press `Backspace`.
+	// In such situations timing determines if the selection change was caused by the user or browser native behaviour.
+	// However, this happens only if selection was collapsed by the user on the beginning of the paragraph (so mutations
+	// still will show container removal).
+	//
+	// @returns {Boolean}
+	function shouldUsePreviousSelection() {
+		return Date.now() - latestSelectionChangeMs < selectionChangeToleranceMs &&
+			previousSelection && !previousSelection.isCollapsed && currentSelection.isCollapsed &&
+			currentSelection.getLastPosition().isEqual( previousSelection.getLastPosition() );
+	}
+}
+
+// Checks whether mutations array contains mutation generated by container/containers removal.
+// For example mutations generated on Android when pressing `backspace` on the beginning of the line:
+//
+//		<h1>Header1</h1>
+//		<p>{}Paragraph</p>
+//
+// are:
+//
+//		[
+//			{ newChildren: [], oldChildren: [ 'Paragraph' ], node: P, type: 'children' },
+//			{ newChildren: [ ContainerElement ], oldChildren: [ ContainerElement, ContainerElement ], node: Root, type: 'children' },
+//			{ newChildren: [ 'Heading 1Paragraph' ], oldChildren: [ 'Heading 1' ], node: H1, type: 'children' }
+//		]
+//
+// The 1st and 3rd mutations are just changes in a text (1st - text in `p` element was removed, 3rd - text in `h2` was changed)
+// and the 2nd one shows that one `ContainerElement` was removed. We have to recognize if mutations like 2nd one are present.
+// Based on that heuristic mutations are treated as the one removing container element.
+//
+// @private
+// @param {Array.<module:engine/view/observer/mutationobserver~MutatedText|
+// module:engine/view/observer/mutationobserver~MutatedChildren>} mutations
+// @returns {Boolean}
+function containsContainersRemoval( mutations ) {
+	for ( const mutation of mutations ) {
+		if ( mutation.type !== 'children' ) {
+			continue;
+		}
+
+		const childrenBefore = mutation.oldChildren;
+		const childrenAfter = mutation.newChildren;
+
+		// Check if only containers were present before the mutation.
+		if ( !hasOnlyContainers( childrenBefore ) ) {
+			continue;
+		}
+
+		const diffResult = diff_diff( childrenBefore, childrenAfter );
+
+		// Check if there was only removing in that mutation without any insertions.
+		const hasDelete = diffResult.some( item => item === 'delete' );
+		const hasInsert = diffResult.some( item => item === 'insert' );
+
+		if ( hasDelete && !hasInsert ) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+// Whether provided array contains only nodes of `containerElement` type.
+//
+// @private
+// @param {Array.<module:engine/view/node~Node>} children
+// @returns {Boolean}
+function hasOnlyContainers( children ) {
+	return children.every( child => child.is( 'containerElement' ) );
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/delete.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/delete
+ */
+
+
+
+
+
+
+
+/**
+ * The delete and backspace feature. Handles the <kbd>Delete</kbd> and <kbd>Backspace</kbd> keys in the editor.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class delete_Delete extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Delete';
+	}
+
+	init() {
+		const editor = this.editor;
+		const view = editor.editing.view;
+		const viewDocument = view.document;
+
+		view.addObserver( deleteobserver_DeleteObserver );
+
+		editor.commands.add( 'forwardDelete', new deletecommand_DeleteCommand( editor, 'forward' ) );
+		editor.commands.add( 'delete', new deletecommand_DeleteCommand( editor, 'backward' ) );
+
+		this.listenTo( viewDocument, 'delete', ( evt, data ) => {
+			editor.execute( data.direction == 'forward' ? 'forwardDelete' : 'delete', { unit: data.unit, sequence: data.sequence } );
+			data.preventDefault();
+			view.scrollToTheSelection();
+		} );
+
+		injectAndroidBackspaceMutationsHandling( editor );
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-typing/src/typing.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module typing/typing
+ */
+
+
+
+
+
+/**
+ * The typing feature. It handles typing.
+ *
+ * This is a "glue" plugin which loads the {@link module:typing/input~Input} and {@link module:typing/delete~Delete}
+ * plugins.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class typing_Typing extends Plugin {
+	static get requires() {
+		return [ input_Input, delete_Delete ];
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Typing';
+	}
+}
+
+/**
+ * The configuration of the typing features. Used by the features from the `@ckeditor/ckeditor5-typing` package.
+ *
+ * Read more in {@link module:typing/typing~TypingConfig}.
+ *
+ * @member {module:typing/typing~TypingConfig} module:core/editor/editorconfig~EditorConfig#typing
+ */
+
+/**
+ * The configuration of the typing features. Used by the typing features in `@ckeditor/ckeditor5-typing` package.
+ *
+ *		ClassicEditor
+ *			.create( editorElement, {
+ * 				typing: ... // Typing feature options.
+ *			} )
+ *			.then( ... )
+ *			.catch( ... );
+ *
+ * See {@link module:core/editor/editorconfig~EditorConfig all editor options}.
+ *
+ * @interface TypingConfig
+ */
+
+/**
+ * The granularity of undo/redo for typing and deleting. The value `20` means (more or less) that a new undo step
+ * is created every 20 characters are inserted or deleted.
+ *
+ * @member {Number} [module:typing/typing~TypingConfig#undoStep=20]
+ */
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/model/operation/nooperation.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module engine/model/operation/nooperation
+ */
+
+
+
+/**
+ * Operation which is doing nothing ("empty operation", "do-nothing operation", "noop"). This is an operation,
+ * which when executed does not change the tree model. It still has some parameters defined for transformation purposes.
+ *
+ * In most cases this operation is a result of transforming operations. When transformation returns
+ * {@link module:engine/model/operation/nooperation~NoOperation} it means that changes done by the transformed operation
+ * have already been applied.
+ *
+ * @extends module:engine/model/operation/operation~Operation
+ */
+class nooperation_NoOperation extends Operation {
+	get type() {
+		return 'noop';
+	}
+
+	/**
+	 * Creates and returns an operation that has the same parameters as this operation.
+	 *
+	 * @returns {module:engine/model/operation/nooperation~NoOperation} Clone of this operation.
+	 */
+	clone() {
+		return new nooperation_NoOperation( this.baseVersion );
+	}
+
+	/**
+	 * See {@link module:engine/model/operation/operation~Operation#getReversed `Operation#getReversed()`}.
+	 *
+	 * @returns {module:engine/model/operation/nooperation~NoOperation}
+	 */
+	getReversed() {
+		return new nooperation_NoOperation( this.baseVersion + 1 );
+	}
+
+	_execute() {
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	static get className() {
+		return 'NoOperation';
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-engine/src/model/operation/transform.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const transformations = new Map();
+
+/**
+ * @module engine/model/operation/transform
+ */
+
+/**
+ * Sets a transformation function to be be used to transform instances of class `OperationA` by instances of class `OperationB`.
+ *
+ * The `transformationFunction` is passed three parameters:
+ *
+ * * `a` - operation to be transformed, an instance of `OperationA`,
+ * * `b` - operation to be transformed by, an instance of `OperationB`,
+ * * {@link module:engine/model/operation/transform~TransformationContext `context`} - object with additional information about
+ * transformation context.
+ *
+ * The `transformationFunction` should return transformation result, which is an array with one or multiple
+ * {@link module:engine/model/operation/operation~Operation operation} instances.
+ *
+ * @protected
+ * @param {Function} OperationA
+ * @param {Function} OperationB
+ * @param {Function} transformationFunction Function to use for transforming.
+ */
+function setTransformation( OperationA, OperationB, transformationFunction ) {
+	let aGroup = transformations.get( OperationA );
+
+	if ( !aGroup ) {
+		aGroup = new Map();
+		transformations.set( OperationA, aGroup );
+	}
+
+	aGroup.set( OperationB, transformationFunction );
+}
+
+/**
+ * Returns a previously set transformation function for transforming an instance of `OperationA` by an instance of `OperationB`.
+ *
+ * If no transformation was set for given pair of operations, {@link module:engine/model/operation/transform~noUpdateTransformation}
+ * is returned. This means that if no transformation was set, the `OperationA` instance will not change when transformed
+ * by the `OperationB` instance.
+ *
+ * @private
+ * @param {Function} OperationA
+ * @param {Function} OperationB
+ * @returns {Function} Function set to transform an instance of `OperationA` by an instance of `OperationB`.
+ */
+function getTransformation( OperationA, OperationB ) {
+	const aGroup = transformations.get( OperationA );
+
+	if ( aGroup && aGroup.has( OperationB ) ) {
+		return aGroup.get( OperationB );
+	}
+
+	return noUpdateTransformation;
+}
+
+/**
+ * A transformation function that only clones operation to transform, without changing it.
+ *
+ * @private
+ * @param {module:engine/model/operation/operation~Operation} a Operation to transform.
+ * @returns {Array.<module:engine/model/operation/operation~Operation>}
+ */
+function noUpdateTransformation( a ) {
+	return [ a ];
+}
+
+/**
+ * Transforms operation `a` by operation `b`.
+ *
+ * @param {module:engine/model/operation/operation~Operation} a Operation to be transformed.
+ * @param {module:engine/model/operation/operation~Operation} b Operation to transform by.
+ * @param {module:engine/model/operation/transform~TransformationContext} context Transformation context for this transformation.
+ * @returns {Array.<module:engine/model/operation/operation~Operation>} Transformation result.
+ */
+function transform_transform( a, b, context = {} ) {
+	const transformationFunction = getTransformation( a.constructor, b.constructor );
+
+	try {
+		a = a.clone();
+
+		return transformationFunction( a, b, context );
+	} catch ( e ) {
+		log["a" /* default */].error( 'Error during operation transformation!', e.message );
+		log["a" /* default */].error( 'Transformed operation', a );
+		log["a" /* default */].error( 'Operation transformed by', b );
+		log["a" /* default */].error( 'context.aIsStrong', context.aIsStrong );
+		log["a" /* default */].error( 'context.aWasUndone', context.aWasUndone );
+		log["a" /* default */].error( 'context.bWasUndone', context.bWasUndone );
+		log["a" /* default */].error( 'context.abRelation', context.abRelation );
+		log["a" /* default */].error( 'context.baRelation', context.baRelation );
+
+		throw e;
+	}
+}
+
+/**
+ * Performs a transformation of two sets of operations - `operationsA` and `operationsB`. The transformation is two-way -
+ * both transformed `operationsA` and transformed `operationsB` are returned.
+ *
+ * Note, that the first operation in each set should base on the same document state (
+ * {@link module:engine/model/document~Document#version document version}).
+ *
+ * It is assumed that `operationsA` are "more important" during conflict resolution between two operations.
+ *
+ * New copies of both passed arrays and operations inside them are returned. Passed arguments are not altered.
+ *
+ * Base versions of the transformed operations sets are updated accordingly. For example, assume that base versions are `4`
+ * and there are `3` operations in `operationsA` and `5` operations in `operationsB`. Then:
+ *
+ * * transformed `operationsA` will start from base version `9` (`4` base version + `5` operations B),
+ * * transformed `operationsB` will start from base version `7` (`4` base version + `3` operations A).
+ *
+ * If no operation was broken into two during transformation, then both sets will end up with an operation that bases on version `11`:
+ *
+ * * transformed `operationsA` start from `9` and there are `3` of them, so the last will have `baseVersion` equal to `11`,
+ * * transformed `operationsB` start from `7` and there are `5` of them, so the last will have `baseVersion` equal to `11`.
+ *
+ * @param {Array.<module:engine/model/operation/operation~Operation>} operationsA
+ * @param {Array.<module:engine/model/operation/operation~Operation>} operationsB
+ * @param {Object} options Additional transformation options.
+ * @param {module:engine/model/document~Document|null} options.document Document which the operations change.
+ * @param {Boolean} [options.useRelations=false] Whether during transformation relations should be used (used during undo for
+ * better conflict resolution).
+ * @param {Boolean} [options.padWithNoOps=false] Whether additional {@link module:engine/model/operation/nooperation~NoOperation}s
+ * should be added to the transformation results to force the same last base version for both transformed sets (in case
+ * if some operations got broken into multiple operations during transformation).
+ * @returns {Object} Transformation result.
+ * @returns {Array.<module:engine/model/operation/operation~Operation>} return.operationsA Transformed `operationsA`.
+ * @returns {Array.<module:engine/model/operation/operation~Operation>} return.operationsB Transformed `operationsB`.
+ */
+function transformSets( operationsA, operationsB, options ) {
+	// Create new arrays so the originally passed arguments are not changed.
+	// No need to clone operations, they are cloned as they are transformed.
+	operationsA = operationsA.slice();
+	operationsB = operationsB.slice();
+
+	// If one of sets is empty there is simply nothing to transform, so return sets as they are.
+	if ( operationsA.length == 0 || operationsB.length == 0 ) {
+		return { operationsA, operationsB };
+	}
+	//
+	// Following is a description of transformation process:
+	//
+	// There are `operationsA` and `operationsB` to be transformed, both by both.
+	//
+	// So, suppose we have sets of two operations each: `operationsA` = `[ a1, a2 ]`, `operationsB` = `[ b1, b2 ]`.
+	//
+	// Remember, that we can only transform operations that base on the same context. We assert that `a1` and `b1` base on
+	// the same context and we transform them. Then, we get `a1'` and `b1'`. `a2` bases on a context with `a1` -- `a2`
+	// is an operation that followed `a1`. Similarly, `b2` bases on a context with `b1`.
+	//
+	// However, since `a1'` is a result of transformation by `b1`, `a1'` now also has a context with `b1`. This means that
+	// we can safely transform `a1'` by `b2`. As we finish transforming `a1`, we also transformed all `operationsB`.
+	// All `operationsB` also have context including `a1`. Now, we can properly transform `a2` by those operations.
+	//
+	// The transformation process can be visualized on a transformation diagram ("diamond diagram"):
+	//
+	//          [the initial state]
+	//         [common for a1 and b1]
+	//
+	//                   *
+	//                  / \
+	//                 /   \
+	//               b1     a1
+	//               /       \
+	//              /         \
+	//             *           *
+	//            / \         / \
+	//           /   \       /   \
+	//         b2    a1'   b1'    a2
+	//         /       \   /       \
+	//        /         \ /         \
+	//       *           *           *
+	//        \         / \         /
+	//         \       /   \       /
+	//        a1''   b2'   a2'   b1''
+	//           \   /       \   /
+	//            \ /         \ /
+	//             *           *
+	//              \         /
+	//               \       /
+	//              a2''   b2''
+	//                 \   /
+	//                  \ /
+	//                   *
+	//
+	//           [the final state]
+	//
+	// The final state can be reached from the initial state by applying `a1`, `a2`, `b1''` and `b2''`, as well as by
+	// applying `b1`, `b2`, `a1''`, `a2''`. Note how the operations get to a proper common state before each pair is
+	// transformed.
+	//
+	// Another thing to consider is that an operation during transformation can be broken into multiple operations.
+	// Suppose that `a1` * `b1` = `[ a11', a12' ]` (instead of `a1'` that we considered previously).
+	//
+	// In that case, we leave `a12'` for later and we continue transforming `a11'` until it is transformed by all `operationsB`
+	// (in our case it is just `b2`). At this point, `b1` is transformed by "whole" `a1`, while `b2` is only transformed
+	// by `a11'`. Similarly, `a12'` is only transformed by `b1`. This leads to a conclusion that we need to start transforming `a12'`
+	// from the moment just after it was broken. So, `a12'` is transformed by `b2`. Now, "the whole" `a1` is transformed
+	// by `operationsB`, while all `operationsB` are transformed by "the whole" `a1`. This means that we can continue with
+	// following `operationsA` (in our case it is just `a2`).
+	//
+	// Of course, also `operationsB` can be broken. However, since we focus on transforming operation `a` to the end,
+	// the only thing to do is to store both pieces of operation `b`, so that the next transformed operation `a` will
+	// be transformed by both of them.
+	//
+	//                       *
+	//                      / \
+	//                     /   \
+	//                    /     \
+	//                  b1       a1
+	//                  /         \
+	//                 /           \
+	//                /             \
+	//               *               *
+	//              / \             / \
+	//             /  a11'         /   \
+	//            /     \         /     \
+	//          b2       *      b1'      a2
+	//          /       / \     /         \
+	//         /       /  a12' /           \
+	//        /       /     \ /             \
+	//       *       b2'     *               *
+	//        \     /       / \             /
+	//       a11'' /     b21'' \           /
+	//          \ /       /     \         /
+	//           *       *      a2'     b1''
+	//            \     / \       \     /
+	//          a12'' b22''\       \   /
+	//              \ /     \       \ /
+	//               *      a2''     *
+	//                \       \     /
+	//                 \       \  b21'''
+	//                  \       \ /
+	//                a2'''      *
+	//                    \     /
+	//                     \  b22'''
+	//                      \ /
+	//                       *
+	//
+	// Note, how `a1` is broken and transformed into `a11'` and `a12'`, while `b2'` got broken and transformed into `b21''` and `b22''`.
+	//
+	// Having all that on mind, here is an outline for the transformation process algorithm:
+	//
+	// 1. We have `operationsA` and `operationsB` array, which we dynamically update as the transformation process goes.
+	//
+	// 2. We take next (or first) operation from `operationsA` and check from which operation `b` we need to start transforming it.
+	// All original `operationsA` are set to be transformed starting from the first operation `b`.
+	//
+	// 3. We take operations from `operationsB`, one by one, starting from the correct one, and transform operation `a`
+	// by operation `b` (and vice versa). We update `operationsA` and `operationsB` by replacing the original operations
+	// with the transformation results.
+	//
+	// 4. If operation is broken into multiple operations, we save all the new operations in the place of the
+	// original operation.
+	//
+	// 5. Additionally, if operation `a` was broken, for the "new" operation, we remember from which operation `b` it should
+	// be transformed by.
+	//
+	// 6. We continue transforming "current" operation `a` until it is transformed by all `operationsB`. Then, go to 2.
+	// unless the last operation `a` was transformed.
+	//
+	// The actual implementation of the above algorithm is slightly different, as only one loop (while) is used.
+	// The difference is that we have "current" `a` operation to transform and we store the index of the next `b` operation
+	// to transform by. Each loop operates on two indexes then: index pointing to currently processed `a` operation and
+	// index pointing to next `b` operation. Each loop is just one `a * b` + `b * a` transformation. After each loop
+	// operation `b` index is updated. If all `b` operations were visited for the current `a` operation, we change
+	// current `a` operation index to the next one.
+	//
+
+	// For each operation `a`, keeps information what is the index in `operationsB` from which the transformation should start.
+	const nextTransformIndex = new WeakMap();
+
+	// For all the original `operationsA`, set that they should be transformed starting from the first of `operationsB`.
+	for ( const op of operationsA ) {
+		nextTransformIndex.set( op, 0 );
+	}
+
+	// Additional data that is used for some postprocessing after the main transformation process is done.
+	const data = {
+		nextBaseVersionA: operationsA[ operationsA.length - 1 ].baseVersion + 1,
+		nextBaseVersionB: operationsB[ operationsB.length - 1 ].baseVersion + 1,
+		originalOperationsACount: operationsA.length,
+		originalOperationsBCount: operationsB.length
+	};
+
+	const contextFactory = new transform_ContextFactory( options.document, options.useRelations );
+	contextFactory.setOriginalOperations( operationsA );
+	contextFactory.setOriginalOperations( operationsB );
+
+	// Index of currently transformed operation `a`.
+	let i = 0;
+
+	// While not all `operationsA` are transformed...
+	while ( i < operationsA.length ) {
+		// Get "current" operation `a`.
+		const opA = operationsA[ i ];
+
+		// For the "current" operation `a`, get the index of the next operation `b` to transform by.
+		const indexB = nextTransformIndex.get( opA );
+
+		// If operation `a` was already transformed by every operation `b`, change "current" operation `a` to the next one.
+		if ( indexB == operationsB.length ) {
+			i++;
+			continue;
+		}
+
+		const opB = operationsB[ indexB ];
+
+		// Transform `a` by `b` and `b` by `a`.
+		const newOpsA = transform_transform( opA, opB, contextFactory.getContext( opA, opB, true ) );
+		const newOpsB = transform_transform( opB, opA, contextFactory.getContext( opB, opA, false ) );
+		// As a result we get one or more `newOpsA` and one or more `newOpsB` operations.
+
+		// Update contextual information about operations.
+		contextFactory.updateRelation( opA, opB );
+
+		contextFactory.setOriginalOperations( newOpsA, opA );
+		contextFactory.setOriginalOperations( newOpsB, opB );
+
+		// For new `a` operations, update their index of the next operation `b` to transform them by.
+		//
+		// This is needed even if there was only one result (`a` was not broken) because that information is used
+		// at the beginning of this loop every time.
+		for ( const newOpA of newOpsA ) {
+			// Acknowledge, that operation `b` also might be broken into multiple operations.
+			//
+			// This is why we raise `indexB` not just by 1. If `newOpsB` are multiple operations, they will be
+			// spliced in the place of `opB`. So we need to change `transformBy` accordingly, so that an operation won't
+			// be transformed by the same operation (part of it) again.
+			nextTransformIndex.set( newOpA, indexB + newOpsB.length );
+		}
+
+		// Update `operationsA` and `operationsB` with the transformed versions.
+		operationsA.splice( i, 1, ...newOpsA );
+		operationsB.splice( indexB, 1, ...newOpsB );
+	}
+
+	if ( options.padWithNoOps ) {
+		// If no-operations padding is enabled, count how many extra `a` and `b` operations were generated.
+		const brokenOperationsACount = operationsA.length - data.originalOperationsACount;
+		const brokenOperationsBCount = operationsB.length - data.originalOperationsBCount;
+
+		// Then, if that number is not the same, pad `operationsA` or `operationsB` with correct number of no-ops so
+		// that the base versions are equalled.
+		//
+		// Note that only one array will be updated, as only one of those subtractions can be greater than zero.
+		padWithNoOps( operationsA, brokenOperationsBCount - brokenOperationsACount );
+		padWithNoOps( operationsB, brokenOperationsACount - brokenOperationsBCount );
+	}
+
+	// Finally, update base versions of transformed operations.
+	updateBaseVersions( operationsA, data.nextBaseVersionB );
+	updateBaseVersions( operationsB, data.nextBaseVersionA );
+
+	return { operationsA, operationsB };
+}
+
+// Gathers additional data about operations processed during transformation. Can be used to obtain contextual information
+// about two operations that are about to be transformed. This contextual information can be used for better conflict resolution.
+class transform_ContextFactory {
+	// Creates `ContextFactory` instance.
+	//
+	// @param {module:engine/model/document~Document} document Document which the operations change.
+	// @param {Boolean} useRelations Whether during transformation relations should be used (used during undo for
+	// better conflict resolution).
+	constructor( document, useRelations ) {
+		// `model.History` instance which information about undone operations will be taken from.
+		this._history = document.history;
+
+		// Whether additional context should be used.
+		this._useRelations = useRelations;
+
+		// For each operation that is created during transformation process, we keep a reference to the original operation
+		// which it comes from. The original operation works as a kind of "identifier". Every contextual information
+		// gathered during transformation that we want to save for given operation, is actually saved for the original operation.
+		// This way no matter if operation `a` is cloned, then transformed, even breaks, we still have access to the previously
+		// gathered data through original operation reference.
+		this._originalOperations = new Map();
+
+		// Relations is a double-map structure (maps in map) where for two operations we store how those operations were related
+		// to each other. Those relations are evaluated during transformation process. For every transformated pair of operations
+		// we keep relations between them.
+		this._relations = new Map();
+	}
+
+	// Sets "original operation" for given operations.
+	//
+	// During transformation process, operations are cloned, then changed, then processed again, sometimes broken into two
+	// or multiple operations. When gathering additional data it is important that all operations can be somehow linked
+	// so a cloned and transformed "version" still kept track of the data assigned earlier to it.
+	//
+	// The original operation object will be used as such an universal linking id. Throughout the transformation process
+	// all cloned operations will refer to "the original operation" when storing and reading additional data.
+	//
+	// If `takeFrom` is not set, each operation from `operations` array will be assigned itself as "the original operation".
+	// This should be used as an initialization step.
+	//
+	// If `takeFrom` is set, each operation from `operations` will be assigned the same original operation as assigned
+	// for `takeFrom` operation. This should be used to update original operations. It should be used in a way that
+	// `operations` are the result of `takeFrom` transformation to ensure proper "original operation propagation".
+	//
+	// @param {Array.<module:engine/model/operation/operation~Operation>} operations
+	// @param {module:engine/model/operation/operation~Operation|null} [takeFrom=null]
+	setOriginalOperations( operations, takeFrom = null ) {
+		const originalOperation = takeFrom ? this._originalOperations.get( takeFrom ) : null;
+
+		for ( const operation of operations ) {
+			this._originalOperations.set( operation, originalOperation || operation );
+		}
+	}
+
+	// Saves a relation between operations `opA` and `opB`.
+	//
+	// Relations are then later used to help solve conflicts when operations are transformed.
+	//
+	// @param {module:engine/model/operation/operation~Operation} opA
+	// @param {module:engine/model/operation/operation~Operation} opB
+	updateRelation( opA, opB ) {
+		// The use of relations is described in a bigger detail in transformation functions.
+		//
+		// In brief, this function, for specified pairs of operation types, checks how positions defined in those operations relate.
+		// Then those relations are saved. For example, for two move operations, it is saved if one of those operations target
+		// position is before the other operation source position. This kind of information gives contextual information when
+		// transformation is used during undo. Similar checks are done for other pairs of operations.
+		//
+		switch ( opA.constructor ) {
+			case moveoperation_MoveOperation: {
+				switch ( opB.constructor ) {
+					case mergeoperation_MergeOperation: {
+						if ( opA.targetPosition.isEqual( opB.sourcePosition ) || opB.movedRange.containsPosition( opA.targetPosition ) ) {
+							this._setRelation( opA, opB, 'insertAtSource' );
+						} else if ( opA.targetPosition.isEqual( opB.deletionPosition ) ) {
+							this._setRelation( opA, opB, 'insertBetween' );
+						}
+
+						break;
+					}
+
+					case moveoperation_MoveOperation: {
+						if ( opA.targetPosition.isEqual( opB.sourcePosition ) || opA.targetPosition.isBefore( opB.sourcePosition ) ) {
+							this._setRelation( opA, opB, 'insertBefore' );
+						} else {
+							this._setRelation( opA, opB, 'insertAfter' );
+						}
+
+						break;
+					}
+				}
+
+				break;
+			}
+
+			case splitoperation_SplitOperation: {
+				switch ( opB.constructor ) {
+					case mergeoperation_MergeOperation: {
+						if ( opA.splitPosition.isBefore( opB.sourcePosition ) ) {
+							this._setRelation( opA, opB, 'splitBefore' );
+						}
+
+						break;
+					}
+
+					case moveoperation_MoveOperation: {
+						if ( opA.splitPosition.isEqual( opB.sourcePosition ) || opA.splitPosition.isBefore( opB.sourcePosition ) ) {
+							this._setRelation( opA, opB, 'splitBefore' );
+						}
+
+						break;
+					}
+				}
+
+				break;
+			}
+
+			case mergeoperation_MergeOperation: {
+				switch ( opB.constructor ) {
+					case mergeoperation_MergeOperation: {
+						if ( !opA.targetPosition.isEqual( opB.sourcePosition ) ) {
+							this._setRelation( opA, opB, 'mergeTargetNotMoved' );
+						}
+
+						if ( opA.sourcePosition.isEqual( opB.sourcePosition ) ) {
+							this._setRelation( opA, opB, 'mergeSameElement' );
+						}
+
+						break;
+					}
+				}
+
+				break;
+			}
+		}
+	}
+
+	// Evaluates and returns contextual information about two given operations `opA` and `opB` which are about to be transformed.
+	//
+	// @param {module:engine/model/operation/operation~Operation} opA
+	// @param {module:engine/model/operation/operation~Operation} opB
+	// @returns {module:engine/model/operation/transform~TransformationContext}
+	getContext( opA, opB, aIsStrong ) {
+		return {
+			aIsStrong,
+			aWasUndone: this._wasUndone( opA ),
+			bWasUndone: this._wasUndone( opB ),
+			abRelation: this._useRelations ? this._getRelation( opA, opB ) : null,
+			baRelation: this._useRelations ? this._getRelation( opB, opA ) : null
+		};
+	}
+
+	// Returns whether given operation `op` has already been undone.
+	//
+	// Information whether an operation was undone gives more context when making a decision when two operations are in conflict.
+	//
+	// @param {module:engine/model/operation/operation~Operation} op
+	// @returns {Boolean}
+	_wasUndone( op ) {
+		// For `op`, get its original operation. After all, if `op` is a clone (or even transformed clone) of another
+		// operation, literally `op` couldn't be undone. It was just generated. If anything, it was the operation it origins
+		// from which was undone. So get that original operation.
+		const originalOp = this._originalOperations.get( op );
+
+		// And check with the document if the original operation was undone.
+		return originalOp.wasUndone || this._history.isUndoneOperation( originalOp );
+	}
+
+	// Returns a relation between `opA` and an operation which is undone by `opB`. This can be `String` value if a relation
+	// was set earlier or `null` if there was no relation between those operations.
+	//
+	// This is a little tricky to understand, so let's compare it to `ContextFactory#_wasUndone`.
+	//
+	// When `wasUndone( opB )` is used, we check if the `opB` has already been undone. It is obvious, that the
+	// undoing operation must happen after the undone operation. So, essentially, we have `opB`, we take document history,
+	// we look forward in the future and ask if in that future `opB` was undone.
+	//
+	// Relations is a backward process to `wasUndone()`.
+	//
+	// Long story short - using relations is asking what happened in the past. Looking back. This time we have an undoing
+	// operation `opB` which has undone some other operation. When there is a transformation `opA` x `opB` and there is
+	// a conflict to solve and `opB` is an undoing operation, we can look back in the history and see what was a relation
+	// between `opA` and the operation which `opB` undone. Basing on that relation from the past, we can now make
+	// a better decision when resolving a conflict between two operations, because we know more about the context of
+	// those two operations.
+	//
+	// This is why this function does not return a relation directly between `opA` and `opB` because we need to look
+	// back to search for a meaningful contextual information.
+	//
+	// @param {module:engine/model/operation/operation~Operation} opA
+	// @param {module:engine/model/operation/operation~Operation} opB
+	// @returns {String|null}
+	_getRelation( opA, opB ) {
+		// Get the original operation. Similarly as in `wasUndone()` it is used as an universal identifier for stored data.
+		const origB = this._originalOperations.get( opB );
+		const undoneB = this._history.getUndoneOperation( origB );
+
+		// If `opB` is not undoing any operation, there is no relation.
+		if ( !undoneB ) {
+			return null;
+		}
+
+		const origA = this._originalOperations.get( opA );
+		const relationsA = this._relations.get( origA );
+
+		// Get all relations for `opA`, and check if there is a relation with `opB`-undone-counterpart. If so, return it.
+		if ( relationsA ) {
+			return relationsA.get( undoneB ) || null;
+		}
+
+		return null;
+	}
+
+	// Helper function for `ContextFactory#updateRelations`.
+	//
+	// @private
+	// @param {module:engine/model/operation/operation~Operation} opA
+	// @param {module:engine/model/operation/operation~Operation} opB
+	// @param {String} relation
+	_setRelation( opA, opB, relation ) {
+		// As always, setting is for original operations, not the clones/transformed operations.
+		const origA = this._originalOperations.get( opA );
+		const origB = this._originalOperations.get( opB );
+
+		let relationsA = this._relations.get( origA );
+
+		if ( !relationsA ) {
+			relationsA = new Map();
+			this._relations.set( origA, relationsA );
+		}
+
+		relationsA.set( origB, relation );
+	}
+}
+
+/**
+ * Holds additional contextual information about a transformed pair of operations (`a` and `b`). Those information
+ * can be used for better conflict resolving.
+ *
+ * @typedef {Object} module:engine/model/operation/transform~TransformationContext
+ *
+ * @property {Boolean} aIsStrong Whether `a` is strong operation in this transformation, or weak.
+ * @property {Boolean} aWasUndone Whether `a` operation was undone.
+ * @property {Boolean} bWasUndone Whether `b` operation was undone.
+ * @property {String|null} abRelation The relation between `a` operation and an operation undone by `b` operation.
+ * @property {String|null} baRelation The relation between `b` operation and an operation undone by `a` operation.
+ */
+
+/**
+ * An utility function that updates {@link module:engine/model/operation/operation~Operation#baseVersion base versions}
+ * of passed operations.
+ *
+ * The function simply sets `baseVersion` as a base version of the first passed operation and then increments it for
+ * each following operation in `operations`.
+ *
+ * @private
+ * @param {Array.<module:engine/model/operation/operation~Operation>} operations Operations to update.
+ * @param {Number} baseVersion Base version to set for the first operation in `operations`.
+ */
+function updateBaseVersions( operations, baseVersion ) {
+	for ( const operation of operations ) {
+		operation.baseVersion = baseVersion++;
+	}
+}
+
+/**
+ * Adds `howMany` instances of {@link module:engine/model/operation/nooperation~NoOperation} to `operations` set.
+ *
+ * @private
+ * @param {Array.<module:engine/model/operation/operation~Operation>} operations
+ * @param {Number} howMany
+ */
+function padWithNoOps( operations, howMany ) {
+	for ( let i = 0; i < howMany; i++ ) {
+		operations.push( new nooperation_NoOperation( 0 ) );
+	}
+}
+
+// -----------------------
+
+setTransformation( attributeoperation_AttributeOperation, attributeoperation_AttributeOperation, ( a, b, context ) => {
+	if ( a.key === b.key ) {
+		// If operations attributes are in conflict, check if their ranges intersect and manage them properly.
+
+		// First, we want to apply change to the part of a range that has not been changed by the other operation.
+		const operations = a.range.getDifference( b.range ).map( range => {
+			return new attributeoperation_AttributeOperation( range, a.key, a.oldValue, a.newValue, 0 );
+		} );
+
+		// Then we take care of the common part of ranges.
+		const common = a.range.getIntersection( b.range );
+
+		if ( common ) {
+			// If this operation is more important, we also want to apply change to the part of the
+			// original range that has already been changed by the other operation. Since that range
+			// got changed we also have to update `oldValue`.
+			if ( context.aIsStrong ) {
+				operations.push( new attributeoperation_AttributeOperation( common, b.key, b.newValue, a.newValue, 0 ) );
+			}
+		}
+
+		if ( operations.length == 0 ) {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+
+		return operations;
+	} else {
+		// If operations don't conflict, simply return an array containing just a clone of this operation.
+		return [ a ];
+	}
+} );
+
+setTransformation( attributeoperation_AttributeOperation, insertoperation_InsertOperation, ( a, b ) => {
+	// Case 1:
+	//
+	// The attribute operation range includes the position where nodes were inserted.
+	// There are two possible scenarios: the inserted nodes were text and they should receive attributes or
+	// the inserted nodes were elements and they should not receive attributes.
+	//
+	if ( a.range.start.hasSameParentAs( b.position ) && a.range.containsPosition( b.position ) ) {
+		// If new nodes should not receive attributes, two separated ranges will be returned.
+		// Otherwise, one expanded range will be returned.
+		const range = a.range._getTransformedByInsertion( b.position, b.howMany, !b.shouldReceiveAttributes );
+		const result = range.map( r => {
+			return new attributeoperation_AttributeOperation( r, a.key, a.oldValue, a.newValue, a.baseVersion );
+		} );
+
+		if ( b.shouldReceiveAttributes ) {
+			// `AttributeOperation#range` includes some newly inserted text.
+			// The operation should also change the attribute of that text. An example:
+			//
+			// Bold should be applied on the following range:
+			// <p>Fo[zb]ar</p>
+			//
+			// In meantime, new text is typed:
+			// <p>Fozxxbar</p>
+			//
+			// Bold should be applied also on the new text:
+			// <p>Fo[zxxb]ar</p>
+			// <p>Fo<$text bold="true">zxxb</$text>ar</p>
+			//
+			// There is a special case to consider here to consider.
+			//
+			// Consider setting an attribute with multiple possible values, for example `highlight`. The inserted text might
+			// have already an attribute value applied and the `oldValue` property of the attribute operation might be wrong:
+			//
+			// Attribute `highlight="yellow"` should be applied on the following range:
+			// <p>Fo[zb]ar<p>
+			//
+			// In meantime, character `x` with `highlight="red"` is typed:
+			// <p>Fo[z<$text highlight="red">x</$text>b]ar</p>
+			//
+			// In this case we cannot simply apply operation changing the attribute value from `null` to `"yellow"` for the whole range
+			// because that would lead to an exception (`oldValue` is incorrect for `x`).
+			//
+			// We also cannot break the original range as this would mess up a scenario when there are multiple following
+			// insert operations, because then only the first inserted character is included in those ranges:
+			// <p>Fo[z][x][b]ar</p>   -->   <p>Fo[z][x]x[b]ar</p>   -->   <p>Fo[z][x]xx[b]ar</p>
+			//
+			// So, the attribute range needs be expanded, no matter what attributes are set on the inserted nodes:
+			//
+			// <p>Fo[z<$text highlight="red">x</$text>b]ar</p>      <--- Change from `null` to `yellow`, throwing an exception.
+			//
+			// But before that operation would be applied, we will add an additional attribute operation that will change
+			// attributes on the inserted nodes in a way which would make the original operation correct:
+			//
+			// <p>Fo[z{<$text highlight="red">}x</$text>b]ar</p>    <--- Change range `{}` from `red` to `null`.
+			// <p>Fo[zxb]ar</p>                                     <--- Now change from `null` to `yellow` is completely fine.
+			//
+
+			// Generate complementary attribute operation. Be sure to add it before the original operation.
+			const op = _getComplementaryAttributeOperations( b, a.key, a.oldValue );
+
+			if ( op ) {
+				result.unshift( op );
+			}
+		}
+
+		// If nodes should not receive new attribute, we are done here.
+		return result;
+	}
+
+	// If insert operation is not expanding the attribute operation range, simply transform the range.
+	a.range = a.range._getTransformedByInsertion( b.position, b.howMany, false )[ 0 ];
+
+	return [ a ];
+} );
+
+/**
+ * Helper function for `AttributeOperation` x `InsertOperation` (and reverse) transformation.
+ *
+ * For given `insertOperation` it checks the inserted node if it has an attribute `key` set to a value different
+ * than `newValue`. If so, it generates an `AttributeOperation` which changes the value of `key` attribute to `newValue`.
+ *
+ * @private
+ * @param {module:engine/model/operation/insertoperation~InsertOperation} insertOperation
+ * @param {String} key
+ * @param {*} newValue
+ * @returns {module:engine/model/operation/attributeoperation~AttributeOperation|null}
+ */
+function _getComplementaryAttributeOperations( insertOperation, key, newValue ) {
+	const nodes = insertOperation.nodes;
+
+	// At the beginning we store the attribute value from the first node.
+	const insertValue = nodes.getNode( 0 ).getAttribute( key );
+
+	if ( insertValue == newValue ) {
+		return null;
+	}
+
+	const range = new model_range_Range( insertOperation.position, insertOperation.position.getShiftedBy( insertOperation.howMany ) );
+
+	return new attributeoperation_AttributeOperation( range, key, insertValue, newValue, 0 );
+}
+
+setTransformation( attributeoperation_AttributeOperation, mergeoperation_MergeOperation, ( a, b ) => {
+	const ranges = [];
+
+	// Case 1:
+	//
+	// Attribute change on the merged element. In this case, the merged element was moved to the graveyard.
+	// An additional attribute operation that will change the (re)moved element needs to be generated.
+	//
+	if ( a.range.start.hasSameParentAs( b.deletionPosition ) ) {
+		if ( a.range.containsPosition( b.deletionPosition ) || a.range.start.isEqual( b.deletionPosition ) ) {
+			ranges.push( model_range_Range.createFromPositionAndShift( b.graveyardPosition, 1 ) );
+		}
+	}
+
+	const range = a.range._getTransformedByMergeOperation( b );
+
+	// Do not add empty (collapsed) ranges to the result. `range` may be collapsed if it contained only the merged element.
+	if ( !range.isCollapsed ) {
+		ranges.push( range );
+	}
+
+	// Create `AttributeOperation`s out of the ranges.
+	return ranges.map( range => {
+		return new attributeoperation_AttributeOperation( range, a.key, a.oldValue, a.newValue, a.baseVersion );
+	} );
+} );
+
+setTransformation( attributeoperation_AttributeOperation, moveoperation_MoveOperation, ( a, b ) => {
+	const ranges = _breakRangeByMoveOperation( a.range, b );
+
+	// Create `AttributeOperation`s out of the ranges.
+	return ranges.map( range => new attributeoperation_AttributeOperation( range, a.key, a.oldValue, a.newValue, a.baseVersion ) );
+} );
+
+// Helper function for `AttributeOperation` x `MoveOperation` transformation.
+//
+// Takes the passed `range` and transforms it by move operation `moveOp` in a specific way. Only top-level nodes of `range`
+// are considered to be in the range. If move operation moves nodes deep from inside of the range, those nodes won't
+// be included in the result. In other words, top-level nodes of the ranges from the result are exactly the same as
+// top-level nodes of the original `range`.
+//
+// This is important for `AttributeOperation` because, for its range, it changes only the top-level nodes. So we need to
+// track only how those nodes have been affected by `MoveOperation`.
+//
+// @private
+// @param {module:engine/model/range~Range} range
+// @param {module:engine/model/operation/moveoperation~MoveOperation} moveOp
+// @returns {Array.<module:engine/model/range~Range>}
+function _breakRangeByMoveOperation( range, moveOp ) {
+	const moveRange = model_range_Range.createFromPositionAndShift( moveOp.sourcePosition, moveOp.howMany );
+
+	// We are transforming `range` (original range) by `moveRange` (range moved by move operation). As usual when it comes to
+	// transforming a ranges, we may have a common part of the ranges and we may have a difference part (zero to two ranges).
+	let common = null;
+	let difference = [];
+
+	// Let's compare the ranges.
+	if ( moveRange.containsRange( range, true ) ) {
+		// If the whole original range is moved, treat it whole as a common part. There's also no difference part.
+		common = range;
+	} else if ( range.start.hasSameParentAs( moveRange.start ) ) {
+		// If the ranges are "on the same level" (in the same parent) then move operation may move exactly those nodes
+		// that are changed by the attribute operation. In this case we get common part and difference part in the usual way.
+		difference = range.getDifference( moveRange );
+		common = range.getIntersection( moveRange );
+	} else {
+		// In any other situation we assume that original range is different than move range, that is that move operation
+		// moves other nodes that attribute operation change. Even if the moved range is deep inside in the original range.
+		//
+		// Note that this is different than in `.getIntersection` (we would get a common part in that case) and different
+		// than `.getDifference` (we would get two ranges).
+		difference = [ range ];
+	}
+
+	const result = [];
+
+	// The default behaviour of `_getTransformedByMove` might get wrong results for difference part, though, so
+	// we do it by hand.
+	for ( let diff of difference ) {
+		// First, transform the range by removing moved nodes. Since this is a difference, this is safe, `null` won't be returned
+		// as the range is different than the moved range.
+		diff = diff._getTransformedByDeletion( moveOp.sourcePosition, moveOp.howMany );
+
+		// Transform also `targetPosition`.
+		const targetPosition = moveOp.getMovedRangeStart();
+
+		// Spread the range only if moved nodes are inserted only between the top-level nodes of the `diff` range.
+		const spread = diff.start.hasSameParentAs( targetPosition );
+
+		// Transform by insertion of moved nodes.
+		diff = diff._getTransformedByInsertion( targetPosition, moveOp.howMany, spread );
+
+		result.push( ...diff );
+	}
+
+	// Common part can be simply transformed by the move operation. This is because move operation will not target to
+	// that common part (the operation would have to target inside its own moved range).
+	if ( common ) {
+		result.push(
+			common._getTransformedByMove( moveOp.sourcePosition, moveOp.targetPosition, moveOp.howMany, false )[ 0 ]
+		);
+	}
+
+	return result;
+}
+
+setTransformation( attributeoperation_AttributeOperation, splitoperation_SplitOperation, ( a, b ) => {
+	// Case 1:
+	//
+	// Split node is the last node in `AttributeOperation#range`.
+	// `AttributeOperation#range` needs to be expanded to include the new (split) node.
+	//
+	// Attribute `type` to be changed to `numbered` but the `listItem` is split.
+	// <listItem type="bulleted">foobar</listItem>
+	//
+	// After split:
+	// <listItem type="bulleted">foo</listItem><listItem type="bulleted">bar</listItem>
+	//
+	// After attribute change:
+	// <listItem type="numbered">foo</listItem><listItem type="numbered">foo</listItem>
+	//
+	if ( a.range.end.isEqual( b.insertionPosition ) ) {
+		if ( !b.graveyardPosition ) {
+			a.range.end.offset++;
+		}
+
+		return [ a ];
+	}
+
+	// Case 2:
+	//
+	// Split position is inside `AttributeOperation#range`, at the same level, so the nodes to change are
+	// not going to make a flat range.
+	//
+	// Content with range-to-change and split position:
+	// <p>Fo[zb^a]r</p>
+	//
+	// After split:
+	// <p>Fozb</p><p>ar</p>
+	//
+	// Make two separate ranges containing all nodes to change:
+	// <p>Fo[zb]</p><p>[a]r</p>
+	//
+	if ( a.range.start.hasSameParentAs( b.splitPosition ) && a.range.containsPosition( b.splitPosition ) ) {
+		const secondPart = a.clone();
+
+		secondPart.range = new model_range_Range(
+			model_position_Position.createFromPosition( b.moveTargetPosition ),
+			a.range.end._getCombined( b.splitPosition, b.moveTargetPosition )
+		);
+
+		a.range.end = model_position_Position.createFromPosition( b.splitPosition );
+		a.range.end.stickiness = 'toPrevious';
+
+		return [ a, secondPart ];
+	}
+
+	// The default case.
+	//
+	a.range = a.range._getTransformedBySplitOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( insertoperation_InsertOperation, attributeoperation_AttributeOperation, ( a, b ) => {
+	const result = [ a ];
+
+	// Case 1:
+	//
+	// The attribute operation range includes the position where nodes were inserted.
+	// There are two possible scenarios: the inserted nodes were text and they should receive attributes or
+	// the inserted nodes were elements and they should not receive attributes.
+	//
+	// This is a mirror scenario to the one described in `AttributeOperation` x `InsertOperation` transformation,
+	// although this case is a little less complicated. In this case we simply need to change attributes of the
+	// inserted nodes and that's it.
+	//
+	if ( a.shouldReceiveAttributes && a.position.hasSameParentAs( b.range.start ) && b.range.containsPosition( a.position ) ) {
+		const op = _getComplementaryAttributeOperations( a, b.key, b.newValue );
+
+		if ( op ) {
+			result.push( op );
+		}
+	}
+
+	// The default case is: do nothing.
+	// `AttributeOperation` does not change the model tree structure so `InsertOperation` does not need to be changed.
+	//
+	return result;
+} );
+
+setTransformation( insertoperation_InsertOperation, insertoperation_InsertOperation, ( a, b, context ) => {
+	// Case 1:
+	//
+	// Two insert operations insert nodes at the same position. Since they are the same, it needs to be decided
+	// what will be the order of inserted nodes. However, there is no additional information to help in that
+	// decision. Also, when `b` will be transformed by `a`, the same order must be maintained.
+	//
+	// To achieve that, we will check if the operation is strong.
+	// If it is, it won't get transformed. If it is not, it will be moved.
+	//
+	if ( a.position.isEqual( b.position ) && context.aIsStrong ) {
+		return [ a ];
+	}
+
+	// The default case.
+	//
+	a.position = a.position._getTransformedByInsertOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( insertoperation_InsertOperation, moveoperation_MoveOperation, ( a, b ) => {
+	// The default case.
+	//
+	a.position = a.position._getTransformedByMoveOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( insertoperation_InsertOperation, splitoperation_SplitOperation, ( a, b ) => {
+	// The default case.
+	//
+	a.position = a.position._getTransformedBySplitOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( insertoperation_InsertOperation, mergeoperation_MergeOperation, ( a, b ) => {
+	a.position = a.position._getTransformedByMergeOperation( b );
+
+	return [ a ];
+} );
+
+// -----------------------
+
+setTransformation( markeroperation_MarkerOperation, insertoperation_InsertOperation, ( a, b ) => {
+	if ( a.oldRange ) {
+		a.oldRange = a.oldRange._getTransformedByInsertOperation( b )[ 0 ];
+	}
+
+	if ( a.newRange ) {
+		a.newRange = a.newRange._getTransformedByInsertOperation( b )[ 0 ];
+	}
+
+	return [ a ];
+} );
+
+setTransformation( markeroperation_MarkerOperation, markeroperation_MarkerOperation, ( a, b, context ) => {
+	if ( a.name == b.name ) {
+		if ( context.aIsStrong ) {
+			a.oldRange = b.newRange ? model_range_Range.createFromRange( b.newRange ) : null;
+		} else {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+	}
+
+	return [ a ];
+} );
+
+setTransformation( markeroperation_MarkerOperation, mergeoperation_MergeOperation, ( a, b ) => {
+	if ( a.oldRange ) {
+		a.oldRange = a.oldRange._getTransformedByMergeOperation( b );
+	}
+
+	if ( a.newRange ) {
+		a.newRange = a.newRange._getTransformedByMergeOperation( b );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( markeroperation_MarkerOperation, moveoperation_MoveOperation, ( a, b ) => {
+	if ( a.oldRange ) {
+		a.oldRange = model_range_Range.createFromRanges( a.oldRange._getTransformedByMoveOperation( b ) );
+	}
+
+	if ( a.newRange ) {
+		a.newRange = model_range_Range.createFromRanges( a.newRange._getTransformedByMoveOperation( b ) );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( markeroperation_MarkerOperation, splitoperation_SplitOperation, ( a, b ) => {
+	if ( a.oldRange ) {
+		a.oldRange = a.oldRange._getTransformedBySplitOperation( b );
+	}
+
+	if ( a.newRange ) {
+		a.newRange = a.newRange._getTransformedBySplitOperation( b );
+	}
+
+	return [ a ];
+} );
+
+// -----------------------
+
+setTransformation( mergeoperation_MergeOperation, insertoperation_InsertOperation, ( a, b ) => {
+	if ( a.sourcePosition.hasSameParentAs( b.position ) ) {
+		a.howMany += b.howMany;
+	}
+
+	a.sourcePosition = a.sourcePosition._getTransformedByInsertOperation( b );
+	a.targetPosition = a.targetPosition._getTransformedByInsertOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( mergeoperation_MergeOperation, mergeoperation_MergeOperation, ( a, b, context ) => {
+	// Case 1:
+	//
+	// Same merge operations.
+	//
+	// Both operations have same source and target positions. So the element already got merged and there is
+	// theoretically nothing to do.
+	//
+	if ( a.sourcePosition.isEqual( b.sourcePosition ) && a.targetPosition.isEqual( b.targetPosition ) ) {
+		// There are two ways that we can provide a do-nothing operation.
+		//
+		// First is simply a NoOperation instance. We will use it if `b` operation was not undone.
+		//
+		// Second is a merge operation that has the source operation in the merged element - in the graveyard -
+		// same target position and `howMany` equal to `0`. So it is basically merging an empty element from graveyard
+		// which is almost the same as NoOperation.
+		//
+		// This way the merge operation can be later transformed by split operation
+		// to provide correct undo. This will be used if `b` operation was undone (only then it is correct).
+		//
+		if ( !context.bWasUndone ) {
+			return [ new nooperation_NoOperation( 0 ) ];
+		} else {
+			const path = b.graveyardPosition.path.slice();
+			path.push( 0 );
+
+			a.sourcePosition = new model_position_Position( b.graveyardPosition.root, path );
+			a.howMany = 0;
+
+			return [ a ];
+		}
+	}
+
+	// Case 2:
+	//
+	// Same merge source position but different target position.
+	//
+	// This can happen during collaboration. For example, if one client merged a paragraph to the previous paragraph
+	// and the other person removed that paragraph and merged the same paragraph to something before:
+	//
+	// Client A:
+	// <p>Foo</p><p>Bar</p><p>[]Xyz</p>
+	// <p>Foo</p><p>BarXyz</p>
+	//
+	// Client B:
+	// <p>Foo</p>[<p>Bar</p>]<p>Xyz</p>
+	// <p>Foo</p><p>[]Xyz</p>
+	// <p>FooXyz</p>
+	//
+	// In this case we need to decide where finally "Xyz" will land:
+	//
+	// <p>FooXyz</p>               graveyard: <p>Bar</p>
+	// <p>Foo</p>                  graveyard: <p>BarXyz</p>
+	//
+	// Let's move it in a way so that a merge operation that does not target to graveyard is more important so that
+	// nodes does not end up in the graveyard. It makes sense. Both for Client A and for Client B "Xyz" finally did not
+	// end up in the graveyard (see above).
+	//
+	// If neither or both operations point to graveyard, then let `aIsStrong` decide.
+	//
+	if ( a.sourcePosition.isEqual( b.sourcePosition ) && !a.targetPosition.isEqual( b.targetPosition ) && !context.bWasUndone ) {
+		const aToGraveyard = a.targetPosition.root.rootName == '$graveyard';
+		const bToGraveyard = b.targetPosition.root.rootName == '$graveyard';
+
+		// If `aIsWeak` it means that `a` points to graveyard while `b` doesn't. Don't move nodes then.
+		const aIsWeak = aToGraveyard && !bToGraveyard;
+
+		// If `bIsWeak` it means that `b` points to graveyard while `a` doesn't. Force moving nodes then.
+		const bIsWeak = bToGraveyard && !aToGraveyard;
+
+		// Force move if `b` is weak or neither operation is weak but `a` is stronger through `context.aIsStrong`.
+		const forceMove = bIsWeak || ( !aIsWeak && context.aIsStrong );
+
+		if ( forceMove ) {
+			const sourcePosition = b.targetPosition._getTransformedByMergeOperation( b );
+			const targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
+
+			return [ new moveoperation_MoveOperation( sourcePosition, a.howMany, targetPosition, 0 ) ];
+		} else {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+	}
+
+	// The default case.
+	//
+	if ( a.sourcePosition.hasSameParentAs( b.targetPosition ) ) {
+		a.howMany += b.howMany;
+	}
+
+	a.sourcePosition = a.sourcePosition._getTransformedByMergeOperation( b );
+	a.targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
+
+	// Handle positions in graveyard.
+	// If graveyard positions are same and `a` operation is strong - do not transform.
+	if ( !a.graveyardPosition.isEqual( b.graveyardPosition ) || !context.aIsStrong ) {
+		a.graveyardPosition = a.graveyardPosition._getTransformedByMergeOperation( b );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( mergeoperation_MergeOperation, moveoperation_MoveOperation, ( a, b, context ) => {
+	// Case 1:
+	//
+	// The element to merge got removed.
+	//
+	// Merge operation does support merging elements which are not siblings. So it would not be a problem
+	// from technical point of view. However, if the element was removed, the intention of the user deleting it
+	// was to have it all deleted, together with its children. From user experience point of view, moving back the
+	// removed nodes might be unexpected. This means that in this scenario we will block the merging.
+	//
+	// The exception of this rule would be if the remove operation was later undone.
+	//
+	const removedRange = model_range_Range.createFromPositionAndShift( b.sourcePosition, b.howMany );
+
+	if ( b.type == 'remove' && !context.bWasUndone ) {
+		if ( a.deletionPosition.hasSameParentAs( b.sourcePosition ) && removedRange.containsPosition( a.sourcePosition ) ) {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+	}
+
+	// The default case.
+	//
+	if ( a.sourcePosition.hasSameParentAs( b.targetPosition ) ) {
+		a.howMany += b.howMany;
+	}
+
+	if ( a.sourcePosition.hasSameParentAs( b.sourcePosition ) ) {
+		a.howMany -= b.howMany;
+	}
+
+	a.sourcePosition = a.sourcePosition._getTransformedByMoveOperation( b );
+	a.targetPosition = a.targetPosition._getTransformedByMoveOperation( b );
+
+	// `MergeOperation` graveyard position is like `MoveOperation` target position. It is a position where element(s) will
+	// be moved. Like in other similar cases, we need to consider the scenario when those positions are same.
+	// Here, we will treat `MergeOperation` like it is always strong (see `InsertOperation` x `InsertOperation` for comparison).
+	// This means that we won't transform graveyard position if it is equal to move operation target position.
+	if ( !a.graveyardPosition.isEqual( b.targetPosition ) ) {
+		a.graveyardPosition = a.graveyardPosition._getTransformedByMoveOperation( b );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( mergeoperation_MergeOperation, splitoperation_SplitOperation, ( a, b, context ) => {
+	if ( b.graveyardPosition ) {
+		// If `b` operation defines graveyard position, a node from graveyard will be moved. This means that we need to
+		// transform `a.graveyardPosition` accordingly.
+		a.graveyardPosition = a.graveyardPosition._getTransformedByDeletion( b.graveyardPosition, 1 );
+
+		// This is a scenario foreseen in `MergeOperation` x `MergeOperation`, with two identical merge operations.
+		//
+		// So, there was `MergeOperation` x `MergeOperation` transformation earlier. Now, `a` is a merge operation which
+		// source position is in graveyard. Interestingly, split operation wants to use the node to be merged by `a`. This
+		// means that `b` is undoing that merge operation from earlier, which caused `a` to be in graveyard.
+		//
+		// If that's the case, at this point, we will only "fix" `a.howMany`. It was earlier set to `0` in
+		// `MergeOperation` x `MergeOperation` transformation. Later transformations in this function will change other
+		// properties.
+		//
+		if ( a.deletionPosition.isEqual( b.graveyardPosition ) ) {
+			a.howMany = b.howMany;
+		}
+	}
+
+	// Case 1:
+	//
+	// Merge operation moves nodes to the place where split happens.
+	// This is a classic situation when there are two paragraphs, and there is a split (enter) after the first
+	// paragraph and there is a merge (delete) at the beginning of the second paragraph:
+	//
+	// <p>Foo{}</p><p>[]Bar</p>.
+	//
+	// Split is after `Foo`, while merge is from `Bar` to the end of `Foo`.
+	//
+	// State after split:
+	// <p>Foo</p><p></p><p>Bar</p>
+	//
+	// Now, `Bar` should be merged to the new paragraph:
+	// <p>Foo</p><p>Bar</p>
+	//
+	// Instead of merging it to the original paragraph:
+	// <p>FooBar</p><p></p>
+	//
+	// This means that `targetPosition` needs to be transformed. This is the default case though.
+	// For example, if the split would be after `F`, `targetPosition` should also be transformed.
+	//
+	// There are three exceptions, though, when we want to keep `targetPosition` as it was.
+	//
+	// First exception is when the merge target position is inside an element (not at the end, as usual). This
+	// happens when the merge operation earlier was transformed by "the same" merge operation. If merge operation
+	// targets inside the element we want to keep the original target position (and not transform it) because
+	// we have additional context telling us that we want to merge to the original element. We can check if the
+	// merge operation points inside element by checking what is `SplitOperation#howMany`. Since merge target position
+	// is same as split position, if `howMany` is non-zero, it means that the merge target position is inside an element.
+	//
+	// Second exception is when the element to merge is in the graveyard and split operation uses it. In that case
+	// if target position would be transformed, the merge operation would target at the source position:
+	//
+	// root: <p>Foo</p>				graveyard: <p></p>
+	//
+	// SplitOperation: root [ 0, 3 ] using graveyard [ 0 ] (howMany = 0)
+	// MergeOperation: graveyard [ 0, 0 ] -> root [ 0, 3 ] (howMany = 0)
+	//
+	// Since split operation moves the graveyard node back to the root, the merge operation source position changes.
+	// We would like to merge from the empty <p> to the "Foo" <p>:
+	//
+	// root: <p>Foo</p><p></p>			graveyard:
+	//
+	// MergeOperation#sourcePosition = root [ 1, 0 ]
+	//
+	// If `targetPosition` is transformed, it would become root [ 1, 0 ] as well. It has to be kept as it was.
+	//
+	// Third exception is connected with relations. If this happens during undo and we have explicit information
+	// that target position has not been affected by the operation which is undone by this split then this split should
+	// not move the target position either.
+	//
+	if ( a.targetPosition.isEqual( b.splitPosition ) ) {
+		const mergeInside = b.howMany != 0;
+		const mergeSplittingElement = b.graveyardPosition && a.deletionPosition.isEqual( b.graveyardPosition );
+
+		if ( mergeInside || mergeSplittingElement || context.abRelation == 'mergeTargetNotMoved' ) {
+			a.sourcePosition = a.sourcePosition._getTransformedBySplitOperation( b );
+
+			return [ a ];
+		}
+	}
+
+	// Case 2:
+	//
+	// Merge source is at the same position as split position. This sometimes happen during undo. This merge operation
+	// might have been earlier transformed by a merge operation which both merged the same element. See case in
+	// `MergeOperation` x `MergeOperation` transformation. In that case, if the merge operation has been undone, the special
+	// case is not applied.
+	//
+	// In this scenario the merge operation is now transformed by the split which has undone the previous merge operation.
+	// So now we are fixing situation which was skipped in `MergeOperation` x `MergeOperation` case.
+	//
+	if ( a.sourcePosition.isEqual( b.splitPosition ) && context.abRelation == 'mergeSameElement' ) {
+		a.sourcePosition = model_position_Position.createFromPosition( b.moveTargetPosition );
+		a.targetPosition = a.targetPosition._getTransformedBySplitOperation( b );
+
+		return [ a ];
+	}
+
+	// The default case.
+	//
+	if ( a.sourcePosition.hasSameParentAs( b.splitPosition ) ) {
+		a.howMany = b.splitPosition.offset;
+	}
+
+	a.sourcePosition = a.sourcePosition._getTransformedBySplitOperation( b );
+	a.targetPosition = a.targetPosition._getTransformedBySplitOperation( b );
+
+	return [ a ];
+} );
+
+// -----------------------
+
+setTransformation( moveoperation_MoveOperation, insertoperation_InsertOperation, ( a, b ) => {
+	const moveRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
+	const transformed = moveRange._getTransformedByInsertOperation( b, false )[ 0 ];
+
+	a.sourcePosition = transformed.start;
+	a.howMany = transformed.end.offset - transformed.start.offset;
+
+	// See `InsertOperation` x `MoveOperation` transformation for details on this case.
+	//
+	// In summary, both operations point to the same place, so the order of nodes needs to be decided.
+	// `MoveOperation` is considered weaker, so it is always transformed, unless there was a certain relation
+	// between operations.
+	//
+	if ( !a.targetPosition.isEqual( b.position ) ) {
+		a.targetPosition = a.targetPosition._getTransformedByInsertOperation( b );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( moveoperation_MoveOperation, moveoperation_MoveOperation, ( a, b, context ) => {
+	//
+	// Setting and evaluating some variables that will be used in special cases and default algorithm.
+	//
+	// Create ranges from `MoveOperations` properties.
+	const rangeA = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
+	const rangeB = model_range_Range.createFromPositionAndShift( b.sourcePosition, b.howMany );
+
+	// Assign `context.aIsStrong` to a different variable, because the value may change during execution of
+	// this algorithm and we do not want to override original `context.aIsStrong` that will be used in later transformations.
+	let aIsStrong = context.aIsStrong;
+
+	// This will be used to decide the order of nodes if both operations target at the same position.
+	// By default, use strong/weak operation mechanism.
+	let insertBefore = !context.aIsStrong;
+
+	// If the relation is set, then use it to decide nodes order.
+	if ( context.abRelation == 'insertBefore' ) {
+		insertBefore = true;
+	} else if ( context.abRelation == 'insertAfter' ) {
+		insertBefore = false;
+	}
+
+	// `a.targetPosition` could be affected by the `b` operation. We will transform it.
+	let newTargetPosition;
+
+	if ( a.targetPosition.isEqual( b.targetPosition ) && insertBefore ) {
+		newTargetPosition = a.targetPosition._getTransformedByDeletion(
+			b.sourcePosition,
+			b.howMany
+		);
+	} else {
+		newTargetPosition = a.targetPosition._getTransformedByMove(
+			b.sourcePosition,
+			b.targetPosition,
+			b.howMany
+		);
+	}
+
+	//
+	// Special case #1 + mirror.
+	//
+	// Special case when both move operations' target positions are inside nodes that are
+	// being moved by the other move operation. So in other words, we move ranges into inside of each other.
+	// This case can't be solved reasonably (on the other hand, it should not happen often).
+	if ( _moveTargetIntoMovedRange( a, b ) && _moveTargetIntoMovedRange( b, a ) ) {
+		// Instead of transforming operation, we return a reverse of the operation that we transform by.
+		// So when the results of this "transformation" will be applied, `b` MoveOperation will get reversed.
+		return [ b.getReversed() ];
+	}
+	//
+	// End of special case #1.
+	//
+
+	//
+	// Special case #2.
+	//
+	// Check if `b` operation targets inside `rangeA`.
+	const bTargetsToA = rangeA.containsPosition( b.targetPosition );
+
+	// If `b` targets to `rangeA` and `rangeA` contains `rangeB`, `b` operation has no influence on `a` operation.
+	// You might say that operation `b` is captured inside operation `a`.
+	if ( bTargetsToA && rangeA.containsRange( rangeB, true ) ) {
+		// There is a mini-special case here, where `rangeB` is on other level than `rangeA`. That's why
+		// we need to transform `a` operation anyway.
+		rangeA.start = rangeA.start._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
+		rangeA.end = rangeA.end._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
+
+		return _makeMoveOperationsFromRanges( [ rangeA ], newTargetPosition );
+	}
+
+	//
+	// Special case #2 mirror.
+	//
+	const aTargetsToB = rangeB.containsPosition( a.targetPosition );
+
+	if ( aTargetsToB && rangeB.containsRange( rangeA, true ) ) {
+		// `a` operation is "moved together" with `b` operation.
+		// Here, just move `rangeA` "inside" `rangeB`.
+		rangeA.start = rangeA.start._getCombined( b.sourcePosition, b.getMovedRangeStart() );
+		rangeA.end = rangeA.end._getCombined( b.sourcePosition, b.getMovedRangeStart() );
+
+		return _makeMoveOperationsFromRanges( [ rangeA ], newTargetPosition );
+	}
+	//
+	// End of special case #2.
+	//
+
+	//
+	// Special case #3 + mirror.
+	//
+	// `rangeA` has a node which is an ancestor of `rangeB`. In other words, `rangeB` is inside `rangeA`
+	// but not on the same tree level. In such case ranges have common part but we have to treat it
+	// differently, because in such case those ranges are not really conflicting and should be treated like
+	// two separate ranges. Also we have to discard two difference parts.
+	const aCompB = compareArrays( a.sourcePosition.getParentPath(), b.sourcePosition.getParentPath() );
+
+	if ( aCompB == 'prefix' || aCompB == 'extension' ) {
+		// Transform `rangeA` by `b` operation and make operation out of it, and that's all.
+		// Note that this is a simplified version of default case, but here we treat the common part (whole `rangeA`)
+		// like a one difference part.
+		rangeA.start = rangeA.start._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
+		rangeA.end = rangeA.end._getTransformedByMove( b.sourcePosition, b.targetPosition, b.howMany );
+
+		return _makeMoveOperationsFromRanges( [ rangeA ], newTargetPosition );
+	}
+	//
+	// End of special case #3.
+	//
+
+	//
+	// Default case - ranges are on the same level or are not connected with each other.
+	//
+	// Modifier for default case.
+	// Modifies `aIsStrong` flag in certain conditions.
+	//
+	// If only one of operations is a remove operation, we force remove operation to be the "stronger" one
+	// to provide more expected results.
+	if ( a.type == 'remove' && b.type != 'remove' && !context.aWasUndone ) {
+		aIsStrong = true;
+	} else if ( a.type != 'remove' && b.type == 'remove' && !context.bWasUndone ) {
+		aIsStrong = false;
+	}
+
+	// Handle operation's source ranges - check how `rangeA` is affected by `b` operation.
+	// This will aggregate transformed ranges.
+	const ranges = [];
+
+	// Get the "difference part" of `a` operation source range.
+	// This is an array with one or two ranges. Two ranges if `rangeB` is inside `rangeA`.
+	const difference = rangeA.getDifference( rangeB );
+
+	for ( const range of difference ) {
+		// Transform those ranges by `b` operation. For example if `b` moved range from before those ranges, fix those ranges.
+		range.start = range.start._getTransformedByDeletion( b.sourcePosition, b.howMany );
+		range.end = range.end._getTransformedByDeletion( b.sourcePosition, b.howMany );
+
+		// If `b` operation targets into `rangeA` on the same level, spread `rangeA` into two ranges.
+		const shouldSpread = compareArrays( range.start.getParentPath(), b.getMovedRangeStart().getParentPath() ) == 'same';
+		const newRanges = range._getTransformedByInsertion( b.getMovedRangeStart(), b.howMany, shouldSpread );
+
+		ranges.push( ...newRanges );
+	}
+
+	// Then, we have to manage the "common part" of both move ranges.
+	const common = rangeA.getIntersection( rangeB );
+
+	if ( common !== null && aIsStrong ) {
+		// Calculate the new position of that part of original range.
+		common.start = common.start._getCombined( b.sourcePosition, b.getMovedRangeStart() );
+		common.end = common.end._getCombined( b.sourcePosition, b.getMovedRangeStart() );
+
+		// Take care of proper range order.
+		//
+		// Put `common` at appropriate place. Keep in mind that we are interested in original order.
+		// Basically there are only three cases: there is zero, one or two difference ranges.
+		//
+		// If there is zero difference ranges, just push `common` in the array.
+		if ( ranges.length === 0 ) {
+			ranges.push( common );
+		}
+		// If there is one difference range, we need to check whether common part was before it or after it.
+		else if ( ranges.length == 1 ) {
+			if ( rangeB.start.isBefore( rangeA.start ) || rangeB.start.isEqual( rangeA.start ) ) {
+				ranges.unshift( common );
+			} else {
+				ranges.push( common );
+			}
+		}
+		// If there are more ranges (which means two), put common part between them. This is the only scenario
+		// where there could be two difference ranges so we don't have to make any comparisons.
+		else {
+			ranges.splice( 1, 0, common );
+		}
+	}
+
+	if ( ranges.length === 0 ) {
+		// If there are no "source ranges", nothing should be changed.
+		// Note that this can happen only if `aIsStrong == false` and `rangeA.isEqual( rangeB )`.
+		return [ new nooperation_NoOperation( a.baseVersion ) ];
+	}
+
+	return _makeMoveOperationsFromRanges( ranges, newTargetPosition );
+} );
+
+setTransformation( moveoperation_MoveOperation, splitoperation_SplitOperation, ( a, b, context ) => {
+	let newTargetPosition = model_position_Position.createFromPosition( a.targetPosition );
+
+	// Do not transform if target position is same as split insertion position and this split comes from undo.
+	// This should be done on relations but it is too much work for now as it would require relations working in collaboration.
+	// We need to make a decision how we will resolve such conflict and this is less harmful way.
+	if ( !a.targetPosition.isEqual( b.insertionPosition ) || !b.graveyardPosition ) {
+		newTargetPosition = a.targetPosition._getTransformedBySplitOperation( b );
+	}
+
+	// Case 1:
+	//
+	// Last element in the moved range got split.
+	//
+	// In this case the default range transformation will not work correctly as the element created by
+	// split operation would be outside the range. The range to move needs to be fixed manually.
+	//
+	const moveRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
+
+	if ( moveRange.end.isEqual( b.insertionPosition ) ) {
+		// Do it only if this is a "natural" split, not a one that comes from undo.
+		// If this is undo split, only `targetPosition` needs to be changed (if the move is a remove).
+		if ( !b.graveyardPosition ) {
+			a.howMany++;
+		}
+
+		a.targetPosition = newTargetPosition;
+
+		return [ a ];
+	}
+
+	// Case 2:
+	//
+	// Split happened between the moved nodes. In this case two ranges to move need to be generated.
+	//
+	// Characters `ozba` are moved to the end of paragraph `Xyz` but split happened.
+	// <p>F[oz|ba]r</p><p>Xyz</p>
+	//
+	// After split:
+	// <p>F[oz</p><p>ba]r</p><p>Xyz</p>
+	//
+	// Correct ranges:
+	// <p>F[oz]</p><p>[ba]r</p><p>Xyz</p>
+	//
+	// After move:
+	// <p>F</p><p>r</p><p>Xyzozba</p>
+	//
+	if ( moveRange.start.hasSameParentAs( b.splitPosition ) && moveRange.containsPosition( b.splitPosition ) ) {
+		let rightRange = new model_range_Range( b.splitPosition, moveRange.end );
+		rightRange = rightRange._getTransformedBySplitOperation( b );
+
+		const ranges = [
+			new model_range_Range( moveRange.start, b.splitPosition ),
+			rightRange
+		];
+
+		return _makeMoveOperationsFromRanges( ranges, newTargetPosition );
+	}
+
+	// Case 3:
+	//
+	// Move operation targets at the split position. We need to decide if the nodes should be inserted
+	// at the end of the split element or at the beginning of the new element.
+	//
+	if ( a.targetPosition.isEqual( b.splitPosition ) && context.abRelation == 'insertAtSource' ) {
+		newTargetPosition = b.moveTargetPosition;
+	}
+
+	// Case 4:
+	//
+	// Move operation targets just after the split element. We need to decide if the nodes should be inserted
+	// between two parts of split element, or after the new element.
+	//
+	// Split at `|`, while move operation moves `<p>Xyz</p>` and targets at `^`:
+	// <p>Foo|bar</p>^<p>baz</p>
+	// <p>Foo</p>^<p>bar</p><p>baz</p> or <p>Foo</p><p>bar</p>^<p>baz</p>?
+	//
+	// If there is no contextual information between operations (for example, they come from collaborative
+	// editing), we don't want to put some unrelated content (move) between parts of related content (split parts).
+	// However, if the split is from undo, in the past, the moved content might be targeting between the
+	// split parts, meaning that was exactly user's intention:
+	//
+	// <p>Foo</p>^<p>bar</p>		<--- original situation, in "past".
+	// <p>Foobar</p>^				<--- after merge target position is transformed.
+	// <p>Foo|bar</p>^				<--- then the merge is undone, and split happens, which leads us to current situation.
+	//
+	// In this case it is pretty clear that the intention was to put new paragraph between those nodes,
+	// so we need to transform accordingly. We can detect this scenario thanks to relations.
+	//
+	if ( a.targetPosition.isEqual( b.insertionPosition ) && context.abRelation == 'insertBetween' ) {
+		newTargetPosition = a.targetPosition;
+	}
+
+	// The default case.
+	//
+	const transformed = moveRange._getTransformedBySplitOperation( b );
+
+	a.sourcePosition = transformed.start;
+	a.howMany = transformed.end.offset - transformed.start.offset;
+	a.targetPosition = newTargetPosition;
+
+	return [ a ];
+} );
+
+setTransformation( moveoperation_MoveOperation, mergeoperation_MergeOperation, ( a, b, context ) => {
+	const movedRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
+
+	if ( b.deletionPosition.hasSameParentAs( a.sourcePosition ) && movedRange.containsPosition( b.sourcePosition ) ) {
+		if ( a.type == 'remove' ) {
+			// Case 1:
+			//
+			// The element to remove got merged.
+			//
+			// Merge operation does support merging elements which are not siblings. So it would not be a problem
+			// from technical point of view. However, if the element was removed, the intention of the user
+			// deleting it was to have it all deleted. From user experience point of view, moving back the
+			// removed nodes might be unexpected. This means that in this scenario we will reverse merging and remove the element.
+			//
+			if ( !context.aWasUndone ) {
+				return [ b.getReversed(), a ];
+			}
+		} else {
+			// Case 2:
+			//
+			// The element to move got merged and it was the only element to move.
+			// In this case just don't do anything, leave the node in the graveyard. Without special case
+			// it would be a move operation that moves 0 nodes, so maybe it is better just to return no-op.
+			//
+			if ( a.howMany == 1 ) {
+				if ( !context.bWasUndone ) {
+					return [ new nooperation_NoOperation( 0 ) ];
+				} else {
+					a.sourcePosition = model_position_Position.createFromPosition( b.graveyardPosition );
+					a.targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
+
+					return [ a ];
+				}
+			}
+		}
+	}
+
+	// The default case.
+	//
+	const moveRange = model_range_Range.createFromPositionAndShift( a.sourcePosition, a.howMany );
+	const transformed = moveRange._getTransformedByMergeOperation( b );
+
+	a.sourcePosition = transformed.start;
+	a.howMany = transformed.end.offset - transformed.start.offset;
+	a.targetPosition = a.targetPosition._getTransformedByMergeOperation( b );
+
+	return [ a ];
+} );
+
+// -----------------------
+
+setTransformation( renameoperation_RenameOperation, insertoperation_InsertOperation, ( a, b ) => {
+	a.position = a.position._getTransformedByInsertOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( renameoperation_RenameOperation, mergeoperation_MergeOperation, ( a, b ) => {
+	// Case 1:
+	//
+	// Element to rename got merged, so it was moved to `b.graveyardPosition`.
+	//
+	if ( a.position.isEqual( b.deletionPosition ) ) {
+		a.position = model_position_Position.createFromPosition( b.graveyardPosition );
+		a.position.stickiness = 'toNext';
+
+		return [ a ];
+	}
+
+	a.position = a.position._getTransformedByMergeOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( renameoperation_RenameOperation, moveoperation_MoveOperation, ( a, b ) => {
+	a.position = a.position._getTransformedByMoveOperation( b );
+
+	return [ a ];
+} );
+
+setTransformation( renameoperation_RenameOperation, renameoperation_RenameOperation, ( a, b, context ) => {
+	if ( a.position.isEqual( b.position ) ) {
+		if ( context.aIsStrong ) {
+			a.oldName = b.newName;
+		} else {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+	}
+
+	return [ a ];
+} );
+
+setTransformation( renameoperation_RenameOperation, splitoperation_SplitOperation, ( a, b ) => {
+	// Case 1:
+	//
+	// The element to rename has been split. In this case, the new element should be also renamed.
+	//
+	// User decides to change the paragraph to a list item:
+	// <paragraph>Foobar</paragraph>
+	//
+	// However, in meantime, split happens:
+	// <paragraph>Foo</paragraph><paragraph>bar</paragraph>
+	//
+	// As a result, rename both elements:
+	// <listItem>Foo</listItem><listItem>bar</listItem>
+	//
+	const renamePath = a.position.path;
+	const splitPath = b.splitPosition.getParentPath();
+
+	if ( compareArrays( renamePath, splitPath ) == 'same' && !b.graveyardPosition ) {
+		const extraRename = new renameoperation_RenameOperation( a.position.getShiftedBy( 1 ), a.oldName, a.newName, 0 );
+
+		return [ a, extraRename ];
+	}
+
+	// The default case.
+	//
+	a.position = a.position._getTransformedBySplitOperation( b );
+
+	return [ a ];
+} );
+
+// -----------------------
+
+setTransformation( rootattributeoperation_RootAttributeOperation, rootattributeoperation_RootAttributeOperation, ( a, b, context ) => {
+	if ( a.root === b.root && a.key === b.key ) {
+		if ( !context.aIsStrong || a.newValue === b.newValue ) {
+			return [ new nooperation_NoOperation( 0 ) ];
+		} else {
+			a.oldValue = b.newValue;
+		}
+	}
+
+	return [ a ];
+} );
+
+// -----------------------
+
+setTransformation( splitoperation_SplitOperation, insertoperation_InsertOperation, ( a, b ) => {
+	// The default case.
+	//
+	if ( a.splitPosition.hasSameParentAs( b.position ) && a.splitPosition.offset < b.position.offset ) {
+		a.howMany += b.howMany;
+	}
+
+	a.splitPosition = a.splitPosition._getTransformedByInsertOperation( b );
+	a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+
+	return [ a ];
+} );
+
+setTransformation( splitoperation_SplitOperation, mergeoperation_MergeOperation, ( a, b, context ) => {
+	// Case 1:
+	//
+	// Split element got merged. If two different elements were merged, clients will have different content.
+	//
+	// Example. Merge at `{}`, split at `[]`:
+	// <heading>Foo</heading>{}<paragraph>B[]ar</paragraph>
+	//
+	// On merge side it will look like this:
+	// <heading>FooB[]ar</heading>
+	// <heading>FooB</heading><heading>ar</heading>
+	//
+	// On split side it will look like this:
+	// <heading>Foo</heading>{}<paragraph>B</paragraph><paragraph>ar</paragraph>
+	// <heading>FooB</heading><paragraph>ar</paragraph>
+	//
+	// Clearly, the second element is different for both clients.
+	//
+	// We could use the removed merge element from graveyard as a split element but then clients would have a different
+	// model state (in graveyard), because the split side client would still have an element in graveyard (removed by merge).
+	//
+	// To overcome this, in `SplitOperation` x `MergeOperation` transformation we will add additional `SplitOperation`
+	// in the graveyard, which will actually clone the merged-and-deleted element. Then, that cloned element will be
+	// used for splitting. Example below.
+	//
+	// Original state:
+	// <heading>Foo</heading>{}<paragraph>B[]ar</paragraph>
+	//
+	// Merge side client:
+	//
+	// After merge:
+	// <heading>FooB[]ar</heading>                                 graveyard: <paragraph></paragraph>
+	//
+	// Extra split:
+	// <heading>FooB[]ar</heading>                                 graveyard: <paragraph></paragraph><paragraph></paragraph>
+	//
+	// Use the "cloned" element from graveyard:
+	// <heading>FooB</heading><paragraph>ar</paragraph>            graveyard: <paragraph></paragraph>
+	//
+	// Split side client:
+	//
+	// After split:
+	// <heading>Foo</heading>{}<paragraph>B</paragraph><paragraph>ar</paragraph>
+	//
+	// After merge:
+	// <heading>FooB</heading><paragraph>ar</paragraph>            graveyard: <paragraph></paragraph>
+	//
+	// This special case scenario only applies if the original split operation clones the split element.
+	// If the original split operation has `graveyardPosition` set, it all doesn't have sense because split operation
+	// knows exactly which element it should use. So there would be no original problem with different contents.
+	//
+	// Additionally, the special case applies only if the merge wasn't already undone.
+	//
+	if ( !a.graveyardPosition && !context.bWasUndone && a.splitPosition.hasSameParentAs( b.sourcePosition ) ) {
+		const splitPath = b.graveyardPosition.path.slice();
+		splitPath.push( 0 );
+
+		const splitPosition = new model_position_Position( b.graveyardPosition.root, splitPath );
+		const insertionPosition = splitoperation_SplitOperation.getInsertionPosition( new model_position_Position( b.graveyardPosition.root, splitPath ) );
+
+		const additionalSplit = new splitoperation_SplitOperation( splitPosition, 0, null, 0 );
+		additionalSplit.insertionPosition = insertionPosition;
+
+		a.splitPosition = a.splitPosition._getTransformedByMergeOperation( b );
+		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+		a.graveyardPosition = model_position_Position.createFromPosition( additionalSplit.insertionPosition );
+		a.graveyardPosition.stickiness = 'toNext';
+
+		return [ additionalSplit, a ];
+	}
+
+	// The default case.
+	//
+	if ( a.splitPosition.hasSameParentAs( b.deletionPosition ) && !a.splitPosition.isAfter( b.deletionPosition ) ) {
+		a.howMany--;
+	}
+
+	if ( a.splitPosition.hasSameParentAs( b.targetPosition ) ) {
+		a.howMany += b.howMany;
+	}
+
+	a.splitPosition = a.splitPosition._getTransformedByMergeOperation( b );
+	a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+
+	if ( a.graveyardPosition ) {
+		a.graveyardPosition = a.graveyardPosition._getTransformedByMergeOperation( b );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( splitoperation_SplitOperation, moveoperation_MoveOperation, ( a, b, context ) => {
+	if ( a.graveyardPosition ) {
+		a.graveyardPosition = a.graveyardPosition._getTransformedByMoveOperation( b );
+	}
+
+	// Case 1:
+	//
+	// If the split position is inside the moved range, we need to shift the split position to a proper place.
+	// The position cannot be moved together with moved range because that would result in splitting of an incorrect element.
+	//
+	// Characters `bc` should be moved to the second paragraph while split position is between them:
+	// <paragraph>A[b|c]d</paragraph><paragraph>Xyz</paragraph>
+	//
+	// After move, new split position is incorrect:
+	// <paragraph>Ad</paragraph><paragraph>Xb|cyz</paragraph>
+	//
+	// Correct split position:
+	// <paragraph>A|d</paragraph><paragraph>Xbcyz</paragraph>
+	//
+	// After split:
+	// <paragraph>A</paragraph><paragraph>d</paragraph><paragraph>Xbcyz</paragraph>
+	//
+	const rangeToMove = model_range_Range.createFromPositionAndShift( b.sourcePosition, b.howMany );
+
+	if ( a.splitPosition.hasSameParentAs( b.sourcePosition ) && rangeToMove.containsPosition( a.splitPosition ) ) {
+		const howManyRemoved = b.howMany - ( a.splitPosition.offset - b.sourcePosition.offset );
+		a.howMany -= howManyRemoved;
+
+		if ( a.splitPosition.hasSameParentAs( b.targetPosition ) && a.splitPosition.offset < b.targetPosition.offset ) {
+			a.howMany += b.howMany;
+		}
+
+		a.splitPosition = model_position_Position.createFromPosition( b.sourcePosition );
+		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+
+		return [ a ];
+	}
+
+	// Case 2:
+	//
+	// Split is at a position where nodes were moved.
+	//
+	// This is a scenario described in `MoveOperation` x `SplitOperation` transformation but from the
+	// "split operation point of view".
+	//
+	const splitAtTarget = a.splitPosition.isEqual( b.targetPosition );
+
+	if ( splitAtTarget && ( context.baRelation == 'insertAtSource' || context.abRelation == 'splitBefore' ) ) {
+		a.howMany += b.howMany;
+		a.splitPosition = a.splitPosition._getTransformedByDeletion( b.sourcePosition, b.howMany );
+		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+
+		return [ a ];
+	}
+
+	// The default case.
+	//
+	if ( a.splitPosition.hasSameParentAs( b.sourcePosition ) && a.splitPosition.offset <= b.sourcePosition.offset ) {
+		a.howMany -= b.howMany;
+	}
+
+	if ( a.splitPosition.hasSameParentAs( b.targetPosition ) && a.splitPosition.offset < b.targetPosition.offset ) {
+		a.howMany += b.howMany;
+	}
+
+	// Change position stickiness to force a correct transformation.
+	a.splitPosition.stickiness = 'toNone';
+	a.splitPosition = a.splitPosition._getTransformedByMoveOperation( b );
+	a.splitPosition.stickiness = 'toNext';
+
+	if ( a.graveyardPosition ) {
+		a.insertionPosition = a.insertionPosition._getTransformedByMoveOperation( b );
+	} else {
+		a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+	}
+
+	return [ a ];
+} );
+
+setTransformation( splitoperation_SplitOperation, splitoperation_SplitOperation, ( a, b, context ) => {
+	// Case 1:
+	//
+	// Split at the same position.
+	//
+	// If there already was a split at the same position as in `a` operation, it means that the intention
+	// conveyed by `a` operation has already been fulfilled and `a` should not do anything (to avoid double split).
+	//
+	// However, there is a difference if these are new splits or splits created by undo. These have different
+	// intentions. Also splits moving back different elements from graveyard have different intentions. They
+	// are just different operations.
+	//
+	// So we cancel split operation only if it was really identical.
+	//
+	if ( a.splitPosition.isEqual( b.splitPosition ) ) {
+		if ( !a.graveyardPosition && !b.graveyardPosition ) {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+
+		if ( a.graveyardPosition && b.graveyardPosition && a.graveyardPosition.isEqual( b.graveyardPosition ) ) {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+	}
+
+	// Case 2:
+	//
+	// Same node is using to split different elements. This happens in undo when previously same element was merged to
+	// two different elements. This is described in `MergeOperation` x `MergeOperation` transformation.
+	//
+	// In this case we will follow the same logic. We will assume that `insertionPosition` is same for both
+	// split operations. This might not always be true but in the real cases that were experienced it was. After all,
+	// if these splits are reverses of merge operations that were merging the same element, then the `insertionPosition`
+	// should be same for both of those splits.
+	//
+	// Again, we will decide which operation is stronger by checking if split happens in graveyard or in non-graveyard root.
+	//
+	if ( a.graveyardPosition && b.graveyardPosition && a.graveyardPosition.isEqual( b.graveyardPosition ) ) {
+		const aInGraveyard = a.splitPosition.root.rootName == '$graveyard';
+		const bInGraveyard = b.splitPosition.root.rootName == '$graveyard';
+
+		// If `aIsWeak` it means that `a` points to graveyard while `b` doesn't. Don't move nodes then.
+		const aIsWeak = aInGraveyard && !bInGraveyard;
+
+		// If `bIsWeak` it means that `b` points to graveyard while `a` doesn't. Force moving nodes then.
+		const bIsWeak = bInGraveyard && !aInGraveyard;
+
+		// Force move if `b` is weak or neither operation is weak but `a` is stronger through `context.aIsStrong`.
+		const forceMove = bIsWeak || ( !aIsWeak && context.aIsStrong );
+
+		if ( forceMove ) {
+			const result = [];
+
+			// First we need to move any nodes split by `b` back to where they were.
+			// Do it only if `b` actually moved something.
+			if ( b.howMany ) {
+				result.push( new moveoperation_MoveOperation( b.moveTargetPosition, b.howMany, b.splitPosition, 0 ) );
+			}
+
+			// Then we need to move nodes from `a` split position to their new element.
+			// Do it only if `a` actually should move something.
+			if ( a.howMany ) {
+				result.push( new moveoperation_MoveOperation( a.splitPosition, a.howMany, a.moveTargetPosition, 0 ) );
+			}
+
+			return result;
+		} else {
+			return [ new nooperation_NoOperation( 0 ) ];
+		}
+	}
+
+	if ( a.graveyardPosition ) {
+		a.graveyardPosition = a.graveyardPosition._getTransformedBySplitOperation( b );
+	}
+
+	// Case 3:
+	//
+	// Position where operation `b` inserted a new node after split is the same as the operation `a` split position.
+	// As in similar cases, there is ambiguity if the split should be before the new node (created by `b`) or after.
+	//
+	if ( a.splitPosition.isEqual( b.insertionPosition ) && context.abRelation == 'splitBefore' ) {
+		a.howMany++;
+
+		return [ a ];
+	}
+
+	// Case 4:
+	//
+	// This is a mirror to the case 2. above.
+	//
+	if ( b.splitPosition.isEqual( a.insertionPosition ) && context.baRelation == 'splitBefore' ) {
+		const newPositionPath = b.insertionPosition.path.slice();
+		newPositionPath.push( 0 );
+
+		const newPosition = new model_position_Position( b.insertionPosition.root, newPositionPath );
+		const moveOp = new moveoperation_MoveOperation( a.insertionPosition, 1, newPosition, 0 );
+
+		return [ a, moveOp ];
+	}
+
+	// The default case.
+	//
+	if ( a.splitPosition.hasSameParentAs( b.splitPosition ) && a.splitPosition.offset < b.splitPosition.offset ) {
+		a.howMany -= b.howMany;
+	}
+
+	a.splitPosition = a.splitPosition._getTransformedBySplitOperation( b );
+	a.insertionPosition = splitoperation_SplitOperation.getInsertionPosition( a.splitPosition );
+
+	return [ a ];
+} );
+
+// Checks whether `MoveOperation` `targetPosition` is inside a node from the moved range of the other `MoveOperation`.
+//
+// @private
+// @param {module:engine/model/operation/moveoperation~MoveOperation} a
+// @param {module:engine/model/operation/moveoperation~MoveOperation} b
+// @returns {Boolean}
+function _moveTargetIntoMovedRange( a, b ) {
+	return a.targetPosition._getTransformedByDeletion( b.sourcePosition, b.howMany ) === null;
+}
+
+// Helper function for `MoveOperation` x `MoveOperation` transformation. Converts given ranges and target position to
+// move operations and returns them.
+//
+// Ranges and target position will be transformed on-the-fly when generating operations.
+//
+// Given `ranges` should be in the order of how they were in the original transformed operation.
+//
+// Given `targetPosition` is the target position of the first range from `ranges`.
+//
+// @private
+// @param {Array.<module:engine/model/range~Range>} ranges
+// @param {module:engine/model/position~Position} targetPosition
+// @returns {Array.<module:engine/model/operation/moveoperation~MoveOperation>}
+function _makeMoveOperationsFromRanges( ranges, targetPosition ) {
+	// At this moment we have some ranges and a target position, to which those ranges should be moved.
+	// Order in `ranges` array is the go-to order of after transformation.
+	//
+	// We are almost done. We have `ranges` and `targetPosition` to make operations from.
+	// Unfortunately, those operations may affect each other. Precisely, first operation after move
+	// may affect source range and target position of second and third operation. Same with second
+	// operation affecting third.
+	//
+	// We need to fix those source ranges and target positions once again, before converting `ranges` to operations.
+	const operations = [];
+
+	// Keep in mind that nothing will be transformed if there is just one range in `ranges`.
+	for ( let i = 0; i < ranges.length; i++ ) {
+		// Create new operation out of a range and target position.
+		const range = ranges[ i ];
+		const op = new moveoperation_MoveOperation( range.start, range.end.offset - range.start.offset, targetPosition, 0 );
+
+		operations.push( op );
+
+		// Transform other ranges by the generated operation.
+		for ( let j = i + 1; j < ranges.length; j++ ) {
+			// All ranges in `ranges` array should be:
+			//
+			// * non-intersecting (these are part of original operation source range), and
+			// * `targetPosition` does not target into them (opposite would mean that transformed operation targets "inside itself").
+			//
+			// This means that the transformation will be "clean" and always return one result.
+			ranges[ j ] = ranges[ j ]._getTransformedByMove( op.sourcePosition, op.targetPosition, op.howMany )[ 0 ];
+		}
+
+		targetPosition = targetPosition._getTransformedByMove( op.sourcePosition, op.targetPosition, op.howMany );
+	}
+
+	return operations;
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/basecommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module undo/basecommand
+ */
+
+
+
+
+/**
+ * Base class for undo feature commands: {@link module:undo/undocommand~UndoCommand} and {@link module:undo/redocommand~RedoCommand}.
+ *
+ * @protected
+ * @extends module:core/command~Command
+ */
+class basecommand_BaseCommand extends Command {
+	constructor( editor ) {
+		super( editor );
+
+		/**
+		 * Stack of items stored by the command. These are pairs of:
+		 *
+		 * * {@link module:engine/model/batch~Batch batch} saved by the command,
+		 * * {@link module:engine/model/selection~Selection selection} state at the moment of saving the batch.
+		 *
+		 * @protected
+		 * @member {Array} #_stack
+		 */
+		this._stack = [];
+
+		/**
+		 * Stores all batches that were created by this command.
+		 *
+		 * @protected
+		 * @member {WeakSet.<module:engine/model/batch~Batch>} #_createdBatches
+		 */
+		this._createdBatches = new WeakSet();
+
+		// Refresh state, so the command is inactive right after initialization.
+		this.refresh();
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	refresh() {
+		this.isEnabled = this._stack.length > 0;
+	}
+
+	/**
+	 * Stores a batch in the command, together with the selection state of the {@link module:engine/model/document~Document document}
+	 * created by the editor which this command is registered to.
+	 *
+	 * @param {module:engine/model/batch~Batch} batch The batch to add.
+	 */
+	addBatch( batch ) {
+		const docSelection = this.editor.model.document.selection;
+
+		const selection = {
+			ranges: docSelection.hasOwnRange ? Array.from( docSelection.getRanges() ) : [],
+			isBackward: docSelection.isBackward
+		};
+
+		this._stack.push( { batch, selection } );
+		this.refresh();
+	}
+
+	/**
+	 * Removes all items from the stack.
+	 */
+	clearStack() {
+		this._stack = [];
+		this.refresh();
+	}
+
+	/**
+	 * Restores the {@link module:engine/model/document~Document#selection document selection} state after a batch was undone.
+	 *
+	 * @protected
+	 * @param {Array.<module:engine/model/range~Range>} ranges Ranges to be restored.
+	 * @param {Boolean} isBackward A flag describing whether the restored range was selected forward or backward.
+	 * @param {Array.<module:engine/model/operation/operation~Operation>} operations Operations which has been applied
+	 * since selection has been stored.
+	 */
+	_restoreSelection( ranges, isBackward, operations ) {
+		const model = this.editor.model;
+		const document = model.document;
+
+		// This will keep the transformed selection ranges.
+		const selectionRanges = [];
+
+		// Transform all ranges from the restored selection.
+		for ( const range of ranges ) {
+			const transformed = transformSelectionRange( range, operations );
+
+			// For each `range` from `ranges`, we take only one transformed range.
+			// This is because we want to prevent situation where single-range selection
+			// got transformed to multi-range selection. We will take the first range that
+			// is not in the graveyard.
+			const newRange = transformed.find(
+				range => range.start.root != document.graveyard
+			);
+
+			// `transformedRange` might be `undefined` if transformed range ended up in graveyard.
+			if ( newRange ) {
+				selectionRanges.push( newRange );
+			}
+		}
+
+		// `selectionRanges` may be empty if all ranges ended up in graveyard. If that is the case, do not restore selection.
+		if ( selectionRanges.length ) {
+			model.change( writer => {
+				writer.setSelection( selectionRanges, { backward: isBackward } );
+			} );
+		}
+	}
+
+	/**
+	 * Undoes a batch by reversing that batch, transforming reversed batch and finally applying it.
+	 * This is a helper method for {@link #execute}.
+	 *
+	 * @protected
+	 * @param {module:engine/model/batch~Batch} batchToUndo The batch to be undone.
+	 * @param {module:engine/model/batch~Batch} undoingBatch The batch that will contain undoing changes.
+	 */
+	_undo( batchToUndo, undoingBatch ) {
+		const model = this.editor.model;
+		const document = model.document;
+
+		// All changes done by the command execution will be saved as one batch.
+		this._createdBatches.add( undoingBatch );
+
+		const operationsToUndo = batchToUndo.operations.slice().filter( operation => operation.isDocumentOperation );
+		operationsToUndo.reverse();
+
+		// We will process each operation from `batchToUndo`, in reverse order. If there were operations A, B and C in undone batch,
+		// we need to revert them in reverse order, so first C' (reversed C), then B', then A'.
+		for ( const operationToUndo of operationsToUndo ) {
+			const nextBaseVersion = operationToUndo.baseVersion + 1;
+			const historyOperations = Array.from( document.history.getOperations( nextBaseVersion ) );
+
+			const transformedSets = transformSets(
+				[ operationToUndo.getReversed() ],
+				historyOperations,
+				{
+					useRelations: true,
+					document: this.editor.model.document,
+					padWithNoOps: false
+				}
+			);
+
+			const reversedOperations = transformedSets.operationsA;
+
+			// After reversed operation has been transformed by all history operations, apply it.
+			for ( const operation of reversedOperations ) {
+				// Before applying, add the operation to the `undoingBatch`.
+				undoingBatch.addOperation( operation );
+				model.applyOperation( operation );
+
+				document.history.setOperationAsUndone( operationToUndo, operation );
+			}
+		}
+	}
+}
+
+// Transforms given range `range` by given `operations`.
+// Returns an array containing one or more ranges, which are result of the transformation.
+function transformSelectionRange( range, operations ) {
+	const transformed = range.getTransformedByOperations( operations );
+
+	// After `range` got transformed, we have an array of ranges. Some of those
+	// ranges may be "touching" -- they can be next to each other and could be merged.
+	// First, we have to sort those ranges to assure that they are in order.
+	transformed.sort( ( a, b ) => a.start.isBefore( b.start ) ? -1 : 1 );
+
+	// Then, we check if two consecutive ranges are touching.
+	for ( let i = 1; i < transformed.length; i++ ) {
+		const a = transformed[ i - 1 ];
+		const b = transformed[ i ];
+
+		if ( a.end.isTouching( b.start ) ) {
+			// And join them together if they are.
+			a.end = b.end;
+			transformed.splice( i, 1 );
+			i--;
+		}
+	}
+
+	return transformed;
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undocommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module undo/undocommand
+ */
+
+
+
+
+/**
+ * The undo command stores {@link module:engine/model/batch~Batch batches} applied to the
+ * {@link module:engine/model/document~Document document} and is able to undo a batch by reversing it and transforming by
+ * batches from {@link module:engine/model/document~Document#history history} that happened after the reversed batch.
+ *
+ * The undo command also takes care of restoring the {@link module:engine/model/document~Document#selection document selection}.
+ *
+ * @extends module:undo/basecommand~BaseCommand
+ */
+class undocommand_UndoCommand extends basecommand_BaseCommand {
+	/**
+	 * Executes the command. This method reverts a {@link module:engine/model/batch~Batch batch} added to the command's stack, transforms
+	 * and applies the reverted version on the {@link module:engine/model/document~Document document} and removes the batch from the stack.
+	 * Then, it restores the {@link module:engine/model/document~Document#selection document selection}.
+	 *
+	 * @fires execute
+	 * @fires revert
+	 * @param {module:engine/model/batch~Batch} [batch] A batch that should be undone. If not set, the last added batch will be undone.
+	 */
+	execute( batch = null ) {
+		// If batch is not given, set `batchIndex` to the last index in command stack.
+		const batchIndex = batch ? this._stack.findIndex( a => a.batch == batch ) : this._stack.length - 1;
+
+		const item = this._stack.splice( batchIndex, 1 )[ 0 ];
+		const undoingBatch = new Batch();
+
+		// All changes has to be done in one `enqueueChange` callback so other listeners will not
+		// step between consecutive operations, or won't do changes to the document before selection is properly restored.
+		this.editor.model.enqueueChange( undoingBatch, () => {
+			this._undo( item.batch, undoingBatch );
+
+			const operations = this.editor.model.document.history.getOperations( item.batch.baseVersion );
+			this._restoreSelection( item.selection.ranges, item.selection.isBackward, operations );
+
+			this.fire( 'revert', item.batch, undoingBatch );
+		} );
+
+		this.refresh();
+	}
+}
+
+/**
+ * Fired when execution of the command reverts some batch.
+ *
+ * @event revert
+ */
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/redocommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module undo/redocommand
+ */
+
+
+
+
+/**
+ * The redo command stores {@link module:engine/model/batch~Batch batches} that were used to undo a batch by
+ * {@link module:undo/undocommand~UndoCommand}. It is able to redo a previously undone batch by reversing the undoing
+ * batches created by `UndoCommand`. The reversed batch is transformed by all the batches from
+ * {@link module:engine/model/document~Document#history history} that happened after the reversed undo batch.
+ *
+ * The redo command also takes care of restoring the {@link module:engine/model/document~Document#selection document selection}.
+ *
+ * @extends module:undo/basecommand~BaseCommand
+ */
+class redocommand_RedoCommand extends basecommand_BaseCommand {
+	/**
+	 * Executes the command. This method reverts the last {@link module:engine/model/batch~Batch batch} added to
+	 * the command's stack, applies the reverted and transformed version on the
+	 * {@link module:engine/model/document~Document document} and removes the batch from the stack.
+	 * Then, it restores the {@link module:engine/model/document~Document#selection document selection}.
+	 *
+	 * @fires execute
+	 */
+	execute() {
+		const item = this._stack.pop();
+		const redoingBatch = new Batch();
+
+		// All changes have to be done in one `enqueueChange` callback so other listeners will not step between consecutive
+		// operations, or won't do changes to the document before selection is properly restored.
+		this.editor.model.enqueueChange( redoingBatch, () => {
+			const lastOperation = item.batch.operations[ item.batch.operations.length - 1 ];
+			const nextBaseVersion = lastOperation.baseVersion + 1;
+			const operations = this.editor.model.document.history.getOperations( nextBaseVersion );
+
+			this._restoreSelection( item.selection.ranges, item.selection.isBackward, operations );
+			this._undo( item.batch, redoingBatch );
+		} );
+
+		this.refresh();
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undoediting.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module undo/undoediting
+ */
+
+
+
+
+
+/**
+ * The undo engine feature.
+ *
+ * It introduces the `'undo'` and `'redo'` commands to the editor.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class undoediting_UndoEditing extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	constructor( editor ) {
+		super( editor );
+
+		/**
+		 * The command that manages undo {@link module:engine/model/batch~Batch batches} stack (history).
+		 * Created and registered during the {@link #init feature initialization}.
+		 *
+		 * @private
+		 * @member {module:undo/undocommand~UndoCommand} #_undoCommand
+		 */
+
+		/**
+		 * The command that manages redo {@link module:engine/model/batch~Batch batches} stack (history).
+		 * Created and registered during the {@link #init feature initialization}.
+		 *
+		 * @private
+		 * @member {module:undo/undocommand~UndoCommand} #_redoCommand
+		 */
+
+		/**
+		 * Keeps track of which batches were registered in undo.
+		 *
+		 * @private
+		 * @member {WeakSet.<module:engine/model/batch~Batch>}
+		 */
+		this._batchRegistry = new WeakSet();
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	init() {
+		const editor = this.editor;
+
+		// Create commands.
+		this._undoCommand = new undocommand_UndoCommand( editor );
+		this._redoCommand = new redocommand_RedoCommand( editor );
+
+		// Register command to the editor.
+		editor.commands.add( 'undo', this._undoCommand );
+		editor.commands.add( 'redo', this._redoCommand );
+
+		this.listenTo( editor.model, 'applyOperation', ( evt, args ) => {
+			const operation = args[ 0 ];
+
+			// Do not register batch if the operation is not a document operation.
+			// This prevents from creating empty undo steps, where all operations where non-document operations.
+			// Non-document operations creates and alters content in detached tree fragments (for example, document fragments).
+			// Most of time this is preparing data before it is inserted into actual tree (for example during copy & paste).
+			// Such operations should not be reversed.
+			if ( !operation.isDocumentOperation ) {
+				return;
+			}
+
+			const batch = operation.batch;
+
+			// If changes are not a part of a batch or this is not a new batch, omit those changes.
+			if ( this._batchRegistry.has( batch ) || batch.type == 'transparent' ) {
+				return;
+			} else {
+				if ( this._redoCommand._createdBatches.has( batch ) ) {
+					// If this batch comes from `redoCommand`, add it to `undoCommand` stack.
+					this._undoCommand.addBatch( batch );
+				} else if ( !this._undoCommand._createdBatches.has( batch ) ) {
+					// A default batch - these are new changes in the document, not introduced by undo feature.
+					// Add them to `undoCommand` stack and clear `redoCommand` stack.
+					this._undoCommand.addBatch( batch );
+					this._redoCommand.clearStack();
+				}
+			}
+
+			// Add the batch to the registry so it will not be processed again.
+			this._batchRegistry.add( batch );
+		}, { priority: 'highest' } );
+
+		this.listenTo( this._undoCommand, 'revert', ( evt, undoneBatch, undoingBatch ) => {
+			this._redoCommand.addBatch( undoingBatch );
+		} );
+
+		editor.keystrokes.set( 'CTRL+Z', 'undo' );
+		editor.keystrokes.set( 'CTRL+Y', 'redo' );
+		editor.keystrokes.set( 'CTRL+SHIFT+Z', 'redo' );
 	}
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/icon/icon.css
-var icon_icon = __webpack_require__(37);
+var icon_icon = __webpack_require__(39);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/icon/iconview.js
 /**
@@ -49924,7 +54941,7 @@ class iconview_IconView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/tooltip/tooltip.css
-var tooltip_tooltip = __webpack_require__(39);
+var tooltip_tooltip = __webpack_require__(41);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/tooltip/tooltipview.js
 /**
@@ -50016,7 +55033,7 @@ class tooltipview_TooltipView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/button/button.css
-var button_button = __webpack_require__(41);
+var button_button = __webpack_require__(43);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/button/buttonview.js
 /**
@@ -50282,8 +55299,436 @@ class buttonview_ButtonView extends src_view_View {
 	}
 }
 
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-undo/theme/icons/undo.svg
+var undo = __webpack_require__(13);
+var undo_default = /*#__PURE__*/__webpack_require__.n(undo);
+
+// EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-undo/theme/icons/redo.svg
+var redo = __webpack_require__(14);
+var redo_default = /*#__PURE__*/__webpack_require__.n(redo);
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undoui.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+/**
+ * @module undo/undoui
+ */
+
+
+
+
+/**
+ * The undo UI feature. It introduces the `'undo'` and `'redo'` buttons to the editor.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class undoui_UndoUI extends Plugin {
+    /**
+	 * @inheritDoc
+	 */
+    init() {
+        const editor = this.editor;
+        const t = editor.t;
+        this._addButton('undo', t('n'), 'CTRL+Z', undo_default.a);
+        this._addButton('redo', t('o'), 'CTRL+Y', redo_default.a);
+    }
+    /**
+	 * Creates a button for the specified command.
+	 *
+	 * @private
+	 * @param {String} name Command name.
+	 * @param {String} label Button label.
+	 * @param {String} keystroke Command keystroke.
+	 * @param {String} Icon Source of the icon.
+	 */
+    _addButton(name, label, keystroke, Icon) {
+        const editor = this.editor;
+        editor.ui.componentFactory.add(name, locale => {
+            const command = editor.commands.get(name);
+            const view = new buttonview_ButtonView(locale);
+            view.set({
+                label,
+                icon: Icon,
+                keystroke,
+                tooltip: true
+            });
+            view.bind('isEnabled').to(command, 'isEnabled');
+            this.listenTo(view, 'execute', () => editor.execute(name));
+            return view;
+        });
+    }
+}
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-undo/src/undo.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module undo/undo
+ */
+
+
+
+
+
+/**
+ * The undo feature.
+ *
+ * This is a "glue" plugin which loads the {@link module:undo/undoediting~UndoEditing undo editing feature}
+ * and {@link module:undo/undoui~UndoUI undo UI feature}.
+ *
+ * Below is the explanation of the undo mechanism working together with {@link module:engine/model/history~History History}:
+ *
+ * Whenever a {@link module:engine/model/operation/operation~Operation operation} is applied to the
+ * {@link module:engine/model/document~Document document}, it is saved to `History` as is.
+ * The {@link module:engine/model/batch~Batch batch} that owns that operation is also saved, in
+ * {@link module:undo/undocommand~UndoCommand}, together with the selection that was present in the document before the
+ * operation was applied. A batch is saved instead of the operation because changes are undone batch-by-batch, not operation-by-operation
+ * and a batch is seen as one undo step.
+ *
+ * After some changes happen to the document, the `History` and `UndoCommand` stack can be represented as follows:
+ *
+ *		    History                            Undo stack
+ *		==============             ==================================
+ *		[operation A1]                         [batch A]
+ *		[operation B1]                         [batch B]
+ *		[operation B2]                         [batch C]
+ *		[operation C1]
+ *		[operation C2]
+ *		[operation B3]
+ *		[operation C3]
+ *
+ * Where operations starting with the same letter are from same batch.
+ *
+ * Undoing a batch means that a set of operations which will reverse the effects of that batch needs to be generated.
+ * For example, if a batch added several letters, undoing the batch should remove them. It is important to apply undoing
+ * operations in the reversed order, so if a batch has operation `X`, `Y`, `Z`, reversed operations `Zr`, `Yr` and `Xr`
+ * need to be applied. Otherwise reversed operation `Xr` would operate on a wrong document state, because operation `X`
+ * does not know that operations `Y` and `Z` happened.
+ *
+ * After operations from an undone batch got {@link module:engine/model/operation/operation~Operation#getReversed reversed},
+ * one needs to make sure if they are ready to be applied. In the scenario above, operation `C3` is the last operation and `C3r`
+ * bases on up-to-date document state, so it can be applied to the document.
+ *
+ *		     History                             Undo stack
+ *		=================             ==================================
+ *		[ operation A1  ]                      [  batch A  ]
+ *		[ operation B1  ]                      [  batch B  ]
+ *		[ operation B2  ]             [   processing undoing batch C   ]
+ *		[ operation C1  ]
+ *		[ operation C2  ]
+ *		[ operation B3  ]
+ *		[ operation C3  ]
+ *		[ operation C3r ]
+ *
+ * Next is operation `C2`, reversed to `C2r`. `C2r` bases on `C2`, so it bases on the wrong document state. It needs to be
+ * transformed by operations from history that happened after it, so it "knows" about them. Let us assume that `C2' = C2r * B3 * C3 * C3r`,
+ * where `*` means "transformed by". Rest of operations from that batch are processed in the same fashion.
+ *
+ *		     History                             Undo stack                                      Redo stack
+ *		=================             ==================================             ==================================
+ *		[ operation A1  ]                      [  batch A  ]                                    [ batch Cr ]
+ *		[ operation B1  ]                      [  batch B  ]
+ *		[ operation B2  ]
+ *		[ operation C1  ]
+ *		[ operation C2  ]
+ *		[ operation B3  ]
+ *		[ operation C3  ]
+ *		[ operation C3r ]
+ *		[ operation C2' ]
+ *		[ operation C1' ]
+ *
+ * Selective undo works on the same basis, however, instead of undoing the last batch in the undo stack, any batch can be undone.
+ * The same algorithm applies: operations from a batch (i.e. `A1`) are reversed and then transformed by operations stored in history.
+ *
+ * Redo also is very similar to undo. It has its own stack that is filled with undoing (reversed batches). Operations from
+ * batch that is re-done are reversed-back, transformed in proper order and applied to the document.
+ *
+ *		     History                             Undo stack                                      Redo stack
+ *		=================             ==================================             ==================================
+ *		[ operation A1  ]                      [  batch A  ]
+ *		[ operation B1  ]                      [  batch B  ]
+ *		[ operation B2  ]                      [ batch Crr ]
+ *		[ operation C1  ]
+ *		[ operation C2  ]
+ *		[ operation B3  ]
+ *		[ operation C3  ]
+ *		[ operation C3r ]
+ *		[ operation C2' ]
+ *		[ operation C1' ]
+ *		[ operation C1'r]
+ *		[ operation C2'r]
+ *		[ operation C3rr]
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class undo_Undo extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get requires() {
+		return [ undoediting_UndoEditing, undoui_UndoUI ];
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Undo';
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-essentials/src/essentials.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module essentials/essentials
+ */
+
+
+
+
+
+
+
+
+
+/**
+ * A plugin including all essential editing features. It represents a set of features that enables similar functionalities
+ * to a `<textarea>` element.
+ *
+ * It includes:
+ *
+ * * {@link module:clipboard/clipboard~Clipboard},
+ * * {@link module:enter/enter~Enter},
+ * * {@link module:enter/shiftenter~ShiftEnter},
+ * * {@link module:typing/typing~Typing},
+ * * {@link module:undo/undo~Undo}.
+ *
+ * This plugin set does not define any block-level containers (such as {@link module:paragraph/paragraph~Paragraph}).
+ * If your editor is supposed to handle block content, make sure to include it.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class essentials_Essentials extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	static get requires() {
+		return [ clipboard_Clipboard, enter_Enter, shiftenter_ShiftEnter, typing_Typing, undo_Undo ];
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	static get pluginName() {
+		return 'Essentials';
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/attributecommand.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module basic-styles/attributecommand
+ */
+
+
+
+/**
+ * An extension of the base {@link module:core/command~Command} class, which provides utilities for a command
+ * that toggles a single attribute on a text or an element.
+ *
+ * `AttributeCommand` uses {@link module:engine/model/document~Document#selection}
+ * to decide which nodes (if any) should be changed, and applies or removes the attribute from them.
+ *
+ * The command checks the {@link module:engine/model/model~Model#schema} to decide if it can be enabled
+ * for the current selection and to which nodes the attribute can be applied.
+ *
+ * @extends module:core/command~Command
+ */
+class attributecommand_AttributeCommand extends Command {
+	/**
+	 * @param {module:core/editor/editor~Editor} editor
+	 * @param {String} attributeKey Attribute that will be set by the command.
+	 */
+	constructor( editor, attributeKey ) {
+		super( editor );
+
+		/**
+		 * The attribute that will be set by the command.
+		 *
+		 * @readonly
+		 * @member {String}
+		 */
+		this.attributeKey = attributeKey;
+
+		/**
+		 * Flag indicating whether the command is active. The command is active when the
+		 * {@link module:engine/model/selection~Selection#hasAttribute selection has the attribute} which means that:
+		 *
+		 * * If the selection is not empty &ndash; That the attribute is set on the first node in the selection that allows this attribute.
+		 * * If the selection is empty &ndash; That the selection has the attribute itself (which means that newly typed
+		 * text will have this attribute, too).
+		 *
+		 * @observable
+		 * @readonly
+		 * @member {Boolean} #value
+		 */
+	}
+
+	/**
+	 * Updates the command's {@link #value} and {@link #isEnabled} based on the current selection.
+	 */
+	refresh() {
+		const model = this.editor.model;
+		const doc = model.document;
+
+		this.value = this._getValueFromFirstAllowedNode();
+		this.isEnabled = model.schema.checkAttributeInSelection( doc.selection, this.attributeKey );
+	}
+
+	/**
+	 * Executes the command &mdash; applies the attribute to the selection or removes it from the selection.
+	 *
+	 * If the command is active (`value == true`), it will remove attributes. Otherwise, it will set attributes.
+	 *
+	 * The execution result differs, depending on the {@link module:engine/model/document~Document#selection}:
+	 *
+	 * * If the selection is on a range, the command applies the attribute to all nodes in that range
+	 * (if they are allowed to have this attribute by the {@link module:engine/model/schema~Schema schema}).
+	 * * If the selection is collapsed in a non-empty node, the command applies the attribute to the
+	 * {@link module:engine/model/document~Document#selection} itself (note that typed characters copy attributes from the selection).
+	 * * If the selection is collapsed in an empty node, the command applies the attribute to the parent node of the selection (note
+	 * that the selection inherits all attributes from a node if it is in an empty node).
+	 *
+	 * @fires execute
+	 * @param {Object} [options] Command options.
+	 * @param {Boolean} [options.forceValue] If set, it will force the command behavior. If `true`, the command will apply the attribute,
+	 * otherwise the command will remove the attribute.
+	 * If not set, the command will look for its current value to decide what it should do.
+	 */
+	execute( options = {} ) {
+		const model = this.editor.model;
+		const doc = model.document;
+		const selection = doc.selection;
+		const value = ( options.forceValue === undefined ) ? !this.value : options.forceValue;
+
+		model.change( writer => {
+			if ( selection.isCollapsed ) {
+				if ( value ) {
+					writer.setSelectionAttribute( this.attributeKey, true );
+				} else {
+					writer.removeSelectionAttribute( this.attributeKey );
+				}
+			} else {
+				const ranges = model.schema.getValidRanges( selection.getRanges(), this.attributeKey );
+
+				for ( const range of ranges ) {
+					if ( value ) {
+						writer.setAttribute( this.attributeKey, value, range );
+					} else {
+						writer.removeAttribute( this.attributeKey, range );
+					}
+				}
+			}
+		} );
+	}
+
+	/**
+	 * Checks the attribute value of the first node in the selection that allows the attribute.
+	 * For the collapsed selection returns the selection attribute.
+	 *
+	 * @private
+	 * @returns {Boolean} The attribute value.
+	 */
+	_getValueFromFirstAllowedNode() {
+		const model = this.editor.model;
+		const schema = model.schema;
+		const selection = model.document.selection;
+
+		if ( selection.isCollapsed ) {
+			return selection.hasAttribute( this.attributeKey );
+		}
+
+		for ( const range of selection.getRanges() ) {
+			for ( const item of range.getItems() ) {
+				if ( schema.checkAttribute( item, this.attributeKey ) ) {
+					return item.hasAttribute( this.attributeKey );
+				}
+			}
+		}
+
+		return false;
+	}
+}
+
+// CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/bold/boldediting.js
+/**
+ * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.md.
+ */
+
+/**
+ * @module basic-styles/bold/boldediting
+ */
+
+
+
+
+const BOLD = 'bold';
+
+/**
+ * The bold editing feature.
+ *
+ * It registers the `'bold'` command and introduces the `bold` attribute in the model which renders to the view
+ * as a `<strong>` element.
+ *
+ * @extends module:core/plugin~Plugin
+ */
+class boldediting_BoldEditing extends Plugin {
+	/**
+	 * @inheritDoc
+	 */
+	init() {
+		const editor = this.editor;
+		// Allow bold attribute on text nodes.
+		editor.model.schema.extend( '$text', { allowAttributes: BOLD } );
+
+		// Build converter from model to view for data and editing pipelines.
+
+		editor.conversion.attributeToElement( {
+			model: BOLD,
+			view: 'strong',
+			upcastAlso: [
+				'b',
+				{
+					styles: {
+						'font-weight': 'bold'
+					}
+				}
+			]
+		} );
+
+		// Create bold command.
+		editor.commands.add( BOLD, new attributecommand_AttributeCommand( editor, BOLD ) );
+
+		// Set the Ctrl+B keystroke.
+		editor.keystrokes.set( 'CTRL+B', BOLD );
+	}
+}
+
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/bold.svg
-var bold = __webpack_require__(13);
+var bold = __webpack_require__(15);
 var bold_default = /*#__PURE__*/__webpack_require__.n(bold);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/bold/boldui.js
@@ -50423,7 +55868,7 @@ class italicediting_ItalicEditing extends Plugin {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/italic.svg
-var italic = __webpack_require__(14);
+var italic = __webpack_require__(16);
 var italic_default = /*#__PURE__*/__webpack_require__.n(italic);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/italic/italicui.js
@@ -50560,7 +56005,7 @@ class underlineediting_UnderlineEditing extends Plugin {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/theme/icons/underline.svg
-var underline = __webpack_require__(15);
+var underline = __webpack_require__(17);
 var underline_default = /*#__PURE__*/__webpack_require__.n(underline);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-basic-styles/src/underline/underlineui.js
@@ -51506,7 +56951,7 @@ function isStepAfterTheAttributeBoundary( position, attribute ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/link.css
-var theme_link = __webpack_require__(43);
+var theme_link = __webpack_require__(45);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkediting.js
 /**
@@ -52025,7 +57470,7 @@ function getAbsoluteRectCoordinates( { left, top } ) {
  */
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/panel/balloonpanel.css
-var balloonpanel = __webpack_require__(45);
+var balloonpanel = __webpack_require__(47);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/panel/balloon/balloonpanelview.js
 /**
@@ -53046,7 +58491,7 @@ function clickOutsideHandler( { emitter, activator, callback, contextElements } 
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/labeledinput/labeledinput.css
-var labeledinput = __webpack_require__(47);
+var labeledinput = __webpack_require__(49);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/labeledinput/labeledinputview.js
 /**
@@ -53253,7 +58698,7 @@ class labeledinputview_LabeledInputView extends src_view_View {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-ui/theme/components/inputtext/inputtext.css
-var inputtext = __webpack_require__(49);
+var inputtext = __webpack_require__(51);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-ui/src/inputtext/inputtextview.js
 /**
@@ -53448,15 +58893,15 @@ function submitHandler( { view } ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/check.svg
-var check = __webpack_require__(16);
+var check = __webpack_require__(18);
 var check_default = /*#__PURE__*/__webpack_require__.n(check);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/cancel.svg
-var icons_cancel = __webpack_require__(17);
+var icons_cancel = __webpack_require__(19);
 var cancel_default = /*#__PURE__*/__webpack_require__.n(icons_cancel);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/linkform.css
-var linkform = __webpack_require__(51);
+var linkform = __webpack_require__(53);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/ui/linkformview.js
 /**
@@ -53517,14 +58962,14 @@ class linkformview_LinkFormView extends src_view_View {
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.saveButtonView = this._createButton(t('g'), check_default.a, 'ck-button-save');
+        this.saveButtonView = this._createButton(t('k'), check_default.a, 'ck-button-save');
         this.saveButtonView.type = 'submit';
         /**
 		 * The Cancel button view.
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.cancelButtonView = this._createButton(t('h'), cancel_default.a, 'ck-button-cancel', 'cancel');
+        this.cancelButtonView = this._createButton(t('l'), cancel_default.a, 'ck-button-cancel', 'cancel');
         /**
 		 * A collection of views which can be focused in the form.
 		 *
@@ -53603,7 +59048,7 @@ class linkformview_LinkFormView extends src_view_View {
     _createUrlInput() {
         const t = this.locale.t;
         const labeledInput = new labeledinputview_LabeledInputView(this.locale, inputtextview_InputTextView);
-        labeledInput.label = t('i');
+        labeledInput.label = t('m');
         labeledInput.inputView.placeholder = 'https://example.com';
         return labeledInput;
     }
@@ -53642,15 +59087,15 @@ class linkformview_LinkFormView extends src_view_View {
  * @event cancel
  */
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/icons/unlink.svg
-var unlink = __webpack_require__(18);
+var unlink = __webpack_require__(20);
 var unlink_default = /*#__PURE__*/__webpack_require__.n(unlink);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-core/theme/icons/pencil.svg
-var pencil = __webpack_require__(19);
+var pencil = __webpack_require__(21);
 var pencil_default = /*#__PURE__*/__webpack_require__.n(pencil);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/linkactions.css
-var linkactions = __webpack_require__(53);
+var linkactions = __webpack_require__(55);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/ui/linkactionsview.js
 /**
@@ -53708,13 +59153,13 @@ class linkactionsview_LinkActionsView extends src_view_View {
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.unlinkButtonView = this._createButton(t('j'), unlink_default.a, 'unlink');
+        this.unlinkButtonView = this._createButton(t('g'), unlink_default.a, 'unlink');
         /**
 		 * The edit link button view.
 		 *
 		 * @member {module:ui/button/buttonview~ButtonView}
 		 */
-        this.editButtonView = this._createButton(t('k'), pencil_default.a, 'edit');
+        this.editButtonView = this._createButton(t('h'), pencil_default.a, 'edit');
         /**
 		 * Value of the "href" attribute of the link to use in the {@link #previewButtonView}.
 		 *
@@ -53821,7 +59266,7 @@ class linkactionsview_LinkActionsView extends src_view_View {
         const t = this.t;
         button.set({
             withText: true,
-            tooltip: t('l')
+            tooltip: t('i')
         });
         button.extendTemplate({
             attributes: {
@@ -53834,7 +59279,7 @@ class linkactionsview_LinkActionsView extends src_view_View {
             }
         });
         button.bind('label').to(this, 'href', href => {
-            return href || t('m');
+            return href || t('j');
         });
         button.bind('isEnabled').to(this, 'href', href => !!href);
         button.template.tag = 'a';
@@ -53852,7 +59297,7 @@ class linkactionsview_LinkActionsView extends src_view_View {
  * @event unlink
  */
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-link/theme/icons/link.svg
-var icons_link = __webpack_require__(20);
+var icons_link = __webpack_require__(22);
 var icons_link_default = /*#__PURE__*/__webpack_require__.n(icons_link);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-link/src/linkui.js
@@ -56380,11 +61825,11 @@ function getViewListItemLength( element ) {
 }
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-list/theme/icons/numberedlist.svg
-var numberedlist = __webpack_require__(21);
+var numberedlist = __webpack_require__(23);
 var numberedlist_default = /*#__PURE__*/__webpack_require__.n(numberedlist);
 
 // EXTERNAL MODULE: ./node_modules/@ckeditor/ckeditor5-list/theme/icons/bulletedlist.svg
-var bulletedlist = __webpack_require__(22);
+var bulletedlist = __webpack_require__(24);
 var bulletedlist_default = /*#__PURE__*/__webpack_require__.n(bulletedlist);
 
 // CONCATENATED MODULE: ./node_modules/@ckeditor/ckeditor5-list/src/listui.js
@@ -56496,10 +61941,12 @@ class list_List extends Plugin {
 
 
 
+
 class ckeditor_ClassicEditor extends classiceditor_ClassicEditor {}
 
 // Plugins to include in the build.
 ckeditor_ClassicEditor.builtinPlugins = [
+	essentials_Essentials,
 	bold_Bold,
 	italic_Italic,
 	link_Link,
