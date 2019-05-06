@@ -20,7 +20,7 @@
     "real-time",
     "framework"
   ],
-  "main": "./src/ckeditor.js",
+  "main": "./build/ckeditor.js",
   "files": [
     "build",
 	"src"
